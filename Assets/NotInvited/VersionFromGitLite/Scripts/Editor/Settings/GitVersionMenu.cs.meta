@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: b393717dd99c2864587d7ebc4e4925e2
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 213827
+  packageName: Version from git lite
+  packageVersion: 1.0.1
+  assetPath: Assets/NotInvited/VersionFromGitLite/Scripts/Editor/Settings/GitVersionMenu.cs
+  uploadId: 618949

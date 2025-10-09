@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 0ee4b3313f049604cb5b3eacb9c5d401
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 213827
+  packageName: Version from git lite
+  packageVersion: 1.0.1
+  assetPath: Assets/NotInvited/VersionFromGitCore/Scripts/Editor/Utils/ProcessUtils.cs
+  uploadId: 618949
