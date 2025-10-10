@@ -13,6 +13,8 @@ public enum HitResult
 
 public class PlayerManager : MonoBehaviour
 {
+    public FlipToDirection playerFlip, followerFlip;
+
     public InputActionReference moveAction, jumpAction, blockAction;
 
     public float groundedRadius, groundedDistance;
@@ -89,6 +91,13 @@ public class PlayerManager : MonoBehaviour
         direction.y = Mathf.Min(0, direction.y);
 
         rb.linearVelocity += direction * recoilMultiplier;
+    }
+
+    public void SetDirection(EntityDirection direction)
+    {
+        this.direction = direction;
+        playerFlip.direction = direction;
+        followerFlip.direction = direction;
     }
 
     public void OnDrawGizmos()
