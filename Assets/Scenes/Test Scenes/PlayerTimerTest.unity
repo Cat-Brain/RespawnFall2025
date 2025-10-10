@@ -577,6 +577,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerGravity
   gravity: 15
+  tapJumpGravity: 30
 --- !u!114 &406840686
 MonoBehaviour:
   m_ObjectHideFlags: 0
