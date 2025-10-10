@@ -1,7 +1,7 @@
 {
 	"identifier": "Level_1",
 	"uniqueIdentifer": "3f98ac80-8560-11f0-a19b-67009043462c",
-	"x": 256,
+	"x": 384,
 	"y": 0,
 	"width": 256,
 	"height": 256,
@@ -14,7 +14,8 @@
 	],
 	"customFields" : {},
 	"layers": [
-		"Tiles.png"
+		"Tiles.png",
+		"IntGrid.png"
 	],
 	"entities" : {}
 }

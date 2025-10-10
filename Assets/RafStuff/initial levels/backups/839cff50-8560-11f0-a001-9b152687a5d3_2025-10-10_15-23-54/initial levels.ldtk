@@ -161,13 +161,13 @@
 			"externalRelPath": "initial levels/Level_0.ldtkl",
 			"fieldInstances": [],
 			"layerInstances": null,
-			"__neighbours": [{ "levelIid": "3f98ac80-8560-11f0-a19b-67009043462c", "dir": "e" }]
+			"__neighbours": [{ "levelIid": "3f98ac80-8560-11f0-a19b-67009043462c", "dir": "o" }]
 		},
 		{
 			"identifier": "Level_1",
 			"iid": "3f98ac80-8560-11f0-a19b-67009043462c",
 			"uid": 1,
-			"worldX": 384,
+			"worldX": 256,
 			"worldY": 0,
 			"worldDepth": 0,
 			"pxWid": 256,
@@ -184,7 +184,7 @@
 			"externalRelPath": "initial levels/Level_1.ldtkl",
 			"fieldInstances": [],
 			"layerInstances": null,
-			"__neighbours": [{ "levelIid": "839de9b0-8560-11f0-a001-ad3f92777806", "dir": "w" }]
+			"__neighbours": [{ "levelIid": "839de9b0-8560-11f0-a001-ad3f92777806", "dir": "o" }]
 		}
 	] }],
 	"dummyWorldIid": "839d4d70-8560-11f0-a001-892a54d49cbc"
