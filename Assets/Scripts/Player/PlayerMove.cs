@@ -28,29 +28,33 @@ public class PlayerMove : MonoBehaviour
 
     public void TryJump(InputAction.CallbackContext context)
     {
-        jumpBufferTimer = jumpBufferTime;
+        if (playerManager.moveStun <= 0)
+            jumpBufferTimer = jumpBufferTime;
     }
 
     private void FixedUpdate()
     {
-        bool grounded = playerManager.IsGrounded();
-
-        float horizontalInput = playerManager.moveAction.action.ReadValue<float>();
-        Debug.Log(horizontalInput);
-        if (Mathf.Abs(horizontalInput) > 0.1f)
-            rb.linearVelocityX = CMath.TryAdd(rb.linearVelocityX, horizontalInput * accel * Time.fixedDeltaTime, speed);
-        else
-            rb.linearVelocityX = CMath.TrySub(rb.linearVelocityX, accel * Time.fixedDeltaTime);
-
-        if (grounded)
-            cayoteTimer = cayoteTime;
-
-        if (jumpBufferTimer > 0 && cayoteTimer > 0 && jumpSpamTimer <= 0)
+        if (playerManager.moveStun <= 0)
         {
-            rb.linearVelocityY = Mathf.Max(0, rb.linearVelocityY) + jumpForce;
-            jumpBufferTimer = 0;
-            cayoteTimer = 0;
-            jumpSpamTimer = jumpSpamTime;
+            bool grounded = playerManager.IsGrounded();
+
+            float horizontalInput = playerManager.moveAction.action.ReadValue<float>();
+
+            if (Mathf.Abs(horizontalInput) > 0.1f)
+                rb.linearVelocityX = CMath.TryAdd(rb.linearVelocityX, horizontalInput * accel * Time.fixedDeltaTime, speed);
+            else
+                rb.linearVelocityX = CMath.TrySub(rb.linearVelocityX, accel * Time.fixedDeltaTime);
+
+            if (grounded)
+                cayoteTimer = cayoteTime;
+
+            if (jumpBufferTimer > 0 && cayoteTimer > 0 && jumpSpamTimer <= 0)
+            {
+                rb.linearVelocityY = Mathf.Max(0, rb.linearVelocityY) + jumpForce;
+                jumpBufferTimer = 0;
+                cayoteTimer = 0;
+                jumpSpamTimer = jumpSpamTime;
+            }
         }
 
         jumpBufferTimer = Mathf.Max(0, jumpBufferTimer - Time.fixedDeltaTime);

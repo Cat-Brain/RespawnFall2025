@@ -327,6 +327,9 @@ MonoBehaviour:
   groundedMask:
     serializedVersion: 2
     m_Bits: 51
+  recoilMultiplier: {x: 1, y: 1}
+  stunInvulnerability: 0
+  moveStun: 0
   playerMove: {fileID: 0}
   playerGravity: {fileID: 0}
 --- !u!1 &563856240
