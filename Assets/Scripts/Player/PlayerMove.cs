@@ -41,7 +41,10 @@ public class PlayerMove : MonoBehaviour
             float horizontalInput = playerManager.moveAction.action.ReadValue<float>();
 
             if (Mathf.Abs(horizontalInput) > 0.1f)
+            {
                 rb.linearVelocityX = CMath.TryAdd(rb.linearVelocityX, horizontalInput * accel * Time.fixedDeltaTime, speed);
+                playerManager.direction = horizontalInput > 0 ? PlayerDirection.RIGHT : PlayerDirection.LEFT;
+            }
             else
                 rb.linearVelocityX = CMath.TrySub(rb.linearVelocityX, accel * Time.fixedDeltaTime);
 

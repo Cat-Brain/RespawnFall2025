@@ -1,6 +1,11 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 
+public enum PlayerDirection
+{
+    LEFT, RIGHT
+}
+
 public class PlayerManager : MonoBehaviour
 {
     public InputActionReference moveAction, jumpAction;
@@ -9,6 +14,8 @@ public class PlayerManager : MonoBehaviour
     public LayerMask groundedMask;
 
     public Vector2 recoilMultiplier;
+
+    public PlayerDirection direction;
 
     [HideInInspector] public float stunInvulnerability, moveStun; // Applies to both horizontal movement and jumping
 
