@@ -1,26 +1,32 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public enum PlayerDirection
+public enum EntityDirection
 {
     LEFT, RIGHT
 }
 
+public enum HitResult
+{
+    HIT, ABSORBED, BLOCKED
+}
+
 public class PlayerManager : MonoBehaviour
 {
-    public InputActionReference moveAction, jumpAction;
+    public InputActionReference moveAction, jumpAction, blockAction;
 
     public float groundedRadius, groundedDistance;
     public LayerMask groundedMask;
 
     public Vector2 recoilMultiplier;
 
-    public PlayerDirection direction;
+    public EntityDirection direction;
 
-    [HideInInspector] public float stunInvulnerability, moveStun; // Applies to both horizontal movement and jumping
+    /*[HideInInspector]*/ public float blockInvulnerability = 0, stunInvulnerability = 0, moveStun = 0; // Applies to both horizontal movement and jumping
 
     [HideInInspector] public PlayerMove playerMove;
     [HideInInspector] public PlayerGravity playerGravity;
+    [HideInInspector] public PlayerBlock playerBlock;
 
     private Rigidbody2D rb;
 
@@ -28,14 +34,17 @@ public class PlayerManager : MonoBehaviour
     {
         playerMove = GetComponent<PlayerMove>();
         playerGravity = GetComponent<PlayerGravity>();
+        playerBlock = GetComponent<PlayerBlock>();
 
         rb = GetComponent<Rigidbody2D>();
     }
 
     void Update()
     {
+        blockInvulnerability = Mathf.Max(0, blockInvulnerability - Time.deltaTime);
         stunInvulnerability = Mathf.Max(0, stunInvulnerability - Time.deltaTime);
-        moveStun = Mathf.Max(0, moveStun - Time.deltaTime);
+        if (moveStun != -1)
+            moveStun = Mathf.Max(0, moveStun - Time.deltaTime);
     }
 
     public bool IsGrounded()
@@ -48,6 +57,18 @@ public class PlayerManager : MonoBehaviour
         gameObject.layer = tempLayer;
 
         return successful;
+    }
+
+    public HitResult TryHit(float duration, float invulnerability)
+    {
+        if (blockInvulnerability > 0)
+            return HitResult.BLOCKED;
+        if (stunInvulnerability > 0)
+            return HitResult.ABSORBED;
+
+        stunInvulnerability = invulnerability;
+        moveStun += duration;
+        return HitResult.HIT;
     }
 
     // If the player does not have i frames then stun them and returns true. Else returns false
