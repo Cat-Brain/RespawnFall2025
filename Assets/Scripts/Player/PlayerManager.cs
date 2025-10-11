@@ -1,11 +1,6 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public enum EntityDirection
-{
-    LEFT, RIGHT
-}
-
 public enum HitResult
 {
     HIT, ABSORBED, BLOCKED
@@ -13,6 +8,7 @@ public enum HitResult
 
 public class PlayerManager : MonoBehaviour
 {
+    public PlayerCamera playerCamera;
     public FlipToDirection playerFlip, followerFlip;
 
     public InputActionReference moveAction, jumpAction, blockAction;
@@ -24,19 +20,28 @@ public class PlayerManager : MonoBehaviour
 
     public EntityDirection direction;
 
+    public TagHandle winZoneTag;
+
     /*[HideInInspector]*/ public float blockInvulnerability = 0, stunInvulnerability = 0, moveStun = 0; // Applies to both horizontal movement and jumping
+    
+    [HideInInspector] public GameManager gameManager;
 
     [HideInInspector] public PlayerMove playerMove;
     [HideInInspector] public PlayerGravity playerGravity;
     [HideInInspector] public PlayerBlock playerBlock;
+    [HideInInspector] public PlayerTimer playerTimer;
 
     private Rigidbody2D rb;
 
     void Awake()
     {
+        gameManager = FindFirstObjectByType<GameManager>();
+        gameManager.playerManager = this;
+
         playerMove = GetComponent<PlayerMove>();
         playerGravity = GetComponent<PlayerGravity>();
         playerBlock = GetComponent<PlayerBlock>();
+        playerTimer = GetComponent<PlayerTimer>();
 
         rb = GetComponent<Rigidbody2D>();
     }
@@ -47,6 +52,12 @@ public class PlayerManager : MonoBehaviour
         stunInvulnerability = Mathf.Max(0, stunInvulnerability - Time.deltaTime);
         if (moveStun != -1)
             moveStun = Mathf.Max(0, moveStun - Time.deltaTime);
+    }
+
+    void OnTriggerEnter2D(Collider2D trigger)
+    {
+        if (trigger.CompareTag(winZoneTag))
+            gameManager.PlayerWin();
     }
 
     public bool IsGrounded()

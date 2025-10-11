@@ -2,26 +2,33 @@ using UnityEngine;
 
 public class PlayerTimer : MonoBehaviour
 {
-    public GameManager gameManager;
     public TimerDisplay timerDisplay;
 
     public float refillTime;
     public float remainingTime;
 
+    private PlayerManager playerManager;
+
     void Awake()
     {
+        playerManager = GetComponent<PlayerManager>();
+
         remainingTime = refillTime;
     }
 
     void Update()
     {
-        remainingTime -= Time.deltaTime;
+        DecreaseTime(Time.deltaTime);
+        timerDisplay.UpdateTimer(remainingTime, refillTime);
+    }
+
+    public void DecreaseTime(float amount)
+    {
+        remainingTime -= amount;
         if (remainingTime <= 0)
         {
             remainingTime = 0;
-            gameManager.PlayerLose();
+            playerManager.gameManager.PlayerLose();
         }
-
-        timerDisplay.UpdateTimer(remainingTime, refillTime);
     }
 }
