@@ -47,7 +47,7 @@ public class PlayerMove : MonoBehaviour
             if (Mathf.Abs(horizontalInput) > 0.1f)
             {
                 rb.linearVelocityX = CMath.TryAdd(rb.linearVelocityX, horizontalInput * accel * Time.fixedDeltaTime, speed);
-                playerManager.direction = horizontalInput > 0 ? EntityDirection.RIGHT : EntityDirection.LEFT;
+                playerManager.SetDirection(horizontalInput > 0 ? EntityDirection.RIGHT : EntityDirection.LEFT);
             }
             else
                 rb.linearVelocityX = CMath.TrySub(rb.linearVelocityX, accel * Time.fixedDeltaTime);
