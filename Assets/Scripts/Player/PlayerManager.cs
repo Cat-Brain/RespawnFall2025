@@ -13,6 +13,8 @@ public enum HitResult
 
 public class PlayerManager : MonoBehaviour
 {
+    public FlipToDirection playerFlip, followerFlip;
+
     public InputActionReference moveAction, jumpAction, blockAction;
 
     public float groundedRadius, groundedDistance;
@@ -83,12 +85,19 @@ public class PlayerManager : MonoBehaviour
     }
 
     // The direction should be pointing where the player is being pushed. This will be the inverse of the direction aimed at
-    public void ApplyRecoil(Vector2 direction)
+    public void ApplyRecoil(Vector2 direction, float force)
     {
         direction = direction.normalized;
-        direction.y = Mathf.Min(0, direction.y);
+        direction.y = Mathf.Max(0, direction.y);
 
-        rb.linearVelocity += direction * recoilMultiplier;
+        rb.linearVelocity += direction * recoilMultiplier * force;
+    }
+
+    public void SetDirection(EntityDirection direction)
+    {
+        this.direction = direction;
+        playerFlip.direction = direction;
+        followerFlip.direction = direction;
     }
 
     public void OnDrawGizmos()
