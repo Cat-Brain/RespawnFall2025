@@ -5,7 +5,7 @@ public class PlayerCamera : MonoBehaviour
     public PlayerManager playerManager;
 
     public float moveSpringFrequency, moveSpringDamping;
-    public float minHeight;
+    public float minHeight, maxHeight;
 
     [HideInInspector] public float velocity = 0;
     public SpringUtils.tDampedSpringMotionParams moveSpring = new();
@@ -20,6 +20,6 @@ public class PlayerCamera : MonoBehaviour
 
     public float DesiredHeight()
     {
-        return Mathf.Max(minHeight, playerManager.transform.position.y);
+        return Mathf.Clamp(playerManager.transform.position.y, minHeight, maxHeight);
     }
 }
