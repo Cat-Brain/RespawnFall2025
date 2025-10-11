@@ -134,6 +134,7 @@ GameObject:
   - component: {fileID: 406840687}
   - component: {fileID: 406840686}
   - component: {fileID: 406840685}
+  - component: {fileID: 406840688}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -308,6 +309,8 @@ MonoBehaviour:
   jumpBufferTime: 0.3
   cayoteTime: 0.3
   jumpSpamTime: 0.2
+  movePhysicsMaterial: {fileID: 0}
+  stunnedPhysicsMaterial: {fileID: 0}
 --- !u!114 &406840687
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -322,6 +325,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerManager
   moveAction: {fileID: -1680190386980627800, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   jumpAction: {fileID: -2099379676528639254, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+  blockAction: {fileID: 0}
   groundedRadius: 0.49
   groundedDistance: 0.1
   groundedMask:
@@ -329,10 +333,29 @@ MonoBehaviour:
     m_Bits: 51
   recoilMultiplier: {x: 1, y: 1}
   direction: 0
+  blockInvulnerability: 0
   stunInvulnerability: 0
   moveStun: 0
   playerMove: {fileID: 0}
   playerGravity: {fileID: 0}
+  playerBlock: {fileID: 0}
+--- !u!114 &406840688
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 406840680}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd465198b5d0c7f459ded1c669cbf128, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  clickAction: {fileID: 233641816963222372, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+  bulletPrefab: {fileID: 7878727207753161381, guid: e925f11ddcf332f439076888fddd62cf, type: 3}
+  spawn: {x: 0, y: 0, z: 0}
+  strings: 0
+  coolDownTime: 0.5
 --- !u!1 &563856240
 GameObject:
   m_ObjectHideFlags: 0
