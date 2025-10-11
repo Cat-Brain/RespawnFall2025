@@ -15,7 +15,7 @@ public class PlayerGravity : MonoBehaviour
 
     void FixedUpdate()
     {
-        rb.linearVelocityY -= (rb.linearVelocityY <= 0 || playerManager.jumpAction.action.inProgress ?
-            gravity : tapJumpGravity) * Time.fixedDeltaTime;
+        rb.linearVelocityY -= (rb.linearVelocityY <= 0 || playerManager.Stunned() ||
+            playerManager.jumpAction.action.inProgress ? gravity : tapJumpGravity) * Time.fixedDeltaTime;
     }
 }

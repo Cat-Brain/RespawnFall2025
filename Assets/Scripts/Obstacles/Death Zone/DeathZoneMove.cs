@@ -4,6 +4,8 @@ public class DeathZoneMove : MonoBehaviour
 {
     public DeathZoneBottomBarrier barrier;
 
+    public float additionalDeadlyHeight;
+
     public float riseSpeed;
     public float initialRiseStun;
 
@@ -11,8 +13,13 @@ public class DeathZoneMove : MonoBehaviour
 
     private float initialHeight;
 
+    private GameManager gameManager;
+
     void Awake()
     {
+        gameManager = FindFirstObjectByType<GameManager>();
+        gameManager.deathZone = this;
+
         riseStun = initialRiseStun;
         initialHeight = transform.position.y;
     }
@@ -25,11 +32,25 @@ public class DeathZoneMove : MonoBehaviour
             return;
 
         risenHeight += riseSpeed * Time.deltaTime;
+        gameManager.playerManager.playerCamera.minHeight = risenHeight;
 
         transform.position = CMath.Vector3XZ_Y(
             CMath.Vector3ToXZ(transform.position),
             initialHeight + risenHeight);
 
         barrier.height = risenHeight;
+    }
+
+    public float DeadlyHeight()
+    {
+        return risenHeight + additionalDeadlyHeight;
+    }
+
+    public void TryAddStun(float stunAmount, float maxStun)
+    {
+        if (riseStun >= maxStun)
+            return;
+
+        riseStun = Mathf.Min(maxStun, riseStun + stunAmount);
     }
 }
