@@ -5,11 +5,8 @@ TagManager:
   serializedVersion: 3
   tags:
   - Win Zone
-<<<<<<< Updated upstream
   - Enemy
-=======
   - Death Zone
->>>>>>> Stashed changes
   layers:
   - Default
   - TransparentFX
@@ -20,9 +17,9 @@ TagManager:
   - Death Zone
   - Win Zone
   - Projectile
-  - 
-  - 
-  - 
+  - Enemy
+  - Player
+  - Incorporeal
   - 
   - 
   - 
