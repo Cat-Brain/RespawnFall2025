@@ -76,7 +76,10 @@ public class PlayerManager : MonoBehaviour
     public HitResult TryHit(Vector2 knockbackForce, float duration, float invulnerability)
     {
         if (blockInvulnerability > 0)
+        {
+            playerBlock.SuccessfulBlock();    
             return HitResult.BLOCKED;
+        }
 
         rb.linearVelocity += knockbackForce;
 
