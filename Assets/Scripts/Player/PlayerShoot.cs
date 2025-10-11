@@ -41,7 +41,6 @@ public class PlayerShoot : MonoBehaviour
             currentStrings--;
             spawn = new Vector3(transform.position.x, transform.position.y, 0);
             GameObject playerBullet = Instantiate(bulletPrefab, spawn, transform.rotation);
-            Destroy(playerBullet, 4.0f);
             coolDownTimer = coolDownTime;
             regenTimer = regenTime;
         }

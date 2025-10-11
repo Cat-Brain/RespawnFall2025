@@ -11,7 +11,7 @@ public class PlayerProjectile : MonoBehaviour
     void Start()
     {
         rb = gameObject.GetComponent<Rigidbody2D>();
-        direction = (Camera.main.ScreenToWorldPoint(Mouse.current.position.ReadValue()) - Camera.main.transform.position - transform.position).normalized;
+        direction = ((Vector2)(Camera.main.ScreenToWorldPoint(Mouse.current.position.ReadValue()) - transform.position)).normalized;
         PlayerManager playerManagerScript = FindFirstObjectByType<PlayerManager>();
         playerManagerScript.ApplyRecoil(-direction, recoilForce);
     }
@@ -21,4 +21,13 @@ public class PlayerProjectile : MonoBehaviour
     {
         rb.linearVelocity = direction * speed;
     }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.layer == 0)
+        {
+            Destroy(gameObject);
+        }
+    }
+
 }
