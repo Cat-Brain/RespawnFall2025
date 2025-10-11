@@ -352,10 +352,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   clickAction: {fileID: 233641816963222372, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+  playerManagerScript: {fileID: 406840687}
   bulletPrefab: {fileID: 7878727207753161381, guid: e925f11ddcf332f439076888fddd62cf, type: 3}
   spawn: {x: 0, y: 0, z: 0}
-  strings: 0
-  coolDownTime: 0.5
+  currentStrings: 0
+  maxStrings: 4
+  coolDownTime: 0.3
+  coolDownTimer: 0
+  regenTime: 0.5
+  regenTimer: 0
+  regenConsecTime: 0.1
+  regenConsecTimer: 0
 --- !u!1 &563856240
 GameObject:
   m_ObjectHideFlags: 0

@@ -6,30 +6,52 @@ using System.Collections;
 public class PlayerShoot : MonoBehaviour
 {
     public InputActionReference clickAction;
+    public PlayerManager playerManagerScript;
     public GameObject bulletPrefab;
     public Vector3 spawn;
-    public int strings;
-    public float coolDownTime = 0.5f;
+    public int currentStrings, maxStrings;
+    // Time references the max cool down time, and timer references the current time.
+    public float coolDownTime, coolDownTimer;
+    public float regenTime, regenTimer, regenConsecTime; 
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        strings = 4;
+        coolDownTimer = 0;
+        regenTimer = 0;
+        currentStrings = maxStrings;
         clickAction.action.started += Shoot;
     }
 
     // Update is called once per frame
     void Update()
     {
-        coolDownTime -= Time.deltaTime;
+        coolDownTimer -= Time.deltaTime;
+
+        if (playerManagerScript.IsGrounded())
+        {
+            regenTimer -= Time.deltaTime;
+            if (currentStrings < maxStrings && regenTimer <= 0)
+            {
+                regenTimer = regenConsecTime;
+                currentStrings++;
+            }
+        }
+        
+        else
+        {
+            regenTimer = regenTime;
+        }
     }
 
     void Shoot(InputAction.CallbackContext context) {
-        if(coolDownTime <= 0) {
-            strings--;
+        if(coolDownTimer <= 0 && currentStrings > 0) {
+            currentStrings--;
             spawn = new Vector3(transform.position.x, transform.position.y, 0);
             GameObject playerBullet = Instantiate(bulletPrefab, spawn, transform.rotation);
             Destroy(playerBullet, 4.0f);
-            coolDownTime = 0.5f;
+            coolDownTimer = coolDownTime;
+            regenTimer = regenTime;
         }
     }
 }
