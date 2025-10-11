@@ -20,7 +20,7 @@ public class PlayerManager : MonoBehaviour
 
     public EntityDirection direction;
 
-    public TagHandle winZoneTag;
+    public string winZoneTag;
 
     /*[HideInInspector]*/ public float blockInvulnerability = 0, stunInvulnerability = 0, moveStun = 0; // Applies to both horizontal movement and jumping
     
@@ -72,10 +72,13 @@ public class PlayerManager : MonoBehaviour
         return successful;
     }
 
-    public HitResult TryHit(float duration, float invulnerability)
+    public HitResult TryHit(Vector2 knockbackForce, float duration, float invulnerability)
     {
         if (blockInvulnerability > 0)
             return HitResult.BLOCKED;
+
+        rb.linearVelocity += knockbackForce;
+
         if (stunInvulnerability > 0)
             return HitResult.ABSORBED;
 
@@ -109,6 +112,11 @@ public class PlayerManager : MonoBehaviour
         this.direction = direction;
         playerFlip.direction = direction;
         followerFlip.direction = direction;
+    }
+
+    public bool Stunned()
+    {
+        return moveStun > 0 || moveStun == -1;
     }
 
     public void OnDrawGizmos()
