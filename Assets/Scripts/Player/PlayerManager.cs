@@ -1,11 +1,6 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public enum EntityDirection
-{
-    LEFT, RIGHT
-}
-
 public enum HitResult
 {
     HIT, ABSORBED, BLOCKED
@@ -13,6 +8,7 @@ public enum HitResult
 
 public class PlayerManager : MonoBehaviour
 {
+    public PlayerCamera playerCamera;
     public FlipToDirection playerFlip, followerFlip;
 
     public InputActionReference moveAction, jumpAction, blockAction;
@@ -20,23 +16,33 @@ public class PlayerManager : MonoBehaviour
     public float groundedRadius, groundedDistance;
     public LayerMask groundedMask;
 
+    public float maxPlayerRecoil;
     public Vector2 recoilMultiplier;
 
     public EntityDirection direction;
 
+    public string winZoneTag;
+
     /*[HideInInspector]*/ public float blockInvulnerability = 0, stunInvulnerability = 0, moveStun = 0; // Applies to both horizontal movement and jumping
+    
+    [HideInInspector] public GameManager gameManager;
 
     [HideInInspector] public PlayerMove playerMove;
     [HideInInspector] public PlayerGravity playerGravity;
     [HideInInspector] public PlayerBlock playerBlock;
+    [HideInInspector] public PlayerTimer playerTimer;
 
     private Rigidbody2D rb;
 
     void Awake()
     {
+        gameManager = FindFirstObjectByType<GameManager>();
+        gameManager.playerManager = this;
+
         playerMove = GetComponent<PlayerMove>();
         playerGravity = GetComponent<PlayerGravity>();
         playerBlock = GetComponent<PlayerBlock>();
+        playerTimer = GetComponent<PlayerTimer>();
 
         rb = GetComponent<Rigidbody2D>();
     }
@@ -47,6 +53,12 @@ public class PlayerManager : MonoBehaviour
         stunInvulnerability = Mathf.Max(0, stunInvulnerability - Time.deltaTime);
         if (moveStun != -1)
             moveStun = Mathf.Max(0, moveStun - Time.deltaTime);
+    }
+
+    void OnTriggerEnter2D(Collider2D trigger)
+    {
+        if (trigger.CompareTag(winZoneTag))
+            gameManager.PlayerWin();
     }
 
     public bool IsGrounded()
@@ -61,10 +73,13 @@ public class PlayerManager : MonoBehaviour
         return successful;
     }
 
-    public HitResult TryHit(float duration, float invulnerability)
+    public HitResult TryHit(Vector2 knockbackForce, float duration, float invulnerability)
     {
         if (blockInvulnerability > 0)
             return HitResult.BLOCKED;
+
+        rb.linearVelocity += knockbackForce;
+
         if (stunInvulnerability > 0)
             return HitResult.ABSORBED;
 
@@ -90,7 +105,7 @@ public class PlayerManager : MonoBehaviour
         direction = direction.normalized;
         direction.y = Mathf.Max(0, direction.y);
 
-        rb.linearVelocity += direction * recoilMultiplier * force;
+        rb.linearVelocity = CMath.TryAdd2(rb.linearVelocity, direction * recoilMultiplier * force, maxPlayerRecoil);
     }
 
     public void SetDirection(EntityDirection direction)
@@ -98,6 +113,11 @@ public class PlayerManager : MonoBehaviour
         this.direction = direction;
         playerFlip.direction = direction;
         followerFlip.direction = direction;
+    }
+
+    public bool Stunned()
+    {
+        return moveStun > 0 || moveStun == -1;
     }
 
     public void OnDrawGizmos()

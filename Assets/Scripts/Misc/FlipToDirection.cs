@@ -1,5 +1,10 @@
 using UnityEngine;
 
+public enum EntityDirection
+{
+    LEFT, RIGHT, NEUTRAL
+}
+
 public class FlipToDirection : MonoBehaviour
 {
     public float flipSpringFrequency, flipSpringDamping;
@@ -8,6 +13,11 @@ public class FlipToDirection : MonoBehaviour
     public SpringUtils.tDampedSpringMotionParams flipSpring = new();
     private float velocity = 0;
 
+    void Start()
+    {
+        SetRotation(DesiredRotation());
+    }
+
     void LateUpdate()
     {
         SpringUtils.CalcDampedSpringMotionParams(ref flipSpring, Time.deltaTime, flipSpringFrequency, flipSpringDamping);
@@ -15,8 +25,23 @@ public class FlipToDirection : MonoBehaviour
         float baseRotation = transform.eulerAngles.y;
         float rotation = CMath.Mod(baseRotation + 90, 360) - 90; // -90 - 270
 
-        SpringUtils.UpdateDampedSpringMotion(ref rotation, ref velocity, direction == EntityDirection.RIGHT ? 0 : 180, flipSpring);
+        SpringUtils.UpdateDampedSpringMotion(ref rotation, ref velocity, DesiredRotation(), flipSpring);
 
+        SetRotation(rotation);
+    }
+
+    public void SetRotation(float rotation)
+    {
         transform.eulerAngles = CMath.Vector3XZ_Y(CMath.Vector3ToXZ(transform.eulerAngles), rotation);
+    }
+
+    public float DesiredRotation()
+    {
+        return DirectionToRotation(direction);
+    }
+
+    public static float DirectionToRotation(EntityDirection direction)
+    {
+        return direction == EntityDirection.LEFT ? 180 : direction == EntityDirection.NEUTRAL ? 90 : 0;
     }
 }
