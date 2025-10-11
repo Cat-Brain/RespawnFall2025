@@ -2735,6 +2735,18 @@ PrefabInstance:
       propertyPath: winZoneTag
       value: Win Zone
       objectReference: {fileID: 0}
+    - target: {fileID: 678778273946464857, guid: 00dd54f4825b1924a9b6f4f07ad4180a, type: 3}
+      propertyPath: maxPlayerRecoil
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 678778273946464857, guid: 00dd54f4825b1924a9b6f4f07ad4180a, type: 3}
+      propertyPath: recoilMultiplier.x
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 678778273946464857, guid: 00dd54f4825b1924a9b6f4f07ad4180a, type: 3}
+      propertyPath: recoilMultiplier.y
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 711391709393914791, guid: 00dd54f4825b1924a9b6f4f07ad4180a, type: 3}
       propertyPath: lostLifeRate
       value: 4

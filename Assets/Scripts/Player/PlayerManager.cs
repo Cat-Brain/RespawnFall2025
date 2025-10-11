@@ -16,6 +16,7 @@ public class PlayerManager : MonoBehaviour
     public float groundedRadius, groundedDistance;
     public LayerMask groundedMask;
 
+    public float maxPlayerRecoil;
     public Vector2 recoilMultiplier;
 
     public EntityDirection direction;
@@ -104,7 +105,7 @@ public class PlayerManager : MonoBehaviour
         direction = direction.normalized;
         direction.y = Mathf.Max(0, direction.y);
 
-        rb.linearVelocity += direction * recoilMultiplier * force;
+        rb.linearVelocity = CMath.TryAdd2(rb.linearVelocity, direction * recoilMultiplier * force, maxPlayerRecoil);
     }
 
     public void SetDirection(EntityDirection direction)

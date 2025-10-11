@@ -177,10 +177,10 @@ MonoBehaviour:
   flip: {fileID: 5914101631167977149}
   swoopTrigger: {fileID: 7919874926372707163}
   riseTime: 1
-  swoopTime: 2
+  swoopTime: 3
   descendTime: 1
   riseHeight: 1
-  descendHeight: 6
+  descendHeight: 5
   basePos: {x: 0, y: 0}
   elapsedSwoop: 0
   swoopLeft: 0
