@@ -30,13 +30,13 @@ public class PlayerMove : MonoBehaviour
 
     public void TryJump(InputAction.CallbackContext context)
     {
-        if (playerManager.moveStun <= 0)
+        if (!playerManager.Stunned())
             jumpBufferTimer = jumpBufferTime;
     }
 
     private void FixedUpdate()
     {
-        if (playerManager.moveStun <= 0 && playerManager.moveStun != -1)
+        if (!playerManager.Stunned())
         {
             rb.sharedMaterial = movePhysicsMaterial;
 
