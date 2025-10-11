@@ -22,8 +22,71 @@
 	],
 	"customFields" : {},
 	"layers": [
-		"Tiles.png",
-		"IntGrid.png"
+		"Tiles.png"
 	],
-	"entities" : {}
+	"entities": {
+		"Player": [
+			{
+				"id": "Player",
+				"iid": "6a7e8440-8560-11f0-b4fd-0500a02c86ea",
+				"layer": "Entities",
+				"x": 16,
+				"y": 448,
+				"width": 16,
+				"height": 16,
+				"color": 12470831,
+				"customFields" : {}
+			}
+		],
+		"Walker": [
+			{
+				"id": "Walker",
+				"iid": "6e92d400-8560-11f0-b4fd-7ba81f330d81",
+				"layer": "Entities",
+				"x": 16,
+				"y": 272,
+				"width": 16,
+				"height": 16,
+				"color": 16711748,
+				"customFields" : {}
+			},
+			{
+				"id": "Walker",
+				"iid": "6f4bc3c0-8560-11f0-b4fd-25794d00212f",
+				"layer": "Entities",
+				"x": 192,
+				"y": 448,
+				"width": 16,
+				"height": 16,
+				"color": 16711748,
+				"customFields" : {}
+			},
+			{
+				"id": "Walker",
+				"iid": "7568b4c0-8560-11f0-b4fd-35c9d29346d2",
+				"layer": "Entities",
+				"x": 304,
+				"y": 416,
+				"width": 16,
+				"height": 16,
+				"color": 16711748,
+				"customFields" : {}
+			}
+		],
+		"Flower": [
+			{
+				"id": "Flower",
+				"iid": "80a30110-8560-11f0-b4fd-0376e79dc2f0",
+				"layer": "Entities",
+				"x": 368,
+				"y": 368,
+				"width": 16,
+				"height": 16,
+				"color": 4098376,
+				"customFields": {
+					"Degree": null
+				}
+			}
+		]
+	}
 }

@@ -1,0 +1,33 @@
+{
+  "Rects": null,
+  "Def": {
+    "__cHei": 4,
+    "__cWid": 8,
+    "cachedPixelData": {
+      "opaqueTiles": "00000000000000000000000000000000",
+      "averageColors": "4a874a874a874a864a874a874a874a874a874a874a874a874a874a874a874b974a974b974a874a87000000000000000000000000000000000000000000000000"
+    },
+    "customData": [
+
+    ],
+    "embedAtlas": null,
+    "enumTags": [
+
+    ],
+    "identifier": "Orpheus_base",
+    "padding": 0,
+    "pxHei": 2048,
+    "pxWid": 4096,
+    "relPath": "../AssetAssets/Art/orpheus_base.png",
+    "savedSelections": [
+
+    ],
+    "spacing": 0,
+    "tags": [
+
+    ],
+    "tagsSourceEnumUid": null,
+    "tileGridSize": 512,
+    "uid": 11
+  }
+}

@@ -26,8 +26,7 @@
 	],
 	"customFields" : {},
 	"layers": [
-		"Tiles.png",
-		"IntGrid.png"
+		"Tiles.png"
 	],
 	"entities" : {}
 }
