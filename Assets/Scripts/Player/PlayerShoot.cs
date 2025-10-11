@@ -28,20 +28,12 @@ public class PlayerShoot : MonoBehaviour
     {
         coolDownTimer -= Time.deltaTime;
 
-        if (playerManagerScript.IsGrounded())
+        regenTimer -= Time.deltaTime;
+        if (currentStrings < maxStrings && regenTimer <= 0)
         {
-            regenTimer -= Time.deltaTime;
-            if (currentStrings < maxStrings && regenTimer <= 0)
-            {
-                regenTimer = regenConsecTime;
-                currentStrings++;
-            }
-        }
-        
-        else
-        {
-            regenTimer = regenTime;
-        }
+            regenTimer = regenConsecTime;
+            currentStrings++;
+         }
     }
 
     void Shoot(InputAction.CallbackContext context) {
