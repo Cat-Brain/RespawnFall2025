@@ -5,6 +5,7 @@ public class ExplosiveFlower : EnemyHealth
     public float explosionRadius, explosionForce;
     [Range(0, 1)] public float verticalBoostCorrection;
     public LayerMask explosionMask;
+    public AudioClip flowerPopClip;
 
     public override void Death()
     {
@@ -25,6 +26,7 @@ public class ExplosiveFlower : EnemyHealth
             }
 
         base.Death();
+        AudioManager.instance.PlaySoundFXClip(flowerPopClip, transform, 0.2f);
     }
 
     void OnDrawGizmos()
