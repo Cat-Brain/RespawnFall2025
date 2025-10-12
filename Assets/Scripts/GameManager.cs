@@ -14,7 +14,7 @@ public class GameManager : MonoBehaviour
     public SceneLoadManager sceneLoadManager;
     public GameObject inGameDisplay, loseDisplay, winDisplay, upgradeDisplay, mainMenuDisplay, settingsDisplay, pauseDisplay;
 
-    public string mainMenuSceneName, inGameSceneName;
+    public string mainMenuSceneName, inGameSceneName, winSceneName;
 
     public InputActionReference pauseAction;
 
@@ -50,11 +50,12 @@ public class GameManager : MonoBehaviour
         if (gameState != GameState.IN_GAME)
             return;
 
-        gameState = GameState.WIN_SCREEN;
         playerManager.moveStun = -1;
         playerManager.SetDirection(EntityDirection.NEUTRAL);
 
-        Debug.Log("Pretend that there's cool on win stuff here");
+        UnityEvent onFadeEvent = new();
+        onFadeEvent.AddListener(() => { gameState = GameState.WIN_SCREEN; });
+        sceneLoadManager.StartLoad(winSceneName, onFadeEvent);
     }
 
     public void PlayerLose()
@@ -62,12 +63,12 @@ public class GameManager : MonoBehaviour
         if (gameState != GameState.IN_GAME)
             return;
 
-        gameState = GameState.LOSE_ANIMATION;
-        playerManager.moveStun = -1;
-        playerManager.SetDirection(EntityDirection.NEUTRAL);
-
         AudioManager.instance.PlaySoundFXClip(deathClip, transform, 1.0f);
-        Debug.Log("Pretend that there's cool on lose stuff here");
+
+        UnityEvent onFadeEvent = new();
+        onFadeEvent.AddListener(() => { gameState = GameState.LOSE_ANIMATION; });
+        sceneLoadManager.StartLoad(mainMenuSceneName, onFadeEvent);
+
     }
 
     #region Menu Swappers
