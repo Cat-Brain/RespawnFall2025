@@ -6,6 +6,7 @@ public class PlayerMove : MonoBehaviour
     public float accel, speed;
 
     public float jumpForce;
+    public int airJumps;
 
     [Tooltip("Time that a player can press the jump button early and still have it register")]
     public float jumpBufferTime;
@@ -15,6 +16,7 @@ public class PlayerMove : MonoBehaviour
     public float jumpSpamTime;
     private float jumpBufferTimer = 0, cayoteTimer = 0, jumpSpamTimer = 0;
     public float tapJumpTimer = 0;
+    public int remainingAirJumps;
 
     public PhysicsMaterial2D movePhysicsMaterial, stunnedPhysicsMaterial;
 
@@ -50,6 +52,9 @@ public class PlayerMove : MonoBehaviour
 
             bool grounded = playerManager.IsGrounded();
 
+            if (grounded)
+                remainingAirJumps = airJumps;
+
             float horizontalInput = playerManager.moveAction.action.ReadValue<float>();
 
             if (Mathf.Abs(horizontalInput) > 0.1f)
@@ -63,11 +68,19 @@ public class PlayerMove : MonoBehaviour
             if (grounded)
                 cayoteTimer = cayoteTime;
 
-            if (jumpBufferTimer > 0 && cayoteTimer > 0 && jumpSpamTimer <= 0)
+            if (jumpBufferTimer > 0 && (cayoteTimer > 0 || remainingAirJumps > 0) && jumpSpamTimer <= 0)
             {
                 rb.linearVelocityY = Mathf.Max(0, rb.linearVelocityY) + jumpForce;
+
+                if (cayoteTimer > 0)
+                {
+                    cayoteTimer = 0;
+                    remainingAirJumps = airJumps;
+                }
+                else
+                    remainingAirJumps--;
+
                 jumpBufferTimer = 0;
-                cayoteTimer = 0;
                 jumpSpamTimer = jumpSpamTime;
                 tapJumpTimer = jumpForce / playerManager.playerGravity.gravity;
             }
