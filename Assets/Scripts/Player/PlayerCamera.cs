@@ -7,8 +7,16 @@ public class PlayerCamera : MonoBehaviour
     public float moveSpringFrequency, moveSpringDamping;
     public float minHeight, maxHeight;
 
+    public bool resetPosOnAwake;
+
     [HideInInspector] public float velocity = 0;
     public SpringUtils.tDampedSpringMotionParams moveSpring = new();
+
+    private void Awake()
+    {
+        if (resetPosOnAwake)
+            transform.position = new Vector3(0, DesiredHeight(), transform.position.z);
+    }
 
     void LateUpdate()
     {

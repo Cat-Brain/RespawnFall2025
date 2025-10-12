@@ -13,7 +13,7 @@ public class HopperEnemy : MonoBehaviour
     public float validJumpTestRadius;
     public float jumpCooldownTime, projectileFireTime, projectileCooldownTime;
     public float projectileRange, projectileRadius;
-    public LayerMask wallMask;
+    public LayerMask platformMask, wallMask;
 
     private bool facingLeft;
     private float jumpTimer = 0, jumpCooldownTimer = 0,
@@ -42,9 +42,7 @@ public class HopperEnemy : MonoBehaviour
         if (jumpTimer > 0 && jumpTimer < Time.fixedDeltaTime)
         {
             jumpCooldownTimer = jumpCooldownTime;
-            if (!Physics2D.OverlapCircle(FloorTestPos(), validJumpTestRadius) ||
-                Physics2D.OverlapCircle(WallTestPos(), validJumpTestRadius))
-                SetDir(!facingLeft);
+            Reorient();
         }
         jumpTimer = Mathf.Max(0, jumpTimer - Time.fixedDeltaTime);
         jumpCooldownTimer = Mathf.Max(0, jumpCooldownTimer - Time.fixedDeltaTime);
@@ -58,6 +56,16 @@ public class HopperEnemy : MonoBehaviour
             return;
 
         ActivateJump();
+    }
+
+    public bool Reorient()
+    {
+        if (Physics2D.OverlapCircle(FloorTestPos(), validJumpTestRadius, platformMask) &&
+            !Physics2D.OverlapCircle(WallTestPos(), validJumpTestRadius, platformMask))
+            return false;
+
+        SetDir(!facingLeft);
+        return true;
     }
 
     public bool TryShootPlayer()
@@ -118,9 +126,7 @@ public class HopperEnemy : MonoBehaviour
     public void ActivateJump()
     {
         jumpTimer = JumpDuration();
-        if (!Physics2D.OverlapCircle(FloorTestPos(), validJumpTestRadius) ||
-            Physics2D.OverlapCircle(WallTestPos(), validJumpTestRadius))
-            SetDir(!facingLeft);
+        Reorient();
         rb.linearVelocity = JumpVelocity();
     }
 

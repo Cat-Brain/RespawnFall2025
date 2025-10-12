@@ -136,6 +136,63 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!1 &1555276496914292317
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1099282004104271991}
+  - component: {fileID: 2035370362801213309}
+  m_Layer: 0
+  m_Name: Generation Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1099282004104271991
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1555276496914292317}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3282174016193848263}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2035370362801213309
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1555276496914292317}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09be0883a62c8b5478190471071483c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GenerationManager
+  gameManager: {fileID: 4989346605032106179}
+  cameraSize: 10
+  beginningChunks:
+  - prefab: {fileID: 2816548378978262457, guid: 856924c8e338a9445a1f54f4e127f8db, type: 3}
+    spawnOffset: {x: -16, y: 0, z: 0}
+    dimensions: {x: 32, y: 48}
+  - prefab: {fileID: -2290654371478602051, guid: 841a1bdc15d9aee4f832996e2c294150, type: 3}
+    spawnOffset: {x: -16, y: 0, z: 0}
+    dimensions: {x: 32, y: 48}
+  middleChunks: []
+  endChunks: []
+  middleChunkCount: 0
+  currentChunks: []
 --- !u!1 &6604190446270998753
 GameObject:
   m_ObjectHideFlags: 0
@@ -212,6 +269,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1537728722890394390}
+  - {fileID: 1099282004104271991}
   - {fileID: 4852006396758317509}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -361,6 +419,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9c802ceaef97af418b0a03ef2f798d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameManager
+  generationManager: {fileID: 2035370362801213309}
   playerManager: {fileID: 0}
   deathZone: {fileID: 0}
+  shouldGenerateTerrainOnLoad: 1
   gameState: 0

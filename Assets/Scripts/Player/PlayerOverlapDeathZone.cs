@@ -12,7 +12,8 @@ public class PlayerOverlapDeathZone : MonoBehaviour
     {
         if (trigger.CompareTag(deathZoneTag))
         {
-            playerManager.gameManager.deathZone.TryAddStun(stunRate * Time.fixedDeltaTime, maxStun);
+            if (playerManager.gameManager.deathZone)
+                playerManager.gameManager.deathZone.TryAddStun(stunRate * Time.fixedDeltaTime, maxStun);
             playerManager.playerTimer.DecreaseTime(lostLifeRate * Time.fixedDeltaTime);
         }
     }
