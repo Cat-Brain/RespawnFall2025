@@ -3,7 +3,7 @@ using UnityEngine.Events;
 
 public enum GameState
 {
-    IN_GAME, LOSE_ANIMATION, WIN_SCREEN, UPGRADE_SCREEN, MAIN_MENU, SETTINGS_MENU, PAUSE_MENU, TEMPORARY
+    IN_GAME, LOSE_ANIMATION, WIN_SCREEN, UPGRADE_SCREEN, MAIN_MENU, SETTINGS_MENU, PAUSE_MENU
 }
 
 public class GameManager : MonoBehaviour
@@ -30,9 +30,6 @@ public class GameManager : MonoBehaviour
 
     void Update()
     {
-        if (gameState == GameState.TEMPORARY)
-            return;
-
         inGameDisplay.SetActive(gameState == GameState.IN_GAME);
         loseDisplay.SetActive(gameState == GameState.LOSE_ANIMATION);
         winDisplay.SetActive(gameState == GameState.WIN_SCREEN);
@@ -70,19 +67,18 @@ public class GameManager : MonoBehaviour
 
     public void SwitchToInGame()
     {
-        if (gameState != GameState.MAIN_MENU && gameState != GameState.PAUSE_MENU && gameState != GameState.TEMPORARY)
+        if (gameState != GameState.MAIN_MENU && gameState != GameState.PAUSE_MENU)
             return;
 
-        if (gameState == GameState.PAUSE_MENU || gameState == GameState.TEMPORARY)
+        if (gameState == GameState.PAUSE_MENU)
         {
             Time.timeScale = 1;
             gameState = GameState.IN_GAME;
             return;
         }
 
-        gameState = GameState.TEMPORARY;
         UnityEvent onFadeEvent = new();
-        onFadeEvent.AddListener(SwitchToInGame);
+        onFadeEvent.AddListener(() => { gameState = GameState.IN_GAME; generationManager.Init(); });
         sceneLoadManager.StartLoad(inGameSceneName, onFadeEvent);
     }
 
@@ -96,18 +92,17 @@ public class GameManager : MonoBehaviour
 
     public void SwitchToMainMenu()
     {
-        if (gameState != GameState.SETTINGS_MENU && gameState != GameState.PAUSE_MENU && gameState != GameState.TEMPORARY)
+        if (gameState != GameState.SETTINGS_MENU && gameState != GameState.PAUSE_MENU)
             return;
 
-        if (gameState == GameState.SETTINGS_MENU || gameState == GameState.TEMPORARY)
+        if (gameState == GameState.SETTINGS_MENU)
         {
             gameState = GameState.MAIN_MENU;
             return;
         }
 
-        gameState = GameState.TEMPORARY;
         UnityEvent onFadeEvent = new();
-        onFadeEvent.AddListener(SwitchToMainMenu);
+        onFadeEvent.AddListener(() => { gameState = GameState.SETTINGS_MENU; });
         sceneLoadManager.StartLoad(mainMenuSceneName, onFadeEvent);
     }
 

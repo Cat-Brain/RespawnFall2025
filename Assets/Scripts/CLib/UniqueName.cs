@@ -6,6 +6,9 @@ public class UniqueName : MonoBehaviour
     {
         foreach (UniqueName other in FindObjectsByType<UniqueName>(FindObjectsInactive.Include, FindObjectsSortMode.None))
             if (this != other && gameObject.name == other.gameObject.name)
-                Destroy(gameObject);
+            {
+                DestroyImmediate(gameObject);
+                return;
+            }
     }
 }

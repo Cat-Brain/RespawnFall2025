@@ -17,7 +17,10 @@ public class SceneLoadManager : MonoBehaviour
     void Update()
     {
         if (!loadingScene)
+        {
+            fadeBox.color = Color.clear;
             fadeBox.enabled = false;
+        }
     }
 
     public void StartLoad(string sceneName, UnityEvent onBlackScreen = null)
