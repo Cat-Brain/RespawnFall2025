@@ -5,9 +5,6 @@ TextureImporter:
   - first:
       213: -1748029715406462312
     second: IntGrid-int_0
-  - first:
-      213: -1794270588547358629
-    second: IntGrid-int_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -108,7 +105,7 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 10
+        width: 36
         height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -120,28 +117,6 @@ TextureImporter:
       bones: []
       spriteID: 892ee5c3c30cdb7e0800000000000000
       internalID: -1748029715406462312
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: IntGrid-int_1
-      rect:
-        serializedVersion: 2
-        x: 24
-        y: 0
-        width: 12
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: b5024baf7687917e0800000000000000
-      internalID: -1794270588547358629
       vertices: []
       indices: 
       edges: []
@@ -161,7 +136,6 @@ TextureImporter:
       entries: []
     nameFileIdTable:
       IntGrid-int_0: -1748029715406462312
-      IntGrid-int_1: -1794270588547358629
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

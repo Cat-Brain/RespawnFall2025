@@ -168,11 +168,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b69dfdc67458fc4092cb6734d0d5065, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyProjectile
-  knockback: 5
+  knockback: 2
   stunDuration: 2
   invulnerability: 3
   playerTag: Player
-  speed: 6
+  speed: 7
   stoppedByMask:
     serializedVersion: 2
     m_Bits: 1

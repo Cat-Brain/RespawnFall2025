@@ -9,9 +9,9 @@ public struct LevelChunk
     public Vector3 spawnOffset;
     public Vector2 dimensions;
 
-    public GameObject Spawn(Vector2 offset)
+    public GameObject Spawn(Vector2 offset, Transform parent = null)
     {
-        return GameObject.Instantiate(prefab, spawnOffset + (Vector3)offset, Quaternion.identity);
+        return GameObject.Instantiate(prefab, spawnOffset + (Vector3)offset, Quaternion.identity, parent);
     }
 }
 
@@ -36,7 +36,7 @@ public class GenerationManager : MonoBehaviour
         currentChunks.Add(beginningChunk.Spawn(Vector2.up * offset));
         offset += beginningChunk.dimensions.y;
 
-        /*for (int i = 0; i < middleChunkCount; i++)
+        for (int i = 0; i < middleChunkCount; i++)
         {
             LevelChunk middleChunk = middleChunks[UnityEngine.Random.Range(0, middleChunks.Count)];
             currentChunks.Add(middleChunk.Spawn(Vector2.up * offset));
@@ -45,7 +45,7 @@ public class GenerationManager : MonoBehaviour
 
         LevelChunk endChunk = endChunks[UnityEngine.Random.Range(0, endChunks.Count)];
         currentChunks.Add(endChunk.Spawn(Vector2.up * offset));
-        offset += endChunk.dimensions.y;*/
+        offset += endChunk.dimensions.y;
 
         if (!gameManager.playerManager)
             gameManager.playerManager = FindFirstObjectByType<PlayerManager>();
