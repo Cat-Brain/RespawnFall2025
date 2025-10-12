@@ -3,6 +3,7 @@ using UnityEngine;
 public class EnemyProjectile : EnemyHitbox
 {
     public float speed;
+    public LayerMask stoppedByMask;
     
     [HideInInspector] public Vector2 direction;
 
@@ -18,6 +19,13 @@ public class EnemyProjectile : EnemyHitbox
     {
         base.OnHit(playerManager);
         Destroy(gameObject);
-        this.enabled = false;
+        enabled = false;
+    }
+
+    new void OnTriggerEnter2D(Collider2D collision)
+    {
+        base.OnTriggerEnter2D(collision);
+        if (CMath.LayerOverlapsMask(collision.gameObject.layer, stoppedByMask))
+            Destroy(gameObject);
     }
 }

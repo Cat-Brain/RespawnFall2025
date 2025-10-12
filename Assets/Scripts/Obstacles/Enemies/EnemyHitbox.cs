@@ -20,7 +20,7 @@ public class EnemyHitbox : MonoBehaviour
             OnHit(playerManager);   
     }
 
-    void OnTriggerEnter2D(Collider2D hitCollider)
+    public void OnTriggerEnter2D(Collider2D hitCollider)
     {
         if (enabled && hitCollider.CompareTag(playerTag) &&
             hitCollider.TryGetComponent(out PlayerManager playerManager))

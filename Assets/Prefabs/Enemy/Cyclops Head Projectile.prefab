@@ -128,7 +128,7 @@ CircleCollider2D:
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  m_Radius: 0.5
+  m_Radius: 0.4
 --- !u!50 &3005603992350851916
 Rigidbody2D:
   serializedVersion: 5
@@ -173,4 +173,7 @@ MonoBehaviour:
   invulnerability: 3
   playerTag: Player
   speed: 6
+  stoppedByMask:
+    serializedVersion: 2
+    m_Bits: 1
   direction: {x: 0, y: 0}

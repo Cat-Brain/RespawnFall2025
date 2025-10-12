@@ -6301,7 +6301,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2440918564024729543, guid: 856924c8e338a9445a1f54f4e127f8db, type: 3}
       propertyPath: maxPlayerRecoil
-      value: 8
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2440918564024729543, guid: 856924c8e338a9445a1f54f4e127f8db, type: 3}
+      propertyPath: recoilMultiplier.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2440918564024729543, guid: 856924c8e338a9445a1f54f4e127f8db, type: 3}
+      propertyPath: recoilMultiplier.y
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2816548378978262457, guid: 856924c8e338a9445a1f54f4e127f8db, type: 3}
       propertyPath: m_Name
