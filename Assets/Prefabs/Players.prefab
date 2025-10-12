@@ -223,17 +223,17 @@ MonoBehaviour:
   hasPhasing: 0
   hasRecoil: 0
   shootClips:
-  - {fileID: 8300000, guid: 2fe7a2781f9f0be45b5381646c780ec3, type: 3}
-  - {fileID: 8300000, guid: 25e3e13de64c5f7478bd1832a501811f, type: 3}
-  - {fileID: 8300000, guid: 16482d2c462440440be1500b89a6a6c5, type: 3}
-  - {fileID: 8300000, guid: 5f3ddd9b1c9e58a40a21b677560bc513, type: 3}
-  - {fileID: 8300000, guid: c220144af9662f34aaf2ff919fce78b2, type: 3}
-  - {fileID: 8300000, guid: f1caa81da1d006e48bb6cc909bd1aeb8, type: 3}
-  - {fileID: 8300000, guid: 5e247c62b020a6549876e4d73a39734a, type: 3}
-  - {fileID: 8300000, guid: ec7334f47a9557f4082d35d566e58856, type: 3}
-  - {fileID: 8300000, guid: 703c27151fdc1ff4db89cbfbca438868, type: 3}
-  - {fileID: 8300000, guid: 364bbb50e0e32de4bba80818953d73b3, type: 3}
-  reloadClip: {fileID: 8300000, guid: b39f53e35715e1e498110e82be73997a, type: 3}
+  - {fileID: 8300000, guid: 12f07d83d46146544815b7db521142c4, type: 3}
+  - {fileID: 8300000, guid: 2e2131eb1994ff24dbad1a681a1da3e0, type: 3}
+  - {fileID: 8300000, guid: ed046fbfd7ace4a4f91d6be8d099d46a, type: 3}
+  - {fileID: 8300000, guid: b36af62c01c10e842922684dced8660b, type: 3}
+  - {fileID: 8300000, guid: c03527375322651488394781b095055a, type: 3}
+  - {fileID: 8300000, guid: 9faea2d321b8d6944b7a0fcdf35464f0, type: 3}
+  - {fileID: 8300000, guid: e5cf64c368b3ab640bc0845c2fd34fba, type: 3}
+  - {fileID: 8300000, guid: 6db4e71ecdcf0874ab8de4e4fe32b5b5, type: 3}
+  - {fileID: 8300000, guid: 50a7d730977204049acd4462513d799c, type: 3}
+  - {fileID: 8300000, guid: 30f1a048bc9e44348a00c4279b25f159, type: 3}
+  reloadClip: {fileID: 8300000, guid: 0b6a323065b88484c9435e1ef52b9885, type: 3}
   coolDownTime: 0.2
   coolDownTimer: 0
   regenTime: 1
