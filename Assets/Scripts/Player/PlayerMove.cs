@@ -23,8 +23,6 @@ public class PlayerMove : MonoBehaviour
     private Rigidbody2D rb;
     private PlayerManager playerManager;
 
-    //public AnimationClip[] animClips;
-    public Animator animator;
     public Sprite sprite;
     void Awake()
     {
@@ -71,11 +69,6 @@ public class PlayerMove : MonoBehaviour
 
             if (grounded)
                 cayoteTimer = cayoteTime;
-
-            if(rb.linearVelocityX != 0)
-            {
-                animator.SetBool("isRunning", true);
-            }
 
             if (jumpBufferTimer > 0 && (cayoteTimer > 0 || remainingAirJumps > 0) && jumpSpamTimer <= 0)
             {
