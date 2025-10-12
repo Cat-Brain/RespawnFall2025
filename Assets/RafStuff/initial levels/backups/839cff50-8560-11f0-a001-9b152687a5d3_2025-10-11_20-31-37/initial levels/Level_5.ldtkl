@@ -62,8 +62,8 @@
 			"__opacity": 1,
 			"__pxTotalOffsetX": 0,
 			"__pxTotalOffsetY": 0,
-			"__tilesetDefUid": 2,
-			"__tilesetRelPath": "roguelikeSheet_transparent.png",
+			"__tilesetDefUid": 24,
+			"__tilesetRelPath": "initial levels/tilemap.png",
 			"iid": "842ed0d1-8560-11f0-b4fd-b7a3b9d97703",
 			"levelId": 25,
 			"layerDefUid": 3,
@@ -74,7 +74,7 @@
 			"intGridCsv": [],
 			"autoLayerTiles": [],
 			"seed": 3056022,
-			"overrideTilesetUid": 2,
+			"overrideTilesetUid": 24,
 			"gridTiles": [],
 			"entityInstances": []
 		}
