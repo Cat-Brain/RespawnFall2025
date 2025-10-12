@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Win Zone
   - Enemy
+  - Death Zone
   layers:
   - Default
   - TransparentFX
@@ -16,9 +17,9 @@ TagManager:
   - Death Zone
   - Win Zone
   - Projectile
-  - 
-  - 
-  - 
+  - Enemy
+  - Player
+  - Incorporeal
   - 
   - 
   - 

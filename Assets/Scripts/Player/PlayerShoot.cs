@@ -10,6 +10,8 @@ public class PlayerShoot : MonoBehaviour
     public GameObject bulletPrefab;
     public Vector3 spawn;
     public int currentStrings, maxStrings;
+    public bool hasStrings, hasExplosives, hasPhasing, hasRecoil; // Orpheus upgrades
+    
     // Time references the max cool down time, and timer references the current time.
     public float coolDownTime, coolDownTimer;
     public float regenTime, regenTimer, regenConsecTime; 

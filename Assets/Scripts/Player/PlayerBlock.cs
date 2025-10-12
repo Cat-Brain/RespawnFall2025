@@ -7,6 +7,7 @@ public class PlayerBlock : MonoBehaviour
     private float blockStunTimer = 0, earlyBlockBufferTimer = 0, perfectBlockTimer = 0;
 
     private PlayerManager playerManager;
+    public bool hasBlockDuration, hasTacticalReload, hasSpeedBoost, hasExplosion; // Eurydice upgrades
 
     private void Awake()
     {

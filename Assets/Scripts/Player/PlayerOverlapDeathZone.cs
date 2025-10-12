@@ -4,15 +4,16 @@ public class PlayerOverlapDeathZone : MonoBehaviour
 {
     public PlayerManager playerManager;
 
+    public string deathZoneTag;
     public float lostLifeRate;
     public float stunRate, maxStun;
 
-    void Update()
+    void OnTriggerStay2D(Collider2D trigger)
     {
-        if (transform.position.y <= playerManager.gameManager.deathZone.DeadlyHeight())
+        if (trigger.CompareTag(deathZoneTag))
         {
-            playerManager.gameManager.deathZone.TryAddStun(stunRate * Time.deltaTime, maxStun);
-            playerManager.playerTimer.DecreaseTime(lostLifeRate * Time.deltaTime);
+            playerManager.gameManager.deathZone.TryAddStun(stunRate * Time.fixedDeltaTime, maxStun);
+            playerManager.playerTimer.DecreaseTime(lostLifeRate * Time.fixedDeltaTime);
         }
     }
 }
