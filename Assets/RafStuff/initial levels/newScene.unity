@@ -1893,7 +1893,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -1810640293193188535, guid: 856924c8e338a9445a1f54f4e127f8db, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -10
       objectReference: {fileID: 0}
     - target: {fileID: -971078535549965612, guid: 856924c8e338a9445a1f54f4e127f8db, type: 3}
       propertyPath: accel
@@ -1902,6 +1902,18 @@ PrefabInstance:
     - target: {fileID: -971078535549965612, guid: 856924c8e338a9445a1f54f4e127f8db, type: 3}
       propertyPath: speed
       value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: -971078535549965612, guid: 856924c8e338a9445a1f54f4e127f8db, type: 3}
+      propertyPath: jumpForce
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 999485935301178359, guid: 856924c8e338a9445a1f54f4e127f8db, type: 3}
+      propertyPath: <Pivot>k__BackingField.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2090127150767609401, guid: 856924c8e338a9445a1f54f4e127f8db, type: 3}
+      propertyPath: maxHeight
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 2440918564024729543, guid: 856924c8e338a9445a1f54f4e127f8db, type: 3}
       propertyPath: maxPlayerRecoil
