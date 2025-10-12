@@ -11,8 +11,8 @@
 	"identifier": "Conclusion_1",
 	"iid": "53755620-8560-11f0-964f-ab81400050f7",
 	"uid": 9,
-	"worldX": 1168,
-	"worldY": 768,
+	"worldX": 16,
+	"worldY": 1104,
 	"worldDepth": 0,
 	"pxWid": 576,
 	"pxHei": 384,
@@ -366,8 +366,8 @@
 					"defUid": 19,
 					"px": [56,272],
 					"fieldInstances": [],
-					"__worldX": 1224,
-					"__worldY": 1040
+					"__worldX": 72,
+					"__worldY": 1376
 				},
 				{
 					"__identifier": "Flower",
@@ -382,8 +382,8 @@
 					"defUid": 19,
 					"px": [536,272],
 					"fieldInstances": [],
-					"__worldX": 1704,
-					"__worldY": 1040
+					"__worldX": 552,
+					"__worldY": 1376
 				},
 				{
 					"__identifier": "One_Way",
@@ -398,8 +398,8 @@
 					"defUid": 20,
 					"px": [560,208],
 					"fieldInstances": [],
-					"__worldX": 1728,
-					"__worldY": 976
+					"__worldX": 576,
+					"__worldY": 1312
 				},
 				{
 					"__identifier": "One_Way",
@@ -414,8 +414,8 @@
 					"defUid": 20,
 					"px": [544,208],
 					"fieldInstances": [],
-					"__worldX": 1712,
-					"__worldY": 976
+					"__worldX": 560,
+					"__worldY": 1312
 				},
 				{
 					"__identifier": "One_Way",
@@ -430,8 +430,8 @@
 					"defUid": 20,
 					"px": [512,208],
 					"fieldInstances": [],
-					"__worldX": 1680,
-					"__worldY": 976
+					"__worldX": 528,
+					"__worldY": 1312
 				},
 				{
 					"__identifier": "One_Way",
@@ -446,8 +446,8 @@
 					"defUid": 20,
 					"px": [528,208],
 					"fieldInstances": [],
-					"__worldX": 1696,
-					"__worldY": 976
+					"__worldX": 544,
+					"__worldY": 1312
 				},
 				{
 					"__identifier": "Crumbling",
@@ -462,8 +462,8 @@
 					"defUid": 21,
 					"px": [320,208],
 					"fieldInstances": [],
-					"__worldX": 1488,
-					"__worldY": 976
+					"__worldX": 336,
+					"__worldY": 1312
 				},
 				{
 					"__identifier": "Crumbling",
@@ -478,8 +478,8 @@
 					"defUid": 21,
 					"px": [304,208],
 					"fieldInstances": [],
-					"__worldX": 1472,
-					"__worldY": 976
+					"__worldX": 320,
+					"__worldY": 1312
 				},
 				{
 					"__identifier": "Crumbling",
@@ -494,8 +494,8 @@
 					"defUid": 21,
 					"px": [288,208],
 					"fieldInstances": [],
-					"__worldX": 1456,
-					"__worldY": 976
+					"__worldX": 304,
+					"__worldY": 1312
 				},
 				{
 					"__identifier": "Crumbling",
@@ -510,8 +510,8 @@
 					"defUid": 21,
 					"px": [272,208],
 					"fieldInstances": [],
-					"__worldX": 1440,
-					"__worldY": 976
+					"__worldX": 288,
+					"__worldY": 1312
 				},
 				{
 					"__identifier": "Crumbling",
@@ -526,8 +526,8 @@
 					"defUid": 21,
 					"px": [256,208],
 					"fieldInstances": [],
-					"__worldX": 1424,
-					"__worldY": 976
+					"__worldX": 272,
+					"__worldY": 1312
 				},
 				{
 					"__identifier": "Crumbling",
@@ -542,8 +542,8 @@
 					"defUid": 21,
 					"px": [128,208],
 					"fieldInstances": [],
-					"__worldX": 1296,
-					"__worldY": 976
+					"__worldX": 144,
+					"__worldY": 1312
 				},
 				{
 					"__identifier": "Crumbling",
@@ -558,8 +558,8 @@
 					"defUid": 21,
 					"px": [144,208],
 					"fieldInstances": [],
-					"__worldX": 1312,
-					"__worldY": 976
+					"__worldX": 160,
+					"__worldY": 1312
 				},
 				{
 					"__identifier": "Crumbling",
@@ -574,8 +574,8 @@
 					"defUid": 21,
 					"px": [112,208],
 					"fieldInstances": [],
-					"__worldX": 1280,
-					"__worldY": 976
+					"__worldX": 128,
+					"__worldY": 1312
 				},
 				{
 					"__identifier": "Crumbling",
@@ -590,8 +590,8 @@
 					"defUid": 21,
 					"px": [96,208],
 					"fieldInstances": [],
-					"__worldX": 1264,
-					"__worldY": 976
+					"__worldX": 112,
+					"__worldY": 1312
 				},
 				{
 					"__identifier": "One_Way",
@@ -606,8 +606,8 @@
 					"defUid": 20,
 					"px": [496,208],
 					"fieldInstances": [],
-					"__worldX": 1664,
-					"__worldY": 976
+					"__worldX": 512,
+					"__worldY": 1312
 				},
 				{
 					"__identifier": "One_Way",
@@ -622,8 +622,8 @@
 					"defUid": 20,
 					"px": [480,208],
 					"fieldInstances": [],
-					"__worldX": 1648,
-					"__worldY": 976
+					"__worldX": 496,
+					"__worldY": 1312
 				},
 				{
 					"__identifier": "One_Way",
@@ -638,8 +638,8 @@
 					"defUid": 20,
 					"px": [32,208],
 					"fieldInstances": [],
-					"__worldX": 1200,
-					"__worldY": 976
+					"__worldX": 48,
+					"__worldY": 1312
 				},
 				{
 					"__identifier": "One_Way",
@@ -654,8 +654,8 @@
 					"defUid": 20,
 					"px": [48,208],
 					"fieldInstances": [],
-					"__worldX": 1216,
-					"__worldY": 976
+					"__worldX": 64,
+					"__worldY": 1312
 				},
 				{
 					"__identifier": "One_Way",
@@ -670,8 +670,8 @@
 					"defUid": 20,
 					"px": [64,208],
 					"fieldInstances": [],
-					"__worldX": 1232,
-					"__worldY": 976
+					"__worldX": 80,
+					"__worldY": 1312
 				},
 				{
 					"__identifier": "One_Way",
@@ -686,8 +686,8 @@
 					"defUid": 20,
 					"px": [80,208],
 					"fieldInstances": [],
-					"__worldX": 1248,
-					"__worldY": 976
+					"__worldX": 96,
+					"__worldY": 1312
 				},
 				{
 					"__identifier": "One_Way",
@@ -702,8 +702,8 @@
 					"defUid": 20,
 					"px": [144,288],
 					"fieldInstances": [],
-					"__worldX": 1312,
-					"__worldY": 1056
+					"__worldX": 160,
+					"__worldY": 1392
 				},
 				{
 					"__identifier": "One_Way",
@@ -718,8 +718,8 @@
 					"defUid": 20,
 					"px": [160,288],
 					"fieldInstances": [],
-					"__worldX": 1328,
-					"__worldY": 1056
+					"__worldX": 176,
+					"__worldY": 1392
 				},
 				{
 					"__identifier": "One_Way",
@@ -734,8 +734,8 @@
 					"defUid": 20,
 					"px": [176,288],
 					"fieldInstances": [],
-					"__worldX": 1344,
-					"__worldY": 1056
+					"__worldX": 192,
+					"__worldY": 1392
 				},
 				{
 					"__identifier": "One_Way",
@@ -750,8 +750,8 @@
 					"defUid": 20,
 					"px": [192,288],
 					"fieldInstances": [],
-					"__worldX": 1360,
-					"__worldY": 1056
+					"__worldX": 208,
+					"__worldY": 1392
 				},
 				{
 					"__identifier": "One_Way",
@@ -766,8 +766,8 @@
 					"defUid": 20,
 					"px": [384,288],
 					"fieldInstances": [],
-					"__worldX": 1552,
-					"__worldY": 1056
+					"__worldX": 400,
+					"__worldY": 1392
 				},
 				{
 					"__identifier": "One_Way",
@@ -782,8 +782,8 @@
 					"defUid": 20,
 					"px": [352,288],
 					"fieldInstances": [],
-					"__worldX": 1520,
-					"__worldY": 1056
+					"__worldX": 368,
+					"__worldY": 1392
 				},
 				{
 					"__identifier": "One_Way",
@@ -798,8 +798,8 @@
 					"defUid": 20,
 					"px": [368,288],
 					"fieldInstances": [],
-					"__worldX": 1536,
-					"__worldY": 1056
+					"__worldX": 384,
+					"__worldY": 1392
 				},
 				{
 					"__identifier": "One_Way",
@@ -814,8 +814,8 @@
 					"defUid": 20,
 					"px": [336,288],
 					"fieldInstances": [],
-					"__worldX": 1504,
-					"__worldY": 1056
+					"__worldX": 352,
+					"__worldY": 1392
 				},
 				{
 					"__identifier": "Walker",
@@ -830,8 +830,8 @@
 					"defUid": 18,
 					"px": [80,272],
 					"fieldInstances": [],
-					"__worldX": 1248,
-					"__worldY": 1040
+					"__worldX": 96,
+					"__worldY": 1376
 				},
 				{
 					"__identifier": "Walker",
@@ -846,8 +846,8 @@
 					"defUid": 18,
 					"px": [464,272],
 					"fieldInstances": [],
-					"__worldX": 1632,
-					"__worldY": 1040
+					"__worldX": 480,
+					"__worldY": 1376
 				},
 				{
 					"__identifier": "Crumbling",
@@ -862,8 +862,8 @@
 					"defUid": 21,
 					"px": [240,208],
 					"fieldInstances": [],
-					"__worldX": 1408,
-					"__worldY": 976
+					"__worldX": 256,
+					"__worldY": 1312
 				},
 				{
 					"__identifier": "Crumbling",
@@ -878,8 +878,8 @@
 					"defUid": 21,
 					"px": [464,208],
 					"fieldInstances": [],
-					"__worldX": 1632,
-					"__worldY": 976
+					"__worldX": 480,
+					"__worldY": 1312
 				},
 				{
 					"__identifier": "Crumbling",
@@ -894,8 +894,8 @@
 					"defUid": 21,
 					"px": [432,208],
 					"fieldInstances": [],
-					"__worldX": 1600,
-					"__worldY": 976
+					"__worldX": 448,
+					"__worldY": 1312
 				},
 				{
 					"__identifier": "Crumbling",
@@ -910,8 +910,8 @@
 					"defUid": 21,
 					"px": [448,208],
 					"fieldInstances": [],
-					"__worldX": 1616,
-					"__worldY": 976
+					"__worldX": 464,
+					"__worldY": 1312
 				},
 				{
 					"__identifier": "Crumbling",
@@ -926,8 +926,8 @@
 					"defUid": 21,
 					"px": [416,208],
 					"fieldInstances": [],
-					"__worldX": 1584,
-					"__worldY": 976
+					"__worldX": 432,
+					"__worldY": 1312
 				},
 				{
 					"__identifier": "Crumbling",
@@ -942,8 +942,8 @@
 					"defUid": 21,
 					"px": [224,208],
 					"fieldInstances": [],
-					"__worldX": 1392,
-					"__worldY": 976
+					"__worldX": 240,
+					"__worldY": 1312
 				},
 				{
 					"__identifier": "Crumbling",
@@ -958,8 +958,8 @@
 					"defUid": 21,
 					"px": [288,144],
 					"fieldInstances": [],
-					"__worldX": 1456,
-					"__worldY": 912
+					"__worldX": 304,
+					"__worldY": 1248
 				},
 				{
 					"__identifier": "Crumbling",
@@ -974,8 +974,8 @@
 					"defUid": 21,
 					"px": [304,144],
 					"fieldInstances": [],
-					"__worldX": 1472,
-					"__worldY": 912
+					"__worldX": 320,
+					"__worldY": 1248
 				},
 				{
 					"__identifier": "Crumbling",
@@ -990,8 +990,8 @@
 					"defUid": 21,
 					"px": [224,112],
 					"fieldInstances": [],
-					"__worldX": 1392,
-					"__worldY": 880
+					"__worldX": 240,
+					"__worldY": 1216
 				},
 				{
 					"__identifier": "Crumbling",
@@ -1006,8 +1006,8 @@
 					"defUid": 21,
 					"px": [208,112],
 					"fieldInstances": [],
-					"__worldX": 1376,
-					"__worldY": 880
+					"__worldX": 224,
+					"__worldY": 1216
 				},
 				{
 					"__identifier": "Crumbling",
@@ -1022,8 +1022,8 @@
 					"defUid": 21,
 					"px": [176,144],
 					"fieldInstances": [],
-					"__worldX": 1344,
-					"__worldY": 912
+					"__worldX": 192,
+					"__worldY": 1248
 				},
 				{
 					"__identifier": "Crumbling",
@@ -1038,8 +1038,8 @@
 					"defUid": 21,
 					"px": [160,144],
 					"fieldInstances": [],
-					"__worldX": 1328,
-					"__worldY": 912
+					"__worldX": 176,
+					"__worldY": 1248
 				},
 				{
 					"__identifier": "Crumbling",
@@ -1054,8 +1054,8 @@
 					"defUid": 21,
 					"px": [480,128],
 					"fieldInstances": [],
-					"__worldX": 1648,
-					"__worldY": 896
+					"__worldX": 496,
+					"__worldY": 1232
 				},
 				{
 					"__identifier": "Crumbling",
@@ -1070,8 +1070,8 @@
 					"defUid": 21,
 					"px": [464,128],
 					"fieldInstances": [],
-					"__worldX": 1632,
-					"__worldY": 896
+					"__worldX": 480,
+					"__worldY": 1232
 				},
 				{
 					"__identifier": "Crumbling",
@@ -1086,8 +1086,8 @@
 					"defUid": 21,
 					"px": [432,96],
 					"fieldInstances": [],
-					"__worldX": 1600,
-					"__worldY": 864
+					"__worldX": 448,
+					"__worldY": 1200
 				},
 				{
 					"__identifier": "Crumbling",
@@ -1102,8 +1102,8 @@
 					"defUid": 21,
 					"px": [416,96],
 					"fieldInstances": [],
-					"__worldX": 1584,
-					"__worldY": 864
+					"__worldX": 432,
+					"__worldY": 1200
 				},
 				{
 					"__identifier": "Crumbling",
@@ -1118,8 +1118,8 @@
 					"defUid": 21,
 					"px": [368,128],
 					"fieldInstances": [],
-					"__worldX": 1536,
-					"__worldY": 896
+					"__worldX": 384,
+					"__worldY": 1232
 				},
 				{
 					"__identifier": "Crumbling",
@@ -1134,8 +1134,8 @@
 					"defUid": 21,
 					"px": [352,128],
 					"fieldInstances": [],
-					"__worldX": 1520,
-					"__worldY": 896
+					"__worldX": 368,
+					"__worldY": 1232
 				},
 				{
 					"__identifier": "Crumbling",
@@ -1150,8 +1150,8 @@
 					"defUid": 21,
 					"px": [496,64],
 					"fieldInstances": [],
-					"__worldX": 1664,
-					"__worldY": 832
+					"__worldX": 512,
+					"__worldY": 1168
 				},
 				{
 					"__identifier": "Crumbling",
@@ -1166,8 +1166,8 @@
 					"defUid": 21,
 					"px": [480,64],
 					"fieldInstances": [],
-					"__worldX": 1648,
-					"__worldY": 832
+					"__worldX": 496,
+					"__worldY": 1168
 				},
 				{
 					"__identifier": "Crumbling",
@@ -1182,8 +1182,8 @@
 					"defUid": 21,
 					"px": [368,48],
 					"fieldInstances": [],
-					"__worldX": 1536,
-					"__worldY": 816
+					"__worldX": 384,
+					"__worldY": 1152
 				},
 				{
 					"__identifier": "Crumbling",
@@ -1198,8 +1198,8 @@
 					"defUid": 21,
 					"px": [144,80],
 					"fieldInstances": [],
-					"__worldX": 1312,
-					"__worldY": 848
+					"__worldX": 160,
+					"__worldY": 1184
 				},
 				{
 					"__identifier": "Crumbling",
@@ -1214,8 +1214,8 @@
 					"defUid": 21,
 					"px": [160,80],
 					"fieldInstances": [],
-					"__worldX": 1328,
-					"__worldY": 848
+					"__worldX": 176,
+					"__worldY": 1184
 				},
 				{
 					"__identifier": "Crumbling",
@@ -1230,8 +1230,8 @@
 					"defUid": 21,
 					"px": [112,80],
 					"fieldInstances": [],
-					"__worldX": 1280,
-					"__worldY": 848
+					"__worldX": 128,
+					"__worldY": 1184
 				},
 				{
 					"__identifier": "Crumbling",
@@ -1246,8 +1246,8 @@
 					"defUid": 21,
 					"px": [96,80],
 					"fieldInstances": [],
-					"__worldX": 1264,
-					"__worldY": 848
+					"__worldX": 112,
+					"__worldY": 1184
 				},
 				{
 					"__identifier": "Crumbling",
@@ -1262,8 +1262,8 @@
 					"defUid": 21,
 					"px": [352,48],
 					"fieldInstances": [],
-					"__worldX": 1520,
-					"__worldY": 816
+					"__worldX": 368,
+					"__worldY": 1152
 				},
 				{
 					"__identifier": "Crumbling",
@@ -1278,8 +1278,8 @@
 					"defUid": 21,
 					"px": [80,128],
 					"fieldInstances": [],
-					"__worldX": 1248,
-					"__worldY": 896
+					"__worldX": 96,
+					"__worldY": 1232
 				},
 				{
 					"__identifier": "Crumbling",
@@ -1294,8 +1294,8 @@
 					"defUid": 21,
 					"px": [128,80],
 					"fieldInstances": [],
-					"__worldX": 1296,
-					"__worldY": 848
+					"__worldX": 144,
+					"__worldY": 1184
 				},
 				{
 					"__identifier": "Crumbling",
@@ -1310,8 +1310,8 @@
 					"defUid": 21,
 					"px": [64,128],
 					"fieldInstances": [],
-					"__worldX": 1232,
-					"__worldY": 896
+					"__worldX": 80,
+					"__worldY": 1232
 				},
 				{
 					"__identifier": "Flower",
@@ -1326,8 +1326,8 @@
 					"defUid": 19,
 					"px": [488,112],
 					"fieldInstances": [],
-					"__worldX": 1656,
-					"__worldY": 880
+					"__worldX": 504,
+					"__worldY": 1216
 				},
 				{
 					"__identifier": "Flower",
@@ -1342,8 +1342,8 @@
 					"defUid": 19,
 					"px": [376,112],
 					"fieldInstances": [],
-					"__worldX": 1544,
-					"__worldY": 880
+					"__worldX": 392,
+					"__worldY": 1216
 				},
 				{
 					"__identifier": "Flower",
@@ -1358,8 +1358,8 @@
 					"defUid": 19,
 					"px": [184,128],
 					"fieldInstances": [],
-					"__worldX": 1352,
-					"__worldY": 896
+					"__worldX": 200,
+					"__worldY": 1232
 				},
 				{
 					"__identifier": "Flower",
@@ -1374,8 +1374,8 @@
 					"defUid": 19,
 					"px": [88,112],
 					"fieldInstances": [],
-					"__worldX": 1256,
-					"__worldY": 880
+					"__worldX": 104,
+					"__worldY": 1216
 				},
 				{
 					"__identifier": "Flower",
@@ -1390,8 +1390,8 @@
 					"defUid": 19,
 					"px": [152,64],
 					"fieldInstances": [],
-					"__worldX": 1320,
-					"__worldY": 832
+					"__worldX": 168,
+					"__worldY": 1168
 				},
 				{
 					"__identifier": "Harpy",
@@ -1406,8 +1406,8 @@
 					"defUid": 16,
 					"px": [160,16],
 					"fieldInstances": [],
-					"__worldX": 1328,
-					"__worldY": 784
+					"__worldX": 176,
+					"__worldY": 1120
 				},
 				{
 					"__identifier": "Harpy",
@@ -1422,8 +1422,8 @@
 					"defUid": 16,
 					"px": [464,16],
 					"fieldInstances": [],
-					"__worldX": 1632,
-					"__worldY": 784
+					"__worldX": 480,
+					"__worldY": 1120
 				},
 				{
 					"__identifier": "Harpy",
@@ -1438,8 +1438,8 @@
 					"defUid": 16,
 					"px": [272,96],
 					"fieldInstances": [],
-					"__worldX": 1440,
-					"__worldY": 864
+					"__worldX": 288,
+					"__worldY": 1200
 				},
 				{
 					"__identifier": "Crumbling",
@@ -1454,8 +1454,8 @@
 					"defUid": 21,
 					"px": [160,352],
 					"fieldInstances": [],
-					"__worldX": 1328,
-					"__worldY": 1120
+					"__worldX": 176,
+					"__worldY": 1456
 				},
 				{
 					"__identifier": "Crumbling",
@@ -1470,8 +1470,8 @@
 					"defUid": 21,
 					"px": [176,352],
 					"fieldInstances": [],
-					"__worldX": 1344,
-					"__worldY": 1120
+					"__worldX": 192,
+					"__worldY": 1456
 				},
 				{
 					"__identifier": "Crumbling",
@@ -1486,8 +1486,8 @@
 					"defUid": 21,
 					"px": [144,352],
 					"fieldInstances": [],
-					"__worldX": 1312,
-					"__worldY": 1120
+					"__worldX": 160,
+					"__worldY": 1456
 				},
 				{
 					"__identifier": "Crumbling",
@@ -1502,8 +1502,8 @@
 					"defUid": 21,
 					"px": [352,352],
 					"fieldInstances": [],
-					"__worldX": 1520,
-					"__worldY": 1120
+					"__worldX": 368,
+					"__worldY": 1456
 				},
 				{
 					"__identifier": "Crumbling",
@@ -1518,8 +1518,8 @@
 					"defUid": 21,
 					"px": [336,352],
 					"fieldInstances": [],
-					"__worldX": 1504,
-					"__worldY": 1120
+					"__worldX": 352,
+					"__worldY": 1456
 				},
 				{
 					"__identifier": "Crumbling",
@@ -1534,8 +1534,8 @@
 					"defUid": 21,
 					"px": [240,352],
 					"fieldInstances": [],
-					"__worldX": 1408,
-					"__worldY": 1120
+					"__worldX": 256,
+					"__worldY": 1456
 				},
 				{
 					"__identifier": "Crumbling",
@@ -1550,8 +1550,8 @@
 					"defUid": 21,
 					"px": [256,352],
 					"fieldInstances": [],
-					"__worldX": 1424,
-					"__worldY": 1120
+					"__worldX": 272,
+					"__worldY": 1456
 				},
 				{
 					"__identifier": "Crumbling",
@@ -1566,8 +1566,8 @@
 					"defUid": 21,
 					"px": [368,352],
 					"fieldInstances": [],
-					"__worldX": 1536,
-					"__worldY": 1120
+					"__worldX": 384,
+					"__worldY": 1456
 				},
 				{
 					"__identifier": "Crumbling",
@@ -1582,8 +1582,8 @@
 					"defUid": 21,
 					"px": [256,304],
 					"fieldInstances": [],
-					"__worldX": 1424,
-					"__worldY": 1072
+					"__worldX": 272,
+					"__worldY": 1408
 				},
 				{
 					"__identifier": "Crumbling",
@@ -1598,8 +1598,8 @@
 					"defUid": 21,
 					"px": [224,304],
 					"fieldInstances": [],
-					"__worldX": 1392,
-					"__worldY": 1072
+					"__worldX": 240,
+					"__worldY": 1408
 				},
 				{
 					"__identifier": "Crumbling",
@@ -1614,8 +1614,8 @@
 					"defUid": 21,
 					"px": [240,304],
 					"fieldInstances": [],
-					"__worldX": 1408,
-					"__worldY": 1072
+					"__worldX": 256,
+					"__worldY": 1408
 				},
 				{
 					"__identifier": "Crumbling",
@@ -1630,8 +1630,8 @@
 					"defUid": 21,
 					"px": [288,304],
 					"fieldInstances": [],
-					"__worldX": 1456,
-					"__worldY": 1072
+					"__worldX": 304,
+					"__worldY": 1408
 				},
 				{
 					"__identifier": "Crumbling",
@@ -1646,8 +1646,8 @@
 					"defUid": 21,
 					"px": [272,304],
 					"fieldInstances": [],
-					"__worldX": 1440,
-					"__worldY": 1072
+					"__worldX": 288,
+					"__worldY": 1408
 				},
 				{
 					"__identifier": "Walker",
@@ -1662,8 +1662,8 @@
 					"defUid": 18,
 					"px": [80,192],
 					"fieldInstances": [],
-					"__worldX": 1248,
-					"__worldY": 960
+					"__worldX": 96,
+					"__worldY": 1296
 				},
 				{
 					"__identifier": "Walker",
@@ -1678,8 +1678,8 @@
 					"defUid": 18,
 					"px": [272,192],
 					"fieldInstances": [],
-					"__worldX": 1440,
-					"__worldY": 960
+					"__worldX": 288,
+					"__worldY": 1296
 				},
 				{
 					"__identifier": "Walker",
@@ -1694,8 +1694,24 @@
 					"defUid": 18,
 					"px": [512,192],
 					"fieldInstances": [],
-					"__worldX": 1680,
-					"__worldY": 960
+					"__worldX": 528,
+					"__worldY": 1296
+				},
+				{
+					"__identifier": "Win",
+					"__grid": [18,2],
+					"__pivot": [0,0],
+					"__tags": ["Environment"],
+					"__tile": null,
+					"__smartColor": "#EEFF00",
+					"iid": "444c0d90-8560-11f0-9842-9fbb8ea2139a",
+					"width": 16,
+					"height": 16,
+					"defUid": 131,
+					"px": [288,32],
+					"fieldInstances": [],
+					"__worldX": 304,
+					"__worldY": 1136
 				}
 			]
 		},
@@ -1725,5 +1741,5 @@
 			"entityInstances": []
 		}
 	],
-	"__neighbours": [ { "levelIid": "3f98ac80-8560-11f0-a19b-67009043462c", "dir": "nw" }, { "levelIid": "a9af0be0-8560-11f0-964f-117e669d42e8", "dir": "e" }, { "levelIid": "28c01340-8560-11f0-b191-9df367c5828d", "dir": "n" } ]
+	"__neighbours": [{ "levelIid": "a9af0be0-8560-11f0-964f-117e669d42e8", "dir": "e" }]
 }

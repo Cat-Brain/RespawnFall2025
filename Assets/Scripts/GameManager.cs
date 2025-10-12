@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.InputSystem;
 
 public enum GameState
 {
@@ -15,6 +16,8 @@ public class GameManager : MonoBehaviour
 
     public string mainMenuSceneName, inGameSceneName;
 
+    public InputActionReference pauseAction;
+
     public PlayerManager playerManager;
     public DeathZoneMove deathZone;
 
@@ -28,6 +31,7 @@ public class GameManager : MonoBehaviour
     {
         if (gameState == GameState.IN_GAME && shouldGenerateTerrainOnLoad)
             generationManager.Init();
+        pauseAction.action.started += SwitchToPause; 
     }
 
     void Update()
@@ -107,6 +111,23 @@ public class GameManager : MonoBehaviour
         UnityEvent onFadeEvent = new();
         onFadeEvent.AddListener(() => { gameState = GameState.SETTINGS_MENU; });
         sceneLoadManager.StartLoad(mainMenuSceneName, onFadeEvent);
+    }
+
+    public void SwitchToPause(InputAction.CallbackContext context)
+    {
+        if (gameState != GameState.IN_GAME)
+            return;
+
+        if (gameState == GameState.PAUSE_MENU)
+        {
+            Time.timeScale = 1;
+            gameState = GameState.IN_GAME;
+        } else
+        {
+            Time.timeScale = 0;
+            gameState = GameState.PAUSE_MENU;
+        }
+        return;
     }
 
     public void CloseGame()
