@@ -191,8 +191,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d13be2d890862d428465a42ce172012, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyHitbox
-  knockback: 5
-  stunDuration: 2
+  knockback: 3
+  stunDuration: 1
   invulnerability: 3
   playerTag: Player
 --- !u!114 &2440023215151627209
@@ -217,6 +217,7 @@ MonoBehaviour:
   basePos: {x: 0, y: 0}
   elapsedSwoop: 0
   swoopLeft: 0
+  harpyClip: {fileID: 8300000, guid: b570949e7d5f5a4448c07c1b0b6de533, type: 3}
 --- !u!114 &8478734326758200278
 MonoBehaviour:
   m_ObjectHideFlags: 0

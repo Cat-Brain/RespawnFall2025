@@ -29,18 +29,6 @@ TextureImporter:
   - first:
       213: 7438088267790586527
     second: IntGrid_8
-  - first:
-      213: -6784067379529883756
-    second: IntGrid_9
-  - first:
-      213: -6883631791457621066
-    second: IntGrid_10
-  - first:
-      213: -5157952576880362206
-    second: IntGrid_11
-  - first:
-      213: -6274885140585493
-    second: IntGrid_12
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -140,9 +128,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 463
-        width: 289
-        height: 18
+        y: 0
+        width: 65
+        height: 384
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -161,10 +149,10 @@ TextureImporter:
       name: IntGrid_1
       rect:
         serializedVersion: 2
-        x: 95
-        y: 383
-        width: 66
-        height: 18
+        x: 111
+        y: 335
+        width: 34
+        height: 34
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -183,10 +171,10 @@ TextureImporter:
       name: IntGrid_2
       rect:
         serializedVersion: 2
-        x: 207
-        y: 383
-        width: 66
-        height: 18
+        x: 287
+        y: 319
+        width: 82
+        height: 50
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -205,10 +193,10 @@ TextureImporter:
       name: IntGrid_3
       rect:
         serializedVersion: 2
-        x: 303
-        y: 367
-        width: 81
-        height: 66
+        x: 479
+        y: 0
+        width: 97
+        height: 384
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -227,9 +215,9 @@ TextureImporter:
       name: IntGrid_4
       rect:
         serializedVersion: 2
-        x: 0
-        y: 287
-        width: 81
+        x: 207
+        y: 255
+        width: 82
         height: 50
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -249,10 +237,10 @@ TextureImporter:
       name: IntGrid_5
       rect:
         serializedVersion: 2
-        x: 127
-        y: 287
-        width: 50
-        height: 18
+        x: 399
+        y: 255
+        width: 66
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -271,10 +259,10 @@ TextureImporter:
       name: IntGrid_6
       rect:
         serializedVersion: 2
-        x: 223
-        y: 287
-        width: 50
-        height: 18
+        x: 95
+        y: 175
+        width: 146
+        height: 50
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -293,10 +281,10 @@ TextureImporter:
       name: IntGrid_7
       rect:
         serializedVersion: 2
-        x: 127
-        y: 207
+        x: 351
+        y: 191
         width: 114
-        height: 18
+        height: 50
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -315,9 +303,9 @@ TextureImporter:
       name: IntGrid_8
       rect:
         serializedVersion: 2
-        x: 287
-        y: 207
-        width: 97
+        x: 191
+        y: 47
+        width: 114
         height: 50
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -329,94 +317,6 @@ TextureImporter:
       bones: []
       spriteID: f9298a1fed5693760800000000000000
       internalID: 7438088267790586527
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: IntGrid_9
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 127
-        width: 289
-        height: 50
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 49f5ece69a62ad1a0800000000000000
-      internalID: -6784067379529883756
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: IntGrid_10
-      rect:
-        serializedVersion: 2
-        x: 79
-        y: 47
-        width: 305
-        height: 50
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 6bb25915b5d6870a0800000000000000
-      internalID: -6883631791457621066
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: IntGrid_11
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 97
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 22d3cb695754b68b0800000000000000
-      internalID: -5157952576880362206
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: IntGrid_12
-      rect:
-        serializedVersion: 2
-        x: 287
-        y: 0
-        width: 97
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: be360347605b9eff0800000000000000
-      internalID: -6274885140585493
       vertices: []
       indices: 
       edges: []
@@ -437,9 +337,6 @@ TextureImporter:
     nameFileIdTable:
       IntGrid_0: -1803365473361250853
       IntGrid_1: 4102394523659005466
-      IntGrid_10: -6883631791457621066
-      IntGrid_11: -5157952576880362206
-      IntGrid_12: -6274885140585493
       IntGrid_2: 2531750858073260620
       IntGrid_3: -6305850346828596834
       IntGrid_4: -6559098454845027048
@@ -447,7 +344,6 @@ TextureImporter:
       IntGrid_6: -4346775884820558848
       IntGrid_7: 2346082075455811227
       IntGrid_8: 7438088267790586527
-      IntGrid_9: -6784067379529883756
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

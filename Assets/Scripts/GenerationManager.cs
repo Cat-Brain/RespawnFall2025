@@ -36,7 +36,7 @@ public class GenerationManager : MonoBehaviour
         currentChunks.Add(beginningChunk.Spawn(Vector2.up * offset, transform));
         offset += beginningChunk.dimensions.y;
 
-        /*for (int i = 0; i < middleChunkCount; i++)
+        for (int i = 0; i < middleChunkCount; i++)
         {
             LevelChunk middleChunk = middleChunks[UnityEngine.Random.Range(0, middleChunks.Count)];
             currentChunks.Add(middleChunk.Spawn(Vector2.up * offset));
@@ -45,7 +45,7 @@ public class GenerationManager : MonoBehaviour
 
         LevelChunk endChunk = endChunks[UnityEngine.Random.Range(0, endChunks.Count)];
         currentChunks.Add(endChunk.Spawn(Vector2.up * offset));
-        offset += endChunk.dimensions.y;*/
+        offset += endChunk.dimensions.y;
 
         if (!gameManager.playerManager)
             gameManager.playerManager = FindFirstObjectByType<PlayerManager>();

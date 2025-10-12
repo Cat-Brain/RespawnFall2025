@@ -5,33 +5,6 @@ TextureImporter:
   - first:
       213: -1803365473361250853
     second: IntGrid_0
-  - first:
-      213: 4102394523659005466
-    second: IntGrid_1
-  - first:
-      213: 2531750858073260620
-    second: IntGrid_2
-  - first:
-      213: -6305850346828596834
-    second: IntGrid_3
-  - first:
-      213: -6559098454845027048
-    second: IntGrid_4
-  - first:
-      213: 4441741502141382162
-    second: IntGrid_5
-  - first:
-      213: -4346775884820558848
-    second: IntGrid_6
-  - first:
-      213: 2346082075455811227
-    second: IntGrid_7
-  - first:
-      213: 7438088267790586527
-    second: IntGrid_8
-  - first:
-      213: -6784067379529883756
-    second: IntGrid_9
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -131,9 +104,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 687
-        width: 49
-        height: 81
+        y: 0
+        width: 576
+        height: 768
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -144,204 +117,6 @@ TextureImporter:
       bones: []
       spriteID: bd5391818a829f6e0800000000000000
       internalID: -1803365473361250853
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: IntGrid_1
-      rect:
-        serializedVersion: 2
-        x: 239
-        y: 591
-        width: 210
-        height: 162
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a1ee3377512aee830800000000000000
-      internalID: 4102394523659005466
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: IntGrid_2
-      rect:
-        serializedVersion: 2
-        x: 63
-        y: 639
-        width: 66
-        height: 34
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c424f3bddf5922320800000000000000
-      internalID: 2531750858073260620
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: IntGrid_3
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 415
-        width: 65
-        height: 178
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e99f186f48e1d78a0800000000000000
-      internalID: -6305850346828596834
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: IntGrid_4
-      rect:
-        serializedVersion: 2
-        x: 143
-        y: 527
-        width: 194
-        height: 66
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 81d0628f4b669f4a0800000000000000
-      internalID: -6559098454845027048
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: IntGrid_5
-      rect:
-        serializedVersion: 2
-        x: 159
-        y: 319
-        width: 162
-        height: 146
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 21e3f33ec5c34ad30800000000000000
-      internalID: 4441741502141382162
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: IntGrid_6
-      rect:
-        serializedVersion: 2
-        x: 447
-        y: 431
-        width: 65
-        height: 66
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 00c490bec562da3c0800000000000000
-      internalID: -4346775884820558848
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: IntGrid_7
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 255
-        width: 113
-        height: 98
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: b9e6471b735fe8020800000000000000
-      internalID: 2346082075455811227
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: IntGrid_8
-      rect:
-        serializedVersion: 2
-        x: 415
-        y: 335
-        width: 97
-        height: 50
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: f9298a1fed5693760800000000000000
-      internalID: 7438088267790586527
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: IntGrid_9
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 512
-        height: 289
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 49f5ece69a62ad1a0800000000000000
-      internalID: -6784067379529883756
       vertices: []
       indices: 
       edges: []
@@ -361,15 +136,6 @@ TextureImporter:
       entries: []
     nameFileIdTable:
       IntGrid_0: -1803365473361250853
-      IntGrid_1: 4102394523659005466
-      IntGrid_2: 2531750858073260620
-      IntGrid_3: -6305850346828596834
-      IntGrid_4: -6559098454845027048
-      IntGrid_5: 4441741502141382162
-      IntGrid_6: -4346775884820558848
-      IntGrid_7: 2346082075455811227
-      IntGrid_8: 7438088267790586527
-      IntGrid_9: -6784067379529883756
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

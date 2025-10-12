@@ -127,10 +127,10 @@ TextureImporter:
       name: IntGrid_0
       rect:
         serializedVersion: 2
-        x: 63
-        y: 431
-        width: 258
-        height: 18
+        x: 0
+        y: 0
+        width: 33
+        height: 384
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -149,9 +149,9 @@ TextureImporter:
       name: IntGrid_1
       rect:
         serializedVersion: 2
-        x: 0
-        y: 351
-        width: 97
+        x: 127
+        y: 303
+        width: 258
         height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -171,10 +171,10 @@ TextureImporter:
       name: IntGrid_2
       rect:
         serializedVersion: 2
-        x: 191
-        y: 287
-        width: 193
-        height: 82
+        x: 559
+        y: 0
+        width: 33
+        height: 384
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -193,10 +193,10 @@ TextureImporter:
       name: IntGrid_3
       rect:
         serializedVersion: 2
-        x: 0
+        x: 63
         y: 223
-        width: 129
-        height: 50
+        width: 98
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -215,10 +215,10 @@ TextureImporter:
       name: IntGrid_4
       rect:
         serializedVersion: 2
-        x: 159
-        y: 207
-        width: 66
-        height: 34
+        x: 255
+        y: 159
+        width: 194
+        height: 82
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -237,9 +237,9 @@ TextureImporter:
       name: IntGrid_5
       rect:
         serializedVersion: 2
-        x: 271
-        y: 159
-        width: 113
+        x: 63
+        y: 95
+        width: 130
         height: 50
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -259,9 +259,9 @@ TextureImporter:
       name: IntGrid_6
       rect:
         serializedVersion: 2
-        x: 0
-        y: 111
-        width: 161
+        x: 223
+        y: 79
+        width: 66
         height: 34
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -281,10 +281,10 @@ TextureImporter:
       name: IntGrid_7
       rect:
         serializedVersion: 2
-        x: 239
-        y: 47
-        width: 145
-        height: 34
+        x: 335
+        y: 31
+        width: 114
+        height: 50
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -303,10 +303,10 @@ TextureImporter:
       name: IntGrid_8
       rect:
         serializedVersion: 2
-        x: 0
+        x: 63
         y: 0
-        width: 177
-        height: 33
+        width: 162
+        height: 17
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
