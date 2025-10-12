@@ -3,8 +3,8 @@ using UnityEngine.InputSystem;
 
 public class PlayerBlock : MonoBehaviour
 {
-    public float blockTime, blockStunTime, earlyBlockBufferTime;
-    private float blockStunTimer = 0, earlyBlockBufferTimer = 0;
+    public float blockTime, blockStunTime, earlyBlockBufferTime, perfectBlockTime;
+    private float blockStunTimer = 0, earlyBlockBufferTimer = 0, perfectBlockTimer = 0;
 
     private PlayerManager playerManager;
     public bool hasBlockDuration, hasTacticalReload, hasSpeedBoost, hasExplosion; // Eurydice upgrades
@@ -27,10 +27,24 @@ public class PlayerBlock : MonoBehaviour
             playerManager.blockInvulnerability += blockTime;
             blockStunTimer = blockStunTime;
             earlyBlockBufferTimer = 0;
+            perfectBlockTimer = perfectBlockTime;
             // Insert some sort of particle here or something
         }
 
         blockStunTimer = Mathf.Max(0, blockStunTimer - Time.deltaTime);
         earlyBlockBufferTimer = Mathf.Max(0, earlyBlockBufferTimer - Time.deltaTime);
+        perfectBlockTimer = Mathf.Max(0, perfectBlockTimer - Time.deltaTime);
+    }
+
+    public void SuccessfulBlock()
+    {
+        if (perfectBlockTimer <= 0)
+        {
+            // Insert perfect block effect
+            blockStunTimer = 0;
+            earlyBlockBufferTimer = 0;
+            return;
+        }
+        // Insert normal block particle effect
     }
 }

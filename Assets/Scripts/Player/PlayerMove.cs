@@ -6,6 +6,7 @@ public class PlayerMove : MonoBehaviour
     public float accel, speed;
 
     public float jumpForce;
+    public int airJumps;
 
     [Tooltip("Time that a player can press the jump button early and still have it register")]
     public float jumpBufferTime;
@@ -14,6 +15,8 @@ public class PlayerMove : MonoBehaviour
     [Tooltip("Time that a player cannot jump after having done a jump (removes buggy unfun tech)")]
     public float jumpSpamTime;
     private float jumpBufferTimer = 0, cayoteTimer = 0, jumpSpamTimer = 0;
+    public float tapJumpTimer = 0;
+    public int remainingAirJumps;
 
     public PhysicsMaterial2D movePhysicsMaterial, stunnedPhysicsMaterial;
 
@@ -26,12 +29,19 @@ public class PlayerMove : MonoBehaviour
         playerManager = GetComponent<PlayerManager>();
 
         playerManager.jumpAction.action.started += TryJump;
+        playerManager.jumpAction.action.canceled += TryTapJump;
     }
 
     public void TryJump(InputAction.CallbackContext context)
     {
         if (!playerManager.Stunned())
             jumpBufferTimer = jumpBufferTime;
+    }
+
+    public void TryTapJump(InputAction.CallbackContext context)
+    {
+        if (tapJumpTimer > 0)
+            playerManager.playerGravity.inQuickFall = true;
     }
 
     private void FixedUpdate()
@@ -41,6 +51,9 @@ public class PlayerMove : MonoBehaviour
             rb.sharedMaterial = movePhysicsMaterial;
 
             bool grounded = playerManager.IsGrounded();
+
+            if (grounded)
+                remainingAirJumps = airJumps;
 
             float horizontalInput = playerManager.moveAction.action.ReadValue<float>();
 
@@ -55,12 +68,21 @@ public class PlayerMove : MonoBehaviour
             if (grounded)
                 cayoteTimer = cayoteTime;
 
-            if (jumpBufferTimer > 0 && cayoteTimer > 0 && jumpSpamTimer <= 0)
+            if (jumpBufferTimer > 0 && (cayoteTimer > 0 || remainingAirJumps > 0) && jumpSpamTimer <= 0)
             {
                 rb.linearVelocityY = Mathf.Max(0, rb.linearVelocityY) + jumpForce;
+
+                if (cayoteTimer > 0)
+                {
+                    cayoteTimer = 0;
+                    remainingAirJumps = airJumps;
+                }
+                else
+                    remainingAirJumps--;
+
                 jumpBufferTimer = 0;
-                cayoteTimer = 0;
                 jumpSpamTimer = jumpSpamTime;
+                tapJumpTimer = jumpForce / playerManager.playerGravity.gravity;
             }
         }
         else
@@ -69,5 +91,8 @@ public class PlayerMove : MonoBehaviour
         jumpBufferTimer = Mathf.Max(0, jumpBufferTimer - Time.fixedDeltaTime);
         cayoteTimer = Mathf.Max(0, cayoteTimer - Time.fixedDeltaTime);
         jumpSpamTimer = Mathf.Max(0, jumpSpamTimer - Time.fixedDeltaTime);
+        tapJumpTimer = Mathf.Max(0, tapJumpTimer - Time.fixedDeltaTime);
+        if (rb.linearVelocityY <= 0)
+            tapJumpTimer = 0;
     }
 }
