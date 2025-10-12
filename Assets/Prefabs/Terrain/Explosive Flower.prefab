@@ -146,3 +146,4 @@ MonoBehaviour:
   explosionMask:
     serializedVersion: 2
     m_Bits: 1024
+  flowerPopClip: {fileID: 8300000, guid: d656f763288a98548a782330c8650f46, type: 3}

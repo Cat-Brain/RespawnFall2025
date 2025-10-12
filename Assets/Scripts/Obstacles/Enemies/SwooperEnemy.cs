@@ -17,6 +17,7 @@ public class SwooperEnemy : MonoBehaviour
 
     private Rigidbody2D rb;
     private EnemyHitbox hitbox;
+    public AudioClip harpyClip;
 
     void Awake()
     {
@@ -75,6 +76,7 @@ public class SwooperEnemy : MonoBehaviour
 
         swoopTrigger.enabled = false;
         hitbox.enabled = true;
+        AudioManager.instance.PlaySoundFXClip(harpyClip, transform, 0.5f);
     }
 
     public void PrepareForSwoop()

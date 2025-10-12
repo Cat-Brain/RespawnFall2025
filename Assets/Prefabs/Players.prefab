@@ -219,11 +219,22 @@ MonoBehaviour:
   hasExplosives: 0
   hasPhasing: 0
   hasRecoil: 0
+  shootClips:
+  - {fileID: 8300000, guid: 2fe7a2781f9f0be45b5381646c780ec3, type: 3}
+  - {fileID: 8300000, guid: 25e3e13de64c5f7478bd1832a501811f, type: 3}
+  - {fileID: 8300000, guid: 16482d2c462440440be1500b89a6a6c5, type: 3}
+  - {fileID: 8300000, guid: 5f3ddd9b1c9e58a40a21b677560bc513, type: 3}
+  - {fileID: 8300000, guid: c220144af9662f34aaf2ff919fce78b2, type: 3}
+  - {fileID: 8300000, guid: f1caa81da1d006e48bb6cc909bd1aeb8, type: 3}
+  - {fileID: 8300000, guid: 5e247c62b020a6549876e4d73a39734a, type: 3}
+  - {fileID: 8300000, guid: ec7334f47a9557f4082d35d566e58856, type: 3}
+  - {fileID: 8300000, guid: 703c27151fdc1ff4db89cbfbca438868, type: 3}
+  - {fileID: 8300000, guid: 364bbb50e0e32de4bba80818953d73b3, type: 3}
+  reloadClip: {fileID: 8300000, guid: b39f53e35715e1e498110e82be73997a, type: 3}
   coolDownTime: 0.3
   coolDownTimer: 0
   regenTime: 0.5
   regenTimer: 0
-  regenConsecTime: 0.1
 --- !u!114 &3040408733219801965
 MonoBehaviour:
   m_ObjectHideFlags: 0

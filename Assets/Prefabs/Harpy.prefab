@@ -185,6 +185,7 @@ MonoBehaviour:
   basePos: {x: 0, y: 0}
   elapsedSwoop: 0
   swoopLeft: 0
+  harpyClip: {fileID: 8300000, guid: b570949e7d5f5a4448c07c1b0b6de533, type: 3}
 --- !u!114 &4719394710071943623
 MonoBehaviour:
   m_ObjectHideFlags: 0

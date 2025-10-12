@@ -47,7 +47,7 @@ public class PlayerShoot : MonoBehaviour
 
     void Shoot(InputAction.CallbackContext context) {
         if(coolDownTimer <= 0 && currentStrings > 0 && !playerManagerScript.Stunned()) {
-            AudioManager.instance.PlaySoundFXClip(shootClips[currentStrings - 1], transform, 1.0f);
+            AudioManager.instance.PlaySoundFXClip(shootClips[maxStrings - currentStrings], transform, 1.0f);
             currentStrings--;
             spawn = new Vector3(transform.position.x, transform.position.y, 0);
             GameObject playerBullet = Instantiate(bulletPrefab, spawn, transform.rotation);
