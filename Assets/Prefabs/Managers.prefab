@@ -2787,7 +2787,7 @@ MonoBehaviour:
   deathZone: {fileID: 0}
   shouldGenerateTerrainOnLoad: 1
   gameState: 4
-  deathClip: {fileID: 8300000, guid: 64135aba59a1c4f44ac9659f173998ae, type: 3}
+  deathClip: {fileID: 8300000, guid: 3d3bd2a98c8b35043937296a55ee1fab, type: 3}
 --- !u!114 &5969423444380576037
 MonoBehaviour:
   m_ObjectHideFlags: 0
