@@ -11,6 +11,8 @@ public class GameManager : MonoBehaviour
     public DeathZoneMove deathZone;
 
     public GameState gameState;
+    public AudioClip deathClip;
+    
 
     public void PlayerWin()
     {
@@ -32,6 +34,7 @@ public class GameManager : MonoBehaviour
         gameState = GameState.LOSE_ANIMATION;
         playerManager.moveStun = -1;
 
+        AudioManager.instance.PlaySoundFXClip(deathClip, transform, 1.0f);
         Debug.Log("Pretend that there's cool on lose stuff here");
     }
 }

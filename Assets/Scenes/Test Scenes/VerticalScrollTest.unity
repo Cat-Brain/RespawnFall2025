@@ -2651,6 +2651,7 @@ MonoBehaviour:
   playerManager: {fileID: 0}
   deathZone: {fileID: 0}
   gameState: 0
+  deathClip: {fileID: 8300000, guid: 64135aba59a1c4f44ac9659f173998ae, type: 3}
 --- !u!4 &2135838173
 Transform:
   m_ObjectHideFlags: 0
