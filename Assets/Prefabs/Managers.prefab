@@ -790,8 +790,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DisplayStringController
   displayStringPrefab: {fileID: 5462666655161199687, guid: 5cdfb6532296e4e48ada2e899a5c0c0c, type: 3}
   displayStrings: []
-  firstStringPos: {x: -25, y: 0}
-  lastStringPos: {x: 25, y: 0}
+  firstStringPos: {x: -10, y: 0}
+  lastStringPos: {x: 10, y: 0}
   maxStrings: 4
   currentStrings: 4
 --- !u!1 &1555276496914292317
@@ -845,17 +845,26 @@ MonoBehaviour:
   cameraSize: 10
   beginningChunks:
   - prefab: {fileID: 2816548378978262457, guid: 856924c8e338a9445a1f54f4e127f8db, type: 3}
-    spawnOffset: {x: -16, y: 0, z: 0}
-    dimensions: {x: 32, y: 48}
+    spawnOffset: {x: -18, y: 0, z: 0}
+    dimensions: {x: 36, y: 48}
   - prefab: {fileID: -2290654371478602051, guid: 841a1bdc15d9aee4f832996e2c294150, type: 3}
-    spawnOffset: {x: -16, y: 0, z: 0}
-    dimensions: {x: 32, y: 48}
-  middleChunks: []
+    spawnOffset: {x: -18, y: 0, z: 0}
+    dimensions: {x: 36, y: 48}
+  middleChunks:
+  - prefab: {fileID: 6266437881009966053, guid: 54a3013b392d0d24ca5eaae916d729dc, type: 3}
+    spawnOffset: {x: -18, y: 0, z: 0}
+    dimensions: {x: 36, y: 24}
+  - prefab: {fileID: -1191214121291890751, guid: edca60b1982ef4a46ba8d2b09cf0afb6, type: 3}
+    spawnOffset: {x: -18, y: 0, z: 0}
+    dimensions: {x: 36, y: 24}
   endChunks:
-  - prefab: {fileID: 3862257085580188846, guid: 6aee190764e633e408269629bdbc9728, type: 3}
-    spawnOffset: {x: -16, y: 0, z: 0}
-    dimensions: {x: 32, y: 48}
-  middleChunkCount: 0
+  - prefab: {fileID: -2302777090318718211, guid: 30bed0638cb7cc74684ab1d0b7260ab2, type: 3}
+    spawnOffset: {x: -18, y: 0, z: 0}
+    dimensions: {x: 36, y: 24}
+  - prefab: {fileID: -6415115034124601306, guid: 63657e4d660cc724b8c8bcfa1e022316, type: 3}
+    spawnOffset: {x: -18, y: 0, z: 0}
+    dimensions: {x: 36, y: 24}
+  middleChunkCount: 2
   distanceBetweenRefreshes: 12
   currentChunks: []
 --- !u!114 &8267582347861169847
@@ -1271,7 +1280,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: -7085911360281966198, guid: 97eb477dd16c5214aa62ae927ae48794, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1728,7 +1737,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: -3867370608260675248, guid: 96df984eb84772c478ddd06974d98f30, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
