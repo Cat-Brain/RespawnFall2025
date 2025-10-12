@@ -8,8 +8,9 @@ public enum GameState
 public class GameManager : MonoBehaviour
 {
     public GenerationManager generationManager;
-    public PlayerManager playerManager;
+    public DisplayStringController stringController;
 
+    public PlayerManager playerManager;
     public DeathZoneMove deathZone;
 
     public bool shouldGenerateTerrainOnLoad;

@@ -13,7 +13,7 @@ public class PlayerTimer : MonoBehaviour
     {
         playerManager = GetComponent<PlayerManager>();
 
-        remainingTime = refillTime;
+        RefreshTime();
     }
 
     void Start()
@@ -25,6 +25,11 @@ public class PlayerTimer : MonoBehaviour
     {
         DecreaseTime(Time.deltaTime);
         timerDisplay.UpdateTimer(remainingTime, refillTime);
+    }
+
+    public void RefreshTime()
+    {
+        remainingTime = refillTime;
     }
 
     public void DecreaseTime(float amount)

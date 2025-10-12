@@ -19,9 +19,12 @@ public class GenerationManager : MonoBehaviour
 {
     public GameManager gameManager;
 
+    public GameObject refreshPrefab;
+
     public float cameraSize;
     public List<LevelChunk> beginningChunks, middleChunks, endChunks;
     public int middleChunkCount;
+    public float distanceBetweenRefreshes;
 
     public List<GameObject> currentChunks = new();
 
@@ -46,6 +49,14 @@ public class GenerationManager : MonoBehaviour
 
         if (!gameManager.playerManager)
             gameManager.playerManager = FindFirstObjectByType<PlayerManager>();
-        gameManager.playerManager.playerCamera.maxHeight = offset - cameraSize;
+
+        offset -= cameraSize;
+        gameManager.playerManager.playerCamera.maxHeight = offset;
+
+        for (float height = distanceBetweenRefreshes; height < offset; height += distanceBetweenRefreshes)
+        {
+            Transform newRefresh = Instantiate(refreshPrefab, Vector3.up * height, Quaternion.identity).transform;
+            newRefresh.localScale = new Vector3(beginningChunk.dimensions.x, 1, 1);
+        }
     }
 }
