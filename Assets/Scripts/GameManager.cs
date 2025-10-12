@@ -16,6 +16,8 @@ public class GameManager : MonoBehaviour
     public bool shouldGenerateTerrainOnLoad;
 
     public GameState gameState;
+    public AudioClip deathClip;
+    
 
     void Awake()
     {
@@ -43,6 +45,7 @@ public class GameManager : MonoBehaviour
         gameState = GameState.LOSE_ANIMATION;
         playerManager.moveStun = -1;
 
+        AudioManager.instance.PlaySoundFXClip(deathClip, transform, 1.0f);
         Debug.Log("Pretend that there's cool on lose stuff here");
     }
 }
