@@ -135,10 +135,10 @@ MonoBehaviour:
   floorTestOffset: 0.5
   validJumpTestRadius: 0.1
   jumpCooldownTime: 0.25
-  projectileFireTime: 0.3
+  projectileFireTime: 0.6
   projectileCooldownTime: 3
-  projectileRange: 10
-  projectileRadius: 0.5
+  projectileRange: 6
+  projectileRadius: 1
   platformMask:
     serializedVersion: 2
     m_Bits: 4097
