@@ -17,10 +17,9 @@ GameObject:
   - component: {fileID: 5081593209710861736}
   - component: {fileID: 3147339434460024481}
   - component: {fileID: 3040408733219801965}
-  - component: {fileID: 606362245205812827}
   m_Layer: 10
   m_Name: Player
-  m_TagString: Player
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -127,8 +126,8 @@ MonoBehaviour:
   groundedMask:
     serializedVersion: 2
     m_Bits: 51
-  maxPlayerRecoil: 4
-  recoilMultiplier: {x: 10, y: 10}
+  maxPlayerRecoil: 0
+  recoilMultiplier: {x: 1, y: 1}
   direction: 1
   winZoneTag: Win Zone
   blockInvulnerability: 0
@@ -189,10 +188,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1df6a9d416b1924eb340ef1b8c6dbf5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerBlock
-  blockTime: 0.5
-  blockStunTime: 3
+  blockTime: 0.25
+  blockStunTime: 5
   earlyBlockBufferTime: 0.1
-  perfectBlockTime: 0.25
+  perfectBlockTime: 0
   hasBlockDuration: 0
   hasTacticalReload: 0
   hasSpeedBoost: 0
@@ -239,23 +238,6 @@ MonoBehaviour:
   timerDisplay: {fileID: 0}
   refillTime: 60
   remainingTime: 0
---- !u!114 &606362245205812827
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1223528673435873877}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 27049343457bd664fab8fd95308b26e3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PlayerOverlapDeathZone
-  playerManager: {fileID: 678778273946464857}
-  deathZoneTag: Death Zone
-  lostLifeRate: 4
-  stunRate: 2
-  maxStun: 1
 --- !u!1 &2619534745981113462
 GameObject:
   m_ObjectHideFlags: 0
@@ -300,6 +282,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5158935894686968590}
   - component: {fileID: 8523707718639025794}
+  - component: {fileID: 711391709393914791}
   m_Layer: 10
   m_Name: Eurydice
   m_TagString: Untagged
@@ -339,6 +322,23 @@ MonoBehaviour:
   followDistance: 1
   followSpringFrequency: 10
   followSpringDamping: 1
+--- !u!114 &711391709393914791
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2866409558836864663}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27049343457bd664fab8fd95308b26e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerOverlapDeathZone
+  playerManager: {fileID: 678778273946464857}
+  deathZoneTag: 
+  lostLifeRate: 0
+  stunRate: 2
+  maxStun: 1
 --- !u!1 &4212168613022183407
 GameObject:
   m_ObjectHideFlags: 0

@@ -135,9 +135,9 @@ MonoBehaviour:
   floorTestOffset: 0.75
   validJumpTestRadius: 0.1
   jumpCooldownTime: 0.25
-  projectileFireTime: 1
+  projectileFireTime: 0.3
   projectileCooldownTime: 3
-  projectileRange: 7
+  projectileRange: 10
   wallMask:
     serializedVersion: 2
     m_Bits: 1

@@ -1,20 +1,12 @@
 {
 	"identifier": "Conclusion_2",
 	"uniqueIdentifer": "a9af0be0-8560-11f0-964f-117e669d42e8",
-	"x": 0,
-	"y": 512,
+	"x": 382,
+	"y": 832,
 	"width": 384,
 	"height": 512,
 	"bgColor": "#696A79",
 	"neighbourLevels": [
-		{
-			"levelIid": "839de9b0-8560-11f0-a001-ad3f92777806",
-			"dir": "n"
-		},
-		{
-			"levelIid": "3f98ac80-8560-11f0-a19b-67009043462c",
-			"dir": "ne"
-		},
 		{
 			"levelIid": "53755620-8560-11f0-964f-ab81400050f7",
 			"dir": "e"
@@ -22,11 +14,16 @@
 		{
 			"levelIid": "131175e0-8560-11f0-964f-43a1f5b4d9ce",
 			"dir": "s"
+		},
+		{
+			"levelIid": "842ea9c0-8560-11f0-b4fd-c76b345126be",
+			"dir": "se"
 		}
 	],
 	"customFields" : {},
 	"layers": [
 		"Tiles.png",
+		"AutoLayer.png",
 		"IntGrid.png"
 	],
 	"entities" : {}

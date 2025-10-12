@@ -16,6 +16,11 @@ public class PlayerTimer : MonoBehaviour
         remainingTime = refillTime;
     }
 
+    void Start()
+    {
+        timerDisplay = FindFirstObjectByType<TimerDisplay>();
+    }
+
     void Update()
     {
         DecreaseTime(Time.deltaTime);
