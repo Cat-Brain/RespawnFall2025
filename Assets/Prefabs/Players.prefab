@@ -126,7 +126,7 @@ MonoBehaviour:
   groundedDistance: 0.1
   groundedMask:
     serializedVersion: 2
-    m_Bits: 51
+    m_Bits: 4147
   maxPlayerRecoil: 5
   recoilMultiplier: {x: 1, y: 1}
   direction: 1

@@ -131,7 +131,7 @@ MonoBehaviour:
   flip: {fileID: 7359638493442317164}
   projectilePrefab: {fileID: 2537450151346427636, guid: fb194a0a564478e4e96deb5f61b5e9e2, type: 3}
   hopDist: 1
-  hopHeight: 2
+  hopHeight: 1
   floorTestOffset: 0.5
   validJumpTestRadius: 0.1
   jumpCooldownTime: 0.25
@@ -139,6 +139,9 @@ MonoBehaviour:
   projectileCooldownTime: 3
   projectileRange: 10
   projectileRadius: 0.5
+  platformMask:
+    serializedVersion: 2
+    m_Bits: 4097
   wallMask:
     serializedVersion: 2
     m_Bits: 1

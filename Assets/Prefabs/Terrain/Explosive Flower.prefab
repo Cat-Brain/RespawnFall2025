@@ -143,6 +143,7 @@ MonoBehaviour:
   health: 1
   explosionRadius: 3
   explosionForce: 10
+  verticalBoostCorrection: 0.5
   explosionMask:
     serializedVersion: 2
     m_Bits: 1024
