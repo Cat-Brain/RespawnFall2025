@@ -12,11 +12,14 @@ public class GameManager : MonoBehaviour
 
     public DeathZoneMove deathZone;
 
+    public bool shouldGenerateTerrainOnLoad;
+
     public GameState gameState;
 
     void Awake()
     {
-        generationManager.Init();
+        if (shouldGenerateTerrainOnLoad)
+            generationManager.Init();
     }
 
     public void PlayerWin()

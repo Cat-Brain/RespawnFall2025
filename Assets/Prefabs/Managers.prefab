@@ -422,4 +422,5 @@ MonoBehaviour:
   generationManager: {fileID: 2035370362801213309}
   playerManager: {fileID: 0}
   deathZone: {fileID: 0}
+  shouldGenerateTerrainOnLoad: 1
   gameState: 0
