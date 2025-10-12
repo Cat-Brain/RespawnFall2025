@@ -1,8 +1,8 @@
 {
 	"identifier": "Mid_1",
 	"uniqueIdentifer": "131175e0-8560-11f0-964f-43a1f5b4d9ce",
-	"x": 0,
-	"y": 1024,
+	"x": 382,
+	"y": 1344,
 	"width": 384,
 	"height": 512,
 	"bgColor": "#696A79",
@@ -14,11 +14,17 @@
 		{
 			"levelIid": "53755620-8560-11f0-964f-ab81400050f7",
 			"dir": "ne"
+		},
+		{
+			"levelIid": "842ea9c0-8560-11f0-b4fd-c76b345126be",
+			"dir": "e"
 		}
 	],
 	"customFields" : {},
 	"layers": [
-		"Tiles.png"
+		"Tiles.png",
+		"AutoLayer.png",
+		"IntGrid.png"
 	],
 	"entities" : {}
 }
