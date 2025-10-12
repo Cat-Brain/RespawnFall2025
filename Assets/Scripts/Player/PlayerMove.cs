@@ -23,10 +23,14 @@ public class PlayerMove : MonoBehaviour
     private Rigidbody2D rb;
     private PlayerManager playerManager;
 
+    //public AnimationClip[] animClips;
+    public Animator animator;
+    public Sprite sprite;
     void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
-        playerManager = GetComponent<PlayerManager>();
+        playerManager = gameObject.GetComponent<PlayerManager>();
+        //animator = GetComponent<Animator>();
 
         playerManager.jumpAction.action.started += TryJump;
         playerManager.jumpAction.action.canceled += TryTapJump;
@@ -68,9 +72,15 @@ public class PlayerMove : MonoBehaviour
             if (grounded)
                 cayoteTimer = cayoteTime;
 
+            if(rb.linearVelocityX != 0)
+            {
+                animator.SetBool("isRunning", true);
+            }
+
             if (jumpBufferTimer > 0 && (cayoteTimer > 0 || remainingAirJumps > 0) && jumpSpamTimer <= 0)
             {
                 rb.linearVelocityY = Mathf.Max(rb.linearVelocityY, jumpForce);
+                //AnimationManager.instance.PlayAnimation(animClips[1]);
 
                 if (cayoteTimer > 0)
                 {
