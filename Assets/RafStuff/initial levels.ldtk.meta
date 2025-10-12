@@ -20,7 +20,21 @@ ScriptedImporter:
   _useParallax: 1
   _scaleEntities: 1
   _intGridValues: []
-  _entities: []
+  _entities:
+  - _key: Player
+    _asset: {fileID: 2619534745981113462, guid: 00dd54f4825b1924a9b6f4f07ad4180a, type: 3}
+  - _key: Harpy
+    _asset: {fileID: 4514602889625234488, guid: 759109d9584bb4c49af12506d835eb72, type: 3}
+  - _key: Styx
+    _asset: {fileID: 8345849457394649967, guid: cf4286c8dc88f3c4c833b787ae7803e7, type: 3}
+  - _key: Walker
+    _asset: {instanceID: 0}
+  - _key: Flower
+    _asset: {fileID: 6033520624931025784, guid: 8b217517eeb93454ba1e23a11c15739e, type: 3}
+  - _key: Crumbling
+    _asset: {fileID: 5345389114221763969, guid: 42927a14cb257aa4f9b2bf2ddcc16081, type: 3}
+  - _key: One_Way
+    _asset: {fileID: 2541446833654820051, guid: c412389dc3f48254fa58c9ccd129e84a, type: 3}
   _enumGenerate: 0
   _enumPath: 
   _enumNamespace: 

@@ -256,10 +256,10 @@ TextureImporter:
       name: Tiles_6
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 384
-        height: 129
+        x: 111
+        y: 111
+        width: 114
+        height: 50
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -278,10 +278,10 @@ TextureImporter:
       name: Tiles_7
       rect:
         serializedVersion: 2
-        x: 111
-        y: 111
-        width: 114
-        height: 50
+        x: 0
+        y: 0
+        width: 384
+        height: 113
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}

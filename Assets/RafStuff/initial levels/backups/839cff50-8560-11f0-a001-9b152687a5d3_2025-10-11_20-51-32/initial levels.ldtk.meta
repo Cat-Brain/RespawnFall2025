@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 90683318a90930f41a70457ed3b54360
+guid: f746f9ac63e86c4439dae05e1c0d13b9
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -10,7 +10,7 @@ ScriptedImporter:
   script: {fileID: 11500000, guid: aaa16bfc62c086f4fb45da87b6acf9b1, type: 3}
   _reimportOnDependencyChange: 1
   _jsonFile: {instanceID: 0}
-  _pixelsPerUnit: 16
+  _pixelsPerUnit: 38
   _customLevelPrefab: {instanceID: 0}
   _intGridValueColorsVisible: 0
   _useCompositeCollider: 1
