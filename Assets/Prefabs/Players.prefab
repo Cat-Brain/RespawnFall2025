@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 5081593209710861736}
   - component: {fileID: 3147339434460024481}
   - component: {fileID: 3040408733219801965}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -126,8 +126,10 @@ MonoBehaviour:
   groundedMask:
     serializedVersion: 2
     m_Bits: 51
+  maxPlayerRecoil: 0
   recoilMultiplier: {x: 1, y: 1}
   direction: 1
+  winZoneTag: 
   blockInvulnerability: 0
   stunInvulnerability: 0
   moveStun: 0
@@ -185,6 +187,10 @@ MonoBehaviour:
   blockTime: 0.25
   blockStunTime: 5
   earlyBlockBufferTime: 0.1
+  hasBlockDuration: 0
+  hasTacticalReload: 0
+  hasSpeedBoost: 0
+  hasExplosion: 0
 --- !u!114 &3147339434460024481
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -203,6 +209,10 @@ MonoBehaviour:
   spawn: {x: 0, y: 0, z: 0}
   currentStrings: 4
   maxStrings: 4
+  hasStrings: 0
+  hasExplosives: 0
+  hasPhasing: 0
+  hasRecoil: 0
   coolDownTime: 0.3
   coolDownTimer: 0
   regenTime: 0.5
@@ -232,7 +242,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6283336157756427642}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Players
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -268,7 +278,7 @@ GameObject:
   - component: {fileID: 5158935894686968590}
   - component: {fileID: 8523707718639025794}
   - component: {fileID: 711391709393914791}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Eurydice
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -336,7 +346,7 @@ GameObject:
   - component: {fileID: 4553402315386005243}
   - component: {fileID: 4349443027620869540}
   - component: {fileID: 1177336367697256511}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Main Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
@@ -490,7 +500,7 @@ GameObject:
   - component: {fileID: 7489384212321389976}
   - component: {fileID: 5697126482523581669}
   - component: {fileID: 9054125302544342492}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -596,7 +606,7 @@ GameObject:
   - component: {fileID: 2023771297027670955}
   - component: {fileID: 6831255551334404500}
   - component: {fileID: 5232928222605140189}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
