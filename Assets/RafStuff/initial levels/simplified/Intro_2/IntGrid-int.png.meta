@@ -5,6 +5,27 @@ TextureImporter:
   - first:
       213: -1748029715406462312
     second: IntGrid-int_0
+  - first:
+      213: -1794270588547358629
+    second: IntGrid-int_1
+  - first:
+      213: -3411683255285004516
+    second: IntGrid-int_2
+  - first:
+      213: 6805669998370936411
+    second: IntGrid-int_3
+  - first:
+      213: -8777883608589055147
+    second: IntGrid-int_4
+  - first:
+      213: 623466072160419119
+    second: IntGrid-int_5
+  - first:
+      213: 4366387399313949693
+    second: IntGrid-int_6
+  - first:
+      213: 535502398076062879
+    second: IntGrid-int_7
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -104,9 +125,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 24
-        height: 32
+        y: 30
+        width: 7
+        height: 15
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -117,6 +138,160 @@ TextureImporter:
       bones: []
       spriteID: 892ee5c3c30cdb7e0800000000000000
       internalID: -1748029715406462312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IntGrid-int_1
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 23
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5024baf7687917e0800000000000000
+      internalID: -1794270588547358629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IntGrid-int_2
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 34
+        width: 24
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c17c69ab72447a0d0800000000000000
+      internalID: -3411683255285004516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IntGrid-int_3
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 29
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b56de673ec8927e50800000000000000
+      internalID: 6805669998370936411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IntGrid-int_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6
+        width: 5
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55b435e7d51be2680800000000000000
+      internalID: -8777883608589055147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IntGrid-int_5
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 8
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2d31a0e61ff6a800800000000000000
+      internalID: 623466072160419119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IntGrid-int_6
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 2
+        width: 17
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df389df9436889c30800000000000000
+      internalID: 4366387399313949693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IntGrid-int_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 32
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9c81b5089c7e6700800000000000000
+      internalID: 535502398076062879
       vertices: []
       indices: 
       edges: []
@@ -136,6 +311,13 @@ TextureImporter:
       entries: []
     nameFileIdTable:
       IntGrid-int_0: -1748029715406462312
+      IntGrid-int_1: -1794270588547358629
+      IntGrid-int_2: -3411683255285004516
+      IntGrid-int_3: 6805669998370936411
+      IntGrid-int_4: -8777883608589055147
+      IntGrid-int_5: 623466072160419119
+      IntGrid-int_6: 4366387399313949693
+      IntGrid-int_7: 535502398076062879
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

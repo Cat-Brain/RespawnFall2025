@@ -7,12 +7,22 @@ public enum GameState
 
 public class GameManager : MonoBehaviour
 {
+    public GenerationManager generationManager;
     public PlayerManager playerManager;
+
     public DeathZoneMove deathZone;
+
+    public bool shouldGenerateTerrainOnLoad;
 
     public GameState gameState;
     public AudioClip deathClip;
     
+
+    void Awake()
+    {
+        if (shouldGenerateTerrainOnLoad)
+            generationManager.Init();
+    }
 
     public void PlayerWin()
     {
