@@ -8,10 +8,6 @@
 	"bgColor": "#696A79",
 	"neighbourLevels": [
 		{
-			"levelIid": "3f98ac80-8560-11f0-a19b-67009043462c",
-			"dir": "n"
-		},
-		{
 			"levelIid": "a9af0be0-8560-11f0-964f-117e669d42e8",
 			"dir": "w"
 		},

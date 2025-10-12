@@ -9,7 +9,14 @@
     "CreateBackgroundColor": true,
     "CreateLevelBoundsTrigger": false,
     "UseParallax": true,
-    "IntGridValues": [],
+    "IntGridValues": [
+        {
+            "_key": "IntGrid_1",
+            "_asset": {
+                "instanceID": 0
+            }
+        }
+    ],
     "Entities": [
         {
             "_key": "Player",
@@ -38,7 +45,9 @@
         {
             "_key": "Walker",
             "_asset": {
-                "instanceID": 0
+                "fileID": 3862257085580188846,
+                "guid": "6aee190764e633e408269629bdbc9728",
+                "type": 3
             }
         },
         {

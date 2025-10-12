@@ -19,7 +19,9 @@ ScriptedImporter:
   _createLevelBoundsTrigger: 0
   _useParallax: 1
   _scaleEntities: 1
-  _intGridValues: []
+  _intGridValues:
+  - _key: IntGrid_1
+    _asset: {instanceID: 0}
   _entities:
   - _key: Player
     _asset: {fileID: 2619534745981113462, guid: 00dd54f4825b1924a9b6f4f07ad4180a, type: 3}
@@ -28,7 +30,7 @@ ScriptedImporter:
   - _key: Styx
     _asset: {fileID: 8345849457394649967, guid: cf4286c8dc88f3c4c833b787ae7803e7, type: 3}
   - _key: Walker
-    _asset: {instanceID: 0}
+    _asset: {fileID: 3862257085580188846, guid: 6aee190764e633e408269629bdbc9728, type: 3}
   - _key: Flower
     _asset: {fileID: 6033520624931025784, guid: 8b217517eeb93454ba1e23a11c15739e, type: 3}
   - _key: Crumbling
