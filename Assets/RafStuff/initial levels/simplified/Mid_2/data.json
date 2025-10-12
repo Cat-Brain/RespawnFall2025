@@ -12,16 +12,20 @@
 			"dir": "w"
 		},
 		{
-			"levelIid": "a9af0be0-8560-11f0-964f-117e669d42e8",
+			"levelIid": "131175e0-8560-11f0-964f-43a1f5b4d9ce",
+			"dir": "n"
+		},
+		{
+			"levelIid": "842ea9c0-8560-11f0-b4fd-c76b345126be",
 			"dir": "se"
 		},
 		{
-			"levelIid": "53755620-8560-11f0-964f-ab81400050f7",
-			"dir": "s"
+			"levelIid": "212c7a40-8560-11f0-9842-653c4514c787",
+			"dir": "e"
 		},
 		{
-			"levelIid": "131175e0-8560-11f0-964f-43a1f5b4d9ce",
-			"dir": "n"
+			"levelIid": "2564f3d0-8560-11f0-9842-db85dd6d0c88",
+			"dir": "ne"
 		}
 	],
 	"customFields" : {},
