@@ -129,7 +129,7 @@ MonoBehaviour:
   maxPlayerRecoil: 0
   recoilMultiplier: {x: 1, y: 1}
   direction: 1
-  winZoneTag: 
+  winZoneTag: Win Zone
   blockInvulnerability: 0
   stunInvulnerability: 0
   moveStun: 0
@@ -156,6 +156,7 @@ MonoBehaviour:
   jumpBufferTime: 0.25
   cayoteTime: 0.2
   jumpSpamTime: 0.35
+  tapJumpTimer: 0
   movePhysicsMaterial: {fileID: 6200000, guid: cd6ced533a7334f4eac26998f8d85a75, type: 2}
   stunnedPhysicsMaterial: {fileID: 6200000, guid: f5c405e482234fd40abd6944037c955b, type: 2}
 --- !u!114 &4430254867905316504
@@ -172,6 +173,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerGravity
   gravity: 15
   tapJumpGravity: 30
+  inQuickFall: 0
 --- !u!114 &5081593209710861736
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -187,6 +189,7 @@ MonoBehaviour:
   blockTime: 0.25
   blockStunTime: 5
   earlyBlockBufferTime: 0.1
+  perfectBlockTime: 0
   hasBlockDuration: 0
   hasTacticalReload: 0
   hasSpeedBoost: 0
@@ -330,6 +333,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerOverlapDeathZone
   playerManager: {fileID: 678778273946464857}
+  deathZoneTag: 
   lostLifeRate: 0
   stunRate: 2
   maxStun: 1

@@ -78,8 +78,21 @@
 				"id": "Flower",
 				"iid": "80a30110-8560-11f0-b4fd-0376e79dc2f0",
 				"layer": "Entities",
-				"x": 368,
+				"x": 352,
 				"y": 384,
+				"width": 16,
+				"height": 16,
+				"color": 4098376,
+				"customFields": {
+					"Degree": "Degree0"
+				}
+			},
+			{
+				"id": "Flower",
+				"iid": "03196480-8560-11f0-b4fd-21264b2f5223",
+				"layer": "Entities",
+				"x": 128,
+				"y": 336,
 				"width": 16,
 				"height": 16,
 				"color": 4098376,
