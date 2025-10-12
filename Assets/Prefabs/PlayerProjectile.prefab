@@ -133,7 +133,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerProjectile
   direction: {x: 0, y: 0, z: 0}
-  recoilForce: 4
+  recoilForce: 5.5
   speed: 10
   rb: {fileID: 0}
 --- !u!60 &1619764128332532391

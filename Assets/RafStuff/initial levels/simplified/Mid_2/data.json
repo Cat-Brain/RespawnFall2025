@@ -460,6 +460,28 @@
 				"height": 16,
 				"color": 12087120,
 				"customFields" : {}
+			},
+			{
+				"id": "One_Way",
+				"iid": "d9abf070-8560-11f0-9842-fb03210a1636",
+				"layer": "Entities",
+				"x": 32,
+				"y": 96,
+				"width": 16,
+				"height": 16,
+				"color": 12087120,
+				"customFields" : {}
+			},
+			{
+				"id": "One_Way",
+				"iid": "d9d8f3e0-8560-11f0-9842-6d128c386df7",
+				"layer": "Entities",
+				"x": 48,
+				"y": 96,
+				"width": 16,
+				"height": 16,
+				"color": 12087120,
+				"customFields" : {}
 			}
 		],
 		"Flower": [
@@ -535,6 +557,17 @@
 				"layer": "Entities",
 				"x": 152,
 				"y": 224,
+				"width": 16,
+				"height": 16,
+				"color": 4098376,
+				"customFields" : {}
+			},
+			{
+				"id": "Flower",
+				"iid": "db6efd30-8560-11f0-9842-a99034fc1d75",
+				"layer": "Entities",
+				"x": 40,
+				"y": 80,
 				"width": 16,
 				"height": 16,
 				"color": 4098376,

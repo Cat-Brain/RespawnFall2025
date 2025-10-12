@@ -14,6 +14,9 @@ TextureImporter:
   - first:
       213: -6305850346828596834
     second: IntGrid_3
+  - first:
+      213: -6559098454845027048
+    second: IntGrid_4
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -136,7 +139,7 @@ TextureImporter:
         serializedVersion: 2
         x: 79
         y: 223
-        width: 194
+        width: 178
         height: 114
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -156,10 +159,10 @@ TextureImporter:
       name: IntGrid_2
       rect:
         serializedVersion: 2
-        x: 351
-        y: 0
-        width: 225
-        height: 384
+        x: 223
+        y: 335
+        width: 162
+        height: 34
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -178,6 +181,28 @@ TextureImporter:
       name: IntGrid_3
       rect:
         serializedVersion: 2
+        x: 351
+        y: 0
+        width: 225
+        height: 384
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e99f186f48e1d78a0800000000000000
+      internalID: -6305850346828596834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IntGrid_4
+      rect:
+        serializedVersion: 2
         x: 239
         y: 15
         width: 146
@@ -190,8 +215,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e99f186f48e1d78a0800000000000000
-      internalID: -6305850346828596834
+      spriteID: 81d0628f4b669f4a0800000000000000
+      internalID: -6559098454845027048
       vertices: []
       indices: 
       edges: []
@@ -214,6 +239,7 @@ TextureImporter:
       IntGrid_1: 4102394523659005466
       IntGrid_2: 2531750858073260620
       IntGrid_3: -6305850346828596834
+      IntGrid_4: -6559098454845027048
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

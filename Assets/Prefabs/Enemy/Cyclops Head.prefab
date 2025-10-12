@@ -112,8 +112,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d13be2d890862d428465a42ce172012, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyHitbox
-  knockback: 5
-  stunDuration: 2
+  knockback: 3
+  stunDuration: 1
   invulnerability: 3
   playerTag: Player
 --- !u!114 &8047029066469306682
@@ -136,9 +136,9 @@ MonoBehaviour:
   validJumpTestRadius: 0.1
   jumpCooldownTime: 0.25
   projectileFireTime: 0.6
-  projectileCooldownTime: 3
-  projectileRange: 6
-  projectileRadius: 1
+  projectileCooldownTime: 2
+  projectileRange: 7
+  projectileRadius: 3
   platformMask:
     serializedVersion: 2
     m_Bits: 4097
