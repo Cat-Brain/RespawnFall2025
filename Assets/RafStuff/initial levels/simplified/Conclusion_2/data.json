@@ -28,5 +28,32 @@
 	"layers": [
 		"Tiles.png"
 	],
-	"entities" : {}
+	"entities": {
+		"Player": [
+			{
+				"id": "Player",
+				"iid": "5f446cc0-8560-11f0-b4fd-5d0ea8610a47",
+				"layer": "Entities",
+				"x": 64,
+				"y": 352,
+				"width": 16,
+				"height": 16,
+				"color": 12470831,
+				"customFields" : {}
+			}
+		],
+		"Styx": [
+			{
+				"id": "Styx",
+				"iid": "605df310-8560-11f0-b4fd-07c19b1d4a4d",
+				"layer": "Entities",
+				"x": 160,
+				"y": 272,
+				"width": 16,
+				"height": 16,
+				"color": 5925256,
+				"customFields" : {}
+			}
+		]
+	}
 }
