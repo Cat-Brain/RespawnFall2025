@@ -45,6 +45,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GenerationManager
   gameManager: {fileID: 4989346605032106179}
+  refreshPrefab: {fileID: 7663383876119149669, guid: 52af7dfe349ae164bb1bbdc8c5caa505, type: 3}
   cameraSize: 10
   beginningChunks:
   - prefab: {fileID: 2816548378978262457, guid: 856924c8e338a9445a1f54f4e127f8db, type: 3}
@@ -56,6 +57,7 @@ MonoBehaviour:
   middleChunks: []
   endChunks: []
   middleChunkCount: 0
+  distanceBetweenRefreshes: 12
   currentChunks: []
 --- !u!1 &2067745158736696443
 GameObject:
@@ -471,8 +473,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameManager
   generationManager: {fileID: 2035370362801213309}
-  playerManager: {fileID: 0}
   stringController: {fileID: 5553215489537270639}
+  playerManager: {fileID: 0}
   deathZone: {fileID: 0}
   shouldGenerateTerrainOnLoad: 1
   gameState: 0

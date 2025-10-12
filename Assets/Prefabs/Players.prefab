@@ -127,7 +127,6 @@ MonoBehaviour:
   groundedMask:
     serializedVersion: 2
     m_Bits: 4147
-  maxPlayerRecoil: 5
   recoilMultiplier: {x: 1, y: 1}
   direction: 1
   winZoneTag: Win Zone
@@ -237,7 +236,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerTimer
   timerDisplay: {fileID: 0}
-  refillTime: 60
+  refillTime: 20
   remainingTime: 0
 --- !u!114 &1606943418567180504
 MonoBehaviour:
