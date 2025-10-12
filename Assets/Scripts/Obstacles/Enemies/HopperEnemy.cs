@@ -12,7 +12,7 @@ public class HopperEnemy : MonoBehaviour
     public float floorTestOffset;
     public float validJumpTestRadius;
     public float jumpCooldownTime, projectileFireTime, projectileCooldownTime;
-    public float projectileRange;
+    public float projectileRange, projectileRadius;
     public LayerMask wallMask;
 
     private bool facingLeft;
@@ -62,9 +62,14 @@ public class HopperEnemy : MonoBehaviour
 
     public bool TryShootPlayer()
     {
+        Vector2 offset = (player.position - transform.position);
+        if (offset == Vector2.zero)
+            return false;
+        float distance = offset.magnitude;
+        Vector2 direction = offset / distance;
         if (projectileCooldownTimer > 0 ||
-            Vector2.Distance(player.position, transform.position) > projectileRange ||
-            Physics2D.Linecast(transform.position, player.position, wallMask))
+            offset.sqrMagnitude > projectileRange * projectileRange ||
+            Physics2D.CircleCast(transform.position, projectileRadius, direction, distance, wallMask))
             return false;
 
         projectileFireTimer = projectileFireTime;
@@ -72,7 +77,7 @@ public class HopperEnemy : MonoBehaviour
         EnemyProjectile projectile = Instantiate(projectilePrefab, transform.position,
             Quaternion.identity).GetComponent<EnemyProjectile>();
 
-        projectile.direction = (player.position - transform.position).normalized;
+        projectile.direction = direction;
         projectile.Init();
 
         return true;

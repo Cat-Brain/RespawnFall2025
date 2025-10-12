@@ -1,5 +1,6 @@
 using DG.Tweening;
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class CrumbleBlock : MonoBehaviour
@@ -9,7 +10,7 @@ public class CrumbleBlock : MonoBehaviour
 
     [Tooltip("Set to -1 to destroy on crumble")]
     public float disabledDuration;
-    public float mercyTime, fadeDuration, fadeOpacity;
+    public float mercyTime, crumbleTime, fadeDuration, fadeOpacity;
 
     private Collider2D col;
     private SpriteRenderer sr;
@@ -23,32 +24,32 @@ public class CrumbleBlock : MonoBehaviour
         sr = GetComponent<SpriteRenderer>();
     }
 
-    void Update()
+    private void FixedUpdate()
     {
-        if (isCrumbled || mercyTimer == -1)
+        if (isCrumbled)
             return;
 
-        mercyTimer = Mathf.Max(0, mercyTimer - Time.deltaTime);
+        List<Collider2D> overlaps = new();
+        col.Overlap(overlaps);
+        foreach (Collider2D overlap in overlaps)
+            if (!isCrumbled && CMath.LayerOverlapsMask(overlap.gameObject.layer, crumbleLayer))
+            {
+                mercyTimer = Mathf.Max(0, mercyTimer - Time.fixedDeltaTime);
+                if (mercyTimer > 0)
+                    return;
 
-        if (mercyTimer <= 0)
-            StartCoroutine(Crumble());
-    }
+                isCrumbled = true;
+                StartCoroutine(Crumble());
+                return;
+            }
 
-    void OnCollisionStay(Collision collision)
-    {
-        if (!isCrumbled && CMath.LayerOverlapsMask(collision.gameObject.layer, crumbleLayer))
-            mercyTimer = -1;
-    }
-
-    void OnCollisionExit2D(Collision2D collision)
-    {
-        if (!isCrumbled && CMath.LayerOverlapsMask(collision.gameObject.layer, crumbleLayer))
-            mercyTimer = mercyTime;
+        mercyTimer = mercyTime;
     }
 
     public IEnumerator Crumble()
     {
         isCrumbled = true;
+        yield return new WaitForSeconds(crumbleTime);
         col.enabled = false;
         if (disabledDuration == -1)
         {
@@ -64,9 +65,9 @@ public class CrumbleBlock : MonoBehaviour
             yield return new WaitForSeconds(disabledDuration - fadeDuration);
             sr.DOFade(unfadedOpacity, fadeDuration);
             yield return new WaitForSeconds(fadeDuration);
+            mercyTimer = mercyTime;
             col.enabled = true;
             isCrumbled = false;
-            mercyTimer = -1;
         }
     }
 }
