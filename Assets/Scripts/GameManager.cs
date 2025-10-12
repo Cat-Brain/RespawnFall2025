@@ -7,10 +7,17 @@ public enum GameState
 
 public class GameManager : MonoBehaviour
 {
+    public GenerationManager generationManager;
     public PlayerManager playerManager;
+
     public DeathZoneMove deathZone;
 
     public GameState gameState;
+
+    void Awake()
+    {
+        generationManager.Init();
+    }
 
     public void PlayerWin()
     {

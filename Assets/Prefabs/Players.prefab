@@ -17,8 +17,9 @@ GameObject:
   - component: {fileID: 5081593209710861736}
   - component: {fileID: 3147339434460024481}
   - component: {fileID: 3040408733219801965}
+  - component: {fileID: 1606943418567180504}
   m_Layer: 10
-  m_Name: Player
+  m_Name: Orpheus
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -238,6 +239,23 @@ MonoBehaviour:
   timerDisplay: {fileID: 0}
   refillTime: 60
   remainingTime: 0
+--- !u!114 &1606943418567180504
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1223528673435873877}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27049343457bd664fab8fd95308b26e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerOverlapDeathZone
+  playerManager: {fileID: 678778273946464857}
+  deathZoneTag: Death Zone
+  lostLifeRate: 4
+  stunRate: 2
+  maxStun: 1
 --- !u!1 &2619534745981113462
 GameObject:
   m_ObjectHideFlags: 0
@@ -282,7 +300,6 @@ GameObject:
   m_Component:
   - component: {fileID: 5158935894686968590}
   - component: {fileID: 8523707718639025794}
-  - component: {fileID: 711391709393914791}
   m_Layer: 10
   m_Name: Eurydice
   m_TagString: Untagged
@@ -322,23 +339,6 @@ MonoBehaviour:
   followDistance: 1
   followSpringFrequency: 10
   followSpringDamping: 1
---- !u!114 &711391709393914791
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2866409558836864663}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 27049343457bd664fab8fd95308b26e3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PlayerOverlapDeathZone
-  playerManager: {fileID: 678778273946464857}
-  deathZoneTag: 
-  lostLifeRate: 0
-  stunRate: 2
-  maxStun: 1
 --- !u!1 &4212168613022183407
 GameObject:
   m_ObjectHideFlags: 0
@@ -409,7 +409,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 10
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -493,7 +493,8 @@ MonoBehaviour:
   moveSpringFrequency: 10
   moveSpringDamping: 1
   minHeight: 0
-  maxHeight: 17
+  maxHeight: 50
+  resetPosOnAwake: 1
   velocity: 0
 --- !u!1 &4569230922230076936
 GameObject:
