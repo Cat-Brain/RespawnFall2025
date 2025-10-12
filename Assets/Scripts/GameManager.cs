@@ -17,12 +17,16 @@ public class GameManager : MonoBehaviour
 
     public GameState gameState;
     public AudioClip deathClip;
+    public GameObject ActionMusic;
+    public AudioSource audioSource;
     
 
     void Awake()
     {
         if (shouldGenerateTerrainOnLoad)
             generationManager.Init();
+
+        audioSource = ActionMusic.GetComponent<AudioSource>();
     }
 
     public void PlayerWin()
@@ -45,6 +49,7 @@ public class GameManager : MonoBehaviour
         gameState = GameState.LOSE_ANIMATION;
         playerManager.moveStun = -1;
 
+        audioSource.Stop();
         AudioManager.instance.PlaySoundFXClip(deathClip, transform, 1.0f);
         Debug.Log("Pretend that there's cool on lose stuff here");
     }
