@@ -42,14 +42,12 @@ public class SceneLoadManager : MonoBehaviour
 
         yield return new WaitForSeconds(fadeTime);
 
-        onBlackScreen?.Invoke();
-
         yield return new WaitUntil(() => asyncLoad.progress >= 0.9f);
         asyncLoad.allowSceneActivation = true;
         yield return new WaitUntil(() => asyncLoad.isDone);
 
+        onBlackScreen?.Invoke();
         
-
         fadeBox.DOFade(0, fadeTime).OnComplete(() => { fadeBox.enabled = false; loadingScene = false; });
     }
 }

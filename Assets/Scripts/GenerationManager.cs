@@ -33,7 +33,7 @@ public class GenerationManager : MonoBehaviour
         float offset = -cameraSize;
 
         LevelChunk beginningChunk = beginningChunks[UnityEngine.Random.Range(0, beginningChunks.Count)];
-        currentChunks.Add(beginningChunk.Spawn(Vector2.up * offset, transform));
+        currentChunks.Add(beginningChunk.Spawn(Vector2.up * offset));
         offset += beginningChunk.dimensions.y;
 
         for (int i = 0; i < middleChunkCount; i++)
