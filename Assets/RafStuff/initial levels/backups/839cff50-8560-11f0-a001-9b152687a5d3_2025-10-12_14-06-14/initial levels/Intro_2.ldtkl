@@ -2859,5 +2859,5 @@
 			"entityInstances": []
 		}
 	],
-	"__neighbours": [ { "levelIid": "839de9b0-8560-11f0-a001-ad3f92777806", "dir": "w" }, { "levelIid": "53755620-8560-11f0-964f-ab81400050f7", "dir": "se" }, { "levelIid": "131175e0-8560-11f0-964f-43a1f5b4d9ce", "dir": "e" }, { "levelIid": "28c01340-8560-11f0-b191-9df367c5828d", "dir": "e" } ]
+	"__neighbours": [ { "levelIid": "839de9b0-8560-11f0-a001-ad3f92777806", "dir": "w" }, { "levelIid": "131175e0-8560-11f0-964f-43a1f5b4d9ce", "dir": "e" }, { "levelIid": "28c01340-8560-11f0-b191-9df367c5828d", "dir": "e" } ]
 }

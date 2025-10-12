@@ -152,5 +152,5 @@
 			"entityInstances": []
 		}
 	],
-	"__neighbours": []
+	"__neighbours": [{ "levelIid": "53755620-8560-11f0-964f-ab81400050f7", "dir": "e" }]
 }
