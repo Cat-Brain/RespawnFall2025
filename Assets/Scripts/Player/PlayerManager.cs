@@ -30,6 +30,7 @@ public class PlayerManager : MonoBehaviour
     [HideInInspector] public PlayerGravity playerGravity;
     [HideInInspector] public PlayerBlock playerBlock;
     [HideInInspector] public PlayerTimer playerTimer;
+    [HideInInspector] public PlayerAnimator playerAnimator;
 
     private Rigidbody2D rb;
 

@@ -25,6 +25,8 @@ public class PlayerShoot : MonoBehaviour
         coolDownTimer = 0;
         regenTimer = 0;
         currentStrings = maxStrings;
+        playerManagerScript.gameManager.stringController.maxStrings = maxStrings;
+        playerManagerScript.gameManager.stringController.currentStrings = currentStrings;
         clickAction.action.started += Shoot;
     }
 
@@ -37,8 +39,9 @@ public class PlayerShoot : MonoBehaviour
         if (currentStrings < maxStrings && regenTimer <= 0)
         {
             currentStrings++;
+            playerManagerScript.gameManager.stringController.currentStrings = currentStrings;
 
-            if(currentStrings == maxStrings - 1)
+            if (currentStrings == maxStrings - 1)
             {
                 AudioManager.instance.PlaySoundFXClip(reloadClip, transform, 1.0f);
             }
@@ -49,6 +52,7 @@ public class PlayerShoot : MonoBehaviour
         if(coolDownTimer <= 0 && currentStrings > 0 && !playerManagerScript.Stunned()) {
             AudioManager.instance.PlaySoundFXClip(shootClips[maxStrings - currentStrings], transform, 1.0f);
             currentStrings--;
+            playerManagerScript.gameManager.stringController.currentStrings = currentStrings;
             spawn = new Vector3(transform.position.x, transform.position.y, 0);
             GameObject playerBullet = Instantiate(bulletPrefab, spawn, transform.rotation);
             coolDownTimer = coolDownTime;
