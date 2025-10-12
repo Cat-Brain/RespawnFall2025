@@ -9,6 +9,7 @@ public class GameManager : MonoBehaviour
 {
     public GenerationManager generationManager;
     public PlayerManager playerManager;
+    public DisplayStringController stringController;
 
     public DeathZoneMove deathZone;
 

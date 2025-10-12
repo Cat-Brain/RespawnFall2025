@@ -3,10 +3,18 @@ using UnityEngine;
 
 public class TimerDisplay : MonoBehaviour
 {
-    public TextMeshProUGUI timerText;
+    public RectTransform harpFadeMask;
+
+    private float harpFadeMaskStartHeight;
+
+    void Awake()
+    {
+        harpFadeMaskStartHeight = harpFadeMask.sizeDelta.y;
+    }
 
     public void UpdateTimer(float remaining, float total)
     {
-        timerText.text = Mathf.FloorToInt(remaining).ToString();
+        float remainingFraction = remaining / total;
+        harpFadeMask.sizeDelta = new Vector2(harpFadeMask.sizeDelta.x, harpFadeMaskStartHeight * remainingFraction);
     }
 }
