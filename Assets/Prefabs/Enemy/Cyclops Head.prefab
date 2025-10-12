@@ -138,7 +138,7 @@ MonoBehaviour:
   projectileFireTime: 0.6
   projectileCooldownTime: 2
   projectileRange: 7
-  projectileRadius: 3
+  projectileRadius: 0.45
   platformMask:
     serializedVersion: 2
     m_Bits: 4097
