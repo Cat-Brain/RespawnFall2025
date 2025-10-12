@@ -70,7 +70,7 @@ public class PlayerMove : MonoBehaviour
 
             if (jumpBufferTimer > 0 && (cayoteTimer > 0 || remainingAirJumps > 0) && jumpSpamTimer <= 0)
             {
-                rb.linearVelocityY = Mathf.Max(0, rb.linearVelocityY) + jumpForce;
+                rb.linearVelocityY = Mathf.Max(rb.linearVelocityY, jumpForce);
 
                 if (cayoteTimer > 0)
                 {
