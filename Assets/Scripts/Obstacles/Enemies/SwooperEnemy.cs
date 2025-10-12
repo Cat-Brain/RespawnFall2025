@@ -76,7 +76,7 @@ public class SwooperEnemy : MonoBehaviour
 
         swoopTrigger.enabled = false;
         hitbox.enabled = true;
-        AudioManager.instance.PlaySoundFXClip(harpyClip, transform, 0.5f);
+        AudioManager.instance.PlaySoundFXClip(harpyClip, transform, 0.1f);
     }
 
     public void PrepareForSwoop()

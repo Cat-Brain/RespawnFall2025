@@ -18,7 +18,7 @@ public class ExplosiveFlower : EnemyHealth
                     * explosionForce;
 
         base.Death();
-        AudioManager.instance.PlaySoundFXClip(flowerPopClip, transform, 0.5f);
+        AudioManager.instance.PlaySoundFXClip(flowerPopClip, transform, 0.2f);
     }
 
     void OnDrawGizmos()
