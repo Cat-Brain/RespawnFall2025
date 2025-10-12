@@ -9,9 +9,9 @@ public struct LevelChunk
     public Vector3 spawnOffset;
     public Vector2 dimensions;
 
-    public GameObject Spawn(Vector2 offset)
+    public GameObject Spawn(Vector2 offset, Transform parent = null)
     {
-        return GameObject.Instantiate(prefab, spawnOffset + (Vector3)offset, Quaternion.identity);
+        return GameObject.Instantiate(prefab, spawnOffset + (Vector3)offset, Quaternion.identity, parent);
     }
 }
 
@@ -33,7 +33,7 @@ public class GenerationManager : MonoBehaviour
         float offset = -cameraSize;
 
         LevelChunk beginningChunk = beginningChunks[UnityEngine.Random.Range(0, beginningChunks.Count)];
-        currentChunks.Add(beginningChunk.Spawn(Vector2.up * offset));
+        currentChunks.Add(beginningChunk.Spawn(Vector2.up * offset, transform));
         offset += beginningChunk.dimensions.y;
 
         /*for (int i = 0; i < middleChunkCount; i++)

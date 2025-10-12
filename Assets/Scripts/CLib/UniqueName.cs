@@ -4,8 +4,11 @@ public class UniqueName : MonoBehaviour
 {
     void Awake()
     {
-        foreach (UniqueName other in FindObjectsByType<UniqueName>(FindObjectsSortMode.None))
+        foreach (UniqueName other in FindObjectsByType<UniqueName>(FindObjectsInactive.Include, FindObjectsSortMode.None))
             if (this != other && gameObject.name == other.gameObject.name)
-                Destroy(gameObject);
+            {
+                DestroyImmediate(gameObject);
+                return;
+            }
     }
 }
