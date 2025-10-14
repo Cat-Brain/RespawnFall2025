@@ -100,10 +100,10 @@ public class GameManager : MonoBehaviour
 
     public void SwitchToMainMenu()
     {
-        if (gameState != GameState.SETTINGS_MENU && gameState != GameState.PAUSE_MENU)
+        if (gameState != GameState.SETTINGS_MENU && gameState != GameState.PAUSE_MENU && gameState != GameState.LOSE_ANIMATION)
             return;
 
-        if (gameState == GameState.SETTINGS_MENU)
+        if (gameState == GameState.SETTINGS_MENU || gameState == GameState.LOSE_ANIMATION)
         {
             gameState = GameState.MAIN_MENU;
             return;

@@ -192,10 +192,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1df6a9d416b1924eb340ef1b8c6dbf5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerBlock
-  blockTime: 0.25
-  blockStunTime: 5
+  blockTime: 0.3
+  blockStunTime: 3
   earlyBlockBufferTime: 0.1
-  perfectBlockTime: 0
+  perfectBlockTime: 0.1
   hasBlockDuration: 0
   hasTacticalReload: 0
   hasSpeedBoost: 0
@@ -283,10 +283,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerAnimator
   animator: {fileID: 7692755079953332793}
+  animator2: {fileID: 4074682873201198913}
   running: 0
   stunned: 0
   jumping: 0
   grounded: 0
+  singing: 0
   playerManager: {fileID: 0}
 --- !u!1 &2619534745981113462
 GameObject:
@@ -348,7 +350,7 @@ Transform:
   m_GameObject: {fileID: 2866409558836864663}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1, y: 0, z: 0}
+  m_LocalPosition: {x: -1.5, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -368,7 +370,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerFollower
   playerManager: {fileID: 678778273946464857}
-  followDistance: 1
+  followDistance: 1.5
   followSpringFrequency: 10
   followSpringDamping: 1
 --- !u!1 &4212168613022183407
@@ -668,6 +670,7 @@ GameObject:
   - component: {fileID: 2023771297027670955}
   - component: {fileID: 6831255551334404500}
   - component: {fileID: 5232928222605140189}
+  - component: {fileID: 4074682873201198913}
   m_Layer: 10
   m_Name: Sprite
   m_TagString: Untagged
@@ -685,7 +688,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 5158935894686968590}
@@ -737,9 +740,9 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
+  m_Sprite: {fileID: 4483018588556140007, guid: e415cc70c835a424385e3b76fe82d67f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
+  m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 1, y: 1}
@@ -763,3 +766,25 @@ MonoBehaviour:
   flipSpringFrequency: 10
   flipSpringDamping: 1
   direction: 1
+--- !u!95 &4074682873201198913
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8386677574211976968}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 933f10d1c9c8b274eb12a59658cd0136, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
