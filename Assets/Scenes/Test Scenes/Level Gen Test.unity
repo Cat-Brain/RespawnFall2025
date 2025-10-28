@@ -127,6 +127,82 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2035370362801213309, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
+      propertyPath: middleChunkCount
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2035370362801213309, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
+      propertyPath: endChunks.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2035370362801213309, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
+      propertyPath: middleChunks.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2035370362801213309, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
+      propertyPath: endChunks.Array.data[0].prefab
+      value: 
+      objectReference: {fileID: -2302777090318718211, guid: 30bed0638cb7cc74684ab1d0b7260ab2, type: 3}
+    - target: {fileID: 2035370362801213309, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
+      propertyPath: endChunks.Array.data[1].prefab
+      value: 
+      objectReference: {fileID: -6415115034124601306, guid: 63657e4d660cc724b8c8bcfa1e022316, type: 3}
+    - target: {fileID: 2035370362801213309, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
+      propertyPath: middleChunks.Array.data[0].prefab
+      value: 
+      objectReference: {fileID: 6266437881009966053, guid: 54a3013b392d0d24ca5eaae916d729dc, type: 3}
+    - target: {fileID: 2035370362801213309, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
+      propertyPath: middleChunks.Array.data[1].prefab
+      value: 
+      objectReference: {fileID: -1191214121291890751, guid: edca60b1982ef4a46ba8d2b09cf0afb6, type: 3}
+    - target: {fileID: 2035370362801213309, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
+      propertyPath: endChunks.Array.data[0].dimensions.x
+      value: 32
+      objectReference: {fileID: 0}
+    - target: {fileID: 2035370362801213309, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
+      propertyPath: endChunks.Array.data[0].dimensions.y
+      value: 24
+      objectReference: {fileID: 0}
+    - target: {fileID: 2035370362801213309, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
+      propertyPath: endChunks.Array.data[1].dimensions.x
+      value: 32
+      objectReference: {fileID: 0}
+    - target: {fileID: 2035370362801213309, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
+      propertyPath: endChunks.Array.data[1].dimensions.y
+      value: 24
+      objectReference: {fileID: 0}
+    - target: {fileID: 2035370362801213309, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
+      propertyPath: endChunks.Array.data[0].spawnOffset.x
+      value: -16
+      objectReference: {fileID: 0}
+    - target: {fileID: 2035370362801213309, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
+      propertyPath: endChunks.Array.data[1].spawnOffset.x
+      value: -16
+      objectReference: {fileID: 0}
+    - target: {fileID: 2035370362801213309, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
+      propertyPath: middleChunks.Array.data[0].dimensions.x
+      value: 32
+      objectReference: {fileID: 0}
+    - target: {fileID: 2035370362801213309, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
+      propertyPath: middleChunks.Array.data[0].dimensions.y
+      value: 24
+      objectReference: {fileID: 0}
+    - target: {fileID: 2035370362801213309, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
+      propertyPath: middleChunks.Array.data[1].dimensions.x
+      value: 32
+      objectReference: {fileID: 0}
+    - target: {fileID: 2035370362801213309, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
+      propertyPath: middleChunks.Array.data[1].dimensions.y
+      value: 24
+      objectReference: {fileID: 0}
+    - target: {fileID: 2035370362801213309, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
+      propertyPath: middleChunks.Array.data[0].spawnOffset.x
+      value: -16
+      objectReference: {fileID: 0}
+    - target: {fileID: 2035370362801213309, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
+      propertyPath: middleChunks.Array.data[1].spawnOffset.x
+      value: -16
+      objectReference: {fileID: 0}
     - target: {fileID: 3282174016193848263, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

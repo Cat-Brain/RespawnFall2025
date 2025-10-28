@@ -16,14 +16,11 @@ public class PlayerTimer : MonoBehaviour
         RefreshTime();
     }
 
-    void Start()
-    {
-        timerDisplay = FindFirstObjectByType<TimerDisplay>();
-    }
-
     void Update()
     {
         DecreaseTime(Time.deltaTime);
+        if (timerDisplay == null)
+            timerDisplay = FindFirstObjectByType<TimerDisplay>();
         timerDisplay.UpdateTimer(remainingTime, refillTime);
     }
 

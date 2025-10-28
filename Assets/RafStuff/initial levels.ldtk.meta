@@ -37,6 +37,8 @@ ScriptedImporter:
     _asset: {fileID: 5345389114221763969, guid: 42927a14cb257aa4f9b2bf2ddcc16081, type: 3}
   - _key: One_Way
     _asset: {fileID: 2541446833654820051, guid: c412389dc3f48254fa58c9ccd129e84a, type: 3}
+  - _key: Win
+    _asset: {fileID: 6519263521840097383, guid: 663a213a24d4d054f983b8f53159b04d, type: 3}
   _enumGenerate: 0
   _enumPath: 
   _enumNamespace: 

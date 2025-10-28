@@ -1089,22 +1089,6 @@
 				},
 				{
 					"__identifier": "Styx",
-					"__grid": [24,46],
-					"__pivot": [0,0],
-					"__tags": ["Environment"],
-					"__tile": null,
-					"__smartColor": "#5A6988",
-					"iid": "35403260-8560-11f0-b191-7b1dd7700337",
-					"width": 16,
-					"height": 16,
-					"defUid": 17,
-					"px": [384,736],
-					"fieldInstances": [],
-					"__worldX": 976,
-					"__worldY": 736
-				},
-				{
-					"__identifier": "Styx",
 					"__grid": [26,46],
 					"__pivot": [0,0],
 					"__tags": ["Environment"],
@@ -1150,22 +1134,6 @@
 					"fieldInstances": [],
 					"__worldX": 1040,
 					"__worldY": 736
-				},
-				{
-					"__identifier": "Crumbling",
-					"__grid": [24,45],
-					"__pivot": [0,0],
-					"__tags": ["Environment"],
-					"__tile": null,
-					"__smartColor": "#3A4466",
-					"iid": "3c255560-8560-11f0-b191-1b6beb8865d5",
-					"width": 16,
-					"height": 16,
-					"defUid": 21,
-					"px": [384,720],
-					"fieldInstances": [],
-					"__worldX": 976,
-					"__worldY": 720
 				},
 				{
 					"__identifier": "Styx",
@@ -1838,38 +1806,6 @@
 					"fieldInstances": [],
 					"__worldX": 688,
 					"__worldY": 512
-				},
-				{
-					"__identifier": "Crumbling",
-					"__grid": [4,38],
-					"__pivot": [0,0],
-					"__tags": ["Environment"],
-					"__tile": null,
-					"__smartColor": "#3A4466",
-					"iid": "234ddba0-8560-11f0-b191-71853fb18386",
-					"width": 16,
-					"height": 16,
-					"defUid": 21,
-					"px": [64,608],
-					"fieldInstances": [],
-					"__worldX": 656,
-					"__worldY": 608
-				},
-				{
-					"__identifier": "Crumbling",
-					"__grid": [5,38],
-					"__pivot": [0,0],
-					"__tags": ["Environment"],
-					"__tile": null,
-					"__smartColor": "#3A4466",
-					"iid": "239a7500-8560-11f0-b191-d70500642ad1",
-					"width": 16,
-					"height": 16,
-					"defUid": 21,
-					"px": [80,608],
-					"fieldInstances": [],
-					"__worldX": 672,
-					"__worldY": 608
 				},
 				{
 					"__identifier": "Flower",
@@ -2830,6 +2766,22 @@
 					"fieldInstances": [],
 					"__worldX": 672,
 					"__worldY": 32
+				},
+				{
+					"__identifier": "Styx",
+					"__grid": [24,46],
+					"__pivot": [0,0],
+					"__tags": ["Environment"],
+					"__tile": null,
+					"__smartColor": "#5A6988",
+					"iid": "02b15f30-8560-11f0-9842-31877a084b33",
+					"width": 16,
+					"height": 16,
+					"defUid": 17,
+					"px": [384,736],
+					"fieldInstances": [],
+					"__worldX": 976,
+					"__worldY": 736
 				}
 			]
 		},
@@ -2859,5 +2811,5 @@
 			"entityInstances": []
 		}
 	],
-	"__neighbours": [ { "levelIid": "839de9b0-8560-11f0-a001-ad3f92777806", "dir": "w" }, { "levelIid": "53755620-8560-11f0-964f-ab81400050f7", "dir": "se" }, { "levelIid": "131175e0-8560-11f0-964f-43a1f5b4d9ce", "dir": "e" }, { "levelIid": "28c01340-8560-11f0-b191-9df367c5828d", "dir": "e" } ]
+	"__neighbours": [ { "levelIid": "839de9b0-8560-11f0-a001-ad3f92777806", "dir": "w" }, { "levelIid": "131175e0-8560-11f0-964f-43a1f5b4d9ce", "dir": "e" }, { "levelIid": "28c01340-8560-11f0-b191-9df367c5828d", "dir": "e" } ]
 }

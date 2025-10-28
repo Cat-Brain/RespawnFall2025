@@ -112,8 +112,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d13be2d890862d428465a42ce172012, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyHitbox
-  knockback: 5
-  stunDuration: 2
+  knockback: 3
+  stunDuration: 1
   invulnerability: 3
   playerTag: Player
 --- !u!114 &8047029066469306682
@@ -135,10 +135,10 @@ MonoBehaviour:
   floorTestOffset: 0.5
   validJumpTestRadius: 0.1
   jumpCooldownTime: 0.25
-  projectileFireTime: 0.3
-  projectileCooldownTime: 3
-  projectileRange: 10
-  projectileRadius: 0.5
+  projectileFireTime: 0.6
+  projectileCooldownTime: 2
+  projectileRange: 7
+  projectileRadius: 0.45
   platformMask:
     serializedVersion: 2
     m_Bits: 4097
@@ -217,8 +217,8 @@ Transform:
   m_GameObject: {fileID: 7307566886645047403}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: 0.287, z: 0}
+  m_LocalScale: {x: 0.32118, y: 0.32118, z: 0.32118}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1380785329506252703}
@@ -270,7 +270,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
+  m_Sprite: {fileID: -1170232869279783729, guid: 2d10d21f6238b244782074fc6e3d8b34, type: 3}
   m_Color: {r: 1, g: 0.9315591, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
