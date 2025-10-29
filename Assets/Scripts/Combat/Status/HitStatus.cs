@@ -1,6 +1,7 @@
-using UnityEngine;
+using System;
 
-public struct StatusEffect
+[Serializable]
+public struct HitStatus
 {
     public Status status;
     public Duration duration;

@@ -1,9 +1,9 @@
+using System;
 using System.Collections.Generic;
-using UnityEngine;
 
+[Serializable]
 public struct Hit
 {
     public float damage;
-
-    //public Hit(float damage, List)
+    public List<HitStatus> statuses;
 }
