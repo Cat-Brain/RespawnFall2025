@@ -27,6 +27,8 @@ public class GameManager : MonoBehaviour
     public AudioClip deathClip;
     public GameObject ActionMusic;
     public AudioSource audioSource;
+
+    public bool loading = false;
     
 
     void Awake()
@@ -62,14 +64,16 @@ public class GameManager : MonoBehaviour
 
     public void PlayerLose()
     {
-        if (gameState != GameState.IN_GAME)
+        if (loading || gameState != GameState.IN_GAME)
             return;
 
+        loading = true;
         AudioManager.instance.PlaySoundFXClip(deathClip, transform, 1.0f);
-
         UnityEvent onFadeEvent = new();
-        onFadeEvent.AddListener(() => { gameState = GameState.LOSE_ANIMATION; });
+        onFadeEvent.AddListener(() => { loading = false; gameState = GameState.LOSE_ANIMATION; });
         sceneLoadManager.StartLoad(mainMenuSceneName, onFadeEvent);
+
+        
 
     }
 
