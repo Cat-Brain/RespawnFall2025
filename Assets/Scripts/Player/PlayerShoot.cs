@@ -27,7 +27,6 @@ public class PlayerShoot : MonoBehaviour
         currentStrings = maxStrings;
         playerManagerScript.gameManager.stringController.maxStrings = maxStrings;
         playerManagerScript.gameManager.stringController.currentStrings = currentStrings;
-        clickAction.action.started += Shoot;
     }
 
     // Update is called once per frame
@@ -46,10 +45,8 @@ public class PlayerShoot : MonoBehaviour
                 AudioManager.instance.PlaySoundFXClip(reloadClip, transform, 1.0f);
             }
         }
-    }
-
-    void Shoot(InputAction.CallbackContext context) {
-        if(coolDownTimer <= 0 && currentStrings > 0 && !playerManagerScript.Stunned()) {
+        if (clickAction.action.inProgress && coolDownTimer <= 0 && currentStrings > 0 && !playerManagerScript.Stunned())
+        {
             AudioManager.instance.PlaySoundFXClip(shootClips[maxStrings - currentStrings], transform, 1.0f);
             currentStrings--;
             playerManagerScript.gameManager.stringController.currentStrings = currentStrings;
