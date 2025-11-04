@@ -1,8 +1,9 @@
+using DG.Tweening;
 using UnityEngine;
 
-public class ProjectileTarget : ProjectileBlocker
+public class ProjectileDestroyed : ProjectileBlocker
 {
-    public Health health;
+    public float destructTime;
 
     public override bool ShouldDestroy(Projectile projectile)
     {
@@ -11,7 +12,8 @@ public class ProjectileTarget : ProjectileBlocker
 
     public override void OnBlock(Projectile projectile)
     {
-        health.ApplyHit(projectile.hit);
+        transform.DOScale(0, destructTime).OnComplete(() => Destroy(gameObject, destructTime));
         base.OnBlock(projectile);
+        enabled = false;
     }
 }

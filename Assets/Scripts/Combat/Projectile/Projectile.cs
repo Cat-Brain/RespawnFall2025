@@ -6,7 +6,7 @@ public class Projectile : MonoBehaviour
     public Rigidbody2D rb;
 
     public Hit hit;
-    public LayerMask targetMask;
+    public LayerMask targetMask, destroyedByMask;
     public float speed;
 
     public float destructTime;
@@ -27,8 +27,14 @@ public class Projectile : MonoBehaviour
 
     public virtual void Destruct()
     {
-        Destroy(gameObject, destructTime);
-        transform.DOScale(0, destructTime);
+        transform.DOScale(0, destructTime).OnComplete(() => Destroy(gameObject));
         enabled = false;
+    }
+
+    void OnTriggerEnter2D(Collider2D collider)
+    {
+        if (enabled && collider.enabled &&
+            CMath.LayerOverlapsMask(collider.gameObject.layer, destroyedByMask))
+            Destruct();
     }
 }

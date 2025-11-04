@@ -1,13 +1,13 @@
 using UnityEngine;
 
-public class ExplosiveFlower : EnemyHealth
+public class ExplosiveFlower : ProjectileDestroyed
 {
     public float explosionRadius, explosionForce;
     [Range(0, 1)] public float verticalBoostCorrection;
     public LayerMask explosionMask;
     public AudioClip flowerPopClip;
 
-    public override void Death()
+    public override void OnBlock(Projectile projectile)
     {
         // Implement effect here!
         foreach (Collider2D collider in Physics2D.OverlapCircleAll(
@@ -25,8 +25,8 @@ public class ExplosiveFlower : EnemyHealth
                 }
             }
 
-        base.Death();
         AudioManager.instance.PlaySoundFXClip(flowerPopClip, transform, 0.2f);
+        base.OnBlock(projectile);
     }
 
     void OnDrawGizmos()

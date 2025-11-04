@@ -5,14 +5,9 @@ public class Health : MonoBehaviour
 {
     public int health, maxHealth;
     public float fractionalHealthOffset;
-    public List<StatusEffect> statuses;
+    public List<StatusEffect> statuses = new();
 
-    public bool alive;
-
-    void Awake()
-    {
-        alive = true;
-    }
+    protected bool alive = true;
 
     void Update()
     {
@@ -36,6 +31,12 @@ public class Health : MonoBehaviour
         statuses.RemoveAll(status => status.shouldRemove);
     }
 
+    public void Die()
+    {
+        alive = false;
+        OnDeath();
+    }
+
     public bool ApplyHitDamage(float damage)
     {
         if (!alive)
@@ -46,13 +47,12 @@ public class Health : MonoBehaviour
         {
             health = 0;
             fractionalHealthOffset = 0;
-            alive = false;
-            OnDeath();
+            Die();
             return !alive;
         }
         fractionalHealthOffset = effectiveDamage % 1;
         effectiveDamage -= fractionalHealthOffset;
-        health -= Mathf.RoundToInt(effectiveDamage);
+        OnHealthChange(health - Mathf.RoundToInt(effectiveDamage));
 
         return false;
     }
@@ -82,6 +82,11 @@ public class Health : MonoBehaviour
         foreach (HitStatus hitStatus in hit.statuses)
             ApplyHitStatus(hitStatus);
         return !alive;
+    }
+
+    protected virtual void OnHealthChange(int newHealth)
+    {
+        health = newHealth;
     }
 
     protected virtual void OnHit(Hit hit) { }

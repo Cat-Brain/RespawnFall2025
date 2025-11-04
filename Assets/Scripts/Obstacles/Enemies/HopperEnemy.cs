@@ -33,8 +33,7 @@ public class HopperEnemy : MonoBehaviour
 
         player = FindFirstObjectByType<PlayerManager>().transform;
 
-       if (Random.Range(0, 2) == 0)
-            facingLeft = true;
+        SetDir(Random.Range(0, 2) == 0);
     }
 
     void FixedUpdate()
@@ -82,11 +81,8 @@ public class HopperEnemy : MonoBehaviour
 
         projectileFireTimer = projectileFireTime;
         projectileCooldownTimer = projectileCooldownTime;
-        EnemyProjectile projectile = Instantiate(projectilePrefab, transform.position,
-            Quaternion.identity).GetComponent<EnemyProjectile>();
-
-        projectile.direction = direction;
-        projectile.Init();
+        Instantiate(projectilePrefab, transform.position, Quaternion.identity)
+            .GetComponent<Projectile>().Init(direction);
 
         return true;
     }
