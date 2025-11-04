@@ -43,7 +43,7 @@ public class Health : MonoBehaviour
             return true;
 
         float effectiveDamage = damage + fractionalHealthOffset;
-        if (effectiveDamage > health)
+        if (effectiveDamage >= health)
         {
             health = 0;
             fractionalHealthOffset = 0;
