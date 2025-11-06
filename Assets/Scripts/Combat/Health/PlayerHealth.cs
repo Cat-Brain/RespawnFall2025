@@ -5,8 +5,9 @@ public class PlayerHealth : Health
     public TimerDisplay timerDisplay;
     public PlayerManager playerManager;
 
-    void Awake()
+    new public void Awake()
     {
+        base.Awake();
         RefreshTime();
     }
 
@@ -15,9 +16,9 @@ public class PlayerHealth : Health
         playerManager.gameManager.PlayerLose();
     }
 
-    protected override void OnHealthChange(int newValue)
+    protected override void OnHealthChange(int newValue, Hit? hit)
     {
-        base.OnHealthChange(newValue);
+        base.OnHealthChange(newValue, hit);
         RefreshTime();
     }
 

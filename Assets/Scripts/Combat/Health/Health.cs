@@ -1,3 +1,4 @@
+using DamageNumbersPro;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -7,7 +8,13 @@ public class Health : MonoBehaviour
     public float fractionalHealthOffset;
     public List<StatusEffect> statuses = new();
 
+    [HideInInspector] public HealthManager healthManager;
     protected bool alive = true;
+
+    public void Awake()
+    {
+        healthManager = FindAnyObjectByType<HealthManager>();
+    }
 
     void Update()
     {
@@ -31,13 +38,18 @@ public class Health : MonoBehaviour
         statuses.RemoveAll(status => status.shouldRemove);
     }
 
+    public DamageNumber SpawnDamageNumber(int damage, Vector2 location)
+    {
+        return healthManager.damagePopup.Spawn(location, damage, transform);
+    }
+
     public void Die()
     {
         alive = false;
         OnDeath();
     }
 
-    public bool ApplyHitDamage(float damage)
+    public bool ApplyHitDamage(float damage, Hit? hit = null)
     {
         if (!alive)
             return true;
@@ -52,7 +64,7 @@ public class Health : MonoBehaviour
         }
         fractionalHealthOffset = effectiveDamage % 1;
         effectiveDamage -= fractionalHealthOffset;
-        OnHealthChange(health - Mathf.RoundToInt(effectiveDamage));
+        OnHealthChange(health - Mathf.RoundToInt(effectiveDamage), hit);
 
         return false;
     }
@@ -63,7 +75,7 @@ public class Health : MonoBehaviour
             return true;
         int index = statuses.FindIndex(status => status.status == hitStatus.status);
         if (index == -1)
-            statuses.Add(new StatusEffect(hitStatus));
+            statuses.Add(new StatusEffect(this, hitStatus));
         else
             statuses[index].ApplyStack(hitStatus.components);
         return !alive;
@@ -76,7 +88,7 @@ public class Health : MonoBehaviour
         OnHit(hit);
         if (!alive)
             return true;
-        ApplyHitDamage(hit.damage);
+        ApplyHitDamage(hit.damage, hit);
         if (!alive)
             return true;
         foreach (HitStatus hitStatus in hit.statuses)
@@ -84,8 +96,15 @@ public class Health : MonoBehaviour
         return !alive;
     }
 
-    protected virtual void OnHealthChange(int newHealth)
+    protected virtual void OnHealthChange(int newHealth, Hit? hit)
     {
+        if (health == newHealth)
+            return;
+
+        if (newHealth < health)
+            SpawnDamageNumber(health - newHealth, hit.HasValue && hit.Value.position != Vector2.zero ? hit.Value.position : transform.position);
+        else
+            Debug.LogWarning("We need to implement something for healing!!!");
         health = newHealth;
     }
 
