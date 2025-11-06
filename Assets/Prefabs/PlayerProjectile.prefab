@@ -167,8 +167,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Projectile
   rb: {fileID: 6574857419870143426}
   hit:
+    position: {x: 0, y: 0}
     damage: 10
-    statuses: []
+    statuses:
+    - status: {fileID: 11400000, guid: 3cb4da4df5fdc7c4ab7cecef48a9eacb, type: 2}
+      components:
+      - {fileID: 11400000, guid: 6ba104b5af7f59d46ab0be16080f8663, type: 2}
+      - {fileID: 11400000, guid: 28fec24176f2fd648a36805eff82ce1b, type: 2}
   targetMask:
     serializedVersion: 2
     m_Bits: 512

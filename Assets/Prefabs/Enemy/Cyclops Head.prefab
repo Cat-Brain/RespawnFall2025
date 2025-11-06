@@ -114,6 +114,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyHitbox
   hit:
+    position: {x: 0, y: 0}
     damage: 10
     statuses: []
   knockback: 6
@@ -159,9 +160,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08f34bf4b88e58b4c9642ba930489f11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DestroyOnDeath
-  health: 30
-  maxHealth: 30
+  health: 100
+  maxHealth: 100
   fractionalHealthOffset: 0
+  statuses: []
+  healthManager: {fileID: 0}
   deathTime: 0.5
   disabledOnDeath:
   - {fileID: 8047029066469306682}

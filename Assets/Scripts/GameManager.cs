@@ -7,6 +7,7 @@ public enum GameState
     IN_GAME, LOSE_ANIMATION, WIN_SCREEN, UPGRADE_SCREEN, MAIN_MENU, SETTINGS_MENU, PAUSE_MENU
 }
 
+[ExecuteInEditMode]
 public class GameManager : MonoBehaviour
 {
     public GenerationManager generationManager;
@@ -29,6 +30,14 @@ public class GameManager : MonoBehaviour
 
     void Awake()
     {
+        inGameDisplay.SetActive(true);
+        loseDisplay.SetActive(true);
+        winDisplay.SetActive(true);
+        upgradeDisplay.SetActive(true);
+        mainMenuDisplay.SetActive(true);
+        settingsDisplay.SetActive(true);
+        pauseDisplay.SetActive(true);
+
         if (gameState == GameState.IN_GAME && shouldGenerateTerrainOnLoad)
             generationManager.Init();
         pauseAction.action.started += SwitchToPause; 

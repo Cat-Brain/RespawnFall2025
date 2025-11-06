@@ -11,7 +11,9 @@ public class ProjectileTarget : ProjectileBlocker
 
     public override void OnBlock(Projectile projectile)
     {
-        health.ApplyHit(projectile.hit);
+        Hit hit = projectile.hit;
+        hit.position = projectile.transform.position;
+        health.ApplyHit(hit);
         base.OnBlock(projectile);
     }
 }
