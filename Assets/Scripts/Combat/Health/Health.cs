@@ -9,11 +9,14 @@ public class Health : MonoBehaviour
     public List<StatusEffect> statuses = new();
 
     [HideInInspector] public HealthManager healthManager;
+    protected int healthIndex = -1;
     protected bool alive = true;
 
     public void Awake()
     {
         healthManager = FindAnyObjectByType<HealthManager>();
+        healthIndex = healthManager.healths.Count;
+        healthManager.healths.Add(this);
     }
 
     void Update()
@@ -40,7 +43,9 @@ public class Health : MonoBehaviour
 
     public DamageNumber SpawnDamageNumber(int damage, Vector2 location)
     {
-        return healthManager.damagePopup.Spawn(location, damage, transform);
+        DamageNumber damageNumber = healthManager.damagePopup.Spawn(location, damage, transform);
+        damageNumber.SetSpamGroup("Damage On Health " + healthIndex.ToString());
+        return damageNumber;
     }
 
     public void Die()
