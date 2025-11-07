@@ -104,6 +104,16 @@ public class HopperEnemy : MonoBehaviour
         return offset + (Vector2)transform.position;
     }
 
+    public bool WallTest()
+    {
+
+    }
+
+    public bool FloorTest()
+    {
+
+    }
+
     public float JumpDuration()
     {
         return Mathf.Sqrt(-8 * hopHeight / Physics2D.gravity.y);
