@@ -62,7 +62,7 @@ public class Health : MonoBehaviour
         float effectiveDamage = damage + fractionalHealthOffset;
         if (effectiveDamage >= health)
         {
-            health = 0;
+            OnHealthChange(0, hit);
             fractionalHealthOffset = 0;
             Die();
             return !alive;
