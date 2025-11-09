@@ -46,7 +46,8 @@ GameObject:
   - component: {fileID: 348465049164374492}
   - component: {fileID: 1930687954068082542}
   - component: {fileID: 2440023215151627209}
-  - component: {fileID: 8478734326758200278}
+  - component: {fileID: 1146418027009605184}
+  - component: {fileID: 7416732588778051691}
   m_Layer: 9
   m_Name: Harpy
   m_TagString: Enemy
@@ -62,14 +63,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5873254736370396750}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
   m_LocalPosition: {x: 0.5, y: -0.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5256225825816328423}
   m_Father: {fileID: 9040269015198878404}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!58 &2925561795197070128
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -191,9 +192,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d13be2d890862d428465a42ce172012, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyHitbox
-  knockback: 3
-  stunDuration: 1
-  invulnerability: 3
+  hit:
+    position: {x: 0, y: 0}
+    damage: 10
+    statuses: []
+  knockback: 6
   playerTag: Player
 --- !u!114 &2440023215151627209
 MonoBehaviour:
@@ -218,7 +221,7 @@ MonoBehaviour:
   elapsedSwoop: 0
   swoopLeft: 0
   harpyClip: {fileID: 8300000, guid: b570949e7d5f5a4448c07c1b0b6de533, type: 3}
---- !u!114 &8478734326758200278
+--- !u!114 &1146418027009605184
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -227,10 +230,29 @@ MonoBehaviour:
   m_GameObject: {fileID: 5873254736370396750}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9b644dbf03f6dfa4d92558a955317023, type: 3}
+  m_Script: {fileID: 11500000, guid: 08f34bf4b88e58b4c9642ba930489f11, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: '::'
-  health: 1
+  m_EditorClassIdentifier: Assembly-CSharp::DestroyOnDeath
+  health: 100
+  maxHealth: 100
+  fractionalHealthOffset: 0
+  statuses: []
+  healthManager: {fileID: 0}
+  deathTime: 0.25
+  disabledOnDeath: []
+--- !u!114 &7416732588778051691
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5873254736370396750}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 065a689b8468d0143a06a283b6415c66, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ProjectileTarget
+  health: {fileID: 1146418027009605184}
 --- !u!1001 &4455998569053029655
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -242,14 +264,18 @@ PrefabInstance:
     - target: {fileID: 299375029982696271, guid: d4bd5e9d88341ba4e9f26e44a7ce2251, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
+      objectReference: {fileID: 7612963307314221987, guid: d4e0c7d7f554d3e4daf42a06e4eac90d, type: 3}
     - target: {fileID: 299375029982696271, guid: d4bd5e9d88341ba4e9f26e44a7ce2251, type: 3}
       propertyPath: m_Color.b
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 299375029982696271, guid: d4bd5e9d88341ba4e9f26e44a7ce2251, type: 3}
       propertyPath: m_Color.g
-      value: 0.9315591
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 299375029982696271, guid: d4bd5e9d88341ba4e9f26e44a7ce2251, type: 3}
+      propertyPath: m_Color.r
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 299375029982696271, guid: d4bd5e9d88341ba4e9f26e44a7ce2251, type: 3}
       propertyPath: m_SortingOrder
@@ -266,6 +292,18 @@ PrefabInstance:
     - target: {fileID: 4634458307472128290, guid: d4bd5e9d88341ba4e9f26e44a7ce2251, type: 3}
       propertyPath: m_Layer
       value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 8441784869537332720, guid: d4bd5e9d88341ba4e9f26e44a7ce2251, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.2434
+      objectReference: {fileID: 0}
+    - target: {fileID: 8441784869537332720, guid: d4bd5e9d88341ba4e9f26e44a7ce2251, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.2434
+      objectReference: {fileID: 0}
+    - target: {fileID: 8441784869537332720, guid: d4bd5e9d88341ba4e9f26e44a7ce2251, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.2434
       objectReference: {fileID: 0}
     - target: {fileID: 8441784869537332720, guid: d4bd5e9d88341ba4e9f26e44a7ce2251, type: 3}
       propertyPath: m_LocalPosition.x

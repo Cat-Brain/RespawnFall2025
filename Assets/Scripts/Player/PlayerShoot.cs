@@ -8,8 +8,7 @@ public class PlayerShoot : MonoBehaviour
 {
     public InputActionReference clickAction;
     public PlayerManager playerManagerScript;
-    public GameObject bulletPrefab;
-    public Vector3 spawn;
+    public GameObject projectilePrefab;
     public int currentStrings, maxStrings;
     public bool hasStrings, hasExplosives, hasPhasing, hasRecoil; // Orpheus upgrades
     public AudioClip[] shootClips;
@@ -27,7 +26,6 @@ public class PlayerShoot : MonoBehaviour
         currentStrings = maxStrings;
         playerManagerScript.gameManager.stringController.maxStrings = maxStrings;
         playerManagerScript.gameManager.stringController.currentStrings = currentStrings;
-        clickAction.action.started += Shoot;
     }
 
     // Update is called once per frame
@@ -38,23 +36,20 @@ public class PlayerShoot : MonoBehaviour
         regenTimer -= Time.deltaTime;
         if (currentStrings < maxStrings && regenTimer <= 0)
         {
-            currentStrings++;
+            currentStrings = maxStrings;
             playerManagerScript.gameManager.stringController.currentStrings = currentStrings;
-
-            if (currentStrings == maxStrings - 1)
-            {
-                AudioManager.instance.PlaySoundFXClip(reloadClip, transform, 1.0f);
-            }
+            AudioManager.instance.PlaySoundFXClip(reloadClip, transform, 1.0f);
+            coolDownTimer = coolDownTime;
         }
-    }
-
-    void Shoot(InputAction.CallbackContext context) {
-        if(coolDownTimer <= 0 && currentStrings > 0 && !playerManagerScript.Stunned()) {
+        if (clickAction.action.inProgress && coolDownTimer <= 0 && currentStrings > 0 && !playerManagerScript.Stunned())
+        {
             AudioManager.instance.PlaySoundFXClip(shootClips[maxStrings - currentStrings], transform, 1.0f);
             currentStrings--;
             playerManagerScript.gameManager.stringController.currentStrings = currentStrings;
-            spawn = new Vector3(transform.position.x, transform.position.y, 0);
-            GameObject playerBullet = Instantiate(bulletPrefab, spawn, transform.rotation);
+
+            Instantiate(projectilePrefab, transform.position, transform.rotation).GetComponent<Projectile>().Init(
+                ((Vector2)(Camera.main.ScreenToWorldPoint(Mouse.current.position.ReadValue()) - transform.position)).normalized);
+
             coolDownTimer = coolDownTime;
             regenTimer = regenTime;
         }

@@ -33,8 +33,7 @@ public class HopperEnemy : MonoBehaviour
 
         player = FindFirstObjectByType<PlayerManager>().transform;
 
-       if (Random.Range(0, 2) == 0)
-            facingLeft = true;
+        SetDir(Random.Range(0, 2) == 0);
     }
 
     void FixedUpdate()
@@ -60,8 +59,7 @@ public class HopperEnemy : MonoBehaviour
 
     public bool Reorient()
     {
-        if (Physics2D.OverlapCircle(FloorTestPos(), validJumpTestRadius, platformMask) &&
-            !Physics2D.OverlapCircle(WallTestPos(), validJumpTestRadius, platformMask))
+        if (FloorTest() && !WallTest())
             return false;
 
         SetDir(!facingLeft);
@@ -82,11 +80,8 @@ public class HopperEnemy : MonoBehaviour
 
         projectileFireTimer = projectileFireTime;
         projectileCooldownTimer = projectileCooldownTime;
-        EnemyProjectile projectile = Instantiate(projectilePrefab, transform.position,
-            Quaternion.identity).GetComponent<EnemyProjectile>();
-
-        projectile.direction = direction;
-        projectile.Init();
+        Instantiate(projectilePrefab, transform.position, Quaternion.identity)
+            .GetComponent<Projectile>().Init(direction);
 
         return true;
     }
@@ -99,6 +94,11 @@ public class HopperEnemy : MonoBehaviour
         return offset + (Vector2)transform.position;
     }
 
+    public Vector2 TestDir()
+    {
+        return facingLeft ? Vector2.left : Vector2.right;
+    }
+
     public Vector2 FloorTestPos()
     {
         Vector2 offset = hopDist * Vector2.right;
@@ -106,6 +106,16 @@ public class HopperEnemy : MonoBehaviour
             offset.x *= -1;
         offset.y -= floorTestOffset;
         return offset + (Vector2)transform.position;
+    }
+
+    public bool WallTest()
+    {
+        return Physics2D.CircleCast(WallTestPos(), validJumpTestRadius, TestDir(), hopDist, platformMask);
+    }
+
+    public bool FloorTest()
+    {
+        return Physics2D.CircleCast(FloorTestPos(), validJumpTestRadius, TestDir(), hopDist, platformMask);
     }
 
     public float JumpDuration()
