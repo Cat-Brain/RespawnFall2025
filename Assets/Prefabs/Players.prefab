@@ -154,9 +154,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerMove
   accel: 16
-  speed: 6.5
+  speed: 12
   jumpForce: 8
-  airJumps: 1
+  airJumps: 0
   jumpBufferTime: 0.25
   cayoteTime: 0.2
   jumpSpamTime: 0.35
@@ -288,6 +288,41 @@ MonoBehaviour:
   jumping: 0
   grounded: 0
   playerManager: {fileID: 0}
+<<<<<<< Updated upstream
+=======
+--- !u!114 &1262798931244223413
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1223528673435873877}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b75152cb93c5444884eff6170725355, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerHealth
+  health: 100
+  maxHealth: 100
+  fractionalHealthOffset: 0
+  statuses: []
+  healthManager: {fileID: 0}
+  timerDisplay: {fileID: 0}
+  playerManager: {fileID: 678778273946464857}
+--- !u!114 &4302446508148004657
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1223528673435873877}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 065a689b8468d0143a06a283b6415c66, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ProjectileTarget
+  health: {fileID: 1262798931244223413}
+>>>>>>> Stashed changes
 --- !u!1 &2619534745981113462
 GameObject:
   m_ObjectHideFlags: 0

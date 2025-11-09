@@ -132,6 +132,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 30e0051c81a8e1f4f98b4e63d0495239, type: 3}
   m_Name: 
+<<<<<<< Updated upstream
   m_EditorClassIdentifier: Assembly-CSharp::PlayerProjectile
   direction: {x: 0, y: 0, z: 0}
   recoilForce: 5.5
@@ -139,6 +140,28 @@ MonoBehaviour:
   rb: {fileID: 0}
 --- !u!60 &1619764128332532391
 PolygonCollider2D:
+=======
+  m_EditorClassIdentifier: Assembly-CSharp::Projectile
+  rb: {fileID: 6574857419870143426}
+  hit:
+    position: {x: 0, y: 0}
+    damage: 10
+    statuses:
+    - status: {fileID: 11400000, guid: 3cb4da4df5fdc7c4ab7cecef48a9eacb, type: 2}
+      components:
+      - {fileID: 11400000, guid: 6ba104b5af7f59d46ab0be16080f8663, type: 2}
+      - {fileID: 11400000, guid: 28fec24176f2fd648a36805eff82ce1b, type: 2}
+  targetMask:
+    serializedVersion: 2
+    m_Bits: 512
+  destroyedByMask:
+    serializedVersion: 2
+    m_Bits: 1
+  speed: 30
+  destructTime: 0.25
+--- !u!58 &4129074220558359128
+CircleCollider2D:
+>>>>>>> Stashed changes
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
