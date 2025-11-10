@@ -9,9 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 43d9ae2f9d29e3749a0db357eb8887da, type: 3}
-  m_Name: JazDecrement
-  m_EditorClassIdentifier: Assembly-CSharp::DecStackOnTickWithBufferDurationStatus
-  decrement: 1
-  bufferDuration: 1
-  stackMode: 1
+  m_Script: {fileID: 11500000, guid: b1f8820aec449d0458a27f8049788068, type: 3}
+  m_Name: EmberTick
+  m_EditorClassIdentifier: Assembly-CSharp::TickStatus
+  tickOnStart: 0
+  timePerTick: 0.25

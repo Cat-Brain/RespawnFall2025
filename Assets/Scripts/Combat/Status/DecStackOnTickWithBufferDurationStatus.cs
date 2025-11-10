@@ -36,11 +36,9 @@ public class DecStackOnTickWithBufferDurationStatus : DecStackOnTickStatus
         bufferDuration -= Time.deltaTime;
     }
 
-    public override void Tick(StatusEffect effect)
+    public override void Tick(StatusEffect effect, int tickIndex)
     {
-        if (bufferDuration > 0)
-            return;
-
-        stackStatus.ModifyStack(effect, -decrement);
+        if (this.tickIndex == tickIndex && bufferDuration <= 0)
+            stackStatus.ModifyStack(effect, -decrement);
     }
 }
