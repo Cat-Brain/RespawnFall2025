@@ -8,6 +8,7 @@ public class Health : MonoBehaviour
     public float fractionalHealthOffset;
     public List<StatusEffect> statuses = new();
 
+    [HideInInspector] public List<StatusEffect> newStatuses = new();
     [HideInInspector] public HealthManager healthManager;
     protected int healthIndex = -1;
     protected bool alive = true;
@@ -39,6 +40,9 @@ public class Health : MonoBehaviour
                 status.End();
         }
         statuses.RemoveAll(status => status.shouldRemove);
+
+        statuses.AddRange(newStatuses);
+        newStatuses.Clear();
     }
 
     public DamageNumber SpawnDamageNumber(int damage, Vector2 location)
@@ -80,7 +84,7 @@ public class Health : MonoBehaviour
             return true;
         int index = statuses.FindIndex(status => status.status == hitStatus.status);
         if (index == -1)
-            statuses.Add(new StatusEffect(this, hitStatus));
+            newStatuses.Add(new StatusEffect(this, hitStatus));
         else
             statuses[index].ApplyStack(hitStatus.components);
         return !alive;
@@ -90,7 +94,7 @@ public class Health : MonoBehaviour
     {
         if (!alive)
             return true;
-        OnHit(hit);
+        OnHit(ref hit);
         if (!alive)
             return true;
         ApplyHitDamage(hit.damage, hit);
@@ -113,6 +117,15 @@ public class Health : MonoBehaviour
         health = newHealth;
     }
 
-    protected virtual void OnHit(Hit hit) { }
+    protected virtual void OnHit(ref Hit hit)
+    {
+        foreach (StatusEffect status in statuses)
+        {
+            if (!alive)
+                return;
+            if (status.enabled)
+                status.OnHit(ref hit);
+        }
+    }
     protected virtual void OnDeath() { }
 }

@@ -1,40 +1,19 @@
 using UnityEngine;
-using DG.Tweening;
 
-public class Projectile : MonoBehaviour
+[CreateAssetMenu(fileName = "New Projectile", menuName = "Projectiles/Projectile")]
+public class Projectile : ScriptableObject
 {
-    public Rigidbody2D rb;
-
     public Hit hit;
     public LayerMask targetMask, destroyedByMask;
-    public float speed;
-
+    public float speed, range, spread;
     public float destructTime;
 
-    protected Vector2 direction;
+    [HideInInspector] public ProjectileInst inst;
 
-
-    public void Init(Vector2 direction)
+    public virtual void Init(ProjectileInst inst)
     {
-        this.direction = direction;
-        OnInit();
-    }
-
-    public virtual void OnInit()
-    {
-        rb.linearVelocity = direction * speed;
-    }
-
-    public virtual void Destruct()
-    {
-        transform.DOScale(0, destructTime).OnComplete(() => Destroy(gameObject));
-        enabled = false;
-    }
-
-    void OnTriggerEnter2D(Collider2D collider)
-    {
-        if (enabled && collider.enabled &&
-            CMath.LayerOverlapsMask(collider.gameObject.layer, destroyedByMask))
-            Destruct();
+        this.inst = inst;
+        inst.remainingRange = range;
+        inst.direction = CMath.Rotate(inst.direction, Mathf.Deg2Rad * Random.Range(-spread, spread));
     }
 }

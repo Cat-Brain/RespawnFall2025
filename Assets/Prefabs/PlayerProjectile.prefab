@@ -469,7 +469,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1325602567236462164}
   - component: {fileID: 6574857419870143426}
-  - component: {fileID: -4001319163263866473}
+  - component: {fileID: 5373331659158075549}
   - component: {fileID: 4129074220558359128}
   - component: {fileID: -25631974574733899}
   m_Layer: 8
@@ -523,7 +523,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &-4001319163263866473
+--- !u!114 &5373331659158075549
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -532,26 +532,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 7878727207753161381}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4c85cfa7ca2dd0446846239e236b31d2, type: 3}
+  m_Script: {fileID: 11500000, guid: 3780d9c800a7ffb4ebf21da2645d516b, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Projectile
+  m_EditorClassIdentifier: Assembly-CSharp::ProjectileInst
   rb: {fileID: 6574857419870143426}
-  hit:
-    position: {x: 0, y: 0}
-    damage: 10
-    statuses:
-    - status: {fileID: 11400000, guid: 3cb4da4df5fdc7c4ab7cecef48a9eacb, type: 2}
-      components:
-      - {fileID: 11400000, guid: 6ba104b5af7f59d46ab0be16080f8663, type: 2}
-      - {fileID: 11400000, guid: 28fec24176f2fd648a36805eff82ce1b, type: 2}
-  targetMask:
-    serializedVersion: 2
-    m_Bits: 512
-  destroyedByMask:
-    serializedVersion: 2
-    m_Bits: 1
-  speed: 10
-  destructTime: 0.25
+  data: {fileID: 0}
 --- !u!58 &4129074220558359128
 CircleCollider2D:
   m_ObjectHideFlags: 0

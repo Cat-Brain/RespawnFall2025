@@ -47,7 +47,7 @@ public class PlayerShoot : MonoBehaviour
             currentStrings--;
             playerManagerScript.gameManager.stringController.currentStrings = currentStrings;
 
-            Instantiate(projectilePrefab, transform.position, transform.rotation).GetComponent<Projectile>().Init(
+            Instantiate(projectilePrefab, transform.position, transform.rotation).GetComponent<ProjectileInst>().Init(
                 ((Vector2)(Camera.main.ScreenToWorldPoint(Mouse.current.position.ReadValue()) - transform.position)).normalized);
 
             coolDownTimer = coolDownTime;

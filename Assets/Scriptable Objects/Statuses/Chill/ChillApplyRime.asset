@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dabb60f8f4d638b4fa47b8f034642eda, type: 3}
+  m_Name: ChillApplyRime
+  m_EditorClassIdentifier: Assembly-CSharp::HitOnTickStatus
+  tickIndex: 1
+  hit:
+    position: {x: 0, y: 0}
+    damage: 0
+    statuses:
+    - status: {fileID: 11400000, guid: 404e3c60c4d191245bba896c220f7cd0, type: 2}
+      components:
+      - {fileID: 11400000, guid: 0a4b18c0285a5e642b69f03a4dfe62be, type: 2}
+      - {fileID: 11400000, guid: d8ba2e3bcf7c8a14795f3fad635c9264, type: 2}

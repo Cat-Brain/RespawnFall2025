@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 7749438244442108674}
   - component: {fileID: 4430254867905316504}
   - component: {fileID: 5081593209710861736}
+  - component: {fileID: 7547861062549044874}
   - component: {fileID: 3147339434460024481}
   - component: {fileID: 1606943418567180504}
   - component: {fileID: 6736275102541329618}
@@ -201,7 +202,7 @@ MonoBehaviour:
   hasTacticalReload: 0
   hasSpeedBoost: 0
   hasExplosion: 0
---- !u!114 &3147339434460024481
+--- !u!114 &7547861062549044874
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -209,6 +210,22 @@ MonoBehaviour:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1223528673435873877}
   m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ec72e695689a474ebeb892896abb2cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerWeaponInstance
+  primaryAction: {fileID: 233641816963222372, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+  reloadAction: {fileID: 3375951426363076484, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+  playerManager: {fileID: 678778273946464857}
+  weapon: {fileID: 11400000, guid: 73604fc96a4b9f445886f5573084d71a, type: 2}
+--- !u!114 &3147339434460024481
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1223528673435873877}
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cd465198b5d0c7f459ded1c669cbf128, type: 3}
   m_Name: 
@@ -290,6 +307,8 @@ MonoBehaviour:
   health: 100
   maxHealth: 100
   fractionalHealthOffset: 0
+  statuses: []
+  healthManager: {fileID: 0}
   timerDisplay: {fileID: 0}
   playerManager: {fileID: 678778273946464857}
 --- !u!114 &4302446508148004657
