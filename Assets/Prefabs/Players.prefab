@@ -306,6 +306,7 @@ MonoBehaviour:
   maxHealth: 100
   fractionalHealthOffset: 0
   statuses: []
+  newStatuses: []
   healthManager: {fileID: 0}
   timerDisplay: {fileID: 0}
   playerManager: {fileID: 678778273946464857}
@@ -561,6 +562,8 @@ MonoBehaviour:
   moveSpringDamping: 1
   minHeight: 0
   maxHeight: 500
+  minWidth: 0
+  maxWidth: 500
   resetPosOnAwake: 1
   velocity: 0
 --- !u!1 &4569230922230076936

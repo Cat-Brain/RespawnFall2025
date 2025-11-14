@@ -6,6 +6,7 @@ public class PlayerCamera : MonoBehaviour
 
     public float moveSpringFrequency, moveSpringDamping;
     public float minHeight, maxHeight;
+    public float minWidth, maxWidth;
 
     public bool resetPosOnAwake;
 
@@ -15,7 +16,7 @@ public class PlayerCamera : MonoBehaviour
     private void Awake()
     {
         if (resetPosOnAwake)
-            transform.position = new Vector3(0, DesiredHeight(), transform.position.z);
+            transform.position = new Vector3(DesiredWidth(), DesiredHeight(), transform.position.z);
     }
 
     void LateUpdate()
@@ -29,5 +30,9 @@ public class PlayerCamera : MonoBehaviour
     public float DesiredHeight()
     {
         return Mathf.Clamp(playerManager.transform.position.y, minHeight, maxHeight);
+    }
+    public float DesiredWidth()
+    {
+        return Mathf.Clamp(playerManager.transform.position.x, minWidth, maxWidth);
     }
 }
