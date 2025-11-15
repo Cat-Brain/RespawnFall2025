@@ -9,8 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b1f8820aec449d0458a27f8049788068, type: 3}
-  m_Name: JazTick
-  m_EditorClassIdentifier: Assembly-CSharp::TickStatus
-  tickOnStart: 0
-  timePerTick: 0.25
+  m_Script: {fileID: 11500000, guid: f47f4593671069e42be79bce947bab5d, type: 3}
+  m_Name: RimeDuration
+  m_EditorClassIdentifier: Assembly-CSharp::DurationStatus
+  duration: 20
+  stackMode: 1

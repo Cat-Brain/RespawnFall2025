@@ -5,12 +5,12 @@ public class ProjectileDestroyed : ProjectileBlocker
 {
     public float destructTime;
 
-    public override bool ShouldDestroy(Projectile projectile)
+    public override bool ShouldDestroy(ProjectileInst projectile)
     {
-        return CMath.LayerOverlapsMask(gameObject.layer, projectile.targetMask);
+        return CMath.LayerOverlapsMask(gameObject.layer, projectile.data.targetMask);
     }
 
-    public override void OnBlock(Projectile projectile)
+    public override void OnBlock(ProjectileInst projectile)
     {
         transform.DOScale(0, destructTime).OnComplete(() => Destroy(gameObject, destructTime));
         base.OnBlock(projectile);

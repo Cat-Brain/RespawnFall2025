@@ -7,7 +7,7 @@ public class ExplosiveFlower : ProjectileDestroyed
     public LayerMask explosionMask;
     public AudioClip flowerPopClip;
 
-    public override void OnBlock(Projectile projectile)
+    public override void OnBlock(ProjectileInst projectile)
     {
         // Implement effect here!
         foreach (Collider2D collider in Physics2D.OverlapCircleAll(

@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f91b072e8c09df4b99b9e79871e5df3, type: 3}
+  m_Name: Flute
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerWeapon
+  reload: {fileID: 11400000, guid: 0679fcb458ed5c14cac0832dc668fdcc, type: 2}
+  primary: {fileID: 11400000, guid: 24e77ebe7dd65f24dade1a3a786d0c4f, type: 2}
+  baseHit:
+    position: {x: 0, y: 0}
+    damage: 3
+    statuses:
+    - status: {fileID: 11400000, guid: c1c55162ea2c712439062a417c60cc2b, type: 2}
+      components:
+      - {fileID: 11400000, guid: 0a4b18c0285a5e642b69f03a4dfe62be, type: 2}
+      - {fileID: 11400000, guid: f06cfdde8ad58c341b7537f5c3af9ab7, type: 2}
+  stats:
+    damage: 0
+    fireRate: 0
+    magazineSize: 0
+    reloadSpeed: 0
+    range: 0
+  baseWeapon: {fileID: 0}
+  wielder: {fileID: 0}

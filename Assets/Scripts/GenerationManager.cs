@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 [Serializable]
 public struct LevelChunk
@@ -11,7 +12,7 @@ public struct LevelChunk
 
     public GameObject Spawn(Vector2 offset, Transform parent = null)
     {
-        return GameObject.Instantiate(prefab, spawnOffset + (Vector3)offset, Quaternion.identity, parent);
+        return UnityEngine.Object.Instantiate(prefab, spawnOffset + (Vector3)offset, Quaternion.identity, parent);
     }
 }
 
@@ -19,12 +20,24 @@ public class GenerationManager : MonoBehaviour
 {
     public GameManager gameManager;
 
+    public List<string> loadOnEnterSceneNames;
     public float cameraSize;
     public List<LevelChunk> beginningChunks, middleChunks, endChunks;
     public int middleChunkCount;
     public float distanceBetweenRefreshes;
 
     public List<GameObject> currentChunks = new();
+
+    public void Start()
+    {
+        SceneManager.sceneLoaded += OnSceneLoaded;
+    }
+
+    public void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        if (loadOnEnterSceneNames.Contains(scene.name))
+            Init();
+    }
 
     public void Init()
     {
