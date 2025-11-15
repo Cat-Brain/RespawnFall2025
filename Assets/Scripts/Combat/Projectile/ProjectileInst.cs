@@ -31,6 +31,7 @@ public class ProjectileInst : MonoBehaviour
     public virtual void OnInit()
     {
         rb.linearVelocity = direction * data.speed;
+        transform.rotation = CMath.LookDir(direction);
     }
 
     public void FixedUpdate()
