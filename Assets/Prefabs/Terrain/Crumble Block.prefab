@@ -26,8 +26,8 @@ Transform:
   m_GameObject: {fileID: 3058219149782136623}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.16, z: 0}
-  m_LocalScale: {x: 1, y: 0.16, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 0.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7827474240653024266}
@@ -133,7 +133,6 @@ GameObject:
   - component: {fileID: 7827474240653024266}
   - component: {fileID: 5290979967116347284}
   - component: {fileID: 8143420516865890532}
-  - component: {fileID: 1965559058907559259}
   m_Layer: 0
   m_Name: Crumble Block
   m_TagString: Untagged
@@ -188,10 +187,10 @@ BoxCollider2D:
     serializedVersion: 2
     m_Bits: 4294967295
   m_IsTrigger: 0
-  m_UsedByEffector: 1
+  m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0.16}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -201,7 +200,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1, y: 0.16}
+  m_Size: {x: 1, y: 0.5}
   m_EdgeRadius: 0
 --- !u!114 &8143420516865890532
 MonoBehaviour:
@@ -220,27 +219,8 @@ MonoBehaviour:
     m_Bits: 1024
   disabledDuration: 5
   mercyTime: 0.125
-  crumbleTime: 2
-  fadeDuration: 0.1
+  crumbleTime: 0.1
+  fadeDuration: 0
   fadeOpacity: 0.25
   col: {fileID: 5290979967116347284}
   sr: {fileID: 7973009307953964429}
---- !u!251 &1965559058907559259
-PlatformEffector2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5410523702247581678}
-  m_Enabled: 1
-  m_UseColliderMask: 1
-  m_ColliderMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_RotationalOffset: 0
-  m_UseOneWay: 1
-  m_UseOneWayGrouping: 0
-  m_SurfaceArc: 180
-  m_UseSideFriction: 0
-  m_UseSideBounce: 0
-  m_SideArc: 1

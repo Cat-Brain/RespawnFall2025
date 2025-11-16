@@ -143,7 +143,6 @@ PolygonCollider2D:
 =======
   m_EditorClassIdentifier: Assembly-CSharp::Projectile
   rb: {fileID: 6574857419870143426}
-<<<<<<< Updated upstream
   hit:
     position: {x: 0, y: 0}
     damage: 10
@@ -160,12 +159,6 @@ PolygonCollider2D:
     m_Bits: 1
   speed: 30
   destructTime: 0.25
-=======
-  data: {fileID: 0}
-  direction: {x: 0, y: 0}
-  remainingRange: 0
-  lastPos: {x: 0, y: 0}
->>>>>>> Stashed changes
 --- !u!58 &4129074220558359128
 CircleCollider2D:
 >>>>>>> Stashed changes
