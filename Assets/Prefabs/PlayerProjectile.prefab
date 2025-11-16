@@ -537,13 +537,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ProjectileInst
   rb: {fileID: 6574857419870143426}
   data: {fileID: 0}
-<<<<<<< HEAD
-=======
-  direction: {x: 0, y: 0}
-  remainingRange: 0
-  lastPos: {x: 0, y: 0}
->>>>>>> Stashed changes
->>>>>>> parent of 6db5ff3 (projectile shapes, crumble block changes, added camera x min/max)
 --- !u!58 &4129074220558359128
 CircleCollider2D:
   m_ObjectHideFlags: 0
