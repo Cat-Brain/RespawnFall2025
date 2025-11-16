@@ -56,18 +56,12 @@ public class StatusEffect
             component.End(this);
     }
 
-    public void OnHit(ref Hit hit)
-    {
-        foreach (StatusComponent component in components)
-            component.OnHit(this, ref hit);
-    }
-
-    public void Tick(int tickIndex)
+    public void Tick()
     {
         if (!enabled)
             return;
         foreach (StatusComponent component in components)
-            component.Tick(this, tickIndex);
+            component.Tick(this);
     }
 
     public void Destruct()

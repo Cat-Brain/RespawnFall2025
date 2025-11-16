@@ -233,11 +233,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08f34bf4b88e58b4c9642ba930489f11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DestroyOnDeath
-  health: 200
-  maxHealth: 200
+  health: 100
+  maxHealth: 100
   fractionalHealthOffset: 0
   statuses: []
-  newStatuses: []
   healthManager: {fileID: 0}
   deathTime: 0.25
   disabledOnDeath: []

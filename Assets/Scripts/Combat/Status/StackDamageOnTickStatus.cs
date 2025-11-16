@@ -3,8 +3,7 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "New StackDamageOnTickStatus", menuName = "StatusComponents/StackDamageOnTickStatus")]
 public class StackDamageOnTickStatus : StatusComponent
 {
-    public int tickIndex;
-    public float damagePerStack;
+    public int damagePerStack;
 
     protected StackStatus stackStatus;
 
@@ -13,9 +12,8 @@ public class StackDamageOnTickStatus : StatusComponent
         stackStatus = effect.GetComponent<StackStatus>();
     }
 
-    public override void Tick(StatusEffect effect, int tickIndex)
+    public override void Tick(StatusEffect effect)
     {
-        if (this.tickIndex == tickIndex)
-            effect.health.ApplyHitDamage(damagePerStack * stackStatus.stacks);
+        effect.health.ApplyHitDamage(damagePerStack * stackStatus.stacks);
     }
 }

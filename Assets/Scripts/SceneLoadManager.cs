@@ -9,7 +9,6 @@ using UnityEngine.UI;
 public class SceneLoadManager : MonoBehaviour
 {
     public Image fadeBox;
-    public string sceneToLoad;
 
     public float fadeTime;
 
@@ -24,26 +23,21 @@ public class SceneLoadManager : MonoBehaviour
         }
     }
 
-    public void SetSceneToLoad(string sceneToLoad)
-    {
-        this.sceneToLoad = sceneToLoad;
-    }
-
-    public void StartLoad(UnityEvent onBlackScreen = null)
+    public void StartLoad(string sceneName, UnityEvent onBlackScreen = null)
     {
         if (loadingScene)
             return;
 
         loadingScene = true;
-        StartCoroutine(LoadSceneInternal(onBlackScreen));
+        StartCoroutine(LoadSceneInternal(sceneName, onBlackScreen));
     }
 
-    public IEnumerator LoadSceneInternal(UnityEvent onBlackScreen = null)
+    public IEnumerator LoadSceneInternal(string sceneName, UnityEvent onBlackScreen = null)
     {
         fadeBox.enabled = true;
         fadeBox.DOFade(1, fadeTime);
 
-        AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(sceneToLoad);
+        AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(sceneName);
         asyncLoad.allowSceneActivation = false;
 
         yield return new WaitForSeconds(fadeTime);

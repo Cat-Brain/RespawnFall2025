@@ -81,7 +81,7 @@ public class HopperEnemy : MonoBehaviour
         projectileFireTimer = projectileFireTime;
         projectileCooldownTimer = projectileCooldownTime;
         Instantiate(projectilePrefab, transform.position, Quaternion.identity)
-            .GetComponent<ProjectileInst>().Init(direction);
+            .GetComponent<Projectile>().Init(direction);
 
         return true;
     }

@@ -1,14 +1,13 @@
+
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "New DamageOnTickStatus", menuName = "StatusComponents/DamageOnTickStatus")]
 public class DamageOnTickStatus : StatusComponent
 {
-    public int tickIndex;
     public float damage;
 
-    public override void Tick(StatusEffect effect, int tickIndex)
+    public override void Tick(StatusEffect effect)
     {
-        if (this.tickIndex == tickIndex)
-            effect.health.ApplyHitDamage(damage);
+        effect.health.ApplyHitDamage(damage);
     }
 }

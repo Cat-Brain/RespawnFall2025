@@ -3,7 +3,6 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "New TickStatus", menuName = "StatusComponents/TickStatus")]
 public class TickStatus : StatusComponent
 {
-    public int tickIndex;
     public bool tickOnStart;
     public float timePerTick;
     protected float timeTillTick;
@@ -12,19 +11,19 @@ public class TickStatus : StatusComponent
     {
         timeTillTick = timePerTick;
         if (tickOnStart)
-            effect.Tick(tickIndex);
+            effect.Tick();
     }
 
     public override void Upd(StatusEffect effect)
     {
         timeTillTick -= Time.deltaTime;
         if (timeTillTick <= 0)
-            effect.Tick(tickIndex);
+            effect.Tick();
     }
 
-    public override void Tick(StatusEffect effect, int tickIndex)
+    public override void Tick(StatusEffect effect)
     {
-        if (this.tickIndex == tickIndex && timeTillTick <= 0)
+        if (timeTillTick <= 0)
             timeTillTick += timePerTick;
     }
 }

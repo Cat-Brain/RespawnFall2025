@@ -1,13 +1,10 @@
-using com.cyborgAssets.inspectorButtonPro;
-using DG.Tweening.Core.Easing;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.InputSystem;
 
 public enum GameState
 {
-    IN_GAME, LOSE_SCREEN, WIN_SCREEN, UPGRADE_SCREEN, MAIN_MENU, SETTINGS_MENU, PAUSE_MENU, INVENTORY
+    IN_GAME, LOSE_ANIMATION, WIN_SCREEN, UPGRADE_SCREEN, MAIN_MENU, SETTINGS_MENU, PAUSE_MENU
 }
 
 [ExecuteInEditMode]
@@ -16,7 +13,7 @@ public class GameManager : MonoBehaviour
     public GenerationManager generationManager;
     public DisplayStringController stringController;
     public SceneLoadManager sceneLoadManager;
-    public List<Menu> menus;
+    public GameObject inGameDisplay, loseDisplay, winDisplay, upgradeDisplay, mainMenuDisplay, settingsDisplay, pauseDisplay;
 
     public string mainMenuSceneName, inGameSceneName, winSceneName;
 
@@ -29,96 +26,33 @@ public class GameManager : MonoBehaviour
 
     public GameState gameState;
     public AudioClip deathClip;
-
-    public bool hasEnabledCurrentMenu = false;
     
 
     void Awake()
     {
+        inGameDisplay.SetActive(true);
+        loseDisplay.SetActive(true);
+        winDisplay.SetActive(true);
+        upgradeDisplay.SetActive(true);
+        mainMenuDisplay.SetActive(true);
+        settingsDisplay.SetActive(true);
+        pauseDisplay.SetActive(true);
+
         if (gameState == GameState.IN_GAME && shouldGenerateTerrainOnLoad)
             generationManager.Init();
-        //pauseAction.action.started += SwitchToPause; 
+        pauseAction.action.started += SwitchToPause; 
     }
 
     void Update()
     {
-        if (!Application.isPlaying)
-        {
-            SetCurrentMenusActive(true);
-            SetNotCurrentMenusActive(false);
-        }
+        inGameDisplay.SetActive(gameState == GameState.IN_GAME);
+        loseDisplay.SetActive(gameState == GameState.LOSE_ANIMATION);
+        winDisplay.SetActive(gameState == GameState.WIN_SCREEN);
+        upgradeDisplay.SetActive(gameState == GameState.UPGRADE_SCREEN);
+        mainMenuDisplay.SetActive(gameState == GameState.MAIN_MENU);
+        settingsDisplay.SetActive(gameState == GameState.SETTINGS_MENU);
+        pauseDisplay.SetActive(gameState == GameState.PAUSE_MENU);
     }
-
-    private void LateUpdate()
-    {
-        if (!hasEnabledCurrentMenu)
-        {
-            SetCurrentMenusActive(true);
-            hasEnabledCurrentMenu = true;
-        }
-    }
-
-    public void SetCurrentMenusActive(bool active)
-    {
-        menus.ForEach((menu) => { if (menu.state == gameState) menu.SetActive(active); });
-    }
-
-    public void SetNotCurrentMenusActive(bool active)
-    {
-        menus.ForEach((menu) => { if (menu.state != gameState) menu.SetActive(active); });
-    }
-
-    public void SetState(GameState state)
-    {
-        if (gameState == state)
-            return;
-
-        SetCurrentMenusActive(false);
-        gameState = state;
-        hasEnabledCurrentMenu = false;
-    }
-
-    public void SetStateInGame() => SetState(GameState.IN_GAME);
-    public void SetStateLoseScreen() => SetState(GameState.LOSE_SCREEN);
-    public void SetStateWinScreen() => SetState(GameState.WIN_SCREEN);
-    public void SetStateUpgradeScreen() => SetState(GameState.UPGRADE_SCREEN);
-    public void SetStateMainMenu() => SetState(GameState.MAIN_MENU);
-    public void SetStateSettingsMenu() => SetState(GameState.SETTINGS_MENU);
-    public void SetStatePauseMenu() => SetState(GameState.PAUSE_MENU);
-    public void SetStateInventory() => SetState(GameState.INVENTORY);
-
-    public void LoadState(GameState state, string sceneName)
-    {
-        if (gameState == state)
-            return;
-
-        SetCurrentMenusActive(false);
-
-        UnityEvent onFadeEvent = new();
-        onFadeEvent.AddListener(() =>
-        {
-            gameState = state;
-            hasEnabledCurrentMenu = false;
-        });
-
-        sceneLoadManager.sceneToLoad = sceneName;
-        sceneLoadManager.StartLoad(onFadeEvent);
-    }
-
-    public void LoadStateInGame(string sceneName) => LoadState(GameState.IN_GAME, sceneName);
-    public void LoadStateLoseScreen(string sceneName) => LoadState(GameState.LOSE_SCREEN, sceneName);
-    public void LoadStateWinScreen(string sceneName) => LoadState(GameState.WIN_SCREEN, sceneName);
-    public void LoadStateUpgradeScreen(string sceneName) => LoadState(GameState.UPGRADE_SCREEN, sceneName);
-    public void LoadStateMainMenu(string sceneName) => LoadState(GameState.MAIN_MENU, sceneName);
-    public void LoadStateSettingsMenu(string sceneName) => LoadState(GameState.SETTINGS_MENU, sceneName);
-    public void LoadStatePauseMenu(string sceneName) => LoadState(GameState.PAUSE_MENU, sceneName);
-    public void LoadStateInventory(string sceneName) => LoadState(GameState.INVENTORY, sceneName);
-
-    public void SetTimeScale(float timeScale)
-    {
-        Time.timeScale = timeScale;
-    }
-
 
     public void PlayerWin()
     {
@@ -128,7 +62,9 @@ public class GameManager : MonoBehaviour
         playerManager.moveStun = -1;
         playerManager.SetDirection(EntityDirection.NEUTRAL);
 
-        LoadStateWinScreen(winSceneName);
+        UnityEvent onFadeEvent = new();
+        onFadeEvent.AddListener(() => { gameState = GameState.WIN_SCREEN; });
+        sceneLoadManager.StartLoad(winSceneName, onFadeEvent);
     }
 
     public void PlayerLose()
@@ -138,6 +74,76 @@ public class GameManager : MonoBehaviour
 
         AudioManager.instance.PlaySoundFXClip(deathClip, transform, 1.0f);
 
-        LoadStateLoseScreen(mainMenuSceneName);
+        UnityEvent onFadeEvent = new();
+        onFadeEvent.AddListener(() => { gameState = GameState.LOSE_ANIMATION; });
+        sceneLoadManager.StartLoad(mainMenuSceneName, onFadeEvent);
+
     }
+
+    #region Menu Swappers
+
+    public void SwitchToInGame()
+    {
+        if (gameState != GameState.MAIN_MENU && gameState != GameState.PAUSE_MENU)
+            return;
+
+        if (gameState == GameState.PAUSE_MENU)
+        {
+            Time.timeScale = 1;
+            gameState = GameState.IN_GAME;
+            return;
+        }
+
+        UnityEvent onFadeEvent = new();
+        onFadeEvent.AddListener(() => { gameState = GameState.IN_GAME; generationManager.Init(); });
+        sceneLoadManager.StartLoad(inGameSceneName, onFadeEvent);
+    }
+
+    public void SwitchToSettings()
+    {
+        if (gameState != GameState.MAIN_MENU)
+            return;
+
+        gameState = GameState.SETTINGS_MENU;
+    }
+
+    public void SwitchToMainMenu()
+    {
+        if (gameState != GameState.SETTINGS_MENU && gameState != GameState.PAUSE_MENU && gameState != GameState.LOSE_ANIMATION)
+            return;
+
+        if (gameState == GameState.SETTINGS_MENU || gameState == GameState.LOSE_ANIMATION)
+        {
+            gameState = GameState.MAIN_MENU;
+            return;
+        }
+
+        UnityEvent onFadeEvent = new();
+        onFadeEvent.AddListener(() => { gameState = GameState.SETTINGS_MENU; });
+        sceneLoadManager.StartLoad(mainMenuSceneName, onFadeEvent);
+    }
+
+    public void SwitchToPause(InputAction.CallbackContext context)
+    {
+        if (gameState != GameState.IN_GAME)
+            return;
+
+        if (gameState == GameState.PAUSE_MENU)
+        {
+            Time.timeScale = 1;
+            gameState = GameState.IN_GAME;
+        } else
+        {
+            Time.timeScale = 0;
+            gameState = GameState.PAUSE_MENU;
+        }
+        return;
+    }
+
+    public void CloseGame()
+    {
+        Application.Quit();
+    }
+
+    #endregion
 }

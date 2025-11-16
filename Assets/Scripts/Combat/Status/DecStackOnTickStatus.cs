@@ -3,7 +3,6 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "New DecStackOnTickStatus", menuName = "StatusComponents/DecStackOnTickStatus")]
 public class DecStackOnTickStatus : StatusComponent
 {
-    public int tickIndex;
     [Tooltip("The amount of stacks to decrease by per tick")]
     public int decrement;
 
@@ -14,9 +13,8 @@ public class DecStackOnTickStatus : StatusComponent
         stackStatus = effect.GetComponent<StackStatus>();
     }
 
-    public override void Tick(StatusEffect effect, int tickIndex)
+    public override void Tick(StatusEffect effect)
     {
-        if (this.tickIndex == tickIndex)
-            stackStatus.ModifyStack(effect, -decrement);
+        stackStatus.ModifyStack(effect, -decrement);
     }
 }
