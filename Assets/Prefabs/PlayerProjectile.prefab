@@ -165,9 +165,6 @@ PolygonCollider2D:
   direction: {x: 0, y: 0}
   remainingRange: 0
   lastPos: {x: 0, y: 0}
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
 >>>>>>> Stashed changes
 --- !u!58 &4129074220558359128
 CircleCollider2D:
