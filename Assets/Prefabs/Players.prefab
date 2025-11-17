@@ -217,7 +217,7 @@ MonoBehaviour:
   primaryAction: {fileID: 233641816963222372, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   reloadAction: {fileID: 3375951426363076484, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   playerManager: {fileID: 678778273946464857}
-  weapon: {fileID: 11400000, guid: 73604fc96a4b9f445886f5573084d71a, type: 2}
+  weapon: {fileID: 11400000, guid: b18842c7515525a4b9a60824e028040d, type: 2}
 --- !u!114 &3147339434460024481
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -308,6 +308,7 @@ MonoBehaviour:
   maxHealth: 100
   fractionalHealthOffset: 0
   statuses: []
+  newStatuses: []
   healthManager: {fileID: 0}
   timerDisplay: {fileID: 0}
   playerManager: {fileID: 678778273946464857}

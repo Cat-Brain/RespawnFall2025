@@ -41,6 +41,11 @@ public class Health : MonoBehaviour
         }
         statuses.RemoveAll(status => status.shouldRemove);
 
+        AddNewStatuses();
+    }
+
+    public void AddNewStatuses()
+    {
         statuses.AddRange(newStatuses);
         newStatuses.Clear();
     }

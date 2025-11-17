@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class PlayerHealth : Health
 {
-    public TimerDisplay timerDisplay;
+    public BarDisplay timerDisplay;
     public PlayerManager playerManager;
 
     new public void Awake()
@@ -25,7 +25,7 @@ public class PlayerHealth : Health
     public void RefreshTime()
     {
         if (timerDisplay == null)
-            timerDisplay = FindAnyObjectByType<TimerDisplay>(FindObjectsInactive.Include);
-        timerDisplay.UpdateTimer(health, maxHealth);
+            timerDisplay = FindAnyObjectByType<BarDisplay>(FindObjectsInactive.Include);
+        timerDisplay.UpdateRemaining(health, maxHealth);
     }
 }

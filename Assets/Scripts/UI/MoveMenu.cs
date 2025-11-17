@@ -2,7 +2,6 @@ using com.cyborgAssets.inspectorButtonPro;
 using DG.Tweening;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
 [ExecuteInEditMode]
 public class MoveMenu : Menu
