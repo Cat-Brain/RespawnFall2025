@@ -12,4 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 582eeb4df91f5d240ba821f3fcc6c833, type: 3}
   m_Name: EmberDamage
   m_EditorClassIdentifier: Assembly-CSharp::StackDamageOnTickStatus
-  damagePerStack: 0.25
+  tickIndex: 0
+  damagePerStack: 1

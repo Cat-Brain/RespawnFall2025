@@ -1,7 +1,7 @@
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "New DefenseStatus", menuName = "StatusComponents/DefenseStatus")]
-public class DefenseStatus : StatusComponent
+public class DefenseStatus : StatusComponent, IOnHitStatus
 {
     public float defense, defensePerStack;
 
@@ -12,7 +12,7 @@ public class DefenseStatus : StatusComponent
         stackStatus = effect.GetComponent<StackStatus>();
     }
 
-    public override void OnHit(StatusEffect effect, ref Hit hit)
+    public void OnHit(StatusEffect effect, ref Hit hit)
     {
         if (hit.damage > 0)
             hit.damage = Mathf.Max(0, hit.damage - defense + defensePerStack * stackStatus.stacks);

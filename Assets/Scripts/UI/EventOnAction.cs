@@ -1,19 +1,23 @@
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.InputSystem;
 
 public class EventOnAction : MonoBehaviour
 {
-    public InputActionReference action;
+    public List<InputActionReference> actions;
     public UnityEvent onPress, onHold, onRelease;
 
     public bool active;
 
     public void Awake()
     {
-        action.action.started += OnPress;
-        action.action.performed += OnHold;
-        action.action.canceled += OnRelease;
+        foreach (InputActionReference action in actions)
+        {
+            action.action.started += OnPress;
+            action.action.performed += OnHold;
+            action.action.canceled += OnRelease;
+        }
     }
 
     public void OnPress(InputAction.CallbackContext callbackContext)

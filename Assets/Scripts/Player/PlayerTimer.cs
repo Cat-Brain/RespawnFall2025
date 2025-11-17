@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class PlayerTimer : MonoBehaviour
 {
-    public TimerDisplay timerDisplay;
+    public BarDisplay timerDisplay;
 
     public float refillTime;
     public float remainingTime;
@@ -20,8 +20,8 @@ public class PlayerTimer : MonoBehaviour
     {
         DecreaseTime(Time.deltaTime);
         if (timerDisplay == null)
-            timerDisplay = FindFirstObjectByType<TimerDisplay>();
-        timerDisplay.UpdateTimer(remainingTime, refillTime);
+            timerDisplay = FindFirstObjectByType<BarDisplay>();
+        timerDisplay.UpdateRemaining(remainingTime, refillTime);
     }
 
     public void RefreshTime()
