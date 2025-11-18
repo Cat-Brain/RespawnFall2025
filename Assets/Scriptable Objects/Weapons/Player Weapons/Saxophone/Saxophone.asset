@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3f91b072e8c09df4b99b9e79871e5df3, type: 3}
-  m_Name: Saxaphone
+  m_Name: Saxophone
   m_EditorClassIdentifier: Assembly-CSharp::PlayerWeapon
   reload: {fileID: 11400000, guid: 3c170bc043a3454468e52d273890556e, type: 2}
   primary: {fileID: 11400000, guid: 2cddb6cc05addbd4090c84b391673308, type: 2}

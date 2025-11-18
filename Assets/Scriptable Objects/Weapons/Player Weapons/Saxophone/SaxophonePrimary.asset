@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2251866d7cec60e4e980a079599b44c4, type: 3}
-  m_Name: SaxaphonePrimary
+  m_Name: SaxophonePrimary
   m_EditorClassIdentifier: Assembly-CSharp::BurstWeaponPrimary
   weapon: {fileID: 0}
   activationClips:

@@ -1,10 +1,10 @@
 using UnityEngine;
 
-public class ButtonTick : MonoBehaviour
+public class TickEntity : MonoBehaviour
 {
     public void Tick()
     {
         foreach (OnTickEffect effect in GetComponents<OnTickEffect>())
-            effect.OnTick();
+            effect.OnTick(this);
     }
 }
