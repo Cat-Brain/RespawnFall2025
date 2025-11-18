@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4c85cfa7ca2dd0446846239e236b31d2, type: 3}
-  m_Name: Saxaphone Projectile
+  m_Name: Saxophone Projectile
   m_EditorClassIdentifier: Assembly-CSharp::Projectile
   hit:
     position: {x: 0, y: 0}
