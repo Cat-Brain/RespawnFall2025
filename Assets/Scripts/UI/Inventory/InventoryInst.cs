@@ -2,10 +2,9 @@ using com.cyborgAssets.inspectorButtonPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
-using static UnityEditor.PlayerSettings;
 
 [ExecuteInEditMode]
-public class InventoryInst : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, IEndDragHandler, IDragHandler/*, ISelectable*/
+public class InventoryInst : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, IEndDragHandler, IDragHandler
 {
     public InventoryController controller;
     public RectTransform rectTransform;

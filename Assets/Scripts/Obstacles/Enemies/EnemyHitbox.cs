@@ -1,3 +1,4 @@
+using UnityEditor;
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody2D))]
@@ -17,18 +18,18 @@ public class EnemyHitbox : MonoBehaviour
     void OnCollisionEnter2D(Collision2D collision)
     {
         if (enabled && collision.collider.CompareTag(playerTag) &&
-            collision.collider.TryGetComponent(out Health health))
+            collision.collider.TryGetComponent(out HealthInst health))
             OnHit(health, collision.collider);
     }
 
     public void OnTriggerEnter2D(Collider2D hitCollider)
     {
         if (enabled && hitCollider.CompareTag(playerTag) &&
-            hitCollider.TryGetComponent(out Health health))
+            hitCollider.TryGetComponent(out HealthInst health))
             OnHit(health, hitCollider);
     }
 
-    public virtual void OnHit(Health health, Collider2D collider)
+    public virtual void OnHit(HealthInst health, Collider2D collider)
     {
         health.ApplyHit(hit);
         if (collider.attachedRigidbody != null && rb.linearVelocity != Vector2.zero)

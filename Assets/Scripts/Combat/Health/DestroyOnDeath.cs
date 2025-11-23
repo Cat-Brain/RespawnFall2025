@@ -1,18 +1,14 @@
 using DG.Tweening;
-using System.Collections.Generic;
 using UnityEngine;
 
+[CreateAssetMenu(fileName = "New DestroyOnDeath", menuName = "Health/DestroyOnDeath")]
 public class DestroyOnDeath : Health
 {
     public float deathTime;
-    public List<Behaviour> disabledOnDeath;
 
-    protected override void OnDeath()
+    public override void OnDeath()
     {
-        transform.DOScale(0, deathTime).OnComplete(() => Destroy(gameObject));
-        enabled = false;
-        foreach (Behaviour component in disabledOnDeath)
-            component.enabled = false;
-        base.OnDeath();
+        inst.transform.DOScale(0, deathTime).OnComplete(() => Destroy(inst.gameObject));
+        inst.enabled = false;
     }
 }

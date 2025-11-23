@@ -14,13 +14,10 @@ GameObject:
   - component: {fileID: 678778273946464857}
   - component: {fileID: 7749438244442108674}
   - component: {fileID: 4430254867905316504}
-  - component: {fileID: 5081593209710861736}
   - component: {fileID: 7547861062549044874}
-  - component: {fileID: 3147339434460024481}
-  - component: {fileID: 1606943418567180504}
   - component: {fileID: 6736275102541329618}
-  - component: {fileID: 1262798931244223413}
   - component: {fileID: 4302446508148004657}
+  - component: {fileID: 6006367368853090831}
   m_Layer: 10
   m_Name: Orpheus
   m_TagString: Player
@@ -125,7 +122,6 @@ MonoBehaviour:
   followerFlip: {fileID: 5232928222605140189}
   moveAction: {fileID: -1680190386980627800, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   jumpAction: {fileID: -2099379676528639254, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
-  blockAction: {fileID: 5772951161277674391, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   groundedRadius: 0.45
   groundedDistance: 0.6
   groundedMask:
@@ -134,14 +130,11 @@ MonoBehaviour:
   recoilMultiplier: {x: 1, y: 1}
   direction: 1
   winZoneTag: Win Zone
-  blockInvulnerability: 0
   stunInvulnerability: 0
   moveStun: 0
   gameManager: {fileID: 0}
   playerMove: {fileID: 0}
   playerGravity: {fileID: 0}
-  playerBlock: {fileID: 0}
-  playerTimer: {fileID: 0}
   playerAnimator: {fileID: 0}
 --- !u!114 &7749438244442108674
 MonoBehaviour:
@@ -182,26 +175,6 @@ MonoBehaviour:
   gravity: 15
   tapJumpGravity: 30
   inQuickFall: 0
---- !u!114 &5081593209710861736
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1223528673435873877}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f1df6a9d416b1924eb340ef1b8c6dbf5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PlayerBlock
-  blockTime: 0.3
-  blockStunTime: 3
-  earlyBlockBufferTime: 0.1
-  perfectBlockTime: 0.1
-  hasBlockDuration: 0
-  hasTacticalReload: 0
-  hasSpeedBoost: 0
-  hasExplosion: 0
 --- !u!114 &7547861062549044874
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -218,60 +191,6 @@ MonoBehaviour:
   reloadAction: {fileID: 3375951426363076484, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   playerManager: {fileID: 678778273946464857}
   weapon: {fileID: 11400000, guid: b18842c7515525a4b9a60824e028040d, type: 2}
---- !u!114 &3147339434460024481
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1223528673435873877}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cd465198b5d0c7f459ded1c669cbf128, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: '::'
-  clickAction: {fileID: 233641816963222372, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
-  playerManagerScript: {fileID: 678778273946464857}
-  projectilePrefab: {fileID: 7878727207753161381, guid: e925f11ddcf332f439076888fddd62cf, type: 3}
-  currentStrings: 4
-  maxStrings: 4
-  hasStrings: 0
-  hasExplosives: 0
-  hasPhasing: 0
-  hasRecoil: 0
-  shootClips:
-  - {fileID: 8300000, guid: 12f07d83d46146544815b7db521142c4, type: 3}
-  - {fileID: 8300000, guid: 2e2131eb1994ff24dbad1a681a1da3e0, type: 3}
-  - {fileID: 8300000, guid: ed046fbfd7ace4a4f91d6be8d099d46a, type: 3}
-  - {fileID: 8300000, guid: b36af62c01c10e842922684dced8660b, type: 3}
-  - {fileID: 8300000, guid: c03527375322651488394781b095055a, type: 3}
-  - {fileID: 8300000, guid: 9faea2d321b8d6944b7a0fcdf35464f0, type: 3}
-  - {fileID: 8300000, guid: e5cf64c368b3ab640bc0845c2fd34fba, type: 3}
-  - {fileID: 8300000, guid: 6db4e71ecdcf0874ab8de4e4fe32b5b5, type: 3}
-  - {fileID: 8300000, guid: 50a7d730977204049acd4462513d799c, type: 3}
-  - {fileID: 8300000, guid: 30f1a048bc9e44348a00c4279b25f159, type: 3}
-  reloadClip: {fileID: 8300000, guid: 0b6a323065b88484c9435e1ef52b9885, type: 3}
-  coolDownTime: 0.2
-  coolDownTimer: 0
-  regenTime: 1
-  regenTimer: 0
---- !u!114 &1606943418567180504
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1223528673435873877}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 27049343457bd664fab8fd95308b26e3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PlayerOverlapDeathZone
-  playerManager: {fileID: 678778273946464857}
-  deathZoneTag: Death Zone
-  lostLifeRate: 4
-  stunRate: 2
-  maxStun: 1
 --- !u!114 &6736275102541329618
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -290,28 +209,7 @@ MonoBehaviour:
   stunned: 0
   jumping: 0
   grounded: 0
-  singing: 0
   playerManager: {fileID: 0}
---- !u!114 &1262798931244223413
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1223528673435873877}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9b75152cb93c5444884eff6170725355, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PlayerHealth
-  health: 100
-  maxHealth: 100
-  fractionalHealthOffset: 0
-  statuses: []
-  newStatuses: []
-  healthManager: {fileID: 0}
-  timerDisplay: {fileID: 0}
-  playerManager: {fileID: 678778273946464857}
 --- !u!114 &4302446508148004657
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -324,7 +222,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 065a689b8468d0143a06a283b6415c66, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ProjectileTarget
-  health: {fileID: 1262798931244223413}
+  health: {fileID: 0}
+--- !u!114 &6006367368853090831
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1223528673435873877}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95abf65faa9d14d42ae3e4ee1bb55476, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HealthInst
+  tickEntity: {fileID: 0}
+  data: {fileID: 11400000, guid: 422d709fb721ae74fbbd7d269b9431af, type: 2}
+  health: 0
+  fractionalHealthOffset: 0
+  statuses: []
+  newStatuses: []
+  healthManager: {fileID: 0}
 --- !u!1 &2619534745981113462
 GameObject:
   m_ObjectHideFlags: 0

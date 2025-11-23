@@ -36,8 +36,7 @@ public class InventoryController : MonoBehaviour
     public GameObject inventoryItemPrefab;
 
     public Vector2Int dimensions;
-    public int cellWidth; // Convert to float!
-    public float bufferWidth;
+    public float cellWidth, bufferWidth;
     public float itemSpringFrequency, itemSpringDamping;
 
     public SpringUtils.tDampedSpringMotionParams itemSpring = new();
@@ -91,7 +90,7 @@ public class InventoryController : MonoBehaviour
     [ProButton]
     public void CleanDimensions()
     {
-        inventoryTransform.sizeDelta = cellWidth * dimensions;
+        inventoryTransform.sizeDelta = cellWidth * (Vector2)dimensions;
     }
 
     public Vector2 GlobalToLocalOffset(Vector2 offset)
