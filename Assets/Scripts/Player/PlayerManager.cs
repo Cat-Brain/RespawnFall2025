@@ -6,12 +6,16 @@ public enum HitResult
     HIT, ABSORBED, BLOCKED
 }
 
+[RequireComponent(typeof(PlayerMove))]
+[RequireComponent(typeof(PlayerGravity))]
+[RequireComponent(typeof(PlayerAnimator))]
+[RequireComponent(typeof(Rigidbody2D))]
 public class PlayerManager : MonoBehaviour
 {
     public PlayerCamera playerCamera;
     public FlipToDirection playerFlip, followerFlip;
 
-    public InputActionReference moveAction, jumpAction, blockAction;
+    public InputActionReference moveAction, jumpAction;
 
     public float groundedRadius, groundedDistance;
     public LayerMask groundedMask;
@@ -22,14 +26,12 @@ public class PlayerManager : MonoBehaviour
 
     public string winZoneTag;
 
-    /*[HideInInspector]*/ public float blockInvulnerability = 0, stunInvulnerability = 0, moveStun = 0; // Applies to both horizontal movement and jumping
+    [HideInInspector] public float stunInvulnerability = 0, moveStun = 0; // Applies to both horizontal movement and jumping
     
     [HideInInspector] public GameManager gameManager;
 
     [HideInInspector] public PlayerMove playerMove;
     [HideInInspector] public PlayerGravity playerGravity;
-    [HideInInspector] public PlayerBlock playerBlock;
-    [HideInInspector] public PlayerTimer playerTimer;
     [HideInInspector] public PlayerAnimator playerAnimator;
 
     private Rigidbody2D rb;
@@ -41,15 +43,13 @@ public class PlayerManager : MonoBehaviour
 
         playerMove = GetComponent<PlayerMove>();
         playerGravity = GetComponent<PlayerGravity>();
-        playerBlock = GetComponent<PlayerBlock>();
-        playerTimer = GetComponent<PlayerTimer>();
+        playerAnimator = GetComponent<PlayerAnimator>();
 
         rb = GetComponent<Rigidbody2D>();
     }
 
     void Update()
     {
-        blockInvulnerability = Mathf.Max(0, blockInvulnerability - Time.deltaTime);
         stunInvulnerability = Mathf.Max(0, stunInvulnerability - Time.deltaTime);
         if (moveStun != -1)
             moveStun = Mathf.Max(0, moveStun - Time.deltaTime);
@@ -75,12 +75,6 @@ public class PlayerManager : MonoBehaviour
 
     public HitResult TryHit(Vector2 knockbackForce, float duration, float invulnerability)
     {
-        if (blockInvulnerability > 0)
-        {
-            playerBlock.SuccessfulBlock();    
-            return HitResult.BLOCKED;
-        }
-
         rb.linearVelocity += knockbackForce;
 
         if (stunInvulnerability > 0)

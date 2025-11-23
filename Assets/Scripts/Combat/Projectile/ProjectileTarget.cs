@@ -1,8 +1,14 @@
 using UnityEngine;
 
+[RequireComponent(typeof(HealthInst))]
 public class ProjectileTarget : ProjectileBlocker
 {
-    public Health health;
+    [HideInInspector] public HealthInst health;
+
+    public void Awake()
+    {
+        health = GetComponent<HealthInst>();
+    }
 
     public override bool ShouldDestroy(ProjectileInst projectile)
     {

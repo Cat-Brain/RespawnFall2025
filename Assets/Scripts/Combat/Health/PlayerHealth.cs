@@ -1,31 +1,35 @@
+using DG.Tweening.Core.Easing;
 using UnityEngine;
 
+[CreateAssetMenu(fileName = "New PlayerHealth", menuName = "Health/PlayerHealth")]
 public class PlayerHealth : Health
 {
-    public BarDisplay timerDisplay;
-    public PlayerManager playerManager;
+    [HideInInspector] public BarDisplay timerDisplay;
+    [HideInInspector] public PlayerManager playerManager;
 
-    new public void Awake()
+    public override void Init()
     {
-        base.Awake();
+        base.Init();
         RefreshTime();
     }
 
-    protected override void OnDeath()
+    public override void OnDeath()
     {
+        if (playerManager == null)
+            playerManager = inst.GetComponent<PlayerManager>();
         playerManager.gameManager.PlayerLose();
     }
 
-    protected override void OnHealthChange(int newValue, Hit? hit)
+    /*public override void OnHealthChange(int newValue, Hit? hit)
     {
         base.OnHealthChange(newValue, hit);
         RefreshTime();
-    }
+    }*/
 
     public void RefreshTime()
     {
         if (timerDisplay == null)
             timerDisplay = FindAnyObjectByType<BarDisplay>(FindObjectsInactive.Include);
-        timerDisplay.UpdateRemaining(health, maxHealth);
+        timerDisplay.UpdateRemaining(inst.health, maxHealth);
     }
 }

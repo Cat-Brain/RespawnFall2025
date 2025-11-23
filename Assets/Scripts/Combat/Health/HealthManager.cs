@@ -6,7 +6,7 @@ public class HealthManager : MonoBehaviour
 {
     public DamageNumber damagePopup;
 
-    public List<Health> healths = new();
+    public List<HealthInst> healths = new();
 
     void Awake()
     {

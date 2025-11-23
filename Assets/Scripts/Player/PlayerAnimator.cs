@@ -1,11 +1,11 @@
-using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(PlayerManager))]
 public class PlayerAnimator : MonoBehaviour
 {
     public Animator animator, animator2;
 
-    public bool running, stunned, jumping, grounded, singing;
+    public bool running, stunned, jumping, grounded;
 
     public PlayerManager playerManager;
 
@@ -20,7 +20,6 @@ public class PlayerAnimator : MonoBehaviour
         stunned = playerManager.Stunned();
         jumping = playerManager.playerMove.tapJumpTimer > 0;
         grounded = playerManager.IsGrounded();
-        singing = playerManager.blockInvulnerability > 0;
 
         animator.SetBool("isRunning", running);
         animator.SetBool("stunned", stunned);
@@ -28,6 +27,5 @@ public class PlayerAnimator : MonoBehaviour
         animator.SetBool("grounded", grounded);
         
         animator2.SetBool("stunned", stunned);
-        animator2.SetBool("singing", singing);
     }
 }

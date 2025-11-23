@@ -4,14 +4,14 @@ using System.Linq;
 [Serializable]
 public class StatusEffect
 {
-    public Health health;
+    public HealthInst health;
 
     public Status status;
     public StatusComponent[] components;
     public IOnHitStatus[] onHitComponents;
     public bool enabled, shouldRemove;
 
-    public StatusEffect(Health health, HitStatus hitStatus)
+    public StatusEffect(HealthInst health, HitStatus hitStatus)
     {
         this.health = health;
         status = hitStatus.status;
