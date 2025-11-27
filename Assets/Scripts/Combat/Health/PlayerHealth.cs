@@ -30,6 +30,7 @@ public class PlayerHealth : Health
     {
         if (timerDisplay == null)
             timerDisplay = FindAnyObjectByType<BarDisplay>(FindObjectsInactive.Include);
-        timerDisplay.UpdateRemaining(inst.health, maxHealth);
+        if (timerDisplay)
+            timerDisplay.UpdateRemaining(inst.health, maxHealth);
     }
 }
