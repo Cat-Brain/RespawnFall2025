@@ -8,6 +8,7 @@ public class Charger : Enemy
 {
     [HideInInspector] public CapsuleRenderer cr;
     [HideInInspector] public Rigidbody2D rb;
+    [HideInInspector] public Collider2D col;
 
     public Hit hit;
 
@@ -25,7 +26,7 @@ public class Charger : Enemy
     public float startledDecel, activeWalkSpeed, activeWalkAccel;
     public float chargeSpeed, chargeAccel;
 
-    public float maxChargeOffset;
+    public float chargeDist;
 
     public float idleToActiveHopForce;
     public Vector2 chargeHitHopForce;
@@ -37,15 +38,15 @@ public class Charger : Enemy
     public float idleWalkTimer, idleWalkSpeed;
     public bool idleWalking; // True means walking, false means still
 
-    public bool walkingRight;
-    public bool charging;
+    [HideInInspector] public bool walkingRight;
+    [HideInInspector] public bool charging;
 
     public enum ChargerAIState
     {
         INACTIVE, ACTIVE, CHARGING
     }
 
-    public ChargerAIState chargerState;
+    [HideInInspector] public ChargerAIState chargerState;
 
     public void RandomizeIdleWalk()
     {
@@ -70,7 +71,7 @@ public class Charger : Enemy
 
     public bool WantsCharge()
     {
-        return playerVisible && Mathf.Abs(transform.position.y - trackedPlayer.position.y) <= maxChargeOffset;
+        return playerVisible && trackedPlayerCol.Distance(col).distance <= chargeDist;
     }
 
     [ProPlayButton]
@@ -86,6 +87,7 @@ public class Charger : Enemy
             case ChargerAIState.CHARGING:
                 cr.DOColor(chargeColor, preChargeTime);
                 charging = false;
+                walkingRight = trackedPlayer.position.x > transform.position.x;
                 transform.DOScale(CMath.Vector3XY_Z(preChargeDim, 1), preChargeTime).OnComplete(() =>
                 {
                     charging = true;
@@ -100,6 +102,7 @@ public class Charger : Enemy
     {
         cr = GetComponent<CapsuleRenderer>();
         rb = GetComponent<Rigidbody2D>();
+        col = GetComponent<Collider2D>();
 
         base.Awake();
         idleWalking = false;
@@ -112,6 +115,8 @@ public class Charger : Enemy
     public new void OnDrawGizmos()
     {
         base.OnDrawGizmos();
+        Gizmos.color = WantsCharge() ? Color.green : Color.red;
+        Gizmos.DrawWireSphere(transform.position, chargeDist);
         Gizmos.color = state == AIState.IDLE ? Color.yellow : Color.red;
         Gizmos.DrawWireSphere(IdleBumpCheckPos(), idleBumpCheckRadius);
         Gizmos.color = chargerState == ChargerAIState.CHARGING ? Color.yellow : Color.red;
@@ -163,7 +168,10 @@ public class Charger : Enemy
             case ChargerAIState.CHARGING:
                 if (charging)
                 {
+                    int tempLayer = gameObject.layer;
+                    gameObject.layer = 2;
                     Collider2D[] overlaps = Physics2D.OverlapCircleAll(ChargeHitCheckPos(), chargeHitCheckRadius, chargeHitMask);
+                    gameObject.layer = tempLayer;
                     foreach (Collider2D overlap in overlaps)
                     {
                         if (overlap.transform == transform)

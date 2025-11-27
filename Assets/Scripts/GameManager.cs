@@ -23,7 +23,6 @@ public class GameManager : MonoBehaviour
     public InputActionReference pauseAction;
 
     public PlayerManager playerManager;
-    public DeathZoneMove deathZone;
 
     public bool shouldGenerateTerrainOnLoad;
 
@@ -31,28 +30,24 @@ public class GameManager : MonoBehaviour
     public AudioClip deathClip;
 
     public bool hasEnabledCurrentMenu = false;
-    
 
-    void Awake()
-    {
-        if (gameState == GameState.IN_GAME && shouldGenerateTerrainOnLoad)
-            generationManager.Init();
-        //pauseAction.action.started += SwitchToPause; 
-    }
+    public int level;
+    public bool inCombat;
 
     void Update()
     {
         if (!Application.isPlaying)
         {
-            SetCurrentMenusActive(true);
             SetNotCurrentMenusActive(false);
+            SetCurrentMenusActive(true);
         }
     }
 
     private void LateUpdate()
     {
-        if (!hasEnabledCurrentMenu)
+        if (!hasEnabledCurrentMenu && Application.isPlaying)
         {
+            SetNotCurrentMenusActive(false);
             SetCurrentMenusActive(true);
             hasEnabledCurrentMenu = true;
         }
@@ -117,6 +112,12 @@ public class GameManager : MonoBehaviour
     public void SetTimeScale(float timeScale)
     {
         Time.timeScale = timeScale;
+    }
+
+    public void LoadNextLevel()
+    {
+        level++;
+        generationManager.SpawnLevel(level);
     }
 
 

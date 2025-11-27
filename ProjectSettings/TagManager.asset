@@ -41,6 +41,12 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Back Tree
+    uniqueID: 4078067075
+    locked: 0
+  - name: Tree
+    uniqueID: 1894683927
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0

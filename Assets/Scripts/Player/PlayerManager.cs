@@ -8,12 +8,12 @@ public enum HitResult
 
 [RequireComponent(typeof(PlayerMove))]
 [RequireComponent(typeof(PlayerGravity))]
-[RequireComponent(typeof(PlayerAnimator))]
 [RequireComponent(typeof(Rigidbody2D))]
+[RequireComponent(typeof(Collider2D))]
 public class PlayerManager : MonoBehaviour
 {
-    public PlayerCamera playerCamera;
-    public FlipToDirection playerFlip, followerFlip;
+    public FlipToDirection playerFlip;
+    public Renderer rend;
 
     public InputActionReference moveAction, jumpAction;
 
@@ -26,15 +26,15 @@ public class PlayerManager : MonoBehaviour
 
     public string winZoneTag;
 
+    [HideInInspector] public bool active = true;
     [HideInInspector] public float stunInvulnerability = 0, moveStun = 0; // Applies to both horizontal movement and jumping
     
     [HideInInspector] public GameManager gameManager;
 
     [HideInInspector] public PlayerMove playerMove;
     [HideInInspector] public PlayerGravity playerGravity;
-    [HideInInspector] public PlayerAnimator playerAnimator;
-
-    private Rigidbody2D rb;
+    [HideInInspector] public Rigidbody2D rb;
+    [HideInInspector] public Collider2D col;
 
     void Awake()
     {
@@ -43,13 +43,24 @@ public class PlayerManager : MonoBehaviour
 
         playerMove = GetComponent<PlayerMove>();
         playerGravity = GetComponent<PlayerGravity>();
-        playerAnimator = GetComponent<PlayerAnimator>();
-
         rb = GetComponent<Rigidbody2D>();
+        col = GetComponent<Collider2D>();
     }
 
     void Update()
     {
+        if (active)
+        {
+            playerMove.enabled = true;
+            playerGravity.enabled = true;
+            col.enabled = true;
+        }
+        else
+        {
+            playerMove.enabled = false;
+            playerGravity.enabled = false;
+            col.enabled = false;
+        }
         stunInvulnerability = Mathf.Max(0, stunInvulnerability - Time.deltaTime);
         if (moveStun != -1)
             moveStun = Mathf.Max(0, moveStun - Time.deltaTime);
@@ -115,7 +126,6 @@ public class PlayerManager : MonoBehaviour
     {
         this.direction = direction;
         playerFlip.direction = direction;
-        followerFlip.direction = direction;
     }
 
     public bool Stunned()

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4785822884980052613}
   - component: {fileID: 4743710979574434788}
   - component: {fileID: 4115841900488305210}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: MeshA
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -100,7 +100,7 @@ GameObject:
   - component: {fileID: 8063638793575410942}
   - component: {fileID: 7179047298152317456}
   - component: {fileID: 1281440177835290902}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: MeshB
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -189,7 +189,7 @@ GameObject:
   - component: {fileID: 4830259250305124748}
   - component: {fileID: 3274766961200035202}
   - component: {fileID: 7184753474563427812}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Damage Popup
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -678,7 +678,7 @@ GameObject:
   - component: {fileID: 8321069496784545656}
   - component: {fileID: 7695023146718589124}
   - component: {fileID: 1067101429530535966}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: TMP
   m_TagString: Untagged
   m_Icon: {fileID: 0}

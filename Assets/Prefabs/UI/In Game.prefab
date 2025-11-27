@@ -894,7 +894,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EventOnAction
   actions:
-  - {fileID: 7218677410466169701, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+  - {fileID: -8087136603196486413, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   onPress:
     m_PersistentCalls:
       m_Calls: []

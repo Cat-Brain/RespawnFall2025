@@ -1,22 +1,28 @@
 using com.cyborgAssets.inspectorButtonPro;
 using UnityEngine;
 
-public class Enemy : MonoBehaviour
+public class Enemy : OnTickEffect
 {
     public int tier;
+    [Tooltip("Offset added to position at spawn to make bottom of enemy grid alligned")]
+    public Vector2 spawnOffset;
+    public Vector2 spawnDimensions;
     public LayerMask playerMask, wallMask;
     public float sightDist, startleTime, interestTime;
 
-    public float startleTimer, interestTimer, stunTimer;
-    public Transform trackedPlayer;
-    public bool playerVisible;
+    [HideInInspector] public EnemyManager enemyManager;
+
+    [HideInInspector] public float startleTimer, interestTimer, stunTimer;
+    [HideInInspector] public Transform trackedPlayer;
+    [HideInInspector] public Collider2D trackedPlayerCol;
+    [HideInInspector] public bool playerVisible;
 
     public enum AIState
     {
         NO_STATE, IDLE, STARTLED, ACTIVE, STUNNED
     }
 
-    public AIState state;
+    [HideInInspector] public AIState state;
 
     public Collider2D FindPlayerCollider()
     {
@@ -28,11 +34,10 @@ public class Enemy : MonoBehaviour
 
     public bool FindPlayer()
     {
-        Collider2D foundPlayer;
-        if (!(foundPlayer = FindPlayerCollider()))
+        if (!(trackedPlayerCol = FindPlayerCollider()))
             return false;
 
-        trackedPlayer = foundPlayer.transform;
+        trackedPlayer = trackedPlayerCol.transform;
         return true;
     }
 
@@ -44,6 +49,12 @@ public class Enemy : MonoBehaviour
     public bool PlayerVisible()
     {
         return trackedPlayer && PositionVisible(trackedPlayer.position);
+    }
+
+    public void ForgetPlayer()
+    {
+        trackedPlayer = null;
+        trackedPlayerCol = null;
     }
 
     [ProPlayButton]
@@ -123,7 +134,7 @@ public class Enemy : MonoBehaviour
             interestTimer = Mathf.Max(0, interestTimer - Time.deltaTime);
         if (interestTimer <= 0)
         {
-            trackedPlayer = null;
+            ForgetPlayer();
             SetState(AIState.IDLE);
         }
     }
@@ -142,4 +153,9 @@ public class Enemy : MonoBehaviour
     }
     public virtual void ActiveEnter() { }
     public virtual void StunnedEnter() { }
+
+    public override void OnTick(TickEntity tickEntity)
+    {
+        enemyManager.RemoveEnemy(this);
+    }
 }
