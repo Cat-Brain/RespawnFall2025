@@ -3,12 +3,18 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
+public enum LevelType
+{
+    COMBAT, SHOP, REST, BOSS, BONUS
+}
+
 [Serializable]
 public struct Level
 {
     public GameObject prefab;
     public float height;
     public Vector2 spawnOffset;
+    public LevelType type;
     public List<int> validSpawnLevels;
 
     public readonly GameObject Spawn(Vector2 position, Transform parent = null)
@@ -29,14 +35,16 @@ public class GenerationManager : MonoBehaviour
     public Level currentLevel;
     public GameObject currentLevelObj;
 
-    public void SpawnLevel(int level)
+    public void SpawnLevel(int level, LevelType type)
     {
-        Level[] validLevels = levels.Where((potentialLevel) => potentialLevel.validSpawnLevels.Contains(level)).ToArray();
+        Level[] validLevels = levels.Where((potentialLevel) =>
+            potentialLevel.type == type && potentialLevel.validSpawnLevels.Contains(level)).ToArray();
         currentLevel = validLevels[UnityEngine.Random.Range(0, validLevels.Length)];
         currentLevelObj = currentLevel.Spawn(Vector2.up * TotalSpawnedLevelHeight());
         spawnedLevels.Add((currentLevelObj, currentLevel));
 
-        enemySpawnManager.LoadEnemiesInLevel(currentLevelObj);
+        if (type == LevelType.COMBAT)
+            enemySpawnManager.LoadEnemiesInLevel(currentLevelObj, level);
     }
 
     public float TotalSpawnedLevelHeight()

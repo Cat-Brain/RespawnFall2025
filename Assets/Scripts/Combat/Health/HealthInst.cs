@@ -20,6 +20,7 @@ public class HealthInst : MonoBehaviour
     {
         tickEntity = GetComponent<TickEntity>();
 
+        data = Instantiate(data);
         data.inst = this;
         data.Init();
 

@@ -3,16 +3,16 @@ using System.Collections;
 using TMPro;
 using UnityEngine;
 
-public class LevelDoor : OnTickEffect
+public class LevelExit : OnTickEffect
 {
     public TextMeshProUGUI text;
     public Transform maskTransform;
+    public SpriteRenderer holeSR;
     public Collider2D col;
 
-    public bool beginOnAwake;
-    public float levelStartVelocity, levelTransitionTime, levelBufferTime,
-        holeTweenTime, textFadeTime;
-    public Ease levelTransitionTween, holeTween;
+    public int pathIndex;
+    public float holeTweenTime, textFadeTime;
+    public Ease holeTween;
     public float openHoleScale, closedHoleScale, consumingHoleScale;
 
     public string sortingLayer;
@@ -20,20 +20,16 @@ public class LevelDoor : OnTickEffect
     [HideInInspector] public GameManager gameManager;
     [HideInInspector] public PlayerManager playerManager;
 
-    [HideInInspector] public int level;
     [HideInInspector] public bool holeOpen = false, entryValid = false;
     [HideInInspector] public string baseText = "";
-    public static string playerSortingLayer = "";
 
     public void Start()
     {
         gameManager = FindAnyObjectByType<GameManager>();
         playerManager = gameManager.playerManager;
-        //level = gameManager.level;
-        text.color = new Color(1, 1, 1, 0);
         UpdateText();
-        if (beginOnAwake)
-            StartCoroutine(BeginLevel());
+        holeSR.color = gameManager.GetLevelExitColor(pathIndex);
+        maskTransform.localScale = Vector3.zero;
     }
 
     public void LateUpdate()
@@ -53,20 +49,6 @@ public class LevelDoor : OnTickEffect
             StartCoroutine(ExitLevel());
     }
 
-    public IEnumerator BeginLevel()
-    {
-        maskTransform.localScale = Vector3.zero;
-        playerManager.rb.DOMove(transform.position, levelTransitionTime).SetEase(levelTransitionTween)
-            .OnComplete(() => maskTransform.DOScale(consumingHoleScale, holeTweenTime).SetEase(holeTween));
-
-        yield return new WaitForSeconds(levelTransitionTime + levelBufferTime);
-
-        playerManager.active = true;
-        playerManager.rb.linearVelocity = Vector2.up * levelStartVelocity;
-        playerManager.SetSortingLayer(playerManager.sortingLayer);
-        CloseHole();
-    }
-
     public IEnumerator ExitLevel()
     {
         entryValid = false;
@@ -80,14 +62,15 @@ public class LevelDoor : OnTickEffect
         playerManager.SetSortingLayer(sortingLayer);
 
         CloseHole();
-        //gameManager.LoadNextLevel();
+        gameManager.LoadNextLevel(pathIndex);
     }
 
     public void UpdateText()
     {
+        text.color = new Color(1, 1, 1, 0);
         if (baseText == "")
             baseText = text.text;
-        text.text = baseText + (level + 1).ToString();
+        text.text = baseText + gameManager.GetLevelExitText(pathIndex);
     }
 
     public void CloseHole()

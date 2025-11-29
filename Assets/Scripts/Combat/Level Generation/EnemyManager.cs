@@ -1,3 +1,4 @@
+using LDtkUnity;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,9 +11,15 @@ public struct EnemyTierData
 }
 
 [Serializable]
+public struct Wave
+{
+    public List<EnemyTierData> data;
+}
+
+[Serializable]
 public struct LevelData
 {
-    public List<EnemyTierData> enemyTierData;
+    public List<Wave> waves;
 }
 
 public class EnemyManager : MonoBehaviour
@@ -23,11 +30,14 @@ public class EnemyManager : MonoBehaviour
     public List<LevelData> levelData;
 
     public List<Enemy> enemies;
+    public int currentLevel;
+    public int currentWave;
+    public List<EnemySpawnPosition> spawnPositions;
 
-    public void LoadEnemiesInLevel(GameObject levelParent)
+    public void LoadEnemiesInLevel(GameObject levelParent, int level)
     {
-        List<EnemySpawnPosition> spawnPositions =
-            levelParent.GetComponentsInChildren<EnemySpawnPosition>().ToList();
+        currentLevel = level;
+        spawnPositions = levelParent.GetComponentsInChildren<EnemySpawnPosition>().ToList();
 
         if (spawnPositions.Count <= 0)
         {
@@ -35,11 +45,22 @@ public class EnemyManager : MonoBehaviour
             return;
         }
 
+        currentWave = 0;
+        gameManager.inCombat = SpawnWave();
+    }
+
+    public bool SpawnWave()
+    {
+        if (currentWave >= levelData[currentLevel].waves.Count)
+            return false;
+
         IEnumerable<Enemy> validEnemies = Enumerable.Empty<Enemy>();
         foreach (EnemySpawnPosition position in spawnPositions)
             validEnemies = validEnemies.Union(position.validSpawns);
 
-        foreach (EnemyTierData tierData in levelData[gameManager.level].enemyTierData)
+        List<EnemySpawnPosition> spawnPositionsClone = new (spawnPositions);
+
+        foreach (EnemyTierData tierData in levelData[currentLevel].waves[currentWave].data)
         {
             List<Enemy> enemiesInTier = validEnemies.Where((enemy) => enemy.tier == tierData.tier).ToList();
             Enemy[] enemiesToSpawn = new Enemy[tierData.typeCount];
@@ -54,10 +75,10 @@ public class EnemyManager : MonoBehaviour
             {
                 Enemy type = enemiesToSpawn[UnityEngine.Random.Range(0, tierData.typeCount)];
                 List<EnemySpawnPosition> validSpawns =
-                    spawnPositions.Where((position) => CanSpawnAt(type, position.gridPos, spawnPositions)).ToList();
+                    spawnPositionsClone.Where((position) => CanSpawnAt(type, position.gridPos, spawnPositionsClone)).ToList();
                 Vector2Int spawnPosition = validSpawns[UnityEngine.Random.Range(0, validSpawns.Count)].gridPos;
 
-                spawnPositions.RemoveAll((position) =>
+                spawnPositionsClone.RemoveAll((position) =>
                     position.gridPos.x >= spawnPosition.x &&
                     position.gridPos.y >= spawnPosition.y &&
                     position.gridPos.x < spawnPosition.x + type.spawnDimensions.x &&
@@ -69,7 +90,9 @@ public class EnemyManager : MonoBehaviour
             }
         }
 
-        gameManager.inCombat = enemies.Count > 0;
+        currentWave++;
+
+        return true;
     }
 
     public bool CanSpawnAt(Enemy enemy, Vector2Int position, in List<EnemySpawnPosition> positions)
@@ -90,6 +113,7 @@ public class EnemyManager : MonoBehaviour
     public void RemoveEnemy(Enemy enemy)
     {
         enemies.Remove(enemy);
-        gameManager.inCombat = enemies.Count > 0;
+        if (enemies.Count <= 0)
+            gameManager.inCombat = SpawnWave();
     }
 }
