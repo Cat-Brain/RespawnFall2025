@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -6,14 +7,13 @@ public enum HitResult
     HIT, ABSORBED, BLOCKED
 }
 
-[RequireComponent(typeof(PlayerMove))]
-[RequireComponent(typeof(PlayerGravity))]
-[RequireComponent(typeof(Rigidbody2D))]
+[RequireComponent(typeof(PlayerWeaponInstance), typeof(PlayerMove))]
+[RequireComponent(typeof(PlayerGravity), typeof(Rigidbody2D))]
 [RequireComponent(typeof(Collider2D))]
 public class PlayerManager : MonoBehaviour
 {
     public FlipToDirection playerFlip;
-    public Renderer rend;
+    public List<Renderer> rends;
 
     public InputActionReference moveAction, jumpAction;
 
@@ -28,9 +28,11 @@ public class PlayerManager : MonoBehaviour
 
     [HideInInspector] public bool active = true;
     [HideInInspector] public float stunInvulnerability = 0, moveStun = 0; // Applies to both horizontal movement and jumping
+    [HideInInspector] public string sortingLayer;
     
     [HideInInspector] public GameManager gameManager;
 
+    [HideInInspector] public PlayerWeaponInstance playerWeapon;
     [HideInInspector] public PlayerMove playerMove;
     [HideInInspector] public PlayerGravity playerGravity;
     [HideInInspector] public Rigidbody2D rb;
@@ -41,25 +43,35 @@ public class PlayerManager : MonoBehaviour
         gameManager = FindFirstObjectByType<GameManager>();
         gameManager.playerManager = this;
 
+        playerWeapon = GetComponent<PlayerWeaponInstance>();
         playerMove = GetComponent<PlayerMove>();
         playerGravity = GetComponent<PlayerGravity>();
         rb = GetComponent<Rigidbody2D>();
         col = GetComponent<Collider2D>();
+
+        sortingLayer = rends[0].sortingLayerName;
     }
 
     void Update()
     {
-        if (active)
+        if (!active)
         {
-            playerMove.enabled = true;
-            playerGravity.enabled = true;
-            col.enabled = true;
-        }
-        else
-        {
+            playerWeapon.enabled = false;
             playerMove.enabled = false;
             playerGravity.enabled = false;
             col.enabled = false;
+        }
+        else if (gameManager.gameState != GameState.IN_GAME)
+        {
+            playerWeapon.enabled = false;
+            playerMove.enabled = false;
+        }
+        else
+        {
+            playerWeapon.enabled = true;
+            playerMove.enabled = true;
+            playerGravity.enabled = true;
+            col.enabled = true;
         }
         stunInvulnerability = Mathf.Max(0, stunInvulnerability - Time.deltaTime);
         if (moveStun != -1)
@@ -70,6 +82,13 @@ public class PlayerManager : MonoBehaviour
     {
         if (trigger.CompareTag(winZoneTag))
             gameManager.PlayerWin();
+    }
+
+    public void SetSortingLayer(string sortingLayer = "")
+    {
+        sortingLayer = sortingLayer == "" ? this.sortingLayer : sortingLayer;
+        foreach (Renderer rend in rends)
+            rend.sortingLayerName = sortingLayer;
     }
 
     public bool IsGrounded()

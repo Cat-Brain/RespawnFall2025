@@ -23,7 +23,6 @@ public class PlayerMove : MonoBehaviour
     private Rigidbody2D rb;
     private PlayerManager playerManager;
 
-    public Sprite sprite;
     void Awake()
     {
         rb = GetComponent<Rigidbody2D>();

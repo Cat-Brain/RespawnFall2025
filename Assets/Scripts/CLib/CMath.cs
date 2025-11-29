@@ -277,7 +277,7 @@ public static class CMath
     }
     public static Quaternion LookDir(Vector2 dir, Vector2 baseDir)
     {
-        return Quaternion.Euler(0, 0, Vector2.Angle(baseDir, dir));
+        return Quaternion.Euler(0, 0, Vector2.SignedAngle(baseDir, dir));
     }
     #endregion
     #region Miscellaneous

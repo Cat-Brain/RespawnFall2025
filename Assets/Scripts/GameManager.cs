@@ -1,6 +1,9 @@
 using com.cyborgAssets.inspectorButtonPro;
 using DG.Tweening.Core.Easing;
+using LDtkUnity;
+using System;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.InputSystem;
@@ -24,14 +27,20 @@ public class GameManager : MonoBehaviour
 
     public PlayerManager playerManager;
 
-    public bool shouldGenerateTerrainOnLoad;
-
+    public int pathCount;
+    public LevelType[] basePath, pathEnd;
+    public string[] levelTypeStrings;
+    public Color[] levelTypeColors;
+    
     public GameState gameState;
     public AudioClip deathClip;
 
+    [Header("Debug Variables")]
     public bool hasEnabledCurrentMenu = false;
-
-    public int level;
+    public int[] pathProgress;
+    public LevelType[,] paths;
+    public LevelType levelType;
+    public List<int> pathTaken;
     public bool inCombat;
 
     void Update()
@@ -114,10 +123,57 @@ public class GameManager : MonoBehaviour
         Time.timeScale = timeScale;
     }
 
-    public void LoadNextLevel()
+    public void LoadNextLevel(int path)
     {
-        level++;
-        generationManager.SpawnLevel(level);
+        if (path == 0)
+        {
+            InitPaths();
+            pathTaken.Add(path);
+            generationManager.SpawnLevel(0, LevelType.COMBAT);
+            return;
+        }
+        pathTaken.Add(path);
+        path--;
+        pathProgress[path]++;
+        generationManager.SpawnLevel(pathProgress[path] + 1, paths[path, pathProgress[path] - 1]);
+    }
+
+    public string GetLevelExitText(int path)
+    {
+        if (path == 0)
+            return levelTypeStrings[(int)LevelType.COMBAT] + " 1";
+        return levelTypeStrings[(int)paths[path - 1, pathProgress[path - 1]]] + ' ' + (pathProgress[path - 1] + 2);
+    }
+
+    public Color GetLevelExitColor(int path)
+    {
+        if (path == 0)
+            return levelTypeColors[(int)LevelType.COMBAT];
+        return levelTypeColors[(int)paths[path - 1, pathProgress[path - 1]]];
+    }
+
+    public Color GetLevelEntryColor()
+    {
+        int path = pathTaken[^1];
+        if (path == 0)
+            return levelTypeColors[(int)LevelType.COMBAT];
+        return levelTypeColors[(int)paths[path - 1, pathProgress[path - 1] - 1]];
+    }
+
+    public void InitPaths()
+    {
+        pathTaken = new ();
+        pathProgress = new int[pathCount];
+        paths = new LevelType[pathCount, basePath.Length + pathEnd.Length];
+
+        for (int i = 0; i < pathCount; i++)
+        {
+            LevelType[] shuffledPath = basePath.Randomize().ToArray();
+            for (int j = 0; j < basePath.Length; j++)
+                paths[i, j] = shuffledPath[j];
+            for (int j = 0; j < pathEnd.Length; j++)
+                paths[i, j + basePath.Length] = pathEnd[j];
+        }
     }
 
 
