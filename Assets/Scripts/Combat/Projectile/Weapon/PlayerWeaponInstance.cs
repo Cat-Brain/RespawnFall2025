@@ -12,7 +12,8 @@ public class PlayerWeaponInstance : MonoBehaviour
 
     void Awake()
     {
-        SetWeapon(weapon);
+        if (Application.isPlaying)
+            SetWeapon(weapon);  
     }
 
     void Update()
