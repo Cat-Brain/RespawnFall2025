@@ -53,5 +53,14 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Enemy
+    uniqueID: 1557586067
+    locked: 0
+  - name: Smoke
+    uniqueID: 33222699
+    locked: 0
+  - name: Player
+    uniqueID: 2371696209
+    locked: 0
   m_RenderingLayers:
   - Default

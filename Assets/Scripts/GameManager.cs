@@ -17,6 +17,7 @@ public enum GameState
 public class GameManager : MonoBehaviour
 {
     public GenerationManager generationManager;
+    public InventoryController inventory;
     public DisplayStringController stringController;
     public SceneLoadManager sceneLoadManager;
     public List<Menu> menus;
@@ -82,15 +83,6 @@ public class GameManager : MonoBehaviour
         hasEnabledCurrentMenu = false;
     }
 
-    public void SetStateInGame() => SetState(GameState.IN_GAME);
-    public void SetStateLoseScreen() => SetState(GameState.LOSE_SCREEN);
-    public void SetStateWinScreen() => SetState(GameState.WIN_SCREEN);
-    public void SetStateUpgradeScreen() => SetState(GameState.UPGRADE_SCREEN);
-    public void SetStateMainMenu() => SetState(GameState.MAIN_MENU);
-    public void SetStateSettingsMenu() => SetState(GameState.SETTINGS_MENU);
-    public void SetStatePauseMenu() => SetState(GameState.PAUSE_MENU);
-    public void SetStateInventory() => SetState(GameState.INVENTORY);
-
     public void LoadState(GameState state, string sceneName)
     {
         if (gameState == state)
@@ -108,15 +100,6 @@ public class GameManager : MonoBehaviour
         sceneLoadManager.sceneToLoad = sceneName;
         sceneLoadManager.StartLoad(onFadeEvent);
     }
-
-    public void LoadStateInGame(string sceneName) => LoadState(GameState.IN_GAME, sceneName);
-    public void LoadStateLoseScreen(string sceneName) => LoadState(GameState.LOSE_SCREEN, sceneName);
-    public void LoadStateWinScreen(string sceneName) => LoadState(GameState.WIN_SCREEN, sceneName);
-    public void LoadStateUpgradeScreen(string sceneName) => LoadState(GameState.UPGRADE_SCREEN, sceneName);
-    public void LoadStateMainMenu(string sceneName) => LoadState(GameState.MAIN_MENU, sceneName);
-    public void LoadStateSettingsMenu(string sceneName) => LoadState(GameState.SETTINGS_MENU, sceneName);
-    public void LoadStatePauseMenu(string sceneName) => LoadState(GameState.PAUSE_MENU, sceneName);
-    public void LoadStateInventory(string sceneName) => LoadState(GameState.INVENTORY, sceneName);
 
     public void SetTimeScale(float timeScale)
     {
@@ -176,6 +159,11 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    public bool CanExitLevel()
+    {
+        return !inCombat && inventory.bufferItems.Count == 0;
+    }
+
 
     public void PlayerWin()
     {
@@ -185,7 +173,7 @@ public class GameManager : MonoBehaviour
         playerManager.moveStun = -1;
         playerManager.SetDirection(EntityDirection.NEUTRAL);
 
-        LoadStateWinScreen(winSceneName);
+        LoadState(GameState.WIN_SCREEN, winSceneName);
     }
 
     public void PlayerLose()
@@ -195,6 +183,6 @@ public class GameManager : MonoBehaviour
 
         AudioManager.instance.PlaySoundFXClip(deathClip, transform, 1.0f);
 
-        LoadStateLoseScreen(mainMenuSceneName);
+        LoadState(GameState.LOSE_SCREEN, mainMenuSceneName);
     }
 }

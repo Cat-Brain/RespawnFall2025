@@ -77,8 +77,8 @@ LineRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1557586067
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Positions:
   - {x: -0.5, y: -0, z: -0}
@@ -166,7 +166,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &785524234762181968
 Transform:
   m_ObjectHideFlags: 0

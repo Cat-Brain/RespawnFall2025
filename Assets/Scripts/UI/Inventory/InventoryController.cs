@@ -18,17 +18,6 @@ public enum InventoryLayer
     //UNIMPLEMENTED7 = 128,
 }
 
-[Serializable]
-public struct ByteArray
-{
-    public byte[] data;
-
-    public ByteArray(int length)
-    {
-        data = new byte[length];
-    }
-}
-
 public class InventoryController : MonoBehaviour
 {
     public Canvas canvas;
@@ -42,7 +31,6 @@ public class InventoryController : MonoBehaviour
     public SpringUtils.tDampedSpringMotionParams itemSpring = new();
     public List<InventoryInst> items = new(), bufferItems = new();
     public byte[,] map;
-    public ByteArray[] displayMap;
 
     void Update()
     {
@@ -73,18 +61,6 @@ public class InventoryController : MonoBehaviour
                 Vector2Int gridPos = position + item.gridPos;
                 map[gridPos.x, gridPos.y] |= (byte)item.item.layer;
             }
-    }
-
-    [ProButton]
-    public void DisplayMap()
-    {
-        displayMap = new ByteArray[dimensions.x];
-        for (int x = 0; x < dimensions.x; x++)
-        {
-            displayMap[x] = new(dimensions.y);
-            for (int y = 0; y < dimensions.y; y++)
-                displayMap[x].data[y] = map[x, y];
-        }
     }
 
     [ProButton]

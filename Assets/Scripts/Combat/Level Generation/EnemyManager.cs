@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using static UnityEngine.EventSystems.EventTrigger;
 
 [Serializable]
 public struct EnemyTierData
@@ -26,7 +27,10 @@ public class EnemyManager : MonoBehaviour
 {
     public GameManager gameManager;
     public GenerationManager generationManager;
+    public GameObject smokePrefab;
 
+    public float waveSpawnDelay;
+    public Vector2 smokeOffset;
     public List<LevelData> levelData;
 
     public List<Enemy> enemies;
@@ -54,6 +58,8 @@ public class EnemyManager : MonoBehaviour
         if (currentWave >= levelData[currentLevel].waves.Count)
             return false;
 
+        bool firstWave = currentWave == 0;
+
         IEnumerable<Enemy> validEnemies = Enumerable.Empty<Enemy>();
         foreach (EnemySpawnPosition position in spawnPositions)
             validEnemies = validEnemies.Union(position.validSpawns);
@@ -75,7 +81,8 @@ public class EnemyManager : MonoBehaviour
             {
                 Enemy type = enemiesToSpawn[UnityEngine.Random.Range(0, tierData.typeCount)];
                 List<EnemySpawnPosition> validSpawns =
-                    spawnPositionsClone.Where((position) => CanSpawnAt(type, position.gridPos, spawnPositionsClone)).ToList();
+                    spawnPositionsClone.Where((position) =>
+                    CanSpawnAt(type, position.gridPos, spawnPositionsClone)).ToList();
                 Vector2Int spawnPosition = validSpawns[UnityEngine.Random.Range(0, validSpawns.Count)].gridPos;
 
                 spawnPositionsClone.RemoveAll((position) =>
@@ -84,9 +91,17 @@ public class EnemyManager : MonoBehaviour
                     position.gridPos.x < spawnPosition.x + type.spawnDimensions.x &&
                     position.gridPos.y < spawnPosition.y + type.spawnDimensions.y);
 
+                type.gameObject.SetActive(firstWave);
                 enemies.Add(Instantiate(
                     type.gameObject, spawnPosition + type.spawnOffset, Quaternion.identity).GetComponent<Enemy>());
-                enemies[enemies.Count - 1].enemyManager = this;
+                enemies[^1].enemyManager = this;
+
+                if (!firstWave)
+                    for (Vector2Int offset = Vector2Int.zero; offset.x < type.spawnDimensions.x; offset.x++)
+                        for (offset.y = 0; offset.y < type.spawnDimensions.y; offset.y++)
+                            Instantiate(smokePrefab, spawnPosition + offset + smokeOffset,
+                                Quaternion.identity).GetComponent<EnableWithDelay>().Init(
+                                    enemies[^1].gameObject, waveSpawnDelay);
             }
         }
 
