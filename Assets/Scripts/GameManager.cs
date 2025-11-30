@@ -35,6 +35,7 @@ public class GameManager : MonoBehaviour
     
     public GameState gameState;
     public AudioClip deathClip;
+    public GameObject lobby;
 
     [Header("Debug Variables")]
     public bool hasEnabledCurrentMenu = false;
@@ -162,6 +163,12 @@ public class GameManager : MonoBehaviour
     public bool CanExitLevel()
     {
         return !inCombat && inventory.bufferItems.Count == 0;
+    }
+
+    public void LevelTransitionComplete()
+    {
+        lobby.SetActive(false);
+        generationManager.UnloadInactiveLevels();
     }
 
 

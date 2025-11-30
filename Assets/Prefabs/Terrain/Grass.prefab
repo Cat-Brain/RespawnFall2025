@@ -80,7 +80,7 @@ LineRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 1557472805
-  m_SortingLayer: -1
+  m_SortingLayer: 4
   m_SortingOrder: -1
   m_Positions:
   - {x: 0, y: 1, z: 0}
@@ -166,12 +166,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Grass
   lr: {fileID: 1859546587195384993}
+  fadeMask:
+    serializedVersion: 2
+    m_Bits: 1024
+  color: {r: 0, g: 0.5019608, b: 0.31764707, a: 1}
+  fadedColor: {r: 0, g: 0.5019608, b: 0.31764707, a: 0.2509804}
+  fadeTweenTime: 1
+  fadeDist: 1
   windFrequency: 0.1
   windStrength: 10
   windTimeMultiplier: 2
   movementMultiplier: 0.75
   springFrequency: 5
   springDamping: 1
+  faded: 0
   rotation: 0
   velocity: 0
 --- !u!61 &1031798860541502943

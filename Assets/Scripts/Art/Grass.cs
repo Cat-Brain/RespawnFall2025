@@ -1,3 +1,4 @@
+using DG.Tweening;
 using System;
 using System.Collections.Generic;
 using UnityEngine;
@@ -6,14 +7,17 @@ public class Grass : MonoBehaviour
 {
     public LineRenderer lr;
 
+    public LayerMask fadeMask;
+    public Color color, fadedColor;
+    public float fadeTweenTime, fadeDist;
     public float windFrequency, windStrength, windTimeMultiplier;
     public float movementMultiplier;
     public float springFrequency, springDamping;
 
+    public bool faded = false;
     public float rotation = 0, velocity = 0;
     public SpringUtils.tDampedSpringMotionParams spring = new();
     public FastNoiseLite noise;
-
     public Dictionary<Rigidbody2D, Vector2> trackedRigidbodies = new();
 
     void Awake()
@@ -24,6 +28,18 @@ public class Grass : MonoBehaviour
 
     void Update()
     {
+        bool shouldFade = Physics2D.OverlapCircle(transform.position, fadeDist, fadeMask);
+        if (faded && !shouldFade)
+        {
+            faded = false;
+            lr.DOColor(new Color2(fadedColor, fadedColor), new Color2(color, color), fadeTweenTime);
+        }
+        else if (!faded && shouldFade)
+        {
+            faded = true;
+            lr.DOColor(new Color2(color, color), new Color2(fadedColor, fadedColor), fadeTweenTime);
+        }
+
         velocity += windStrength * Time.deltaTime *
             noise.GetNoise(transform.position.x, Time.timeSinceLevelLoad * windTimeMultiplier);
 
