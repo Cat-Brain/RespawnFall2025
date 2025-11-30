@@ -1,3 +1,4 @@
+using DG.Tweening;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -14,9 +15,12 @@ public class PlayerManager : MonoBehaviour
 {
     public FlipToDirection playerFlip;
     public List<Renderer> rends;
+    public List<LineRenderer> mainLRs, beakLRs, eyeLRs;
+    public List<SpriteRenderer> mainSRs, beakSRs, eyeSRs;
 
     public InputActionReference moveAction, jumpAction;
 
+    public float colorTweenTime;
     public float groundedRadius, groundedDistance;
     public LayerMask groundedMask;
 
@@ -41,6 +45,7 @@ public class PlayerManager : MonoBehaviour
     void Awake()
     {
         gameManager = FindFirstObjectByType<GameManager>();
+
         gameManager.playerManager = this;
 
         playerWeapon = GetComponent<PlayerWeaponInstance>();
@@ -150,6 +155,60 @@ public class PlayerManager : MonoBehaviour
     public bool Stunned()
     {
         return moveStun > 0 || moveStun == -1;
+    }
+
+    public void SetMainColor(Color color, Color oldColor)
+    {
+        if (!Application.isPlaying)
+        {
+            foreach (LineRenderer rend in mainLRs)
+                rend.startColor = rend.endColor = color;
+            foreach (SpriteRenderer rend in mainSRs)
+                rend.color = color;
+            return;
+        }
+
+        Color2 color2 = new (color, color), oldColor2 = new (oldColor, oldColor);
+        foreach (LineRenderer rend in mainLRs)
+            rend.DOColor(oldColor2, color2, colorTweenTime);
+        foreach (SpriteRenderer rend in mainSRs)
+            rend.DOColor(color, colorTweenTime);
+    }
+
+    public void SetBeakColor(Color color, Color oldColor)
+    {
+        if (!Application.isPlaying)
+        {
+            foreach (LineRenderer rend in beakLRs)
+                rend.startColor = rend.endColor = color;
+            foreach (SpriteRenderer rend in beakSRs)
+                rend.color = color;
+            return;
+        }
+
+        Color2 color2 = new(color, color), oldColor2 = new(oldColor, oldColor);
+        foreach (LineRenderer rend in beakLRs)
+            rend.DOColor(oldColor2, color2, colorTweenTime);
+        foreach (SpriteRenderer rend in beakSRs)
+            rend.DOColor(color, colorTweenTime);
+    }
+
+    public void SetEyeColor(Color color, Color oldColor)
+    {
+        if (!Application.isPlaying)
+        {
+            foreach (LineRenderer rend in eyeLRs)
+                rend.startColor = rend.endColor = color;
+            foreach (SpriteRenderer rend in eyeSRs)
+                rend.color = color;
+            return;
+        }
+
+        Color2 color2 = new(color, color), oldColor2 = new(oldColor, oldColor);
+        foreach (LineRenderer rend in eyeLRs)
+            rend.DOColor(oldColor2, color2, colorTweenTime);
+        foreach (SpriteRenderer rend in eyeSRs)
+            rend.DOColor(color, colorTweenTime);
     }
 
     public void OnDrawGizmos()

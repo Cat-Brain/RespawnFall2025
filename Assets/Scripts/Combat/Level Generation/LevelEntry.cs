@@ -42,6 +42,7 @@ public class LevelEntry : MonoBehaviour
         playerManager.rb.linearVelocity = Vector2.up * levelStartVelocity;
         playerManager.SetSortingLayer();
         CloseHole();
+        gameManager.LevelTransitionComplete();
     }
 
     public void CloseHole()

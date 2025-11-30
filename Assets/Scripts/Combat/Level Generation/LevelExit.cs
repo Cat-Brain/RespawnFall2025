@@ -45,7 +45,7 @@ public class LevelExit : OnTickEffect
 
     public override void OnTick(TickEntity tickEntity)
     {
-        if (entryValid)
+        if (entryValid && gameManager.CanExitLevel())
             StartCoroutine(ExitLevel());
     }
 

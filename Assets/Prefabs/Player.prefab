@@ -76,11 +76,11 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1923271087
+  m_SortingLayer: 3
   m_SortingOrder: 2
   m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 0.050980393, g: 0.12941177, b: 0.2509804, a: 1}
+  m_Color: {r: 0.050980397, g: 0.1254902, b: 0.24705884, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -167,8 +167,8 @@ LineRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1923271087
+  m_SortingLayer: 3
   m_SortingOrder: 1
   m_Positions:
   - {x: -0.5, y: 0, z: 0}
@@ -202,8 +202,8 @@ LineRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0.98039216, g: 0.8509804, b: 0.21568628, a: 1}
-      key1: {r: 0.98039216, g: 0.8509804, b: 0.21568628, a: 1}
+      key0: {r: 0.98039216, g: 0.8509804, b: 0.21176471, a: 1}
+      key1: {r: 0.98039216, g: 0.8509804, b: 0.21176471, a: 1}
       key2: {r: 0, g: 0, b: 0, a: 0}
       key3: {r: 0, g: 0, b: 0, a: 0}
       key4: {r: 0, g: 0, b: 0, a: 0}
@@ -365,8 +365,20 @@ MonoBehaviour:
   - {fileID: 5099052369133215249}
   - {fileID: 3566766637323037571}
   - {fileID: 736332069739160935}
+  mainLRs:
+  - {fileID: 5599189071243404212}
+  beakLRs:
+  - {fileID: 736332069739160935}
+  eyeLRs: []
+  mainSRs:
+  - {fileID: 7128796726755693463}
+  - {fileID: 5099052369133215249}
+  beakSRs: []
+  eyeSRs:
+  - {fileID: 3566766637323037571}
   moveAction: {fileID: -1680190386980627800, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   jumpAction: {fileID: -2099379676528639254, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+  colorTweenTime: 0.25
   groundedRadius: 0.45
   groundedDistance: 0.1
   groundedMask:
@@ -438,7 +450,7 @@ MonoBehaviour:
   primaryAction: {fileID: 233641816963222372, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   reloadAction: {fileID: 3375951426363076484, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   playerManager: {fileID: 4788519261258228379}
-  weapon: {fileID: 11400000, guid: b18842c7515525a4b9a60824e028040d, type: 2}
+  weapon: {fileID: 11400000, guid: 73604fc96a4b9f445886f5573084d71a, type: 2}
 --- !u!114 &206735698653870445
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -595,11 +607,11 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1923271087
+  m_SortingLayer: 3
   m_SortingOrder: 1
   m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 0.98039216, g: 0.8509804, b: 0.21568628, a: 1}
+  m_Color: {r: 0.9803922, g: 0.85098046, b: 0.21176472, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -685,11 +697,11 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1923271087
+  m_SortingLayer: 3
   m_SortingOrder: 1
   m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 0.98039216, g: 0.8509804, b: 0.21568628, a: 1}
+  m_Color: {r: 0.9803922, g: 0.85098046, b: 0.21176472, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -776,8 +788,8 @@ LineRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1923271087
+  m_SortingLayer: 3
   m_SortingOrder: 2
   m_Positions:
   - {x: -0.5, y: 0, z: 0}
@@ -811,8 +823,8 @@ LineRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 1, g: 0.7254902, b: 0.21960784, a: 1}
-      key1: {r: 1, g: 0.7254902, b: 0.21960784, a: 1}
+      key0: {r: 0.99607843, g: 0.7254902, b: 0.21568628, a: 1}
+      key1: {r: 0.99607843, g: 0.7254902, b: 0.21568628, a: 1}
       key2: {r: 0, g: 0, b: 0, a: 1}
       key3: {r: 0, g: 0, b: 0, a: 0}
       key4: {r: 0, g: 0, b: 0, a: 0}

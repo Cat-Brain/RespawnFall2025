@@ -54,4 +54,11 @@ public class GenerationManager : MonoBehaviour
             result += level.height;
         return result;
     }
+
+    public void UnloadInactiveLevels()
+    {
+        foreach ((GameObject obj, Level level) in spawnedLevels)
+            if (obj != currentLevelObj)
+                obj.SetActive(false);
+    }
 }

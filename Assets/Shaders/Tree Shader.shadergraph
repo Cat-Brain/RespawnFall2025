@@ -20,6 +20,12 @@
         },
         {
             "m_Id": "de006fc1a5e742598af06881b045c878"
+        },
+        {
+            "m_Id": "71115d7f9e924dca89cf7c5c802c966b"
+        },
+        {
+            "m_Id": "4633c814afb84593983717b8d24ef2f2"
         }
     ],
     "m_Keywords": [],
@@ -816,6 +822,39 @@
 }
 
 {
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.Internal.Texture2DShaderProperty",
+    "m_ObjectId": "4633c814afb84593983717b8d24ef2f2",
+    "m_Guid": {
+        "m_GuidSerialized": "2c2cde98-9bfb-4525-b239-a6deb12ee312"
+    },
+    "m_Name": "_BaseMap",
+    "m_DefaultRefNameVersion": 1,
+    "m_RefNameGeneratedByDisplayName": "_BaseMap",
+    "m_DefaultReferenceName": "_BaseMap",
+    "m_OverrideReferenceName": "",
+    "m_GeneratePropertyBlock": false,
+    "m_UseCustomSlotLabel": false,
+    "m_CustomSlotLabel": "",
+    "m_DismissedVersion": 0,
+    "m_Precision": 0,
+    "overrideHLSLDeclaration": true,
+    "hlslDeclarationOverride": 2,
+    "m_Hidden": false,
+    "m_PerRendererData": false,
+    "m_customAttributes": [],
+    "m_Value": {
+        "m_SerializedTexture": "",
+        "m_Guid": ""
+    },
+    "isMainTexture": false,
+    "useTilingAndOffset": false,
+    "useTexelSize": true,
+    "m_Modifiable": true,
+    "m_DefaultType": 0
+}
+
+{
     "m_SGVersion": 3,
     "m_Type": "UnityEditor.ShaderGraph.Internal.ColorShaderProperty",
     "m_ObjectId": "48a343926f234f758e1271253a155dc1",
@@ -1276,6 +1315,39 @@
         "m_SerializableColors": []
     },
     "m_SerializedDescriptor": "SurfaceDescription.BaseColor"
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.Internal.Texture2DShaderProperty",
+    "m_ObjectId": "71115d7f9e924dca89cf7c5c802c966b",
+    "m_Guid": {
+        "m_GuidSerialized": "621fa1b5-a08b-47cb-8ca7-38d62692bf13"
+    },
+    "m_Name": "_MainTex",
+    "m_DefaultRefNameVersion": 1,
+    "m_RefNameGeneratedByDisplayName": "_MainTex",
+    "m_DefaultReferenceName": "_MainTex",
+    "m_OverrideReferenceName": "",
+    "m_GeneratePropertyBlock": false,
+    "m_UseCustomSlotLabel": false,
+    "m_CustomSlotLabel": "",
+    "m_DismissedVersion": 0,
+    "m_Precision": 0,
+    "overrideHLSLDeclaration": true,
+    "hlslDeclarationOverride": 2,
+    "m_Hidden": false,
+    "m_PerRendererData": false,
+    "m_customAttributes": [],
+    "m_Value": {
+        "m_SerializedTexture": "",
+        "m_Guid": ""
+    },
+    "isMainTexture": false,
+    "useTilingAndOffset": false,
+    "useTexelSize": true,
+    "m_Modifiable": true,
+    "m_DefaultType": 0
 }
 
 {
@@ -2208,6 +2280,12 @@
         },
         {
             "m_Id": "de006fc1a5e742598af06881b045c878"
+        },
+        {
+            "m_Id": "71115d7f9e924dca89cf7c5c802c966b"
+        },
+        {
+            "m_Id": "4633c814afb84593983717b8d24ef2f2"
         }
     ]
 }

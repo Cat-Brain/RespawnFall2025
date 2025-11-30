@@ -30,3 +30,6 @@ MonoBehaviour:
     range: 0
   baseWeapon: {fileID: 0}
   wielder: {fileID: 0}
+  playerMainColor: {r: 0.09803922, g: 0.35686275, b: 0.6509804, a: 1}
+  playerBeakColor: {r: 0.14117648, g: 0.22352941, b: 0.4, a: 1}
+  playerEyeColor: {r: 0.050980397, g: 0.1254902, b: 0.24705884, a: 1}
