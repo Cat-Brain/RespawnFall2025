@@ -281,7 +281,7 @@ MonoBehaviour:
     m_Bits: 1024
   wallMask:
     serializedVersion: 2
-    m_Bits: 1
+    m_Bits: 8193
   sightDist: 10
   startleTime: 1
   interestTime: 5
@@ -331,10 +331,10 @@ MonoBehaviour:
   chargeHitCheckOffset: {x: 1.25, y: 0.125}
   idleBumpCheckMask:
     serializedVersion: 2
-    m_Bits: 1537
+    m_Bits: 9729
   chargeHitMask:
     serializedVersion: 2
-    m_Bits: 1537
+    m_Bits: 9729
   idleWalkTimer: 0
   idleWalkSpeed: 0
   idleWalking: 0
