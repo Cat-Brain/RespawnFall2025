@@ -15,3 +15,8 @@ public interface IOnHitStatus
 {
     public void OnHit(StatusEffect effect, ref Hit hit);
 }
+
+public interface IOnDeathStatus
+{
+    public void OnDeath(StatusEffect effect);
+}

@@ -9,6 +9,7 @@ public class StatusEffect
     public Status status;
     public StatusComponent[] components;
     public IOnHitStatus[] onHitComponents;
+    public IOnDeathStatus[] onDeathComponents;
     public bool enabled, shouldRemove;
 
     public StatusEffect(HealthInst health, HitStatus hitStatus)
@@ -38,11 +39,10 @@ public class StatusEffect
 
         components = status.components.Select(component => UnityEngine.Object.Instantiate(component)).ToArray();
 
-        onHitComponents = new IOnHitStatus[components.Count(component => component is IOnHitStatus)];
-        int index = 0;
-        foreach (StatusComponent component in components)
-            if (component is IOnHitStatus)
-                onHitComponents[index++] = component as IOnHitStatus;
+        onHitComponents = components.Where(component => component is IOnHitStatus)
+            .Select(component => component as IOnHitStatus).ToArray();
+        onDeathComponents = components.Where(component => component is IOnDeathStatus)
+            .Select(component => component as IOnDeathStatus).ToArray();
 
         foreach (StatusComponent component in components)
             component.Str(this);
@@ -66,6 +66,12 @@ public class StatusEffect
     {
         foreach (IOnHitStatus component in onHitComponents)
             component.OnHit(this, ref hit);
+    }
+
+    public void OnDeath()
+    {
+        foreach (IOnDeathStatus component in onDeathComponents)
+            component.OnDeath(this);
     }
 
     public void Tick(int tickIndex)

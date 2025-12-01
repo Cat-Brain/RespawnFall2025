@@ -1342,7 +1342,7 @@ MonoBehaviour:
   minOffset: -50
   maxOffset: 50
   grassHeight: 1.5
-  grassDensity: 4
+  grassDensity: 2
   grassIndentHeight: 0.25
   grassIndentWidth: 10
 --- !u!4 &1824641424

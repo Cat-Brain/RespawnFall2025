@@ -3,6 +3,7 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "New Projectile", menuName = "Projectiles/Projectile")]
 public class Projectile : ScriptableObject
 {
+    public Color color = Color.white;
     public Hit hit;
     public LayerMask targetMask, destroyedByMask;
     public float speed, range, spread;

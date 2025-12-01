@@ -87,7 +87,7 @@ LineRenderer:
   - {x: 0, y: 0, z: 0}
   m_Parameters:
     serializedVersion: 3
-    widthMultiplier: 0.5
+    widthMultiplier: 0.6
     widthCurve:
       serializedVersion: 2
       m_Curve:
@@ -171,7 +171,7 @@ MonoBehaviour:
     m_Bits: 1024
   color: {r: 0, g: 0.5019608, b: 0.31764707, a: 1}
   fadedColor: {r: 0, g: 0.5019608, b: 0.31764707, a: 0.2509804}
-  fadeTweenTime: 1
+  fadeTweenTime: 0.5
   fadeDist: 1
   windFrequency: 0.1
   windStrength: 10
