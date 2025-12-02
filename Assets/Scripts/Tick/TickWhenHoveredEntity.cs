@@ -7,11 +7,7 @@ public class TickWhenHoveredEntity : TickEntity
 
     public override void Tick()
     {
-        Debug.Log(Camera.main.ScreenToWorldPoint(Mouse.current.position.ReadValue()));
         if (col.OverlapPoint(Camera.main.ScreenToWorldPoint(Mouse.current.position.ReadValue())))
-        {
-            Debug.Log("?");
             base.Tick();
-        }
     }
 }

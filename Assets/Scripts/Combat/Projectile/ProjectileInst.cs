@@ -20,6 +20,9 @@ public class ProjectileInst : MonoBehaviour
         foreach (LineRenderer lr in lineRends)
             lr.endColor = data.color;
 
+        transform.localScale = data.radius * 0.01f * Vector3.one;
+        transform.DOScale(data.radius, data.spawnTime);
+
         lastPos = transform.position;
         this.direction = direction;
         this.data = data;

@@ -20,6 +20,8 @@ public class PlayerMove : MonoBehaviour
 
     public PhysicsMaterial2D movePhysicsMaterial, stunnedPhysicsMaterial;
 
+    [HideInInspector] public bool active = true;
+
     private Rigidbody2D rb;
     private PlayerManager playerManager;
 
@@ -47,7 +49,7 @@ public class PlayerMove : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (!playerManager.Stunned())
+        if (active && !playerManager.Stunned())
         {
             rb.sharedMaterial = movePhysicsMaterial;
 

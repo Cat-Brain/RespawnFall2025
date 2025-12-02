@@ -6,8 +6,8 @@ public class Projectile : ScriptableObject
     public Color color = Color.white;
     public Hit hit;
     public LayerMask targetMask, destroyedByMask;
-    public float speed, range, spread;
-    public float destructTime;
+    public float radius, speed, range, spread;
+    public float spawnTime, destructTime;
 
     [HideInInspector] public ProjectileInst inst;
 

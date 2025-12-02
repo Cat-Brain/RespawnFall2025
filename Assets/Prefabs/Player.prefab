@@ -257,7 +257,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2178488331411848249
 Transform:
   m_ObjectHideFlags: 0
@@ -503,7 +503,6 @@ MonoBehaviour:
   playerFlip: {fileID: 9054125302544342492}
   rends:
   - {fileID: 5599189071243404212}
-  - {fileID: 8352070636149197635}
   - {fileID: 7128796726755693463}
   - {fileID: 5099052369133215249}
   - {fileID: 3566766637323037571}
@@ -563,6 +562,7 @@ MonoBehaviour:
   remainingAirJumps: 0
   movePhysicsMaterial: {fileID: 6200000, guid: cd6ced533a7334f4eac26998f8d85a75, type: 2}
   stunnedPhysicsMaterial: {fileID: 6200000, guid: f5c405e482234fd40abd6944037c955b, type: 2}
+  active: 1
 --- !u!114 &7364549245631412642
 MonoBehaviour:
   m_ObjectHideFlags: 0

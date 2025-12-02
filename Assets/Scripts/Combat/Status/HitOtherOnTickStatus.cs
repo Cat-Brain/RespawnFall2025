@@ -8,6 +8,7 @@ public class HitOtherOnTickStatus : StatusComponent
     public Hit hit;
     public float hitRadius;
     public LayerMask hitMask;
+    public bool hitSelf;
 
     public override void Tick(StatusEffect effect, int tickIndex)
     {
@@ -18,7 +19,8 @@ public class HitOtherOnTickStatus : StatusComponent
             effect.health.transform.position, hitRadius, hitMask);
 
         foreach (Collider2D col in hitColliders)
-            if (col.TryGetComponent(out HealthInst health))
+            if ((hitSelf || col.transform != effect.health.transform)
+                && col.TryGetComponent(out HealthInst health))
                 health.ApplyHit(hit);
     }
 }
