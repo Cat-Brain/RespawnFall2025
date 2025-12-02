@@ -62,19 +62,19 @@ public class PlayerManager : MonoBehaviour
         if (!active)
         {
             playerWeapon.enabled = false;
-            playerMove.enabled = false;
+            playerMove.active = false;
             playerGravity.enabled = false;
             col.enabled = false;
         }
         else if (gameManager.gameState != GameState.IN_GAME)
         {
             playerWeapon.enabled = false;
-            playerMove.enabled = false;
+            playerMove.active = false;
         }
         else
         {
             playerWeapon.enabled = true;
-            playerMove.enabled = true;
+            playerMove.active = true;
             playerGravity.enabled = true;
             col.enabled = true;
         }

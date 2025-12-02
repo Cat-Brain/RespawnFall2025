@@ -27,7 +27,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.1797519, y: 0.1797519, z: 0.1797519}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1325602567236462164}
@@ -78,8 +78,8 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 8184416369174839919, guid: b5b230caff64e314e9ed8643782099c5, type: 3}
+  m_SortingOrder: 1
+  m_Sprite: {fileID: -2413806693520163455, guid: ebe73ca9363db456bacf42c025bb4847, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -118,7 +118,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1325602567236462164}
@@ -302,7 +302,7 @@ LineRenderer:
     colorGradient:
       serializedVersion: 2
       key0: {r: 0, g: 0, b: 0, a: 0}
-      key1: {r: 0.9568628, g: 0.73333335, b: 0, a: 0.49803922}
+      key1: {r: 1, g: 1, b: 1, a: 0.49803922}
       key2: {r: 0, g: 0, b: 0, a: 0}
       key3: {r: 0, g: 0, b: 0, a: 0}
       key4: {r: 0, g: 0, b: 0, a: 0}
@@ -471,7 +471,6 @@ GameObject:
   - component: {fileID: 6574857419870143426}
   - component: {fileID: 5373331659158075549}
   - component: {fileID: 4129074220558359128}
-  - component: {fileID: -25631974574733899}
   m_Layer: 8
   m_Name: PlayerProjectile
   m_TagString: Untagged
@@ -537,6 +536,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ProjectileInst
   rb: {fileID: 6574857419870143426}
   data: {fileID: 0}
+  spriteRends:
+  - {fileID: 4469740793141039781}
+  lineRends:
+  - {fileID: 1982286031530273985}
+  direction: {x: 0, y: 0}
+  remainingRange: 0
+  lastPos: {x: 0, y: 0}
 --- !u!58 &4129074220558359128
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -572,22 +578,4 @@ CircleCollider2D:
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  m_Radius: 0.4
---- !u!114 &-25631974574733899
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7878727207753161381}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3e85fa150f2284946a73889a50130d9f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: '::'
-  spriteRenderer: {fileID: 4469740793141039781}
-  sprites:
-  - {fileID: 8184416369174839919, guid: b5b230caff64e314e9ed8643782099c5, type: 3}
-  - {fileID: -8561289038441490638, guid: ab2cac6024080ce45b852a39daad438e, type: 3}
-  - {fileID: -3658740487851238322, guid: 434c1fab5ca65cc43873f6dd6d8e8cc4, type: 3}
-  - {fileID: -763224135175052307, guid: 2a6085abf20c39442bc45a4c66ca3056, type: 3}
+  m_Radius: 0.5

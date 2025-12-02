@@ -10,6 +10,8 @@ public class Charger : Enemy
     [HideInInspector] public Rigidbody2D rb;
     [HideInInspector] public Collider2D col;
 
+    public FlipToDirection flip;
+
     public Hit hit;
 
     public Color idleColor, activeColor, chargeColor, stunnedColor;
@@ -121,6 +123,11 @@ public class Charger : Enemy
         Gizmos.DrawWireSphere(IdleBumpCheckPos(), idleBumpCheckRadius);
         Gizmos.color = chargerState == ChargerAIState.CHARGING ? Color.yellow : Color.red;
         Gizmos.DrawWireSphere(ChargeHitCheckPos(), chargeHitCheckRadius);
+    }
+
+    public void LateUpdate()
+    {
+        flip.direction = walkingRight ? EntityDirection.RIGHT : EntityDirection.LEFT;
     }
 
     public override void IdleUpdate()

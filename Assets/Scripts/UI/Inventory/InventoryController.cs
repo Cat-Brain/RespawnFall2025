@@ -2,7 +2,6 @@ using com.cyborgAssets.inspectorButtonPro;
 using System;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.InputSystem.XR;
 
 [Flags]
 public enum InventoryLayer

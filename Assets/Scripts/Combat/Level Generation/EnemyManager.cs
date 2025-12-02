@@ -91,10 +91,14 @@ public class EnemyManager : MonoBehaviour
                     position.gridPos.x < spawnPosition.x + type.spawnDimensions.x &&
                     position.gridPos.y < spawnPosition.y + type.spawnDimensions.y);
 
-                type.gameObject.SetActive(firstWave);
+                if (!firstWave)
+                    type.gameObject.SetActive(false);
+
                 enemies.Add(Instantiate(
                     type.gameObject, spawnPosition + type.spawnOffset, Quaternion.identity).GetComponent<Enemy>());
                 enemies[^1].enemyManager = this;
+
+                type.gameObject.SetActive(true);
 
                 if (!firstWave)
                     for (Vector2Int offset = Vector2Int.zero; offset.x < type.spawnDimensions.x; offset.x++)

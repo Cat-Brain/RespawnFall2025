@@ -69,6 +69,7 @@ public class HealthInst : MonoBehaviour
     public void Die()
     {
         alive = false;
+        
         OnDeath();
     }
 
