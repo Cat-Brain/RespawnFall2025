@@ -397,7 +397,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8286878558047019437}
   - component: {fileID: 9220067598125203800}
-  - component: {fileID: 6526115664271877498}
+  - component: {fileID: 8143137587394322051}
   - component: {fileID: 6394048343391127396}
   - component: {fileID: 5079970487093806053}
   m_Layer: 11
@@ -460,7 +460,7 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_Radius: 0.5
---- !u!114 &6526115664271877498
+--- !u!114 &8143137587394322051
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -469,7 +469,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 7230076448914424605}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 16d561b76f4e75d4b8d4f60894813a5f, type: 3}
+  m_Script: {fileID: 11500000, guid: 4934827c07b08c148a470186f003979d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EventOnAction
   actions:
