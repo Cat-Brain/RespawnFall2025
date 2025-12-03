@@ -147,16 +147,16 @@ public class Charger : Enemy
 
         if (idleWalking)
             rb.linearVelocityX = CMath.TryAdd(rb.linearVelocityX,
-                Time.deltaTime * (walkingRight ? idleWalkAccel : -idleWalkAccel), idleWalkSpeed);
+                Time.deltaTime * (walkingRight ? idleWalkAccel : -idleWalkAccel) * stats.speed, idleWalkSpeed * stats.speed);
         else
-            rb.linearVelocityX = CMath.TrySub(rb.linearVelocityX, Time.deltaTime * idleWalkAccel);
+            rb.linearVelocityX = CMath.TrySub(rb.linearVelocityX, Time.deltaTime * idleWalkAccel * stats.speed);
 
         base.IdleUpdate();
     }
 
     public override void StartledUpdate()
     {
-        rb.linearVelocityX = CMath.TrySub(rb.linearVelocityX, Time.deltaTime * startledDecel);
+        rb.linearVelocityX = CMath.TrySub(rb.linearVelocityX, Time.deltaTime * startledDecel * stats.speed);
         base.StartledUpdate();
     }
 
@@ -170,7 +170,7 @@ public class Charger : Enemy
                     SetChargerState(ChargerAIState.CHARGING);
                 walkingRight = trackedPlayer.position.x > transform.position.x;
                 rb.linearVelocityX = CMath.TryAdd(rb.linearVelocityX,
-                    Time.deltaTime * (walkingRight ? activeWalkAccel : -activeWalkAccel), activeWalkSpeed);
+                    Time.deltaTime * (walkingRight ? activeWalkAccel : -activeWalkAccel) * stats.speed, activeWalkSpeed * stats.speed);
                 break;
             case ChargerAIState.CHARGING:
                 if (charging)
@@ -191,10 +191,10 @@ public class Charger : Enemy
                         break;
 
                     rb.linearVelocityX = CMath.TryAdd(rb.linearVelocityX,
-                        Time.deltaTime * (walkingRight ? chargeAccel : -chargeAccel), chargeSpeed);
+                        Time.deltaTime * (walkingRight ? chargeAccel : -chargeAccel) * stats.speed, chargeSpeed * stats.speed);
                 }
                 else
-                    rb.linearVelocityX = CMath.TrySub(rb.linearVelocityX, Time.deltaTime * chargeAccel);
+                    rb.linearVelocityX = CMath.TrySub(rb.linearVelocityX, Time.deltaTime * chargeAccel * stats.speed);
                 break;
         }
     }

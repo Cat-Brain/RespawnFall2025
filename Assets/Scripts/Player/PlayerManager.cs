@@ -8,6 +8,7 @@ public enum HitResult
     HIT, ABSORBED, BLOCKED
 }
 
+[RequireComponent(typeof(EntityStats), typeof(HealthInst))]
 [RequireComponent(typeof(PlayerWeaponInstance), typeof(PlayerMove))]
 [RequireComponent(typeof(PlayerGravity), typeof(Rigidbody2D))]
 [RequireComponent(typeof(Collider2D))]
@@ -36,6 +37,7 @@ public class PlayerManager : MonoBehaviour
     
     [HideInInspector] public GameManager gameManager;
 
+    [HideInInspector] public EntityStats stats;
     [HideInInspector] public PlayerWeaponInstance playerWeapon;
     [HideInInspector] public PlayerMove playerMove;
     [HideInInspector] public PlayerGravity playerGravity;
@@ -48,6 +50,7 @@ public class PlayerManager : MonoBehaviour
 
         gameManager.playerManager = this;
 
+        stats = GetComponent<EntityStats>();
         playerWeapon = GetComponent<PlayerWeaponInstance>();
         playerMove = GetComponent<PlayerMove>();
         playerGravity = GetComponent<PlayerGravity>();

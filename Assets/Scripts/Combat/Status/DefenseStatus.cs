@@ -9,7 +9,7 @@ public class DefenseStatus : StatusComponent, IOnHitStatus
 
     public override void Str(StatusEffect effect)
     {
-        stackStatus = effect.GetComponent<StackStatus>();
+        stackStatus = effect.GetComp<StackStatus>();
     }
 
     public void OnHit(StatusEffect effect, ref Hit hit)

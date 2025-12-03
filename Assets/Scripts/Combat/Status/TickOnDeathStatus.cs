@@ -7,6 +7,7 @@ public class TickOnDeathStatus : StatusComponent, IOnDeathStatus
 
     public void OnDeath(StatusEffect effect)
     {
+        Debug.Log("!!");
         effect.Tick(tickIndex);
     }
 }

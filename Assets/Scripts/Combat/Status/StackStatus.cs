@@ -1,4 +1,3 @@
-
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "New StackStatus", menuName = "StatusComponents/StackStatus")]

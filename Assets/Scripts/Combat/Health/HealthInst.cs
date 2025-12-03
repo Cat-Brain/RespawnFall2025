@@ -5,6 +5,7 @@ using UnityEngine;
 public class HealthInst : MonoBehaviour
 {
     [HideInInspector] public TickEntity tickEntity;
+    [HideInInspector] public EntityStats stats;
 
     public Health data;
     public int health;
@@ -19,6 +20,7 @@ public class HealthInst : MonoBehaviour
     public void Awake()
     {
         tickEntity = GetComponent<TickEntity>();
+        stats = GetComponent<EntityStats>();
 
         data = Instantiate(data);
         data.inst = this;
@@ -38,7 +40,7 @@ public class HealthInst : MonoBehaviour
             if (!alive)
                 return;
             if (status.enabled)
-                status.Update();
+                status.Upd();
         }
 
         foreach (StatusEffect status in statuses)
@@ -46,7 +48,10 @@ public class HealthInst : MonoBehaviour
             if (!alive)
                 return;
             if (status.shouldRemove)
+            {
                 status.End();
+                Destroy(status);
+            }
         }
         statuses.RemoveAll(status => status.shouldRemove);
 
@@ -99,7 +104,10 @@ public class HealthInst : MonoBehaviour
             return true;
         int index = statuses.FindIndex(status => status.status == hitStatus.status);
         if (index == -1)
-            newStatuses.Add(new StatusEffect(this, hitStatus));
+        {
+            newStatuses.Add(gameObject.AddComponent<StatusEffect>());
+            newStatuses[^1].Init(this, hitStatus);
+        }
         else
             statuses[index].ApplyStack(hitStatus.components);
         return !alive;
@@ -144,6 +152,9 @@ public class HealthInst : MonoBehaviour
     }
     protected void OnDeath()
     {
+        foreach (StatusEffect status in statuses)
+            status.OnDeath();
+
         if (tickEntity)
             tickEntity.Tick();
         data.OnDeath();

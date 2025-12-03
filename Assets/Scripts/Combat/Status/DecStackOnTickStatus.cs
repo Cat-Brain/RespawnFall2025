@@ -11,7 +11,7 @@ public class DecStackOnTickStatus : StatusComponent
 
     public override void Str(StatusEffect effect)
     {
-        stackStatus = effect.GetComponent<StackStatus>();
+        stackStatus = effect.GetComp<StackStatus>();
     }
 
     public override void Tick(StatusEffect effect, int tickIndex)

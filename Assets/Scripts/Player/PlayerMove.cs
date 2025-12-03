@@ -59,6 +59,8 @@ public class PlayerMove : MonoBehaviour
                 remainingAirJumps = airJumps;
 
             float horizontalInput = playerManager.moveAction.action.ReadValue<float>();
+            float accel = this.accel * playerManager.stats.speed,
+                speed = this.speed * playerManager.stats.speed;
 
             if (Mathf.Abs(horizontalInput) > 0.1f)
             {
