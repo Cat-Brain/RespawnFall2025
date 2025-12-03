@@ -20,6 +20,8 @@ public class Gnat : Enemy
 
     public float chaseSpringFrequency, chaseSpringDamping, chaseDistance;
 
+    public float rotateSpringFrequency, rotateSpringDamping;
+
     public Vector2 desiredDir;
 
     public bool shooting;
@@ -29,7 +31,7 @@ public class Gnat : Enemy
     public bool idleMoving; // True means Moving, false means still
 
     public float wingRotTimer;
-    public SpringUtils.tDampedSpringMotionParams chaseSpring = new();
+    public SpringUtils.tDampedSpringMotionParams chaseSpring = new(), rotateSpring = new();
 
     public void RandomizeIdleMove()
     {
@@ -69,6 +71,12 @@ public class Gnat : Enemy
 
     public void FixedUpdate()
     {
+        float rotation = -Vector2.SignedAngle(-transform.up, desiredDir), velocity = rb.angularVelocity;
+
+        SpringUtils.CalcDampedSpringMotionParams(ref rotateSpring, Time.deltaTime, rotateSpringFrequency, rotateSpringDamping);
+        SpringUtils.UpdateDampedSpringMotion(ref rotation, ref velocity, 0, rotateSpring);
+        rb.angularVelocity = velocity;
+
         Collider2D[] nearWalls = Physics2D.OverlapCircleAll(transform.position, wallAvoidanceDist, wallMask);
 
         if (nearWalls.Length <= 0)
@@ -150,8 +158,8 @@ public class Gnat : Enemy
             stunTimer = projectileStunTime;
             SetState(AIState.STUNNED);
             Instantiate(projectilePrefab, projectileIndicator.position, transform.rotation).
-            GetComponent<ProjectileInst>().Init(projectile, desiredDir);
-            rb.linearVelocity -= desiredDir * projectileRecoil;
+            GetComponent<ProjectileInst>().Init(projectile, -transform.up);
+            rb.linearVelocity += (Vector2)transform.up * projectileRecoil;
         });
     }
 
