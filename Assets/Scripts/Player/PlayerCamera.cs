@@ -4,30 +4,32 @@ public class PlayerCamera : MonoBehaviour
 {
     public PlayerManager playerManager;
 
+    public float rotationMultiplier, maxRotation;
+    public float rotationSpringFrequency, rotationSpringDamping;
     public float moveSpringFrequency, moveSpringDamping;
-    public float minHeight, maxHeight;
 
-    public bool resetPosOnAwake;
-
-    [HideInInspector] public float velocity = 0;
-    public SpringUtils.tDampedSpringMotionParams moveSpring = new();
-
-    private void Awake()
-    {
-        if (resetPosOnAwake)
-            transform.position = new Vector3(0, DesiredHeight(), transform.position.z);
-    }
+    public float angularVelocity = 0;
+    [HideInInspector] public Vector2 velocity = Vector2.zero;
+    public float lastXVelocity = 0;
+    public SpringUtils.tDampedSpringMotionParams rotationSpring = new(), moveSpring = new();
 
     void LateUpdate()
     {
+        SpringUtils.CalcDampedSpringMotionParams(ref rotationSpring, Time.deltaTime, rotationSpringFrequency, rotationSpringDamping);
+        float rotation = CMath.Rot0To360IntoN180To180(transform.eulerAngles.z);
+        SpringUtils.UpdateDampedSpringMotion(ref rotation, ref angularVelocity, 0, rotationSpring);
+        transform.eulerAngles = new Vector3(0, 0, Mathf.Clamp(rotation, -maxRotation, maxRotation));
+
         SpringUtils.CalcDampedSpringMotionParams(ref moveSpring, Time.deltaTime, moveSpringFrequency, moveSpringDamping);
-        float position = transform.position.y;
-        SpringUtils.UpdateDampedSpringMotion(ref position, ref velocity, DesiredHeight(), moveSpring);
-        transform.position = CMath.Vector3XZ_Y(CMath.Vector3ToXZ(transform.position), position);
+        Vector2 position = transform.position;
+        SpringUtils.UpdateDampedSpringMotion(ref position.x, ref velocity.x, playerManager.transform.position.x, moveSpring);
+        SpringUtils.UpdateDampedSpringMotion(ref position.y, ref velocity.y, playerManager.transform.position.y, moveSpring);
+        transform.position = CMath.Vector3XY_Z(position, transform.position.z);
     }
 
-    public float DesiredHeight()
+    void FixedUpdate()
     {
-        return Mathf.Clamp(playerManager.transform.position.y, minHeight, maxHeight);
+        angularVelocity += rotationMultiplier * (playerManager.rb.linearVelocityX - lastXVelocity);
+        lastXVelocity = playerManager.rb.linearVelocityX;
     }
 }

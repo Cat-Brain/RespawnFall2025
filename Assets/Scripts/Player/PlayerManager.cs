@@ -1,3 +1,5 @@
+using DG.Tweening;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -6,13 +8,19 @@ public enum HitResult
     HIT, ABSORBED, BLOCKED
 }
 
+[RequireComponent(typeof(PlayerWeaponInstance), typeof(PlayerMove))]
+[RequireComponent(typeof(PlayerGravity), typeof(Rigidbody2D))]
+[RequireComponent(typeof(Collider2D))]
 public class PlayerManager : MonoBehaviour
 {
-    public PlayerCamera playerCamera;
-    public FlipToDirection playerFlip, followerFlip;
+    public FlipToDirection playerFlip;
+    public List<Renderer> rends;
+    public List<LineRenderer> mainLRs, beakLRs, eyeLRs;
+    public List<SpriteRenderer> mainSRs, beakSRs, eyeSRs;
 
-    public InputActionReference moveAction, jumpAction, blockAction;
+    public InputActionReference moveAction, jumpAction;
 
+    public float colorTweenTime;
     public float groundedRadius, groundedDistance;
     public LayerMask groundedMask;
 
@@ -22,34 +30,54 @@ public class PlayerManager : MonoBehaviour
 
     public string winZoneTag;
 
-    /*[HideInInspector]*/ public float blockInvulnerability = 0, stunInvulnerability = 0, moveStun = 0; // Applies to both horizontal movement and jumping
+    [HideInInspector] public bool active = true;
+    [HideInInspector] public float stunInvulnerability = 0, moveStun = 0; // Applies to both horizontal movement and jumping
+    [HideInInspector] public string sortingLayer;
     
     [HideInInspector] public GameManager gameManager;
 
+    [HideInInspector] public PlayerWeaponInstance playerWeapon;
     [HideInInspector] public PlayerMove playerMove;
     [HideInInspector] public PlayerGravity playerGravity;
-    [HideInInspector] public PlayerBlock playerBlock;
-    [HideInInspector] public PlayerTimer playerTimer;
-    [HideInInspector] public PlayerAnimator playerAnimator;
-
-    private Rigidbody2D rb;
+    [HideInInspector] public Rigidbody2D rb;
+    [HideInInspector] public Collider2D col;
 
     void Awake()
     {
         gameManager = FindFirstObjectByType<GameManager>();
+
         gameManager.playerManager = this;
 
+        playerWeapon = GetComponent<PlayerWeaponInstance>();
         playerMove = GetComponent<PlayerMove>();
         playerGravity = GetComponent<PlayerGravity>();
-        playerBlock = GetComponent<PlayerBlock>();
-        playerTimer = GetComponent<PlayerTimer>();
-
         rb = GetComponent<Rigidbody2D>();
+        col = GetComponent<Collider2D>();
+
+        sortingLayer = rends[0].sortingLayerName;
     }
 
     void Update()
     {
-        blockInvulnerability = Mathf.Max(0, blockInvulnerability - Time.deltaTime);
+        if (!active)
+        {
+            playerWeapon.enabled = false;
+            playerMove.enabled = false;
+            playerGravity.enabled = false;
+            col.enabled = false;
+        }
+        else if (gameManager.gameState != GameState.IN_GAME)
+        {
+            playerWeapon.enabled = false;
+            playerMove.enabled = false;
+        }
+        else
+        {
+            playerWeapon.enabled = true;
+            playerMove.enabled = true;
+            playerGravity.enabled = true;
+            col.enabled = true;
+        }
         stunInvulnerability = Mathf.Max(0, stunInvulnerability - Time.deltaTime);
         if (moveStun != -1)
             moveStun = Mathf.Max(0, moveStun - Time.deltaTime);
@@ -59,6 +87,13 @@ public class PlayerManager : MonoBehaviour
     {
         if (trigger.CompareTag(winZoneTag))
             gameManager.PlayerWin();
+    }
+
+    public void SetSortingLayer(string sortingLayer = "")
+    {
+        sortingLayer = sortingLayer == "" ? this.sortingLayer : sortingLayer;
+        foreach (Renderer rend in rends)
+            rend.sortingLayerName = sortingLayer;
     }
 
     public bool IsGrounded()
@@ -75,12 +110,6 @@ public class PlayerManager : MonoBehaviour
 
     public HitResult TryHit(Vector2 knockbackForce, float duration, float invulnerability)
     {
-        if (blockInvulnerability > 0)
-        {
-            playerBlock.SuccessfulBlock();    
-            return HitResult.BLOCKED;
-        }
-
         rb.linearVelocity += knockbackForce;
 
         if (stunInvulnerability > 0)
@@ -121,12 +150,65 @@ public class PlayerManager : MonoBehaviour
     {
         this.direction = direction;
         playerFlip.direction = direction;
-        followerFlip.direction = direction;
     }
 
     public bool Stunned()
     {
         return moveStun > 0 || moveStun == -1;
+    }
+
+    public void SetMainColor(Color color, Color oldColor)
+    {
+        if (!Application.isPlaying)
+        {
+            foreach (LineRenderer rend in mainLRs)
+                rend.startColor = rend.endColor = color;
+            foreach (SpriteRenderer rend in mainSRs)
+                rend.color = color;
+            return;
+        }
+
+        Color2 color2 = new (color, color), oldColor2 = new (oldColor, oldColor);
+        foreach (LineRenderer rend in mainLRs)
+            rend.DOColor(oldColor2, color2, colorTweenTime);
+        foreach (SpriteRenderer rend in mainSRs)
+            rend.DOColor(color, colorTweenTime);
+    }
+
+    public void SetBeakColor(Color color, Color oldColor)
+    {
+        if (!Application.isPlaying)
+        {
+            foreach (LineRenderer rend in beakLRs)
+                rend.startColor = rend.endColor = color;
+            foreach (SpriteRenderer rend in beakSRs)
+                rend.color = color;
+            return;
+        }
+
+        Color2 color2 = new(color, color), oldColor2 = new(oldColor, oldColor);
+        foreach (LineRenderer rend in beakLRs)
+            rend.DOColor(oldColor2, color2, colorTweenTime);
+        foreach (SpriteRenderer rend in beakSRs)
+            rend.DOColor(color, colorTweenTime);
+    }
+
+    public void SetEyeColor(Color color, Color oldColor)
+    {
+        if (!Application.isPlaying)
+        {
+            foreach (LineRenderer rend in eyeLRs)
+                rend.startColor = rend.endColor = color;
+            foreach (SpriteRenderer rend in eyeSRs)
+                rend.color = color;
+            return;
+        }
+
+        Color2 color2 = new(color, color), oldColor2 = new(oldColor, oldColor);
+        foreach (LineRenderer rend in eyeLRs)
+            rend.DOColor(oldColor2, color2, colorTweenTime);
+        foreach (SpriteRenderer rend in eyeSRs)
+            rend.DOColor(color, colorTweenTime);
     }
 
     public void OnDrawGizmos()

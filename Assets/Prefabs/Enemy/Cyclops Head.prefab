@@ -13,7 +13,10 @@ GameObject:
   - component: {fileID: 5849577691544333534}
   - component: {fileID: 4301184477255800105}
   - component: {fileID: 8047029066469306682}
-  - component: {fileID: 3470819357118885921}
+  - component: {fileID: 2431212561570893054}
+  - component: {fileID: 5277498788600212784}
+  - component: {fileID: 7335366715828117487}
+  - component: {fileID: 185762094631804354}
   m_Layer: 9
   m_Name: Cyclops Head
   m_TagString: Enemy
@@ -112,9 +115,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d13be2d890862d428465a42ce172012, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyHitbox
-  knockback: 3
-  stunDuration: 1
-  invulnerability: 3
+  hit:
+    position: {x: 0, y: 0}
+    damage: 10
+    statuses: []
+  knockback: 6
   playerTag: Player
 --- !u!114 &8047029066469306682
 MonoBehaviour:
@@ -145,7 +150,7 @@ MonoBehaviour:
   wallMask:
     serializedVersion: 2
     m_Bits: 1
---- !u!114 &3470819357118885921
+--- !u!114 &2431212561570893054
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -154,10 +159,57 @@ MonoBehaviour:
   m_GameObject: {fileID: 2592935042267595000}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9b644dbf03f6dfa4d92558a955317023, type: 3}
+  m_Script: {fileID: 11500000, guid: 065a689b8468d0143a06a283b6415c66, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: '::'
-  health: 1
+  m_EditorClassIdentifier: Assembly-CSharp::ProjectileTarget
+  health: {fileID: 0}
+--- !u!114 &5277498788600212784
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2592935042267595000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95abf65faa9d14d42ae3e4ee1bb55476, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HealthInst
+  tickEntity: {fileID: 0}
+  data: {fileID: 11400000, guid: c3bc1eec7f8d91a44a673f03f3b3f9c8, type: 2}
+  health: 0
+  fractionalHealthOffset: 0
+  statuses: []
+  newStatuses: []
+  healthManager: {fileID: 0}
+--- !u!114 &7335366715828117487
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2592935042267595000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 962620c73667e3544bfe36ea643443d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TickEntity
+--- !u!114 &185762094631804354
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2592935042267595000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b0ec4fa6181ff544adc63b127abf396, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DisableComponentsOnTick
+  components:
+  - {fileID: 8676375157731533001}
+  - {fileID: 4301184477255800105}
+  - {fileID: 8047029066469306682}
 --- !u!1 &3862257085580188846
 GameObject:
   m_ObjectHideFlags: 0

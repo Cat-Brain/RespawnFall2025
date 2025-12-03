@@ -1,53 +1,176 @@
+using com.cyborgAssets.inspectorButtonPro;
+using DG.Tweening.Core.Easing;
+using LDtkUnity;
+using System;
+using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.InputSystem;
 
 public enum GameState
 {
-    IN_GAME, LOSE_ANIMATION, WIN_SCREEN, UPGRADE_SCREEN, MAIN_MENU, SETTINGS_MENU, PAUSE_MENU
+    IN_GAME, LOSE_SCREEN, WIN_SCREEN, UPGRADE_SCREEN, MAIN_MENU, SETTINGS_MENU, PAUSE_MENU, INVENTORY
 }
 
+[ExecuteInEditMode]
 public class GameManager : MonoBehaviour
 {
     public GenerationManager generationManager;
+    public InventoryController inventory;
     public DisplayStringController stringController;
     public SceneLoadManager sceneLoadManager;
-    public GameObject inGameDisplay, loseDisplay, winDisplay, upgradeDisplay, mainMenuDisplay, settingsDisplay, pauseDisplay;
+    public List<Menu> menus;
 
     public string mainMenuSceneName, inGameSceneName, winSceneName;
 
     public InputActionReference pauseAction;
 
     public PlayerManager playerManager;
-    public DeathZoneMove deathZone;
 
-    public bool shouldGenerateTerrainOnLoad;
-
+    public int pathCount;
+    public LevelType[] basePath, pathEnd;
+    public string[] levelTypeStrings;
+    public Color[] levelTypeColors;
+    
     public GameState gameState;
     public AudioClip deathClip;
-    public GameObject ActionMusic;
-    public AudioSource audioSource;
+    public GameObject lobby;
 
-    public bool loading = false;
-    
-
-    void Awake()
-    {
-        if (gameState == GameState.IN_GAME && shouldGenerateTerrainOnLoad)
-            generationManager.Init();
-        pauseAction.action.started += SwitchToPause; 
-    }
+    [Header("Debug Variables")]
+    public bool hasEnabledCurrentMenu = false;
+    public int[] pathProgress;
+    public LevelType[,] paths;
+    public LevelType levelType;
+    public List<int> pathTaken;
+    public bool inCombat;
 
     void Update()
     {
-        inGameDisplay.SetActive(gameState == GameState.IN_GAME);
-        loseDisplay.SetActive(gameState == GameState.LOSE_ANIMATION);
-        winDisplay.SetActive(gameState == GameState.WIN_SCREEN);
-        upgradeDisplay.SetActive(gameState == GameState.UPGRADE_SCREEN);
-        mainMenuDisplay.SetActive(gameState == GameState.MAIN_MENU);
-        settingsDisplay.SetActive(gameState == GameState.SETTINGS_MENU);
-        pauseDisplay.SetActive(gameState == GameState.PAUSE_MENU);
+        if (!Application.isPlaying)
+        {
+            SetNotCurrentMenusActive(false);
+            SetCurrentMenusActive(true);
+        }
     }
+
+    private void LateUpdate()
+    {
+        if (!hasEnabledCurrentMenu && Application.isPlaying)
+        {
+            SetNotCurrentMenusActive(false);
+            SetCurrentMenusActive(true);
+            hasEnabledCurrentMenu = true;
+        }
+    }
+
+    public void SetCurrentMenusActive(bool active)
+    {
+        menus.ForEach((menu) => { if (menu.state == gameState) menu.SetActive(active); });
+    }
+
+    public void SetNotCurrentMenusActive(bool active)
+    {
+        menus.ForEach((menu) => { if (menu.state != gameState) menu.SetActive(active); });
+    }
+
+    public void SetState(GameState state)
+    {
+        if (gameState == state)
+            return;
+
+        SetCurrentMenusActive(false);
+        gameState = state;
+        hasEnabledCurrentMenu = false;
+    }
+
+    public void LoadState(GameState state, string sceneName)
+    {
+        if (gameState == state)
+            return;
+
+        SetCurrentMenusActive(false);
+
+        UnityEvent onFadeEvent = new();
+        onFadeEvent.AddListener(() =>
+        {
+            gameState = state;
+            hasEnabledCurrentMenu = false;
+        });
+
+        sceneLoadManager.sceneToLoad = sceneName;
+        sceneLoadManager.StartLoad(onFadeEvent);
+    }
+
+    public void SetTimeScale(float timeScale)
+    {
+        Time.timeScale = timeScale;
+    }
+
+    public void LoadNextLevel(int path)
+    {
+        if (path == 0)
+        {
+            InitPaths();
+            pathTaken.Add(path);
+            generationManager.SpawnLevel(0, LevelType.COMBAT);
+            return;
+        }
+        pathTaken.Add(path);
+        path--;
+        pathProgress[path]++;
+        generationManager.SpawnLevel(pathProgress[path] + 1, paths[path, pathProgress[path] - 1]);
+    }
+
+    public string GetLevelExitText(int path)
+    {
+        if (path == 0)
+            return levelTypeStrings[(int)LevelType.COMBAT] + " 1";
+        return levelTypeStrings[(int)paths[path - 1, pathProgress[path - 1]]] + ' ' + (pathProgress[path - 1] + 2);
+    }
+
+    public Color GetLevelExitColor(int path)
+    {
+        if (path == 0)
+            return levelTypeColors[(int)LevelType.COMBAT];
+        return levelTypeColors[(int)paths[path - 1, pathProgress[path - 1]]];
+    }
+
+    public Color GetLevelEntryColor()
+    {
+        int path = pathTaken[^1];
+        if (path == 0)
+            return levelTypeColors[(int)LevelType.COMBAT];
+        return levelTypeColors[(int)paths[path - 1, pathProgress[path - 1] - 1]];
+    }
+
+    public void InitPaths()
+    {
+        pathTaken = new ();
+        pathProgress = new int[pathCount];
+        paths = new LevelType[pathCount, basePath.Length + pathEnd.Length];
+
+        for (int i = 0; i < pathCount; i++)
+        {
+            LevelType[] shuffledPath = basePath.Randomize().ToArray();
+            for (int j = 0; j < basePath.Length; j++)
+                paths[i, j] = shuffledPath[j];
+            for (int j = 0; j < pathEnd.Length; j++)
+                paths[i, j + basePath.Length] = pathEnd[j];
+        }
+    }
+
+    public bool CanExitLevel()
+    {
+        return !inCombat && inventory.bufferItems.Count == 0;
+    }
+
+    public void LevelTransitionComplete()
+    {
+        lobby.SetActive(false);
+        generationManager.UnloadInactiveLevels();
+    }
+
 
     public void PlayerWin()
     {
@@ -57,9 +180,7 @@ public class GameManager : MonoBehaviour
         playerManager.moveStun = -1;
         playerManager.SetDirection(EntityDirection.NEUTRAL);
 
-        UnityEvent onFadeEvent = new();
-        onFadeEvent.AddListener(() => { gameState = GameState.WIN_SCREEN; });
-        sceneLoadManager.StartLoad(winSceneName, onFadeEvent);
+        LoadState(GameState.WIN_SCREEN, winSceneName);
     }
 
     public void PlayerLose()
@@ -69,78 +190,7 @@ public class GameManager : MonoBehaviour
 
         loading = true;
         AudioManager.instance.PlaySoundFXClip(deathClip, transform, 1.0f);
-        UnityEvent onFadeEvent = new();
-        onFadeEvent.AddListener(() => { loading = false; gameState = GameState.LOSE_ANIMATION; });
-        sceneLoadManager.StartLoad(mainMenuSceneName, onFadeEvent);
 
-        
-
+        LoadState(GameState.LOSE_SCREEN, mainMenuSceneName);
     }
-
-    #region Menu Swappers
-
-    public void SwitchToInGame()
-    {
-        if (gameState != GameState.MAIN_MENU && gameState != GameState.PAUSE_MENU)
-            return;
-
-        if (gameState == GameState.PAUSE_MENU)
-        {
-            Time.timeScale = 1;
-            gameState = GameState.IN_GAME;
-            return;
-        }
-
-        UnityEvent onFadeEvent = new();
-        onFadeEvent.AddListener(() => { gameState = GameState.IN_GAME; generationManager.Init(); });
-        sceneLoadManager.StartLoad(inGameSceneName, onFadeEvent);
-    }
-
-    public void SwitchToSettings()
-    {
-        if (gameState != GameState.MAIN_MENU)
-            return;
-
-        gameState = GameState.SETTINGS_MENU;
-    }
-
-    public void SwitchToMainMenu()
-    {
-        if (gameState != GameState.SETTINGS_MENU && gameState != GameState.PAUSE_MENU && gameState != GameState.LOSE_ANIMATION)
-            return;
-
-        if (gameState == GameState.SETTINGS_MENU || gameState == GameState.LOSE_ANIMATION)
-        {
-            gameState = GameState.MAIN_MENU;
-            return;
-        }
-
-        UnityEvent onFadeEvent = new();
-        onFadeEvent.AddListener(() => { gameState = GameState.SETTINGS_MENU; });
-        sceneLoadManager.StartLoad(mainMenuSceneName, onFadeEvent);
-    }
-
-    public void SwitchToPause(InputAction.CallbackContext context)
-    {
-        if (gameState != GameState.IN_GAME)
-            return;
-
-        if (gameState == GameState.PAUSE_MENU)
-        {
-            Time.timeScale = 1;
-            gameState = GameState.IN_GAME;
-        } else
-        {
-            Time.timeScale = 0;
-            gameState = GameState.PAUSE_MENU;
-        }
-        return;
-    }
-
-    public void CloseGame()
-    {
-        Application.Quit();
-    }
-
-    #endregion
 }

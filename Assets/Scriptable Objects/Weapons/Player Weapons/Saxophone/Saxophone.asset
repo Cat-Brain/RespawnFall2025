@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f91b072e8c09df4b99b9e79871e5df3, type: 3}
+  m_Name: Saxophone
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerWeapon
+  reload: {fileID: 11400000, guid: 3c170bc043a3454468e52d273890556e, type: 2}
+  primary: {fileID: 11400000, guid: 2cddb6cc05addbd4090c84b391673308, type: 2}
+  baseHit:
+    position: {x: 0, y: 0}
+    damage: 10
+    statuses:
+    - status: {fileID: 11400000, guid: 3cb4da4df5fdc7c4ab7cecef48a9eacb, type: 2}
+      components:
+      - {fileID: 11400000, guid: 0a4b18c0285a5e642b69f03a4dfe62be, type: 2}
+      - {fileID: 11400000, guid: 28fec24176f2fd648a36805eff82ce1b, type: 2}
+  stats:
+    damage: 0
+    fireRate: 0
+    magazineSize: 0
+    reloadSpeed: 0
+    range: 0
+  baseWeapon: {fileID: 0}
+  wielder: {fileID: 0}
+  playerMainColor: {r: 0.09803922, g: 0.35686275, b: 0.6509804, a: 1}
+  playerBeakColor: {r: 0.14117648, g: 0.22352941, b: 0.4, a: 1}
+  playerEyeColor: {r: 0.050980397, g: 0.1254902, b: 0.24705884, a: 1}

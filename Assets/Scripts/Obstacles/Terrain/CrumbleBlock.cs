@@ -12,17 +12,11 @@ public class CrumbleBlock : MonoBehaviour
     public float disabledDuration;
     public float mercyTime, crumbleTime, fadeDuration, fadeOpacity;
 
-    private Collider2D col;
-    private SpriteRenderer sr;
+    public Collider2D col;
+    public SpriteRenderer sr;
 
     private bool isCrumbled = false;
     private float mercyTimer = -1;
-
-    void Awake()
-    {
-        col = GetComponent<Collider2D>();
-        sr = GetComponent<SpriteRenderer>();
-    }
 
     private void FixedUpdate()
     {

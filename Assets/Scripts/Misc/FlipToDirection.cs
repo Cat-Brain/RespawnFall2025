@@ -22,7 +22,7 @@ public class FlipToDirection : MonoBehaviour
     {
         SpringUtils.CalcDampedSpringMotionParams(ref flipSpring, Time.deltaTime, flipSpringFrequency, flipSpringDamping);
 
-        float baseRotation = transform.eulerAngles.y;
+        float baseRotation = transform.localEulerAngles.y;
         float rotation = CMath.Mod(baseRotation + 90, 360) - 90; // -90 - 270
 
         SpringUtils.UpdateDampedSpringMotion(ref rotation, ref velocity, DesiredRotation(), flipSpring);
@@ -32,7 +32,7 @@ public class FlipToDirection : MonoBehaviour
 
     public void SetRotation(float rotation)
     {
-        transform.eulerAngles = CMath.Vector3XZ_Y(CMath.Vector3ToXZ(transform.eulerAngles), rotation);
+        transform.localEulerAngles = CMath.Vector3XZ_Y(CMath.Vector3ToXZ(transform.localEulerAngles), rotation);
     }
 
     public float DesiredRotation()

@@ -7,7 +7,7 @@ TagManager:
   - Win Zone
   - Enemy
   - Death Zone
-  - Music
+  - Moss
   layers:
   - Default
   - TransparentFX
@@ -22,7 +22,7 @@ TagManager:
   - Player
   - Incorporeal
   - One Way Block
-  - 
+  - Target
   - 
   - 
   - 
@@ -42,8 +42,26 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Back Tree
+    uniqueID: 4078067075
+    locked: 0
+  - name: Tree
+    uniqueID: 1894683927
+    locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Enemy
+    uniqueID: 1557586067
+    locked: 0
+  - name: Smoke
+    uniqueID: 33222699
+    locked: 0
+  - name: Player
+    uniqueID: 2371696209
+    locked: 0
+  - name: Ground
+    uniqueID: 1557472805
     locked: 0
   m_RenderingLayers:
   - Default

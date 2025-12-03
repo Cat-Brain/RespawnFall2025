@@ -1,9 +1,11 @@
+using UnityEditor;
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody2D))]
 public class EnemyHitbox : MonoBehaviour
 {
-    public float knockback, stunDuration, invulnerability;
+    public Hit hit;
+    public float knockback;
     public string playerTag;
 
     protected Rigidbody2D rb;
@@ -16,19 +18,21 @@ public class EnemyHitbox : MonoBehaviour
     void OnCollisionEnter2D(Collision2D collision)
     {
         if (enabled && collision.collider.CompareTag(playerTag) &&
-            collision.collider.TryGetComponent(out PlayerManager playerManager))
-            OnHit(playerManager);   
+            collision.collider.TryGetComponent(out HealthInst health))
+            OnHit(health, collision.collider);
     }
 
     public void OnTriggerEnter2D(Collider2D hitCollider)
     {
         if (enabled && hitCollider.CompareTag(playerTag) &&
-            hitCollider.TryGetComponent(out PlayerManager playerManager))
-            OnHit(playerManager);
+            hitCollider.TryGetComponent(out HealthInst health))
+            OnHit(health, hitCollider);
     }
 
-    public virtual void OnHit(PlayerManager playerManager)
+    public virtual void OnHit(HealthInst health, Collider2D collider)
     {
-        playerManager.TryHit(rb.linearVelocity.normalized * knockback, stunDuration, invulnerability);
+        health.ApplyHit(hit);
+        if (collider.attachedRigidbody != null && rb.linearVelocity != Vector2.zero)
+            collider.attachedRigidbody.AddForce(rb.linearVelocity.normalized * knockback, ForceMode2D.Impulse);
     }
 }
