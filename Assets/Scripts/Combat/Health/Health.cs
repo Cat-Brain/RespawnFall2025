@@ -13,5 +13,7 @@ public class Health : ScriptableObject
         inst.health = startHealth == -1 ? maxHealth : startHealth;
     }
 
+    public virtual void OnHit(ref Hit hit) { }
+    public virtual void OnHealthChange(int newHealth, Hit? hit) { }
     public virtual void OnDeath() { }
 }

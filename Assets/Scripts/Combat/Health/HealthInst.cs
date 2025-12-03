@@ -133,6 +133,8 @@ public class HealthInst : MonoBehaviour
         if (health == newHealth)
             return;
 
+        data.OnHealthChange(newHealth, hit);
+
         if (newHealth < health)
             SpawnDamageNumber(health - newHealth, hit.HasValue && hit.Value.position != Vector2.zero ? hit.Value.position : transform.position);
         else
@@ -142,6 +144,7 @@ public class HealthInst : MonoBehaviour
 
     protected void OnHit(ref Hit hit)
     {
+        data.OnHit(ref hit);
         foreach (StatusEffect status in statuses)
         {
             if (!alive)

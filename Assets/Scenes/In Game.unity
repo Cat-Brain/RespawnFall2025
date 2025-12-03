@@ -119,17 +119,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!114 &39450079 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8516241564905204971, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
-  m_PrefabInstance: {fileID: 1158623688}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 962620c73667e3544bfe36ea643443d9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ButtonTick
 --- !u!1001 &108699294
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -198,17 +187,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bfde92923935cca43bcc5057c82643fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerManager
---- !u!114 &161565852 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4132928192477622211, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
-  m_PrefabInstance: {fileID: 1158623688}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 962620c73667e3544bfe36ea643443d9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ButtonTick
 --- !u!1 &245124432
 GameObject:
   m_ObjectHideFlags: 0
@@ -228,13 +206,14 @@ GameObject:
   - component: {fileID: 245124433}
   - component: {fileID: 245124444}
   - component: {fileID: 245124443}
+  - component: {fileID: 245124445}
   m_Layer: 5
   m_Name: Inventory Pickup
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &245124433
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -488,6 +467,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::TweenScaleOnTick
   scale: {x: 0, y: 0}
   tweenTime: 1
+--- !u!114 &245124445
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 245124432}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 120027f14a0cd9b479bb073307e60a51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InventoryPickupTick
+  item: {fileID: 11400000, guid: 900e92d6b1446f64bafd20692abc25dd, type: 2}
 --- !u!1 &384207106
 GameObject:
   m_ObjectHideFlags: 0
@@ -625,33 +617,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1041725460}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &579424438 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3231321435239700662, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
-  m_PrefabInstance: {fileID: 1158623688}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Button
 --- !u!4 &585243572 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6052635023230747091, guid: be519cf10334acc4fb5949556f2a198e, type: 3}
   m_PrefabInstance: {fileID: 663308104}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &593745688 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7513076606511836234, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
-  m_PrefabInstance: {fileID: 1158623688}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 962620c73667e3544bfe36ea643443d9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ButtonTick
 --- !u!1 &593767040
 GameObject:
   m_ObjectHideFlags: 0
@@ -815,17 +785,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: be519cf10334acc4fb5949556f2a198e, type: 3}
---- !u!114 &789563538 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6984130579218454076, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
-  m_PrefabInstance: {fileID: 1158623688}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 962620c73667e3544bfe36ea643443d9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ButtonTick
 --- !u!1 &805965884
 GameObject:
   m_ObjectHideFlags: 0
@@ -1033,17 +992,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 82ae3620aa50a874ebf45b37aa505601, type: 3}
---- !u!114 &894912575 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5554645745328976771, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
-  m_PrefabInstance: {fileID: 1158623688}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 962620c73667e3544bfe36ea643443d9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ButtonTick
 --- !u!1001 &998624288
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1062,7 +1010,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3380364024760122889, guid: 8545a1254127b4542b77563ae7578023, type: 3}
       propertyPath: orthographic size
-      value: 4.75
+      value: 4.8125
       objectReference: {fileID: 0}
     - target: {fileID: 3380364024760122889, guid: 8545a1254127b4542b77563ae7578023, type: 3}
       propertyPath: m_BackGroundColor.b
@@ -1271,170 +1219,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1147164726099890902, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
-      propertyPath: smokePrefab
-      value: 
-      objectReference: {fileID: 1197980384501054875, guid: 4f66dfd3ba15ec340aafc6315bdc7259, type: 3}
-    - target: {fileID: 1147164726099890902, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
-      propertyPath: smokeOffset.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1147164726099890902, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
-      propertyPath: smokeOffset.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1147164726099890902, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
-      propertyPath: waveSpawnDelay
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1147164726099890902, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
-      propertyPath: levelData.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1147164726099890902, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
-      propertyPath: levelData.Array.data[0].waves.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1147164726099890902, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
-      propertyPath: levelData.Array.data[1].waves.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1147164726099890902, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
-      propertyPath: levelData.Array.data[0].waves.Array.data[0].data.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1147164726099890902, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
-      propertyPath: levelData.Array.data[0].waves.Array.data[1].data.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1147164726099890902, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
-      propertyPath: levelData.Array.data[1].waves.Array.data[0].data.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1147164726099890902, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
-      propertyPath: levelData.Array.data[1].waves.Array.data[1].data.Array.size
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1147164726099890902, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
-      propertyPath: levelData.Array.data[0].waves.Array.data[0].data.Array.data[1].tier
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1147164726099890902, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
-      propertyPath: levelData.Array.data[0].waves.Array.data[1].data.Array.data[0].tier
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1147164726099890902, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
-      propertyPath: levelData.Array.data[0].waves.Array.data[1].data.Array.data[1].tier
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1147164726099890902, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
-      propertyPath: levelData.Array.data[1].waves.Array.data[0].data.Array.data[0].tier
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1147164726099890902, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
-      propertyPath: levelData.Array.data[1].waves.Array.data[1].data.Array.data[0].tier
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1147164726099890902, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
-      propertyPath: levelData.Array.data[0].waves.Array.data[0].data.Array.data[1].typeCount
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1147164726099890902, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
-      propertyPath: levelData.Array.data[0].waves.Array.data[1].data.Array.data[0].typeCount
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1147164726099890902, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
-      propertyPath: levelData.Array.data[0].waves.Array.data[1].data.Array.data[1].typeCount
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1147164726099890902, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
-      propertyPath: levelData.Array.data[1].waves.Array.data[0].data.Array.data[0].typeCount
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1147164726099890902, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
-      propertyPath: levelData.Array.data[1].waves.Array.data[1].data.Array.data[0].typeCount
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1147164726099890902, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
-      propertyPath: levelData.Array.data[0].waves.Array.data[0].data.Array.data[1].totalQuantity
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1147164726099890902, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
-      propertyPath: levelData.Array.data[0].waves.Array.data[1].data.Array.data[0].totalQuantity
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1147164726099890902, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
-      propertyPath: levelData.Array.data[0].waves.Array.data[1].data.Array.data[1].totalQuantity
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1147164726099890902, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
-      propertyPath: levelData.Array.data[1].waves.Array.data[0].data.Array.data[0].totalQuantity
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 1147164726099890902, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
-      propertyPath: levelData.Array.data[1].waves.Array.data[1].data.Array.data[0].totalQuantity
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1186719336481700516, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
-      propertyPath: buttons.Array.size
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 1186719336481700516, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
-      propertyPath: canvases.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1186719336481700516, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
-      propertyPath: 'buttons.Array.data[0]'
-      value: 
-      objectReference: {fileID: 1215324407}
-    - target: {fileID: 1186719336481700516, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
-      propertyPath: 'buttons.Array.data[1]'
-      value: 
-      objectReference: {fileID: 1763889098}
-    - target: {fileID: 1186719336481700516, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
-      propertyPath: 'buttons.Array.data[2]'
-      value: 
-      objectReference: {fileID: 579424438}
-    - target: {fileID: 1186719336481700516, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
-      propertyPath: 'canvases.Array.data[0]'
-      value: 
-      objectReference: {fileID: 1956230840}
-    - target: {fileID: 3210211052279617598, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
-      propertyPath: actions.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3210211052279617598, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
-      propertyPath: 'actions.Array.data[0]'
-      value: 
-      objectReference: {fileID: 7727032971491509709, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
-    - target: {fileID: 3210211052279617598, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
-      propertyPath: onRelease.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3210211052279617598, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
-      propertyPath: onRelease.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3210211052279617598, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
-      propertyPath: onRelease.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 593745688}
-    - target: {fileID: 3210211052279617598, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
-      propertyPath: onRelease.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3210211052279617598, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
-      propertyPath: onRelease.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Tick
-      objectReference: {fileID: 0}
-    - target: {fileID: 3210211052279617598, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
-      propertyPath: onRelease.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: TickEntity, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 3210211052279617598, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
-      propertyPath: onRelease.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
     - target: {fileID: 3282174016193848263, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -1475,259 +1259,19 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3555843864015631791, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
-      propertyPath: actions.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3555843864015631791, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
-      propertyPath: 'actions.Array.data[0]'
-      value: 
-      objectReference: {fileID: 7727032971491509709, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
-    - target: {fileID: 3555843864015631791, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
-      propertyPath: onRelease.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3555843864015631791, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
-      propertyPath: onRelease.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3555843864015631791, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
-      propertyPath: onRelease.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 894912575}
-    - target: {fileID: 3555843864015631791, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
-      propertyPath: onRelease.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3555843864015631791, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
-      propertyPath: onRelease.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Tick
-      objectReference: {fileID: 0}
-    - target: {fileID: 3555843864015631791, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
-      propertyPath: onRelease.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: TickEntity, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 3555843864015631791, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
-      propertyPath: onRelease.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
-    - target: {fileID: 3853854478699871419, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
-      propertyPath: actions.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3853854478699871419, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
-      propertyPath: 'actions.Array.data[0]'
-      value: 
-      objectReference: {fileID: 7727032971491509709, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
-    - target: {fileID: 3853854478699871419, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
-      propertyPath: onRelease.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3853854478699871419, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
-      propertyPath: onRelease.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3853854478699871419, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
-      propertyPath: onRelease.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 1689730171}
-    - target: {fileID: 3853854478699871419, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
-      propertyPath: onRelease.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3853854478699871419, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
-      propertyPath: onRelease.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Tick
-      objectReference: {fileID: 0}
-    - target: {fileID: 3853854478699871419, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
-      propertyPath: onRelease.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: TickEntity, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 3853854478699871419, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
-      propertyPath: onRelease.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
-    - target: {fileID: 4464478626633266814, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
-      propertyPath: actions.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4464478626633266814, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
-      propertyPath: 'actions.Array.data[0]'
-      value: 
-      objectReference: {fileID: 7727032971491509709, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
-    - target: {fileID: 4464478626633266814, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
-      propertyPath: onRelease.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4464478626633266814, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
-      propertyPath: onRelease.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4464478626633266814, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
-      propertyPath: onRelease.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 39450079}
-    - target: {fileID: 4464478626633266814, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
-      propertyPath: onRelease.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4464478626633266814, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
-      propertyPath: onRelease.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Tick
-      objectReference: {fileID: 0}
-    - target: {fileID: 4464478626633266814, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
-      propertyPath: onRelease.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: TickEntity, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 4464478626633266814, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
-      propertyPath: onRelease.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
-    - target: {fileID: 4767916865449141275, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
-      propertyPath: canvases.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4767916865449141275, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
-      propertyPath: 'canvases.Array.data[0]'
-      value: 
-      objectReference: {fileID: 1717482795}
-    - target: {fileID: 4986165715376724500, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
-      propertyPath: actions.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4986165715376724500, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
-      propertyPath: 'actions.Array.data[0]'
-      value: 
-      objectReference: {fileID: 7727032971491509709, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
-    - target: {fileID: 4986165715376724500, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
-      propertyPath: onRelease.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4986165715376724500, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
-      propertyPath: onRelease.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4986165715376724500, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
-      propertyPath: onRelease.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 789563538}
-    - target: {fileID: 4986165715376724500, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
-      propertyPath: onRelease.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4986165715376724500, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
-      propertyPath: onRelease.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Tick
-      objectReference: {fileID: 0}
-    - target: {fileID: 4986165715376724500, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
-      propertyPath: onRelease.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: TickEntity, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 4986165715376724500, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
-      propertyPath: onRelease.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
     - target: {fileID: 4989346605032106179, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
       propertyPath: lobby
       value: 
       objectReference: {fileID: 1041725459}
-    - target: {fileID: 4989346605032106179, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
-      propertyPath: inventory
-      value: 
-      objectReference: {fileID: 1893813304}
-    - target: {fileID: 5080558626717535538, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
-      propertyPath: actions.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5080558626717535538, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
-      propertyPath: 'actions.Array.data[0]'
-      value: 
-      objectReference: {fileID: -8087136603196486413, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
-    - target: {fileID: 5080558626717535538, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
-      propertyPath: onRelease.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5080558626717535538, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
-      propertyPath: onRelease.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5080558626717535538, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
-      propertyPath: onRelease.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 1691365377}
-    - target: {fileID: 5080558626717535538, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
-      propertyPath: onRelease.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 5080558626717535538, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
-      propertyPath: onRelease.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Tick
-      objectReference: {fileID: 0}
-    - target: {fileID: 5080558626717535538, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
-      propertyPath: onRelease.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: TickEntityCombat, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 5080558626717535538, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
-      propertyPath: onRelease.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
     - target: {fileID: 6637537241124148633, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
       propertyPath: m_Name
       value: Managers
       objectReference: {fileID: 0}
-    - target: {fileID: 8488600329345077867, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
-      propertyPath: actions.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8488600329345077867, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
-      propertyPath: 'actions.Array.data[0]'
-      value: 
-      objectReference: {fileID: 7727032971491509709, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
-    - target: {fileID: 8488600329345077867, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
-      propertyPath: onRelease.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8488600329345077867, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
-      propertyPath: onRelease.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8488600329345077867, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
-      propertyPath: onRelease.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 161565852}
-    - target: {fileID: 8488600329345077867, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
-      propertyPath: onRelease.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 8488600329345077867, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
-      propertyPath: onRelease.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Tick
-      objectReference: {fileID: 0}
-    - target: {fileID: 8488600329345077867, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
-      propertyPath: onRelease.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: TickEntity, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 8488600329345077867, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
-      propertyPath: onRelease.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects:
-    - {fileID: 6819200226521041828, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
+    m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
---- !u!114 &1215324407 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7643755347958722924, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
-  m_PrefabInstance: {fileID: 1158623688}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Button
 --- !u!1001 &1587356351
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1879,44 +1423,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1041725460}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1689730171 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7519320725770246793, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
-  m_PrefabInstance: {fileID: 1158623688}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 962620c73667e3544bfe36ea643443d9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ButtonTick
---- !u!114 &1691365377 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2271825656293717869, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
-  m_PrefabInstance: {fileID: 1158623688}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 51270321eef00ab419cb7ca39e7189be, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::TickEntityCombat
---- !u!223 &1717482795 stripped
-Canvas:
-  m_CorrespondingSourceObject: {fileID: 105492635598185446, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
-  m_PrefabInstance: {fileID: 1158623688}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1763889098 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5958911498580786993, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
-  m_PrefabInstance: {fileID: 1158623688}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Button
 --- !u!1 &1824641422
 GameObject:
   m_ObjectHideFlags: 0
@@ -2046,22 +1552,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1041725460}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1893813304 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7512767258428513467, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
-  m_PrefabInstance: {fileID: 1158623688}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5811bfc83bcb1e242983f62dd368fbba, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::InventoryController
---- !u!223 &1956230840 stripped
-Canvas:
-  m_CorrespondingSourceObject: {fileID: 8647838956396865729, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
-  m_PrefabInstance: {fileID: 1158623688}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1967453594 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8286878558047019437, guid: 13e116e9d3dfa9541a22f8fdb00177a2, type: 3}

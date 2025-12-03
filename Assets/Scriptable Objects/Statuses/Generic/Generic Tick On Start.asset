@@ -9,8 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e3cac4af826864049a31930407e148e7, type: 3}
-  m_Name: RimeAntiDefense
-  m_EditorClassIdentifier: Assembly-CSharp::DefenseStatus
-  defense: -6
-  defensePerStack: 0
+  m_Script: {fileID: 11500000, guid: 237188573fb3c214882d5b60f284dfa1, type: 3}
+  m_Name: Generic Tick On Start
+  m_EditorClassIdentifier: Assembly-CSharp::TickOnStartStatus
+  tickIndex: 0

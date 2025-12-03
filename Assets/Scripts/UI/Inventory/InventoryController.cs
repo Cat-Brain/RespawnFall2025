@@ -114,7 +114,7 @@ public class InventoryController : MonoBehaviour
 
     public bool ValidPosition(InventoryInst item)
     {
-        return ValidPosition(item.item, LocalGridPos(item.rectTransform.anchoredPosition));
+        return ValidPosition(item.item, LocalGridPos(item.desiredPos));
     }
 
     public Vector2Int FindValidPosition(InventoryItem item)
@@ -156,7 +156,7 @@ public class InventoryController : MonoBehaviour
     [ProButton]
     public void SnapInventoryPosition(InventoryInst item)
     {
-        item.gridPos = LocalGridPos(item.rectTransform.anchoredPosition);
+        item.gridPos = LocalGridPos(item.desiredPos);
         item.rectTransform.SetParent(inventoryTransform);
         item.desiredPos = WorldPos(item.gridPos);
     }

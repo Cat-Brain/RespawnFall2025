@@ -81,18 +81,21 @@ public class Gnat : Enemy
         if (state == AIState.STUNNED)
             return;
 
+        int tempLayer = gameObject.layer;
+        gameObject.layer = 2;
         Collider2D[] nearWalls = Physics2D.OverlapCircleAll(transform.position, avoidanceDist, avoidanceMask);
+        gameObject.layer = tempLayer;
 
         if (nearWalls.Length <= 0)
             return;
 
-        Vector2 nearestPoint = nearWalls[0].ClosestPoint(transform.position);
-        float nearestDist = ((Vector2)transform.position - nearestPoint).sqrMagnitude;
-        foreach (Collider2D wall in nearWalls[1..])
+        Vector2 nearestPoint = Vector2.zero;
+        float nearestDist = Mathf.Infinity;
+        foreach (Collider2D wall in nearWalls)
         {
             Vector2 newPoint = wall.ClosestPoint(transform.position);
             float newDist = ((Vector2)transform.position - nearestPoint).sqrMagnitude;
-            if (newDist < nearestDist)
+            if (newDist < nearestDist && newDist > 0.125f)
             {
                 nearestPoint = newPoint;
                 nearestDist = newDist;

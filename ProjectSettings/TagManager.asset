@@ -66,5 +66,8 @@ TagManager:
   - name: Ground
     uniqueID: 1557472805
     locked: 0
+  - name: UI
+    uniqueID: 624822735
+    locked: 0
   m_RenderingLayers:
   - Default

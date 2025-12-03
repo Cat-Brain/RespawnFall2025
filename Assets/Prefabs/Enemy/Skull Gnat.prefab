@@ -910,10 +910,10 @@ MonoBehaviour:
   stunnedGravity: 1
   avoidanceMask:
     serializedVersion: 2
-    m_Bits: 0
-  avoidanceDist: 0
-  avoidanceAccel: 0
-  avoidanceSpeed: 0
+    m_Bits: 8705
+  avoidanceDist: 2
+  avoidanceAccel: 10
+  avoidanceSpeed: 3
   minIdleMoveTime: 0.5
   maxIdleMoveTime: 1.5
   minIdleMoveSpeed: 1
