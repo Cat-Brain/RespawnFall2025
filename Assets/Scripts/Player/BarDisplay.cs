@@ -6,11 +6,6 @@ public class BarDisplay : MonoBehaviour
 
     public Vector2 baseDim;
 
-    void Awake()
-    {
-        baseDim = rectTransform.sizeDelta;
-    }
-
     public void UpdateRemaining(float fraction)
     {
         rectTransform.sizeDelta = new Vector2(Mathf.Ceil(fraction * baseDim.x), baseDim.y);

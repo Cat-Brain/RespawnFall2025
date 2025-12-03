@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Bebop Speed Mul
   m_EditorClassIdentifier: Assembly-CSharp::StatMultiplier
   order: 1
-  multiplier: 1.5
+  multiplier: 1.15

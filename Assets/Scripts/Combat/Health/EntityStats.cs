@@ -8,13 +8,16 @@ public enum StatTarget
 
 public class EntityStats : MonoBehaviour
 {
-    public float speed = 1;
+    public float speed = 1, attackRate = 1, damage = 1, maxHealth = 1;
 
-    public List<StatChange> speedMods = new();
+    public List<StatChange> speedMods = new(), attackRateMods = new(), damageMods = new(), maxHealthMods = new();
 
     public void LateUpdate()
     {
         speed = EvalStat(ref speedMods, 1);
+        attackRate = EvalStat(ref attackRateMods, 1);
+        damage = EvalStat(ref damageMods, 1);
+        maxHealth = EvalStat(ref maxHealthMods, 1);
     }
 
     public float EvalStat(ref List<StatChange> mods, float baseValue)
