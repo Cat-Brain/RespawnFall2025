@@ -28,6 +28,11 @@ public class GameManager : MonoBehaviour
 
     public PlayerManager playerManager;
 
+    // Audio stuff
+    private FMOD.Studio.EventInstance instance;
+    public string fmodEvent;
+    private int ThemeIndex;
+
     public int pathCount;
     public LevelType[] basePath, pathEnd;
     public string[] levelTypeStrings;
@@ -44,6 +49,12 @@ public class GameManager : MonoBehaviour
     public LevelType levelType;
     public List<int> pathTaken;
     public bool inCombat;
+
+    void Start()
+    {
+        instance = FMODUnity.RuntimeManager.CreateInstance(fmodEvent);
+        instance.start();    
+    }
 
     void Update()
     {

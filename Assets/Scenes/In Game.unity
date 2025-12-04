@@ -1771,7 +1771,10 @@ PrefabInstance:
     m_RemovedGameObjects:
     - {fileID: 6819200226521041828, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8128052981618572226, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1287214388}
   m_SourcePrefab: {fileID: 100100000, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
 --- !u!114 &1215324407 stripped
 MonoBehaviour:
@@ -1784,6 +1787,44 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Button
+--- !u!1 &1287214383 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8128052981618572226, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
+  m_PrefabInstance: {fileID: 1158623688}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1287214388
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1287214383}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: FMODUnity::FMODUnity.StudioEventEmitter
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 1543653134
+      Data2: 1291779780
+      Data3: 1141058736
+      Data4: 893112163
+    Path: event:/Music
+  Event: 
+  EventPlayTrigger: 1
+  EventStopTrigger: 2
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params:
+  - Name: ThemeIndex
+    Value: 1
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1001 &1587356351
 PrefabInstance:
   m_ObjectHideFlags: 0
