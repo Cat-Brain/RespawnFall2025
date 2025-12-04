@@ -11,7 +11,19 @@ public class InventoryItem : ScriptableObject
 
     public Sprite sprite;
 
+    public List<ItemComponent> components;
+
     [HideInInspector] public Vector2Int dimensions;
+    [HideInInspector] public InventoryInst inst;
+
+    public InventoryItem Instance(InventoryInst inst)
+    {
+        InventoryItem result = Instantiate(this);
+        result.inst = inst;
+        for (int i = 0; i < components.Count; i++)
+            components[i] = Instantiate(components[i]);
+        return result;
+    }
 
     protected void FindDimensions()
     {
@@ -57,5 +69,23 @@ public class InventoryItem : ScriptableObject
     {
         CleanOffsets();
         FindDimensions();
+    }
+
+    public void OnPlace()
+    {
+        foreach (ItemComponent component in components)
+            component.OnPlace(this);
+    }
+
+    public void OnRemove()
+    {
+        foreach (ItemComponent component in components)
+            component.OnRemove(this);
+    }
+
+    public void OnSell()
+    {
+        foreach (ItemComponent component in components)
+            component.OnSell(this);
     }
 }

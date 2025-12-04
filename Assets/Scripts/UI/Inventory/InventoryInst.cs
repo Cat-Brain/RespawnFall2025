@@ -21,7 +21,7 @@ public class InventoryInst : MonoBehaviour, IPointerDownHandler, IBeginDragHandl
     [ProButton]
     public void Init()
     {
-        Clean();
+        item = item.Instance(this);
     }
 
     void Update()
@@ -71,9 +71,9 @@ public class InventoryInst : MonoBehaviour, IPointerDownHandler, IBeginDragHandl
 
     public void EndDrag()
     {
-        CleanDimensions();
         dragging = false;
         controller.AddToInventory(this);
+        CleanDimensions();
     }
 
     public void CleanPivot()

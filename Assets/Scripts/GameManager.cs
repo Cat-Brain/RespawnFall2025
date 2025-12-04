@@ -225,6 +225,7 @@ public class GameManager : MonoBehaviour
         if (!endScreenLanded)
             return;
 
+        inventory.TrashAll();
         playerManager.Begin();
         SetState(GameState.IN_GAME);
     }

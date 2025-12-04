@@ -88,12 +88,14 @@ public class InventoryMenu : MonoBehaviour
     public Vector2 DesiredMainScale()
     {
         return manager.gameState == GameState.INVENTORY ? inventoryMainScale :
-            manager.gameState == GameState.IN_GAME ? inGameMainScale : Vector2.zero;
+            (manager.gameState == GameState.IN_GAME ||
+            manager.gameState == GameState.END_SCREEN) ? inGameMainScale : Vector2.zero;
     }
 
     public Vector2 DesiredBufferScale()
     {
         return manager.gameState == GameState.INVENTORY ? inventoryBufferScale :
-            manager.gameState == GameState.IN_GAME ? inGameBufferScale : Vector2.zero;
+            (manager.gameState == GameState.IN_GAME ||
+            manager.gameState == GameState.END_SCREEN) ? inGameBufferScale : Vector2.zero;
     }
 }
