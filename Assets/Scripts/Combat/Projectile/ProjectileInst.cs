@@ -1,10 +1,13 @@
 using UnityEngine;
 using DG.Tweening;
+using System.Collections.Generic;
 
 public class ProjectileInst : MonoBehaviour
 {
     public Rigidbody2D rb;
     public Projectile data;
+    public List<SpriteRenderer> spriteRends;
+    public List<LineRenderer> lineRends;
 
     [HideInInspector] public Vector2 direction;
     [HideInInspector] public float remainingRange;
@@ -12,20 +15,24 @@ public class ProjectileInst : MonoBehaviour
 
     public void Init(Projectile data, Vector2 direction)
     {
+        foreach (SpriteRenderer sr in spriteRends)
+            sr.color = data.color;
+        foreach (LineRenderer lr in lineRends)
+            lr.endColor = data.color;
+
+        transform.localScale = data.radius * 0.01f * Vector3.one;
+        transform.DOScale(data.radius, data.spawnTime);
+
         lastPos = transform.position;
         this.direction = direction;
-        this.data = data;
-        data.Init(this);
+        this.data = Instantiate(data);
+        this.data.Init(this);
         OnInit();
     }
 
     public void Init(Vector2 direction)
     {
-        lastPos = transform.position;
-        this.direction = direction;
-        data = Instantiate(data);
-        data.Init(this);
-        OnInit();
+        Init(data, direction);
     }
 
     public virtual void OnInit()

@@ -1,6 +1,7 @@
 using com.cyborgAssets.inspectorButtonPro;
 using UnityEngine;
 
+[RequireComponent(typeof(EntityStat))]
 public class Enemy : OnTickEffect
 {
     public int tier;

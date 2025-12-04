@@ -1,25 +1,16 @@
 using System;
 using System.Linq;
+using UnityEngine;
 
-[Serializable]
-public class StatusEffect
+public class StatusEffect : MonoBehaviour
 {
     public HealthInst health;
 
     public Status status;
     public StatusComponent[] components;
     public IOnHitStatus[] onHitComponents;
-    public bool enabled, shouldRemove;
-
-    public StatusEffect(HealthInst health, HitStatus hitStatus)
-    {
-        this.health = health;
-        status = hitStatus.status;
-        Start();
-        ApplyStack(hitStatus.components);
-
-        // Add callback stuff here
-    }
+    public IOnDeathStatus[] onDeathComponents;
+    public bool shouldRemove;
 
     public void ApplyStack(StatusComponent[] components)
     {
@@ -31,24 +22,27 @@ public class StatusEffect
         }
     }
 
-    public void Start()
+    public void Init(HealthInst health, HitStatus hitStatus)
     {
-        enabled = true;
+        this.health = health;
+        status = hitStatus.status;
+
         shouldRemove = false;
 
-        components = status.components.Select(component => UnityEngine.Object.Instantiate(component)).ToArray();
+        components = status.components.Select(component => Instantiate(component)).ToArray();
 
-        onHitComponents = new IOnHitStatus[components.Count(component => component is IOnHitStatus)];
-        int index = 0;
-        foreach (StatusComponent component in components)
-            if (component is IOnHitStatus)
-                onHitComponents[index++] = component as IOnHitStatus;
+        onHitComponents = components.Where(component => component is IOnHitStatus)
+            .Select(component => component as IOnHitStatus).ToArray();
+        onDeathComponents = components.Where(component => component is IOnDeathStatus)
+            .Select(component => component as IOnDeathStatus).ToArray();
 
         foreach (StatusComponent component in components)
             component.Str(this);
+
+        ApplyStack(hitStatus.components);
     }
 
-    public void Update()
+    public void Upd()
     {
         if (!enabled)
             return;
@@ -68,6 +62,12 @@ public class StatusEffect
             component.OnHit(this, ref hit);
     }
 
+    public void OnDeath()
+    {
+        foreach (IOnDeathStatus component in onDeathComponents)
+            component.OnDeath(this);
+    }
+
     public void Tick(int tickIndex)
     {
         if (!enabled)
@@ -82,7 +82,7 @@ public class StatusEffect
         shouldRemove = true;
     }
 
-    public T GetComponent<T>() where T : StatusComponent
+    public T GetComp<T>() where T : StatusComponent
     {
         return (T)Array.Find(components, component => component is T);
     }

@@ -16,11 +16,12 @@ public class InventoryInst : MonoBehaviour, IPointerDownHandler, IBeginDragHandl
     [HideInInspector] public Vector2Int gridPos = -Vector2Int.one;
     [HideInInspector] public int index = -1;
     [HideInInspector] public Vector2 vel = Vector2.zero;
+    [HideInInspector] public bool dragging = false;
 
     [ProButton]
     public void Init()
     {
-        Clean();
+        item = item.Instance(this);
     }
 
     void Update()
@@ -34,10 +35,20 @@ public class InventoryInst : MonoBehaviour, IPointerDownHandler, IBeginDragHandl
         if (!Application.isPlaying)
             return;
 
+        if (dragging && controller.manager.gameState != GameState.INVENTORY)
+            EndDrag();
+
         Vector2 pos = rectTransform.anchoredPosition;
         SpringUtils.UpdateDampedSpringMotion(ref pos.x, ref vel.x, desiredPos.x, controller.itemSpring);
         SpringUtils.UpdateDampedSpringMotion(ref pos.y, ref vel.y, desiredPos.y, controller.itemSpring);
         rectTransform.anchoredPosition = pos;
+    }
+
+    void OnDestroy()
+    {
+        if (item.inst == null)
+            return;
+        Destroy(item);
     }
 
     public void OnPointerDown(PointerEventData eventData)
@@ -47,17 +58,29 @@ public class InventoryInst : MonoBehaviour, IPointerDownHandler, IBeginDragHandl
 
     public void OnBeginDrag(PointerEventData eventData)
     {
+        if (controller.manager.gameState != GameState.INVENTORY)
+            return;
         controller.RemoveFromInventory(this);
+        dragging = true;
     }
 
     public void OnDrag(PointerEventData eventData)
     {
-        desiredPos += controller.GlobalToLocalOffset(eventData.delta);
+        if (dragging)
+            desiredPos += controller.GlobalToLocalOffset(eventData.delta);
     }
 
     public void OnEndDrag(PointerEventData eventData)
     {
+        if (dragging)
+            EndDrag();
+    }
+
+    public void EndDrag()
+    {
+        dragging = false;
         controller.AddToInventory(this);
+        CleanDimensions();
     }
 
     public void CleanPivot()
@@ -67,7 +90,7 @@ public class InventoryInst : MonoBehaviour, IPointerDownHandler, IBeginDragHandl
 
     public void CleanDimensions()
     {
-        rectTransform.localScale = CMath.Vector3XY_Z(item.dimensions, 1);
+        rectTransform.localScale = Vector3.one * Mathf.Max(item.dimensions.x, item.dimensions.y);
         rectTransform.sizeDelta = controller.cellWidth * Vector2.one;
     }
 

@@ -15,5 +15,8 @@ MonoBehaviour:
   layer: 1
   positions:
   - {x: 0, y: 0}
-  sprite: {fileID: 3092214467101360321, guid: 336681ec95475cb4c8a5dc992e906efe, type: 3}
+  sprite: {fileID: -2413806693520163455, guid: ebe73ca9363db456bacf42c025bb4847, type: 3}
+  components:
+  - {fileID: 11400000, guid: 38a1fcadfa3ed8740b38f8e37c17da60, type: 2}
   dimensions: {x: 1, y: 1}
+  inst: {fileID: 0}

@@ -3,7 +3,6 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
-using static UnityEngine.EventSystems.EventTrigger;
 
 [Serializable]
 public struct EnemyTierData
@@ -91,10 +90,14 @@ public class EnemyManager : MonoBehaviour
                     position.gridPos.x < spawnPosition.x + type.spawnDimensions.x &&
                     position.gridPos.y < spawnPosition.y + type.spawnDimensions.y);
 
-                type.gameObject.SetActive(firstWave);
+                if (!firstWave)
+                    type.gameObject.SetActive(false);
+
                 enemies.Add(Instantiate(
                     type.gameObject, spawnPosition + type.spawnOffset, Quaternion.identity).GetComponent<Enemy>());
                 enemies[^1].enemyManager = this;
+
+                type.gameObject.SetActive(true);
 
                 if (!firstWave)
                     for (Vector2Int offset = Vector2Int.zero; offset.x < type.spawnDimensions.x; offset.x++)
@@ -130,5 +133,12 @@ public class EnemyManager : MonoBehaviour
         enemies.Remove(enemy);
         if (enemies.Count <= 0)
             gameManager.inCombat = SpawnWave();
+    }
+
+    public void DespawnEnemies()
+    {
+        foreach (Enemy enemy in enemies)
+            Destroy(enemy.gameObject);
+        enemies.Clear();
     }
 }

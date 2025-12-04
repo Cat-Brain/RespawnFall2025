@@ -12,18 +12,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c85cfa7ca2dd0446846239e236b31d2, type: 3}
   m_Name: Flute Projectile
   m_EditorClassIdentifier: Assembly-CSharp::Projectile
+  color: {r: 0.9803922, g: 0.85098046, b: 0.20392159, a: 1}
   hit:
     position: {x: 0, y: 0}
     damage: 0
     statuses: []
   targetMask:
     serializedVersion: 2
-    m_Bits: 512
+    m_Bits: 8704
   destroyedByMask:
     serializedVersion: 2
     m_Bits: 1
+  radius: 0.5
   speed: 4
   range: 7.5
   spread: 15
+  spawnTime: 0.5
   destructTime: 0.25
   inst: {fileID: 0}
