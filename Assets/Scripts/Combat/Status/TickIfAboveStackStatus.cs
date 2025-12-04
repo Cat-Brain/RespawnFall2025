@@ -10,7 +10,7 @@ public class TickIfAboveStackStatus : StatusComponent
 
     public override void Str(StatusEffect effect)
     {
-        stackStatus = effect.GetComponent<StackStatus>();
+        stackStatus = effect.GetComp<StackStatus>();
     }
 
     public override void Upd(StatusEffect effect)

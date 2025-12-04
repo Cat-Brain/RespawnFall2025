@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 973f1aa58389bfc4ca75f5e64587cc21, type: 3}
-  m_Name: Rime
+  m_Name: Bebop
   m_EditorClassIdentifier: Assembly-CSharp::Status
   components:
-  - {fileID: 11400000, guid: 783c1f15ac63f0d43837cee0890904e1, type: 2}
-  - {fileID: 11400000, guid: 0d2212beb25bbf8409434ed2093346c0, type: 2}
-  - {fileID: 11400000, guid: c974a807e4660524bbbf122da77a1fae, type: 2}
+  - {fileID: 11400000, guid: 0d705a5f22a0cf542b856949c7949c91, type: 2}
+  - {fileID: 11400000, guid: 4094e3ccbec441a4c8fe8ab8584b0d1a, type: 2}
+  - {fileID: 11400000, guid: 89f8255ebb607d448a92c9627c7cb484, type: 2}

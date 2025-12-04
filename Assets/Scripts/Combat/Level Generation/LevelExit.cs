@@ -77,6 +77,8 @@ public class LevelExit : OnTickEffect
     {
         maskTransform.DOScale(0, holeTweenTime).SetEase(holeTween);
         holeOpen = false;
+        text.DOFade(0, textFadeTime);
+        entryValid = false;
     }
 
     public void OpenHole()

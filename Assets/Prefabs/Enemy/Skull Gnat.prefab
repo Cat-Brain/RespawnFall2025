@@ -752,6 +752,7 @@ GameObject:
   - component: {fileID: 943662048188397314}
   - component: {fileID: 5614536734876474402}
   - component: {fileID: 4614003745129186476}
+  - component: {fileID: 3406156106192692755}
   m_Layer: 9
   m_Name: Skull Gnat
   m_TagString: Untagged
@@ -792,7 +793,7 @@ CircleCollider2D:
   m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
-  m_Material: {fileID: 6200000, guid: 5822474aee24e3b43b21574a0adf7c2a, type: 2}
+  m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -834,7 +835,7 @@ Rigidbody2D:
   m_LinearDamping: 0
   m_AngularDamping: 0.05
   m_GravityScale: 0
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 5822474aee24e3b43b21574a0adf7c2a, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -871,6 +872,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: befba2e51c592d1438e47f441abdc76a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Gnat
+  stats: {fileID: 0}
   tier: 1
   spawnOffset: {x: 0.5, y: 0.5}
   spawnDimensions: {x: 1, y: 1}
@@ -899,16 +901,19 @@ MonoBehaviour:
   projectileIndicator: {fileID: 1166515953697970885}
   projectileFireTime: 1
   projectileStunTime: 3
-  projectileWaitTime: 3
+  projectileWaitTime: 5
   projectileRecoil: 5
   minWingRot: -45
   maxWingRot: 45
   wingRotFrequency: 12
-  normalGravity: 0
+  normalGravity: 0.25
   stunnedGravity: 1
-  wallAvoidanceDist: 1
-  wallAvoidanceAccel: 15
-  wallAvoidanceSpeed: 3
+  avoidanceMask:
+    serializedVersion: 2
+    m_Bits: 8705
+  avoidanceDist: 2
+  avoidanceAccel: 10
+  avoidanceSpeed: 3
   minIdleMoveTime: 0.5
   maxIdleMoveTime: 1.5
   minIdleMoveSpeed: 1
@@ -922,7 +927,6 @@ MonoBehaviour:
   desiredDir: {x: 0, y: 0}
   shooting: 0
   projectileWaitTimer: 0
-  projectileFireTimer: 0
   idleMoveTimer: 0
   idleMoveSpeed: 0
   idleMoveDir: {x: 0, y: 0}
@@ -941,6 +945,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::HealthInst
   tickEntity: {fileID: 0}
+  stats: {fileID: 0}
   data: {fileID: 11400000, guid: 1ddff9aaedf67b54f9178d123ca9dd13, type: 2}
   health: 0
   fractionalHealthOffset: 0
@@ -1000,6 +1005,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SetGravityOnTick
   gravity: 0
+--- !u!114 &3406156106192692755
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7573971580527064850}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56b3795f43d35874892d6a67aaec8268, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EntityStats
+  speed: 1
 --- !u!1 &7593918818076248658
 GameObject:
   m_ObjectHideFlags: 0

@@ -13,7 +13,8 @@ public class Gnat : Enemy
     public float minWingRot, maxWingRot, wingRotFrequency;
     public float normalGravity, stunnedGravity;
 
-    public float wallAvoidanceDist, wallAvoidanceAccel, wallAvoidanceSpeed;
+    public LayerMask avoidanceMask;
+    public float avoidanceDist, avoidanceAccel, avoidanceSpeed;
 
     public float minIdleMoveTime, maxIdleMoveTime,
         minIdleMoveSpeed, maxIdleMoveSpeed, idleMoveAccel;
@@ -25,7 +26,7 @@ public class Gnat : Enemy
     public Vector2 desiredDir;
 
     public bool shooting;
-    public float projectileWaitTimer, projectileFireTimer;
+    public float projectileWaitTimer;
     public float idleMoveTimer, idleMoveSpeed;
     public Vector2 idleMoveDir;
     public bool idleMoving; // True means Moving, false means still
@@ -77,26 +78,32 @@ public class Gnat : Enemy
         SpringUtils.UpdateDampedSpringMotion(ref rotation, ref velocity, 0, rotateSpring);
         rb.angularVelocity = velocity;
 
-        Collider2D[] nearWalls = Physics2D.OverlapCircleAll(transform.position, wallAvoidanceDist, wallMask);
+        if (state == AIState.STUNNED)
+            return;
+
+        int tempLayer = gameObject.layer;
+        gameObject.layer = 2;
+        Collider2D[] nearWalls = Physics2D.OverlapCircleAll(transform.position, avoidanceDist, avoidanceMask);
+        gameObject.layer = tempLayer;
 
         if (nearWalls.Length <= 0)
             return;
 
-        Vector2 nearestPoint = nearWalls[0].ClosestPoint(transform.position);
-        float nearestDist = ((Vector2)transform.position - nearestPoint).sqrMagnitude;
-        foreach (Collider2D wall in nearWalls[1..])
+        Vector2 nearestPoint = Vector2.zero;
+        float nearestDist = Mathf.Infinity;
+        foreach (Collider2D wall in nearWalls)
         {
             Vector2 newPoint = wall.ClosestPoint(transform.position);
             float newDist = ((Vector2)transform.position - nearestPoint).sqrMagnitude;
-            if (newDist < nearestDist)
+            if (newDist < nearestDist && newDist > 0.125f)
             {
                 nearestPoint = newPoint;
                 nearestDist = newDist;
             }
         }
 
-        rb.linearVelocity = CMath.TryAdd2(rb.linearVelocity, wallAvoidanceAccel * Time.deltaTime *
-            ((Vector2)transform.position - nearestPoint).normalized, wallAvoidanceSpeed);
+        rb.linearVelocity = CMath.TryAdd2(rb.linearVelocity, avoidanceAccel * stats.speed * Time.deltaTime *
+            ((Vector2)transform.position - nearestPoint).normalized, avoidanceSpeed * stats.speed);
     }
 
     public override void IdleUpdate()
@@ -113,42 +120,47 @@ public class Gnat : Enemy
         }
 
         if (idleMoving)
-            rb.linearVelocity = CMath.TryAdd2(rb.linearVelocity, Time.deltaTime * idleMoveAccel
-                * idleMoveDir, idleMoveSpeed);
+            rb.linearVelocity = CMath.TryAdd2(rb.linearVelocity, Time.deltaTime * idleMoveAccel * stats.speed
+                * idleMoveDir, idleMoveSpeed * stats.speed);
         else
-            rb.linearVelocity = CMath.TrySub2(rb.linearVelocity, Time.deltaTime * idleMoveAccel);
+            rb.linearVelocity = CMath.TrySub2(rb.linearVelocity, Time.deltaTime * idleMoveAccel * stats.speed);
     }
 
     public override void ActiveUpdate()
     {
         if (shooting)
         {
-            rb.linearVelocity = CMath.TrySub2(rb.linearVelocity, Time.deltaTime * idleMoveAccel);
+            rb.linearVelocity = CMath.TrySub2(rb.linearVelocity, Time.deltaTime * idleMoveAccel * stats.speed);
             return;
         }
         base.ActiveUpdate();
         if (!playerVisible || state != AIState.ACTIVE)
         {
             desiredDir = Vector2.down;
-            projectileFireTimer = projectileFireTime;
+            projectileWaitTimer = projectileWaitTime;
             return;
         }
 
-        desiredDir = (trackedPlayer.position - transform.position).normalized;
+        Vector2 playerDir = (trackedPlayer.position - transform.position).normalized;
 
         SpringUtils.CalcDampedSpringMotionParams(ref chaseSpring, Time.deltaTime, chaseSpringFrequency, chaseSpringDamping);
 
         Vector2 pos = transform.position, vel = rb.linearVelocity,
-            desiredPos = (Vector2)trackedPlayer.position - desiredDir * chaseDistance;
+            desiredPos = (Vector2)trackedPlayer.position - playerDir * chaseDistance;
 
         SpringUtils.UpdateDampedSpringMotion(ref pos.x, ref vel.x, desiredPos.x, chaseSpring);
         SpringUtils.UpdateDampedSpringMotion(ref pos.x, ref vel.x, desiredPos.x, chaseSpring);
 
         rb.linearVelocity = vel;
 
-        projectileFireTimer = Mathf.Max(0, projectileFireTimer - Time.deltaTime);
-        if (projectileFireTimer > 0)
+        projectileWaitTimer = Mathf.Max(0, projectileWaitTimer - Time.deltaTime);
+        if (projectileWaitTimer > 0)
+        {
+            desiredDir = Vector2.down;
             return;
+        }
+
+        desiredDir = playerDir;
 
         shooting = true;
         projectileIndicator.DOScale(projectile.radius, projectileFireTime).OnComplete(() =>
@@ -167,6 +179,6 @@ public class Gnat : Enemy
     {
         base.ActiveEnter();
         shooting = false;
-        projectileFireTimer = projectileFireTime;
+        projectileWaitTimer = projectileWaitTime;
     }
 }

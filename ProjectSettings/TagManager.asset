@@ -8,6 +8,7 @@ TagManager:
   - Enemy
   - Death Zone
   - Moss
+  - Bottom Ground
   layers:
   - Default
   - TransparentFX
@@ -23,8 +24,8 @@ TagManager:
   - Incorporeal
   - One Way Block
   - Target
-  - 
-  - 
+  - Dead Player
+  - Bottom Ground
   - 
   - 
   - 
@@ -65,6 +66,9 @@ TagManager:
     locked: 0
   - name: Ground
     uniqueID: 1557472805
+    locked: 0
+  - name: UI
+    uniqueID: 624822735
     locked: 0
   m_RenderingLayers:
   - Default

@@ -9,8 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e3cac4af826864049a31930407e148e7, type: 3}
-  m_Name: RimeAntiDefense
-  m_EditorClassIdentifier: Assembly-CSharp::DefenseStatus
-  defense: -6
-  defensePerStack: 0
+  m_Script: {fileID: 11500000, guid: f47f4593671069e42be79bce947bab5d, type: 3}
+  m_Name: Bebop Duration
+  m_EditorClassIdentifier: Assembly-CSharp::DurationStatus
+  duration: 5
+  stackMode: 1

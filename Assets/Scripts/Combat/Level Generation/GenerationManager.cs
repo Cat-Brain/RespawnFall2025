@@ -57,8 +57,22 @@ public class GenerationManager : MonoBehaviour
 
     public void UnloadInactiveLevels()
     {
-        foreach ((GameObject obj, Level level) in spawnedLevels)
+        foreach ((GameObject obj, _) in spawnedLevels)
             if (obj != currentLevelObj)
                 obj.SetActive(false);
+    }
+
+    public void LoadAllLevels()
+    {
+        foreach ((GameObject obj, _) in spawnedLevels)
+            obj.SetActive(true);
+    }
+
+    public void DespawnLevels()
+    {
+        foreach ((GameObject obj, _) in spawnedLevels)
+            Destroy(obj);
+        spawnedLevels.Clear();
+        enemySpawnManager.DespawnEnemies();
     }
 }
