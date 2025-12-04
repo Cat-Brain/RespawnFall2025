@@ -5,7 +5,7 @@
 	"y": 48,
 	"width": 432,
 	"height": 288,
-	"bgColor": "#696A79",
+	"bgColor": "#FFFFFF",
 	"neighbourLevels": [
 		{
 			"levelIid": "831de8e0-ac70-11f0-bd7d-5b2493647f6c",
@@ -269,7 +269,7 @@
 				"id": "Enemy_Ground_Spawn",
 				"iid": "74731510-ac70-11f0-b4ed-e19379ec7651",
 				"layer": "Entities",
-				"x": 64,
+				"x": 80,
 				"y": 144,
 				"width": 16,
 				"height": 16,
@@ -370,7 +370,7 @@
 				"id": "Enemy_Spawn_Buffer",
 				"iid": "659fffb0-ac70-11f0-b4ed-850d17eebf90",
 				"layer": "Entities",
-				"x": 32,
+				"x": 48,
 				"y": 144,
 				"width": 16,
 				"height": 16,
@@ -381,18 +381,7 @@
 				"id": "Enemy_Spawn_Buffer",
 				"iid": "65d392d0-ac70-11f0-b4ed-cf74bc4adcab",
 				"layer": "Entities",
-				"x": 48,
-				"y": 144,
-				"width": 16,
-				"height": 16,
-				"color": 6183259,
-				"customFields" : {}
-			},
-			{
-				"id": "Enemy_Spawn_Buffer",
-				"iid": "68343f20-ac70-11f0-b4ed-57b2dbec37c5",
-				"layer": "Entities",
-				"x": 112,
+				"x": 64,
 				"y": 144,
 				"width": 16,
 				"height": 16,
@@ -403,7 +392,7 @@
 				"id": "Enemy_Spawn_Buffer",
 				"iid": "68682060-ac70-11f0-b4ed-c95073c2eb31",
 				"layer": "Entities",
-				"x": 96,
+				"x": 112,
 				"y": 144,
 				"width": 16,
 				"height": 16,
@@ -414,7 +403,7 @@
 				"id": "Enemy_Spawn_Buffer",
 				"iid": "689c9de0-ac70-11f0-b4ed-715526b907b6",
 				"layer": "Entities",
-				"x": 80,
+				"x": 96,
 				"y": 144,
 				"width": 16,
 				"height": 16,
@@ -885,17 +874,6 @@
 			},
 			{
 				"id": "Enemy_Spawn_Buffer",
-				"iid": "9fd93de0-ac70-11f0-b4ed-df4806f2884f",
-				"layer": "Entities",
-				"x": 96,
-				"y": 240,
-				"width": 16,
-				"height": 16,
-				"color": 6183259,
-				"customFields" : {}
-			},
-			{
-				"id": "Enemy_Spawn_Buffer",
 				"iid": "a01fbcc0-ac70-11f0-b4ed-b31a73ae8fae",
 				"layer": "Entities",
 				"x": 128,
@@ -1085,7 +1063,7 @@
 				"id": "Enemy_Spawn_Buffer",
 				"iid": "e5a066a0-ac70-11f0-b4ed-c96ce8fa845a",
 				"layer": "Entities",
-				"x": 32,
+				"x": 48,
 				"y": 128,
 				"width": 16,
 				"height": 16,
@@ -1096,7 +1074,7 @@
 				"id": "Enemy_Spawn_Buffer",
 				"iid": "e5cb2020-ac70-11f0-b4ed-3b453e02477a",
 				"layer": "Entities",
-				"x": 48,
+				"x": 64,
 				"y": 128,
 				"width": 16,
 				"height": 16,
@@ -1107,7 +1085,7 @@
 				"id": "Enemy_Spawn_Buffer",
 				"iid": "e6093a90-ac70-11f0-b4ed-75ba756cfc8c",
 				"layer": "Entities",
-				"x": 64,
+				"x": 80,
 				"y": 128,
 				"width": 16,
 				"height": 16,
@@ -1118,17 +1096,6 @@
 				"id": "Enemy_Spawn_Buffer",
 				"iid": "e641fdd0-ac70-11f0-b4ed-8fb6d0f4f62d",
 				"layer": "Entities",
-				"x": 80,
-				"y": 128,
-				"width": 16,
-				"height": 16,
-				"color": 6183259,
-				"customFields" : {}
-			},
-			{
-				"id": "Enemy_Spawn_Buffer",
-				"iid": "e6848510-ac70-11f0-b4ed-db773892be38",
-				"layer": "Entities",
 				"x": 96,
 				"y": 128,
 				"width": 16,
@@ -1138,7 +1105,7 @@
 			},
 			{
 				"id": "Enemy_Spawn_Buffer",
-				"iid": "e6c389e0-ac70-11f0-b4ed-c32ffc888419",
+				"iid": "e6848510-ac70-11f0-b4ed-db773892be38",
 				"layer": "Entities",
 				"x": 112,
 				"y": 128,
@@ -1490,9 +1457,9 @@
 			},
 			{
 				"id": "Enemy_Spawn_Buffer",
-				"iid": "40727ae0-ac70-11f0-bd7d-97ce692cd7b0",
+				"iid": "db67e690-ac70-11f0-bd7d-cf580de7209f",
 				"layer": "Entities",
-				"x": 80,
+				"x": 96,
 				"y": 240,
 				"width": 16,
 				"height": 16,
@@ -1507,6 +1474,17 @@
 				"layer": "Entities",
 				"x": 208,
 				"y": 224,
+				"width": 48,
+				"height": 8,
+				"color": 1035719,
+				"customFields" : {}
+			},
+			{
+				"id": "Bounce_Pad",
+				"iid": "3362d6b0-ac70-11f0-bd7d-2b6384482396",
+				"layer": "Entities",
+				"x": 32,
+				"y": 144,
 				"width": 48,
 				"height": 8,
 				"color": 1035719,
@@ -1548,23 +1526,12 @@
 				"customFields" : {}
 			}
 		],
-		"End_of_Level": [
+		"End_of_Level_Right": [
 			{
-				"id": "End_of_Level",
+				"id": "End_of_Level_Right",
 				"iid": "3baeb140-ac70-11f0-bd7d-b185cb4f7555",
 				"layer": "Entities",
 				"x": 320,
-				"y": 240,
-				"width": 16,
-				"height": 16,
-				"color": 14288670,
-				"customFields" : {}
-			},
-			{
-				"id": "End_of_Level",
-				"iid": "3d379b30-ac70-11f0-bd7d-bd5e19b9dee8",
-				"layer": "Entities",
-				"x": 80,
 				"y": 240,
 				"width": 16,
 				"height": 16,
@@ -1582,6 +1549,19 @@
 				"width": 16,
 				"height": 16,
 				"color": 15201580,
+				"customFields" : {}
+			}
+		],
+		"End_of_Level_Left": [
+			{
+				"id": "End_of_Level_Left",
+				"iid": "d86f8e20-ac70-11f0-bd7d-9f52d242c970",
+				"layer": "Entities",
+				"x": 80,
+				"y": 240,
+				"width": 16,
+				"height": 16,
+				"color": 14288670,
 				"customFields" : {}
 			}
 		]
