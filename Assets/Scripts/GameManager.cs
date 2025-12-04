@@ -41,6 +41,7 @@ public class GameManager : MonoBehaviour
     public List<int> pathTaken;
     public bool inCombat, endScreenLanded = false;
     public float startTime = 0, endTime = 0;
+    public int currentLevelMoney = 0;
 
     void Update()
     {
@@ -112,6 +113,7 @@ public class GameManager : MonoBehaviour
 
     public void LoadNextLevel(int path)
     {
+        currentLevelMoney = 0;
         if (path == 0)
         {
             BeginGame();
@@ -225,6 +227,7 @@ public class GameManager : MonoBehaviour
         if (!endScreenLanded)
             return;
 
+        inventory.TrashAll();
         playerManager.Begin();
         SetState(GameState.IN_GAME);
     }

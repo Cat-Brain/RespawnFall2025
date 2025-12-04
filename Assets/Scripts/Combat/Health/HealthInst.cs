@@ -5,7 +5,7 @@ using UnityEngine;
 public class HealthInst : MonoBehaviour
 {
     [HideInInspector] public TickEntity tickEntity;
-    [HideInInspector] public EntityStats stats;
+    [HideInInspector] public Dictionary<StatTarget, EntityStat> stats = new();
 
     public Health data;
     public int health;
@@ -20,7 +20,8 @@ public class HealthInst : MonoBehaviour
     public void Awake()
     {
         tickEntity = GetComponent<TickEntity>();
-        stats = GetComponent<EntityStats>();
+        foreach (EntityStat stat in GetComponents<EntityStat>())
+            stats.Add(stat.target, stat);
 
         data = Instantiate(data);
         data.inst = this;
@@ -58,6 +59,14 @@ public class HealthInst : MonoBehaviour
         AddNewStatuses();
     }
 
+    public void ReInit()
+    {
+        fractionalHealthOffset = 0;
+        data.Init();
+        statuses.Clear();
+        newStatuses.Clear();
+    }
+
     public void AddNewStatuses()
     {
         statuses.AddRange(newStatuses);
@@ -76,6 +85,18 @@ public class HealthInst : MonoBehaviour
         alive = false;
         
         OnDeath();
+    }
+
+    public void ApplyStat(StatChange change)
+    {
+        if (stats.TryGetValue(change.target, out EntityStat stat))
+            stat.mods.Add(change);
+    }
+
+    public void RemoveStat(StatChange match)
+    {
+        if (stats.TryGetValue(match.target, out EntityStat stat))
+            stat.mods.Remove(match);
     }
 
     public bool ApplyHitDamage(float damage, Hit? hit = null)

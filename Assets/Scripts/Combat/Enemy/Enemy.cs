@@ -1,11 +1,9 @@
 using com.cyborgAssets.inspectorButtonPro;
 using UnityEngine;
 
-[RequireComponent(typeof(EntityStats))]
+[RequireComponent(typeof(EntityStat))]
 public class Enemy : OnTickEffect
 {
-    [HideInInspector] public EntityStats stats;
-
     public int tier;
     [Tooltip("Offset added to position at spawn to make bottom of enemy grid alligned")]
     public Vector2 spawnOffset;
@@ -85,8 +83,6 @@ public class Enemy : OnTickEffect
 
     public void Awake()
     {
-        stats = GetComponent<EntityStats>();
-
         SetState(AIState.IDLE);
     }
 

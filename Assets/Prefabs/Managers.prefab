@@ -510,7 +510,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BarDisplay
   rectTransform: {fileID: 6442576263260810219}
-  baseDim: {x: 0, y: 0}
+  baseDim: {x: 56, y: 8}
 --- !u!1 &1555276496914292317
 GameObject:
   m_ObjectHideFlags: 0

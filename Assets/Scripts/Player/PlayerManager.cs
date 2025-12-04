@@ -8,12 +8,13 @@ public enum HitResult
     HIT, ABSORBED, BLOCKED
 }
 
-[RequireComponent(typeof(EntityStats), typeof(HealthInst))]
+[RequireComponent(typeof(EntityStat), typeof(HealthInst))]
 [RequireComponent(typeof(PlayerWeaponInstance), typeof(PlayerMove))]
 [RequireComponent(typeof(PlayerGravity), typeof(Rigidbody2D))]
 [RequireComponent(typeof(Collider2D))]
 public class PlayerManager : MonoBehaviour
 {
+    public EntityStat speedStat, jumpHeightStat;
     public FlipToDirection playerFlip;
     public List<Renderer> rends;
     public List<LineRenderer> mainLRs, beakLRs, eyeLRs;
@@ -39,7 +40,8 @@ public class PlayerManager : MonoBehaviour
     
     [HideInInspector] public GameManager gameManager;
 
-    [HideInInspector] public EntityStats stats;
+    [HideInInspector] public EntityStat stats;
+    [HideInInspector] public HealthInst health;
     [HideInInspector] public PlayerWeaponInstance playerWeapon;
     [HideInInspector] public PlayerMove playerMove;
     [HideInInspector] public PlayerGravity playerGravity;
@@ -52,7 +54,8 @@ public class PlayerManager : MonoBehaviour
 
         gameManager.playerManager = this;
 
-        stats = GetComponent<EntityStats>();
+        stats = GetComponent<EntityStat>();
+        health = GetComponent<HealthInst>();
         playerWeapon = GetComponent<PlayerWeaponInstance>();
         playerMove = GetComponent<PlayerMove>();
         playerGravity = GetComponent<PlayerGravity>();
@@ -60,6 +63,8 @@ public class PlayerManager : MonoBehaviour
         col = GetComponent<Collider2D>();
 
         sortingLayer = rends[0].sortingLayerName;
+
+        jumpHeightStat.baseValue = playerMove.jumpHeight;
     }
 
     void Update()
@@ -227,6 +232,7 @@ public class PlayerManager : MonoBehaviour
     public void Begin()
     {
         gameObject.layer = normalLayer;
+        health.ReInit();
     }
 
     public void OnDrawGizmos()

@@ -6,9 +6,9 @@ PhysicsMaterial2D:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Skull Gnat
+  m_Name: Skull Gnat Normal
   serializedVersion: 2
-  friction: 1
-  bounciness: 0
-  m_FrictionCombine: 4
-  m_BounceCombine: 3
+  friction: 0
+  bounciness: 0.5
+  m_FrictionCombine: 3
+  m_BounceCombine: 0

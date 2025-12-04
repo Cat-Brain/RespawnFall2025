@@ -11,7 +11,7 @@ public class PlayerHealth : Health
     public override void Init()
     {
         base.Init();
-        RefreshHealth(startHealth == -1 ? maxHealth : startHealth);
+        RefreshHealth(inst.health);
     }
 
     public override void OnDeath()

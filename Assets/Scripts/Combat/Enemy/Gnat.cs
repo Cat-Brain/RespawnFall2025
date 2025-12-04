@@ -8,6 +8,7 @@ public class Gnat : Enemy
     public Projectile projectile;
     public GameObject projectilePrefab;
     public Transform leftWing, rightWing, projectileIndicator;
+    public EntityStat speedStat, damageStat;
 
     public float projectileFireTime, projectileStunTime, projectileWaitTime, projectileRecoil;
     public float minWingRot, maxWingRot, wingRotFrequency;
@@ -22,6 +23,8 @@ public class Gnat : Enemy
     public float chaseSpringFrequency, chaseSpringDamping, chaseDistance;
 
     public float rotateSpringFrequency, rotateSpringDamping;
+
+    public PhysicsMaterial2D normalPhyMat, stunnedPhyMat;
 
     public Vector2 desiredDir;
 
@@ -52,6 +55,8 @@ public class Gnat : Enemy
         desiredDir = Vector2.down;
         idleMoving = false;
         RandomizeIdleMove();
+
+        damageStat.baseValue = projectile.hit.damage;
     }
 
     public void LateUpdate()
@@ -72,6 +77,8 @@ public class Gnat : Enemy
 
     public void FixedUpdate()
     {
+        rb.sharedMaterial = state == AIState.STUNNED ? stunnedPhyMat : normalPhyMat;
+
         float rotation = -Vector2.SignedAngle(-transform.up, desiredDir), velocity = rb.angularVelocity;
 
         SpringUtils.CalcDampedSpringMotionParams(ref rotateSpring, Time.deltaTime, rotateSpringFrequency, rotateSpringDamping);
@@ -94,16 +101,18 @@ public class Gnat : Enemy
         foreach (Collider2D wall in nearWalls)
         {
             Vector2 newPoint = wall.ClosestPoint(transform.position);
-            float newDist = ((Vector2)transform.position - nearestPoint).sqrMagnitude;
+            float newDist = ((Vector2)transform.position - newPoint).sqrMagnitude;
             if (newDist < nearestDist && newDist > 0.125f)
             {
                 nearestPoint = newPoint;
                 nearestDist = newDist;
+                rb.linearVelocity = CMath.TryAdd2(rb.linearVelocity, avoidanceAccel * speedStat.value * Time.deltaTime *
+                    ((Vector2)transform.position - nearestPoint).normalized, avoidanceSpeed * speedStat.value);
             }
         }
 
-        rb.linearVelocity = CMath.TryAdd2(rb.linearVelocity, avoidanceAccel * stats.speed * Time.deltaTime *
-            ((Vector2)transform.position - nearestPoint).normalized, avoidanceSpeed * stats.speed);
+        rb.linearVelocity = CMath.TryAdd2(rb.linearVelocity, avoidanceAccel * speedStat.value * Time.deltaTime *
+            ((Vector2)transform.position - nearestPoint).normalized, avoidanceSpeed * speedStat.value);
     }
 
     public override void IdleUpdate()
@@ -120,17 +129,17 @@ public class Gnat : Enemy
         }
 
         if (idleMoving)
-            rb.linearVelocity = CMath.TryAdd2(rb.linearVelocity, Time.deltaTime * idleMoveAccel * stats.speed
-                * idleMoveDir, idleMoveSpeed * stats.speed);
+            rb.linearVelocity = CMath.TryAdd2(rb.linearVelocity, Time.deltaTime * idleMoveAccel * speedStat.value
+                * idleMoveDir, idleMoveSpeed * speedStat.value);
         else
-            rb.linearVelocity = CMath.TrySub2(rb.linearVelocity, Time.deltaTime * idleMoveAccel * stats.speed);
+            rb.linearVelocity = CMath.TrySub2(rb.linearVelocity, Time.deltaTime * idleMoveAccel * speedStat.value);
     }
 
     public override void ActiveUpdate()
     {
         if (shooting)
         {
-            rb.linearVelocity = CMath.TrySub2(rb.linearVelocity, Time.deltaTime * idleMoveAccel * stats.speed);
+            rb.linearVelocity = CMath.TrySub2(rb.linearVelocity, Time.deltaTime * idleMoveAccel * speedStat.value);
             return;
         }
         base.ActiveUpdate();
@@ -169,8 +178,13 @@ public class Gnat : Enemy
             shooting = false;
             stunTimer = projectileStunTime;
             SetState(AIState.STUNNED);
-            Instantiate(projectilePrefab, projectileIndicator.position, transform.rotation).
-            GetComponent<ProjectileInst>().Init(projectile, -transform.up);
+
+            ProjectileInst projectileInst =
+                Instantiate(projectilePrefab, projectileIndicator.position, transform.rotation).
+                GetComponent<ProjectileInst>();
+            projectileInst.Init(projectile, -transform.up);
+            projectileInst.data.hit.damage = damageStat.value;
+
             rb.linearVelocity += (Vector2)transform.up * projectileRecoil;
         });
     }

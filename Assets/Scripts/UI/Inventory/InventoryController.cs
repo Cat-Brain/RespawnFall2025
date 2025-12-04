@@ -49,9 +49,10 @@ public class InventoryController : MonoBehaviour
         inst.item = item;
         inst.controller = this;
 
-        inst.rectTransform.anchoredPosition = WorldPos(FindValidPosition(item));
-        AddToInventory(inst);
+        inst.rectTransform.anchoredPosition = inst.desiredPos = WorldPos(FindValidPosition(item));
         inst.Init();
+        AddToInventory(inst);
+        inst.Clean();
 
         return inst;
     }
@@ -82,12 +83,12 @@ public class InventoryController : MonoBehaviour
     public Vector2Int LocalGridPos(Vector2 position)
     {
         return Vector2Int.RoundToInt(
-            (position - inventoryTransform.anchoredPosition - inventoryTransform.offsetMin) / cellWidth - Vector2.one * 0.5f);
+            position / cellWidth + (dimensions - Vector2.one) * 0.5f);
     }
 
     public Vector2 WorldPos(Vector2 gridPos)
     {
-        return (gridPos + Vector2.one * 0.5f) * cellWidth + inventoryTransform.anchoredPosition + inventoryTransform.offsetMin;
+        return (gridPos + (Vector2.one - dimensions) * 0.5f) * cellWidth;
     }
 
     public Vector2 RoundToGridPos(Vector2 position)
@@ -175,6 +176,18 @@ public class InventoryController : MonoBehaviour
         item.desiredPos = BufferPos(item.index);
     }
 
+    public void SilentAddItems()
+    {
+        foreach (InventoryInst item in items)
+            item.item.OnPlace();
+    }
+
+    public void SilentRemoveItems()
+    {
+        foreach (InventoryInst item in items)
+            item.item.OnRemove();
+    }
+
     public void AddToInventory(InventoryInst item)
     {
         if (ValidPosition(item))
@@ -187,7 +200,10 @@ public class InventoryController : MonoBehaviour
     {
         item.index = items.Count;
         SnapInventoryPosition(item);
+
+        SilentRemoveItems();
         items.Add(item);
+        SilentAddItems();
     }
 
     public void AddToBuffer(InventoryInst item)
@@ -209,6 +225,7 @@ public class InventoryController : MonoBehaviour
 
     public void RemoveFromItems(InventoryInst item)
     {
+        SilentRemoveItems();
         items.RemoveAt(item.index);
 
         item.index = -1;
@@ -219,6 +236,8 @@ public class InventoryController : MonoBehaviour
 
         for (int i = 0; i < items.Count; i++)
             items[i].index = i;
+
+        SilentAddItems();
     }
 
     public void RemoveFromBuffer(InventoryInst item)
@@ -244,5 +263,19 @@ public class InventoryController : MonoBehaviour
             Destroy(item.gameObject);
 
         bufferItems.Clear();
+    }
+
+    public void TrashInventory()
+    {
+        foreach (InventoryInst item in items)
+            Destroy(item.gameObject);
+
+        items.Clear();
+    }
+
+    public void TrashAll()
+    {
+        TrashBuffer();
+        TrashInventory();
     }
 }

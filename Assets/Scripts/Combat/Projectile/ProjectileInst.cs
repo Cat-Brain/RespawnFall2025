@@ -25,18 +25,14 @@ public class ProjectileInst : MonoBehaviour
 
         lastPos = transform.position;
         this.direction = direction;
-        this.data = data;
-        data.Init(this);
+        this.data = Instantiate(data);
+        this.data.Init(this);
         OnInit();
     }
 
     public void Init(Vector2 direction)
     {
-        lastPos = transform.position;
-        this.direction = direction;
-        data = Instantiate(data);
-        data.Init(this);
-        OnInit();
+        Init(data, direction);
     }
 
     public virtual void OnInit()
