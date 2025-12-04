@@ -11,11 +11,8 @@ public class HitOtherOnTickStatus : StatusComponent
 
     public override void Tick(StatusEffect effect, int tickIndex)
     {
-        Debug.Log("?");
         if (this.tickIndex != tickIndex)
             return;
-
-        Debug.Log("??");
 
         Collider2D[] hitColliders = Physics2D.OverlapCircleAll(
             effect.health.transform.position, hitRadius, hitMask);
@@ -23,9 +20,6 @@ public class HitOtherOnTickStatus : StatusComponent
         foreach (Collider2D col in hitColliders)
             if ((hitSelf || col.transform != effect.health.transform)
                 && col.TryGetComponent(out HealthInst health))
-            {
                 health.ApplyHit(hit);
-                Debug.Log("!");
-            }
     }
 }

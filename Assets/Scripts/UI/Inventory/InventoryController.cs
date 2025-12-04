@@ -19,6 +19,7 @@ public enum InventoryLayer
 
 public class InventoryController : MonoBehaviour
 {
+    [HideInInspector] public GameManager manager;
     public Canvas canvas;
     public RectTransform inventoryTransform, bufferTransform, floatingTransform;
     public GameObject inventoryItemPrefab;
@@ -30,6 +31,11 @@ public class InventoryController : MonoBehaviour
     public SpringUtils.tDampedSpringMotionParams itemSpring = new();
     public List<InventoryInst> items = new(), bufferItems = new();
     public byte[,] map;
+
+    void Awake()
+    {
+        manager = FindAnyObjectByType<GameManager>();
+    }
 
     void Update()
     {
@@ -230,5 +236,13 @@ public class InventoryController : MonoBehaviour
             bufferItems[i].index = i;
             SnapBufferPosition(bufferItems[i]);
         }
+    }
+
+    public void TrashBuffer()
+    {
+        foreach (InventoryInst item in bufferItems)
+            Destroy(item.gameObject);
+
+        bufferItems.Clear();
     }
 }
