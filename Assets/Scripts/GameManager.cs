@@ -34,7 +34,7 @@ public class GameManager : MonoBehaviour
     public Color[] levelTypeColors;
     
     public GameState gameState;
-    public AudioClip deathClip;
+  
     public GameObject lobby;
 
     [Header("Debug Variables")]
@@ -187,8 +187,6 @@ public class GameManager : MonoBehaviour
     {
         if (gameState != GameState.IN_GAME)
             return;
-
-        AudioManager.instance.PlaySoundFXClip(deathClip, transform, 1.0f);
 
         LoadState(GameState.LOSE_SCREEN, mainMenuSceneName);
     }
