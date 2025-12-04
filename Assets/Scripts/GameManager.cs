@@ -7,6 +7,7 @@ using System.Linq;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.InputSystem;
+using FMODUnity;
 
 public enum GameState
 {
@@ -30,8 +31,9 @@ public class GameManager : MonoBehaviour
 
     // Audio stuff
     private FMOD.Studio.EventInstance instance;
+    [FMODUnity.EventRef]
     public string fmodEvent;
-    private int ThemeIndex;
+    public int ThemeIndexCur;
 
     public int pathCount;
     public LevelType[] basePath, pathEnd;
@@ -52,8 +54,7 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
-        instance = FMODUnity.RuntimeManager.CreateInstance(fmodEvent);
-        instance.start();    
+        instance = GetComponent<StudioEventEmitter>().EventInstance;
     }
 
     void Update()
@@ -125,6 +126,7 @@ public class GameManager : MonoBehaviour
             InitPaths();
             pathTaken.Add(path);
             generationManager.SpawnLevel(0, LevelType.COMBAT);
+            instance.setParameterByName("ThemeIndex", 1);
             return;
         }
         pathTaken.Add(path);

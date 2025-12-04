@@ -22,7 +22,7 @@ MonoBehaviour:
   - {fileID: 2832169151365078843}
   IsStream: 1
   Is3D: 0
-  IsOneShot: 1
+  IsOneShot: 0
   Parameters:
   - {fileID: 9170351406253216302}
   MinDistance: 1
@@ -51,7 +51,7 @@ MonoBehaviour:
   StringsBanks:
   - {fileID: 7166000389337221664}
   cacheVersion: 131857
-  cacheTime: 639004583839411242
+  cacheTime: 639004591754538715
   SerializableEventsDict:
   - key: event:/Music and Background
     index: 0
@@ -70,7 +70,7 @@ MonoBehaviour:
   Path: Game SFX/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 639004583839390293
+  lastModified: 639004591754528755
   FileSizes:
   - Name: Desktop
     Value: 4380096
@@ -90,7 +90,7 @@ MonoBehaviour:
   Path: Game SFX/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 639004583839411242
+  lastModified: 639004591754538715
   FileSizes:
   - Name: Desktop
     Value: 834
