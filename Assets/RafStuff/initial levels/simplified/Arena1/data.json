@@ -54,7 +54,7 @@
 				"layer": "Entities",
 				"x": 96,
 				"y": 96,
-				"width": 96,
+				"width": 80,
 				"height": 16,
 				"color": 7552569,
 				"customFields" : {}
@@ -179,7 +179,7 @@
 				"id": "Player",
 				"iid": "2d2af1a0-ac70-11f0-b4ed-ebf4fc297783",
 				"layer": "Entities",
-				"x": 168,
+				"x": 184,
 				"y": 248,
 				"width": 16,
 				"height": 16,
@@ -876,28 +876,6 @@
 			},
 			{
 				"id": "Enemy_Spawn_Buffer",
-				"iid": "9f57b1d0-ac70-11f0-b4ed-7f408203a2b2",
-				"layer": "Entities",
-				"x": 64,
-				"y": 240,
-				"width": 16,
-				"height": 16,
-				"color": 6183259,
-				"customFields" : {}
-			},
-			{
-				"id": "Enemy_Spawn_Buffer",
-				"iid": "9f9f4220-ac70-11f0-b4ed-ef15455c07bd",
-				"layer": "Entities",
-				"x": 80,
-				"y": 240,
-				"width": 16,
-				"height": 16,
-				"color": 6183259,
-				"customFields" : {}
-			},
-			{
-				"id": "Enemy_Spawn_Buffer",
 				"iid": "9fd93de0-ac70-11f0-b4ed-df4806f2884f",
 				"layer": "Entities",
 				"x": 96,
@@ -923,17 +901,6 @@
 				"iid": "a07eccb0-ac70-11f0-b4ed-372f1236294e",
 				"layer": "Entities",
 				"x": 144,
-				"y": 240,
-				"width": 16,
-				"height": 16,
-				"color": 6183259,
-				"customFields" : {}
-			},
-			{
-				"id": "Enemy_Spawn_Buffer",
-				"iid": "a3fe2f70-ac70-11f0-b4ed-35ecb14e16cc",
-				"layer": "Entities",
-				"x": 320,
 				"y": 240,
 				"width": 16,
 				"height": 16,
@@ -1500,6 +1467,28 @@
 				"height": 16,
 				"color": 6183259,
 				"customFields" : {}
+			},
+			{
+				"id": "Enemy_Spawn_Buffer",
+				"iid": "3fc87f40-ac70-11f0-bd7d-8988fb64f571",
+				"layer": "Entities",
+				"x": 64,
+				"y": 240,
+				"width": 16,
+				"height": 16,
+				"color": 6183259,
+				"customFields" : {}
+			},
+			{
+				"id": "Enemy_Spawn_Buffer",
+				"iid": "40727ae0-ac70-11f0-bd7d-97ce692cd7b0",
+				"layer": "Entities",
+				"x": 80,
+				"y": 240,
+				"width": 16,
+				"height": 16,
+				"color": 6183259,
+				"customFields" : {}
 			}
 		],
 		"Bounce_Pad": [
@@ -1547,6 +1536,43 @@
 				"width": 432,
 				"height": 16,
 				"color": 11190983,
+				"customFields" : {}
+			}
+		],
+		"End_of_Level": [
+			{
+				"id": "End_of_Level",
+				"iid": "3baeb140-ac70-11f0-bd7d-b185cb4f7555",
+				"layer": "Entities",
+				"x": 320,
+				"y": 240,
+				"width": 16,
+				"height": 16,
+				"color": 14288670,
+				"customFields" : {}
+			},
+			{
+				"id": "End_of_Level",
+				"iid": "3d379b30-ac70-11f0-bd7d-bd5e19b9dee8",
+				"layer": "Entities",
+				"x": 80,
+				"y": 240,
+				"width": 16,
+				"height": 16,
+				"color": 14288670,
+				"customFields" : {}
+			}
+		],
+		"Reward_Item": [
+			{
+				"id": "Reward_Item",
+				"iid": "6c33a6e0-ac70-11f0-bd7d-0373b489357f",
+				"layer": "Entities",
+				"x": 176,
+				"y": 240,
+				"width": 16,
+				"height": 16,
+				"color": 15201580,
 				"customFields" : {}
 			}
 		]
