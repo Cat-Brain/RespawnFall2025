@@ -10,6 +10,7 @@ public class InventoryItem : ScriptableObject
     public List<Vector2Int> positions;
 
     public Sprite sprite;
+    public string description;
 
     public List<ItemComponent> components;
 

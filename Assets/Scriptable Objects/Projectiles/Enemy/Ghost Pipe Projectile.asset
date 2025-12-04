@@ -9,24 +9,26 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4c85cfa7ca2dd0446846239e236b31d2, type: 3}
-  m_Name: Skull Gnat Projectile
-  m_EditorClassIdentifier: Assembly-CSharp::Projectile
-  color: {r: 0.33333334, g: 0.7019608, b: 0.23137255, a: 1}
+  m_Script: {fileID: 11500000, guid: e6159e6f8fe7ea34182270736bff1ff0, type: 3}
+  m_Name: Ghost Pipe Projectile
+  m_EditorClassIdentifier: Assembly-CSharp::HomingProjectile
+  color: {r: 1, g: 1, b: 1, a: 1}
   hit:
     position: {x: 0, y: 0}
-    damage: 10
+    damage: 0
     statuses: []
   targetMask:
     serializedVersion: 2
     m_Bits: 1024
   destroyedByMask:
     serializedVersion: 2
-    m_Bits: 8193
+    m_Bits: 0
   radius: 0.5
-  speed: 7
-  range: 10
+  speed: 3
+  range: 15
   spread: 0
   spawnTime: 0
-  destructTime: 0.25
+  destructTime: 0.5
   inst: {fileID: 0}
+  searchRadius: 10
+  rotationSpeed: 45

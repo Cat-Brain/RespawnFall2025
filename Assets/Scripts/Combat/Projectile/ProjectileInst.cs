@@ -4,6 +4,7 @@ using System.Collections.Generic;
 
 public class ProjectileInst : MonoBehaviour
 {
+    public Collider2D col;
     public Rigidbody2D rb;
     public Projectile data;
     public List<SpriteRenderer> spriteRends;
@@ -42,6 +43,7 @@ public class ProjectileInst : MonoBehaviour
 
     public void FixedUpdate()
     {
+        data.OnUpdate();
         remainingRange -= Vector2.Distance(lastPos, transform.position);
         lastPos = transform.position;
         if (remainingRange < 0)
