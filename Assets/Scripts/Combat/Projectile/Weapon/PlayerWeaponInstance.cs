@@ -5,6 +5,7 @@ using UnityEngine.InputSystem;
 [ExecuteInEditMode]
 public class PlayerWeaponInstance : MonoBehaviour
 {
+    public EntityStat damageStat;
     public InputActionReference primaryAction, reloadAction;
     public PlayerManager playerManager;
 
@@ -13,7 +14,7 @@ public class PlayerWeaponInstance : MonoBehaviour
     void Awake()
     {
         if (Application.isPlaying)
-            SetWeapon(weapon);  
+            SetWeapon(weapon);
     }
 
     void Update()

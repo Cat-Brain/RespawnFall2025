@@ -10,6 +10,6 @@ public class ApplyStatModOnTick : StatusComponent
     public override void Tick(StatusEffect effect, int tickIndex)
     {
         if (this.tickIndex == tickIndex)
-            effect.health.stats.ApplyMod(new StatChange(statMod, effect, target));
+            effect.health.ApplyStat(new StatChange(statMod, effect, target));
     }
 }

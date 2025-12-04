@@ -44,6 +44,13 @@ public class InventoryInst : MonoBehaviour, IPointerDownHandler, IBeginDragHandl
         rectTransform.anchoredPosition = pos;
     }
 
+    void OnDestroy()
+    {
+        if (item.inst == null)
+            return;
+        Destroy(item);
+    }
+
     public void OnPointerDown(PointerEventData eventData)
     {
         //Debug.Log("OnPointerDown");

@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public struct StatChange
+public class StatChange : System.IComparable<StatChange>
 {
     public StatModifier modifier;
     public Object applier;
@@ -11,5 +11,10 @@ public struct StatChange
         this.modifier = modifier;
         this.applier = applier;
         this.target = target;
+    }
+
+    public int CompareTo(StatChange other)
+    {
+        return modifier.CompareTo(other.modifier);
     }
 }

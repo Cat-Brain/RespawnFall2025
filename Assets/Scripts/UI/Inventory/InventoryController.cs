@@ -176,6 +176,18 @@ public class InventoryController : MonoBehaviour
         item.desiredPos = BufferPos(item.index);
     }
 
+    public void SilentAddItems()
+    {
+        foreach (InventoryInst item in items)
+            item.item.OnPlace();
+    }
+
+    public void SilentRemoveItems()
+    {
+        foreach (InventoryInst item in items)
+            item.item.OnRemove();
+    }
+
     public void AddToInventory(InventoryInst item)
     {
         if (ValidPosition(item))
@@ -188,7 +200,10 @@ public class InventoryController : MonoBehaviour
     {
         item.index = items.Count;
         SnapInventoryPosition(item);
+
+        SilentRemoveItems();
         items.Add(item);
+        SilentAddItems();
     }
 
     public void AddToBuffer(InventoryInst item)
@@ -210,6 +225,7 @@ public class InventoryController : MonoBehaviour
 
     public void RemoveFromItems(InventoryInst item)
     {
+        SilentRemoveItems();
         items.RemoveAt(item.index);
 
         item.index = -1;
@@ -220,6 +236,8 @@ public class InventoryController : MonoBehaviour
 
         for (int i = 0; i < items.Count; i++)
             items[i].index = i;
+
+        SilentAddItems();
     }
 
     public void RemoveFromBuffer(InventoryInst item)

@@ -501,6 +501,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bfde92923935cca43bcc5057c82643fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerManager
+  speedStat: {fileID: 7146744419655514772}
   playerFlip: {fileID: 9054125302544342492}
   rends:
   - {fileID: 5599189071243404212}
@@ -526,16 +527,20 @@ MonoBehaviour:
   groundedDistance: 0.1
   groundedMask:
     serializedVersion: 2
-    m_Bits: 12851
+    m_Bits: 45619
   recoilMultiplier: {x: 1, y: 1}
   direction: 1
-  winZoneTag: Win Zone
+  endVelocity: 10
+  normalLayer: 10
+  endLayer: 14
+  endLandTag: Bottom Ground
   active: 1
   stunInvulnerability: 0
   moveStun: 0
   sortingLayer: 
   gameManager: {fileID: 0}
   stats: {fileID: 0}
+  health: {fileID: 0}
   playerWeapon: {fileID: 0}
   playerMove: {fileID: 0}
   playerGravity: {fileID: 0}
@@ -622,7 +627,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::HealthInst
   tickEntity: {fileID: 0}
-  stats: {fileID: 0}
   data: {fileID: 11400000, guid: 422d709fb721ae74fbbd7d269b9431af, type: 2}
   health: 0
   fractionalHealthOffset: 0
@@ -641,7 +645,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56b3795f43d35874892d6a67aaec8268, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EntityStats
-  speed: 1
+  target: 0
+  baseValue: 1
+  value: 0
 --- !u!1 &4569230922230076936
 GameObject:
   m_ObjectHideFlags: 0

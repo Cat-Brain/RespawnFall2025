@@ -16,12 +16,20 @@ public class InventoryItem : ScriptableObject
     [HideInInspector] public Vector2Int dimensions;
     [HideInInspector] public InventoryInst inst;
 
+    void OnDestroy()
+    {
+        foreach (ItemComponent component in components)
+            component.OnSell(this);
+        foreach (ItemComponent component in components)
+            Destroy(component);
+    }
+
     public InventoryItem Instance(InventoryInst inst)
     {
         InventoryItem result = Instantiate(this);
         result.inst = inst;
         for (int i = 0; i < components.Count; i++)
-            components[i] = Instantiate(components[i]);
+            result.components[i] = Instantiate(components[i]);
         return result;
     }
 

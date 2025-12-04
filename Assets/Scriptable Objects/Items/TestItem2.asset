@@ -19,4 +19,7 @@ MonoBehaviour:
   - {x: 0, y: 0}
   - {x: 1, y: 0}
   sprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
+  components:
+  - {fileID: 11400000, guid: 9957120a176ebff47a7b59af58b98a55, type: 2}
   dimensions: {x: 2, y: 2}
+  inst: {fileID: 0}
