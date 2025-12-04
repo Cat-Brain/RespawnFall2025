@@ -31,9 +31,6 @@ public class GameManager : MonoBehaviour
 
     // Audio stuff
     private FMOD.Studio.EventInstance instance;
-    [FMODUnity.EventRef]
-    public string fmodEvent;
-    public int ThemeIndexCur;
 
     public int pathCount;
     public LevelType[] basePath, pathEnd;
@@ -126,7 +123,20 @@ public class GameManager : MonoBehaviour
             InitPaths();
             pathTaken.Add(path);
             generationManager.SpawnLevel(0, LevelType.COMBAT);
-            instance.setParameterByName("ThemeIndex", 1);
+            // Setting music depending on weapon
+            string weaponName = playerManager.playerWeapon.name;
+            if(weaponName == "Saxophone")
+            {
+                instance.setParameterByName("ThemeIndex", 3);
+            }
+
+            else if(weaponName == "Flute")
+            {
+                instance.setParameterByName("ThemeIndex", 2);
+            }
+            
+            
+
             return;
         }
         pathTaken.Add(path);

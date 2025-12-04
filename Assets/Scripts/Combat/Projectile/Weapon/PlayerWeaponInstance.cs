@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using FMODUnity;    
 
 [ExecuteInEditMode]
 public class PlayerWeaponInstance : MonoBehaviour
@@ -9,11 +10,19 @@ public class PlayerWeaponInstance : MonoBehaviour
     public PlayerManager playerManager;
 
     public PlayerWeapon weapon;
+      
+    // Audio Stuff
+    private FMOD.Studio.EventInstance instance;
 
     void Awake()
     {
         if (Application.isPlaying)
             SetWeapon(weapon);  
+    }
+
+    void Start()
+    {
+        instance = GetComponent<StudioEventEmitter>().EventInstance;
     }
 
     void Update()
@@ -40,5 +49,17 @@ public class PlayerWeaponInstance : MonoBehaviour
         playerManager.SetBeakColor(weapon.playerBeakColor, this.weapon.playerBeakColor);
         playerManager.SetEyeColor(weapon.playerEyeColor, this.weapon.playerEyeColor);
         this.weapon = (PlayerWeapon)weapon.Copy(transform);
+
+        if(weapon.name == "Saxophone")
+        {
+            Debug.Log("Sax");
+            instance.setParameterByName("ThemeIndex", 3);
+        }
+
+        else if(weapon.name == "Flute")
+        {
+            Debug.Log("Flute");
+            instance.setParameterByName("ThemeIndex", 2);
+        }
     }
 }
