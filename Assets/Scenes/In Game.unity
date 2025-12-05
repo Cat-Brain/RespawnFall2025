@@ -784,7 +784,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3380364024760122889, guid: 8545a1254127b4542b77563ae7578023, type: 3}
       propertyPath: orthographic size
-      value: 4.1875
+      value: 4.3125
       objectReference: {fileID: 0}
     - target: {fileID: 3380364024760122889, guid: 8545a1254127b4542b77563ae7578023, type: 3}
       propertyPath: m_BackGroundColor.b
@@ -804,7 +804,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3380364024760122889, guid: 8545a1254127b4542b77563ae7578023, type: 3}
       propertyPath: m_NormalizedViewPortRect.y
-      value: 0.0037037036
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3380364024760122889, guid: 8545a1254127b4542b77563ae7578023, type: 3}
       propertyPath: m_NormalizedViewPortRect.width
@@ -812,7 +812,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3380364024760122889, guid: 8545a1254127b4542b77563ae7578023, type: 3}
       propertyPath: m_NormalizedViewPortRect.height
-      value: 0.9925926
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4595435035252540356, guid: 8545a1254127b4542b77563ae7578023, type: 3}
       propertyPath: m_LocalPosition.x
