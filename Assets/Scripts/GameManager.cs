@@ -56,8 +56,6 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         instance = GetComponent<StudioEventEmitter>().EventInstance;
-
-        
     }
 
     void Update()
@@ -139,7 +137,7 @@ public class GameManager : MonoBehaviour
             generationManager.SpawnLevel(0, LevelType.COMBAT);
             // Setting music depending on weapon
             string weaponName = playerWeaponInstance.weapon.name;
-            Debug.Log(weaponName);
+
             if(weaponName == "Flute(Clone)")
             {
                 AmbienceManager.Instance.SetTheme(4);

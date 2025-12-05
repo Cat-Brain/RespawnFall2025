@@ -415,6 +415,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Charger
   tier: 1
+  type: 0
   spawnOffset: {x: 1, y: 0.5}
   spawnDimensions: {x: 2, y: 1}
   playerMask:

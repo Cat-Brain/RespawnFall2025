@@ -3,6 +3,7 @@ using UnityEngine.InputSystem;
 using FMODUnity;    
 
 [ExecuteInEditMode]
+[RequireComponent(typeof(StudioEventEmitter))]
 public class PlayerWeaponInstance : MonoBehaviour
 {
     public EntityStat damageStat, fireRateStat, magazineSizeStat, reloadSpeedStat, rangeStat;
@@ -16,12 +17,16 @@ public class PlayerWeaponInstance : MonoBehaviour
 
     void Awake()
     {
-        if (Application.isPlaying)
-            SetWeapon(weapon);
+
     }
 
     void Start()
     {
+        if (Application.isPlaying)
+        {
+            SetWeapon(weapon);
+        }
+
         instance = GetComponent<StudioEventEmitter>().EventInstance;
     }
 
