@@ -2,14 +2,26 @@
 	"identifier": "Conclusion_2",
 	"uniqueIdentifer": "a9af0be0-8560-11f0-964f-117e669d42e8",
 	"x": 592,
-	"y": 1104,
+	"y": 768,
 	"width": 592,
 	"height": 384,
 	"bgColor": "#696A79",
 	"neighbourLevels": [
 		{
+			"levelIid": "839de9b0-8560-11f0-a001-ad3f92777806",
+			"dir": "nw"
+		},
+		{
+			"levelIid": "3f98ac80-8560-11f0-a19b-67009043462c",
+			"dir": "n"
+		},
+		{
 			"levelIid": "53755620-8560-11f0-964f-ab81400050f7",
 			"dir": "w"
+		},
+		{
+			"levelIid": "28c01340-8560-11f0-b191-9df367c5828d",
+			"dir": "n"
 		}
 	],
 	"customFields" : {},
@@ -40,7 +52,7 @@
 				"x": 400,
 				"y": 320,
 				"width": 16,
-				"height": 16,
+				"height": 8,
 				"color": 12087120,
 				"customFields" : {}
 			},
@@ -51,7 +63,7 @@
 				"x": 384,
 				"y": 320,
 				"width": 16,
-				"height": 16,
+				"height": 8,
 				"color": 12087120,
 				"customFields" : {}
 			},
@@ -62,7 +74,7 @@
 				"x": 368,
 				"y": 320,
 				"width": 16,
-				"height": 16,
+				"height": 8,
 				"color": 12087120,
 				"customFields" : {}
 			},
@@ -73,7 +85,7 @@
 				"x": 352,
 				"y": 320,
 				"width": 16,
-				"height": 16,
+				"height": 8,
 				"color": 12087120,
 				"customFields" : {}
 			},
@@ -84,7 +96,7 @@
 				"x": 176,
 				"y": 352,
 				"width": 16,
-				"height": 16,
+				"height": 8,
 				"color": 12087120,
 				"customFields" : {}
 			},
@@ -95,7 +107,7 @@
 				"x": 208,
 				"y": 352,
 				"width": 16,
-				"height": 16,
+				"height": 8,
 				"color": 12087120,
 				"customFields" : {}
 			},
@@ -106,7 +118,7 @@
 				"x": 192,
 				"y": 352,
 				"width": 16,
-				"height": 16,
+				"height": 8,
 				"color": 12087120,
 				"customFields" : {}
 			},
@@ -117,7 +129,7 @@
 				"x": 224,
 				"y": 352,
 				"width": 16,
-				"height": 16,
+				"height": 8,
 				"color": 12087120,
 				"customFields" : {}
 			},
@@ -128,7 +140,7 @@
 				"x": 384,
 				"y": 64,
 				"width": 16,
-				"height": 16,
+				"height": 8,
 				"color": 12087120,
 				"customFields" : {}
 			},
@@ -139,7 +151,7 @@
 				"x": 240,
 				"y": 64,
 				"width": 16,
-				"height": 16,
+				"height": 8,
 				"color": 12087120,
 				"customFields" : {}
 			},
@@ -150,7 +162,7 @@
 				"x": 224,
 				"y": 64,
 				"width": 16,
-				"height": 16,
+				"height": 8,
 				"color": 12087120,
 				"customFields" : {}
 			},
@@ -161,7 +173,7 @@
 				"x": 400,
 				"y": 64,
 				"width": 16,
-				"height": 16,
+				"height": 8,
 				"color": 12087120,
 				"customFields" : {}
 			}

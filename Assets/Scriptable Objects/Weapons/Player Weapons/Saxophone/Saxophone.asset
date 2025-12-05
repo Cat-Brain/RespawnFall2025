@@ -16,7 +16,7 @@ MonoBehaviour:
   primary: {fileID: 11400000, guid: 2cddb6cc05addbd4090c84b391673308, type: 2}
   baseHit:
     position: {x: 0, y: 0}
-    damage: 10
+    damage: 8
     statuses:
     - status: {fileID: 11400000, guid: 3cb4da4df5fdc7c4ab7cecef48a9eacb, type: 2}
       components:

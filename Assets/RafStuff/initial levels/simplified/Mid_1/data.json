@@ -470,7 +470,7 @@
 				"x": 32,
 				"y": 304,
 				"width": 16,
-				"height": 16,
+				"height": 8,
 				"color": 12087120,
 				"customFields" : {}
 			},
@@ -481,7 +481,7 @@
 				"x": 48,
 				"y": 304,
 				"width": 16,
-				"height": 16,
+				"height": 8,
 				"color": 12087120,
 				"customFields" : {}
 			},
@@ -492,7 +492,7 @@
 				"x": 64,
 				"y": 304,
 				"width": 16,
-				"height": 16,
+				"height": 8,
 				"color": 12087120,
 				"customFields" : {}
 			},
@@ -503,7 +503,7 @@
 				"x": 464,
 				"y": 160,
 				"width": 16,
-				"height": 16,
+				"height": 8,
 				"color": 12087120,
 				"customFields" : {}
 			},
@@ -514,7 +514,7 @@
 				"x": 496,
 				"y": 160,
 				"width": 16,
-				"height": 16,
+				"height": 8,
 				"color": 12087120,
 				"customFields" : {}
 			},
@@ -525,7 +525,7 @@
 				"x": 512,
 				"y": 160,
 				"width": 16,
-				"height": 16,
+				"height": 8,
 				"color": 12087120,
 				"customFields" : {}
 			},
@@ -536,7 +536,7 @@
 				"x": 528,
 				"y": 160,
 				"width": 16,
-				"height": 16,
+				"height": 8,
 				"color": 12087120,
 				"customFields" : {}
 			},
@@ -547,7 +547,7 @@
 				"x": 480,
 				"y": 160,
 				"width": 16,
-				"height": 16,
+				"height": 8,
 				"color": 12087120,
 				"customFields" : {}
 			},
@@ -558,7 +558,7 @@
 				"x": 64,
 				"y": 192,
 				"width": 16,
-				"height": 16,
+				"height": 8,
 				"color": 12087120,
 				"customFields" : {}
 			},
@@ -569,7 +569,7 @@
 				"x": 80,
 				"y": 192,
 				"width": 16,
-				"height": 16,
+				"height": 8,
 				"color": 12087120,
 				"customFields" : {}
 			},
@@ -580,7 +580,7 @@
 				"x": 48,
 				"y": 192,
 				"width": 16,
-				"height": 16,
+				"height": 8,
 				"color": 12087120,
 				"customFields" : {}
 			},
@@ -591,7 +591,7 @@
 				"x": 192,
 				"y": 80,
 				"width": 16,
-				"height": 16,
+				"height": 8,
 				"color": 12087120,
 				"customFields" : {}
 			},
@@ -602,7 +602,7 @@
 				"x": 176,
 				"y": 80,
 				"width": 16,
-				"height": 16,
+				"height": 8,
 				"color": 12087120,
 				"customFields" : {}
 			},
@@ -613,7 +613,7 @@
 				"x": 32,
 				"y": 32,
 				"width": 16,
-				"height": 16,
+				"height": 8,
 				"color": 12087120,
 				"customFields" : {}
 			},
@@ -624,7 +624,7 @@
 				"x": 272,
 				"y": 16,
 				"width": 16,
-				"height": 16,
+				"height": 8,
 				"color": 12087120,
 				"customFields" : {}
 			},
@@ -635,7 +635,7 @@
 				"x": 256,
 				"y": 16,
 				"width": 16,
-				"height": 16,
+				"height": 8,
 				"color": 12087120,
 				"customFields" : {}
 			},
@@ -646,7 +646,7 @@
 				"x": 464,
 				"y": 96,
 				"width": 16,
-				"height": 16,
+				"height": 8,
 				"color": 12087120,
 				"customFields" : {}
 			},
@@ -657,7 +657,7 @@
 				"x": 480,
 				"y": 96,
 				"width": 16,
-				"height": 16,
+				"height": 8,
 				"color": 12087120,
 				"customFields" : {}
 			},
@@ -668,7 +668,7 @@
 				"x": 464,
 				"y": 320,
 				"width": 16,
-				"height": 16,
+				"height": 8,
 				"color": 12087120,
 				"customFields" : {}
 			},
@@ -679,7 +679,7 @@
 				"x": 448,
 				"y": 320,
 				"width": 16,
-				"height": 16,
+				"height": 8,
 				"color": 12087120,
 				"customFields" : {}
 			},
@@ -690,7 +690,7 @@
 				"x": 432,
 				"y": 320,
 				"width": 16,
-				"height": 16,
+				"height": 8,
 				"color": 12087120,
 				"customFields" : {}
 			},
@@ -701,7 +701,7 @@
 				"x": 240,
 				"y": 176,
 				"width": 16,
-				"height": 16,
+				"height": 8,
 				"color": 12087120,
 				"customFields" : {}
 			},
@@ -712,7 +712,7 @@
 				"x": 256,
 				"y": 176,
 				"width": 16,
-				"height": 16,
+				"height": 8,
 				"color": 12087120,
 				"customFields" : {}
 			},
@@ -723,7 +723,7 @@
 				"x": 272,
 				"y": 176,
 				"width": 16,
-				"height": 16,
+				"height": 8,
 				"color": 12087120,
 				"customFields" : {}
 			}
