@@ -24,8 +24,8 @@ public class BouncerTick : OnTickEffect
         return;
 
         rb.linearVelocityX *= horizontalMultiplier;
-        rb.linearVelocityY = Mathf.Max(0, rb.linearVelocityY);
-        rb.linearVelocityY += bounceForce;
+        //rb.linearVelocityY = Mathf.Max(0, rb.linearVelocityY);
+        rb.linearVelocityY = bounceForce;
 
         bounceCooldowns.Add((rb, Time.time));
     }
