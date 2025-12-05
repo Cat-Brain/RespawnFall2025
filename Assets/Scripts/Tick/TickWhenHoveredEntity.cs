@@ -10,4 +10,9 @@ public class TickWhenHoveredEntity : TickEntity
         if (col.OverlapPoint(Camera.main.ScreenToWorldPoint(Mouse.current.position.ReadValue())))
             base.Tick();
     }
+
+    public virtual void BypassTick()
+    {
+        base.Tick();
+    }
 }
