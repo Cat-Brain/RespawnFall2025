@@ -9,12 +9,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6149794140577960629}
-  - component: {fileID: 8650086795187335198}
-  - component: {fileID: 4149839686482097288}
-  - component: {fileID: 7024664677475070911}
-  - component: {fileID: 5745535356345065916}
-  - component: {fileID: 2514782041917340761}
-  - component: {fileID: 6232530171163362969}
   m_Layer: 13
   m_Name: Ball Moss
   m_TagString: Untagged
@@ -34,16 +28,54 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 9019492846557338282}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &8650086795187335198
+--- !u!1 &7608618083235668516
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 9019492846557338282}
+  - component: {fileID: 3860686924549267417}
+  - component: {fileID: 3939890983066926796}
+  - component: {fileID: 2962433341648617536}
+  - component: {fileID: 7756062548299744237}
+  - component: {fileID: 1992204735146842066}
+  - component: {fileID: 3826137290577500093}
+  m_Layer: 13
+  m_Name: Ball Moss
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &9019492846557338282
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7608618083235668516}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6149794140577960629}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &3860686924549267417
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 112010154059402184}
+  m_GameObject: {fileID: 7608618083235668516}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -95,13 +127,13 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &4149839686482097288
+--- !u!61 &3939890983066926796
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 112010154059402184}
+  m_GameObject: {fileID: 7608618083235668516}
   m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
@@ -129,10 +161,10 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.5, y: -0.5}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 1}
+    pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 1, y: 1}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
@@ -141,26 +173,26 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &7024664677475070911
+--- !u!114 &2962433341648617536
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 112010154059402184}
+  m_GameObject: {fileID: 7608618083235668516}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 065a689b8468d0143a06a283b6415c66, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ProjectileTarget
   health: {fileID: 0}
---- !u!114 &5745535356345065916
+--- !u!114 &7756062548299744237
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 112010154059402184}
+  m_GameObject: {fileID: 7608618083235668516}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 95abf65faa9d14d42ae3e4ee1bb55476, type: 3}
@@ -173,29 +205,29 @@ MonoBehaviour:
   statuses: []
   newStatuses: []
   healthManager: {fileID: 0}
---- !u!114 &2514782041917340761
+--- !u!114 &1992204735146842066
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 112010154059402184}
+  m_GameObject: {fileID: 7608618083235668516}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 962620c73667e3544bfe36ea643443d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TickEntity
---- !u!114 &6232530171163362969
+--- !u!114 &3826137290577500093
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 112010154059402184}
+  m_GameObject: {fileID: 7608618083235668516}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1b0ec4fa6181ff544adc63b127abf396, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DisableComponentsOnTick
   components:
-  - {fileID: 4149839686482097288}
+  - {fileID: 3939890983066926796}
