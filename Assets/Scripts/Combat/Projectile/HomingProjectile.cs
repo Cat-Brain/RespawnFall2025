@@ -1,5 +1,4 @@
 using UnityEngine;
-using static UnityEngine.RuleTile.TilingRuleOutput;
 
 [CreateAssetMenu(fileName = "New HomingProjectile", menuName = "Projectiles/HomingProjectile")]
 public class HomingProjectile : Projectile
@@ -25,7 +24,7 @@ public class HomingProjectile : Projectile
 
         float rotation = Vector2.SignedAngle(desiredDir, inst.direction);
 
-        inst.direction = CMath.Rotate(inst.direction,
-            CMath.TrySub(rotation, rotationSpeed * Time.deltaTime) - rotation);
+        inst.SetDir(CMath.Rotate(inst.direction,
+            (CMath.TrySub(rotation, rotationSpeed * Time.deltaTime) - rotation) * Mathf.Deg2Rad));
     }
 }

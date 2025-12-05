@@ -99,11 +99,16 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 486612208949349225}
+  - component: {fileID: 3326139517726363635}
   - component: {fileID: 985669046578179758}
-  - component: {fileID: 863114394435971053}
   - component: {fileID: 3423099144530137359}
   - component: {fileID: 6518011459744349691}
-  m_Layer: 0
+  - component: {fileID: 1312975189138897666}
+  - component: {fileID: 5570294321120902799}
+  - component: {fileID: 1719515910104994227}
+  - component: {fileID: 8970772994503073822}
+  - component: {fileID: -8703493097980067413}
+  m_Layer: 9
   m_Name: Ghost Pipe
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -127,6 +132,42 @@ Transform:
   - {fileID: 7381064981131387056}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!58 &3326139517726363635
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4990884701847800614}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0.5, y: 1.125}
+  m_Radius: 0.375
 --- !u!120 &985669046578179758
 LineRenderer:
   serializedVersion: 2
@@ -242,18 +283,6 @@ LineRenderer:
   m_UseWorldSpace: 0
   m_Loop: 0
   m_ApplyActiveColorSpace: 1
---- !u!114 &863114394435971053
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4990884701847800614}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fd08c5747bde09a46abb7695d0840ba0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::RandomDirection
 --- !u!114 &3423099144530137359
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -267,7 +296,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GhostFlower
   tier: 1
-  spawnOffset: {x: 1, y: 1}
+  spawnOffset: {x: 1, y: 0}
   spawnDimensions: {x: 2, y: 2}
   playerMask:
     serializedVersion: 2
@@ -309,6 +338,77 @@ MonoBehaviour:
   target: 1
   baseValue: 1
   value: 0
+--- !u!114 &1312975189138897666
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4990884701847800614}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd08c5747bde09a46abb7695d0840ba0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RandomDirection
+--- !u!114 &5570294321120902799
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4990884701847800614}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95abf65faa9d14d42ae3e4ee1bb55476, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HealthInst
+  tickEntity: {fileID: 0}
+  data: {fileID: 11400000, guid: 5864fa5bee18ce74d919693536f8b5d2, type: 2}
+  health: 0
+  fractionalHealthOffset: 0
+  statuses: []
+  newStatuses: []
+  healthManager: {fileID: 0}
+--- !u!114 &1719515910104994227
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4990884701847800614}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 065a689b8468d0143a06a283b6415c66, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ProjectileTarget
+  health: {fileID: 0}
+--- !u!114 &8970772994503073822
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4990884701847800614}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b0ec4fa6181ff544adc63b127abf396, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DisableComponentsOnTick
+  components:
+  - {fileID: 3326139517726363635}
+  - {fileID: 3423099144530137359}
+--- !u!114 &-8703493097980067413
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4990884701847800614}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 962620c73667e3544bfe36ea643443d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TickEntity
 --- !u!1 &7190507852372067458
 GameObject:
   m_ObjectHideFlags: 0
@@ -319,7 +419,6 @@ GameObject:
   m_Component:
   - component: {fileID: 3442502969312374444}
   - component: {fileID: 1005901327902410629}
-  - component: {fileID: 4521066671578248538}
   m_Layer: 9
   m_Name: Flower
   m_TagString: Untagged
@@ -400,39 +499,3 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!58 &4521066671578248538
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7190507852372067458}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_CompositeOperation: 0
-  m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_Radius: 0.5

@@ -38,7 +38,7 @@ public class ProjectileInst : MonoBehaviour
 
     public virtual void OnInit()
     {
-        rb.linearVelocity = direction * data.speed;
+        SetDir(direction);
     }
 
     public void FixedUpdate()
@@ -61,5 +61,11 @@ public class ProjectileInst : MonoBehaviour
         if (enabled && collider.enabled &&
             CMath.LayerOverlapsMask(collider.gameObject.layer, data.destroyedByMask))
             Destruct();
+    }
+
+    public void SetDir(Vector2 dir)
+    {
+        direction = dir;
+        rb.linearVelocity = direction * data.speed;
     }
 }
