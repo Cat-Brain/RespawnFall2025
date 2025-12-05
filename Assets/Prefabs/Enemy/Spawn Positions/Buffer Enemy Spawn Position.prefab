@@ -45,5 +45,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemySpawnPosition
   validSpawns: []
+  offset: {x: 0, y: -1}
   debugRenderColor: {r: 1, g: 1, b: 1, a: 0.2509804}
   gridPos: {x: 0, y: 0}
