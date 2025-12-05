@@ -27,7 +27,7 @@ public class Weapon : ScriptableObject
     public virtual Hit GetHit()
     {
         Hit result = baseHit;
-        result.damage *= stats.damage;
+        result.damage = stats.damage;
         return result;
     }
 }

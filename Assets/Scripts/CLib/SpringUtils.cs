@@ -26,6 +26,7 @@
   EDITED FROM ORIGINAL SOURCE FOR C# / UNITY USEAGE
 ******************************************************************************/
 
+using System;
 using UnityEngine;
 
 public static class SpringUtils
@@ -150,5 +151,10 @@ public static class SpringUtils
 
         (pPos) = oldPos*springParams.m_posPosCoef + oldVel*springParams.m_posVelCoef + equilibriumPos;
         (pVel) = oldPos*springParams.m_velPosCoef + oldVel*springParams.m_velVelCoef;
+    }
+
+    internal static void UpdateDampedSpringMotion(ref object bufferScalex, ref float x, tDampedSpringMotionParams scaleSpring)
+    {
+        throw new NotImplementedException();
     }
 }

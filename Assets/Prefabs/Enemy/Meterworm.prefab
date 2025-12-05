@@ -298,6 +298,8 @@ GameObject:
   - component: {fileID: 943662048188397314}
   - component: {fileID: 5614536734876474402}
   - component: {fileID: 4614003745129186476}
+  - component: {fileID: 3406156106192692755}
+  - component: {fileID: 3473966615751028866}
   m_Layer: 9
   m_Name: Meterworm
   m_TagString: Untagged
@@ -435,6 +437,8 @@ MonoBehaviour:
   cr: {fileID: 0}
   rb: {fileID: 0}
   col: {fileID: 0}
+  speedStat: {fileID: 3406156106192692755}
+  damageStat: {fileID: 3473966615751028866}
   flip: {fileID: 6563693165092475353}
   hit:
     position: {x: 0, y: 0}
@@ -553,3 +557,33 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SetGravityOnTick
   gravity: 0
+--- !u!114 &3406156106192692755
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7573971580527064850}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56b3795f43d35874892d6a67aaec8268, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EntityStats
+  target: 0
+  baseValue: 1
+  value: 0
+--- !u!114 &3473966615751028866
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7573971580527064850}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56b3795f43d35874892d6a67aaec8268, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EntityStats
+  target: 1
+  baseValue: 1
+  value: 0

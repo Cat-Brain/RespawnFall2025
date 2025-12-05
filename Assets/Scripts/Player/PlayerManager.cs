@@ -8,11 +8,13 @@ public enum HitResult
     HIT, ABSORBED, BLOCKED
 }
 
+[RequireComponent(typeof(EntityStat), typeof(HealthInst))]
 [RequireComponent(typeof(PlayerWeaponInstance), typeof(PlayerMove))]
 [RequireComponent(typeof(PlayerGravity), typeof(Rigidbody2D))]
 [RequireComponent(typeof(Collider2D))]
 public class PlayerManager : MonoBehaviour
 {
+    public EntityStat speedStat, jumpHeightStat;
     public FlipToDirection playerFlip;
     public List<Renderer> rends;
     public List<LineRenderer> mainLRs, beakLRs, eyeLRs;
@@ -28,7 +30,9 @@ public class PlayerManager : MonoBehaviour
 
     public EntityDirection direction;
 
-    public string winZoneTag;
+    public float endVelocity;
+    public int normalLayer, endLayer;
+    public string endLandTag;
 
     [HideInInspector] public bool active = true;
     [HideInInspector] public float stunInvulnerability = 0, moveStun = 0; // Applies to both horizontal movement and jumping
@@ -36,6 +40,8 @@ public class PlayerManager : MonoBehaviour
     
     [HideInInspector] public GameManager gameManager;
 
+    [HideInInspector] public EntityStat stats;
+    [HideInInspector] public HealthInst health;
     [HideInInspector] public PlayerWeaponInstance playerWeapon;
     [HideInInspector] public PlayerMove playerMove;
     [HideInInspector] public PlayerGravity playerGravity;
@@ -48,6 +54,8 @@ public class PlayerManager : MonoBehaviour
 
         gameManager.playerManager = this;
 
+        stats = GetComponent<EntityStat>();
+        health = GetComponent<HealthInst>();
         playerWeapon = GetComponent<PlayerWeaponInstance>();
         playerMove = GetComponent<PlayerMove>();
         playerGravity = GetComponent<PlayerGravity>();
@@ -55,6 +63,8 @@ public class PlayerManager : MonoBehaviour
         col = GetComponent<Collider2D>();
 
         sortingLayer = rends[0].sortingLayerName;
+
+        jumpHeightStat.baseValue = playerMove.jumpHeight;
     }
 
     void Update()
@@ -83,10 +93,10 @@ public class PlayerManager : MonoBehaviour
             moveStun = Mathf.Max(0, moveStun - Time.deltaTime);
     }
 
-    void OnTriggerEnter2D(Collider2D trigger)
+    public void OnCollisionEnter2D(Collision2D collision)
     {
-        if (trigger.CompareTag(winZoneTag))
-            gameManager.PlayerWin();
+        if (gameManager.gameState == GameState.END_SCREEN && collision.collider.CompareTag(endLandTag))
+            gameManager.EndLand();
     }
 
     public void SetSortingLayer(string sortingLayer = "")
@@ -209,6 +219,20 @@ public class PlayerManager : MonoBehaviour
             rend.DOColor(oldColor2, color2, colorTweenTime);
         foreach (SpriteRenderer rend in eyeSRs)
             rend.DOColor(color, colorTweenTime);
+    }
+
+    public void End()
+    {
+        rb.linearVelocity = Vector2.up * endVelocity;
+        gameObject.layer = endLayer;
+        playerGravity.enabled = true;
+        col.enabled = true;
+    }
+
+    public void Begin()
+    {
+        gameObject.layer = normalLayer;
+        health.ReInit();
     }
 
     public void OnDrawGizmos()

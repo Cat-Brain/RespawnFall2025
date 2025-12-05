@@ -10,6 +10,7 @@ public class Charger : Enemy
     [HideInInspector] public Rigidbody2D rb;
     [HideInInspector] public Collider2D col;
 
+    public EntityStat speedStat, damageStat;
     public FlipToDirection flip;
 
     public Hit hit;
@@ -110,6 +111,7 @@ public class Charger : Enemy
         idleWalking = false;
         RandomizeIdleWalk();
         cr.color = idleColor;
+        damageStat.baseValue = hit.damage;
 
         transform.localScale = CMath.Vector3XY_Z(defaultDim, 1);
     }
@@ -147,16 +149,16 @@ public class Charger : Enemy
 
         if (idleWalking)
             rb.linearVelocityX = CMath.TryAdd(rb.linearVelocityX,
-                Time.deltaTime * (walkingRight ? idleWalkAccel : -idleWalkAccel), idleWalkSpeed);
+                Time.deltaTime * (walkingRight ? idleWalkAccel : -idleWalkAccel) * speedStat.value, idleWalkSpeed * speedStat.value);
         else
-            rb.linearVelocityX = CMath.TrySub(rb.linearVelocityX, Time.deltaTime * idleWalkAccel);
+            rb.linearVelocityX = CMath.TrySub(rb.linearVelocityX, Time.deltaTime * idleWalkAccel * speedStat.value);
 
         base.IdleUpdate();
     }
 
     public override void StartledUpdate()
     {
-        rb.linearVelocityX = CMath.TrySub(rb.linearVelocityX, Time.deltaTime * startledDecel);
+        rb.linearVelocityX = CMath.TrySub(rb.linearVelocityX, Time.deltaTime * startledDecel * speedStat.value);
         base.StartledUpdate();
     }
 
@@ -170,7 +172,7 @@ public class Charger : Enemy
                     SetChargerState(ChargerAIState.CHARGING);
                 walkingRight = trackedPlayer.position.x > transform.position.x;
                 rb.linearVelocityX = CMath.TryAdd(rb.linearVelocityX,
-                    Time.deltaTime * (walkingRight ? activeWalkAccel : -activeWalkAccel), activeWalkSpeed);
+                    Time.deltaTime * (walkingRight ? activeWalkAccel : -activeWalkAccel) * speedStat.value, activeWalkSpeed * speedStat.value);
                 break;
             case ChargerAIState.CHARGING:
                 if (charging)
@@ -184,17 +186,20 @@ public class Charger : Enemy
                         if (overlap.transform == transform)
                             continue;
                         if (overlap.TryGetComponent(out HealthInst health))
+                        {
+                            hit.damage = damageStat.value;
                             health.ApplyHit(hit);
+                        }
                         SetState(AIState.STUNNED);
                     }
                     if (chargerState != ChargerAIState.CHARGING)
                         break;
 
                     rb.linearVelocityX = CMath.TryAdd(rb.linearVelocityX,
-                        Time.deltaTime * (walkingRight ? chargeAccel : -chargeAccel), chargeSpeed);
+                        Time.deltaTime * (walkingRight ? chargeAccel : -chargeAccel) * speedStat.value, chargeSpeed * speedStat.value);
                 }
                 else
-                    rb.linearVelocityX = CMath.TrySub(rb.linearVelocityX, Time.deltaTime * chargeAccel);
+                    rb.linearVelocityX = CMath.TrySub(rb.linearVelocityX, Time.deltaTime * chargeAccel * speedStat.value);
                 break;
         }
     }

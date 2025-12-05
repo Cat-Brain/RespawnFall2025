@@ -534,6 +534,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3780d9c800a7ffb4ebf21da2645d516b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ProjectileInst
+  col: {fileID: 4129074220558359128}
   rb: {fileID: 6574857419870143426}
   data: {fileID: 0}
   spriteRends:

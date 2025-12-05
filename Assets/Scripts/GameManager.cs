@@ -1,7 +1,3 @@
-using com.cyborgAssets.inspectorButtonPro;
-using DG.Tweening.Core.Easing;
-using LDtkUnity;
-using System;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
@@ -11,7 +7,7 @@ using FMODUnity;
 
 public enum GameState
 {
-    IN_GAME, LOSE_SCREEN, WIN_SCREEN, UPGRADE_SCREEN, MAIN_MENU, SETTINGS_MENU, PAUSE_MENU, INVENTORY
+    IN_GAME, END_SCREEN, UNUSED, UPGRADE_SCREEN, MAIN_MENU, SETTINGS_MENU, PAUSE_MENU, INVENTORY
 }
 
 [ExecuteInEditMode]
@@ -47,7 +43,9 @@ public class GameManager : MonoBehaviour
     public LevelType[,] paths;
     public LevelType levelType;
     public List<int> pathTaken;
-    public bool inCombat;
+    public bool inCombat, endScreenLanded = false, inLobby = true;
+    public float startTime = 0, endTime = 0;
+    public int currentLevelMoney = 0;
 
     void Start()
     {
@@ -116,11 +114,19 @@ public class GameManager : MonoBehaviour
         Time.timeScale = timeScale;
     }
 
+    public void BeginGame()
+    {
+        startTime = Time.time;
+        InitPaths();
+    }
+
     public void LoadNextLevel(int path)
     {
+        inLobby = false;
+        currentLevelMoney = 0;
         if (path == 0)
         {
-            InitPaths();
+            BeginGame();
             pathTaken.Add(path);
             generationManager.SpawnLevel(0, LevelType.COMBAT);
             // Setting music depending on weapon
@@ -142,7 +148,7 @@ public class GameManager : MonoBehaviour
         pathTaken.Add(path);
         path--;
         pathProgress[path]++;
-        generationManager.SpawnLevel(pathProgress[path] + 1, paths[path, pathProgress[path] - 1]);
+        generationManager.SpawnLevel(pathProgress[path], paths[path, pathProgress[path] - 1]);
     }
 
     public string GetLevelExitText(int path)
@@ -200,10 +206,7 @@ public class GameManager : MonoBehaviour
         if (gameState != GameState.IN_GAME)
             return;
 
-        playerManager.moveStun = -1;
-        playerManager.SetDirection(EntityDirection.NEUTRAL);
-
-        LoadState(GameState.WIN_SCREEN, winSceneName);
+        ToEndScreen();
     }
 
     public void PlayerLose()
@@ -211,6 +214,46 @@ public class GameManager : MonoBehaviour
         if (gameState != GameState.IN_GAME)
             return;
 
-        LoadState(GameState.LOSE_SCREEN, mainMenuSceneName);
+        ToEndScreen();
+    }
+
+    public void PlayerReset()
+    {
+        if (!playerManager.active)
+            return;
+
+        SetTimeScale(1);
+
+        ToEndScreen();
+    }
+
+    public void ToEndScreen()
+    {
+        playerManager.End();
+        endScreenLanded = false;
+        lobby.SetActive(true);
+        generationManager.LoadAllLevels();
+        SetState(GameState.END_SCREEN);
+    }
+
+    public void EndLand()
+    {
+        if (endScreenLanded)
+            return;
+
+        endScreenLanded = true;
+        generationManager.DespawnLevels();
+        inCombat = false;
+        inLobby = true;
+    }
+
+    public void ExitEndScreen()
+    {
+        if (!endScreenLanded)
+            return;
+
+        inventory.TrashAll();
+        playerManager.Begin();
+        SetState(GameState.IN_GAME);
     }
 }

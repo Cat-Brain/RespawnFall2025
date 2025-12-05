@@ -1,9 +1,7 @@
-using LDtkUnity;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
-using static UnityEngine.EventSystems.EventTrigger;
 
 [Serializable]
 public struct EnemyTierData
@@ -134,5 +132,12 @@ public class EnemyManager : MonoBehaviour
         enemies.Remove(enemy);
         if (enemies.Count <= 0)
             gameManager.inCombat = SpawnWave();
+    }
+
+    public void DespawnEnemies()
+    {
+        foreach (Enemy enemy in enemies)
+            Destroy(enemy.gameObject);
+        enemies.Clear();
     }
 }

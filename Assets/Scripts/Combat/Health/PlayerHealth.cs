@@ -1,16 +1,17 @@
 using DG.Tweening.Core.Easing;
+using Unity.Collections.LowLevel.Unsafe;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "New PlayerHealth", menuName = "Health/PlayerHealth")]
 public class PlayerHealth : Health
 {
-    [HideInInspector] public BarDisplay timerDisplay;
+    [HideInInspector] public BarDisplay healthDisplay;
     [HideInInspector] public PlayerManager playerManager;
 
     public override void Init()
     {
         base.Init();
-        RefreshTime();
+        RefreshHealth(inst.health);
     }
 
     public override void OnDeath()
@@ -20,17 +21,16 @@ public class PlayerHealth : Health
         playerManager.gameManager.PlayerLose();
     }
 
-    /*public override void OnHealthChange(int newValue, Hit? hit)
+    public override void OnHealthChange(int newValue, Hit? hit)
     {
-        base.OnHealthChange(newValue, hit);
-        RefreshTime();
-    }*/
+        RefreshHealth(newValue);
+    }
 
-    public void RefreshTime()
+    public void RefreshHealth(int currentHealth)
     {
-        if (timerDisplay == null)
-            timerDisplay = FindAnyObjectByType<BarDisplay>(FindObjectsInactive.Include);
-        if (timerDisplay)
-            timerDisplay.UpdateRemaining(inst.health, maxHealth);
+        if (healthDisplay == null)
+            healthDisplay = FindAnyObjectByType<BarDisplay>(FindObjectsInactive.Include);
+        if (healthDisplay)
+            healthDisplay.UpdateRemaining(currentHealth, maxHealth);
     }
 }

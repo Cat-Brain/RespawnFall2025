@@ -1,4 +1,3 @@
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using FMODUnity;    
@@ -6,6 +5,7 @@ using FMODUnity;
 [ExecuteInEditMode]
 public class PlayerWeaponInstance : MonoBehaviour
 {
+    public EntityStat damageStat, fireRateStat, magazineSizeStat, reloadSpeedStat, rangeStat;
     public InputActionReference primaryAction, reloadAction;
     public PlayerManager playerManager;
 
@@ -17,7 +17,7 @@ public class PlayerWeaponInstance : MonoBehaviour
     void Awake()
     {
         if (Application.isPlaying)
-            SetWeapon(weapon);  
+            SetWeapon(weapon);
     }
 
     void Start()
@@ -38,6 +38,12 @@ public class PlayerWeaponInstance : MonoBehaviour
         if (playerManager.Stunned())
             return;
 
+        weapon.stats.damage = damageStat.value;
+        weapon.stats.fireRate = fireRateStat.value;
+        weapon.stats.magazineSize = magazineSizeStat.value;
+        weapon.stats.reloadSpeed = reloadSpeedStat.value;
+        weapon.stats.range = rangeStat.value;
+
         weapon.reload.Upd(reloadAction.action.inProgress);
         if (!weapon.reload.reloading)
             weapon.primary.Upd(primaryAction.action.inProgress);
@@ -49,17 +55,6 @@ public class PlayerWeaponInstance : MonoBehaviour
         playerManager.SetBeakColor(weapon.playerBeakColor, this.weapon.playerBeakColor);
         playerManager.SetEyeColor(weapon.playerEyeColor, this.weapon.playerEyeColor);
         this.weapon = (PlayerWeapon)weapon.Copy(transform);
-
-        if(weapon.name == "Saxophone")
-        {
-            Debug.Log("Sax");
-            instance.setParameterByName("ThemeIndex", 2);
-        }
-
-        else if(weapon.name == "Flute")
-        {
-            Debug.Log("Flute");
-            instance.setParameterByName("ThemeIndex", 1);
-        }
+        damageStat.baseValue = weapon.baseHit.damage;
     }
 }

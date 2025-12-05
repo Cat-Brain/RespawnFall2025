@@ -2,18 +2,13 @@ using UnityEngine;
 
 public class BarDisplay : MonoBehaviour
 {
-    public RectTransform harpFadeMask;
+    public RectTransform rectTransform;
 
-    private float harpFadeMaskStartHeight;
-
-    void Awake()
-    {
-        harpFadeMaskStartHeight = harpFadeMask.sizeDelta.y;
-    }
+    public Vector2 baseDim;
 
     public void UpdateRemaining(float fraction)
     {
-        harpFadeMask.sizeDelta = new Vector2(harpFadeMask.sizeDelta.x, harpFadeMaskStartHeight * fraction);
+        rectTransform.sizeDelta = new Vector2(Mathf.Ceil(fraction * baseDim.x), baseDim.y);
     }
 
     public void UpdateRemaining(float remaining, float total)

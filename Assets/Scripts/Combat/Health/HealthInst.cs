@@ -5,6 +5,7 @@ using UnityEngine;
 public class HealthInst : MonoBehaviour
 {
     [HideInInspector] public TickEntity tickEntity;
+    [HideInInspector] public Dictionary<StatTarget, EntityStat> stats = new();
 
     public Health data;
     public int health;
@@ -19,6 +20,8 @@ public class HealthInst : MonoBehaviour
     public void Awake()
     {
         tickEntity = GetComponent<TickEntity>();
+        foreach (EntityStat stat in GetComponents<EntityStat>())
+            stats.Add(stat.target, stat);
 
         data = Instantiate(data);
         data.inst = this;
@@ -38,7 +41,7 @@ public class HealthInst : MonoBehaviour
             if (!alive)
                 return;
             if (status.enabled)
-                status.Update();
+                status.Upd();
         }
 
         foreach (StatusEffect status in statuses)
@@ -46,11 +49,22 @@ public class HealthInst : MonoBehaviour
             if (!alive)
                 return;
             if (status.shouldRemove)
+            {
                 status.End();
+                Destroy(status);
+            }
         }
         statuses.RemoveAll(status => status.shouldRemove);
 
         AddNewStatuses();
+    }
+
+    public void ReInit()
+    {
+        fractionalHealthOffset = 0;
+        data.Init();
+        statuses.Clear();
+        newStatuses.Clear();
     }
 
     public void AddNewStatuses()
@@ -71,6 +85,18 @@ public class HealthInst : MonoBehaviour
         alive = false;
         
         OnDeath();
+    }
+
+    public void ApplyStat(StatChange change)
+    {
+        if (stats.TryGetValue(change.target, out EntityStat stat))
+            stat.mods.Add(change);
+    }
+
+    public void RemoveStat(StatChange match)
+    {
+        if (stats.TryGetValue(match.target, out EntityStat stat))
+            stat.mods.Remove(match);
     }
 
     public bool ApplyHitDamage(float damage, Hit? hit = null)
@@ -99,7 +125,10 @@ public class HealthInst : MonoBehaviour
             return true;
         int index = statuses.FindIndex(status => status.status == hitStatus.status);
         if (index == -1)
-            newStatuses.Add(new StatusEffect(this, hitStatus));
+        {
+            newStatuses.Add(gameObject.AddComponent<StatusEffect>());
+            newStatuses[^1].Init(this, hitStatus);
+        }
         else
             statuses[index].ApplyStack(hitStatus.components);
         return !alive;
@@ -125,6 +154,8 @@ public class HealthInst : MonoBehaviour
         if (health == newHealth)
             return;
 
+        data.OnHealthChange(newHealth, hit);
+
         if (newHealth < health)
             SpawnDamageNumber(health - newHealth, hit.HasValue && hit.Value.position != Vector2.zero ? hit.Value.position : transform.position);
         else
@@ -134,6 +165,7 @@ public class HealthInst : MonoBehaviour
 
     protected void OnHit(ref Hit hit)
     {
+        data.OnHit(ref hit);
         foreach (StatusEffect status in statuses)
         {
             if (!alive)
@@ -144,6 +176,9 @@ public class HealthInst : MonoBehaviour
     }
     protected void OnDeath()
     {
+        foreach (StatusEffect status in statuses)
+            status.OnDeath();
+
         if (tickEntity)
             tickEntity.Tick();
         data.OnDeath();

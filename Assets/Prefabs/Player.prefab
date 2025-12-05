@@ -77,7 +77,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: -1923271087
-  m_SortingLayer: 3
+  m_SortingLayer: 4
   m_SortingOrder: 3
   m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
   m_Color: {r: 0.050980397, g: 0.1254902, b: 0.24705884, a: 1}
@@ -168,7 +168,7 @@ LineRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: -1923271087
-  m_SortingLayer: 3
+  m_SortingLayer: 4
   m_SortingOrder: 2
   m_Positions:
   - {x: -0.5, y: 0, z: 0}
@@ -319,7 +319,7 @@ LineRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: -1923271087
-  m_SortingLayer: 3
+  m_SortingLayer: 4
   m_SortingOrder: 1
   m_Positions:
   - {x: 0, y: -0.5, z: 0}
@@ -400,6 +400,13 @@ GameObject:
   - component: {fileID: 1397539087181620112}
   - component: {fileID: 206735698653870445}
   - component: {fileID: 8980191799759048110}
+  - component: {fileID: 7146744419655514772}
+  - component: {fileID: 5820397862053073275}
+  - component: {fileID: 1950502903985399678}
+  - component: {fileID: 8423295642227842860}
+  - component: {fileID: 445936508350963275}
+  - component: {fileID: 2046916283267975261}
+  - component: {fileID: 4131349477029609554}
   m_Layer: 10
   m_Name: Player
   m_TagString: Player
@@ -500,6 +507,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bfde92923935cca43bcc5057c82643fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerManager
+  speedStat: {fileID: 7146744419655514772}
+  jumpHeightStat: {fileID: 5820397862053073275}
   playerFlip: {fileID: 9054125302544342492}
   rends:
   - {fileID: 5599189071243404212}
@@ -525,15 +534,20 @@ MonoBehaviour:
   groundedDistance: 0.1
   groundedMask:
     serializedVersion: 2
-    m_Bits: 12339
+    m_Bits: 45619
   recoilMultiplier: {x: 1, y: 1}
   direction: 1
-  winZoneTag: Win Zone
+  endVelocity: 10
+  normalLayer: 10
+  endLayer: 14
+  endLandTag: Bottom Ground
   active: 1
   stunInvulnerability: 0
   moveStun: 0
   sortingLayer: 
   gameManager: {fileID: 0}
+  stats: {fileID: 0}
+  health: {fileID: 0}
   playerWeapon: {fileID: 0}
   playerMove: {fileID: 0}
   playerGravity: {fileID: 0}
@@ -553,8 +567,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerMove
   accel: 16
   speed: 6.5
-  jumpForce: 8
-  airJumps: 1
+  jumpHeight: 3
+  airJumps: 0
   jumpBufferTime: 0.25
   cayoteTime: 0.2
   jumpSpamTime: 0.35
@@ -590,6 +604,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ec72e695689a474ebeb892896abb2cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerWeaponInstance
+  damageStat: {fileID: 1950502903985399678}
+  fireRateStat: {fileID: 8423295642227842860}
+  magazineSizeStat: {fileID: 445936508350963275}
+  reloadSpeedStat: {fileID: 2046916283267975261}
+  rangeStat: {fileID: 4131349477029609554}
   primaryAction: {fileID: 233641816963222372, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   reloadAction: {fileID: 3375951426363076484, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   playerManager: {fileID: 4788519261258228379}
@@ -626,6 +645,111 @@ MonoBehaviour:
   statuses: []
   newStatuses: []
   healthManager: {fileID: 0}
+--- !u!114 &7146744419655514772
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2619534745981113462}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56b3795f43d35874892d6a67aaec8268, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EntityStats
+  target: 0
+  baseValue: 1
+  value: 0
+--- !u!114 &5820397862053073275
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2619534745981113462}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56b3795f43d35874892d6a67aaec8268, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EntityStats
+  target: 4
+  baseValue: 1
+  value: 0
+--- !u!114 &1950502903985399678
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2619534745981113462}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56b3795f43d35874892d6a67aaec8268, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EntityStats
+  target: 1
+  baseValue: 1
+  value: 0
+--- !u!114 &8423295642227842860
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2619534745981113462}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56b3795f43d35874892d6a67aaec8268, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EntityStats
+  target: 5
+  baseValue: 1
+  value: 0
+--- !u!114 &445936508350963275
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2619534745981113462}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56b3795f43d35874892d6a67aaec8268, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EntityStats
+  target: 6
+  baseValue: 1
+  value: 0
+--- !u!114 &2046916283267975261
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2619534745981113462}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56b3795f43d35874892d6a67aaec8268, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EntityStats
+  target: 7
+  baseValue: 1
+  value: 0
+--- !u!114 &4131349477029609554
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2619534745981113462}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56b3795f43d35874892d6a67aaec8268, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EntityStats
+  target: 8
+  baseValue: 1
+  value: 0
 --- !u!1 &4569230922230076936
 GameObject:
   m_ObjectHideFlags: 0
@@ -752,7 +876,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: -1923271087
-  m_SortingLayer: 3
+  m_SortingLayer: 4
   m_SortingOrder: 2
   m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
   m_Color: {r: 0.9803922, g: 0.85098046, b: 0.21176472, a: 1}
@@ -842,7 +966,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: -1923271087
-  m_SortingLayer: 3
+  m_SortingLayer: 4
   m_SortingOrder: 2
   m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
   m_Color: {r: 0.9803922, g: 0.85098046, b: 0.21176472, a: 1}
@@ -933,7 +1057,7 @@ LineRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: -1923271087
-  m_SortingLayer: 3
+  m_SortingLayer: 4
   m_SortingOrder: 3
   m_Positions:
   - {x: -0.5, y: 0, z: 0}

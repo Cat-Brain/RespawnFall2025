@@ -1,6 +1,7 @@
 using com.cyborgAssets.inspectorButtonPro;
 using System;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 [Flags]
@@ -19,8 +20,10 @@ public enum InventoryLayer
 
 public class InventoryController : MonoBehaviour
 {
+    [HideInInspector] public GameManager manager;
     public Canvas canvas;
     public RectTransform inventoryTransform, bufferTransform, floatingTransform;
+    public TextMeshProUGUI descriptionText;
     public GameObject inventoryItemPrefab;
 
     public Vector2Int dimensions;
@@ -31,9 +34,16 @@ public class InventoryController : MonoBehaviour
     public List<InventoryInst> items = new(), bufferItems = new();
     public byte[,] map;
 
+    void Awake()
+    {
+        manager = FindAnyObjectByType<GameManager>();
+    }
+
     void Update()
     {
         SpringUtils.CalcDampedSpringMotionParams(ref itemSpring, Time.deltaTime, itemSpringFrequency, itemSpringDamping);
+        if (manager.gameState != GameState.INVENTORY)
+            descriptionText.text = "";
     }
 
     [ProButton]
@@ -43,9 +53,10 @@ public class InventoryController : MonoBehaviour
         inst.item = item;
         inst.controller = this;
 
-        inst.rectTransform.anchoredPosition = WorldPos(FindValidPosition(item));
-        AddToInventory(inst);
+        inst.rectTransform.anchoredPosition = inst.desiredPos = WorldPos(FindValidPosition(item));
         inst.Init();
+        AddToInventory(inst);
+        inst.Clean();
 
         return inst;
     }
@@ -76,12 +87,12 @@ public class InventoryController : MonoBehaviour
     public Vector2Int LocalGridPos(Vector2 position)
     {
         return Vector2Int.RoundToInt(
-            (position - inventoryTransform.anchoredPosition - inventoryTransform.offsetMin) / cellWidth - Vector2.one * 0.5f);
+            position / cellWidth + (dimensions - Vector2.one) * 0.5f);
     }
 
     public Vector2 WorldPos(Vector2 gridPos)
     {
-        return (gridPos + Vector2.one * 0.5f) * cellWidth + inventoryTransform.anchoredPosition + inventoryTransform.offsetMin;
+        return (gridPos + (Vector2.one - dimensions) * 0.5f) * cellWidth;
     }
 
     public Vector2 RoundToGridPos(Vector2 position)
@@ -114,7 +125,7 @@ public class InventoryController : MonoBehaviour
 
     public bool ValidPosition(InventoryInst item)
     {
-        return ValidPosition(item.item, LocalGridPos(item.rectTransform.anchoredPosition));
+        return ValidPosition(item.item, LocalGridPos(item.desiredPos));
     }
 
     public Vector2Int FindValidPosition(InventoryItem item)
@@ -156,7 +167,7 @@ public class InventoryController : MonoBehaviour
     [ProButton]
     public void SnapInventoryPosition(InventoryInst item)
     {
-        item.gridPos = LocalGridPos(item.rectTransform.anchoredPosition);
+        item.gridPos = LocalGridPos(item.desiredPos);
         item.rectTransform.SetParent(inventoryTransform);
         item.desiredPos = WorldPos(item.gridPos);
     }
@@ -167,6 +178,18 @@ public class InventoryController : MonoBehaviour
         item.gridPos = -Vector2Int.one;
         item.rectTransform.SetParent(bufferTransform);
         item.desiredPos = BufferPos(item.index);
+    }
+
+    public void SilentAddItems()
+    {
+        foreach (InventoryInst item in items)
+            item.item.OnPlace();
+    }
+
+    public void SilentRemoveItems()
+    {
+        foreach (InventoryInst item in items)
+            item.item.OnRemove();
     }
 
     public void AddToInventory(InventoryInst item)
@@ -181,7 +204,10 @@ public class InventoryController : MonoBehaviour
     {
         item.index = items.Count;
         SnapInventoryPosition(item);
+
+        SilentRemoveItems();
         items.Add(item);
+        SilentAddItems();
     }
 
     public void AddToBuffer(InventoryInst item)
@@ -203,6 +229,7 @@ public class InventoryController : MonoBehaviour
 
     public void RemoveFromItems(InventoryInst item)
     {
+        SilentRemoveItems();
         items.RemoveAt(item.index);
 
         item.index = -1;
@@ -213,6 +240,8 @@ public class InventoryController : MonoBehaviour
 
         for (int i = 0; i < items.Count; i++)
             items[i].index = i;
+
+        SilentAddItems();
     }
 
     public void RemoveFromBuffer(InventoryInst item)
@@ -230,5 +259,27 @@ public class InventoryController : MonoBehaviour
             bufferItems[i].index = i;
             SnapBufferPosition(bufferItems[i]);
         }
+    }
+
+    public void TrashBuffer()
+    {
+        foreach (InventoryInst item in bufferItems)
+            Destroy(item.gameObject);
+
+        bufferItems.Clear();
+    }
+
+    public void TrashInventory()
+    {
+        foreach (InventoryInst item in items)
+            Destroy(item.gameObject);
+
+        items.Clear();
+    }
+
+    public void TrashAll()
+    {
+        TrashBuffer();
+        TrashInventory();
     }
 }

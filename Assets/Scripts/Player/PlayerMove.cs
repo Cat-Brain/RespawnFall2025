@@ -5,7 +5,7 @@ public class PlayerMove : MonoBehaviour
 {
     public float accel, speed;
 
-    public float jumpForce;
+    public float jumpHeight;
     public int airJumps;
 
     [Tooltip("Time that a player can press the jump button early and still have it register")]
@@ -29,7 +29,6 @@ public class PlayerMove : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         playerManager = gameObject.GetComponent<PlayerManager>();
-        //animator = GetComponent<Animator>();
 
         playerManager.jumpAction.action.started += TryJump;
         playerManager.jumpAction.action.canceled += TryTapJump;
@@ -59,6 +58,8 @@ public class PlayerMove : MonoBehaviour
                 remainingAirJumps = airJumps;
 
             float horizontalInput = playerManager.moveAction.action.ReadValue<float>();
+            float accel = this.accel * playerManager.speedStat.value,
+                speed = this.speed * playerManager.speedStat.value;
 
             if (Mathf.Abs(horizontalInput) > 0.1f)
             {
@@ -73,8 +74,7 @@ public class PlayerMove : MonoBehaviour
 
             if (jumpBufferTimer > 0 && (cayoteTimer > 0 || remainingAirJumps > 0) && jumpSpamTimer <= 0)
             {
-                rb.linearVelocityY = Mathf.Max(rb.linearVelocityY, jumpForce);
-                //AnimationManager.instance.PlayAnimation(animClips[1]);
+                rb.linearVelocityY = Mathf.Max(rb.linearVelocityY, JumpForce());
 
                 if (cayoteTimer > 0)
                 {
@@ -86,7 +86,7 @@ public class PlayerMove : MonoBehaviour
 
                 jumpBufferTimer = 0;
                 jumpSpamTimer = jumpSpamTime;
-                tapJumpTimer = jumpForce / playerManager.playerGravity.gravity;
+                tapJumpTimer = JumpForce() / playerManager.playerGravity.gravity;
             }
         }
         else
@@ -98,5 +98,11 @@ public class PlayerMove : MonoBehaviour
         tapJumpTimer = Mathf.Max(0, tapJumpTimer - Time.fixedDeltaTime);
         if (rb.linearVelocityY <= 0)
             tapJumpTimer = 0;
+    }
+
+    public float JumpForce()
+    {
+        return Mathf.Sqrt(2 * playerManager.playerGravity.gravity *
+            playerManager.jumpHeightStat.value);
     }
 }
