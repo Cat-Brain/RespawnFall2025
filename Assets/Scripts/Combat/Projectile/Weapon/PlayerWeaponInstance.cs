@@ -3,6 +3,7 @@ using UnityEngine.InputSystem;
 using FMODUnity;    
 
 [ExecuteInEditMode]
+[RequireComponent(typeof(StudioEventEmitter))]
 public class PlayerWeaponInstance : MonoBehaviour
 {
     public EntityStat damageStat, fireRateStat, magazineSizeStat, reloadSpeedStat, rangeStat;
@@ -16,12 +17,16 @@ public class PlayerWeaponInstance : MonoBehaviour
 
     void Awake()
     {
-        if (Application.isPlaying)
-            SetWeapon(weapon);
+
     }
 
     void Start()
     {
+        if (Application.isPlaying)
+        {
+            SetWeapon(weapon);
+        }
+
         instance = GetComponent<StudioEventEmitter>().EventInstance;
     }
 
@@ -57,14 +62,14 @@ public class PlayerWeaponInstance : MonoBehaviour
         this.weapon = (PlayerWeapon)weapon.Copy(transform);
         damageStat.baseValue = weapon.baseHit.damage;
 
-        if(weapon.name == "Saxophone")
+        if(weapon.name == "Flute")
         {
-            instance.setParameterByName("ThemeIndex", 2);
+            AmbienceManager.Instance.SetTheme(1);
         }
 
-        else if(weapon.name == "Flute")
+        else if(weapon.name == "Saxophone")
         {
-            instance.setParameterByName("ThemeIndex", 1);
+            AmbienceManager.Instance.SetTheme(2);
         }
         
         return;
