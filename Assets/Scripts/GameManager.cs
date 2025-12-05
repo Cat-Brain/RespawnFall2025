@@ -24,6 +24,7 @@ public class GameManager : MonoBehaviour
     public InputActionReference pauseAction;
 
     public PlayerManager playerManager;
+    public PlayerWeaponInstance playerWeaponInstance;
 
     // Audio stuff
     private FMOD.Studio.EventInstance instance;
@@ -47,9 +48,16 @@ public class GameManager : MonoBehaviour
     public float startTime = 0, endTime = 0;
     public int currentLevelMoney = 0;
 
+    void Awake()
+    {
+        playerWeaponInstance = FindFirstObjectByType<PlayerWeaponInstance>();
+    }
+
     void Start()
     {
         instance = GetComponent<StudioEventEmitter>().EventInstance;
+
+        
     }
 
     void Update()
@@ -130,15 +138,16 @@ public class GameManager : MonoBehaviour
             pathTaken.Add(path);
             generationManager.SpawnLevel(0, LevelType.COMBAT);
             // Setting music depending on weapon
-            string weaponName = playerManager.playerWeapon.name;
-            if(weaponName == "Saxophone")
+            string weaponName = playerWeaponInstance.weapon.name;
+            Debug.Log(weaponName);
+            if(weaponName == "Flute(Clone)")
             {
-                instance.setParameterByName("ThemeIndex", 2);
+                AmbienceManager.Instance.SetTheme(4);
             }
 
-            else if(weaponName == "Flute")
+            else if(weaponName == "Saxophone(Clone)")
             {
-                instance.setParameterByName("ThemeIndex", 1);
+                AmbienceManager.Instance.SetTheme(5);
             }
             
             return;

@@ -57,14 +57,14 @@ public class PlayerWeaponInstance : MonoBehaviour
         this.weapon = (PlayerWeapon)weapon.Copy(transform);
         damageStat.baseValue = weapon.baseHit.damage;
 
-        if(weapon.name == "Saxophone")
+        if(weapon.name == "Flute")
         {
-            instance.setParameterByName("ThemeIndex", 2);
+            AmbienceManager.Instance.SetTheme(1);
         }
 
-        else if(weapon.name == "Flute")
+        else if(weapon.name == "Saxophone")
         {
-            instance.setParameterByName("ThemeIndex", 1);
+            AmbienceManager.Instance.SetTheme(2);
         }
         
         return;
