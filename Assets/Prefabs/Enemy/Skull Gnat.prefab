@@ -874,6 +874,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Gnat
   tier: 1
+  type: 0
   spawnOffset: {x: 0.5, y: 0.5}
   spawnDimensions: {x: 1, y: 1}
   playerMask:
@@ -1115,7 +1116,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: -1142458201
-  m_SortingLayer: 3
+  m_SortingLayer: 5
   m_SortingOrder: 0
   m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
   m_Color: {r: 0.33333334, g: 0.7019608, b: 0.23137255, a: 1}
