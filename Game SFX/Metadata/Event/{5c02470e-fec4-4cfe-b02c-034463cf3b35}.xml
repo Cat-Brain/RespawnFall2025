@@ -154,6 +154,9 @@
 		</relationship>
 	</object>
 	<object class="EventMixerGroup" id="{271b2028-245e-41c9-8c82-9acb252f5eb9}">
+		<property name="volume">
+			<value>-10</value>
+		</property>
 		<property name="name">
 			<value>Audio 1</value>
 		</property>
@@ -185,6 +188,9 @@
 		</relationship>
 	</object>
 	<object class="EventMixerGroup" id="{94e5ecc4-9339-4b33-89fa-138e993dea91}">
+		<property name="volume">
+			<value>-10</value>
+		</property>
 		<property name="name">
 			<value>Orchestral</value>
 		</property>
@@ -213,6 +219,9 @@
 		</relationship>
 	</object>
 	<object class="EventMixerGroup" id="{62fe4f7f-251e-4c0e-924a-d510fa452d28}">
+		<property name="volume">
+			<value>-10</value>
+		</property>
 		<property name="name">
 			<value>Jazz</value>
 		</property>
@@ -244,6 +253,9 @@
 		</relationship>
 	</object>
 	<object class="EventMixerGroup" id="{9f1fc458-7cde-4835-9387-e0a6ca483383}">
+		<property name="volume">
+			<value>-10</value>
+		</property>
 		<property name="name">
 			<value>Reggaeton</value>
 		</property>

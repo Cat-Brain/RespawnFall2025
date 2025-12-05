@@ -141,8 +141,6 @@ public class GameManager : MonoBehaviour
                 instance.setParameterByName("ThemeIndex", 1);
             }
             
-            
-
             return;
         }
         pathTaken.Add(path);

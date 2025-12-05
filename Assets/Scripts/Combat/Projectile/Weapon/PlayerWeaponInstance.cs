@@ -56,5 +56,17 @@ public class PlayerWeaponInstance : MonoBehaviour
         playerManager.SetEyeColor(weapon.playerEyeColor, this.weapon.playerEyeColor);
         this.weapon = (PlayerWeapon)weapon.Copy(transform);
         damageStat.baseValue = weapon.baseHit.damage;
+
+        if(weapon.name == "Saxophone")
+        {
+            instance.setParameterByName("ThemeIndex", 2);
+        }
+
+        else if(weapon.name == "Flute")
+        {
+            instance.setParameterByName("ThemeIndex", 1);
+        }
+        
+        return;
     }
 }
