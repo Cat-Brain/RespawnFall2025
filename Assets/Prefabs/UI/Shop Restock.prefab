@@ -182,6 +182,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PriceTick
   col: {fileID: 2270199466814288423}
   cost: 2
+  text: {fileID: 2211985811203401405}
   manager: {fileID: 0}
 --- !u!114 &8416920785803081719
 MonoBehaviour:

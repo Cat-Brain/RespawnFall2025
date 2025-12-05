@@ -296,6 +296,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GhostFlower
   tier: 1
+  type: 1
   spawnOffset: {x: 1, y: 0}
   spawnDimensions: {x: 2, y: 2}
   playerMask:

@@ -20,6 +20,7 @@ GameObject:
   - component: {fileID: 4786445329364888160}
   - component: {fileID: 4475697682151715070}
   - component: {fileID: 471791147960816919}
+  - component: {fileID: 5224763206680680110}
   m_Layer: 5
   m_Name: Inventory Pickup
   m_TagString: Untagged
@@ -294,3 +295,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::InventoryPickupTick
   sr: {fileID: 2239868600269434095}
   item: {fileID: 0}
+--- !u!114 &5224763206680680110
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2988025648945830785}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e611082b13096a4b94c8cc501316d9b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ScaleIn
+  scaleDuration: 0.25

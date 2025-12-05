@@ -1,7 +1,8 @@
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CombatReward : MonoBehaviour
+public class CombatReward : OnTickEffect
 {
     public GameObject itemPrefab;
     public List<InventoryItem> potentialSpawns;
@@ -18,28 +19,30 @@ public class CombatReward : MonoBehaviour
         manager = FindAnyObjectByType<GameManager>();
     }
 
-    void Update()
+    public override void OnTick(TickEntity tickEntity)
     {
         if (hasRewarded || manager.inCombat)
             return;
 
-        if (toSpawnItems == 0)
+        StartCoroutine(SpawnReward());
+    }
+
+    public IEnumerator SpawnReward()
+    {
+        if (hasRewarded)
+            yield break;
+
+        hasRewarded = true;
+        for (int i = 0; i < toSpawnItems; i++)
         {
-            hasRewarded = true;
-            return;
+            yield return new WaitForSeconds(itemThrowTime);
+            GameObject newItem = Instantiate(itemPrefab, transform.position, Quaternion.identity, transform);
+            newItem.GetComponent<InventoryPickupTick>().SetItem(
+                potentialSpawns[Random.Range(0, potentialSpawns.Count)]);
+            newItem.GetComponent<Rigidbody2D>().linearVelocity = itemForce *
+                CMath.Rotate(Vector2.up, Random.Range(-maxItemRot, maxItemRot) * Mathf.Deg2Rad);
+
+            itemThrowTimer += itemThrowTime;
         }
-
-        itemThrowTimer -= Time.deltaTime;
-        if (itemThrowTimer > 0)
-            return;
-
-        GameObject newItem = Instantiate(itemPrefab, transform.position, Quaternion.identity, transform);
-        newItem.GetComponent<InventoryPickupTick>().SetItem(
-            potentialSpawns[Random.Range(0, potentialSpawns.Count)]);
-        newItem.GetComponent<Rigidbody2D>().linearVelocity = itemForce *
-            CMath.Rotate(Vector2.up, Random.Range(-maxItemRot, maxItemRot) * Mathf.Deg2Rad);
-
-        itemThrowTimer += itemThrowTime;
-        toSpawnItems--;
     }
 }
