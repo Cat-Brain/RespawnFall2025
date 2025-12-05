@@ -52,6 +52,7 @@ public class ProjectileInst : MonoBehaviour
 
     public virtual void Destruct()
     {
+        transform.DOKill();
         transform.DOScale(0, data.destructTime).OnComplete(() => Destroy(gameObject));
         enabled = false;
     }

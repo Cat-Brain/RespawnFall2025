@@ -58,14 +58,14 @@ TagManager:
   - name: Smoke
     uniqueID: 33222699
     locked: 0
-  - name: Enemy Projectile
-    uniqueID: 3152509095
-    locked: 0
   - name: Player
     uniqueID: 2371696209
     locked: 0
   - name: Ground
     uniqueID: 1557472805
+    locked: 0
+  - name: Enemy Projectile
+    uniqueID: 3152509095
     locked: 0
   - name: UI
     uniqueID: 624822735

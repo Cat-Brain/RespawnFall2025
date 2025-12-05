@@ -8,6 +8,7 @@ public class DestroyOnDeath : Health
 
     public override void OnDeath()
     {
+        inst.transform.DOKill();
         inst.transform.DOScale(0, deathTime).OnComplete(() => Destroy(inst.gameObject));
         inst.enabled = false;
     }

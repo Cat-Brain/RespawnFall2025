@@ -3,10 +3,21 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
+public enum EnemyType
+{
+    NORMAL, SUPPORT
+}
+
 [Serializable]
 public struct EnemyTierData
 {
     public int tier, typeCount, totalQuantity;
+    public EnemyType type;
+
+    public readonly bool EnemyValid(Enemy enemy)
+    {
+        return enemy.tier == tier && enemy.type == type;
+    }
 }
 
 [Serializable]
@@ -66,7 +77,7 @@ public class EnemyManager : MonoBehaviour
 
         foreach (EnemyTierData tierData in levelData[currentLevel].waves[currentWave].data)
         {
-            List<Enemy> enemiesInTier = validEnemies.Where((enemy) => enemy.tier == tierData.tier).ToList();
+            List<Enemy> enemiesInTier = validEnemies.Where((enemy) => tierData.EnemyValid(enemy)).ToList();
             Enemy[] enemiesToSpawn = new Enemy[tierData.typeCount];
             for (int i = 0; i < tierData.typeCount; i++)
             {

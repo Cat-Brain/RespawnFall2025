@@ -8,7 +8,7 @@ public class EventOnAction : MonoBehaviour
     public List<InputActionReference> actions;
     public UnityEvent onPress, onHold, onRelease;
 
-    public bool active;
+    public bool active = true;
 
     public void Awake()
     {

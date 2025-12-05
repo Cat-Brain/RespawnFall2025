@@ -13,6 +13,6 @@ public class InventoryPickupTick : OnTickEffect
     public void SetItem(InventoryItem item)
     {
         this.item = item;
-        sr.sprite = item.sprite;
+        sr.sprite = item == null ? null : item.sprite;
     }
 }

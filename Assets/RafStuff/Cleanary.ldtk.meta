@@ -1,0 +1,78 @@
+fileFormatVersion: 2
+guid: 90670a81a2a64e049abcb0b2fa0e0f9d
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: aaa16bfc62c086f4fb45da87b6acf9b1, type: 3}
+  _reimportOnDependencyChange: 1
+  _jsonFile: {fileID: -164016180542632921, guid: 90670a81a2a64e049abcb0b2fa0e0f9d, type: 3}
+  _pixelsPerUnit: 16
+  _customLevelPrefab: {instanceID: 0}
+  _intGridValueColorsVisible: 0
+  _useCompositeCollider: 1
+  _geometryType: 0
+  _createBackgroundColor: 0
+  _createLevelBoundsTrigger: 0
+  _useParallax: 1
+  _scaleEntities: 1
+  _intGridValues:
+  - _key: IntGrid_1
+    _asset: {instanceID: 0}
+  _entities:
+  - _key: Player
+    _asset: {fileID: 7230076448914424605, guid: a431a3a26c7d5ce4e9181a1bc3972865, type: 3}
+  - _key: Harpy
+    _asset: {instanceID: 0}
+  - _key: Styx
+    _asset: {instanceID: 0}
+  - _key: Walker
+    _asset: {instanceID: 0}
+  - _key: Flower
+    _asset: {instanceID: 0}
+  - _key: Crumbling
+    _asset: {fileID: 5345389114221763969, guid: 42927a14cb257aa4f9b2bf2ddcc16081, type: 3}
+  - _key: One_Way
+    _asset: {fileID: 2541446833654820051, guid: c412389dc3f48254fa58c9ccd129e84a, type: 3}
+  - _key: Win
+    _asset: {fileID: 6519263521840097383, guid: 663a213a24d4d054f983b8f53159b04d, type: 3}
+  - _key: Enemy_Air_Spawn
+    _asset: {fileID: 4021831251702732551, guid: 12c8a195f7f972f4a931e3bd313bd43a, type: 3}
+  - _key: Enemy_Ground_Spawn
+    _asset: {fileID: 4021831251702732551, guid: 38e3d8f59f10a39468773a69e7ca9267, type: 3}
+  - _key: Ground
+    _asset: {fileID: 3605211962370889454, guid: b27f7c4cec6adb04382bbdc95e2e9760, type: 3}
+  - _key: Bounce_Pad
+    _asset: {fileID: 3387768960144438377, guid: 9588d38da150a4240951291b26763c94, type: 3}
+  - _key: Moss_Balls
+    _asset: {fileID: 112010154059402184, guid: 0f499180a1563ac43963bb7f98bc5c7d, type: 3}
+  - _key: Enemy_Spawn_Buffer
+    _asset: {fileID: 7773078531559540881, guid: df3ad2a2cb948b64084027b61f4dabdd, type: 3}
+  - _key: Wall_Invisible
+    _asset: {fileID: 2652371725896248024, guid: 3981bb1792a9ef24582233a24c7f3e9f, type: 3}
+  - _key: Large_Bath
+    _asset: {instanceID: 0}
+  - _key: Crow
+    _asset: {instanceID: 0}
+  - _key: Shop_Item
+    _asset: {instanceID: 0}
+  - _key: Chest
+    _asset: {instanceID: 0}
+  - _key: Small_Bath
+    _asset: {instanceID: 0}
+  - _key: Main_Bath
+    _asset: {instanceID: 0}
+  - _key: End_of_Level_Right
+    _asset: {fileID: 4026634023225149634, guid: 7ddb3429a7b819e4eaf602009c05769f, type: 3}
+  - _key: End_of_Level_Left
+    _asset: {fileID: 8558974644259331463, guid: 6947b4d302d0ee544abd1cb8a08ab05a, type: 3}
+  - _key: Reward_Item
+    _asset: {fileID: 3653660039003818846, guid: f70574dafd48e0c478f0cd9058eff322, type: 3}
+  - _key: Restock
+    _asset: {instanceID: 0}
+  _enumGenerate: 0
+  _enumPath: 
+  _enumNamespace: 
