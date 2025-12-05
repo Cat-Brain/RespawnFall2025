@@ -24,7 +24,7 @@ public class EnemySpawnPosition : MonoBehaviour
 
     public Vector2Int FindGridPos()
     {
-        return Vector2Int.RoundToInt((Vector2)transform.position + offset);
+        return Vector2Int.RoundToInt((Vector2)transform.localPosition + offset);
     }
 
     public void OnDrawGizmos()

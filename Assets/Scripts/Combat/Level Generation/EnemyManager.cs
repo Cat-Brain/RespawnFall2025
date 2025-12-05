@@ -95,16 +95,19 @@ public class EnemyManager : MonoBehaviour
                 
                 if (validSpawns.Count == 0)
                 {
-                    Debug.Log(type);
+                    Debug.Log("Could not spawn Enemy!");
+                    Debug.LogWarning(type);
                     continue;
                 }
-                Vector2Int spawnPosition = validSpawns[UnityEngine.Random.Range(0, validSpawns.Count)].gridPos;
+                int spawnIndex = UnityEngine.Random.Range(0, validSpawns.Count);
+                Vector2Int spawnPositionGrid = validSpawns[spawnIndex].gridPos;
+                Vector2 spawnPosition = validSpawns[spawnIndex].transform.position;
 
                 spawnPositionsClone.RemoveAll((position) =>
-                    position.gridPos.x >= spawnPosition.x &&
-                    position.gridPos.y >= spawnPosition.y &&
-                    position.gridPos.x < spawnPosition.x + type.spawnDimensions.x &&
-                    position.gridPos.y < spawnPosition.y + type.spawnDimensions.y);
+                    position.gridPos.x >= spawnPositionGrid.x &&
+                    position.gridPos.y >= spawnPositionGrid.y &&
+                    position.gridPos.x < spawnPositionGrid.x + type.spawnDimensions.x &&
+                    position.gridPos.y < spawnPositionGrid.y + type.spawnDimensions.y);
 
                 if (!firstWave)
                     type.gameObject.SetActive(false);
