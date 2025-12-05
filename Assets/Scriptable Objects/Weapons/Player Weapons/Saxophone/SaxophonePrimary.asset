@@ -24,8 +24,8 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 6db4e71ecdcf0874ab8de4e4fe32b5b5, type: 3}
   - {fileID: 8300000, guid: 50a7d730977204049acd4462513d799c, type: 3}
   - {fileID: 8300000, guid: 30f1a048bc9e44348a00c4279b25f159, type: 3}
-  projectilePrefab: {fileID: 7878727207753161381, guid: e925f11ddcf332f439076888fddd62cf, type: 3}
+  projectilePrefab: {fileID: 6958030081902031046, guid: 3fe3141aea83d994b8ab07520d4e9720, type: 3}
   projectile: {fileID: 11400000, guid: fdd8430e563b40349ba20495b0426ead, type: 2}
   shotsPerBurst: 3
   fireRate: 11.25
-  timeBetweenBursts: 0.4
+  timeBetweenBursts: 0.5
