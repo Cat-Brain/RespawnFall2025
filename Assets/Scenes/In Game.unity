@@ -174,14 +174,17 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2619534745981113462, guid: 00dd54f4825b1924a9b6f4f07ad4180a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1072704880}
   m_SourcePrefab: {fileID: 100100000, guid: 00dd54f4825b1924a9b6f4f07ad4180a, type: 3}
 --- !u!114 &108699295 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4788519261258228379, guid: 00dd54f4825b1924a9b6f4f07ad4180a, type: 3}
   m_PrefabInstance: {fileID: 108699294}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1072704864}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bfde92923935cca43bcc5057c82643fc, type: 3}
@@ -717,7 +720,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3380364024760122889, guid: 8545a1254127b4542b77563ae7578023, type: 3}
       propertyPath: orthographic size
-      value: 4.8125
+      value: 4.1875
       objectReference: {fileID: 0}
     - target: {fileID: 3380364024760122889, guid: 8545a1254127b4542b77563ae7578023, type: 3}
       propertyPath: m_BackGroundColor.b
@@ -737,7 +740,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3380364024760122889, guid: 8545a1254127b4542b77563ae7578023, type: 3}
       propertyPath: m_NormalizedViewPortRect.y
-      value: 0
+      value: 0.0037037036
       objectReference: {fileID: 0}
     - target: {fileID: 3380364024760122889, guid: 8545a1254127b4542b77563ae7578023, type: 3}
       propertyPath: m_NormalizedViewPortRect.width
@@ -745,7 +748,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3380364024760122889, guid: 8545a1254127b4542b77563ae7578023, type: 3}
       propertyPath: m_NormalizedViewPortRect.height
-      value: 1
+      value: 0.9925926
       objectReference: {fileID: 0}
     - target: {fileID: 4595435035252540356, guid: 8545a1254127b4542b77563ae7578023, type: 3}
       propertyPath: m_LocalPosition.x
@@ -794,6 +797,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2153410256004071049, guid: 8545a1254127b4542b77563ae7578023, type: 3}
       insertIndex: -1
       addedObject: {fileID: 998624290}
+    - targetCorrespondingSourceObject: {fileID: 2153410256004071049, guid: 8545a1254127b4542b77563ae7578023, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 998624295}
   m_SourcePrefab: {fileID: 100100000, guid: 8545a1254127b4542b77563ae7578023, type: 3}
 --- !u!1 &998624289 stripped
 GameObject:
@@ -822,6 +828,20 @@ MonoBehaviour:
   angularVelocity: 0
   velocity: {x: 0, y: 0}
   lastXVelocity: 0
+--- !u!114 &998624295
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 998624289}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86c6556701af9e04380698b89f691b6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: FMODUnity::FMODUnity.StudioListener
+  nonRigidbodyVelocity: 0
+  attenuationObject: {fileID: 0}
 --- !u!1001 &1018100978
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -918,6 +938,82 @@ Transform:
   - {fileID: 585243572}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1072704864 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2619534745981113462, guid: 00dd54f4825b1924a9b6f4f07ad4180a, type: 3}
+  m_PrefabInstance: {fileID: 108699294}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1072704880
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1072704864}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: FMODUnity::FMODUnity.StudioEventEmitter
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 1543653134
+      Data2: 1291779780
+      Data3: 1141058736
+      Data4: 893112163
+    Path: event:/Music and Background
+  Event: 
+  EventPlayTrigger: 1
+  EventStopTrigger: 2
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params:
+  - Name: ThemeIndex
+    Value: 0
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!1 &1154520834 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8128052981618572226, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
+  m_PrefabInstance: {fileID: 1158623688}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1154520839
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1154520834}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: FMODUnity::FMODUnity.StudioEventEmitter
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 1543653134
+      Data2: 1291779780
+      Data3: 1141058736
+      Data4: 893112163
+    Path: event:/Music and Background
+  Event: 
+  EventPlayTrigger: 1
+  EventStopTrigger: 2
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params:
+  - Name: ThemeIndex
+    Value: 0
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1001 &1158623688
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -977,7 +1073,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8128052981618572226, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1154520839}
   m_SourcePrefab: {fileID: 100100000, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
 --- !u!1001 &1587356351
 PrefabInstance:

@@ -45,6 +45,5 @@ public class BurstWeaponPrimary : StandardWeaponPrimary
         Instantiate(projectilePrefab, weapon.wielder.position, Quaternion.identity)
             .GetComponent<ProjectileInst>().Init(GetProjectile(),
             ((Vector2)(Camera.main.ScreenToWorldPoint(Mouse.current.position.ReadValue()) - weapon.wielder.position)).normalized);
-        AudioManager.instance.PlaySoundFXClip(activationClips[Random.Range(0, activationClips.Length)], weapon.wielder, 1);
     }
 }

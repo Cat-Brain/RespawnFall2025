@@ -5,7 +5,6 @@ public class WeaponReload : ScriptableObject
 {
     public int ammo;
     public float reloadTime;
-    public AudioClip reloadClip;
 
     [HideInInspector] public Weapon weapon;
 
@@ -37,6 +36,5 @@ public class WeaponReload : ScriptableObject
 
         reloading = true;
         reloadTimer = reloadTime / weapon.stats.reloadSpeed;
-        AudioManager.instance.PlaySoundFXClip(reloadClip, weapon.wielder, 1);
     }
 }
