@@ -112,7 +112,7 @@ public class HealthInst : MonoBehaviour
             Die();
             return !alive;
         }
-        fractionalHealthOffset = CMath.Mod(effectiveDamage, 1);
+        fractionalHealthOffset = effectiveDamage % 1;
         effectiveDamage -= fractionalHealthOffset;
         OnHealthChange(health - Mathf.RoundToInt(effectiveDamage), hit);
 
@@ -158,9 +158,9 @@ public class HealthInst : MonoBehaviour
 
         if (newHealth < health)
             SpawnDamageNumber(health - newHealth, hit.HasValue && hit.Value.position != Vector2.zero ? hit.Value.position : transform.position);
-        //else
-            //Debug.LogWarning("We need to implement something for healing!!!");
-        health = Mathf.Min(data.maxHealth, newHealth);
+        else
+            Debug.LogWarning("We need to implement something for healing!!!");
+        health = newHealth;
     }
 
     protected void OnHit(ref Hit hit)
