@@ -21,11 +21,7 @@
 		}
 	],
 	"customFields" : {},
-	"layers": [
-		"Tiles.png",
-		"AutoLayer.png",
-		"IntGrid.png"
-	],
+	"layers": [],
 	"entities": {
 		"Bounce_Pad": [
 			{
