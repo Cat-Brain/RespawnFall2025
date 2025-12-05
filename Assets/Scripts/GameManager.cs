@@ -3,6 +3,7 @@ using System.Linq;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.InputSystem;
+using FMODUnity;
 
 public enum GameState
 {
@@ -24,13 +25,16 @@ public class GameManager : MonoBehaviour
 
     public PlayerManager playerManager;
 
+    // Audio stuff
+    private FMOD.Studio.EventInstance instance;
+
     public int pathCount;
     public LevelType[] basePath, pathEnd;
     public string[] levelTypeStrings;
     public Color[] levelTypeColors;
     
     public GameState gameState;
-    public AudioClip deathClip;
+  
     public GameObject lobby;
 
     [Header("Debug Variables")]
@@ -42,6 +46,11 @@ public class GameManager : MonoBehaviour
     public bool inCombat, endScreenLanded = false, inLobby = true;
     public float startTime = 0, endTime = 0;
     public int currentLevelMoney = 0;
+
+    void Start()
+    {
+        instance = GetComponent<StudioEventEmitter>().EventInstance;
+    }
 
     void Update()
     {
@@ -120,6 +129,18 @@ public class GameManager : MonoBehaviour
             BeginGame();
             pathTaken.Add(path);
             generationManager.SpawnLevel(0, LevelType.COMBAT);
+            // Setting music depending on weapon
+            string weaponName = playerManager.playerWeapon.name;
+            if(weaponName == "Saxophone")
+            {
+                instance.setParameterByName("ThemeIndex", 2);
+            }
+
+            else if(weaponName == "Flute")
+            {
+                instance.setParameterByName("ThemeIndex", 1);
+            }
+            
             return;
         }
         pathTaken.Add(path);

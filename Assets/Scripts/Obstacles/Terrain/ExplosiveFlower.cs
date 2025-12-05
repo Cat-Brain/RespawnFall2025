@@ -5,7 +5,7 @@ public class ExplosiveFlower : ProjectileDestroyed
     public float explosionRadius, explosionForce;
     [Range(0, 1)] public float verticalBoostCorrection;
     public LayerMask explosionMask;
-    public AudioClip flowerPopClip;
+   
 
     public override void OnBlock(ProjectileInst projectile)
     {
@@ -25,7 +25,6 @@ public class ExplosiveFlower : ProjectileDestroyed
                 }
             }
 
-        AudioManager.instance.PlaySoundFXClip(flowerPopClip, transform, 0.2f);
         base.OnBlock(projectile);
     }
 

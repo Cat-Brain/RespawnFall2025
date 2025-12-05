@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="AudioFile" id="{8f318027-20fd-4f54-a950-3e876b4c080e}">
+		<property name="assetPath">
+			<value>Music/Action Themes/Action Theme - Reggaeton Bitcrushed.wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>96</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{72b47c9e-3948-4539-9284-e035c14c3004}</destination>
+		</relationship>
+	</object>
+</objects>

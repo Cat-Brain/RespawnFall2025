@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="AudioFile" id="{bf9bbc07-e3fc-4b30-b778-fd548135f264}">
+		<property name="assetPath">
+			<value>Music/Action Themes/Action Theme - Rock Bitcrushed.wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>100.17392290249433</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{72b47c9e-3948-4539-9284-e035c14c3004}</destination>
+		</relationship>
+	</object>
+</objects>

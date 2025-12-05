@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="AudioFile" id="{611cf133-294b-4ed4-b577-ecd61b08d62f}">
+		<property name="assetPath">
+			<value>SFX/Enemies/Flower Pop.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>0.80768707482993196</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{72b47c9e-3948-4539-9284-e035c14c3004}</destination>
+		</relationship>
+	</object>
+</objects>
