@@ -1,10 +1,12 @@
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class ShopItem : OnTickEffect
 {
     public InventoryPickupTick pickupTick;
     public List<EventOnAction> eventActions;
+    public TextMeshProUGUI priceText, dimensionsText;
 
     public List<InventoryItem> items;
 
@@ -23,20 +25,24 @@ public class ShopItem : OnTickEffect
 
     public void UpdateItem()
     {
+        if (item != null)
+            dimensionsText.text = item.dimensions.x.ToString() + "x" + item.dimensions.y.ToString();
         pickupTick.SetItem(item);
-        SetActiveEventActions(true);
+        SetActive(true);
     }
 
-    public void SetActiveEventActions(bool active)
+    public void SetActive(bool active)
     {
         foreach (EventOnAction eventAction in eventActions)
             eventAction.active = active;
+        priceText.enabled = active;
+        dimensionsText.enabled = active;
     }
 
     public override void OnTick(TickEntity tickEntity)
     {
         item = null;
-        SetActiveEventActions(false);
+        SetActive(false);
     }
 
     void Update()

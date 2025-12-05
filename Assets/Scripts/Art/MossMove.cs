@@ -4,6 +4,7 @@ public class MossMove : MonoBehaviour
 {
     public float radiusMultiplier;
     public float moveFrequency, moveDamping;
+    public int groundLayer;
 
     public SpringUtils.tDampedSpringMotionParams moveSpring = new();
     public Vector2 basePos;
@@ -27,7 +28,8 @@ public class MossMove : MonoBehaviour
 
     public void OnTriggerStay2D(Collider2D collision)
     {
-        if (!collision.enabled)
+        if (!collision.enabled || collision.isTrigger ||
+            Physics2D.GetIgnoreLayerCollision(groundLayer, collision.gameObject.layer))
             return;
 
         Vector2 nearestPoint = collision.ClosestPoint(transform.position);

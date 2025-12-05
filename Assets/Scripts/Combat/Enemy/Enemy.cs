@@ -5,6 +5,7 @@ using UnityEngine;
 public class Enemy : OnTickEffect
 {
     public int tier;
+    public EnemyType type;
     [Tooltip("Offset added to position at spawn to make bottom of enemy grid alligned")]
     public Vector2 spawnOffset;
     public Vector2 spawnDimensions;

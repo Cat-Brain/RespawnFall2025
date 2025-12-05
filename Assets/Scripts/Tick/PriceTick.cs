@@ -1,9 +1,11 @@
+using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
 public class PriceTick : TickWhenHoveredEntity
 {
     public int cost;
+    public TextMeshProUGUI text;
 
     [HideInInspector] public GameManager manager;
 
@@ -30,5 +32,10 @@ public class PriceTick : TickWhenHoveredEntity
 
         manager.currentLevelMoney -= cost;
         base.BypassTick();
+    }
+
+    void LateUpdate()
+    {
+        text.text = cost.ToString();
     }
 }
