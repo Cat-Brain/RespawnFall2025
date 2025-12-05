@@ -15,7 +15,7 @@ ScriptedImporter:
   _intGridValueColorsVisible: 0
   _useCompositeCollider: 1
   _geometryType: 0
-  _createBackgroundColor: 1
+  _createBackgroundColor: 0
   _createLevelBoundsTrigger: 0
   _useParallax: 1
   _scaleEntities: 1
@@ -71,6 +71,8 @@ ScriptedImporter:
     _asset: {fileID: 8558974644259331463, guid: 6947b4d302d0ee544abd1cb8a08ab05a, type: 3}
   - _key: Reward_Item
     _asset: {fileID: 3653660039003818846, guid: f70574dafd48e0c478f0cd9058eff322, type: 3}
+  - _key: Restock
+    _asset: {instanceID: 0}
   _enumGenerate: 0
   _enumPath: 
   _enumNamespace: 

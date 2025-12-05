@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 666842752285102946}
   - component: {fileID: 5336481158788000394}
   - component: {fileID: 2106540443524920733}
+  - component: {fileID: 2720084687836056007}
   m_Layer: 0
   m_Name: Bouncer
   m_TagString: Untagged
@@ -140,7 +141,7 @@ MonoBehaviour:
   bounceMask:
     serializedVersion: 2
     m_Bits: 1024
-  bounceForce: 6
+  bounceForce: 15
   horizontalMultiplier: 0.25
   bounceCooldown: 0.5
 --- !u!61 &2106540443524920733
@@ -174,10 +175,10 @@ BoxCollider2D:
     serializedVersion: 2
     m_Bits: 4294967295
   m_IsTrigger: 0
-  m_UsedByEffector: 0
+  m_UsedByEffector: 1
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.5, y: -0.5}
+  m_Offset: {x: 0.5, y: -0.121}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 1}
@@ -189,3 +190,22 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 0.25}
   m_EdgeRadius: 0
+--- !u!251 &2720084687836056007
+PlatformEffector2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3387768960144438377}
+  m_Enabled: 1
+  m_UseColliderMask: 1
+  m_ColliderMask:
+    serializedVersion: 2
+    m_Bits: 50934
+  m_RotationalOffset: 0
+  m_UseOneWay: 1
+  m_UseOneWayGrouping: 0
+  m_SurfaceArc: 180
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
+  m_SideArc: 1

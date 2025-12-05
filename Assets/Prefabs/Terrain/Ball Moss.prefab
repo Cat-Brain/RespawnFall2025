@@ -168,7 +168,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::HealthInst
   tickEntity: {fileID: 0}
   data: {fileID: 11400000, guid: 4245bdab1a229614a9767b802180dcec, type: 2}
-  health: 0
+  health: 50
   fractionalHealthOffset: 0
   statuses: []
   newStatuses: []

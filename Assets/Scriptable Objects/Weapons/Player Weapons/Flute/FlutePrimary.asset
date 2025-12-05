@@ -24,6 +24,6 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 6db4e71ecdcf0874ab8de4e4fe32b5b5, type: 3}
   - {fileID: 8300000, guid: 50a7d730977204049acd4462513d799c, type: 3}
   - {fileID: 8300000, guid: 30f1a048bc9e44348a00c4279b25f159, type: 3}
-  projectilePrefab: {fileID: 7878727207753161381, guid: e925f11ddcf332f439076888fddd62cf, type: 3}
+  projectilePrefab: {fileID: 5264746078542385083, guid: 84c14eed51193164f9175f1966f512af, type: 3}
   projectile: {fileID: 11400000, guid: 938fd141d1ae9ad40bdd7bc580d4dcbf, type: 2}
   fireRate: 10

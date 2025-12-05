@@ -24,9 +24,9 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 1
   radius: 0.5
-  speed: 6
-  range: 7.5
-  spread: 10
+  speed: 12
+  range: 10
+  spread: 3
   spawnTime: 0.5
   destructTime: 0.25
   inst: {fileID: 0}

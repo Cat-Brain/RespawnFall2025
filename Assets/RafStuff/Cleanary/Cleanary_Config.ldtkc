@@ -6,7 +6,7 @@
     "IntGridValueColorsVisible": false,
     "UseCompositeCollider": true,
     "GeometryType": 0,
-    "CreateBackgroundColor": true,
+    "CreateBackgroundColor": false,
     "CreateLevelBoundsTrigger": false,
     "UseParallax": true,
     "ScaleEntities": true,
@@ -189,6 +189,12 @@
                 "fileID": 3653660039003818846,
                 "guid": "f70574dafd48e0c478f0cd9058eff322",
                 "type": 3
+            }
+        },
+        {
+            "_key": "Restock",
+            "_asset": {
+                "instanceID": 0
             }
         }
     ]
