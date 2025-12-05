@@ -127,12 +127,12 @@ public class GameManager : MonoBehaviour
             string weaponName = playerManager.playerWeapon.name;
             if(weaponName == "Saxophone")
             {
-                instance.setParameterByName("ThemeIndex", 3);
+                instance.setParameterByName("ThemeIndex", 2);
             }
 
             else if(weaponName == "Flute")
             {
-                instance.setParameterByName("ThemeIndex", 2);
+                instance.setParameterByName("ThemeIndex", 1);
             }
             
             

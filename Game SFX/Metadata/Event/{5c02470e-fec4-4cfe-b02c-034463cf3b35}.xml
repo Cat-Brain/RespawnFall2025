@@ -78,7 +78,7 @@
 	</object>
 	<object class="GroupTrack" id="{7aa1faed-5074-400c-a671-80ee23b39b45}">
 		<relationship name="modules">
-			<destination>{bfd9f745-0385-4ade-bf77-f7b7ddb1cf31}</destination>
+			<destination>{b3946f73-7712-4ba3-b2b6-e12bc606895e}</destination>
 		</relationship>
 		<relationship name="mixerGroup">
 			<destination>{94e5ecc4-9339-4b33-89fa-138e993dea91}</destination>
@@ -86,7 +86,7 @@
 	</object>
 	<object class="GroupTrack" id="{26301670-ad7d-45e5-8ffe-b62de3c57da2}">
 		<relationship name="modules">
-			<destination>{dd91dda0-52fa-4d53-bc91-70b1f6c6cc73}</destination>
+			<destination>{2ed01cb1-416d-4f6e-ad24-e6421b49b048}</destination>
 		</relationship>
 		<relationship name="mixerGroup">
 			<destination>{62fe4f7f-251e-4c0e-924a-d510fa452d28}</destination>
@@ -94,7 +94,7 @@
 	</object>
 	<object class="GroupTrack" id="{52e50c06-212f-47f3-8ebd-9ab04cb6557e}">
 		<relationship name="modules">
-			<destination>{2ed01cb1-416d-4f6e-ad24-e6421b49b048}</destination>
+			<destination>{d273d3a2-fa19-4d2e-becc-cbaf06b95ae8}</destination>
 		</relationship>
 		<relationship name="mixerGroup">
 			<destination>{9f1fc458-7cde-4835-9387-e0a6ca483383}</destination>
@@ -112,10 +112,10 @@
 	</object>
 	<object class="ParameterProxy" id="{f5df18b1-e63d-4406-bff8-ad9ca970e43b}">
 		<relationship name="modules">
-			<destination>{bfd9f745-0385-4ade-bf77-f7b7ddb1cf31}</destination>
-			<destination>{dd91dda0-52fa-4d53-bc91-70b1f6c6cc73}</destination>
 			<destination>{2ed01cb1-416d-4f6e-ad24-e6421b49b048}</destination>
 			<destination>{778d293e-98a7-4fd1-8bbd-98db2d9122eb}</destination>
+			<destination>{b3946f73-7712-4ba3-b2b6-e12bc606895e}</destination>
+			<destination>{d273d3a2-fa19-4d2e-becc-cbaf06b95ae8}</destination>
 		</relationship>
 		<relationship name="preset">
 			<destination>{dc5f55be-ef3b-422a-9a27-c82928af1929}</destination>
@@ -167,20 +167,26 @@
 			<destination>{ff6c2ffc-bee2-4f1c-a8c1-0d22fbdf1780}</destination>
 		</relationship>
 	</object>
-	<object class="SingleSound" id="{bfd9f745-0385-4ade-bf77-f7b7ddb1cf31}">
+	<object class="SingleSound" id="{b3946f73-7712-4ba3-b2b6-e12bc606895e}">
 		<property name="isCutoff">
 			<value>true</value>
 		</property>
 		<property name="start">
 			<value>1</value>
 		</property>
+		<property name="volume">
+			<value>-4</value>
+		</property>
+		<property name="looping">
+			<value>true</value>
+		</property>
 		<relationship name="audioFile">
-			<destination>{bf9bbc07-e3fc-4b30-b778-fd548135f264}</destination>
+			<destination>{0325c0d1-56b6-4089-bede-1391d0988500}</destination>
 		</relationship>
 	</object>
 	<object class="EventMixerGroup" id="{94e5ecc4-9339-4b33-89fa-138e993dea91}">
 		<property name="name">
-			<value>Rock</value>
+			<value>Orchestral</value>
 		</property>
 		<relationship name="effectChain">
 			<destination>{7627edde-a175-4d22-adea-f27589c38ef8}</destination>
@@ -192,20 +198,23 @@
 			<destination>{ff6c2ffc-bee2-4f1c-a8c1-0d22fbdf1780}</destination>
 		</relationship>
 	</object>
-	<object class="SingleSound" id="{dd91dda0-52fa-4d53-bc91-70b1f6c6cc73}">
+	<object class="SingleSound" id="{2ed01cb1-416d-4f6e-ad24-e6421b49b048}">
 		<property name="isCutoff">
 			<value>true</value>
 		</property>
 		<property name="start">
 			<value>2</value>
 		</property>
+		<property name="looping">
+			<value>true</value>
+		</property>
 		<relationship name="audioFile">
-			<destination>{8f318027-20fd-4f54-a950-3e876b4c080e}</destination>
+			<destination>{c1c10b5f-f7a9-4f47-a90b-1faef72cfc47}</destination>
 		</relationship>
 	</object>
 	<object class="EventMixerGroup" id="{62fe4f7f-251e-4c0e-924a-d510fa452d28}">
 		<property name="name">
-			<value>Reggaeton</value>
+			<value>Jazz</value>
 		</property>
 		<relationship name="effectChain">
 			<destination>{d05c04c0-5b9d-4ac8-9f0d-f787bb063641}</destination>
@@ -217,20 +226,26 @@
 			<destination>{ff6c2ffc-bee2-4f1c-a8c1-0d22fbdf1780}</destination>
 		</relationship>
 	</object>
-	<object class="SingleSound" id="{2ed01cb1-416d-4f6e-ad24-e6421b49b048}">
+	<object class="SingleSound" id="{d273d3a2-fa19-4d2e-becc-cbaf06b95ae8}">
 		<property name="isCutoff">
 			<value>true</value>
 		</property>
 		<property name="start">
 			<value>3</value>
 		</property>
+		<property name="volume">
+			<value>-4</value>
+		</property>
+		<property name="looping">
+			<value>true</value>
+		</property>
 		<relationship name="audioFile">
-			<destination>{c1c10b5f-f7a9-4f47-a90b-1faef72cfc47}</destination>
+			<destination>{8f318027-20fd-4f54-a950-3e876b4c080e}</destination>
 		</relationship>
 	</object>
 	<object class="EventMixerGroup" id="{9f1fc458-7cde-4835-9387-e0a6ca483383}">
 		<property name="name">
-			<value>Jazz</value>
+			<value>Reggaeton</value>
 		</property>
 		<relationship name="effectChain">
 			<destination>{5f18bea2-a17e-4cbd-8b90-d9b3b151c01e}</destination>

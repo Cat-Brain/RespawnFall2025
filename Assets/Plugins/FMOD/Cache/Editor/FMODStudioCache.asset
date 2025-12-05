@@ -51,7 +51,7 @@ MonoBehaviour:
   StringsBanks:
   - {fileID: 7166000389337221664}
   cacheVersion: 131857
-  cacheTime: 639004635961522560
+  cacheTime: 639004708903195716
   SerializableEventsDict:
   - key: event:/Music and Background
     index: 0
@@ -70,10 +70,10 @@ MonoBehaviour:
   Path: Game SFX/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 639004635961502557
+  lastModified: 639004708903170594
   FileSizes:
   - Name: Desktop
-    Value: 4380096
+    Value: 4377024
   Exists: 1
 --- !u!114 &7166000389337221664
 MonoBehaviour:
@@ -90,7 +90,7 @@ MonoBehaviour:
   Path: Game SFX/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 639004635961522560
+  lastModified: 639004708903195716
   FileSizes:
   - Name: Desktop
     Value: 834
