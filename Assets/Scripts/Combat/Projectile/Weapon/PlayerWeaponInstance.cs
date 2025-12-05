@@ -1,11 +1,10 @@
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
 [ExecuteInEditMode]
 public class PlayerWeaponInstance : MonoBehaviour
 {
-    public EntityStat damageStat;
+    public EntityStat damageStat, fireRateStat, magazineSizeStat, reloadSpeedStat, rangeStat;
     public InputActionReference primaryAction, reloadAction;
     public PlayerManager playerManager;
 
@@ -30,6 +29,12 @@ public class PlayerWeaponInstance : MonoBehaviour
         if (playerManager.Stunned())
             return;
 
+        weapon.stats.damage = damageStat.value;
+        weapon.stats.fireRate = fireRateStat.value;
+        weapon.stats.magazineSize = magazineSizeStat.value;
+        weapon.stats.reloadSpeed = reloadSpeedStat.value;
+        weapon.stats.range = rangeStat.value;
+
         weapon.reload.Upd(reloadAction.action.inProgress);
         if (!weapon.reload.reloading)
             weapon.primary.Upd(primaryAction.action.inProgress);
@@ -41,5 +46,6 @@ public class PlayerWeaponInstance : MonoBehaviour
         playerManager.SetBeakColor(weapon.playerBeakColor, this.weapon.playerBeakColor);
         playerManager.SetEyeColor(weapon.playerEyeColor, this.weapon.playerEyeColor);
         this.weapon = (PlayerWeapon)weapon.Copy(transform);
+        damageStat.baseValue = weapon.baseHit.damage;
     }
 }

@@ -401,6 +401,12 @@ GameObject:
   - component: {fileID: 206735698653870445}
   - component: {fileID: 8980191799759048110}
   - component: {fileID: 7146744419655514772}
+  - component: {fileID: 5820397862053073275}
+  - component: {fileID: 1950502903985399678}
+  - component: {fileID: 8423295642227842860}
+  - component: {fileID: 445936508350963275}
+  - component: {fileID: 2046916283267975261}
+  - component: {fileID: 4131349477029609554}
   m_Layer: 10
   m_Name: Player
   m_TagString: Player
@@ -502,6 +508,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerManager
   speedStat: {fileID: 7146744419655514772}
+  jumpHeightStat: {fileID: 5820397862053073275}
   playerFlip: {fileID: 9054125302544342492}
   rends:
   - {fileID: 5599189071243404212}
@@ -560,8 +567,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerMove
   accel: 16
   speed: 6.5
-  jumpForce: 8
-  airJumps: 1
+  jumpHeight: 3
+  airJumps: 0
   jumpBufferTime: 0.25
   cayoteTime: 0.2
   jumpSpamTime: 0.35
@@ -597,6 +604,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ec72e695689a474ebeb892896abb2cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerWeaponInstance
+  damageStat: {fileID: 1950502903985399678}
+  fireRateStat: {fileID: 8423295642227842860}
+  magazineSizeStat: {fileID: 445936508350963275}
+  reloadSpeedStat: {fileID: 2046916283267975261}
+  rangeStat: {fileID: 4131349477029609554}
   primaryAction: {fileID: 233641816963222372, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   reloadAction: {fileID: 3375951426363076484, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   playerManager: {fileID: 4788519261258228379}
@@ -646,6 +658,96 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EntityStats
   target: 0
+  baseValue: 1
+  value: 0
+--- !u!114 &5820397862053073275
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2619534745981113462}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56b3795f43d35874892d6a67aaec8268, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EntityStats
+  target: 4
+  baseValue: 1
+  value: 0
+--- !u!114 &1950502903985399678
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2619534745981113462}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56b3795f43d35874892d6a67aaec8268, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EntityStats
+  target: 1
+  baseValue: 1
+  value: 0
+--- !u!114 &8423295642227842860
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2619534745981113462}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56b3795f43d35874892d6a67aaec8268, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EntityStats
+  target: 5
+  baseValue: 1
+  value: 0
+--- !u!114 &445936508350963275
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2619534745981113462}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56b3795f43d35874892d6a67aaec8268, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EntityStats
+  target: 6
+  baseValue: 1
+  value: 0
+--- !u!114 &2046916283267975261
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2619534745981113462}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56b3795f43d35874892d6a67aaec8268, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EntityStats
+  target: 7
+  baseValue: 1
+  value: 0
+--- !u!114 &4131349477029609554
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2619534745981113462}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56b3795f43d35874892d6a67aaec8268, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EntityStats
+  target: 8
   baseValue: 1
   value: 0
 --- !u!1 &4569230922230076936

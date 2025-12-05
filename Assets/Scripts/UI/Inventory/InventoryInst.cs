@@ -53,7 +53,7 @@ public class InventoryInst : MonoBehaviour, IPointerDownHandler, IBeginDragHandl
 
     public void OnPointerDown(PointerEventData eventData)
     {
-        //Debug.Log("OnPointerDown");
+        controller.descriptionText.text = item.description;
     }
 
     public void OnBeginDrag(PointerEventData eventData)

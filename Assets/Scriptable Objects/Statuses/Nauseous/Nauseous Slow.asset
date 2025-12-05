@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4f748bade9bc0f4bb60f000cea60a1f, type: 3}
+  m_Name: Nauseous Slow
+  m_EditorClassIdentifier: Assembly-CSharp::ApplyStatModOnTick
+  tickIndex: 0
+  statMod: {fileID: 11400000, guid: 69305739eadd04e479a928977b057f1c, type: 2}
+  target: 0
