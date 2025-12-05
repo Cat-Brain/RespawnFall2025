@@ -6,6 +6,7 @@ public class EnemySpawnPosition : MonoBehaviour
 {
     public List<Enemy> validSpawns;
 
+    public Vector2 offset;
     public Color debugRenderColor;
 
     public Vector2Int gridPos;
@@ -23,13 +24,14 @@ public class EnemySpawnPosition : MonoBehaviour
 
     public Vector2Int FindGridPos()
     {
-        return Vector2Int.RoundToInt(transform.position);
+        return Vector2Int.RoundToInt((Vector2)transform.position + offset);
     }
 
     public void OnDrawGizmos()
     {
         Gizmos.color = debugRenderColor;
-        Gizmos.DrawLine(transform.position, transform.position + CMath.V3110);
-        Gizmos.DrawLine(transform.position + Vector3.up, transform.position + Vector3.right);
+        Vector3 basePos = transform.position + (Vector3)offset;
+        Gizmos.DrawLine(basePos, basePos + CMath.V3110);
+        Gizmos.DrawLine(basePos + Vector3.up, basePos + Vector3.right);
     }
 }

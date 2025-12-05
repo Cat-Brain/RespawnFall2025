@@ -92,6 +92,12 @@ public class EnemyManager : MonoBehaviour
                 List<EnemySpawnPosition> validSpawns =
                     spawnPositionsClone.Where((position) =>
                     CanSpawnAt(type, position.gridPos, spawnPositionsClone)).ToList();
+                
+                if (validSpawns.Count == 0)
+                {
+                    Debug.Log(type);
+                    continue;
+                }
                 Vector2Int spawnPosition = validSpawns[UnityEngine.Random.Range(0, validSpawns.Count)].gridPos;
 
                 spawnPositionsClone.RemoveAll((position) =>
