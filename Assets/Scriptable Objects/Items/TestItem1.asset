@@ -16,6 +16,7 @@ MonoBehaviour:
   positions:
   - {x: 0, y: 0}
   sprite: {fileID: -2413806693520163455, guid: ebe73ca9363db456bacf42c025bb4847, type: 3}
+  description: 25% increase to movement speed (additive)
   components:
   - {fileID: 11400000, guid: 38a1fcadfa3ed8740b38f8e37c17da60, type: 2}
   dimensions: {x: 1, y: 1}

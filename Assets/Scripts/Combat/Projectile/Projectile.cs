@@ -17,4 +17,6 @@ public class Projectile : ScriptableObject
         inst.remainingRange = range;
         inst.direction = CMath.Rotate(inst.direction, Mathf.Deg2Rad * Random.Range(-spread, spread));
     }
+
+    public virtual void OnUpdate() { }
 }

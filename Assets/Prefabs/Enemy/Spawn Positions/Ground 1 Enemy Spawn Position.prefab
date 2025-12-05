@@ -46,5 +46,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EnemySpawnPosition
   validSpawns:
   - {fileID: 6231417169838436603, guid: 82b50e2fddbfa0f48be6f9077f9435cd, type: 3}
+  - {fileID: 3423099144530137359, guid: 6c83e0c28deb93040933a877e2cdb65e, type: 3}
   debugRenderColor: {r: 0.36477977, g: 0.26781216, b: 0.09520979, a: 0.5019608}
   gridPos: {x: 0, y: 0}

@@ -22,7 +22,7 @@ MonoBehaviour:
     m_Bits: 1024
   destroyedByMask:
     serializedVersion: 2
-    m_Bits: 1
+    m_Bits: 8193
   radius: 0.5
   speed: 7
   range: 10

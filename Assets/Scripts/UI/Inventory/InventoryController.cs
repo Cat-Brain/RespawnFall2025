@@ -1,6 +1,7 @@
 using com.cyborgAssets.inspectorButtonPro;
 using System;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 [Flags]
@@ -22,6 +23,7 @@ public class InventoryController : MonoBehaviour
     [HideInInspector] public GameManager manager;
     public Canvas canvas;
     public RectTransform inventoryTransform, bufferTransform, floatingTransform;
+    public TextMeshProUGUI descriptionText;
     public GameObject inventoryItemPrefab;
 
     public Vector2Int dimensions;
@@ -40,6 +42,8 @@ public class InventoryController : MonoBehaviour
     void Update()
     {
         SpringUtils.CalcDampedSpringMotionParams(ref itemSpring, Time.deltaTime, itemSpringFrequency, itemSpringDamping);
+        if (manager.gameState != GameState.INVENTORY)
+            descriptionText.text = "";
     }
 
     [ProButton]

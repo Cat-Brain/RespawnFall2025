@@ -39,7 +39,7 @@ public class GameManager : MonoBehaviour
     public LevelType[,] paths;
     public LevelType levelType;
     public List<int> pathTaken;
-    public bool inCombat, endScreenLanded = false;
+    public bool inCombat, endScreenLanded = false, inLobby = true;
     public float startTime = 0, endTime = 0;
     public int currentLevelMoney = 0;
 
@@ -113,6 +113,7 @@ public class GameManager : MonoBehaviour
 
     public void LoadNextLevel(int path)
     {
+        inLobby = false;
         currentLevelMoney = 0;
         if (path == 0)
         {
@@ -220,6 +221,7 @@ public class GameManager : MonoBehaviour
         endScreenLanded = true;
         generationManager.DespawnLevels();
         inCombat = false;
+        inLobby = true;
     }
 
     public void ExitEndScreen()
