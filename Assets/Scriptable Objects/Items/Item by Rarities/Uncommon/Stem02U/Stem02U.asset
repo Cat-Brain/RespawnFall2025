@@ -20,7 +20,7 @@ MonoBehaviour:
   - {x: 2, y: 0}
   - {x: 3, y: 0}
   - {x: 4, y: 0}
-  sprite: {fileID: 0}
+  sprite: {fileID: 21300000, guid: 27dcbcc5d4b6a1f4790f3d31857f4d69, type: 3}
   description: Reload Speed +35, Speed -15%
   components:
   - {fileID: 11400000, guid: 4e4ee9b8556e5a94abfc767afea6d510, type: 2}
