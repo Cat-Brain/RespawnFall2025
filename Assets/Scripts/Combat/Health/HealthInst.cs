@@ -19,6 +19,8 @@ public class HealthInst : MonoBehaviour
 
     public void Awake()
     {
+        healthManager = FindAnyObjectByType<HealthManager>();
+
         tickEntity = GetComponent<TickEntity>();
         foreach (EntityStat stat in GetComponents<EntityStat>())
             stats.Add(stat.target, stat);
@@ -27,7 +29,6 @@ public class HealthInst : MonoBehaviour
         data.inst = this;
         data.Init();
 
-        healthManager = FindAnyObjectByType<HealthManager>();
         healthIndex = healthManager.healths.Count;
         healthManager.healths.Add(this);
     }
