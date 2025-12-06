@@ -2,10 +2,10 @@ using UnityEngine;
 
 public class StandardWeaponPrimary : WeaponPrimary
 {
-    public AudioClip[] activationClips;
-
     public virtual void OnActivate()
     {
+        SFXManager.Instance.Play(SFXManager.Instance.shootFire);   
+
         weapon.reload.remainingAmmo--;
     }
 }
