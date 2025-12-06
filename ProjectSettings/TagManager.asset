@@ -9,6 +9,7 @@ TagManager:
   - Death Zone
   - Moss
   - Bottom Ground
+  - Boss Point
   layers:
   - Default
   - TransparentFX

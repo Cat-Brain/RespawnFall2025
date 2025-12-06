@@ -74,7 +74,7 @@ ScriptedImporter:
   - _key: Elite_Continue
     _asset: {instanceID: 0}
   - _key: Elite_End
-    _asset: {instanceID: 0}
+    _asset: {fileID: 4026634023225149634, guid: 49c58904b38bb6b4bb36927f3c54a89e, type: 3}
   - _key: Mask
     _asset: {fileID: 7112408124966752867, guid: 2e36691dc38b746409f011999a591a3e, type: 3}
   - _key: GBC_Spawn
