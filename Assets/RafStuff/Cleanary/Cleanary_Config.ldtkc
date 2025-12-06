@@ -205,6 +205,22 @@
             "_asset": {
                 "instanceID": 0
             }
+        },
+        {
+            "_key": "Mask",
+            "_asset": {
+                "fileID": 7112408124966752867,
+                "guid": "2e36691dc38b746409f011999a591a3e",
+                "type": 3
+            }
+        },
+        {
+            "_key": "GBC_Spawn",
+            "_asset": {
+                "fileID": 4021831251702732551,
+                "guid": "f3844fc81b391724983ad33bd6446062",
+                "type": 3
+            }
         }
     ]
 }
