@@ -36,7 +36,6 @@ public class PlayerMove : MonoBehaviour
 
     public void TryJump(InputAction.CallbackContext context)
     {
-        SFXManager.Instance.Play(SFXManager.Instance.jump);
         if (!playerManager.Stunned())
             jumpBufferTimer = jumpBufferTime;
     }
@@ -75,6 +74,7 @@ public class PlayerMove : MonoBehaviour
 
             if (jumpBufferTimer > 0 && (cayoteTimer > 0 || remainingAirJumps > 0) && jumpSpamTimer <= 0)
             {
+                SFXManager.Instance.Play(SFXManager.Instance.jump);
                 rb.linearVelocityY = Mathf.Max(rb.linearVelocityY, JumpForce());
 
                 if (cayoteTimer > 0)
