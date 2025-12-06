@@ -1269,7 +1269,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 973363082162110042, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
       propertyPath: m_Name
-      value: Event System
+      value: EventSystem
       objectReference: {fileID: 0}
     - target: {fileID: 3282174016193848263, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
       propertyPath: m_LocalPosition.x
