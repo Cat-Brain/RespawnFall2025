@@ -3,23 +3,34 @@ using FMODUnity;
 
 public class SFXManager : MonoBehaviour
 {
-    public EventReference sfxEvent;
+    public static SFXManager Instance;
+    
+
+    public EventReference click, shootFire;
 
     private FMOD.Studio.EventInstance instance;
 
-    public void PlayClick()
+    private void Awake()
     {
-        RuntimeManager.PlayOneShot(sfxEvent);
-    }
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
+        if (Instance == null)
+        {
+            Instance = this;
+        }
+        else
+        {
+ 
+            return;
+        }
     }
 
-    // Update is called once per frame
-    void Update()
+    public void Play(EventReference evt)
     {
-        
+        RuntimeManager.PlayOneShot(evt);
     }
+
+    public void PlayClick()
+    {
+        RuntimeManager.PlayOneShot(click);
+    } 
+
 }

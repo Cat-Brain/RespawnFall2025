@@ -137,7 +137,6 @@ public class GameManager : MonoBehaviour
             generationManager.SpawnLevel(0, LevelType.COMBAT);
             // Setting music depending on weapon
             string weaponName = playerWeaponInstance.weapon.name;
-
             if(weaponName == "Flute(Clone)")
             {
                 AmbienceManager.Instance.SetTheme(4);
@@ -234,6 +233,17 @@ public class GameManager : MonoBehaviour
 
     public void ToEndScreen()
     {
+        string weaponName = playerWeaponInstance.weapon.name;
+        if(weaponName == "Flute(Clone)")
+        {
+            AmbienceManager.Instance.SetTheme(1);
+        }
+
+        else if(weaponName == "Saxophone(Clone)")
+        {
+            AmbienceManager.Instance.SetTheme(2);
+        }
+
         playerManager.End();
         endScreenLanded = false;
         lobby.SetActive(true);
