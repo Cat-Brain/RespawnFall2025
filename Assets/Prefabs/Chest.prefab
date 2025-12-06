@@ -493,14 +493,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CombatReward
   itemPrefab: {fileID: 2988025648945830785, guid: 1060e23d239659b4181c211e30235191, type: 3}
-  potentialSpawns:
-  - {fileID: 11400000, guid: 900e92d6b1446f64bafd20692abc25dd, type: 2}
-  - {fileID: 11400000, guid: a3b7c9b89e4715b478bbb288b09d3888, type: 2}
+  itemProbabilities:
+  - rarity: 1
+    likelihood: 1
   toSpawnItems: 5
   maxItemRot: 45
   itemForce: 10
   itemThrowTime: 0.5
   manager: {fileID: 0}
+  randomizer: {fileID: 0}
   itemThrowTimer: 0
   hasRewarded: 0
 --- !u!61 &6670571688223445628

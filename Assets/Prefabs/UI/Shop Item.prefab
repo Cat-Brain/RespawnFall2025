@@ -488,9 +488,11 @@ MonoBehaviour:
   - {fileID: 6651637857760425067}
   priceText: {fileID: 3704721339257941822}
   dimensionsText: {fileID: 6701814867013852570}
-  items:
-  - {fileID: 11400000, guid: 900e92d6b1446f64bafd20692abc25dd, type: 2}
+  probabilities:
+  - rarity: 1
+    likelihood: 1
   item: {fileID: 0}
+  randomizer: {fileID: 0}
 --- !u!1 &6988698595703803564
 GameObject:
   m_ObjectHideFlags: 0

@@ -1,3 +1,4 @@
+using NUnit.Framework.Internal;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
@@ -8,9 +9,11 @@ public class ShopItem : OnTickEffect
     public List<EventOnAction> eventActions;
     public TextMeshProUGUI priceText, dimensionsText;
 
-    public List<InventoryItem> items;
+    public List<ItemProbability> probabilities;
 
     public InventoryItem item = null;
+
+    [HideInInspector] public ItemRandomizer randomizer;
 
     void Awake()
     {
@@ -19,7 +22,9 @@ public class ShopItem : OnTickEffect
 
     public void Restock()
     {
-        item = items[Random.Range(0, items.Count)];
+        if (randomizer == null)
+            randomizer = FindAnyObjectByType<ItemRandomizer>();
+        item = randomizer.RandomItem(probabilities);
         UpdateItem();
     }
 
