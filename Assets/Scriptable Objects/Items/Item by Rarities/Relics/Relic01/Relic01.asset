@@ -10,20 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cf3f8bddd118dfd4f90387337450adb5, type: 3}
-  m_Name: Stem06C
+  m_Name: Relic01
   m_EditorClassIdentifier: Assembly-CSharp::InventoryItem
   layer: 1
-  rarity: 1
+  rarity: 5
   positions:
+  - {x: 0, y: 1}
+  - {x: 1, y: 1}
   - {x: 0, y: 0}
   - {x: 1, y: 0}
-  - {x: 2, y: 0}
-  - {x: 3, y: 0}
-  - {x: 4, y: 0}
-  sprite: {fileID: 0}
-  description: Increase Reload Speed +75%, Decrease Fire Rate -35%
+  sprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
+  description: 'Sell at shop for 2 Monies. '
   components:
-  - {fileID: 11400000, guid: 7535b64f19cc366428e9e4b27b4d0ffb, type: 2}
-  - {fileID: 11400000, guid: 181af755b8e80f949abc18b78895e910, type: 2}
-  dimensions: {x: 5, y: 1}
+  - {fileID: 11400000, guid: f9d13f85f0991e14ca84ed830d3eef4f, type: 2}
+  dimensions: {x: 2, y: 2}
   inst: {fileID: 0}

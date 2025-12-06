@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cf3f8bddd118dfd4f90387337450adb5, type: 3}
-  m_Name: Stem06C
+  m_Name: Stem04C 1
   m_EditorClassIdentifier: Assembly-CSharp::InventoryItem
   layer: 1
   rarity: 1
@@ -21,9 +21,9 @@ MonoBehaviour:
   - {x: 3, y: 0}
   - {x: 4, y: 0}
   sprite: {fileID: 0}
-  description: Increase Reload Speed +75%, Decrease Fire Rate -35%
+  description: Max Health +100%, Damage -45%
   components:
-  - {fileID: 11400000, guid: 7535b64f19cc366428e9e4b27b4d0ffb, type: 2}
-  - {fileID: 11400000, guid: 181af755b8e80f949abc18b78895e910, type: 2}
+  - {fileID: 11400000, guid: 61a386342f152bc40a5015486a928455, type: 2}
+  - {fileID: 11400000, guid: 75932ac1cddc0db40af50f8777ea3b79, type: 2}
   dimensions: {x: 5, y: 1}
   inst: {fileID: 0}
