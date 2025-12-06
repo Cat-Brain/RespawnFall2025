@@ -742,7 +742,32 @@ MonoBehaviour:
     spawnOffset: {x: -13.5, y: 0}
     type: 0
     validSpawnLevels: 00000000010000000200000003000000
+  - prefab: {fileID: 6496713519202237582, guid: e662aea6b307b0848abe44c410ff335a, type: 3}
+    height: 16
+    spawnOffset: {x: -13.5, y: 0}
+    type: 0
+    validSpawnLevels: 00000000010000000200000003000000
+  - prefab: {fileID: 4880984664228677650, guid: da38ba1be0dafe74ca9ad11c4df516b1, type: 3}
+    height: 16
+    spawnOffset: {x: -13.5, y: 0}
+    type: 0
+    validSpawnLevels: 00000000010000000200000003000000
+  - prefab: {fileID: -6376643982420497327, guid: 7453ff4bd6cd44b478f6def18587b550, type: 3}
+    height: 16
+    spawnOffset: {x: -13.5, y: 0}
+    type: 0
+    validSpawnLevels: 00000000010000000200000003000000
   - prefab: {fileID: -4823478471971944734, guid: 1cf2e44cc2ada034899a32101eb6de65, type: 3}
+    height: 21
+    spawnOffset: {x: -13.5, y: 0}
+    type: 0
+    validSpawnLevels: 03000000040000000500000006000000
+  - prefab: {fileID: -8438837695529853965, guid: 7e829405f507c0a4cb9eb45ea3819d59, type: 3}
+    height: 21
+    spawnOffset: {x: -13.5, y: 0}
+    type: 0
+    validSpawnLevels: 03000000040000000500000006000000
+  - prefab: {fileID: -7003637781483123268, guid: 7f57c627521ab0744b216298385c9669, type: 3}
     height: 21
     spawnOffset: {x: -13.5, y: 0}
     type: 0
@@ -2246,28 +2271,190 @@ MonoBehaviour:
   - waves:
     - data:
       - tier: 1
-        typeCount: 2
-        totalQuantity: 2
-        type: 0
-      - tier: 1
-        typeCount: 2
-        totalQuantity: 2
-        type: 0
-    - data:
-      - tier: 1
-        typeCount: 2
+        typeCount: 1
         totalQuantity: 2
         type: 0
   - waves:
     - data:
       - tier: 1
         typeCount: 1
-        totalQuantity: 1
+        totalQuantity: 3
         type: 0
     - data:
       - tier: 1
         typeCount: 2
         totalQuantity: 2
+        type: 0
+      - tier: 1
+        typeCount: 1
+        totalQuantity: 1
+        type: 1
+  - waves:
+    - data:
+      - tier: 1
+        typeCount: 1
+        totalQuantity: 2
+        type: 0
+      - tier: 1
+        typeCount: 1
+        totalQuantity: 3
+        type: 1
+    - data:
+      - tier: 2
+        typeCount: 1
+        totalQuantity: 2
+        type: 0
+  - waves:
+    - data:
+      - tier: 2
+        typeCount: 1
+        totalQuantity: 2
+        type: 0
+      - tier: 1
+        typeCount: 1
+        totalQuantity: 4
+        type: 1
+  - waves:
+    - data:
+      - tier: 1
+        typeCount: 2
+        totalQuantity: 6
+        type: 0
+    - data:
+      - tier: 1
+        typeCount: 2
+        totalQuantity: 6
+        type: 0
+  - waves:
+    - data:
+      - tier: 1
+        typeCount: 2
+        totalQuantity: 4
+        type: 0
+      - tier: 1
+        typeCount: 1
+        totalQuantity: 2
+        type: 1
+    - data:
+      - tier: 1
+        typeCount: 2
+        totalQuantity: 2
+        type: 0
+      - tier: 1
+        typeCount: 1
+        totalQuantity: 2
+        type: 1
+      - tier: 2
+        typeCount: 1
+        totalQuantity: 2
+        type: 1
+  - waves:
+    - data:
+      - tier: 2
+        typeCount: 1
+        totalQuantity: 4
+        type: 0
+      - tier: 1
+        typeCount: 1
+        totalQuantity: 4
+        type: 1
+    - data:
+      - tier: 1
+        typeCount: 2
+        totalQuantity: 5
+        type: 0
+      - tier: 1
+        typeCount: 1
+        totalQuantity: 3
+        type: 1
+    - data:
+      - tier: 1
+        typeCount: 1
+        totalQuantity: 6
+        type: 0
+      - tier: 1
+        typeCount: 1
+        totalQuantity: 6
+        type: 1
+  - waves:
+    - data:
+      - tier: 1
+        typeCount: 2
+        totalQuantity: 10
+        type: 0
+    - data:
+      - tier: 1
+        typeCount: 1
+        totalQuantity: 5
+        type: 1
+    - data:
+      - tier: 2
+        typeCount: 1
+        totalQuantity: 4
+        type: 0
+  - waves:
+    - data:
+      - tier: 1
+        typeCount: 2
+        totalQuantity: 10
+        type: 0
+    - data:
+      - tier: 1
+        typeCount: 1
+        totalQuantity: 5
+        type: 1
+    - data:
+      - tier: 2
+        typeCount: 1
+        totalQuantity: 4
+        type: 0
+  - waves:
+    - data:
+      - tier: 1
+        typeCount: 2
+        totalQuantity: 10
+        type: 0
+    - data:
+      - tier: 1
+        typeCount: 1
+        totalQuantity: 5
+        type: 1
+    - data:
+      - tier: 2
+        typeCount: 1
+        totalQuantity: 4
+        type: 0
+  - waves:
+    - data:
+      - tier: 1
+        typeCount: 2
+        totalQuantity: 10
+        type: 0
+    - data:
+      - tier: 1
+        typeCount: 1
+        totalQuantity: 5
+        type: 1
+    - data:
+      - tier: 2
+        typeCount: 1
+        totalQuantity: 4
+        type: 0
+  - waves:
+    - data:
+      - tier: 1
+        typeCount: 2
+        totalQuantity: 10
+        type: 0
+    - data:
+      - tier: 1
+        typeCount: 1
+        totalQuantity: 5
+        type: 1
+    - data:
+      - tier: 2
+        typeCount: 1
+        totalQuantity: 4
         type: 0
   enemies: []
   currentLevel: 0
@@ -2574,7 +2761,6 @@ Transform:
   - {fileID: 5419315422081087363}
   - {fileID: 1579300833740003761}
   - {fileID: 7845410660812553896}
-  - {fileID: 4055476569661103195}
   - {fileID: 1099282004104271991}
   - {fileID: 7160081771980212992}
   - {fileID: 2915767335208163616}
@@ -2935,7 +3121,7 @@ MonoBehaviour:
   playerManager: {fileID: 0}
   playerWeaponInstance: {fileID: 0}
   pathCount: 2
-  firstLevel: 3
+  firstLevel: 0
   basePath: 00000000000000000000000000000000010000000400000004000000
   pathEnd: 0200000003000000
   levelTypeStrings:
@@ -2950,7 +3136,7 @@ MonoBehaviour:
   - {r: 0.33333334, g: 0.7019608, b: 0.23137255, a: 1}
   - {r: 0.46666667, g: 0.23137255, b: 0.7490196, a: 1}
   - {r: 0.09019608, g: 0.5764706, b: 0.9019608, a: 1}
-  minDifficulty: 0
+  minDifficulty: -2
   gameState: 4
   lobby: {fileID: 0}
   hasEnabledCurrentMenu: 0
@@ -3023,89 +3209,6 @@ MonoBehaviour:
   OverrideAttenuation: 0
   OverrideMinDistance: 1
   OverrideMaxDistance: 20
---- !u!1 &8358983767159250965
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 4055476569661103195}
-  - component: {fileID: 8500478980891482683}
-  - component: {fileID: 8891675268760071096}
-  - component: {fileID: 3965740213541703854}
-  m_Layer: 0
-  m_Name: Item Randomizer
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &4055476569661103195
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8358983767159250965}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 3282174016193848263}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8500478980891482683
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8358983767159250965}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: faf7d8508bbe1a54c80542dab326b0e3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ItemRandomizer
-  rarities:
-  - rarity: 1
-    items:
-    - {fileID: 11400000, guid: 900e92d6b1446f64bafd20692abc25dd, type: 2}
-  - rarity: 2
-    items: []
-  - rarity: 3
-    items: []
-  - rarity: 4
-    items: []
-  - rarity: 5
-    items:
-    - {fileID: 11400000, guid: a3b7c9b89e4715b478bbb288b09d3888, type: 2}
---- !u!114 &8891675268760071096
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8358983767159250965}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3453d8eb9123f9747896929da9d2fa78, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DontDestroyOnLoad
---- !u!114 &3965740213541703854
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8358983767159250965}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 92a9d8ff8f3381f4bae8286bb2944171, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::UniqueName
 --- !u!1 &8373758782077568378
 GameObject:
   m_ObjectHideFlags: 0
