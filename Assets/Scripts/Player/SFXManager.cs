@@ -6,7 +6,7 @@ public class SFXManager : MonoBehaviour
     public static SFXManager Instance;
     
 
-    public EventReference click, shootFire, shootIce, hitIce, statusIce, hitFire, statusFire, bonk, gnatCharge, gnatSpit, jump;
+    public EventReference click, shootFire, shootIce, hitIce, statusIce, hitFire, statusFire, bonk, gnatCharge, gnatSpit, waspCharge, cockroachGrowl, land, jump;
 
     private FMOD.Studio.EventInstance instance;
 

@@ -96,10 +96,10 @@ MonoBehaviour:
   Path: Assets/Game SFX/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 639006034255015047
+  lastModified: 639006045469987737
   FileSizes:
   - Name: Desktop
-    Value: 1310
+    Value: 1434
   Exists: 1
 --- !u!114 &-8131356282922819360
 MonoBehaviour:
@@ -234,6 +234,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &-6188515214739172953
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/WaspCharge
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/WaspCharge
+  Guid:
+    Data1: 646921463
+    Data2: 1303717760
+    Data3: -1841080396
+    Data4: 2000064275
+  Banks:
+  - {fileID: -4557433987801958090}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &-5801947336995238161
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -350,11 +377,38 @@ MonoBehaviour:
   Path: Assets/Game SFX/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 639006034254995045
+  lastModified: 639006045469972623
   FileSizes:
   - Name: Desktop
-    Value: 5480352
+    Value: 5541952
   Exists: 1
+--- !u!114 &-4232767256349856480
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/CockroachGrowl
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/CockroachGrowl
+  Guid:
+    Data1: 1739707338
+    Data2: 1329589520
+    Data3: -376228177
+    Data4: 382324624
+  Banks:
+  - {fileID: -4557433987801958090}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &-3919894466562934828
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -491,13 +545,16 @@ MonoBehaviour:
   - {fileID: 8791431415533760756}
   - {fileID: 2569161364587745877}
   - {fileID: 2852945043346806031}
+  - {fileID: 2674764282855658866}
+  - {fileID: -4232767256349856480}
+  - {fileID: -6188515214739172953}
   EditorParameters: []
   MasterBanks:
   - {fileID: -4557433987801958090}
   StringsBanks:
   - {fileID: -8560159268333102633}
   cacheVersion: 131857
-  cacheTime: 639006034255015047
+  cacheTime: 639006045469987737
   SerializableEventsDict:
   - key: event:/HitFire
     index: 0
@@ -523,6 +580,14 @@ MonoBehaviour:
     index: 10
   - key: event:/ShootFire
     index: 11
+  - key: event:/Landing
+    index: 12
+  - key: event:/CockroachGrowl
+    index: 13
+  - key: event:/WaspShoot
+    index: 14
+  - key: event:/WaspCharge
+    index: 15
 --- !u!114 &670331537943327225
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -765,6 +830,33 @@ MonoBehaviour:
     Data2: 1284037282
     Data3: -2622791
     Data4: -404279402
+  Banks:
+  - {fileID: -4557433987801958090}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &2674764282855658866
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Landing
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/Landing
+  Guid:
+    Data1: -149329506
+    Data2: 1205228147
+    Data3: 211139738
+    Data4: -1841492931
   Banks:
   - {fileID: -4557433987801958090}
   IsStream: 0

@@ -1631,6 +1631,10 @@ PrefabInstance:
       value: event:/Jump
       objectReference: {fileID: 0}
     - target: {fileID: 8296159027491990314, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
+      propertyPath: land.Path
+      value: event:/Landing
+      objectReference: {fileID: 0}
+    - target: {fileID: 8296159027491990314, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
       propertyPath: click.Path
       value: event:/UI Click
       objectReference: {fileID: 0}
@@ -1699,8 +1703,28 @@ PrefabInstance:
       value: -404279402
       objectReference: {fileID: 0}
     - target: {fileID: 8296159027491990314, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
+      propertyPath: land.Guid.Data1
+      value: -149329506
+      objectReference: {fileID: 0}
+    - target: {fileID: 8296159027491990314, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
+      propertyPath: land.Guid.Data2
+      value: 1205228147
+      objectReference: {fileID: 0}
+    - target: {fileID: 8296159027491990314, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
+      propertyPath: land.Guid.Data3
+      value: 211139738
+      objectReference: {fileID: 0}
+    - target: {fileID: 8296159027491990314, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
+      propertyPath: land.Guid.Data4
+      value: -1841492931
+      objectReference: {fileID: 0}
+    - target: {fileID: 8296159027491990314, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
       propertyPath: statusFire.Path
       value: event:/StatusFire
+      objectReference: {fileID: 0}
+    - target: {fileID: 8296159027491990314, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
+      propertyPath: waspCharge.Path
+      value: event:/WaspCharge
       objectReference: {fileID: 0}
     - target: {fileID: 8296159027491990314, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
       propertyPath: click.Guid.Data1
@@ -1749,6 +1773,10 @@ PrefabInstance:
     - target: {fileID: 8296159027491990314, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
       propertyPath: hitFire.Guid.Data4
       value: -55329459
+      objectReference: {fileID: 0}
+    - target: {fileID: 8296159027491990314, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
+      propertyPath: cockroachGrowl.Path
+      value: event:/CockroachGrowl
       objectReference: {fileID: 0}
     - target: {fileID: 8296159027491990314, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
       propertyPath: gnatSpit.Guid.Data1
@@ -1861,6 +1889,38 @@ PrefabInstance:
     - target: {fileID: 8296159027491990314, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
       propertyPath: statusFire.Guid.Data4
       value: -1036262343
+      objectReference: {fileID: 0}
+    - target: {fileID: 8296159027491990314, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
+      propertyPath: waspCharge.Guid.Data1
+      value: 646921463
+      objectReference: {fileID: 0}
+    - target: {fileID: 8296159027491990314, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
+      propertyPath: waspCharge.Guid.Data2
+      value: 1303717760
+      objectReference: {fileID: 0}
+    - target: {fileID: 8296159027491990314, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
+      propertyPath: waspCharge.Guid.Data3
+      value: -1841080396
+      objectReference: {fileID: 0}
+    - target: {fileID: 8296159027491990314, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
+      propertyPath: waspCharge.Guid.Data4
+      value: 2000064275
+      objectReference: {fileID: 0}
+    - target: {fileID: 8296159027491990314, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
+      propertyPath: cockroachGrowl.Guid.Data1
+      value: 1739707338
+      objectReference: {fileID: 0}
+    - target: {fileID: 8296159027491990314, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
+      propertyPath: cockroachGrowl.Guid.Data2
+      value: 1329589520
+      objectReference: {fileID: 0}
+    - target: {fileID: 8296159027491990314, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
+      propertyPath: cockroachGrowl.Guid.Data3
+      value: -376228177
+      objectReference: {fileID: 0}
+    - target: {fileID: 8296159027491990314, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
+      propertyPath: cockroachGrowl.Guid.Data4
+      value: 382324624
       objectReference: {fileID: 0}
     - target: {fileID: 9078645812006161957, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
