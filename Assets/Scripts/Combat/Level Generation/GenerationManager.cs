@@ -45,6 +45,8 @@ public class GenerationManager : MonoBehaviour
 
         if (type == LevelType.COMBAT)
             enemySpawnManager.LoadEnemiesInLevel(currentLevelObj, level);
+        else if (type == LevelType.BOSS)
+            enemySpawnManager.LoadBossLevel(currentLevelObj, level);
     }
 
     public float TotalSpawnedLevelHeight()

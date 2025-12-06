@@ -37,6 +37,9 @@ public class EnemyManager : MonoBehaviour
     public GameManager gameManager;
     public GenerationManager generationManager;
     public GameObject smokePrefab;
+    public Enemy boss;
+    public BossSpawn bossSpawn;
+    public string bossPointTag;
 
     public float waveSpawnDelay;
     public Vector2 smokeOffset;
@@ -45,7 +48,9 @@ public class EnemyManager : MonoBehaviour
     public List<Enemy> enemies;
     public int currentLevel;
     public int currentWave;
+    public bool inBoss = false;
     public List<EnemySpawnPosition> spawnPositions;
+    public List<Transform> bossPoints;
 
     public void LoadEnemiesInLevel(GameObject levelParent, int level)
     {
@@ -62,9 +67,31 @@ public class EnemyManager : MonoBehaviour
         gameManager.inCombat = SpawnWave();
     }
 
+    public void LoadBossLevel(GameObject levelParent, int level)
+    {
+        currentLevel = level;
+        currentWave = 0;
+        inBoss = true;
+        gameManager.inCombat = true;
+        spawnPositions = levelParent.GetComponentsInChildren<EnemySpawnPosition>().ToList();
+        bossPoints = GameObject.FindGameObjectsWithTag(bossPointTag).ToList().ConvertAll((obj) => obj.transform);
+
+        Vector2 spawnPosition = (Vector2)levelParent.transform.position + bossSpawn.spawnPosition;
+
+        enemies.Add(Instantiate(
+            boss.gameObject, spawnPosition, Quaternion.identity).GetComponent<Enemy>());
+        enemies[^1].enemyManager = this;
+
+        for (Vector2Int offset = Vector2Int.zero; offset.x < boss.spawnDimensions.x; offset.x++)
+            for (offset.y = 0; offset.y < boss.spawnDimensions.y; offset.y++)
+                Instantiate(smokePrefab, spawnPosition + bossSpawn.smokeOffset + offset + smokeOffset,
+                    Quaternion.identity).GetComponent<EnableWithDelay>().Init(
+                        enemies[^1].gameObject, waveSpawnDelay);
+    }
+
     public bool SpawnWave()
     {
-        if (currentWave >= levelData[currentLevel].waves.Count)
+        if (inBoss || currentWave >= levelData[currentLevel].waves.Count)
             return false;
 
         bool firstWave = currentWave == 0;
@@ -145,6 +172,46 @@ public class EnemyManager : MonoBehaviour
                     containsValid = positions[index].validSpawns.Contains(enemy);
             }
         return containsValid;
+    }
+
+    public void SpawnEnemy(Enemy enemy)
+    {
+        List<EnemySpawnPosition> spawnPositionsClone = new(spawnPositions);
+
+        List<EnemySpawnPosition> validSpawns =
+            spawnPositionsClone.Where((position) =>
+            CanSpawnAt(enemy, position.gridPos, spawnPositionsClone)).ToList();
+
+        if (validSpawns.Count == 0)
+        {
+            Debug.Log("Could not spawn Enemy!");
+            Debug.LogWarning(enemy);
+            return;
+        }
+        int spawnIndex = UnityEngine.Random.Range(0, validSpawns.Count);
+        Vector2Int spawnPositionGrid = validSpawns[spawnIndex].gridPos;
+        Vector2 spawnPosition = validSpawns[spawnIndex].transform.position;
+
+        spawnPositionsClone.RemoveAll((position) =>
+            position.gridPos.x >= spawnPositionGrid.x &&
+            position.gridPos.y >= spawnPositionGrid.y &&
+            position.gridPos.x < spawnPositionGrid.x + enemy.spawnDimensions.x &&
+            position.gridPos.y < spawnPositionGrid.y + enemy.spawnDimensions.y);
+
+        enemy.gameObject.SetActive(false);
+
+        enemies.Add(Instantiate(
+            enemy.gameObject, spawnPosition + enemy.spawnOffset, Quaternion.identity).GetComponent<Enemy>());
+        enemies[^1].enemyManager = this;
+
+        enemy.gameObject.SetActive(true);
+
+        for (Vector2Int offset = Vector2Int.zero; offset.x < enemy.spawnDimensions.x; offset.x++)
+            for (offset.y = 0; offset.y < enemy.spawnDimensions.y; offset.y++)
+                Instantiate(smokePrefab, spawnPosition + offset + smokeOffset,
+                    Quaternion.identity).GetComponent<EnableWithDelay>().Init(
+                        enemies[^1].gameObject, waveSpawnDelay);
+
     }
 
     public void RemoveEnemy(Enemy enemy)

@@ -24,7 +24,7 @@ public class Enemy : OnTickEffect
         NO_STATE, IDLE, STARTLED, ACTIVE, STUNNED
     }
 
-    [HideInInspector] public AIState state;
+    /*[HideInInspector]*/ public AIState state;
 
     public Collider2D FindPlayerCollider()
     {

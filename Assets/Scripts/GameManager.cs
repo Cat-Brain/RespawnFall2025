@@ -30,6 +30,7 @@ public class GameManager : MonoBehaviour
     private FMOD.Studio.EventInstance instance;
 
     public int pathCount;
+    public LevelType firstLevel;
     public LevelType[] basePath, pathEnd;
     public string[] levelTypeStrings;
     public Color[] levelTypeColors;
@@ -149,7 +150,7 @@ public class GameManager : MonoBehaviour
         {
             BeginGame();
             pathTaken.Add(path);
-            generationManager.SpawnLevel(0, LevelType.COMBAT);
+            generationManager.SpawnLevel(0, firstLevel);
             // Setting music depending on weapon
             string weaponName = playerWeaponInstance.weapon.name;
             if(weaponName == "Flute(Clone)")

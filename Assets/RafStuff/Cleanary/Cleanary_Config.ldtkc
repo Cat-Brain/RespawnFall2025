@@ -211,7 +211,9 @@
         {
             "_key": "Elite_End",
             "_asset": {
-                "instanceID": 0
+                "fileID": 4026634023225149634,
+                "guid": "49c58904b38bb6b4bb36927f3c54a89e",
+                "type": 3
             }
         },
         {
