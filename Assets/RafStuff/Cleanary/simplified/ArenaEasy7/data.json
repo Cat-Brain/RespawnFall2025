@@ -91,7 +91,7 @@
 				"x": 416,
 				"y": 0,
 				"width": 16,
-				"height": 240,
+				"height": 256,
 				"color": 11190983,
 				"customFields" : {}
 			},
@@ -113,23 +113,12 @@
 				"x": 0,
 				"y": 0,
 				"width": 16,
-				"height": 240,
+				"height": 256,
 				"color": 11190983,
 				"customFields" : {}
 			}
 		],
 		"Ground": [
-			{
-				"id": "Ground",
-				"iid": "cee6b060-ac70-11f0-8e08-19b0d783bfd7",
-				"layer": "Entities",
-				"x": 0,
-				"y": 240,
-				"width": 16,
-				"height": 16,
-				"color": 7552569,
-				"customFields" : {}
-			},
 			{
 				"id": "Ground",
 				"iid": "cf208510-ac70-11f0-8e08-c5ed090c2b32",
@@ -388,17 +377,6 @@
 				"iid": "d4e1e890-ac70-11f0-8e08-d3359dd9ac20",
 				"layer": "Entities",
 				"x": 368,
-				"y": 240,
-				"width": 16,
-				"height": 16,
-				"color": 7552569,
-				"customFields" : {}
-			},
-			{
-				"id": "Ground",
-				"iid": "d5c0afd0-ac70-11f0-8e08-75a2836fd2d1",
-				"layer": "Entities",
-				"x": 416,
 				"y": 240,
 				"width": 16,
 				"height": 16,

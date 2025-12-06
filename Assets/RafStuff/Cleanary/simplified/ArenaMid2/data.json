@@ -34,17 +34,6 @@
 		"Ground": [
 			{
 				"id": "Ground",
-				"iid": "fae0bd20-ac70-11f0-8e08-bb2d051d8271",
-				"layer": "Entities",
-				"x": 0,
-				"y": 256,
-				"width": 16,
-				"height": 16,
-				"color": 7552569,
-				"customFields" : {}
-			},
-			{
-				"id": "Ground",
 				"iid": "023a25c0-ac70-11f0-8e08-4be2e52b5c12",
 				"layer": "Entities",
 				"x": 96,
@@ -169,17 +158,6 @@
 				"iid": "06e78130-ac70-11f0-8e08-9f9f99ecfa90",
 				"layer": "Entities",
 				"x": 16,
-				"y": 272,
-				"width": 16,
-				"height": 16,
-				"color": 7552569,
-				"customFields" : {}
-			},
-			{
-				"id": "Ground",
-				"iid": "07310d50-ac70-11f0-8e08-7d790b8d1ace",
-				"layer": "Entities",
-				"x": 0,
 				"y": 272,
 				"width": 16,
 				"height": 16,
@@ -511,28 +489,6 @@
 				"layer": "Entities",
 				"x": 320,
 				"y": 256,
-				"width": 16,
-				"height": 16,
-				"color": 7552569,
-				"customFields" : {}
-			},
-			{
-				"id": "Ground",
-				"iid": "0c264731-ac70-11f0-8e08-71c2d1295a8d",
-				"layer": "Entities",
-				"x": 416,
-				"y": 256,
-				"width": 16,
-				"height": 16,
-				"color": 7552569,
-				"customFields" : {}
-			},
-			{
-				"id": "Ground",
-				"iid": "0c264732-ac70-11f0-8e08-eb8ad2216bc6",
-				"layer": "Entities",
-				"x": 416,
-				"y": 272,
 				"width": 16,
 				"height": 16,
 				"color": 7552569,
@@ -1165,7 +1121,7 @@
 				"x": 0,
 				"y": 0,
 				"width": 16,
-				"height": 256,
+				"height": 288,
 				"color": 11190983,
 				"customFields" : {}
 			},
@@ -1176,7 +1132,7 @@
 				"x": 416,
 				"y": 0,
 				"width": 16,
-				"height": 256,
+				"height": 288,
 				"color": 11190983,
 				"customFields" : {}
 			}
