@@ -33,6 +33,7 @@ public class GameManager : MonoBehaviour
     public LevelType[] basePath, pathEnd;
     public string[] levelTypeStrings;
     public Color[] levelTypeColors;
+    public int minDifficulty;
     
     public GameState gameState;
   
@@ -133,6 +134,11 @@ public class GameManager : MonoBehaviour
     public float GetEnemyHealthMultiplier(int difficulty)
     {
         return difficulty * 0.25f + 1;
+    }
+
+    public void IncDifficulty(int increment)
+    {
+        difficulty = Mathf.Max(minDifficulty, difficulty + increment);
     }
 
     public void LoadNextLevel(int path)
