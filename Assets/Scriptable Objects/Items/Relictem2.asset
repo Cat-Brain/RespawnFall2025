@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf3f8bddd118dfd4f90387337450adb5, type: 3}
+  m_Name: Relictem2
+  m_EditorClassIdentifier: Assembly-CSharp::InventoryItem
+  layer: 1
+  positions:
+  - {x: 0, y: 1}
+  - {x: 1, y: 1}
+  - {x: 0, y: 0}
+  - {x: 1, y: 0}
+  sprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
+  description: Sell at shop. Trash to sell
+  components:
+  - {fileID: 11400000, guid: 9957120a176ebff47a7b59af58b98a55, type: 2}
+  dimensions: {x: 2, y: 2}
+  inst: {fileID: 0}

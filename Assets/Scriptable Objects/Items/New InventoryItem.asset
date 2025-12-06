@@ -20,7 +20,9 @@ MonoBehaviour:
   - {x: 3, y: 0}
   - {x: 4, y: 0}
   sprite: {fileID: 0}
-  description: lmao
-  components: []
+  description: Fire Rate + 15, Max Health -55%
+  components:
+  - {fileID: 11400000, guid: d14f5787b2292e449b289ed6f61985e2, type: 2}
+  - {fileID: 11400000, guid: 0165b1fd23e1dab48a577e687bb10c35, type: 2}
   dimensions: {x: 5, y: 1}
   inst: {fileID: 0}
