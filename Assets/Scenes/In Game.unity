@@ -211,7 +211,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6283336157756427642, guid: 00dd54f4825b1924a9b6f4f07ad4180a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5
+      value: -4.9
       objectReference: {fileID: 0}
     - target: {fileID: 6283336157756427642, guid: 00dd54f4825b1924a9b6f4f07ad4180a, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1413,6 +1413,10 @@ PrefabInstance:
       propertyPath: lobby
       value: 
       objectReference: {fileID: 1041725459}
+    - target: {fileID: 4989346605032106179, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
+      propertyPath: firstLevel
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4989346605032106179, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
       propertyPath: playerWeaponInstance
       value: 
