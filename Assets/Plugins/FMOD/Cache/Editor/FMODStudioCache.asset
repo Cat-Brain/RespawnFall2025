@@ -96,7 +96,7 @@ MonoBehaviour:
   Path: Assets/Game SFX/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 639005813334677119
+  lastModified: 639006034255015047
   FileSizes:
   - Name: Desktop
     Value: 1310
@@ -350,7 +350,7 @@ MonoBehaviour:
   Path: Assets/Game SFX/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 639005813334645171
+  lastModified: 639006034254995045
   FileSizes:
   - Name: Desktop
     Value: 5480352
@@ -497,7 +497,7 @@ MonoBehaviour:
   StringsBanks:
   - {fileID: -8560159268333102633}
   cacheVersion: 131857
-  cacheTime: 639005813334677119
+  cacheTime: 639006034255015047
   SerializableEventsDict:
   - key: event:/HitFire
     index: 0
