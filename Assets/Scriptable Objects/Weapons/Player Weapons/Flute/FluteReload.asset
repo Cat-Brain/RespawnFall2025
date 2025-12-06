@@ -13,8 +13,7 @@ MonoBehaviour:
   m_Name: FluteReload
   m_EditorClassIdentifier: Assembly-CSharp::WeaponReload
   ammo: 55
-  reloadTime: 0.8
-  reloadClip: {fileID: 8300000, guid: 0b6a323065b88484c9435e1ef52b9885, type: 3}
+  reloadTime: 2
   weapon: {fileID: 0}
   reloading: 0
   remainingAmmo: 0
