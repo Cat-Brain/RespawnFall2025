@@ -713,19 +713,6 @@
 				"customFields" : {}
 			}
 		],
-		"Reward_Item": [
-			{
-				"id": "Reward_Item",
-				"iid": "272af710-ac70-11f0-bd7d-6925e757730f",
-				"layer": "Entities",
-				"x": 208,
-				"y": 160,
-				"width": 16,
-				"height": 16,
-				"color": 15201580,
-				"customFields" : {}
-			}
-		],
 		"One_Way": [
 			{
 				"id": "One_Way",
@@ -758,6 +745,19 @@
 				"width": 16,
 				"height": 8,
 				"color": 12087120,
+				"customFields" : {}
+			}
+		],
+		"Chest": [
+			{
+				"id": "Chest",
+				"iid": "6d6fbbc0-ac70-11f0-9289-b3867bbe5be2",
+				"layer": "Entities",
+				"x": 208,
+				"y": 160,
+				"width": 16,
+				"height": 16,
+				"color": 16690740,
 				"customFields" : {}
 			}
 		]
