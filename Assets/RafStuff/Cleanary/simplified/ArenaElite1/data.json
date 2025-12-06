@@ -1,12 +1,21 @@
 {
 	"identifier": "ArenaElite1",
 	"uniqueIdentifer": "3f642f60-ac70-11f0-8e08-dbdb8971397a",
-	"x": 912,
-	"y": -80,
+	"x": 864,
+	"y": 0,
 	"width": 848,
 	"height": 416,
 	"bgColor": "#8B9BB4",
-	"neighbourLevels": [],
+	"neighbourLevels": [
+		{
+			"levelIid": "e9e24850-ac70-11f0-b4ed-9dea1e861157",
+			"dir": "w"
+		},
+		{
+			"levelIid": "66bc1630-ac70-11f0-8e08-ed595c6528e8",
+			"dir": "w"
+		}
+	],
 	"customFields" : {},
 	"layers": [],
 	"entities": {

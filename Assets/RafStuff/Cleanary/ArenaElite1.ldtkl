@@ -11,8 +11,8 @@
 	"identifier": "ArenaElite1",
 	"iid": "3f642f60-ac70-11f0-8e08-dbdb8971397a",
 	"uid": 169,
-	"worldX": 912,
-	"worldY": -80,
+	"worldX": 864,
+	"worldY": 0,
 	"worldDepth": 0,
 	"pxWid": 848,
 	"pxHei": 416,
@@ -65,8 +65,8 @@
 					"defUid": 137,
 					"px": [64,368],
 					"fieldInstances": [],
-					"__worldX": 976,
-					"__worldY": 288
+					"__worldX": 928,
+					"__worldY": 368
 				},
 				{
 					"__identifier": "Ground",
@@ -81,8 +81,8 @@
 					"defUid": 137,
 					"px": [80,384],
 					"fieldInstances": [],
-					"__worldX": 992,
-					"__worldY": 304
+					"__worldX": 944,
+					"__worldY": 384
 				},
 				{
 					"__identifier": "Ground",
@@ -97,8 +97,8 @@
 					"defUid": 137,
 					"px": [80,368],
 					"fieldInstances": [],
-					"__worldX": 992,
-					"__worldY": 288
+					"__worldX": 944,
+					"__worldY": 368
 				},
 				{
 					"__identifier": "Ground",
@@ -113,8 +113,8 @@
 					"defUid": 137,
 					"px": [64,384],
 					"fieldInstances": [],
-					"__worldX": 976,
-					"__worldY": 304
+					"__worldX": 928,
+					"__worldY": 384
 				},
 				{
 					"__identifier": "Ground",
@@ -129,8 +129,8 @@
 					"defUid": 137,
 					"px": [160,384],
 					"fieldInstances": [],
-					"__worldX": 1072,
-					"__worldY": 304
+					"__worldX": 1024,
+					"__worldY": 384
 				},
 				{
 					"__identifier": "Ground",
@@ -145,8 +145,8 @@
 					"defUid": 137,
 					"px": [160,368],
 					"fieldInstances": [],
-					"__worldX": 1072,
-					"__worldY": 288
+					"__worldX": 1024,
+					"__worldY": 368
 				},
 				{
 					"__identifier": "Ground",
@@ -161,8 +161,8 @@
 					"defUid": 137,
 					"px": [208,400],
 					"fieldInstances": [],
-					"__worldX": 1120,
-					"__worldY": 320
+					"__worldX": 1072,
+					"__worldY": 400
 				},
 				{
 					"__identifier": "Ground",
@@ -177,8 +177,8 @@
 					"defUid": 137,
 					"px": [144,400],
 					"fieldInstances": [],
-					"__worldX": 1056,
-					"__worldY": 320
+					"__worldX": 1008,
+					"__worldY": 400
 				},
 				{
 					"__identifier": "Ground",
@@ -193,8 +193,8 @@
 					"defUid": 137,
 					"px": [128,400],
 					"fieldInstances": [],
-					"__worldX": 1040,
-					"__worldY": 320
+					"__worldX": 992,
+					"__worldY": 400
 				},
 				{
 					"__identifier": "Ground",
@@ -209,8 +209,8 @@
 					"defUid": 137,
 					"px": [304,400],
 					"fieldInstances": [],
-					"__worldX": 1216,
-					"__worldY": 320
+					"__worldX": 1168,
+					"__worldY": 400
 				},
 				{
 					"__identifier": "Ground",
@@ -225,8 +225,8 @@
 					"defUid": 137,
 					"px": [336,400],
 					"fieldInstances": [],
-					"__worldX": 1248,
-					"__worldY": 320
+					"__worldX": 1200,
+					"__worldY": 400
 				},
 				{
 					"__identifier": "Ground",
@@ -241,8 +241,8 @@
 					"defUid": 137,
 					"px": [320,400],
 					"fieldInstances": [],
-					"__worldX": 1232,
-					"__worldY": 320
+					"__worldX": 1184,
+					"__worldY": 400
 				},
 				{
 					"__identifier": "Ground",
@@ -257,8 +257,8 @@
 					"defUid": 137,
 					"px": [224,400],
 					"fieldInstances": [],
-					"__worldX": 1136,
-					"__worldY": 320
+					"__worldX": 1088,
+					"__worldY": 400
 				},
 				{
 					"__identifier": "Ground",
@@ -273,8 +273,8 @@
 					"defUid": 137,
 					"px": [256,400],
 					"fieldInstances": [],
-					"__worldX": 1168,
-					"__worldY": 320
+					"__worldX": 1120,
+					"__worldY": 400
 				},
 				{
 					"__identifier": "Ground",
@@ -289,8 +289,8 @@
 					"defUid": 137,
 					"px": [240,400],
 					"fieldInstances": [],
-					"__worldX": 1152,
-					"__worldY": 320
+					"__worldX": 1104,
+					"__worldY": 400
 				},
 				{
 					"__identifier": "Ground",
@@ -305,8 +305,8 @@
 					"defUid": 137,
 					"px": [448,384],
 					"fieldInstances": [],
-					"__worldX": 1360,
-					"__worldY": 304
+					"__worldX": 1312,
+					"__worldY": 384
 				},
 				{
 					"__identifier": "Ground",
@@ -321,8 +321,8 @@
 					"defUid": 137,
 					"px": [480,400],
 					"fieldInstances": [],
-					"__worldX": 1392,
-					"__worldY": 320
+					"__worldX": 1344,
+					"__worldY": 400
 				},
 				{
 					"__identifier": "Ground",
@@ -337,8 +337,8 @@
 					"defUid": 137,
 					"px": [464,384],
 					"fieldInstances": [],
-					"__worldX": 1376,
-					"__worldY": 304
+					"__worldX": 1328,
+					"__worldY": 384
 				},
 				{
 					"__identifier": "Ground",
@@ -353,8 +353,8 @@
 					"defUid": 137,
 					"px": [352,400],
 					"fieldInstances": [],
-					"__worldX": 1264,
-					"__worldY": 320
+					"__worldX": 1216,
+					"__worldY": 400
 				},
 				{
 					"__identifier": "Ground",
@@ -369,8 +369,8 @@
 					"defUid": 137,
 					"px": [384,384],
 					"fieldInstances": [],
-					"__worldX": 1296,
-					"__worldY": 304
+					"__worldX": 1248,
+					"__worldY": 384
 				},
 				{
 					"__identifier": "Ground",
@@ -385,8 +385,8 @@
 					"defUid": 137,
 					"px": [368,384],
 					"fieldInstances": [],
-					"__worldX": 1280,
-					"__worldY": 304
+					"__worldX": 1232,
+					"__worldY": 384
 				},
 				{
 					"__identifier": "Ground",
@@ -401,8 +401,8 @@
 					"defUid": 137,
 					"px": [576,400],
 					"fieldInstances": [],
-					"__worldX": 1488,
-					"__worldY": 320
+					"__worldX": 1440,
+					"__worldY": 400
 				},
 				{
 					"__identifier": "Ground",
@@ -417,8 +417,8 @@
 					"defUid": 137,
 					"px": [560,384],
 					"fieldInstances": [],
-					"__worldX": 1472,
-					"__worldY": 304
+					"__worldX": 1424,
+					"__worldY": 384
 				},
 				{
 					"__identifier": "Ground",
@@ -433,8 +433,8 @@
 					"defUid": 137,
 					"px": [608,400],
 					"fieldInstances": [],
-					"__worldX": 1520,
-					"__worldY": 320
+					"__worldX": 1472,
+					"__worldY": 400
 				},
 				{
 					"__identifier": "Ground",
@@ -449,8 +449,8 @@
 					"defUid": 137,
 					"px": [592,400],
 					"fieldInstances": [],
-					"__worldX": 1504,
-					"__worldY": 320
+					"__worldX": 1456,
+					"__worldY": 400
 				},
 				{
 					"__identifier": "Ground",
@@ -465,8 +465,8 @@
 					"defUid": 137,
 					"px": [496,400],
 					"fieldInstances": [],
-					"__worldX": 1408,
-					"__worldY": 320
+					"__worldX": 1360,
+					"__worldY": 400
 				},
 				{
 					"__identifier": "Ground",
@@ -481,8 +481,8 @@
 					"defUid": 137,
 					"px": [560,368],
 					"fieldInstances": [],
-					"__worldX": 1472,
-					"__worldY": 288
+					"__worldX": 1424,
+					"__worldY": 368
 				},
 				{
 					"__identifier": "Ground",
@@ -497,8 +497,8 @@
 					"defUid": 137,
 					"px": [528,400],
 					"fieldInstances": [],
-					"__worldX": 1440,
-					"__worldY": 320
+					"__worldX": 1392,
+					"__worldY": 400
 				},
 				{
 					"__identifier": "Ground",
@@ -513,8 +513,8 @@
 					"defUid": 137,
 					"px": [512,400],
 					"fieldInstances": [],
-					"__worldX": 1424,
-					"__worldY": 320
+					"__worldX": 1376,
+					"__worldY": 400
 				},
 				{
 					"__identifier": "Ground",
@@ -529,8 +529,8 @@
 					"defUid": 137,
 					"px": [720,400],
 					"fieldInstances": [],
-					"__worldX": 1632,
-					"__worldY": 320
+					"__worldX": 1584,
+					"__worldY": 400
 				},
 				{
 					"__identifier": "Ground",
@@ -545,8 +545,8 @@
 					"defUid": 137,
 					"px": [704,400],
 					"fieldInstances": [],
-					"__worldX": 1616,
-					"__worldY": 320
+					"__worldX": 1568,
+					"__worldY": 400
 				},
 				{
 					"__identifier": "Ground",
@@ -561,8 +561,8 @@
 					"defUid": 137,
 					"px": [752,400],
 					"fieldInstances": [],
-					"__worldX": 1664,
-					"__worldY": 320
+					"__worldX": 1616,
+					"__worldY": 400
 				},
 				{
 					"__identifier": "Ground",
@@ -577,8 +577,8 @@
 					"defUid": 137,
 					"px": [736,400],
 					"fieldInstances": [],
-					"__worldX": 1648,
-					"__worldY": 320
+					"__worldX": 1600,
+					"__worldY": 400
 				},
 				{
 					"__identifier": "Ground",
@@ -593,8 +593,8 @@
 					"defUid": 137,
 					"px": [624,400],
 					"fieldInstances": [],
-					"__worldX": 1536,
-					"__worldY": 320
+					"__worldX": 1488,
+					"__worldY": 400
 				},
 				{
 					"__identifier": "Ground",
@@ -609,8 +609,8 @@
 					"defUid": 137,
 					"px": [656,368],
 					"fieldInstances": [],
-					"__worldX": 1568,
-					"__worldY": 288
+					"__worldX": 1520,
+					"__worldY": 368
 				},
 				{
 					"__identifier": "Ground",
@@ -625,8 +625,8 @@
 					"defUid": 137,
 					"px": [688,384],
 					"fieldInstances": [],
-					"__worldX": 1600,
-					"__worldY": 304
+					"__worldX": 1552,
+					"__worldY": 384
 				},
 				{
 					"__identifier": "Ground",
@@ -641,8 +641,8 @@
 					"defUid": 137,
 					"px": [688,368],
 					"fieldInstances": [],
-					"__worldX": 1600,
-					"__worldY": 288
+					"__worldX": 1552,
+					"__worldY": 368
 				},
 				{
 					"__identifier": "Ground",
@@ -657,8 +657,8 @@
 					"defUid": 137,
 					"px": [656,384],
 					"fieldInstances": [],
-					"__worldX": 1568,
-					"__worldY": 304
+					"__worldX": 1520,
+					"__worldY": 384
 				},
 				{
 					"__identifier": "Ground",
@@ -673,8 +673,8 @@
 					"defUid": 137,
 					"px": [640,384],
 					"fieldInstances": [],
-					"__worldX": 1552,
-					"__worldY": 304
+					"__worldX": 1504,
+					"__worldY": 384
 				},
 				{
 					"__identifier": "Ground",
@@ -689,8 +689,8 @@
 					"defUid": 137,
 					"px": [768,384],
 					"fieldInstances": [],
-					"__worldX": 1680,
-					"__worldY": 304
+					"__worldX": 1632,
+					"__worldY": 384
 				},
 				{
 					"__identifier": "Ground",
@@ -705,8 +705,8 @@
 					"defUid": 137,
 					"px": [768,368],
 					"fieldInstances": [],
-					"__worldX": 1680,
-					"__worldY": 288
+					"__worldX": 1632,
+					"__worldY": 368
 				},
 				{
 					"__identifier": "Ground",
@@ -721,8 +721,8 @@
 					"defUid": 137,
 					"px": [784,368],
 					"fieldInstances": [],
-					"__worldX": 1696,
-					"__worldY": 288
+					"__worldX": 1648,
+					"__worldY": 368
 				},
 				{
 					"__identifier": "Ground",
@@ -737,8 +737,8 @@
 					"defUid": 137,
 					"px": [784,384],
 					"fieldInstances": [],
-					"__worldX": 1696,
-					"__worldY": 304
+					"__worldX": 1648,
+					"__worldY": 384
 				},
 				{
 					"__identifier": "Ground",
@@ -753,8 +753,8 @@
 					"defUid": 137,
 					"px": [784,384],
 					"fieldInstances": [],
-					"__worldX": 1696,
-					"__worldY": 304
+					"__worldX": 1648,
+					"__worldY": 384
 				},
 				{
 					"__identifier": "Ground",
@@ -769,8 +769,8 @@
 					"defUid": 137,
 					"px": [784,368],
 					"fieldInstances": [],
-					"__worldX": 1696,
-					"__worldY": 288
+					"__worldX": 1648,
+					"__worldY": 368
 				},
 				{
 					"__identifier": "Bounce_Pad",
@@ -785,8 +785,8 @@
 					"defUid": 138,
 					"px": [192,368],
 					"fieldInstances": [],
-					"__worldX": 1104,
-					"__worldY": 288
+					"__worldX": 1056,
+					"__worldY": 368
 				},
 				{
 					"__identifier": "Bounce_Pad",
@@ -801,8 +801,8 @@
 					"defUid": 138,
 					"px": [208,368],
 					"fieldInstances": [],
-					"__worldX": 1120,
-					"__worldY": 288
+					"__worldX": 1072,
+					"__worldY": 368
 				},
 				{
 					"__identifier": "Bounce_Pad",
@@ -817,8 +817,8 @@
 					"defUid": 138,
 					"px": [224,368],
 					"fieldInstances": [],
-					"__worldX": 1136,
-					"__worldY": 288
+					"__worldX": 1088,
+					"__worldY": 368
 				},
 				{
 					"__identifier": "Ground",
@@ -833,8 +833,8 @@
 					"defUid": 137,
 					"px": [272,368],
 					"fieldInstances": [],
-					"__worldX": 1184,
-					"__worldY": 288
+					"__worldX": 1136,
+					"__worldY": 368
 				},
 				{
 					"__identifier": "Bounce_Pad",
@@ -849,8 +849,8 @@
 					"defUid": 138,
 					"px": [640,368],
 					"fieldInstances": [],
-					"__worldX": 1552,
-					"__worldY": 288
+					"__worldX": 1504,
+					"__worldY": 368
 				},
 				{
 					"__identifier": "Bounce_Pad",
@@ -865,8 +865,8 @@
 					"defUid": 138,
 					"px": [624,368],
 					"fieldInstances": [],
-					"__worldX": 1536,
-					"__worldY": 288
+					"__worldX": 1488,
+					"__worldY": 368
 				},
 				{
 					"__identifier": "Bounce_Pad",
@@ -881,8 +881,8 @@
 					"defUid": 138,
 					"px": [608,368],
 					"fieldInstances": [],
-					"__worldX": 1520,
-					"__worldY": 288
+					"__worldX": 1472,
+					"__worldY": 368
 				},
 				{
 					"__identifier": "Ground",
@@ -897,8 +897,8 @@
 					"defUid": 137,
 					"px": [384,368],
 					"fieldInstances": [],
-					"__worldX": 1296,
-					"__worldY": 288
+					"__worldX": 1248,
+					"__worldY": 368
 				},
 				{
 					"__identifier": "Ground",
@@ -913,8 +913,8 @@
 					"defUid": 137,
 					"px": [384,368],
 					"fieldInstances": [],
-					"__worldX": 1296,
-					"__worldY": 288
+					"__worldX": 1248,
+					"__worldY": 368
 				},
 				{
 					"__identifier": "Ground",
@@ -929,8 +929,8 @@
 					"defUid": 137,
 					"px": [416,368],
 					"fieldInstances": [],
-					"__worldX": 1328,
-					"__worldY": 288
+					"__worldX": 1280,
+					"__worldY": 368
 				},
 				{
 					"__identifier": "Ground",
@@ -945,8 +945,8 @@
 					"defUid": 137,
 					"px": [432,368],
 					"fieldInstances": [],
-					"__worldX": 1344,
-					"__worldY": 288
+					"__worldX": 1296,
+					"__worldY": 368
 				},
 				{
 					"__identifier": "One_Way",
@@ -961,8 +961,8 @@
 					"defUid": 20,
 					"px": [352,320],
 					"fieldInstances": [],
-					"__worldX": 1264,
-					"__worldY": 240
+					"__worldX": 1216,
+					"__worldY": 320
 				},
 				{
 					"__identifier": "One_Way",
@@ -977,8 +977,8 @@
 					"defUid": 20,
 					"px": [608,320],
 					"fieldInstances": [],
-					"__worldX": 1520,
-					"__worldY": 240
+					"__worldX": 1472,
+					"__worldY": 320
 				},
 				{
 					"__identifier": "One_Way",
@@ -993,8 +993,8 @@
 					"defUid": 20,
 					"px": [496,320],
 					"fieldInstances": [],
-					"__worldX": 1408,
-					"__worldY": 240
+					"__worldX": 1360,
+					"__worldY": 320
 				},
 				{
 					"__identifier": "Ground",
@@ -1009,8 +1009,8 @@
 					"defUid": 137,
 					"px": [400,368],
 					"fieldInstances": [],
-					"__worldX": 1312,
-					"__worldY": 288
+					"__worldX": 1264,
+					"__worldY": 368
 				},
 				{
 					"__identifier": "One_Way",
@@ -1025,8 +1025,8 @@
 					"defUid": 20,
 					"px": [336,320],
 					"fieldInstances": [],
-					"__worldX": 1248,
-					"__worldY": 240
+					"__worldX": 1200,
+					"__worldY": 320
 				},
 				{
 					"__identifier": "One_Way",
@@ -1041,8 +1041,8 @@
 					"defUid": 20,
 					"px": [320,320],
 					"fieldInstances": [],
-					"__worldX": 1232,
-					"__worldY": 240
+					"__worldX": 1184,
+					"__worldY": 320
 				},
 				{
 					"__identifier": "One_Way",
@@ -1057,8 +1057,8 @@
 					"defUid": 20,
 					"px": [624,320],
 					"fieldInstances": [],
-					"__worldX": 1536,
-					"__worldY": 240
+					"__worldX": 1488,
+					"__worldY": 320
 				},
 				{
 					"__identifier": "One_Way",
@@ -1073,8 +1073,8 @@
 					"defUid": 20,
 					"px": [640,320],
 					"fieldInstances": [],
-					"__worldX": 1552,
-					"__worldY": 240
+					"__worldX": 1504,
+					"__worldY": 320
 				},
 				{
 					"__identifier": "One_Way",
@@ -1089,8 +1089,8 @@
 					"defUid": 20,
 					"px": [480,320],
 					"fieldInstances": [],
-					"__worldX": 1392,
-					"__worldY": 240
+					"__worldX": 1344,
+					"__worldY": 320
 				},
 				{
 					"__identifier": "One_Way",
@@ -1105,8 +1105,8 @@
 					"defUid": 20,
 					"px": [320,320],
 					"fieldInstances": [],
-					"__worldX": 1232,
-					"__worldY": 240
+					"__worldX": 1184,
+					"__worldY": 320
 				},
 				{
 					"__identifier": "One_Way",
@@ -1121,8 +1121,8 @@
 					"defUid": 20,
 					"px": [208,320],
 					"fieldInstances": [],
-					"__worldX": 1120,
-					"__worldY": 240
+					"__worldX": 1072,
+					"__worldY": 320
 				},
 				{
 					"__identifier": "One_Way",
@@ -1137,8 +1137,8 @@
 					"defUid": 20,
 					"px": [224,320],
 					"fieldInstances": [],
-					"__worldX": 1136,
-					"__worldY": 240
+					"__worldX": 1088,
+					"__worldY": 320
 				},
 				{
 					"__identifier": "One_Way",
@@ -1153,8 +1153,8 @@
 					"defUid": 20,
 					"px": [336,320],
 					"fieldInstances": [],
-					"__worldX": 1248,
-					"__worldY": 240
+					"__worldX": 1200,
+					"__worldY": 320
 				},
 				{
 					"__identifier": "One_Way",
@@ -1169,8 +1169,8 @@
 					"defUid": 20,
 					"px": [192,320],
 					"fieldInstances": [],
-					"__worldX": 1104,
-					"__worldY": 240
+					"__worldX": 1056,
+					"__worldY": 320
 				},
 				{
 					"__identifier": "One_Way",
@@ -1185,8 +1185,8 @@
 					"defUid": 20,
 					"px": [176,320],
 					"fieldInstances": [],
-					"__worldX": 1088,
-					"__worldY": 240
+					"__worldX": 1040,
+					"__worldY": 320
 				},
 				{
 					"__identifier": "One_Way",
@@ -1201,8 +1201,8 @@
 					"defUid": 20,
 					"px": [368,320],
 					"fieldInstances": [],
-					"__worldX": 1280,
-					"__worldY": 240
+					"__worldX": 1232,
+					"__worldY": 320
 				},
 				{
 					"__identifier": "One_Way",
@@ -1217,8 +1217,8 @@
 					"defUid": 20,
 					"px": [464,320],
 					"fieldInstances": [],
-					"__worldX": 1376,
-					"__worldY": 240
+					"__worldX": 1328,
+					"__worldY": 320
 				},
 				{
 					"__identifier": "One_Way",
@@ -1233,8 +1233,8 @@
 					"defUid": 20,
 					"px": [656,320],
 					"fieldInstances": [],
-					"__worldX": 1568,
-					"__worldY": 240
+					"__worldX": 1520,
+					"__worldY": 320
 				},
 				{
 					"__identifier": "One_Way",
@@ -1249,8 +1249,8 @@
 					"defUid": 20,
 					"px": [112,288],
 					"fieldInstances": [],
-					"__worldX": 1024,
-					"__worldY": 208
+					"__worldX": 976,
+					"__worldY": 288
 				},
 				{
 					"__identifier": "Enemy_Ground_Spawn",
@@ -1265,8 +1265,8 @@
 					"defUid": 136,
 					"px": [64,352],
 					"fieldInstances": [],
-					"__worldX": 976,
-					"__worldY": 272
+					"__worldX": 928,
+					"__worldY": 352
 				},
 				{
 					"__identifier": "Enemy_Ground_Spawn",
@@ -1281,8 +1281,8 @@
 					"defUid": 136,
 					"px": [352,352],
 					"fieldInstances": [],
-					"__worldX": 1264,
-					"__worldY": 272
+					"__worldX": 1216,
+					"__worldY": 352
 				},
 				{
 					"__identifier": "Enemy_Ground_Spawn",
@@ -1297,8 +1297,8 @@
 					"defUid": 136,
 					"px": [480,352],
 					"fieldInstances": [],
-					"__worldX": 1392,
-					"__worldY": 272
+					"__worldX": 1344,
+					"__worldY": 352
 				},
 				{
 					"__identifier": "Enemy_Ground_Spawn",
@@ -1313,8 +1313,8 @@
 					"defUid": 136,
 					"px": [672,352],
 					"fieldInstances": [],
-					"__worldX": 1584,
-					"__worldY": 272
+					"__worldX": 1536,
+					"__worldY": 352
 				},
 				{
 					"__identifier": "Enemy_Ground_Spawn",
@@ -1329,8 +1329,8 @@
 					"defUid": 136,
 					"px": [704,352],
 					"fieldInstances": [],
-					"__worldX": 1616,
-					"__worldY": 272
+					"__worldX": 1568,
+					"__worldY": 352
 				},
 				{
 					"__identifier": "Enemy_Ground_Spawn",
@@ -1345,8 +1345,8 @@
 					"defUid": 136,
 					"px": [768,352],
 					"fieldInstances": [],
-					"__worldX": 1680,
-					"__worldY": 272
+					"__worldX": 1632,
+					"__worldY": 352
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -1361,8 +1361,8 @@
 					"defUid": 140,
 					"px": [80,336],
 					"fieldInstances": [],
-					"__worldX": 992,
-					"__worldY": 256
+					"__worldX": 944,
+					"__worldY": 336
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -1377,8 +1377,8 @@
 					"defUid": 140,
 					"px": [64,336],
 					"fieldInstances": [],
-					"__worldX": 976,
-					"__worldY": 256
+					"__worldX": 928,
+					"__worldY": 336
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -1393,8 +1393,8 @@
 					"defUid": 140,
 					"px": [96,336],
 					"fieldInstances": [],
-					"__worldX": 1008,
-					"__worldY": 256
+					"__worldX": 960,
+					"__worldY": 336
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -1409,8 +1409,8 @@
 					"defUid": 140,
 					"px": [112,336],
 					"fieldInstances": [],
-					"__worldX": 1024,
-					"__worldY": 256
+					"__worldX": 976,
+					"__worldY": 336
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -1425,8 +1425,8 @@
 					"defUid": 140,
 					"px": [128,336],
 					"fieldInstances": [],
-					"__worldX": 1040,
-					"__worldY": 256
+					"__worldX": 992,
+					"__worldY": 336
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -1441,8 +1441,8 @@
 					"defUid": 140,
 					"px": [160,336],
 					"fieldInstances": [],
-					"__worldX": 1072,
-					"__worldY": 256
+					"__worldX": 1024,
+					"__worldY": 336
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -1457,8 +1457,8 @@
 					"defUid": 140,
 					"px": [144,336],
 					"fieldInstances": [],
-					"__worldX": 1056,
-					"__worldY": 256
+					"__worldX": 1008,
+					"__worldY": 336
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -1473,8 +1473,8 @@
 					"defUid": 140,
 					"px": [176,336],
 					"fieldInstances": [],
-					"__worldX": 1088,
-					"__worldY": 256
+					"__worldX": 1040,
+					"__worldY": 336
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -1489,8 +1489,8 @@
 					"defUid": 140,
 					"px": [192,336],
 					"fieldInstances": [],
-					"__worldX": 1104,
-					"__worldY": 256
+					"__worldX": 1056,
+					"__worldY": 336
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -1505,8 +1505,8 @@
 					"defUid": 140,
 					"px": [208,336],
 					"fieldInstances": [],
-					"__worldX": 1120,
-					"__worldY": 256
+					"__worldX": 1072,
+					"__worldY": 336
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -1521,8 +1521,8 @@
 					"defUid": 140,
 					"px": [240,336],
 					"fieldInstances": [],
-					"__worldX": 1152,
-					"__worldY": 256
+					"__worldX": 1104,
+					"__worldY": 336
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -1537,8 +1537,8 @@
 					"defUid": 140,
 					"px": [224,336],
 					"fieldInstances": [],
-					"__worldX": 1136,
-					"__worldY": 256
+					"__worldX": 1088,
+					"__worldY": 336
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -1553,8 +1553,8 @@
 					"defUid": 140,
 					"px": [256,336],
 					"fieldInstances": [],
-					"__worldX": 1168,
-					"__worldY": 256
+					"__worldX": 1120,
+					"__worldY": 336
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -1569,8 +1569,8 @@
 					"defUid": 140,
 					"px": [272,336],
 					"fieldInstances": [],
-					"__worldX": 1184,
-					"__worldY": 256
+					"__worldX": 1136,
+					"__worldY": 336
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -1585,8 +1585,8 @@
 					"defUid": 140,
 					"px": [320,336],
 					"fieldInstances": [],
-					"__worldX": 1232,
-					"__worldY": 256
+					"__worldX": 1184,
+					"__worldY": 336
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -1601,8 +1601,8 @@
 					"defUid": 140,
 					"px": [304,336],
 					"fieldInstances": [],
-					"__worldX": 1216,
-					"__worldY": 256
+					"__worldX": 1168,
+					"__worldY": 336
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -1617,8 +1617,8 @@
 					"defUid": 140,
 					"px": [336,336],
 					"fieldInstances": [],
-					"__worldX": 1248,
-					"__worldY": 256
+					"__worldX": 1200,
+					"__worldY": 336
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -1633,8 +1633,8 @@
 					"defUid": 140,
 					"px": [352,336],
 					"fieldInstances": [],
-					"__worldX": 1264,
-					"__worldY": 256
+					"__worldX": 1216,
+					"__worldY": 336
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -1649,8 +1649,8 @@
 					"defUid": 140,
 					"px": [368,336],
 					"fieldInstances": [],
-					"__worldX": 1280,
-					"__worldY": 256
+					"__worldX": 1232,
+					"__worldY": 336
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -1665,8 +1665,8 @@
 					"defUid": 140,
 					"px": [480,336],
 					"fieldInstances": [],
-					"__worldX": 1392,
-					"__worldY": 256
+					"__worldX": 1344,
+					"__worldY": 336
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -1681,8 +1681,8 @@
 					"defUid": 140,
 					"px": [464,336],
 					"fieldInstances": [],
-					"__worldX": 1376,
-					"__worldY": 256
+					"__worldX": 1328,
+					"__worldY": 336
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -1697,8 +1697,8 @@
 					"defUid": 140,
 					"px": [496,336],
 					"fieldInstances": [],
-					"__worldX": 1408,
-					"__worldY": 256
+					"__worldX": 1360,
+					"__worldY": 336
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -1713,8 +1713,8 @@
 					"defUid": 140,
 					"px": [528,336],
 					"fieldInstances": [],
-					"__worldX": 1440,
-					"__worldY": 256
+					"__worldX": 1392,
+					"__worldY": 336
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -1729,8 +1729,8 @@
 					"defUid": 140,
 					"px": [560,336],
 					"fieldInstances": [],
-					"__worldX": 1472,
-					"__worldY": 256
+					"__worldX": 1424,
+					"__worldY": 336
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -1745,8 +1745,8 @@
 					"defUid": 140,
 					"px": [576,336],
 					"fieldInstances": [],
-					"__worldX": 1488,
-					"__worldY": 256
+					"__worldX": 1440,
+					"__worldY": 336
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -1761,8 +1761,8 @@
 					"defUid": 140,
 					"px": [592,336],
 					"fieldInstances": [],
-					"__worldX": 1504,
-					"__worldY": 256
+					"__worldX": 1456,
+					"__worldY": 336
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -1777,8 +1777,8 @@
 					"defUid": 140,
 					"px": [608,336],
 					"fieldInstances": [],
-					"__worldX": 1520,
-					"__worldY": 256
+					"__worldX": 1472,
+					"__worldY": 336
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -1793,8 +1793,8 @@
 					"defUid": 140,
 					"px": [640,336],
 					"fieldInstances": [],
-					"__worldX": 1552,
-					"__worldY": 256
+					"__worldX": 1504,
+					"__worldY": 336
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -1809,8 +1809,8 @@
 					"defUid": 140,
 					"px": [624,336],
 					"fieldInstances": [],
-					"__worldX": 1536,
-					"__worldY": 256
+					"__worldX": 1488,
+					"__worldY": 336
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -1825,8 +1825,8 @@
 					"defUid": 140,
 					"px": [656,336],
 					"fieldInstances": [],
-					"__worldX": 1568,
-					"__worldY": 256
+					"__worldX": 1520,
+					"__worldY": 336
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -1841,8 +1841,8 @@
 					"defUid": 140,
 					"px": [672,336],
 					"fieldInstances": [],
-					"__worldX": 1584,
-					"__worldY": 256
+					"__worldX": 1536,
+					"__worldY": 336
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -1857,8 +1857,8 @@
 					"defUid": 140,
 					"px": [688,336],
 					"fieldInstances": [],
-					"__worldX": 1600,
-					"__worldY": 256
+					"__worldX": 1552,
+					"__worldY": 336
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -1873,8 +1873,8 @@
 					"defUid": 140,
 					"px": [720,336],
 					"fieldInstances": [],
-					"__worldX": 1632,
-					"__worldY": 256
+					"__worldX": 1584,
+					"__worldY": 336
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -1889,8 +1889,8 @@
 					"defUid": 140,
 					"px": [704,336],
 					"fieldInstances": [],
-					"__worldX": 1616,
-					"__worldY": 256
+					"__worldX": 1568,
+					"__worldY": 336
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -1905,8 +1905,8 @@
 					"defUid": 140,
 					"px": [736,336],
 					"fieldInstances": [],
-					"__worldX": 1648,
-					"__worldY": 256
+					"__worldX": 1600,
+					"__worldY": 336
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -1921,8 +1921,8 @@
 					"defUid": 140,
 					"px": [752,336],
 					"fieldInstances": [],
-					"__worldX": 1664,
-					"__worldY": 256
+					"__worldX": 1616,
+					"__worldY": 336
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -1937,8 +1937,8 @@
 					"defUid": 140,
 					"px": [768,336],
 					"fieldInstances": [],
-					"__worldX": 1680,
-					"__worldY": 256
+					"__worldX": 1632,
+					"__worldY": 336
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -1953,8 +1953,8 @@
 					"defUid": 140,
 					"px": [448,352],
 					"fieldInstances": [],
-					"__worldX": 1360,
-					"__worldY": 272
+					"__worldX": 1312,
+					"__worldY": 352
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -1969,8 +1969,8 @@
 					"defUid": 140,
 					"px": [448,336],
 					"fieldInstances": [],
-					"__worldX": 1360,
-					"__worldY": 256
+					"__worldX": 1312,
+					"__worldY": 336
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -1985,8 +1985,8 @@
 					"defUid": 140,
 					"px": [384,336],
 					"fieldInstances": [],
-					"__worldX": 1296,
-					"__worldY": 256
+					"__worldX": 1248,
+					"__worldY": 336
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -2001,8 +2001,8 @@
 					"defUid": 140,
 					"px": [384,352],
 					"fieldInstances": [],
-					"__worldX": 1296,
-					"__worldY": 272
+					"__worldX": 1248,
+					"__worldY": 352
 				},
 				{
 					"__identifier": "Enemy_Air_Spawn",
@@ -2017,8 +2017,8 @@
 					"defUid": 135,
 					"px": [64,160],
 					"fieldInstances": [],
-					"__worldX": 976,
-					"__worldY": 80
+					"__worldX": 928,
+					"__worldY": 160
 				},
 				{
 					"__identifier": "Enemy_Air_Spawn",
@@ -2033,8 +2033,8 @@
 					"defUid": 135,
 					"px": [96,160],
 					"fieldInstances": [],
-					"__worldX": 1008,
-					"__worldY": 80
+					"__worldX": 960,
+					"__worldY": 160
 				},
 				{
 					"__identifier": "Enemy_Air_Spawn",
@@ -2049,8 +2049,8 @@
 					"defUid": 135,
 					"px": [128,160],
 					"fieldInstances": [],
-					"__worldX": 1040,
-					"__worldY": 80
+					"__worldX": 992,
+					"__worldY": 160
 				},
 				{
 					"__identifier": "Enemy_Air_Spawn",
@@ -2065,8 +2065,8 @@
 					"defUid": 135,
 					"px": [160,160],
 					"fieldInstances": [],
-					"__worldX": 1072,
-					"__worldY": 80
+					"__worldX": 1024,
+					"__worldY": 160
 				},
 				{
 					"__identifier": "Enemy_Air_Spawn",
@@ -2081,8 +2081,8 @@
 					"defUid": 135,
 					"px": [192,160],
 					"fieldInstances": [],
-					"__worldX": 1104,
-					"__worldY": 80
+					"__worldX": 1056,
+					"__worldY": 160
 				},
 				{
 					"__identifier": "Enemy_Air_Spawn",
@@ -2097,8 +2097,8 @@
 					"defUid": 135,
 					"px": [224,160],
 					"fieldInstances": [],
-					"__worldX": 1136,
-					"__worldY": 80
+					"__worldX": 1088,
+					"__worldY": 160
 				},
 				{
 					"__identifier": "Enemy_Air_Spawn",
@@ -2113,8 +2113,8 @@
 					"defUid": 135,
 					"px": [256,160],
 					"fieldInstances": [],
-					"__worldX": 1168,
-					"__worldY": 80
+					"__worldX": 1120,
+					"__worldY": 160
 				},
 				{
 					"__identifier": "Enemy_Air_Spawn",
@@ -2129,8 +2129,8 @@
 					"defUid": 135,
 					"px": [288,160],
 					"fieldInstances": [],
-					"__worldX": 1200,
-					"__worldY": 80
+					"__worldX": 1152,
+					"__worldY": 160
 				},
 				{
 					"__identifier": "Enemy_Air_Spawn",
@@ -2145,8 +2145,8 @@
 					"defUid": 135,
 					"px": [320,160],
 					"fieldInstances": [],
-					"__worldX": 1232,
-					"__worldY": 80
+					"__worldX": 1184,
+					"__worldY": 160
 				},
 				{
 					"__identifier": "Enemy_Air_Spawn",
@@ -2161,8 +2161,8 @@
 					"defUid": 135,
 					"px": [352,160],
 					"fieldInstances": [],
-					"__worldX": 1264,
-					"__worldY": 80
+					"__worldX": 1216,
+					"__worldY": 160
 				},
 				{
 					"__identifier": "Enemy_Air_Spawn",
@@ -2177,8 +2177,8 @@
 					"defUid": 135,
 					"px": [416,160],
 					"fieldInstances": [],
-					"__worldX": 1328,
-					"__worldY": 80
+					"__worldX": 1280,
+					"__worldY": 160
 				},
 				{
 					"__identifier": "Enemy_Air_Spawn",
@@ -2193,8 +2193,8 @@
 					"defUid": 135,
 					"px": [448,160],
 					"fieldInstances": [],
-					"__worldX": 1360,
-					"__worldY": 80
+					"__worldX": 1312,
+					"__worldY": 160
 				},
 				{
 					"__identifier": "Enemy_Air_Spawn",
@@ -2209,8 +2209,8 @@
 					"defUid": 135,
 					"px": [480,160],
 					"fieldInstances": [],
-					"__worldX": 1392,
-					"__worldY": 80
+					"__worldX": 1344,
+					"__worldY": 160
 				},
 				{
 					"__identifier": "Enemy_Air_Spawn",
@@ -2225,8 +2225,8 @@
 					"defUid": 135,
 					"px": [512,160],
 					"fieldInstances": [],
-					"__worldX": 1424,
-					"__worldY": 80
+					"__worldX": 1376,
+					"__worldY": 160
 				},
 				{
 					"__identifier": "Enemy_Air_Spawn",
@@ -2241,8 +2241,8 @@
 					"defUid": 135,
 					"px": [544,160],
 					"fieldInstances": [],
-					"__worldX": 1456,
-					"__worldY": 80
+					"__worldX": 1408,
+					"__worldY": 160
 				},
 				{
 					"__identifier": "Enemy_Air_Spawn",
@@ -2257,8 +2257,8 @@
 					"defUid": 135,
 					"px": [576,160],
 					"fieldInstances": [],
-					"__worldX": 1488,
-					"__worldY": 80
+					"__worldX": 1440,
+					"__worldY": 160
 				},
 				{
 					"__identifier": "Enemy_Air_Spawn",
@@ -2273,8 +2273,8 @@
 					"defUid": 135,
 					"px": [608,160],
 					"fieldInstances": [],
-					"__worldX": 1520,
-					"__worldY": 80
+					"__worldX": 1472,
+					"__worldY": 160
 				},
 				{
 					"__identifier": "Enemy_Air_Spawn",
@@ -2289,8 +2289,8 @@
 					"defUid": 135,
 					"px": [640,160],
 					"fieldInstances": [],
-					"__worldX": 1552,
-					"__worldY": 80
+					"__worldX": 1504,
+					"__worldY": 160
 				},
 				{
 					"__identifier": "Enemy_Air_Spawn",
@@ -2305,8 +2305,8 @@
 					"defUid": 135,
 					"px": [672,160],
 					"fieldInstances": [],
-					"__worldX": 1584,
-					"__worldY": 80
+					"__worldX": 1536,
+					"__worldY": 160
 				},
 				{
 					"__identifier": "Enemy_Air_Spawn",
@@ -2321,8 +2321,8 @@
 					"defUid": 135,
 					"px": [704,160],
 					"fieldInstances": [],
-					"__worldX": 1616,
-					"__worldY": 80
+					"__worldX": 1568,
+					"__worldY": 160
 				},
 				{
 					"__identifier": "Enemy_Air_Spawn",
@@ -2337,8 +2337,8 @@
 					"defUid": 135,
 					"px": [736,160],
 					"fieldInstances": [],
-					"__worldX": 1648,
-					"__worldY": 80
+					"__worldX": 1600,
+					"__worldY": 160
 				},
 				{
 					"__identifier": "Enemy_Air_Spawn",
@@ -2353,8 +2353,8 @@
 					"defUid": 135,
 					"px": [768,160],
 					"fieldInstances": [],
-					"__worldX": 1680,
-					"__worldY": 80
+					"__worldX": 1632,
+					"__worldY": 160
 				},
 				{
 					"__identifier": "Enemy_Air_Spawn",
@@ -2369,8 +2369,8 @@
 					"defUid": 135,
 					"px": [768,160],
 					"fieldInstances": [],
-					"__worldX": 1680,
-					"__worldY": 80
+					"__worldX": 1632,
+					"__worldY": 160
 				},
 				{
 					"__identifier": "Enemy_Air_Spawn",
@@ -2385,8 +2385,8 @@
 					"defUid": 135,
 					"px": [64,128],
 					"fieldInstances": [],
-					"__worldX": 976,
-					"__worldY": 48
+					"__worldX": 928,
+					"__worldY": 128
 				},
 				{
 					"__identifier": "Enemy_Air_Spawn",
@@ -2401,8 +2401,8 @@
 					"defUid": 135,
 					"px": [96,128],
 					"fieldInstances": [],
-					"__worldX": 1008,
-					"__worldY": 48
+					"__worldX": 960,
+					"__worldY": 128
 				},
 				{
 					"__identifier": "Enemy_Air_Spawn",
@@ -2417,8 +2417,8 @@
 					"defUid": 135,
 					"px": [128,128],
 					"fieldInstances": [],
-					"__worldX": 1040,
-					"__worldY": 48
+					"__worldX": 992,
+					"__worldY": 128
 				},
 				{
 					"__identifier": "Enemy_Air_Spawn",
@@ -2433,8 +2433,8 @@
 					"defUid": 135,
 					"px": [160,128],
 					"fieldInstances": [],
-					"__worldX": 1072,
-					"__worldY": 48
+					"__worldX": 1024,
+					"__worldY": 128
 				},
 				{
 					"__identifier": "Enemy_Air_Spawn",
@@ -2449,8 +2449,8 @@
 					"defUid": 135,
 					"px": [192,128],
 					"fieldInstances": [],
-					"__worldX": 1104,
-					"__worldY": 48
+					"__worldX": 1056,
+					"__worldY": 128
 				},
 				{
 					"__identifier": "Enemy_Air_Spawn",
@@ -2465,8 +2465,8 @@
 					"defUid": 135,
 					"px": [224,128],
 					"fieldInstances": [],
-					"__worldX": 1136,
-					"__worldY": 48
+					"__worldX": 1088,
+					"__worldY": 128
 				},
 				{
 					"__identifier": "Enemy_Air_Spawn",
@@ -2481,8 +2481,8 @@
 					"defUid": 135,
 					"px": [256,128],
 					"fieldInstances": [],
-					"__worldX": 1168,
-					"__worldY": 48
+					"__worldX": 1120,
+					"__worldY": 128
 				},
 				{
 					"__identifier": "Enemy_Air_Spawn",
@@ -2497,8 +2497,8 @@
 					"defUid": 135,
 					"px": [288,128],
 					"fieldInstances": [],
-					"__worldX": 1200,
-					"__worldY": 48
+					"__worldX": 1152,
+					"__worldY": 128
 				},
 				{
 					"__identifier": "Enemy_Air_Spawn",
@@ -2513,8 +2513,8 @@
 					"defUid": 135,
 					"px": [320,128],
 					"fieldInstances": [],
-					"__worldX": 1232,
-					"__worldY": 48
+					"__worldX": 1184,
+					"__worldY": 128
 				},
 				{
 					"__identifier": "Enemy_Air_Spawn",
@@ -2529,8 +2529,8 @@
 					"defUid": 135,
 					"px": [352,128],
 					"fieldInstances": [],
-					"__worldX": 1264,
-					"__worldY": 48
+					"__worldX": 1216,
+					"__worldY": 128
 				},
 				{
 					"__identifier": "Enemy_Air_Spawn",
@@ -2545,8 +2545,8 @@
 					"defUid": 135,
 					"px": [384,128],
 					"fieldInstances": [],
-					"__worldX": 1296,
-					"__worldY": 48
+					"__worldX": 1248,
+					"__worldY": 128
 				},
 				{
 					"__identifier": "Enemy_Air_Spawn",
@@ -2561,8 +2561,8 @@
 					"defUid": 135,
 					"px": [416,128],
 					"fieldInstances": [],
-					"__worldX": 1328,
-					"__worldY": 48
+					"__worldX": 1280,
+					"__worldY": 128
 				},
 				{
 					"__identifier": "Enemy_Air_Spawn",
@@ -2577,8 +2577,8 @@
 					"defUid": 135,
 					"px": [448,128],
 					"fieldInstances": [],
-					"__worldX": 1360,
-					"__worldY": 48
+					"__worldX": 1312,
+					"__worldY": 128
 				},
 				{
 					"__identifier": "Enemy_Air_Spawn",
@@ -2593,8 +2593,8 @@
 					"defUid": 135,
 					"px": [480,128],
 					"fieldInstances": [],
-					"__worldX": 1392,
-					"__worldY": 48
+					"__worldX": 1344,
+					"__worldY": 128
 				},
 				{
 					"__identifier": "Enemy_Air_Spawn",
@@ -2609,8 +2609,8 @@
 					"defUid": 135,
 					"px": [512,128],
 					"fieldInstances": [],
-					"__worldX": 1424,
-					"__worldY": 48
+					"__worldX": 1376,
+					"__worldY": 128
 				},
 				{
 					"__identifier": "Enemy_Air_Spawn",
@@ -2625,8 +2625,8 @@
 					"defUid": 135,
 					"px": [544,128],
 					"fieldInstances": [],
-					"__worldX": 1456,
-					"__worldY": 48
+					"__worldX": 1408,
+					"__worldY": 128
 				},
 				{
 					"__identifier": "Enemy_Air_Spawn",
@@ -2641,8 +2641,8 @@
 					"defUid": 135,
 					"px": [576,128],
 					"fieldInstances": [],
-					"__worldX": 1488,
-					"__worldY": 48
+					"__worldX": 1440,
+					"__worldY": 128
 				},
 				{
 					"__identifier": "Enemy_Air_Spawn",
@@ -2657,8 +2657,8 @@
 					"defUid": 135,
 					"px": [608,128],
 					"fieldInstances": [],
-					"__worldX": 1520,
-					"__worldY": 48
+					"__worldX": 1472,
+					"__worldY": 128
 				},
 				{
 					"__identifier": "Enemy_Air_Spawn",
@@ -2673,8 +2673,8 @@
 					"defUid": 135,
 					"px": [640,128],
 					"fieldInstances": [],
-					"__worldX": 1552,
-					"__worldY": 48
+					"__worldX": 1504,
+					"__worldY": 128
 				},
 				{
 					"__identifier": "Enemy_Air_Spawn",
@@ -2689,8 +2689,8 @@
 					"defUid": 135,
 					"px": [672,128],
 					"fieldInstances": [],
-					"__worldX": 1584,
-					"__worldY": 48
+					"__worldX": 1536,
+					"__worldY": 128
 				},
 				{
 					"__identifier": "Enemy_Air_Spawn",
@@ -2705,8 +2705,8 @@
 					"defUid": 135,
 					"px": [704,128],
 					"fieldInstances": [],
-					"__worldX": 1616,
-					"__worldY": 48
+					"__worldX": 1568,
+					"__worldY": 128
 				},
 				{
 					"__identifier": "Enemy_Air_Spawn",
@@ -2721,8 +2721,8 @@
 					"defUid": 135,
 					"px": [736,128],
 					"fieldInstances": [],
-					"__worldX": 1648,
-					"__worldY": 48
+					"__worldX": 1600,
+					"__worldY": 128
 				},
 				{
 					"__identifier": "Enemy_Air_Spawn",
@@ -2737,8 +2737,8 @@
 					"defUid": 135,
 					"px": [768,128],
 					"fieldInstances": [],
-					"__worldX": 1680,
-					"__worldY": 48
+					"__worldX": 1632,
+					"__worldY": 128
 				},
 				{
 					"__identifier": "Enemy_Air_Spawn",
@@ -2753,8 +2753,8 @@
 					"defUid": 135,
 					"px": [768,128],
 					"fieldInstances": [],
-					"__worldX": 1680,
-					"__worldY": 48
+					"__worldX": 1632,
+					"__worldY": 128
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -2769,8 +2769,8 @@
 					"defUid": 140,
 					"px": [128,176],
 					"fieldInstances": [],
-					"__worldX": 1040,
-					"__worldY": 96
+					"__worldX": 992,
+					"__worldY": 176
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -2785,8 +2785,8 @@
 					"defUid": 140,
 					"px": [176,176],
 					"fieldInstances": [],
-					"__worldX": 1088,
-					"__worldY": 96
+					"__worldX": 1040,
+					"__worldY": 176
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -2801,8 +2801,8 @@
 					"defUid": 140,
 					"px": [160,176],
 					"fieldInstances": [],
-					"__worldX": 1072,
-					"__worldY": 96
+					"__worldX": 1024,
+					"__worldY": 176
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -2817,8 +2817,8 @@
 					"defUid": 140,
 					"px": [192,176],
 					"fieldInstances": [],
-					"__worldX": 1104,
-					"__worldY": 96
+					"__worldX": 1056,
+					"__worldY": 176
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -2833,8 +2833,8 @@
 					"defUid": 140,
 					"px": [208,176],
 					"fieldInstances": [],
-					"__worldX": 1120,
-					"__worldY": 96
+					"__worldX": 1072,
+					"__worldY": 176
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -2849,8 +2849,8 @@
 					"defUid": 140,
 					"px": [224,176],
 					"fieldInstances": [],
-					"__worldX": 1136,
-					"__worldY": 96
+					"__worldX": 1088,
+					"__worldY": 176
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -2865,8 +2865,8 @@
 					"defUid": 140,
 					"px": [256,176],
 					"fieldInstances": [],
-					"__worldX": 1168,
-					"__worldY": 96
+					"__worldX": 1120,
+					"__worldY": 176
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -2881,8 +2881,8 @@
 					"defUid": 140,
 					"px": [272,176],
 					"fieldInstances": [],
-					"__worldX": 1184,
-					"__worldY": 96
+					"__worldX": 1136,
+					"__worldY": 176
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -2897,8 +2897,8 @@
 					"defUid": 140,
 					"px": [288,176],
 					"fieldInstances": [],
-					"__worldX": 1200,
-					"__worldY": 96
+					"__worldX": 1152,
+					"__worldY": 176
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -2913,8 +2913,8 @@
 					"defUid": 140,
 					"px": [304,176],
 					"fieldInstances": [],
-					"__worldX": 1216,
-					"__worldY": 96
+					"__worldX": 1168,
+					"__worldY": 176
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -2929,8 +2929,8 @@
 					"defUid": 140,
 					"px": [336,176],
 					"fieldInstances": [],
-					"__worldX": 1248,
-					"__worldY": 96
+					"__worldX": 1200,
+					"__worldY": 176
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -2945,8 +2945,8 @@
 					"defUid": 140,
 					"px": [320,176],
 					"fieldInstances": [],
-					"__worldX": 1232,
-					"__worldY": 96
+					"__worldX": 1184,
+					"__worldY": 176
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -2961,8 +2961,8 @@
 					"defUid": 140,
 					"px": [352,176],
 					"fieldInstances": [],
-					"__worldX": 1264,
-					"__worldY": 96
+					"__worldX": 1216,
+					"__worldY": 176
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -2977,8 +2977,8 @@
 					"defUid": 140,
 					"px": [400,176],
 					"fieldInstances": [],
-					"__worldX": 1312,
-					"__worldY": 96
+					"__worldX": 1264,
+					"__worldY": 176
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -2993,8 +2993,8 @@
 					"defUid": 140,
 					"px": [464,176],
 					"fieldInstances": [],
-					"__worldX": 1376,
-					"__worldY": 96
+					"__worldX": 1328,
+					"__worldY": 176
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -3009,8 +3009,8 @@
 					"defUid": 140,
 					"px": [528,176],
 					"fieldInstances": [],
-					"__worldX": 1440,
-					"__worldY": 96
+					"__worldX": 1392,
+					"__worldY": 176
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -3025,8 +3025,8 @@
 					"defUid": 140,
 					"px": [512,176],
 					"fieldInstances": [],
-					"__worldX": 1424,
-					"__worldY": 96
+					"__worldX": 1376,
+					"__worldY": 176
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -3041,8 +3041,8 @@
 					"defUid": 140,
 					"px": [544,176],
 					"fieldInstances": [],
-					"__worldX": 1456,
-					"__worldY": 96
+					"__worldX": 1408,
+					"__worldY": 176
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -3057,8 +3057,8 @@
 					"defUid": 140,
 					"px": [560,176],
 					"fieldInstances": [],
-					"__worldX": 1472,
-					"__worldY": 96
+					"__worldX": 1424,
+					"__worldY": 176
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -3073,8 +3073,8 @@
 					"defUid": 140,
 					"px": [576,176],
 					"fieldInstances": [],
-					"__worldX": 1488,
-					"__worldY": 96
+					"__worldX": 1440,
+					"__worldY": 176
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -3089,8 +3089,8 @@
 					"defUid": 140,
 					"px": [608,176],
 					"fieldInstances": [],
-					"__worldX": 1520,
-					"__worldY": 96
+					"__worldX": 1472,
+					"__worldY": 176
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -3105,8 +3105,8 @@
 					"defUid": 140,
 					"px": [592,176],
 					"fieldInstances": [],
-					"__worldX": 1504,
-					"__worldY": 96
+					"__worldX": 1456,
+					"__worldY": 176
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -3121,8 +3121,8 @@
 					"defUid": 140,
 					"px": [624,176],
 					"fieldInstances": [],
-					"__worldX": 1536,
-					"__worldY": 96
+					"__worldX": 1488,
+					"__worldY": 176
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -3137,8 +3137,8 @@
 					"defUid": 140,
 					"px": [640,176],
 					"fieldInstances": [],
-					"__worldX": 1552,
-					"__worldY": 96
+					"__worldX": 1504,
+					"__worldY": 176
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -3153,8 +3153,8 @@
 					"defUid": 140,
 					"px": [656,176],
 					"fieldInstances": [],
-					"__worldX": 1568,
-					"__worldY": 96
+					"__worldX": 1520,
+					"__worldY": 176
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -3169,8 +3169,8 @@
 					"defUid": 140,
 					"px": [688,176],
 					"fieldInstances": [],
-					"__worldX": 1600,
-					"__worldY": 96
+					"__worldX": 1552,
+					"__worldY": 176
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -3185,8 +3185,8 @@
 					"defUid": 140,
 					"px": [672,176],
 					"fieldInstances": [],
-					"__worldX": 1584,
-					"__worldY": 96
+					"__worldX": 1536,
+					"__worldY": 176
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -3201,8 +3201,8 @@
 					"defUid": 140,
 					"px": [704,176],
 					"fieldInstances": [],
-					"__worldX": 1616,
-					"__worldY": 96
+					"__worldX": 1568,
+					"__worldY": 176
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -3217,8 +3217,8 @@
 					"defUid": 140,
 					"px": [736,176],
 					"fieldInstances": [],
-					"__worldX": 1648,
-					"__worldY": 96
+					"__worldX": 1600,
+					"__worldY": 176
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -3233,8 +3233,8 @@
 					"defUid": 140,
 					"px": [768,176],
 					"fieldInstances": [],
-					"__worldX": 1680,
-					"__worldY": 96
+					"__worldX": 1632,
+					"__worldY": 176
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -3249,8 +3249,8 @@
 					"defUid": 140,
 					"px": [448,176],
 					"fieldInstances": [],
-					"__worldX": 1360,
-					"__worldY": 96
+					"__worldX": 1312,
+					"__worldY": 176
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -3265,8 +3265,8 @@
 					"defUid": 140,
 					"px": [432,176],
 					"fieldInstances": [],
-					"__worldX": 1344,
-					"__worldY": 96
+					"__worldX": 1296,
+					"__worldY": 176
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -3281,8 +3281,8 @@
 					"defUid": 140,
 					"px": [64,144],
 					"fieldInstances": [],
-					"__worldX": 976,
-					"__worldY": 64
+					"__worldX": 928,
+					"__worldY": 144
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -3297,8 +3297,8 @@
 					"defUid": 140,
 					"px": [96,144],
 					"fieldInstances": [],
-					"__worldX": 1008,
-					"__worldY": 64
+					"__worldX": 960,
+					"__worldY": 144
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -3313,8 +3313,8 @@
 					"defUid": 140,
 					"px": [80,144],
 					"fieldInstances": [],
-					"__worldX": 992,
-					"__worldY": 64
+					"__worldX": 944,
+					"__worldY": 144
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -3329,8 +3329,8 @@
 					"defUid": 140,
 					"px": [112,144],
 					"fieldInstances": [],
-					"__worldX": 1024,
-					"__worldY": 64
+					"__worldX": 976,
+					"__worldY": 144
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -3345,8 +3345,8 @@
 					"defUid": 140,
 					"px": [128,144],
 					"fieldInstances": [],
-					"__worldX": 1040,
-					"__worldY": 64
+					"__worldX": 992,
+					"__worldY": 144
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -3361,8 +3361,8 @@
 					"defUid": 140,
 					"px": [144,144],
 					"fieldInstances": [],
-					"__worldX": 1056,
-					"__worldY": 64
+					"__worldX": 1008,
+					"__worldY": 144
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -3377,8 +3377,8 @@
 					"defUid": 140,
 					"px": [176,144],
 					"fieldInstances": [],
-					"__worldX": 1088,
-					"__worldY": 64
+					"__worldX": 1040,
+					"__worldY": 144
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -3393,8 +3393,8 @@
 					"defUid": 140,
 					"px": [160,144],
 					"fieldInstances": [],
-					"__worldX": 1072,
-					"__worldY": 64
+					"__worldX": 1024,
+					"__worldY": 144
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -3409,8 +3409,8 @@
 					"defUid": 140,
 					"px": [192,144],
 					"fieldInstances": [],
-					"__worldX": 1104,
-					"__worldY": 64
+					"__worldX": 1056,
+					"__worldY": 144
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -3425,8 +3425,8 @@
 					"defUid": 140,
 					"px": [208,144],
 					"fieldInstances": [],
-					"__worldX": 1120,
-					"__worldY": 64
+					"__worldX": 1072,
+					"__worldY": 144
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -3441,8 +3441,8 @@
 					"defUid": 140,
 					"px": [224,144],
 					"fieldInstances": [],
-					"__worldX": 1136,
-					"__worldY": 64
+					"__worldX": 1088,
+					"__worldY": 144
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -3457,8 +3457,8 @@
 					"defUid": 140,
 					"px": [256,144],
 					"fieldInstances": [],
-					"__worldX": 1168,
-					"__worldY": 64
+					"__worldX": 1120,
+					"__worldY": 144
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -3473,8 +3473,8 @@
 					"defUid": 140,
 					"px": [272,144],
 					"fieldInstances": [],
-					"__worldX": 1184,
-					"__worldY": 64
+					"__worldX": 1136,
+					"__worldY": 144
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -3489,8 +3489,8 @@
 					"defUid": 140,
 					"px": [288,144],
 					"fieldInstances": [],
-					"__worldX": 1200,
-					"__worldY": 64
+					"__worldX": 1152,
+					"__worldY": 144
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -3505,8 +3505,8 @@
 					"defUid": 140,
 					"px": [304,144],
 					"fieldInstances": [],
-					"__worldX": 1216,
-					"__worldY": 64
+					"__worldX": 1168,
+					"__worldY": 144
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -3521,8 +3521,8 @@
 					"defUid": 140,
 					"px": [336,144],
 					"fieldInstances": [],
-					"__worldX": 1248,
-					"__worldY": 64
+					"__worldX": 1200,
+					"__worldY": 144
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -3537,8 +3537,8 @@
 					"defUid": 140,
 					"px": [320,144],
 					"fieldInstances": [],
-					"__worldX": 1232,
-					"__worldY": 64
+					"__worldX": 1184,
+					"__worldY": 144
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -3553,8 +3553,8 @@
 					"defUid": 140,
 					"px": [352,144],
 					"fieldInstances": [],
-					"__worldX": 1264,
-					"__worldY": 64
+					"__worldX": 1216,
+					"__worldY": 144
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -3569,8 +3569,8 @@
 					"defUid": 140,
 					"px": [384,144],
 					"fieldInstances": [],
-					"__worldX": 1296,
-					"__worldY": 64
+					"__worldX": 1248,
+					"__worldY": 144
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -3585,8 +3585,8 @@
 					"defUid": 140,
 					"px": [400,144],
 					"fieldInstances": [],
-					"__worldX": 1312,
-					"__worldY": 64
+					"__worldX": 1264,
+					"__worldY": 144
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -3601,8 +3601,8 @@
 					"defUid": 140,
 					"px": [464,144],
 					"fieldInstances": [],
-					"__worldX": 1376,
-					"__worldY": 64
+					"__worldX": 1328,
+					"__worldY": 144
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -3617,8 +3617,8 @@
 					"defUid": 140,
 					"px": [480,144],
 					"fieldInstances": [],
-					"__worldX": 1392,
-					"__worldY": 64
+					"__worldX": 1344,
+					"__worldY": 144
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -3633,8 +3633,8 @@
 					"defUid": 140,
 					"px": [528,144],
 					"fieldInstances": [],
-					"__worldX": 1440,
-					"__worldY": 64
+					"__worldX": 1392,
+					"__worldY": 144
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -3649,8 +3649,8 @@
 					"defUid": 140,
 					"px": [512,144],
 					"fieldInstances": [],
-					"__worldX": 1424,
-					"__worldY": 64
+					"__worldX": 1376,
+					"__worldY": 144
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -3665,8 +3665,8 @@
 					"defUid": 140,
 					"px": [544,144],
 					"fieldInstances": [],
-					"__worldX": 1456,
-					"__worldY": 64
+					"__worldX": 1408,
+					"__worldY": 144
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -3681,8 +3681,8 @@
 					"defUid": 140,
 					"px": [576,144],
 					"fieldInstances": [],
-					"__worldX": 1488,
-					"__worldY": 64
+					"__worldX": 1440,
+					"__worldY": 144
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -3697,8 +3697,8 @@
 					"defUid": 140,
 					"px": [608,144],
 					"fieldInstances": [],
-					"__worldX": 1520,
-					"__worldY": 64
+					"__worldX": 1472,
+					"__worldY": 144
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -3713,8 +3713,8 @@
 					"defUid": 140,
 					"px": [592,144],
 					"fieldInstances": [],
-					"__worldX": 1504,
-					"__worldY": 64
+					"__worldX": 1456,
+					"__worldY": 144
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -3729,8 +3729,8 @@
 					"defUid": 140,
 					"px": [640,144],
 					"fieldInstances": [],
-					"__worldX": 1552,
-					"__worldY": 64
+					"__worldX": 1504,
+					"__worldY": 144
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -3745,8 +3745,8 @@
 					"defUid": 140,
 					"px": [656,144],
 					"fieldInstances": [],
-					"__worldX": 1568,
-					"__worldY": 64
+					"__worldX": 1520,
+					"__worldY": 144
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -3761,8 +3761,8 @@
 					"defUid": 140,
 					"px": [672,144],
 					"fieldInstances": [],
-					"__worldX": 1584,
-					"__worldY": 64
+					"__worldX": 1536,
+					"__worldY": 144
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -3777,8 +3777,8 @@
 					"defUid": 140,
 					"px": [704,144],
 					"fieldInstances": [],
-					"__worldX": 1616,
-					"__worldY": 64
+					"__worldX": 1568,
+					"__worldY": 144
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -3793,8 +3793,8 @@
 					"defUid": 140,
 					"px": [720,144],
 					"fieldInstances": [],
-					"__worldX": 1632,
-					"__worldY": 64
+					"__worldX": 1584,
+					"__worldY": 144
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -3809,8 +3809,8 @@
 					"defUid": 140,
 					"px": [736,144],
 					"fieldInstances": [],
-					"__worldX": 1648,
-					"__worldY": 64
+					"__worldX": 1600,
+					"__worldY": 144
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -3825,8 +3825,8 @@
 					"defUid": 140,
 					"px": [768,144],
 					"fieldInstances": [],
-					"__worldX": 1680,
-					"__worldY": 64
+					"__worldX": 1632,
+					"__worldY": 144
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -3841,8 +3841,8 @@
 					"defUid": 140,
 					"px": [752,144],
 					"fieldInstances": [],
-					"__worldX": 1664,
-					"__worldY": 64
+					"__worldX": 1616,
+					"__worldY": 144
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -3857,8 +3857,8 @@
 					"defUid": 140,
 					"px": [448,144],
 					"fieldInstances": [],
-					"__worldX": 1360,
-					"__worldY": 64
+					"__worldX": 1312,
+					"__worldY": 144
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -3873,8 +3873,8 @@
 					"defUid": 140,
 					"px": [464,112],
 					"fieldInstances": [],
-					"__worldX": 1376,
-					"__worldY": 32
+					"__worldX": 1328,
+					"__worldY": 112
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -3889,8 +3889,8 @@
 					"defUid": 140,
 					"px": [480,112],
 					"fieldInstances": [],
-					"__worldX": 1392,
-					"__worldY": 32
+					"__worldX": 1344,
+					"__worldY": 112
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -3905,8 +3905,8 @@
 					"defUid": 140,
 					"px": [496,112],
 					"fieldInstances": [],
-					"__worldX": 1408,
-					"__worldY": 32
+					"__worldX": 1360,
+					"__worldY": 112
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -3921,8 +3921,8 @@
 					"defUid": 140,
 					"px": [528,112],
 					"fieldInstances": [],
-					"__worldX": 1440,
-					"__worldY": 32
+					"__worldX": 1392,
+					"__worldY": 112
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -3937,8 +3937,8 @@
 					"defUid": 140,
 					"px": [512,112],
 					"fieldInstances": [],
-					"__worldX": 1424,
-					"__worldY": 32
+					"__worldX": 1376,
+					"__worldY": 112
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -3953,8 +3953,8 @@
 					"defUid": 140,
 					"px": [544,112],
 					"fieldInstances": [],
-					"__worldX": 1456,
-					"__worldY": 32
+					"__worldX": 1408,
+					"__worldY": 112
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -3969,8 +3969,8 @@
 					"defUid": 140,
 					"px": [560,112],
 					"fieldInstances": [],
-					"__worldX": 1472,
-					"__worldY": 32
+					"__worldX": 1424,
+					"__worldY": 112
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -3985,8 +3985,8 @@
 					"defUid": 140,
 					"px": [576,112],
 					"fieldInstances": [],
-					"__worldX": 1488,
-					"__worldY": 32
+					"__worldX": 1440,
+					"__worldY": 112
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -4001,8 +4001,8 @@
 					"defUid": 140,
 					"px": [608,112],
 					"fieldInstances": [],
-					"__worldX": 1520,
-					"__worldY": 32
+					"__worldX": 1472,
+					"__worldY": 112
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -4017,8 +4017,8 @@
 					"defUid": 140,
 					"px": [592,112],
 					"fieldInstances": [],
-					"__worldX": 1504,
-					"__worldY": 32
+					"__worldX": 1456,
+					"__worldY": 112
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -4033,8 +4033,8 @@
 					"defUid": 140,
 					"px": [624,112],
 					"fieldInstances": [],
-					"__worldX": 1536,
-					"__worldY": 32
+					"__worldX": 1488,
+					"__worldY": 112
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -4049,8 +4049,8 @@
 					"defUid": 140,
 					"px": [640,112],
 					"fieldInstances": [],
-					"__worldX": 1552,
-					"__worldY": 32
+					"__worldX": 1504,
+					"__worldY": 112
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -4065,8 +4065,8 @@
 					"defUid": 140,
 					"px": [656,112],
 					"fieldInstances": [],
-					"__worldX": 1568,
-					"__worldY": 32
+					"__worldX": 1520,
+					"__worldY": 112
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -4081,8 +4081,8 @@
 					"defUid": 140,
 					"px": [704,112],
 					"fieldInstances": [],
-					"__worldX": 1616,
-					"__worldY": 32
+					"__worldX": 1568,
+					"__worldY": 112
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -4097,8 +4097,8 @@
 					"defUid": 140,
 					"px": [720,112],
 					"fieldInstances": [],
-					"__worldX": 1632,
-					"__worldY": 32
+					"__worldX": 1584,
+					"__worldY": 112
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -4113,8 +4113,8 @@
 					"defUid": 140,
 					"px": [736,112],
 					"fieldInstances": [],
-					"__worldX": 1648,
-					"__worldY": 32
+					"__worldX": 1600,
+					"__worldY": 112
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -4129,8 +4129,8 @@
 					"defUid": 140,
 					"px": [768,112],
 					"fieldInstances": [],
-					"__worldX": 1680,
-					"__worldY": 32
+					"__worldX": 1632,
+					"__worldY": 112
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -4145,8 +4145,8 @@
 					"defUid": 140,
 					"px": [752,112],
 					"fieldInstances": [],
-					"__worldX": 1664,
-					"__worldY": 32
+					"__worldX": 1616,
+					"__worldY": 112
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -4161,8 +4161,8 @@
 					"defUid": 140,
 					"px": [448,112],
 					"fieldInstances": [],
-					"__worldX": 1360,
-					"__worldY": 32
+					"__worldX": 1312,
+					"__worldY": 112
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -4177,8 +4177,8 @@
 					"defUid": 140,
 					"px": [432,112],
 					"fieldInstances": [],
-					"__worldX": 1344,
-					"__worldY": 32
+					"__worldX": 1296,
+					"__worldY": 112
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -4193,8 +4193,8 @@
 					"defUid": 140,
 					"px": [64,112],
 					"fieldInstances": [],
-					"__worldX": 976,
-					"__worldY": 32
+					"__worldX": 928,
+					"__worldY": 112
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -4209,8 +4209,8 @@
 					"defUid": 140,
 					"px": [96,112],
 					"fieldInstances": [],
-					"__worldX": 1008,
-					"__worldY": 32
+					"__worldX": 960,
+					"__worldY": 112
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -4225,8 +4225,8 @@
 					"defUid": 140,
 					"px": [80,112],
 					"fieldInstances": [],
-					"__worldX": 992,
-					"__worldY": 32
+					"__worldX": 944,
+					"__worldY": 112
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -4241,8 +4241,8 @@
 					"defUid": 140,
 					"px": [112,112],
 					"fieldInstances": [],
-					"__worldX": 1024,
-					"__worldY": 32
+					"__worldX": 976,
+					"__worldY": 112
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -4257,8 +4257,8 @@
 					"defUid": 140,
 					"px": [128,112],
 					"fieldInstances": [],
-					"__worldX": 1040,
-					"__worldY": 32
+					"__worldX": 992,
+					"__worldY": 112
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -4273,8 +4273,8 @@
 					"defUid": 140,
 					"px": [144,112],
 					"fieldInstances": [],
-					"__worldX": 1056,
-					"__worldY": 32
+					"__worldX": 1008,
+					"__worldY": 112
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -4289,8 +4289,8 @@
 					"defUid": 140,
 					"px": [176,112],
 					"fieldInstances": [],
-					"__worldX": 1088,
-					"__worldY": 32
+					"__worldX": 1040,
+					"__worldY": 112
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -4305,8 +4305,8 @@
 					"defUid": 140,
 					"px": [160,112],
 					"fieldInstances": [],
-					"__worldX": 1072,
-					"__worldY": 32
+					"__worldX": 1024,
+					"__worldY": 112
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -4321,8 +4321,8 @@
 					"defUid": 140,
 					"px": [192,112],
 					"fieldInstances": [],
-					"__worldX": 1104,
-					"__worldY": 32
+					"__worldX": 1056,
+					"__worldY": 112
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -4337,8 +4337,8 @@
 					"defUid": 140,
 					"px": [208,112],
 					"fieldInstances": [],
-					"__worldX": 1120,
-					"__worldY": 32
+					"__worldX": 1072,
+					"__worldY": 112
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -4353,8 +4353,8 @@
 					"defUid": 140,
 					"px": [224,112],
 					"fieldInstances": [],
-					"__worldX": 1136,
-					"__worldY": 32
+					"__worldX": 1088,
+					"__worldY": 112
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -4369,8 +4369,8 @@
 					"defUid": 140,
 					"px": [256,112],
 					"fieldInstances": [],
-					"__worldX": 1168,
-					"__worldY": 32
+					"__worldX": 1120,
+					"__worldY": 112
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -4385,8 +4385,8 @@
 					"defUid": 140,
 					"px": [240,112],
 					"fieldInstances": [],
-					"__worldX": 1152,
-					"__worldY": 32
+					"__worldX": 1104,
+					"__worldY": 112
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -4401,8 +4401,8 @@
 					"defUid": 140,
 					"px": [272,112],
 					"fieldInstances": [],
-					"__worldX": 1184,
-					"__worldY": 32
+					"__worldX": 1136,
+					"__worldY": 112
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -4417,8 +4417,8 @@
 					"defUid": 140,
 					"px": [288,112],
 					"fieldInstances": [],
-					"__worldX": 1200,
-					"__worldY": 32
+					"__worldX": 1152,
+					"__worldY": 112
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -4433,8 +4433,8 @@
 					"defUid": 140,
 					"px": [304,112],
 					"fieldInstances": [],
-					"__worldX": 1216,
-					"__worldY": 32
+					"__worldX": 1168,
+					"__worldY": 112
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -4449,8 +4449,8 @@
 					"defUid": 140,
 					"px": [336,112],
 					"fieldInstances": [],
-					"__worldX": 1248,
-					"__worldY": 32
+					"__worldX": 1200,
+					"__worldY": 112
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -4465,8 +4465,8 @@
 					"defUid": 140,
 					"px": [320,112],
 					"fieldInstances": [],
-					"__worldX": 1232,
-					"__worldY": 32
+					"__worldX": 1184,
+					"__worldY": 112
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -4481,8 +4481,8 @@
 					"defUid": 140,
 					"px": [352,112],
 					"fieldInstances": [],
-					"__worldX": 1264,
-					"__worldY": 32
+					"__worldX": 1216,
+					"__worldY": 112
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -4497,8 +4497,8 @@
 					"defUid": 140,
 					"px": [368,112],
 					"fieldInstances": [],
-					"__worldX": 1280,
-					"__worldY": 32
+					"__worldX": 1232,
+					"__worldY": 112
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -4513,8 +4513,8 @@
 					"defUid": 140,
 					"px": [384,112],
 					"fieldInstances": [],
-					"__worldX": 1296,
-					"__worldY": 32
+					"__worldX": 1248,
+					"__worldY": 112
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -4529,8 +4529,8 @@
 					"defUid": 140,
 					"px": [400,112],
 					"fieldInstances": [],
-					"__worldX": 1312,
-					"__worldY": 32
+					"__worldX": 1264,
+					"__worldY": 112
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -4545,8 +4545,8 @@
 					"defUid": 140,
 					"px": [416,176],
 					"fieldInstances": [],
-					"__worldX": 1328,
-					"__worldY": 96
+					"__worldX": 1280,
+					"__worldY": 176
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -4561,8 +4561,8 @@
 					"defUid": 140,
 					"px": [416,144],
 					"fieldInstances": [],
-					"__worldX": 1328,
-					"__worldY": 64
+					"__worldX": 1280,
+					"__worldY": 144
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -4577,8 +4577,8 @@
 					"defUid": 140,
 					"px": [416,112],
 					"fieldInstances": [],
-					"__worldX": 1328,
-					"__worldY": 32
+					"__worldX": 1280,
+					"__worldY": 112
 				},
 				{
 					"__identifier": "Enemy_Air_Spawn",
@@ -4593,8 +4593,8 @@
 					"defUid": 135,
 					"px": [384,160],
 					"fieldInstances": [],
-					"__worldX": 1296,
-					"__worldY": 80
+					"__worldX": 1248,
+					"__worldY": 160
 				},
 				{
 					"__identifier": "Enemy_Ground_Spawn",
@@ -4609,8 +4609,8 @@
 					"defUid": 136,
 					"px": [128,352],
 					"fieldInstances": [],
-					"__worldX": 1040,
-					"__worldY": 272
+					"__worldX": 992,
+					"__worldY": 352
 				},
 				{
 					"__identifier": "Enemy_Ground_Spawn",
@@ -4625,8 +4625,8 @@
 					"defUid": 136,
 					"px": [160,352],
 					"fieldInstances": [],
-					"__worldX": 1072,
-					"__worldY": 272
+					"__worldX": 1024,
+					"__worldY": 352
 				},
 				{
 					"__identifier": "Enemy_Ground_Spawn",
@@ -4641,8 +4641,8 @@
 					"defUid": 136,
 					"px": [576,352],
 					"fieldInstances": [],
-					"__worldX": 1488,
-					"__worldY": 272
+					"__worldX": 1440,
+					"__worldY": 352
 				},
 				{
 					"__identifier": "One_Way",
@@ -4657,8 +4657,8 @@
 					"defUid": 20,
 					"px": [176,256],
 					"fieldInstances": [],
-					"__worldX": 1088,
-					"__worldY": 176
+					"__worldX": 1040,
+					"__worldY": 256
 				},
 				{
 					"__identifier": "One_Way",
@@ -4673,8 +4673,8 @@
 					"defUid": 20,
 					"px": [192,256],
 					"fieldInstances": [],
-					"__worldX": 1104,
-					"__worldY": 176
+					"__worldX": 1056,
+					"__worldY": 256
 				},
 				{
 					"__identifier": "One_Way",
@@ -4689,8 +4689,8 @@
 					"defUid": 20,
 					"px": [224,256],
 					"fieldInstances": [],
-					"__worldX": 1136,
-					"__worldY": 176
+					"__worldX": 1088,
+					"__worldY": 256
 				},
 				{
 					"__identifier": "One_Way",
@@ -4705,8 +4705,8 @@
 					"defUid": 20,
 					"px": [464,256],
 					"fieldInstances": [],
-					"__worldX": 1376,
-					"__worldY": 176
+					"__worldX": 1328,
+					"__worldY": 256
 				},
 				{
 					"__identifier": "One_Way",
@@ -4721,8 +4721,8 @@
 					"defUid": 20,
 					"px": [480,256],
 					"fieldInstances": [],
-					"__worldX": 1392,
-					"__worldY": 176
+					"__worldX": 1344,
+					"__worldY": 256
 				},
 				{
 					"__identifier": "One_Way",
@@ -4737,8 +4737,8 @@
 					"defUid": 20,
 					"px": [512,256],
 					"fieldInstances": [],
-					"__worldX": 1424,
-					"__worldY": 176
+					"__worldX": 1376,
+					"__worldY": 256
 				},
 				{
 					"__identifier": "One_Way",
@@ -4753,8 +4753,8 @@
 					"defUid": 20,
 					"px": [320,256],
 					"fieldInstances": [],
-					"__worldX": 1232,
-					"__worldY": 176
+					"__worldX": 1184,
+					"__worldY": 256
 				},
 				{
 					"__identifier": "One_Way",
@@ -4769,8 +4769,8 @@
 					"defUid": 20,
 					"px": [352,256],
 					"fieldInstances": [],
-					"__worldX": 1264,
-					"__worldY": 176
+					"__worldX": 1216,
+					"__worldY": 256
 				},
 				{
 					"__identifier": "One_Way",
@@ -4785,8 +4785,8 @@
 					"defUid": 20,
 					"px": [368,256],
 					"fieldInstances": [],
-					"__worldX": 1280,
-					"__worldY": 176
+					"__worldX": 1232,
+					"__worldY": 256
 				},
 				{
 					"__identifier": "One_Way",
@@ -4801,8 +4801,8 @@
 					"defUid": 20,
 					"px": [656,256],
 					"fieldInstances": [],
-					"__worldX": 1568,
-					"__worldY": 176
+					"__worldX": 1520,
+					"__worldY": 256
 				},
 				{
 					"__identifier": "One_Way",
@@ -4817,8 +4817,8 @@
 					"defUid": 20,
 					"px": [640,256],
 					"fieldInstances": [],
-					"__worldX": 1552,
-					"__worldY": 176
+					"__worldX": 1504,
+					"__worldY": 256
 				},
 				{
 					"__identifier": "One_Way",
@@ -4833,8 +4833,8 @@
 					"defUid": 20,
 					"px": [608,256],
 					"fieldInstances": [],
-					"__worldX": 1520,
-					"__worldY": 176
+					"__worldX": 1472,
+					"__worldY": 256
 				},
 				{
 					"__identifier": "Moss_Balls",
@@ -4849,8 +4849,8 @@
 					"defUid": 139,
 					"px": [496,240],
 					"fieldInstances": [],
-					"__worldX": 1408,
-					"__worldY": 160
+					"__worldX": 1360,
+					"__worldY": 240
 				},
 				{
 					"__identifier": "Bounce_Pad",
@@ -4865,8 +4865,8 @@
 					"defUid": 138,
 					"px": [288,384],
 					"fieldInstances": [],
-					"__worldX": 1200,
-					"__worldY": 304
+					"__worldX": 1152,
+					"__worldY": 384
 				},
 				{
 					"__identifier": "Bounce_Pad",
@@ -4881,8 +4881,8 @@
 					"defUid": 138,
 					"px": [304,384],
 					"fieldInstances": [],
-					"__worldX": 1216,
-					"__worldY": 304
+					"__worldX": 1168,
+					"__worldY": 384
 				},
 				{
 					"__identifier": "Bounce_Pad",
@@ -4897,8 +4897,8 @@
 					"defUid": 138,
 					"px": [320,384],
 					"fieldInstances": [],
-					"__worldX": 1232,
-					"__worldY": 304
+					"__worldX": 1184,
+					"__worldY": 384
 				},
 				{
 					"__identifier": "Bounce_Pad",
@@ -4913,8 +4913,8 @@
 					"defUid": 138,
 					"px": [544,384],
 					"fieldInstances": [],
-					"__worldX": 1456,
-					"__worldY": 304
+					"__worldX": 1408,
+					"__worldY": 384
 				},
 				{
 					"__identifier": "Bounce_Pad",
@@ -4929,8 +4929,8 @@
 					"defUid": 138,
 					"px": [528,384],
 					"fieldInstances": [],
-					"__worldX": 1440,
-					"__worldY": 304
+					"__worldX": 1392,
+					"__worldY": 384
 				},
 				{
 					"__identifier": "Bounce_Pad",
@@ -4945,8 +4945,8 @@
 					"defUid": 138,
 					"px": [512,384],
 					"fieldInstances": [],
-					"__worldX": 1424,
-					"__worldY": 304
+					"__worldX": 1376,
+					"__worldY": 384
 				},
 				{
 					"__identifier": "Elite_Continue",
@@ -4961,8 +4961,8 @@
 					"defUid": 171,
 					"px": [384,352],
 					"fieldInstances": [],
-					"__worldX": 1296,
-					"__worldY": 272
+					"__worldX": 1248,
+					"__worldY": 352
 				},
 				{
 					"__identifier": "Elite_End",
@@ -4977,8 +4977,8 @@
 					"defUid": 172,
 					"px": [448,352],
 					"fieldInstances": [],
-					"__worldX": 1360,
-					"__worldY": 272
+					"__worldX": 1312,
+					"__worldY": 352
 				},
 				{
 					"__identifier": "Ground",
@@ -4993,8 +4993,8 @@
 					"defUid": 137,
 					"px": [368,368],
 					"fieldInstances": [],
-					"__worldX": 1280,
-					"__worldY": 288
+					"__worldX": 1232,
+					"__worldY": 368
 				},
 				{
 					"__identifier": "Ground",
@@ -5009,8 +5009,8 @@
 					"defUid": 137,
 					"px": [464,368],
 					"fieldInstances": [],
-					"__worldX": 1376,
-					"__worldY": 288
+					"__worldX": 1328,
+					"__worldY": 368
 				},
 				{
 					"__identifier": "Ground",
@@ -5025,8 +5025,8 @@
 					"defUid": 137,
 					"px": [448,368],
 					"fieldInstances": [],
-					"__worldX": 1360,
-					"__worldY": 288
+					"__worldX": 1312,
+					"__worldY": 368
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -5041,8 +5041,8 @@
 					"defUid": 140,
 					"px": [368,352],
 					"fieldInstances": [],
-					"__worldX": 1280,
-					"__worldY": 272
+					"__worldX": 1232,
+					"__worldY": 352
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -5057,8 +5057,8 @@
 					"defUid": 140,
 					"px": [336,352],
 					"fieldInstances": [],
-					"__worldX": 1248,
-					"__worldY": 272
+					"__worldX": 1200,
+					"__worldY": 352
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -5073,8 +5073,8 @@
 					"defUid": 140,
 					"px": [304,352],
 					"fieldInstances": [],
-					"__worldX": 1216,
-					"__worldY": 272
+					"__worldX": 1168,
+					"__worldY": 352
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -5089,8 +5089,8 @@
 					"defUid": 140,
 					"px": [272,352],
 					"fieldInstances": [],
-					"__worldX": 1184,
-					"__worldY": 272
+					"__worldX": 1136,
+					"__worldY": 352
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -5105,8 +5105,8 @@
 					"defUid": 140,
 					"px": [240,352],
 					"fieldInstances": [],
-					"__worldX": 1152,
-					"__worldY": 272
+					"__worldX": 1104,
+					"__worldY": 352
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -5121,8 +5121,8 @@
 					"defUid": 140,
 					"px": [208,352],
 					"fieldInstances": [],
-					"__worldX": 1120,
-					"__worldY": 272
+					"__worldX": 1072,
+					"__worldY": 352
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -5137,8 +5137,8 @@
 					"defUid": 140,
 					"px": [176,352],
 					"fieldInstances": [],
-					"__worldX": 1088,
-					"__worldY": 272
+					"__worldX": 1040,
+					"__worldY": 352
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -5153,8 +5153,8 @@
 					"defUid": 140,
 					"px": [144,352],
 					"fieldInstances": [],
-					"__worldX": 1056,
-					"__worldY": 272
+					"__worldX": 1008,
+					"__worldY": 352
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -5169,8 +5169,8 @@
 					"defUid": 140,
 					"px": [112,352],
 					"fieldInstances": [],
-					"__worldX": 1024,
-					"__worldY": 272
+					"__worldX": 976,
+					"__worldY": 352
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -5185,8 +5185,8 @@
 					"defUid": 140,
 					"px": [80,352],
 					"fieldInstances": [],
-					"__worldX": 992,
-					"__worldY": 272
+					"__worldX": 944,
+					"__worldY": 352
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -5201,8 +5201,8 @@
 					"defUid": 140,
 					"px": [464,352],
 					"fieldInstances": [],
-					"__worldX": 1376,
-					"__worldY": 272
+					"__worldX": 1328,
+					"__worldY": 352
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -5217,8 +5217,8 @@
 					"defUid": 140,
 					"px": [496,352],
 					"fieldInstances": [],
-					"__worldX": 1408,
-					"__worldY": 272
+					"__worldX": 1360,
+					"__worldY": 352
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -5233,8 +5233,8 @@
 					"defUid": 140,
 					"px": [528,352],
 					"fieldInstances": [],
-					"__worldX": 1440,
-					"__worldY": 272
+					"__worldX": 1392,
+					"__worldY": 352
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -5249,8 +5249,8 @@
 					"defUid": 140,
 					"px": [560,352],
 					"fieldInstances": [],
-					"__worldX": 1472,
-					"__worldY": 272
+					"__worldX": 1424,
+					"__worldY": 352
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -5265,8 +5265,8 @@
 					"defUid": 140,
 					"px": [592,352],
 					"fieldInstances": [],
-					"__worldX": 1504,
-					"__worldY": 272
+					"__worldX": 1456,
+					"__worldY": 352
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -5281,8 +5281,8 @@
 					"defUid": 140,
 					"px": [624,352],
 					"fieldInstances": [],
-					"__worldX": 1536,
-					"__worldY": 272
+					"__worldX": 1488,
+					"__worldY": 352
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -5297,8 +5297,8 @@
 					"defUid": 140,
 					"px": [656,352],
 					"fieldInstances": [],
-					"__worldX": 1568,
-					"__worldY": 272
+					"__worldX": 1520,
+					"__worldY": 352
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -5313,8 +5313,8 @@
 					"defUid": 140,
 					"px": [688,352],
 					"fieldInstances": [],
-					"__worldX": 1600,
-					"__worldY": 272
+					"__worldX": 1552,
+					"__worldY": 352
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -5329,8 +5329,8 @@
 					"defUid": 140,
 					"px": [720,352],
 					"fieldInstances": [],
-					"__worldX": 1632,
-					"__worldY": 272
+					"__worldX": 1584,
+					"__worldY": 352
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -5345,8 +5345,8 @@
 					"defUid": 140,
 					"px": [752,352],
 					"fieldInstances": [],
-					"__worldX": 1664,
-					"__worldY": 272
+					"__worldX": 1616,
+					"__worldY": 352
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -5361,8 +5361,8 @@
 					"defUid": 140,
 					"px": [752,160],
 					"fieldInstances": [],
-					"__worldX": 1664,
-					"__worldY": 80
+					"__worldX": 1616,
+					"__worldY": 160
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -5377,8 +5377,8 @@
 					"defUid": 140,
 					"px": [752,128],
 					"fieldInstances": [],
-					"__worldX": 1664,
-					"__worldY": 48
+					"__worldX": 1616,
+					"__worldY": 128
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -5393,8 +5393,8 @@
 					"defUid": 140,
 					"px": [720,128],
 					"fieldInstances": [],
-					"__worldX": 1632,
-					"__worldY": 48
+					"__worldX": 1584,
+					"__worldY": 128
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -5409,8 +5409,8 @@
 					"defUid": 140,
 					"px": [720,160],
 					"fieldInstances": [],
-					"__worldX": 1632,
-					"__worldY": 80
+					"__worldX": 1584,
+					"__worldY": 160
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -5425,8 +5425,8 @@
 					"defUid": 140,
 					"px": [720,176],
 					"fieldInstances": [],
-					"__worldX": 1632,
-					"__worldY": 96
+					"__worldX": 1584,
+					"__worldY": 176
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -5441,8 +5441,8 @@
 					"defUid": 140,
 					"px": [688,160],
 					"fieldInstances": [],
-					"__worldX": 1600,
-					"__worldY": 80
+					"__worldX": 1552,
+					"__worldY": 160
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -5457,8 +5457,8 @@
 					"defUid": 140,
 					"px": [688,144],
 					"fieldInstances": [],
-					"__worldX": 1600,
-					"__worldY": 64
+					"__worldX": 1552,
+					"__worldY": 144
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -5473,8 +5473,8 @@
 					"defUid": 140,
 					"px": [688,128],
 					"fieldInstances": [],
-					"__worldX": 1600,
-					"__worldY": 48
+					"__worldX": 1552,
+					"__worldY": 128
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -5489,8 +5489,8 @@
 					"defUid": 140,
 					"px": [656,128],
 					"fieldInstances": [],
-					"__worldX": 1568,
-					"__worldY": 48
+					"__worldX": 1520,
+					"__worldY": 128
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -5505,8 +5505,8 @@
 					"defUid": 140,
 					"px": [656,160],
 					"fieldInstances": [],
-					"__worldX": 1568,
-					"__worldY": 80
+					"__worldX": 1520,
+					"__worldY": 160
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -5521,8 +5521,8 @@
 					"defUid": 140,
 					"px": [624,160],
 					"fieldInstances": [],
-					"__worldX": 1536,
-					"__worldY": 80
+					"__worldX": 1488,
+					"__worldY": 160
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -5537,8 +5537,8 @@
 					"defUid": 140,
 					"px": [624,144],
 					"fieldInstances": [],
-					"__worldX": 1536,
-					"__worldY": 64
+					"__worldX": 1488,
+					"__worldY": 144
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -5553,8 +5553,8 @@
 					"defUid": 140,
 					"px": [624,128],
 					"fieldInstances": [],
-					"__worldX": 1536,
-					"__worldY": 48
+					"__worldX": 1488,
+					"__worldY": 128
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -5569,8 +5569,8 @@
 					"defUid": 140,
 					"px": [592,160],
 					"fieldInstances": [],
-					"__worldX": 1504,
-					"__worldY": 80
+					"__worldX": 1456,
+					"__worldY": 160
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -5585,8 +5585,8 @@
 					"defUid": 140,
 					"px": [592,128],
 					"fieldInstances": [],
-					"__worldX": 1504,
-					"__worldY": 48
+					"__worldX": 1456,
+					"__worldY": 128
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -5601,8 +5601,8 @@
 					"defUid": 140,
 					"px": [560,160],
 					"fieldInstances": [],
-					"__worldX": 1472,
-					"__worldY": 80
+					"__worldX": 1424,
+					"__worldY": 160
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -5617,8 +5617,8 @@
 					"defUid": 140,
 					"px": [560,144],
 					"fieldInstances": [],
-					"__worldX": 1472,
-					"__worldY": 64
+					"__worldX": 1424,
+					"__worldY": 144
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -5633,8 +5633,8 @@
 					"defUid": 140,
 					"px": [560,128],
 					"fieldInstances": [],
-					"__worldX": 1472,
-					"__worldY": 48
+					"__worldX": 1424,
+					"__worldY": 128
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -5649,8 +5649,8 @@
 					"defUid": 140,
 					"px": [528,128],
 					"fieldInstances": [],
-					"__worldX": 1440,
-					"__worldY": 48
+					"__worldX": 1392,
+					"__worldY": 128
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -5665,8 +5665,8 @@
 					"defUid": 140,
 					"px": [528,160],
 					"fieldInstances": [],
-					"__worldX": 1440,
-					"__worldY": 80
+					"__worldX": 1392,
+					"__worldY": 160
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -5681,8 +5681,8 @@
 					"defUid": 140,
 					"px": [496,160],
 					"fieldInstances": [],
-					"__worldX": 1408,
-					"__worldY": 80
+					"__worldX": 1360,
+					"__worldY": 160
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -5697,8 +5697,8 @@
 					"defUid": 140,
 					"px": [496,144],
 					"fieldInstances": [],
-					"__worldX": 1408,
-					"__worldY": 64
+					"__worldX": 1360,
+					"__worldY": 144
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -5713,8 +5713,8 @@
 					"defUid": 140,
 					"px": [496,128],
 					"fieldInstances": [],
-					"__worldX": 1408,
-					"__worldY": 48
+					"__worldX": 1360,
+					"__worldY": 128
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -5729,8 +5729,8 @@
 					"defUid": 140,
 					"px": [464,128],
 					"fieldInstances": [],
-					"__worldX": 1376,
-					"__worldY": 48
+					"__worldX": 1328,
+					"__worldY": 128
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -5745,8 +5745,8 @@
 					"defUid": 140,
 					"px": [464,160],
 					"fieldInstances": [],
-					"__worldX": 1376,
-					"__worldY": 80
+					"__worldX": 1328,
+					"__worldY": 160
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -5761,8 +5761,8 @@
 					"defUid": 140,
 					"px": [496,176],
 					"fieldInstances": [],
-					"__worldX": 1408,
-					"__worldY": 96
+					"__worldX": 1360,
+					"__worldY": 176
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -5777,8 +5777,8 @@
 					"defUid": 140,
 					"px": [480,176],
 					"fieldInstances": [],
-					"__worldX": 1392,
-					"__worldY": 96
+					"__worldX": 1344,
+					"__worldY": 176
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -5793,8 +5793,8 @@
 					"defUid": 140,
 					"px": [432,160],
 					"fieldInstances": [],
-					"__worldX": 1344,
-					"__worldY": 80
+					"__worldX": 1296,
+					"__worldY": 160
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -5809,8 +5809,8 @@
 					"defUid": 140,
 					"px": [432,144],
 					"fieldInstances": [],
-					"__worldX": 1344,
-					"__worldY": 64
+					"__worldX": 1296,
+					"__worldY": 144
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -5825,8 +5825,8 @@
 					"defUid": 140,
 					"px": [432,128],
 					"fieldInstances": [],
-					"__worldX": 1344,
-					"__worldY": 48
+					"__worldX": 1296,
+					"__worldY": 128
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -5841,8 +5841,8 @@
 					"defUid": 140,
 					"px": [400,128],
 					"fieldInstances": [],
-					"__worldX": 1312,
-					"__worldY": 48
+					"__worldX": 1264,
+					"__worldY": 128
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -5857,8 +5857,8 @@
 					"defUid": 140,
 					"px": [400,160],
 					"fieldInstances": [],
-					"__worldX": 1312,
-					"__worldY": 80
+					"__worldX": 1264,
+					"__worldY": 160
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -5873,8 +5873,8 @@
 					"defUid": 140,
 					"px": [368,160],
 					"fieldInstances": [],
-					"__worldX": 1280,
-					"__worldY": 80
+					"__worldX": 1232,
+					"__worldY": 160
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -5889,8 +5889,8 @@
 					"defUid": 140,
 					"px": [368,144],
 					"fieldInstances": [],
-					"__worldX": 1280,
-					"__worldY": 64
+					"__worldX": 1232,
+					"__worldY": 144
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -5905,8 +5905,8 @@
 					"defUid": 140,
 					"px": [368,128],
 					"fieldInstances": [],
-					"__worldX": 1280,
-					"__worldY": 48
+					"__worldX": 1232,
+					"__worldY": 128
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -5921,8 +5921,8 @@
 					"defUid": 140,
 					"px": [384,176],
 					"fieldInstances": [],
-					"__worldX": 1296,
-					"__worldY": 96
+					"__worldX": 1248,
+					"__worldY": 176
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -5937,8 +5937,8 @@
 					"defUid": 140,
 					"px": [368,176],
 					"fieldInstances": [],
-					"__worldX": 1280,
-					"__worldY": 96
+					"__worldX": 1232,
+					"__worldY": 176
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -5953,8 +5953,8 @@
 					"defUid": 140,
 					"px": [336,160],
 					"fieldInstances": [],
-					"__worldX": 1248,
-					"__worldY": 80
+					"__worldX": 1200,
+					"__worldY": 160
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -5969,8 +5969,8 @@
 					"defUid": 140,
 					"px": [336,128],
 					"fieldInstances": [],
-					"__worldX": 1248,
-					"__worldY": 48
+					"__worldX": 1200,
+					"__worldY": 128
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -5985,8 +5985,8 @@
 					"defUid": 140,
 					"px": [304,128],
 					"fieldInstances": [],
-					"__worldX": 1216,
-					"__worldY": 48
+					"__worldX": 1168,
+					"__worldY": 128
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -6001,8 +6001,8 @@
 					"defUid": 140,
 					"px": [304,160],
 					"fieldInstances": [],
-					"__worldX": 1216,
-					"__worldY": 80
+					"__worldX": 1168,
+					"__worldY": 160
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -6017,8 +6017,8 @@
 					"defUid": 140,
 					"px": [272,128],
 					"fieldInstances": [],
-					"__worldX": 1184,
-					"__worldY": 48
+					"__worldX": 1136,
+					"__worldY": 128
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -6033,8 +6033,8 @@
 					"defUid": 140,
 					"px": [272,160],
 					"fieldInstances": [],
-					"__worldX": 1184,
-					"__worldY": 80
+					"__worldX": 1136,
+					"__worldY": 160
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -6049,8 +6049,8 @@
 					"defUid": 140,
 					"px": [240,160],
 					"fieldInstances": [],
-					"__worldX": 1152,
-					"__worldY": 80
+					"__worldX": 1104,
+					"__worldY": 160
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -6065,8 +6065,8 @@
 					"defUid": 140,
 					"px": [240,144],
 					"fieldInstances": [],
-					"__worldX": 1152,
-					"__worldY": 64
+					"__worldX": 1104,
+					"__worldY": 144
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -6081,8 +6081,8 @@
 					"defUid": 140,
 					"px": [240,128],
 					"fieldInstances": [],
-					"__worldX": 1152,
-					"__worldY": 48
+					"__worldX": 1104,
+					"__worldY": 128
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -6097,8 +6097,8 @@
 					"defUid": 140,
 					"px": [240,176],
 					"fieldInstances": [],
-					"__worldX": 1152,
-					"__worldY": 96
+					"__worldX": 1104,
+					"__worldY": 176
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -6113,8 +6113,8 @@
 					"defUid": 140,
 					"px": [208,160],
 					"fieldInstances": [],
-					"__worldX": 1120,
-					"__worldY": 80
+					"__worldX": 1072,
+					"__worldY": 160
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -6129,8 +6129,8 @@
 					"defUid": 140,
 					"px": [208,128],
 					"fieldInstances": [],
-					"__worldX": 1120,
-					"__worldY": 48
+					"__worldX": 1072,
+					"__worldY": 128
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -6145,8 +6145,8 @@
 					"defUid": 140,
 					"px": [176,128],
 					"fieldInstances": [],
-					"__worldX": 1088,
-					"__worldY": 48
+					"__worldX": 1040,
+					"__worldY": 128
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -6161,8 +6161,8 @@
 					"defUid": 140,
 					"px": [176,160],
 					"fieldInstances": [],
-					"__worldX": 1088,
-					"__worldY": 80
+					"__worldX": 1040,
+					"__worldY": 160
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -6177,8 +6177,8 @@
 					"defUid": 140,
 					"px": [144,160],
 					"fieldInstances": [],
-					"__worldX": 1056,
-					"__worldY": 80
+					"__worldX": 1008,
+					"__worldY": 160
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -6193,8 +6193,8 @@
 					"defUid": 140,
 					"px": [144,128],
 					"fieldInstances": [],
-					"__worldX": 1056,
-					"__worldY": 48
+					"__worldX": 1008,
+					"__worldY": 128
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -6209,8 +6209,8 @@
 					"defUid": 140,
 					"px": [112,128],
 					"fieldInstances": [],
-					"__worldX": 1024,
-					"__worldY": 48
+					"__worldX": 976,
+					"__worldY": 128
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -6225,8 +6225,8 @@
 					"defUid": 140,
 					"px": [112,160],
 					"fieldInstances": [],
-					"__worldX": 1024,
-					"__worldY": 80
+					"__worldX": 976,
+					"__worldY": 160
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -6241,8 +6241,8 @@
 					"defUid": 140,
 					"px": [112,176],
 					"fieldInstances": [],
-					"__worldX": 1024,
-					"__worldY": 96
+					"__worldX": 976,
+					"__worldY": 176
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -6257,8 +6257,8 @@
 					"defUid": 140,
 					"px": [144,176],
 					"fieldInstances": [],
-					"__worldX": 1056,
-					"__worldY": 96
+					"__worldX": 1008,
+					"__worldY": 176
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -6273,8 +6273,8 @@
 					"defUid": 140,
 					"px": [80,160],
 					"fieldInstances": [],
-					"__worldX": 992,
-					"__worldY": 80
+					"__worldX": 944,
+					"__worldY": 160
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -6289,8 +6289,8 @@
 					"defUid": 140,
 					"px": [80,128],
 					"fieldInstances": [],
-					"__worldX": 992,
-					"__worldY": 48
+					"__worldX": 944,
+					"__worldY": 128
 				},
 				{
 					"__identifier": "Enemy_Air_Spawn",
@@ -6305,8 +6305,8 @@
 					"defUid": 135,
 					"px": [128,192],
 					"fieldInstances": [],
-					"__worldX": 1040,
-					"__worldY": 112
+					"__worldX": 992,
+					"__worldY": 192
 				},
 				{
 					"__identifier": "Enemy_Air_Spawn",
@@ -6321,8 +6321,8 @@
 					"defUid": 135,
 					"px": [160,192],
 					"fieldInstances": [],
-					"__worldX": 1072,
-					"__worldY": 112
+					"__worldX": 1024,
+					"__worldY": 192
 				},
 				{
 					"__identifier": "Enemy_Air_Spawn",
@@ -6337,8 +6337,8 @@
 					"defUid": 135,
 					"px": [192,192],
 					"fieldInstances": [],
-					"__worldX": 1104,
-					"__worldY": 112
+					"__worldX": 1056,
+					"__worldY": 192
 				},
 				{
 					"__identifier": "Enemy_Air_Spawn",
@@ -6353,8 +6353,8 @@
 					"defUid": 135,
 					"px": [224,192],
 					"fieldInstances": [],
-					"__worldX": 1136,
-					"__worldY": 112
+					"__worldX": 1088,
+					"__worldY": 192
 				},
 				{
 					"__identifier": "Enemy_Air_Spawn",
@@ -6369,8 +6369,8 @@
 					"defUid": 135,
 					"px": [256,192],
 					"fieldInstances": [],
-					"__worldX": 1168,
-					"__worldY": 112
+					"__worldX": 1120,
+					"__worldY": 192
 				},
 				{
 					"__identifier": "Enemy_Air_Spawn",
@@ -6385,8 +6385,8 @@
 					"defUid": 135,
 					"px": [288,192],
 					"fieldInstances": [],
-					"__worldX": 1200,
-					"__worldY": 112
+					"__worldX": 1152,
+					"__worldY": 192
 				},
 				{
 					"__identifier": "Enemy_Air_Spawn",
@@ -6401,8 +6401,8 @@
 					"defUid": 135,
 					"px": [320,192],
 					"fieldInstances": [],
-					"__worldX": 1232,
-					"__worldY": 112
+					"__worldX": 1184,
+					"__worldY": 192
 				},
 				{
 					"__identifier": "Enemy_Air_Spawn",
@@ -6417,8 +6417,8 @@
 					"defUid": 135,
 					"px": [352,192],
 					"fieldInstances": [],
-					"__worldX": 1264,
-					"__worldY": 112
+					"__worldX": 1216,
+					"__worldY": 192
 				},
 				{
 					"__identifier": "Enemy_Air_Spawn",
@@ -6433,8 +6433,8 @@
 					"defUid": 135,
 					"px": [416,192],
 					"fieldInstances": [],
-					"__worldX": 1328,
-					"__worldY": 112
+					"__worldX": 1280,
+					"__worldY": 192
 				},
 				{
 					"__identifier": "Enemy_Air_Spawn",
@@ -6449,8 +6449,8 @@
 					"defUid": 135,
 					"px": [448,192],
 					"fieldInstances": [],
-					"__worldX": 1360,
-					"__worldY": 112
+					"__worldX": 1312,
+					"__worldY": 192
 				},
 				{
 					"__identifier": "Enemy_Air_Spawn",
@@ -6465,8 +6465,8 @@
 					"defUid": 135,
 					"px": [480,192],
 					"fieldInstances": [],
-					"__worldX": 1392,
-					"__worldY": 112
+					"__worldX": 1344,
+					"__worldY": 192
 				},
 				{
 					"__identifier": "Enemy_Air_Spawn",
@@ -6481,8 +6481,8 @@
 					"defUid": 135,
 					"px": [512,192],
 					"fieldInstances": [],
-					"__worldX": 1424,
-					"__worldY": 112
+					"__worldX": 1376,
+					"__worldY": 192
 				},
 				{
 					"__identifier": "Enemy_Air_Spawn",
@@ -6497,8 +6497,8 @@
 					"defUid": 135,
 					"px": [544,192],
 					"fieldInstances": [],
-					"__worldX": 1456,
-					"__worldY": 112
+					"__worldX": 1408,
+					"__worldY": 192
 				},
 				{
 					"__identifier": "Enemy_Air_Spawn",
@@ -6513,8 +6513,8 @@
 					"defUid": 135,
 					"px": [576,192],
 					"fieldInstances": [],
-					"__worldX": 1488,
-					"__worldY": 112
+					"__worldX": 1440,
+					"__worldY": 192
 				},
 				{
 					"__identifier": "Enemy_Air_Spawn",
@@ -6529,8 +6529,8 @@
 					"defUid": 135,
 					"px": [608,192],
 					"fieldInstances": [],
-					"__worldX": 1520,
-					"__worldY": 112
+					"__worldX": 1472,
+					"__worldY": 192
 				},
 				{
 					"__identifier": "Enemy_Air_Spawn",
@@ -6545,8 +6545,8 @@
 					"defUid": 135,
 					"px": [640,192],
 					"fieldInstances": [],
-					"__worldX": 1552,
-					"__worldY": 112
+					"__worldX": 1504,
+					"__worldY": 192
 				},
 				{
 					"__identifier": "Enemy_Air_Spawn",
@@ -6561,8 +6561,8 @@
 					"defUid": 135,
 					"px": [672,192],
 					"fieldInstances": [],
-					"__worldX": 1584,
-					"__worldY": 112
+					"__worldX": 1536,
+					"__worldY": 192
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -6577,8 +6577,8 @@
 					"defUid": 140,
 					"px": [128,208],
 					"fieldInstances": [],
-					"__worldX": 1040,
-					"__worldY": 128
+					"__worldX": 992,
+					"__worldY": 208
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -6593,8 +6593,8 @@
 					"defUid": 140,
 					"px": [176,208],
 					"fieldInstances": [],
-					"__worldX": 1088,
-					"__worldY": 128
+					"__worldX": 1040,
+					"__worldY": 208
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -6609,8 +6609,8 @@
 					"defUid": 140,
 					"px": [160,208],
 					"fieldInstances": [],
-					"__worldX": 1072,
-					"__worldY": 128
+					"__worldX": 1024,
+					"__worldY": 208
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -6625,8 +6625,8 @@
 					"defUid": 140,
 					"px": [192,208],
 					"fieldInstances": [],
-					"__worldX": 1104,
-					"__worldY": 128
+					"__worldX": 1056,
+					"__worldY": 208
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -6641,8 +6641,8 @@
 					"defUid": 140,
 					"px": [208,208],
 					"fieldInstances": [],
-					"__worldX": 1120,
-					"__worldY": 128
+					"__worldX": 1072,
+					"__worldY": 208
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -6657,8 +6657,8 @@
 					"defUid": 140,
 					"px": [224,208],
 					"fieldInstances": [],
-					"__worldX": 1136,
-					"__worldY": 128
+					"__worldX": 1088,
+					"__worldY": 208
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -6673,8 +6673,8 @@
 					"defUid": 140,
 					"px": [256,208],
 					"fieldInstances": [],
-					"__worldX": 1168,
-					"__worldY": 128
+					"__worldX": 1120,
+					"__worldY": 208
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -6689,8 +6689,8 @@
 					"defUid": 140,
 					"px": [272,208],
 					"fieldInstances": [],
-					"__worldX": 1184,
-					"__worldY": 128
+					"__worldX": 1136,
+					"__worldY": 208
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -6705,8 +6705,8 @@
 					"defUid": 140,
 					"px": [288,208],
 					"fieldInstances": [],
-					"__worldX": 1200,
-					"__worldY": 128
+					"__worldX": 1152,
+					"__worldY": 208
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -6721,8 +6721,8 @@
 					"defUid": 140,
 					"px": [304,208],
 					"fieldInstances": [],
-					"__worldX": 1216,
-					"__worldY": 128
+					"__worldX": 1168,
+					"__worldY": 208
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -6737,8 +6737,8 @@
 					"defUid": 140,
 					"px": [336,208],
 					"fieldInstances": [],
-					"__worldX": 1248,
-					"__worldY": 128
+					"__worldX": 1200,
+					"__worldY": 208
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -6753,8 +6753,8 @@
 					"defUid": 140,
 					"px": [320,208],
 					"fieldInstances": [],
-					"__worldX": 1232,
-					"__worldY": 128
+					"__worldX": 1184,
+					"__worldY": 208
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -6769,8 +6769,8 @@
 					"defUid": 140,
 					"px": [352,208],
 					"fieldInstances": [],
-					"__worldX": 1264,
-					"__worldY": 128
+					"__worldX": 1216,
+					"__worldY": 208
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -6785,8 +6785,8 @@
 					"defUid": 140,
 					"px": [400,208],
 					"fieldInstances": [],
-					"__worldX": 1312,
-					"__worldY": 128
+					"__worldX": 1264,
+					"__worldY": 208
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -6801,8 +6801,8 @@
 					"defUid": 140,
 					"px": [464,208],
 					"fieldInstances": [],
-					"__worldX": 1376,
-					"__worldY": 128
+					"__worldX": 1328,
+					"__worldY": 208
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -6817,8 +6817,8 @@
 					"defUid": 140,
 					"px": [528,208],
 					"fieldInstances": [],
-					"__worldX": 1440,
-					"__worldY": 128
+					"__worldX": 1392,
+					"__worldY": 208
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -6833,8 +6833,8 @@
 					"defUid": 140,
 					"px": [512,208],
 					"fieldInstances": [],
-					"__worldX": 1424,
-					"__worldY": 128
+					"__worldX": 1376,
+					"__worldY": 208
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -6849,8 +6849,8 @@
 					"defUid": 140,
 					"px": [544,208],
 					"fieldInstances": [],
-					"__worldX": 1456,
-					"__worldY": 128
+					"__worldX": 1408,
+					"__worldY": 208
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -6865,8 +6865,8 @@
 					"defUid": 140,
 					"px": [560,208],
 					"fieldInstances": [],
-					"__worldX": 1472,
-					"__worldY": 128
+					"__worldX": 1424,
+					"__worldY": 208
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -6881,8 +6881,8 @@
 					"defUid": 140,
 					"px": [576,208],
 					"fieldInstances": [],
-					"__worldX": 1488,
-					"__worldY": 128
+					"__worldX": 1440,
+					"__worldY": 208
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -6897,8 +6897,8 @@
 					"defUid": 140,
 					"px": [608,208],
 					"fieldInstances": [],
-					"__worldX": 1520,
-					"__worldY": 128
+					"__worldX": 1472,
+					"__worldY": 208
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -6913,8 +6913,8 @@
 					"defUid": 140,
 					"px": [592,208],
 					"fieldInstances": [],
-					"__worldX": 1504,
-					"__worldY": 128
+					"__worldX": 1456,
+					"__worldY": 208
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -6929,8 +6929,8 @@
 					"defUid": 140,
 					"px": [624,208],
 					"fieldInstances": [],
-					"__worldX": 1536,
-					"__worldY": 128
+					"__worldX": 1488,
+					"__worldY": 208
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -6945,8 +6945,8 @@
 					"defUid": 140,
 					"px": [640,208],
 					"fieldInstances": [],
-					"__worldX": 1552,
-					"__worldY": 128
+					"__worldX": 1504,
+					"__worldY": 208
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -6961,8 +6961,8 @@
 					"defUid": 140,
 					"px": [656,208],
 					"fieldInstances": [],
-					"__worldX": 1568,
-					"__worldY": 128
+					"__worldX": 1520,
+					"__worldY": 208
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -6977,8 +6977,8 @@
 					"defUid": 140,
 					"px": [688,208],
 					"fieldInstances": [],
-					"__worldX": 1600,
-					"__worldY": 128
+					"__worldX": 1552,
+					"__worldY": 208
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -6993,8 +6993,8 @@
 					"defUid": 140,
 					"px": [672,208],
 					"fieldInstances": [],
-					"__worldX": 1584,
-					"__worldY": 128
+					"__worldX": 1536,
+					"__worldY": 208
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -7009,8 +7009,8 @@
 					"defUid": 140,
 					"px": [448,208],
 					"fieldInstances": [],
-					"__worldX": 1360,
-					"__worldY": 128
+					"__worldX": 1312,
+					"__worldY": 208
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -7025,8 +7025,8 @@
 					"defUid": 140,
 					"px": [432,208],
 					"fieldInstances": [],
-					"__worldX": 1344,
-					"__worldY": 128
+					"__worldX": 1296,
+					"__worldY": 208
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -7041,8 +7041,8 @@
 					"defUid": 140,
 					"px": [416,208],
 					"fieldInstances": [],
-					"__worldX": 1328,
-					"__worldY": 128
+					"__worldX": 1280,
+					"__worldY": 208
 				},
 				{
 					"__identifier": "Enemy_Air_Spawn",
@@ -7057,8 +7057,8 @@
 					"defUid": 135,
 					"px": [384,192],
 					"fieldInstances": [],
-					"__worldX": 1296,
-					"__worldY": 112
+					"__worldX": 1248,
+					"__worldY": 192
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -7073,8 +7073,8 @@
 					"defUid": 140,
 					"px": [688,192],
 					"fieldInstances": [],
-					"__worldX": 1600,
-					"__worldY": 112
+					"__worldX": 1552,
+					"__worldY": 192
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -7089,8 +7089,8 @@
 					"defUid": 140,
 					"px": [656,192],
 					"fieldInstances": [],
-					"__worldX": 1568,
-					"__worldY": 112
+					"__worldX": 1520,
+					"__worldY": 192
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -7105,8 +7105,8 @@
 					"defUid": 140,
 					"px": [624,192],
 					"fieldInstances": [],
-					"__worldX": 1536,
-					"__worldY": 112
+					"__worldX": 1488,
+					"__worldY": 192
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -7121,8 +7121,8 @@
 					"defUid": 140,
 					"px": [592,192],
 					"fieldInstances": [],
-					"__worldX": 1504,
-					"__worldY": 112
+					"__worldX": 1456,
+					"__worldY": 192
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -7137,8 +7137,8 @@
 					"defUid": 140,
 					"px": [560,192],
 					"fieldInstances": [],
-					"__worldX": 1472,
-					"__worldY": 112
+					"__worldX": 1424,
+					"__worldY": 192
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -7153,8 +7153,8 @@
 					"defUid": 140,
 					"px": [528,192],
 					"fieldInstances": [],
-					"__worldX": 1440,
-					"__worldY": 112
+					"__worldX": 1392,
+					"__worldY": 192
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -7169,8 +7169,8 @@
 					"defUid": 140,
 					"px": [496,192],
 					"fieldInstances": [],
-					"__worldX": 1408,
-					"__worldY": 112
+					"__worldX": 1360,
+					"__worldY": 192
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -7185,8 +7185,8 @@
 					"defUid": 140,
 					"px": [464,192],
 					"fieldInstances": [],
-					"__worldX": 1376,
-					"__worldY": 112
+					"__worldX": 1328,
+					"__worldY": 192
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -7201,8 +7201,8 @@
 					"defUid": 140,
 					"px": [496,208],
 					"fieldInstances": [],
-					"__worldX": 1408,
-					"__worldY": 128
+					"__worldX": 1360,
+					"__worldY": 208
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -7217,8 +7217,8 @@
 					"defUid": 140,
 					"px": [480,208],
 					"fieldInstances": [],
-					"__worldX": 1392,
-					"__worldY": 128
+					"__worldX": 1344,
+					"__worldY": 208
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -7233,8 +7233,8 @@
 					"defUid": 140,
 					"px": [432,192],
 					"fieldInstances": [],
-					"__worldX": 1344,
-					"__worldY": 112
+					"__worldX": 1296,
+					"__worldY": 192
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -7249,8 +7249,8 @@
 					"defUid": 140,
 					"px": [400,192],
 					"fieldInstances": [],
-					"__worldX": 1312,
-					"__worldY": 112
+					"__worldX": 1264,
+					"__worldY": 192
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -7265,8 +7265,8 @@
 					"defUid": 140,
 					"px": [368,192],
 					"fieldInstances": [],
-					"__worldX": 1280,
-					"__worldY": 112
+					"__worldX": 1232,
+					"__worldY": 192
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -7281,8 +7281,8 @@
 					"defUid": 140,
 					"px": [384,208],
 					"fieldInstances": [],
-					"__worldX": 1296,
-					"__worldY": 128
+					"__worldX": 1248,
+					"__worldY": 208
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -7297,8 +7297,8 @@
 					"defUid": 140,
 					"px": [368,208],
 					"fieldInstances": [],
-					"__worldX": 1280,
-					"__worldY": 128
+					"__worldX": 1232,
+					"__worldY": 208
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -7313,8 +7313,8 @@
 					"defUid": 140,
 					"px": [336,192],
 					"fieldInstances": [],
-					"__worldX": 1248,
-					"__worldY": 112
+					"__worldX": 1200,
+					"__worldY": 192
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -7329,8 +7329,8 @@
 					"defUid": 140,
 					"px": [304,192],
 					"fieldInstances": [],
-					"__worldX": 1216,
-					"__worldY": 112
+					"__worldX": 1168,
+					"__worldY": 192
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -7345,8 +7345,8 @@
 					"defUid": 140,
 					"px": [272,192],
 					"fieldInstances": [],
-					"__worldX": 1184,
-					"__worldY": 112
+					"__worldX": 1136,
+					"__worldY": 192
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -7361,8 +7361,8 @@
 					"defUid": 140,
 					"px": [240,192],
 					"fieldInstances": [],
-					"__worldX": 1152,
-					"__worldY": 112
+					"__worldX": 1104,
+					"__worldY": 192
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -7377,8 +7377,8 @@
 					"defUid": 140,
 					"px": [240,208],
 					"fieldInstances": [],
-					"__worldX": 1152,
-					"__worldY": 128
+					"__worldX": 1104,
+					"__worldY": 208
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -7393,8 +7393,8 @@
 					"defUid": 140,
 					"px": [208,192],
 					"fieldInstances": [],
-					"__worldX": 1120,
-					"__worldY": 112
+					"__worldX": 1072,
+					"__worldY": 192
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -7409,8 +7409,8 @@
 					"defUid": 140,
 					"px": [176,192],
 					"fieldInstances": [],
-					"__worldX": 1088,
-					"__worldY": 112
+					"__worldX": 1040,
+					"__worldY": 192
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -7425,8 +7425,8 @@
 					"defUid": 140,
 					"px": [144,192],
 					"fieldInstances": [],
-					"__worldX": 1056,
-					"__worldY": 112
+					"__worldX": 1008,
+					"__worldY": 192
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -7441,8 +7441,8 @@
 					"defUid": 140,
 					"px": [144,208],
 					"fieldInstances": [],
-					"__worldX": 1056,
-					"__worldY": 128
+					"__worldX": 1008,
+					"__worldY": 208
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -7457,8 +7457,8 @@
 					"defUid": 140,
 					"px": [272,224],
 					"fieldInstances": [],
-					"__worldX": 1184,
-					"__worldY": 144
+					"__worldX": 1136,
+					"__worldY": 224
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -7473,8 +7473,8 @@
 					"defUid": 140,
 					"px": [256,224],
 					"fieldInstances": [],
-					"__worldX": 1168,
-					"__worldY": 144
+					"__worldX": 1120,
+					"__worldY": 224
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -7489,8 +7489,8 @@
 					"defUid": 140,
 					"px": [288,224],
 					"fieldInstances": [],
-					"__worldX": 1200,
-					"__worldY": 144
+					"__worldX": 1152,
+					"__worldY": 224
 				},
 				{
 					"__identifier": "Enemy_Air_Spawn",
@@ -7505,8 +7505,8 @@
 					"defUid": 135,
 					"px": [272,240],
 					"fieldInstances": [],
-					"__worldX": 1184,
-					"__worldY": 160
+					"__worldX": 1136,
+					"__worldY": 240
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -7521,8 +7521,8 @@
 					"defUid": 140,
 					"px": [272,256],
 					"fieldInstances": [],
-					"__worldX": 1184,
-					"__worldY": 176
+					"__worldX": 1136,
+					"__worldY": 256
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -7537,8 +7537,8 @@
 					"defUid": 140,
 					"px": [288,240],
 					"fieldInstances": [],
-					"__worldX": 1200,
-					"__worldY": 160
+					"__worldX": 1152,
+					"__worldY": 240
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -7553,8 +7553,8 @@
 					"defUid": 140,
 					"px": [256,240],
 					"fieldInstances": [],
-					"__worldX": 1168,
-					"__worldY": 160
+					"__worldX": 1120,
+					"__worldY": 240
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -7569,8 +7569,8 @@
 					"defUid": 140,
 					"px": [256,256],
 					"fieldInstances": [],
-					"__worldX": 1168,
-					"__worldY": 176
+					"__worldX": 1120,
+					"__worldY": 256
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -7585,8 +7585,8 @@
 					"defUid": 140,
 					"px": [288,256],
 					"fieldInstances": [],
-					"__worldX": 1200,
-					"__worldY": 176
+					"__worldX": 1152,
+					"__worldY": 256
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -7601,8 +7601,8 @@
 					"defUid": 140,
 					"px": [416,224],
 					"fieldInstances": [],
-					"__worldX": 1328,
-					"__worldY": 144
+					"__worldX": 1280,
+					"__worldY": 224
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -7617,8 +7617,8 @@
 					"defUid": 140,
 					"px": [400,224],
 					"fieldInstances": [],
-					"__worldX": 1312,
-					"__worldY": 144
+					"__worldX": 1264,
+					"__worldY": 224
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -7633,8 +7633,8 @@
 					"defUid": 140,
 					"px": [432,224],
 					"fieldInstances": [],
-					"__worldX": 1344,
-					"__worldY": 144
+					"__worldX": 1296,
+					"__worldY": 224
 				},
 				{
 					"__identifier": "Enemy_Air_Spawn",
@@ -7649,8 +7649,8 @@
 					"defUid": 135,
 					"px": [416,240],
 					"fieldInstances": [],
-					"__worldX": 1328,
-					"__worldY": 160
+					"__worldX": 1280,
+					"__worldY": 240
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -7665,8 +7665,8 @@
 					"defUid": 140,
 					"px": [416,256],
 					"fieldInstances": [],
-					"__worldX": 1328,
-					"__worldY": 176
+					"__worldX": 1280,
+					"__worldY": 256
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -7681,8 +7681,8 @@
 					"defUid": 140,
 					"px": [432,240],
 					"fieldInstances": [],
-					"__worldX": 1344,
-					"__worldY": 160
+					"__worldX": 1296,
+					"__worldY": 240
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -7697,8 +7697,8 @@
 					"defUid": 140,
 					"px": [400,240],
 					"fieldInstances": [],
-					"__worldX": 1312,
-					"__worldY": 160
+					"__worldX": 1264,
+					"__worldY": 240
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -7713,8 +7713,8 @@
 					"defUid": 140,
 					"px": [432,256],
 					"fieldInstances": [],
-					"__worldX": 1344,
-					"__worldY": 176
+					"__worldX": 1296,
+					"__worldY": 256
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -7729,8 +7729,8 @@
 					"defUid": 140,
 					"px": [560,224],
 					"fieldInstances": [],
-					"__worldX": 1472,
-					"__worldY": 144
+					"__worldX": 1424,
+					"__worldY": 224
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -7745,8 +7745,8 @@
 					"defUid": 140,
 					"px": [544,224],
 					"fieldInstances": [],
-					"__worldX": 1456,
-					"__worldY": 144
+					"__worldX": 1408,
+					"__worldY": 224
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -7761,8 +7761,8 @@
 					"defUid": 140,
 					"px": [576,224],
 					"fieldInstances": [],
-					"__worldX": 1488,
-					"__worldY": 144
+					"__worldX": 1440,
+					"__worldY": 224
 				},
 				{
 					"__identifier": "Enemy_Air_Spawn",
@@ -7777,8 +7777,8 @@
 					"defUid": 135,
 					"px": [560,240],
 					"fieldInstances": [],
-					"__worldX": 1472,
-					"__worldY": 160
+					"__worldX": 1424,
+					"__worldY": 240
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -7793,8 +7793,8 @@
 					"defUid": 140,
 					"px": [560,256],
 					"fieldInstances": [],
-					"__worldX": 1472,
-					"__worldY": 176
+					"__worldX": 1424,
+					"__worldY": 256
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -7809,8 +7809,8 @@
 					"defUid": 140,
 					"px": [576,240],
 					"fieldInstances": [],
-					"__worldX": 1488,
-					"__worldY": 160
+					"__worldX": 1440,
+					"__worldY": 240
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -7825,8 +7825,8 @@
 					"defUid": 140,
 					"px": [544,240],
 					"fieldInstances": [],
-					"__worldX": 1456,
-					"__worldY": 160
+					"__worldX": 1408,
+					"__worldY": 240
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -7841,8 +7841,8 @@
 					"defUid": 140,
 					"px": [544,256],
 					"fieldInstances": [],
-					"__worldX": 1456,
-					"__worldY": 176
+					"__worldX": 1408,
+					"__worldY": 256
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -7857,8 +7857,8 @@
 					"defUid": 140,
 					"px": [576,256],
 					"fieldInstances": [],
-					"__worldX": 1488,
-					"__worldY": 176
+					"__worldX": 1440,
+					"__worldY": 256
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -7873,8 +7873,8 @@
 					"defUid": 140,
 					"px": [576,224],
 					"fieldInstances": [],
-					"__worldX": 1488,
-					"__worldY": 144
+					"__worldX": 1440,
+					"__worldY": 224
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -7889,8 +7889,8 @@
 					"defUid": 140,
 					"px": [560,224],
 					"fieldInstances": [],
-					"__worldX": 1472,
-					"__worldY": 144
+					"__worldX": 1424,
+					"__worldY": 224
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -7905,8 +7905,8 @@
 					"defUid": 140,
 					"px": [576,256],
 					"fieldInstances": [],
-					"__worldX": 1488,
-					"__worldY": 176
+					"__worldX": 1440,
+					"__worldY": 256
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -7921,8 +7921,8 @@
 					"defUid": 140,
 					"px": [560,240],
 					"fieldInstances": [],
-					"__worldX": 1472,
-					"__worldY": 160
+					"__worldX": 1424,
+					"__worldY": 240
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -7937,8 +7937,8 @@
 					"defUid": 140,
 					"px": [560,256],
 					"fieldInstances": [],
-					"__worldX": 1472,
-					"__worldY": 176
+					"__worldX": 1424,
+					"__worldY": 256
 				},
 				{
 					"__identifier": "Ground",
@@ -7953,8 +7953,8 @@
 					"defUid": 137,
 					"px": [80,400],
 					"fieldInstances": [],
-					"__worldX": 992,
-					"__worldY": 320
+					"__worldX": 944,
+					"__worldY": 400
 				},
 				{
 					"__identifier": "Ground",
@@ -7969,8 +7969,8 @@
 					"defUid": 137,
 					"px": [64,400],
 					"fieldInstances": [],
-					"__worldX": 976,
-					"__worldY": 320
+					"__worldX": 928,
+					"__worldY": 400
 				},
 				{
 					"__identifier": "Ground",
@@ -7985,8 +7985,8 @@
 					"defUid": 137,
 					"px": [176,400],
 					"fieldInstances": [],
-					"__worldX": 1088,
-					"__worldY": 320
+					"__worldX": 1040,
+					"__worldY": 400
 				},
 				{
 					"__identifier": "Ground",
@@ -8001,8 +8001,8 @@
 					"defUid": 137,
 					"px": [160,400],
 					"fieldInstances": [],
-					"__worldX": 1072,
-					"__worldY": 320
+					"__worldX": 1024,
+					"__worldY": 400
 				},
 				{
 					"__identifier": "Ground",
@@ -8017,8 +8017,8 @@
 					"defUid": 137,
 					"px": [208,400],
 					"fieldInstances": [],
-					"__worldX": 1120,
-					"__worldY": 320
+					"__worldX": 1072,
+					"__worldY": 400
 				},
 				{
 					"__identifier": "Ground",
@@ -8033,8 +8033,8 @@
 					"defUid": 137,
 					"px": [192,400],
 					"fieldInstances": [],
-					"__worldX": 1104,
-					"__worldY": 320
+					"__worldX": 1056,
+					"__worldY": 400
 				},
 				{
 					"__identifier": "Ground",
@@ -8049,8 +8049,8 @@
 					"defUid": 137,
 					"px": [96,400],
 					"fieldInstances": [],
-					"__worldX": 1008,
-					"__worldY": 320
+					"__worldX": 960,
+					"__worldY": 400
 				},
 				{
 					"__identifier": "Ground",
@@ -8065,8 +8065,8 @@
 					"defUid": 137,
 					"px": [144,400],
 					"fieldInstances": [],
-					"__worldX": 1056,
-					"__worldY": 320
+					"__worldX": 1008,
+					"__worldY": 400
 				},
 				{
 					"__identifier": "Ground",
@@ -8081,8 +8081,8 @@
 					"defUid": 137,
 					"px": [128,400],
 					"fieldInstances": [],
-					"__worldX": 1040,
-					"__worldY": 320
+					"__worldX": 992,
+					"__worldY": 400
 				},
 				{
 					"__identifier": "Ground",
@@ -8097,8 +8097,8 @@
 					"defUid": 137,
 					"px": [112,400],
 					"fieldInstances": [],
-					"__worldX": 1024,
-					"__worldY": 320
+					"__worldX": 976,
+					"__worldY": 400
 				},
 				{
 					"__identifier": "Ground",
@@ -8113,8 +8113,8 @@
 					"defUid": 137,
 					"px": [304,400],
 					"fieldInstances": [],
-					"__worldX": 1216,
-					"__worldY": 320
+					"__worldX": 1168,
+					"__worldY": 400
 				},
 				{
 					"__identifier": "Ground",
@@ -8129,8 +8129,8 @@
 					"defUid": 137,
 					"px": [288,400],
 					"fieldInstances": [],
-					"__worldX": 1200,
-					"__worldY": 320
+					"__worldX": 1152,
+					"__worldY": 400
 				},
 				{
 					"__identifier": "Ground",
@@ -8145,8 +8145,8 @@
 					"defUid": 137,
 					"px": [336,400],
 					"fieldInstances": [],
-					"__worldX": 1248,
-					"__worldY": 320
+					"__worldX": 1200,
+					"__worldY": 400
 				},
 				{
 					"__identifier": "Ground",
@@ -8161,8 +8161,8 @@
 					"defUid": 137,
 					"px": [320,400],
 					"fieldInstances": [],
-					"__worldX": 1232,
-					"__worldY": 320
+					"__worldX": 1184,
+					"__worldY": 400
 				},
 				{
 					"__identifier": "Ground",
@@ -8177,8 +8177,8 @@
 					"defUid": 137,
 					"px": [224,400],
 					"fieldInstances": [],
-					"__worldX": 1136,
-					"__worldY": 320
+					"__worldX": 1088,
+					"__worldY": 400
 				},
 				{
 					"__identifier": "Ground",
@@ -8193,8 +8193,8 @@
 					"defUid": 137,
 					"px": [272,400],
 					"fieldInstances": [],
-					"__worldX": 1184,
-					"__worldY": 320
+					"__worldX": 1136,
+					"__worldY": 400
 				},
 				{
 					"__identifier": "Ground",
@@ -8209,8 +8209,8 @@
 					"defUid": 137,
 					"px": [256,400],
 					"fieldInstances": [],
-					"__worldX": 1168,
-					"__worldY": 320
+					"__worldX": 1120,
+					"__worldY": 400
 				},
 				{
 					"__identifier": "Ground",
@@ -8225,8 +8225,8 @@
 					"defUid": 137,
 					"px": [240,400],
 					"fieldInstances": [],
-					"__worldX": 1152,
-					"__worldY": 320
+					"__worldX": 1104,
+					"__worldY": 400
 				},
 				{
 					"__identifier": "Ground",
@@ -8241,8 +8241,8 @@
 					"defUid": 137,
 					"px": [448,400],
 					"fieldInstances": [],
-					"__worldX": 1360,
-					"__worldY": 320
+					"__worldX": 1312,
+					"__worldY": 400
 				},
 				{
 					"__identifier": "Ground",
@@ -8257,8 +8257,8 @@
 					"defUid": 137,
 					"px": [432,400],
 					"fieldInstances": [],
-					"__worldX": 1344,
-					"__worldY": 320
+					"__worldX": 1296,
+					"__worldY": 400
 				},
 				{
 					"__identifier": "Ground",
@@ -8273,8 +8273,8 @@
 					"defUid": 137,
 					"px": [480,400],
 					"fieldInstances": [],
-					"__worldX": 1392,
-					"__worldY": 320
+					"__worldX": 1344,
+					"__worldY": 400
 				},
 				{
 					"__identifier": "Ground",
@@ -8289,8 +8289,8 @@
 					"defUid": 137,
 					"px": [464,400],
 					"fieldInstances": [],
-					"__worldX": 1376,
-					"__worldY": 320
+					"__worldX": 1328,
+					"__worldY": 400
 				},
 				{
 					"__identifier": "Ground",
@@ -8305,8 +8305,8 @@
 					"defUid": 137,
 					"px": [352,400],
 					"fieldInstances": [],
-					"__worldX": 1264,
-					"__worldY": 320
+					"__worldX": 1216,
+					"__worldY": 400
 				},
 				{
 					"__identifier": "Ground",
@@ -8321,8 +8321,8 @@
 					"defUid": 137,
 					"px": [416,400],
 					"fieldInstances": [],
-					"__worldX": 1328,
-					"__worldY": 320
+					"__worldX": 1280,
+					"__worldY": 400
 				},
 				{
 					"__identifier": "Ground",
@@ -8337,8 +8337,8 @@
 					"defUid": 137,
 					"px": [384,400],
 					"fieldInstances": [],
-					"__worldX": 1296,
-					"__worldY": 320
+					"__worldX": 1248,
+					"__worldY": 400
 				},
 				{
 					"__identifier": "Ground",
@@ -8353,8 +8353,8 @@
 					"defUid": 137,
 					"px": [368,400],
 					"fieldInstances": [],
-					"__worldX": 1280,
-					"__worldY": 320
+					"__worldX": 1232,
+					"__worldY": 400
 				},
 				{
 					"__identifier": "Ground",
@@ -8369,8 +8369,8 @@
 					"defUid": 137,
 					"px": [576,400],
 					"fieldInstances": [],
-					"__worldX": 1488,
-					"__worldY": 320
+					"__worldX": 1440,
+					"__worldY": 400
 				},
 				{
 					"__identifier": "Ground",
@@ -8385,8 +8385,8 @@
 					"defUid": 137,
 					"px": [560,400],
 					"fieldInstances": [],
-					"__worldX": 1472,
-					"__worldY": 320
+					"__worldX": 1424,
+					"__worldY": 400
 				},
 				{
 					"__identifier": "Ground",
@@ -8401,8 +8401,8 @@
 					"defUid": 137,
 					"px": [608,400],
 					"fieldInstances": [],
-					"__worldX": 1520,
-					"__worldY": 320
+					"__worldX": 1472,
+					"__worldY": 400
 				},
 				{
 					"__identifier": "Ground",
@@ -8417,8 +8417,8 @@
 					"defUid": 137,
 					"px": [592,400],
 					"fieldInstances": [],
-					"__worldX": 1504,
-					"__worldY": 320
+					"__worldX": 1456,
+					"__worldY": 400
 				},
 				{
 					"__identifier": "Ground",
@@ -8433,8 +8433,8 @@
 					"defUid": 137,
 					"px": [496,400],
 					"fieldInstances": [],
-					"__worldX": 1408,
-					"__worldY": 320
+					"__worldX": 1360,
+					"__worldY": 400
 				},
 				{
 					"__identifier": "Ground",
@@ -8449,8 +8449,8 @@
 					"defUid": 137,
 					"px": [544,400],
 					"fieldInstances": [],
-					"__worldX": 1456,
-					"__worldY": 320
+					"__worldX": 1408,
+					"__worldY": 400
 				},
 				{
 					"__identifier": "Ground",
@@ -8465,8 +8465,8 @@
 					"defUid": 137,
 					"px": [528,400],
 					"fieldInstances": [],
-					"__worldX": 1440,
-					"__worldY": 320
+					"__worldX": 1392,
+					"__worldY": 400
 				},
 				{
 					"__identifier": "Ground",
@@ -8481,8 +8481,8 @@
 					"defUid": 137,
 					"px": [512,400],
 					"fieldInstances": [],
-					"__worldX": 1424,
-					"__worldY": 320
+					"__worldX": 1376,
+					"__worldY": 400
 				},
 				{
 					"__identifier": "Ground",
@@ -8497,8 +8497,8 @@
 					"defUid": 137,
 					"px": [720,400],
 					"fieldInstances": [],
-					"__worldX": 1632,
-					"__worldY": 320
+					"__worldX": 1584,
+					"__worldY": 400
 				},
 				{
 					"__identifier": "Ground",
@@ -8513,8 +8513,8 @@
 					"defUid": 137,
 					"px": [704,400],
 					"fieldInstances": [],
-					"__worldX": 1616,
-					"__worldY": 320
+					"__worldX": 1568,
+					"__worldY": 400
 				},
 				{
 					"__identifier": "Ground",
@@ -8529,8 +8529,8 @@
 					"defUid": 137,
 					"px": [752,400],
 					"fieldInstances": [],
-					"__worldX": 1664,
-					"__worldY": 320
+					"__worldX": 1616,
+					"__worldY": 400
 				},
 				{
 					"__identifier": "Ground",
@@ -8545,8 +8545,8 @@
 					"defUid": 137,
 					"px": [736,400],
 					"fieldInstances": [],
-					"__worldX": 1648,
-					"__worldY": 320
+					"__worldX": 1600,
+					"__worldY": 400
 				},
 				{
 					"__identifier": "Ground",
@@ -8561,8 +8561,8 @@
 					"defUid": 137,
 					"px": [624,400],
 					"fieldInstances": [],
-					"__worldX": 1536,
-					"__worldY": 320
+					"__worldX": 1488,
+					"__worldY": 400
 				},
 				{
 					"__identifier": "Ground",
@@ -8577,8 +8577,8 @@
 					"defUid": 137,
 					"px": [688,400],
 					"fieldInstances": [],
-					"__worldX": 1600,
-					"__worldY": 320
+					"__worldX": 1552,
+					"__worldY": 400
 				},
 				{
 					"__identifier": "Ground",
@@ -8593,8 +8593,8 @@
 					"defUid": 137,
 					"px": [656,400],
 					"fieldInstances": [],
-					"__worldX": 1568,
-					"__worldY": 320
+					"__worldX": 1520,
+					"__worldY": 400
 				},
 				{
 					"__identifier": "Ground",
@@ -8609,8 +8609,8 @@
 					"defUid": 137,
 					"px": [640,400],
 					"fieldInstances": [],
-					"__worldX": 1552,
-					"__worldY": 320
+					"__worldX": 1504,
+					"__worldY": 400
 				},
 				{
 					"__identifier": "Ground",
@@ -8625,8 +8625,8 @@
 					"defUid": 137,
 					"px": [768,400],
 					"fieldInstances": [],
-					"__worldX": 1680,
-					"__worldY": 320
+					"__worldX": 1632,
+					"__worldY": 400
 				},
 				{
 					"__identifier": "Ground",
@@ -8641,8 +8641,8 @@
 					"defUid": 137,
 					"px": [784,400],
 					"fieldInstances": [],
-					"__worldX": 1696,
-					"__worldY": 320
+					"__worldX": 1648,
+					"__worldY": 400
 				},
 				{
 					"__identifier": "Ground",
@@ -8657,8 +8657,8 @@
 					"defUid": 137,
 					"px": [784,400],
 					"fieldInstances": [],
-					"__worldX": 1696,
-					"__worldY": 320
+					"__worldX": 1648,
+					"__worldY": 400
 				},
 				{
 					"__identifier": "Ground",
@@ -8673,8 +8673,8 @@
 					"defUid": 137,
 					"px": [400,400],
 					"fieldInstances": [],
-					"__worldX": 1312,
-					"__worldY": 320
+					"__worldX": 1264,
+					"__worldY": 400
 				},
 				{
 					"__identifier": "Ground",
@@ -8689,8 +8689,8 @@
 					"defUid": 137,
 					"px": [96,400],
 					"fieldInstances": [],
-					"__worldX": 1008,
-					"__worldY": 320
+					"__worldX": 960,
+					"__worldY": 400
 				},
 				{
 					"__identifier": "Ground",
@@ -8705,8 +8705,8 @@
 					"defUid": 137,
 					"px": [112,400],
 					"fieldInstances": [],
-					"__worldX": 1024,
-					"__worldY": 320
+					"__worldX": 976,
+					"__worldY": 400
 				},
 				{
 					"__identifier": "Moss_Balls",
@@ -8721,8 +8721,8 @@
 					"defUid": 139,
 					"px": [320,368],
 					"fieldInstances": [],
-					"__worldX": 1232,
-					"__worldY": 288
+					"__worldX": 1184,
+					"__worldY": 368
 				},
 				{
 					"__identifier": "Moss_Balls",
@@ -8737,8 +8737,8 @@
 					"defUid": 139,
 					"px": [304,368],
 					"fieldInstances": [],
-					"__worldX": 1216,
-					"__worldY": 288
+					"__worldX": 1168,
+					"__worldY": 368
 				},
 				{
 					"__identifier": "Moss_Balls",
@@ -8753,8 +8753,8 @@
 					"defUid": 139,
 					"px": [288,368],
 					"fieldInstances": [],
-					"__worldX": 1200,
-					"__worldY": 288
+					"__worldX": 1152,
+					"__worldY": 368
 				},
 				{
 					"__identifier": "Moss_Balls",
@@ -8769,8 +8769,8 @@
 					"defUid": 139,
 					"px": [528,368],
 					"fieldInstances": [],
-					"__worldX": 1440,
-					"__worldY": 288
+					"__worldX": 1392,
+					"__worldY": 368
 				},
 				{
 					"__identifier": "Moss_Balls",
@@ -8785,8 +8785,8 @@
 					"defUid": 139,
 					"px": [544,368],
 					"fieldInstances": [],
-					"__worldX": 1456,
-					"__worldY": 288
+					"__worldX": 1408,
+					"__worldY": 368
 				},
 				{
 					"__identifier": "Ground",
@@ -8801,8 +8801,8 @@
 					"defUid": 137,
 					"px": [624,384],
 					"fieldInstances": [],
-					"__worldX": 1536,
-					"__worldY": 304
+					"__worldX": 1488,
+					"__worldY": 384
 				},
 				{
 					"__identifier": "Ground",
@@ -8817,8 +8817,8 @@
 					"defUid": 137,
 					"px": [608,384],
 					"fieldInstances": [],
-					"__worldX": 1520,
-					"__worldY": 304
+					"__worldX": 1472,
+					"__worldY": 384
 				},
 				{
 					"__identifier": "Ground",
@@ -8833,8 +8833,8 @@
 					"defUid": 137,
 					"px": [592,384],
 					"fieldInstances": [],
-					"__worldX": 1504,
-					"__worldY": 304
+					"__worldX": 1456,
+					"__worldY": 384
 				},
 				{
 					"__identifier": "Ground",
@@ -8849,8 +8849,8 @@
 					"defUid": 137,
 					"px": [576,384],
 					"fieldInstances": [],
-					"__worldX": 1488,
-					"__worldY": 304
+					"__worldX": 1440,
+					"__worldY": 384
 				},
 				{
 					"__identifier": "Ground",
@@ -8865,8 +8865,8 @@
 					"defUid": 137,
 					"px": [256,384],
 					"fieldInstances": [],
-					"__worldX": 1168,
-					"__worldY": 304
+					"__worldX": 1120,
+					"__worldY": 384
 				},
 				{
 					"__identifier": "Ground",
@@ -8881,8 +8881,8 @@
 					"defUid": 137,
 					"px": [240,384],
 					"fieldInstances": [],
-					"__worldX": 1152,
-					"__worldY": 304
+					"__worldX": 1104,
+					"__worldY": 384
 				},
 				{
 					"__identifier": "Ground",
@@ -8897,8 +8897,8 @@
 					"defUid": 137,
 					"px": [224,384],
 					"fieldInstances": [],
-					"__worldX": 1136,
-					"__worldY": 304
+					"__worldX": 1088,
+					"__worldY": 384
 				},
 				{
 					"__identifier": "Ground",
@@ -8913,8 +8913,8 @@
 					"defUid": 137,
 					"px": [208,384],
 					"fieldInstances": [],
-					"__worldX": 1120,
-					"__worldY": 304
+					"__worldX": 1072,
+					"__worldY": 384
 				},
 				{
 					"__identifier": "Ground",
@@ -8929,8 +8929,8 @@
 					"defUid": 137,
 					"px": [48,368],
 					"fieldInstances": [],
-					"__worldX": 960,
-					"__worldY": 288
+					"__worldX": 912,
+					"__worldY": 368
 				},
 				{
 					"__identifier": "Ground",
@@ -8945,8 +8945,8 @@
 					"defUid": 137,
 					"px": [48,384],
 					"fieldInstances": [],
-					"__worldX": 960,
-					"__worldY": 304
+					"__worldX": 912,
+					"__worldY": 384
 				},
 				{
 					"__identifier": "Ground",
@@ -8961,8 +8961,8 @@
 					"defUid": 137,
 					"px": [48,400],
 					"fieldInstances": [],
-					"__worldX": 960,
-					"__worldY": 320
+					"__worldX": 912,
+					"__worldY": 400
 				},
 				{
 					"__identifier": "Ground",
@@ -8977,8 +8977,8 @@
 					"defUid": 137,
 					"px": [32,400],
 					"fieldInstances": [],
-					"__worldX": 944,
-					"__worldY": 320
+					"__worldX": 896,
+					"__worldY": 400
 				},
 				{
 					"__identifier": "Ground",
@@ -8993,8 +8993,8 @@
 					"defUid": 137,
 					"px": [32,384],
 					"fieldInstances": [],
-					"__worldX": 944,
-					"__worldY": 304
+					"__worldX": 896,
+					"__worldY": 384
 				},
 				{
 					"__identifier": "Ground",
@@ -9009,8 +9009,8 @@
 					"defUid": 137,
 					"px": [800,368],
 					"fieldInstances": [],
-					"__worldX": 1712,
-					"__worldY": 288
+					"__worldX": 1664,
+					"__worldY": 368
 				},
 				{
 					"__identifier": "Ground",
@@ -9025,8 +9025,8 @@
 					"defUid": 137,
 					"px": [816,368],
 					"fieldInstances": [],
-					"__worldX": 1728,
-					"__worldY": 288
+					"__worldX": 1680,
+					"__worldY": 368
 				},
 				{
 					"__identifier": "Ground",
@@ -9041,8 +9041,8 @@
 					"defUid": 137,
 					"px": [816,384],
 					"fieldInstances": [],
-					"__worldX": 1728,
-					"__worldY": 304
+					"__worldX": 1680,
+					"__worldY": 384
 				},
 				{
 					"__identifier": "Ground",
@@ -9057,8 +9057,8 @@
 					"defUid": 137,
 					"px": [816,400],
 					"fieldInstances": [],
-					"__worldX": 1728,
-					"__worldY": 320
+					"__worldX": 1680,
+					"__worldY": 400
 				},
 				{
 					"__identifier": "Ground",
@@ -9073,8 +9073,8 @@
 					"defUid": 137,
 					"px": [800,384],
 					"fieldInstances": [],
-					"__worldX": 1712,
-					"__worldY": 304
+					"__worldX": 1664,
+					"__worldY": 384
 				},
 				{
 					"__identifier": "Ground",
@@ -9089,8 +9089,8 @@
 					"defUid": 137,
 					"px": [800,400],
 					"fieldInstances": [],
-					"__worldX": 1712,
-					"__worldY": 320
+					"__worldX": 1664,
+					"__worldY": 400
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -9105,8 +9105,8 @@
 					"defUid": 140,
 					"px": [784,144],
 					"fieldInstances": [],
-					"__worldX": 1696,
-					"__worldY": 64
+					"__worldX": 1648,
+					"__worldY": 144
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -9121,8 +9121,8 @@
 					"defUid": 140,
 					"px": [784,112],
 					"fieldInstances": [],
-					"__worldX": 1696,
-					"__worldY": 32
+					"__worldX": 1648,
+					"__worldY": 112
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -9137,8 +9137,8 @@
 					"defUid": 140,
 					"px": [784,128],
 					"fieldInstances": [],
-					"__worldX": 1696,
-					"__worldY": 48
+					"__worldX": 1648,
+					"__worldY": 128
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -9153,8 +9153,8 @@
 					"defUid": 140,
 					"px": [784,160],
 					"fieldInstances": [],
-					"__worldX": 1696,
-					"__worldY": 80
+					"__worldX": 1648,
+					"__worldY": 160
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -9169,8 +9169,8 @@
 					"defUid": 140,
 					"px": [48,144],
 					"fieldInstances": [],
-					"__worldX": 960,
-					"__worldY": 64
+					"__worldX": 912,
+					"__worldY": 144
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -9185,8 +9185,8 @@
 					"defUid": 140,
 					"px": [48,112],
 					"fieldInstances": [],
-					"__worldX": 960,
-					"__worldY": 32
+					"__worldX": 912,
+					"__worldY": 112
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -9201,8 +9201,8 @@
 					"defUid": 140,
 					"px": [48,128],
 					"fieldInstances": [],
-					"__worldX": 960,
-					"__worldY": 48
+					"__worldX": 912,
+					"__worldY": 128
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -9217,8 +9217,8 @@
 					"defUid": 140,
 					"px": [48,160],
 					"fieldInstances": [],
-					"__worldX": 960,
-					"__worldY": 80
+					"__worldX": 912,
+					"__worldY": 160
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -9233,8 +9233,8 @@
 					"defUid": 140,
 					"px": [48,336],
 					"fieldInstances": [],
-					"__worldX": 960,
-					"__worldY": 256
+					"__worldX": 912,
+					"__worldY": 336
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -9249,8 +9249,8 @@
 					"defUid": 140,
 					"px": [48,352],
 					"fieldInstances": [],
-					"__worldX": 960,
-					"__worldY": 272
+					"__worldX": 912,
+					"__worldY": 352
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -9265,8 +9265,8 @@
 					"defUid": 140,
 					"px": [784,336],
 					"fieldInstances": [],
-					"__worldX": 1696,
-					"__worldY": 256
+					"__worldX": 1648,
+					"__worldY": 336
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -9281,8 +9281,8 @@
 					"defUid": 140,
 					"px": [784,352],
 					"fieldInstances": [],
-					"__worldX": 1696,
-					"__worldY": 272
+					"__worldX": 1648,
+					"__worldY": 352
 				},
 				{
 					"__identifier": "Wall_Invisible",
@@ -9297,8 +9297,8 @@
 					"defUid": 141,
 					"px": [0,80],
 					"fieldInstances": [],
-					"__worldX": 912,
-					"__worldY": 0
+					"__worldX": 864,
+					"__worldY": 80
 				},
 				{
 					"__identifier": "One_Way",
@@ -9313,8 +9313,8 @@
 					"defUid": 20,
 					"px": [720,288],
 					"fieldInstances": [],
-					"__worldX": 1632,
-					"__worldY": 208
+					"__worldX": 1584,
+					"__worldY": 288
 				},
 				{
 					"__identifier": "One_Way",
@@ -9329,8 +9329,8 @@
 					"defUid": 20,
 					"px": [704,288],
 					"fieldInstances": [],
-					"__worldX": 1616,
-					"__worldY": 208
+					"__worldX": 1568,
+					"__worldY": 288
 				},
 				{
 					"__identifier": "Ground",
@@ -9345,8 +9345,8 @@
 					"defUid": 137,
 					"px": [96,288],
 					"fieldInstances": [],
-					"__worldX": 1008,
-					"__worldY": 208
+					"__worldX": 960,
+					"__worldY": 288
 				},
 				{
 					"__identifier": "One_Way",
@@ -9361,8 +9361,8 @@
 					"defUid": 20,
 					"px": [128,288],
 					"fieldInstances": [],
-					"__worldX": 1040,
-					"__worldY": 208
+					"__worldX": 992,
+					"__worldY": 288
 				},
 				{
 					"__identifier": "Ground",
@@ -9377,8 +9377,8 @@
 					"defUid": 137,
 					"px": [176,368],
 					"fieldInstances": [],
-					"__worldX": 1088,
-					"__worldY": 288
+					"__worldX": 1040,
+					"__worldY": 368
 				},
 				{
 					"__identifier": "Ground",
@@ -9393,8 +9393,8 @@
 					"defUid": 137,
 					"px": [192,384],
 					"fieldInstances": [],
-					"__worldX": 1104,
-					"__worldY": 304
+					"__worldX": 1056,
+					"__worldY": 384
 				},
 				{
 					"__identifier": "Ground",
@@ -9409,8 +9409,8 @@
 					"defUid": 137,
 					"px": [176,384],
 					"fieldInstances": [],
-					"__worldX": 1088,
-					"__worldY": 304
+					"__worldX": 1040,
+					"__worldY": 384
 				},
 				{
 					"__identifier": "Ground",
@@ -9425,8 +9425,8 @@
 					"defUid": 137,
 					"px": [272,384],
 					"fieldInstances": [],
-					"__worldX": 1184,
-					"__worldY": 304
+					"__worldX": 1136,
+					"__worldY": 384
 				},
 				{
 					"__identifier": "Ground",
@@ -9441,8 +9441,8 @@
 					"defUid": 137,
 					"px": [432,384],
 					"fieldInstances": [],
-					"__worldX": 1344,
-					"__worldY": 304
+					"__worldX": 1296,
+					"__worldY": 384
 				},
 				{
 					"__identifier": "Ground",
@@ -9457,8 +9457,8 @@
 					"defUid": 137,
 					"px": [416,384],
 					"fieldInstances": [],
-					"__worldX": 1328,
-					"__worldY": 304
+					"__worldX": 1280,
+					"__worldY": 384
 				},
 				{
 					"__identifier": "One_Way",
@@ -9473,8 +9473,8 @@
 					"defUid": 20,
 					"px": [240,320],
 					"fieldInstances": [],
-					"__worldX": 1152,
-					"__worldY": 240
+					"__worldX": 1104,
+					"__worldY": 320
 				},
 				{
 					"__identifier": "One_Way",
@@ -9489,8 +9489,8 @@
 					"defUid": 20,
 					"px": [240,256],
 					"fieldInstances": [],
-					"__worldX": 1152,
-					"__worldY": 176
+					"__worldX": 1104,
+					"__worldY": 256
 				},
 				{
 					"__identifier": "One_Way",
@@ -9505,8 +9505,8 @@
 					"defUid": 20,
 					"px": [304,320],
 					"fieldInstances": [],
-					"__worldX": 1216,
-					"__worldY": 240
+					"__worldX": 1168,
+					"__worldY": 320
 				},
 				{
 					"__identifier": "One_Way",
@@ -9521,8 +9521,8 @@
 					"defUid": 20,
 					"px": [512,320],
 					"fieldInstances": [],
-					"__worldX": 1424,
-					"__worldY": 240
+					"__worldX": 1376,
+					"__worldY": 320
 				},
 				{
 					"__identifier": "One_Way",
@@ -9537,8 +9537,8 @@
 					"defUid": 20,
 					"px": [528,320],
 					"fieldInstances": [],
-					"__worldX": 1440,
-					"__worldY": 240
+					"__worldX": 1392,
+					"__worldY": 320
 				},
 				{
 					"__identifier": "One_Way",
@@ -9553,8 +9553,8 @@
 					"defUid": 20,
 					"px": [528,256],
 					"fieldInstances": [],
-					"__worldX": 1440,
-					"__worldY": 176
+					"__worldX": 1392,
+					"__worldY": 256
 				},
 				{
 					"__identifier": "One_Way",
@@ -9569,8 +9569,8 @@
 					"defUid": 20,
 					"px": [304,256],
 					"fieldInstances": [],
-					"__worldX": 1216,
-					"__worldY": 176
+					"__worldX": 1168,
+					"__worldY": 256
 				},
 				{
 					"__identifier": "One_Way",
@@ -9585,8 +9585,8 @@
 					"defUid": 20,
 					"px": [592,256],
 					"fieldInstances": [],
-					"__worldX": 1504,
-					"__worldY": 176
+					"__worldX": 1456,
+					"__worldY": 256
 				},
 				{
 					"__identifier": "One_Way",
@@ -9601,8 +9601,8 @@
 					"defUid": 20,
 					"px": [592,320],
 					"fieldInstances": [],
-					"__worldX": 1504,
-					"__worldY": 240
+					"__worldX": 1456,
+					"__worldY": 320
 				},
 				{
 					"__identifier": "Ground",
@@ -9617,8 +9617,8 @@
 					"defUid": 137,
 					"px": [208,256],
 					"fieldInstances": [],
-					"__worldX": 1120,
-					"__worldY": 176
+					"__worldX": 1072,
+					"__worldY": 256
 				},
 				{
 					"__identifier": "Ground",
@@ -9633,8 +9633,8 @@
 					"defUid": 137,
 					"px": [208,272],
 					"fieldInstances": [],
-					"__worldX": 1120,
-					"__worldY": 192
+					"__worldX": 1072,
+					"__worldY": 272
 				},
 				{
 					"__identifier": "Ground",
@@ -9649,8 +9649,8 @@
 					"defUid": 137,
 					"px": [336,272],
 					"fieldInstances": [],
-					"__worldX": 1248,
-					"__worldY": 192
+					"__worldX": 1200,
+					"__worldY": 272
 				},
 				{
 					"__identifier": "Ground",
@@ -9665,8 +9665,8 @@
 					"defUid": 137,
 					"px": [336,256],
 					"fieldInstances": [],
-					"__worldX": 1248,
-					"__worldY": 176
+					"__worldX": 1200,
+					"__worldY": 256
 				},
 				{
 					"__identifier": "Ground",
@@ -9681,8 +9681,8 @@
 					"defUid": 137,
 					"px": [496,256],
 					"fieldInstances": [],
-					"__worldX": 1408,
-					"__worldY": 176
+					"__worldX": 1360,
+					"__worldY": 256
 				},
 				{
 					"__identifier": "Ground",
@@ -9697,8 +9697,8 @@
 					"defUid": 137,
 					"px": [496,272],
 					"fieldInstances": [],
-					"__worldX": 1408,
-					"__worldY": 192
+					"__worldX": 1360,
+					"__worldY": 272
 				},
 				{
 					"__identifier": "Ground",
@@ -9713,8 +9713,8 @@
 					"defUid": 137,
 					"px": [624,272],
 					"fieldInstances": [],
-					"__worldX": 1536,
-					"__worldY": 192
+					"__worldX": 1488,
+					"__worldY": 272
 				},
 				{
 					"__identifier": "Ground",
@@ -9729,8 +9729,8 @@
 					"defUid": 137,
 					"px": [624,256],
 					"fieldInstances": [],
-					"__worldX": 1536,
-					"__worldY": 176
+					"__worldX": 1488,
+					"__worldY": 256
 				},
 				{
 					"__identifier": "Moss_Balls",
@@ -9745,8 +9745,8 @@
 					"defUid": 139,
 					"px": [624,240],
 					"fieldInstances": [],
-					"__worldX": 1536,
-					"__worldY": 160
+					"__worldX": 1488,
+					"__worldY": 240
 				},
 				{
 					"__identifier": "Moss_Balls",
@@ -9761,8 +9761,8 @@
 					"defUid": 139,
 					"px": [496,288],
 					"fieldInstances": [],
-					"__worldX": 1408,
-					"__worldY": 208
+					"__worldX": 1360,
+					"__worldY": 288
 				},
 				{
 					"__identifier": "Moss_Balls",
@@ -9777,8 +9777,8 @@
 					"defUid": 139,
 					"px": [624,288],
 					"fieldInstances": [],
-					"__worldX": 1536,
-					"__worldY": 208
+					"__worldX": 1488,
+					"__worldY": 288
 				},
 				{
 					"__identifier": "Moss_Balls",
@@ -9793,8 +9793,8 @@
 					"defUid": 139,
 					"px": [336,288],
 					"fieldInstances": [],
-					"__worldX": 1248,
-					"__worldY": 208
+					"__worldX": 1200,
+					"__worldY": 288
 				},
 				{
 					"__identifier": "Moss_Balls",
@@ -9809,8 +9809,8 @@
 					"defUid": 139,
 					"px": [336,240],
 					"fieldInstances": [],
-					"__worldX": 1248,
-					"__worldY": 160
+					"__worldX": 1200,
+					"__worldY": 240
 				},
 				{
 					"__identifier": "Moss_Balls",
@@ -9825,8 +9825,8 @@
 					"defUid": 139,
 					"px": [208,288],
 					"fieldInstances": [],
-					"__worldX": 1120,
-					"__worldY": 208
+					"__worldX": 1072,
+					"__worldY": 288
 				},
 				{
 					"__identifier": "Moss_Balls",
@@ -9841,8 +9841,8 @@
 					"defUid": 139,
 					"px": [208,240],
 					"fieldInstances": [],
-					"__worldX": 1120,
-					"__worldY": 160
+					"__worldX": 1072,
+					"__worldY": 240
 				},
 				{
 					"__identifier": "Moss_Balls",
@@ -9857,8 +9857,8 @@
 					"defUid": 139,
 					"px": [336,224],
 					"fieldInstances": [],
-					"__worldX": 1248,
-					"__worldY": 144
+					"__worldX": 1200,
+					"__worldY": 224
 				},
 				{
 					"__identifier": "Moss_Balls",
@@ -9873,8 +9873,8 @@
 					"defUid": 139,
 					"px": [208,224],
 					"fieldInstances": [],
-					"__worldX": 1120,
-					"__worldY": 144
+					"__worldX": 1072,
+					"__worldY": 224
 				},
 				{
 					"__identifier": "Moss_Balls",
@@ -9889,8 +9889,8 @@
 					"defUid": 139,
 					"px": [496,224],
 					"fieldInstances": [],
-					"__worldX": 1408,
-					"__worldY": 144
+					"__worldX": 1360,
+					"__worldY": 224
 				},
 				{
 					"__identifier": "Moss_Balls",
@@ -9905,8 +9905,8 @@
 					"defUid": 139,
 					"px": [624,224],
 					"fieldInstances": [],
-					"__worldX": 1536,
-					"__worldY": 144
+					"__worldX": 1488,
+					"__worldY": 224
 				},
 				{
 					"__identifier": "Ground",
@@ -9921,8 +9921,8 @@
 					"defUid": 137,
 					"px": [768,192],
 					"fieldInstances": [],
-					"__worldX": 1680,
-					"__worldY": 112
+					"__worldX": 1632,
+					"__worldY": 192
 				},
 				{
 					"__identifier": "Ground",
@@ -9937,8 +9937,8 @@
 					"defUid": 137,
 					"px": [784,192],
 					"fieldInstances": [],
-					"__worldX": 1696,
-					"__worldY": 112
+					"__worldX": 1648,
+					"__worldY": 192
 				},
 				{
 					"__identifier": "Ground",
@@ -9953,8 +9953,8 @@
 					"defUid": 137,
 					"px": [800,192],
 					"fieldInstances": [],
-					"__worldX": 1712,
-					"__worldY": 112
+					"__worldX": 1664,
+					"__worldY": 192
 				},
 				{
 					"__identifier": "Ground",
@@ -9969,8 +9969,8 @@
 					"defUid": 137,
 					"px": [736,208],
 					"fieldInstances": [],
-					"__worldX": 1648,
-					"__worldY": 128
+					"__worldX": 1600,
+					"__worldY": 208
 				},
 				{
 					"__identifier": "Ground",
@@ -9985,8 +9985,8 @@
 					"defUid": 137,
 					"px": [736,224],
 					"fieldInstances": [],
-					"__worldX": 1648,
-					"__worldY": 144
+					"__worldX": 1600,
+					"__worldY": 224
 				},
 				{
 					"__identifier": "Ground",
@@ -10001,8 +10001,8 @@
 					"defUid": 137,
 					"px": [752,208],
 					"fieldInstances": [],
-					"__worldX": 1664,
-					"__worldY": 128
+					"__worldX": 1616,
+					"__worldY": 208
 				},
 				{
 					"__identifier": "Moss_Balls",
@@ -10017,8 +10017,8 @@
 					"defUid": 139,
 					"px": [736,272],
 					"fieldInstances": [],
-					"__worldX": 1648,
-					"__worldY": 192
+					"__worldX": 1600,
+					"__worldY": 272
 				},
 				{
 					"__identifier": "Moss_Balls",
@@ -10033,8 +10033,8 @@
 					"defUid": 139,
 					"px": [736,256],
 					"fieldInstances": [],
-					"__worldX": 1648,
-					"__worldY": 176
+					"__worldX": 1600,
+					"__worldY": 256
 				},
 				{
 					"__identifier": "Moss_Balls",
@@ -10049,8 +10049,8 @@
 					"defUid": 139,
 					"px": [736,240],
 					"fieldInstances": [],
-					"__worldX": 1648,
-					"__worldY": 160
+					"__worldX": 1600,
+					"__worldY": 240
 				},
 				{
 					"__identifier": "Moss_Balls",
@@ -10065,8 +10065,8 @@
 					"defUid": 139,
 					"px": [96,272],
 					"fieldInstances": [],
-					"__worldX": 1008,
-					"__worldY": 192
+					"__worldX": 960,
+					"__worldY": 272
 				},
 				{
 					"__identifier": "Moss_Balls",
@@ -10081,8 +10081,8 @@
 					"defUid": 139,
 					"px": [96,256],
 					"fieldInstances": [],
-					"__worldX": 1008,
-					"__worldY": 176
+					"__worldX": 960,
+					"__worldY": 256
 				},
 				{
 					"__identifier": "Moss_Balls",
@@ -10097,8 +10097,8 @@
 					"defUid": 139,
 					"px": [96,240],
 					"fieldInstances": [],
-					"__worldX": 1008,
-					"__worldY": 160
+					"__worldX": 960,
+					"__worldY": 240
 				},
 				{
 					"__identifier": "One_Way",
@@ -10113,8 +10113,8 @@
 					"defUid": 20,
 					"px": [48,288],
 					"fieldInstances": [],
-					"__worldX": 960,
-					"__worldY": 208
+					"__worldX": 912,
+					"__worldY": 288
 				},
 				{
 					"__identifier": "Ground",
@@ -10129,8 +10129,8 @@
 					"defUid": 137,
 					"px": [736,288],
 					"fieldInstances": [],
-					"__worldX": 1648,
-					"__worldY": 208
+					"__worldX": 1600,
+					"__worldY": 288
 				},
 				{
 					"__identifier": "One_Way",
@@ -10145,8 +10145,8 @@
 					"defUid": 20,
 					"px": [784,288],
 					"fieldInstances": [],
-					"__worldX": 1696,
-					"__worldY": 208
+					"__worldX": 1648,
+					"__worldY": 288
 				},
 				{
 					"__identifier": "One_Way",
@@ -10161,8 +10161,8 @@
 					"defUid": 20,
 					"px": [768,288],
 					"fieldInstances": [],
-					"__worldX": 1680,
-					"__worldY": 208
+					"__worldX": 1632,
+					"__worldY": 288
 				},
 				{
 					"__identifier": "One_Way",
@@ -10177,8 +10177,8 @@
 					"defUid": 20,
 					"px": [752,288],
 					"fieldInstances": [],
-					"__worldX": 1664,
-					"__worldY": 208
+					"__worldX": 1616,
+					"__worldY": 288
 				},
 				{
 					"__identifier": "Ground",
@@ -10193,8 +10193,8 @@
 					"defUid": 137,
 					"px": [96,224],
 					"fieldInstances": [],
-					"__worldX": 1008,
-					"__worldY": 144
+					"__worldX": 960,
+					"__worldY": 224
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -10209,8 +10209,8 @@
 					"defUid": 140,
 					"px": [400,256],
 					"fieldInstances": [],
-					"__worldX": 1312,
-					"__worldY": 176
+					"__worldX": 1264,
+					"__worldY": 256
 				},
 				{
 					"__identifier": "Ground",
@@ -10225,8 +10225,8 @@
 					"defUid": 137,
 					"px": [96,208],
 					"fieldInstances": [],
-					"__worldX": 1008,
-					"__worldY": 128
+					"__worldX": 960,
+					"__worldY": 208
 				},
 				{
 					"__identifier": "Ground",
@@ -10241,8 +10241,8 @@
 					"defUid": 137,
 					"px": [80,208],
 					"fieldInstances": [],
-					"__worldX": 992,
-					"__worldY": 128
+					"__worldX": 944,
+					"__worldY": 208
 				},
 				{
 					"__identifier": "Ground",
@@ -10257,8 +10257,8 @@
 					"defUid": 137,
 					"px": [80,192],
 					"fieldInstances": [],
-					"__worldX": 992,
-					"__worldY": 112
+					"__worldX": 944,
+					"__worldY": 192
 				},
 				{
 					"__identifier": "Ground",
@@ -10273,8 +10273,8 @@
 					"defUid": 137,
 					"px": [64,192],
 					"fieldInstances": [],
-					"__worldX": 976,
-					"__worldY": 112
+					"__worldX": 928,
+					"__worldY": 192
 				},
 				{
 					"__identifier": "Ground",
@@ -10289,8 +10289,8 @@
 					"defUid": 137,
 					"px": [48,192],
 					"fieldInstances": [],
-					"__worldX": 960,
-					"__worldY": 112
+					"__worldX": 912,
+					"__worldY": 192
 				},
 				{
 					"__identifier": "Ground",
@@ -10305,8 +10305,8 @@
 					"defUid": 137,
 					"px": [32,192],
 					"fieldInstances": [],
-					"__worldX": 944,
-					"__worldY": 112
+					"__worldX": 896,
+					"__worldY": 192
 				},
 				{
 					"__identifier": "One_Way",
@@ -10321,8 +10321,8 @@
 					"defUid": 20,
 					"px": [688,288],
 					"fieldInstances": [],
-					"__worldX": 1600,
-					"__worldY": 208
+					"__worldX": 1552,
+					"__worldY": 288
 				},
 				{
 					"__identifier": "One_Way",
@@ -10337,8 +10337,8 @@
 					"defUid": 20,
 					"px": [144,288],
 					"fieldInstances": [],
-					"__worldX": 1056,
-					"__worldY": 208
+					"__worldX": 1008,
+					"__worldY": 288
 				},
 				{
 					"__identifier": "Wall_Invisible",
@@ -10353,8 +10353,8 @@
 					"defUid": 141,
 					"px": [0,80],
 					"fieldInstances": [],
-					"__worldX": 912,
-					"__worldY": 0
+					"__worldX": 864,
+					"__worldY": 80
 				},
 				{
 					"__identifier": "Ground",
@@ -10369,8 +10369,8 @@
 					"defUid": 137,
 					"px": [16,192],
 					"fieldInstances": [],
-					"__worldX": 928,
-					"__worldY": 112
+					"__worldX": 880,
+					"__worldY": 192
 				},
 				{
 					"__identifier": "Ground",
@@ -10385,8 +10385,8 @@
 					"defUid": 137,
 					"px": [16,288],
 					"fieldInstances": [],
-					"__worldX": 928,
-					"__worldY": 208
+					"__worldX": 880,
+					"__worldY": 288
 				},
 				{
 					"__identifier": "Ground",
@@ -10401,8 +10401,8 @@
 					"defUid": 137,
 					"px": [816,192],
 					"fieldInstances": [],
-					"__worldX": 1728,
-					"__worldY": 112
+					"__worldX": 1680,
+					"__worldY": 192
 				},
 				{
 					"__identifier": "One_Way",
@@ -10417,8 +10417,8 @@
 					"defUid": 20,
 					"px": [32,288],
 					"fieldInstances": [],
-					"__worldX": 944,
-					"__worldY": 208
+					"__worldX": 896,
+					"__worldY": 288
 				},
 				{
 					"__identifier": "One_Way",
@@ -10433,8 +10433,8 @@
 					"defUid": 20,
 					"px": [80,288],
 					"fieldInstances": [],
-					"__worldX": 992,
-					"__worldY": 208
+					"__worldX": 944,
+					"__worldY": 288
 				},
 				{
 					"__identifier": "One_Way",
@@ -10449,8 +10449,8 @@
 					"defUid": 20,
 					"px": [64,288],
 					"fieldInstances": [],
-					"__worldX": 976,
-					"__worldY": 208
+					"__worldX": 928,
+					"__worldY": 288
 				},
 				{
 					"__identifier": "One_Way",
@@ -10465,8 +10465,8 @@
 					"defUid": 20,
 					"px": [800,288],
 					"fieldInstances": [],
-					"__worldX": 1712,
-					"__worldY": 208
+					"__worldX": 1664,
+					"__worldY": 288
 				},
 				{
 					"__identifier": "Ground",
@@ -10481,8 +10481,8 @@
 					"defUid": 137,
 					"px": [816,288],
 					"fieldInstances": [],
-					"__worldX": 1728,
-					"__worldY": 208
+					"__worldX": 1680,
+					"__worldY": 288
 				},
 				{
 					"__identifier": "Ground",
@@ -10497,8 +10497,8 @@
 					"defUid": 137,
 					"px": [96,368],
 					"fieldInstances": [],
-					"__worldX": 1008,
-					"__worldY": 288
+					"__worldX": 960,
+					"__worldY": 368
 				},
 				{
 					"__identifier": "Ground",
@@ -10513,8 +10513,8 @@
 					"defUid": 137,
 					"px": [96,384],
 					"fieldInstances": [],
-					"__worldX": 1008,
-					"__worldY": 304
+					"__worldX": 960,
+					"__worldY": 384
 				},
 				{
 					"__identifier": "Ground",
@@ -10529,8 +10529,8 @@
 					"defUid": 137,
 					"px": [128,384],
 					"fieldInstances": [],
-					"__worldX": 1040,
-					"__worldY": 304
+					"__worldX": 992,
+					"__worldY": 384
 				},
 				{
 					"__identifier": "Ground",
@@ -10545,8 +10545,8 @@
 					"defUid": 137,
 					"px": [112,368],
 					"fieldInstances": [],
-					"__worldX": 1024,
-					"__worldY": 288
+					"__worldX": 976,
+					"__worldY": 368
 				},
 				{
 					"__identifier": "Ground",
@@ -10561,8 +10561,8 @@
 					"defUid": 137,
 					"px": [112,384],
 					"fieldInstances": [],
-					"__worldX": 1024,
-					"__worldY": 304
+					"__worldX": 976,
+					"__worldY": 384
 				},
 				{
 					"__identifier": "Ground",
@@ -10577,8 +10577,8 @@
 					"defUid": 137,
 					"px": [144,368],
 					"fieldInstances": [],
-					"__worldX": 1056,
-					"__worldY": 288
+					"__worldX": 1008,
+					"__worldY": 368
 				},
 				{
 					"__identifier": "Ground",
@@ -10593,8 +10593,8 @@
 					"defUid": 137,
 					"px": [144,384],
 					"fieldInstances": [],
-					"__worldX": 1056,
-					"__worldY": 304
+					"__worldX": 1008,
+					"__worldY": 384
 				},
 				{
 					"__identifier": "Ground",
@@ -10609,8 +10609,8 @@
 					"defUid": 137,
 					"px": [128,368],
 					"fieldInstances": [],
-					"__worldX": 1040,
-					"__worldY": 288
+					"__worldX": 992,
+					"__worldY": 368
 				},
 				{
 					"__identifier": "Ground",
@@ -10625,8 +10625,8 @@
 					"defUid": 137,
 					"px": [32,368],
 					"fieldInstances": [],
-					"__worldX": 944,
-					"__worldY": 288
+					"__worldX": 896,
+					"__worldY": 368
 				},
 				{
 					"__identifier": "Ground",
@@ -10641,8 +10641,8 @@
 					"defUid": 137,
 					"px": [16,400],
 					"fieldInstances": [],
-					"__worldX": 928,
-					"__worldY": 320
+					"__worldX": 880,
+					"__worldY": 400
 				},
 				{
 					"__identifier": "Ground",
@@ -10657,8 +10657,8 @@
 					"defUid": 137,
 					"px": [16,384],
 					"fieldInstances": [],
-					"__worldX": 928,
-					"__worldY": 304
+					"__worldX": 880,
+					"__worldY": 384
 				},
 				{
 					"__identifier": "Ground",
@@ -10673,8 +10673,8 @@
 					"defUid": 137,
 					"px": [16,368],
 					"fieldInstances": [],
-					"__worldX": 928,
-					"__worldY": 288
+					"__worldX": 880,
+					"__worldY": 368
 				},
 				{
 					"__identifier": "Ground",
@@ -10689,8 +10689,8 @@
 					"defUid": 137,
 					"px": [672,384],
 					"fieldInstances": [],
-					"__worldX": 1584,
-					"__worldY": 304
+					"__worldX": 1536,
+					"__worldY": 384
 				},
 				{
 					"__identifier": "Ground",
@@ -10705,8 +10705,8 @@
 					"defUid": 137,
 					"px": [672,400],
 					"fieldInstances": [],
-					"__worldX": 1584,
-					"__worldY": 320
+					"__worldX": 1536,
+					"__worldY": 400
 				},
 				{
 					"__identifier": "Ground",
@@ -10721,8 +10721,8 @@
 					"defUid": 137,
 					"px": [672,368],
 					"fieldInstances": [],
-					"__worldX": 1584,
-					"__worldY": 288
+					"__worldX": 1536,
+					"__worldY": 368
 				},
 				{
 					"__identifier": "Ground",
@@ -10737,8 +10737,8 @@
 					"defUid": 137,
 					"px": [704,368],
 					"fieldInstances": [],
-					"__worldX": 1616,
-					"__worldY": 288
+					"__worldX": 1568,
+					"__worldY": 368
 				},
 				{
 					"__identifier": "Ground",
@@ -10753,8 +10753,8 @@
 					"defUid": 137,
 					"px": [720,368],
 					"fieldInstances": [],
-					"__worldX": 1632,
-					"__worldY": 288
+					"__worldX": 1584,
+					"__worldY": 368
 				},
 				{
 					"__identifier": "Ground",
@@ -10769,8 +10769,8 @@
 					"defUid": 137,
 					"px": [736,368],
 					"fieldInstances": [],
-					"__worldX": 1648,
-					"__worldY": 288
+					"__worldX": 1600,
+					"__worldY": 368
 				},
 				{
 					"__identifier": "Ground",
@@ -10785,8 +10785,8 @@
 					"defUid": 137,
 					"px": [752,368],
 					"fieldInstances": [],
-					"__worldX": 1664,
-					"__worldY": 288
+					"__worldX": 1616,
+					"__worldY": 368
 				},
 				{
 					"__identifier": "Ground",
@@ -10801,8 +10801,8 @@
 					"defUid": 137,
 					"px": [752,384],
 					"fieldInstances": [],
-					"__worldX": 1664,
-					"__worldY": 304
+					"__worldX": 1616,
+					"__worldY": 384
 				},
 				{
 					"__identifier": "Ground",
@@ -10817,8 +10817,8 @@
 					"defUid": 137,
 					"px": [720,384],
 					"fieldInstances": [],
-					"__worldX": 1632,
-					"__worldY": 304
+					"__worldX": 1584,
+					"__worldY": 384
 				},
 				{
 					"__identifier": "Ground",
@@ -10833,8 +10833,8 @@
 					"defUid": 137,
 					"px": [736,384],
 					"fieldInstances": [],
-					"__worldX": 1648,
-					"__worldY": 304
+					"__worldX": 1600,
+					"__worldY": 384
 				},
 				{
 					"__identifier": "Ground",
@@ -10849,8 +10849,8 @@
 					"defUid": 137,
 					"px": [704,384],
 					"fieldInstances": [],
-					"__worldX": 1616,
-					"__worldY": 304
+					"__worldX": 1568,
+					"__worldY": 384
 				},
 				{
 					"__identifier": "Ground",
@@ -10865,8 +10865,8 @@
 					"defUid": 137,
 					"px": [256,368],
 					"fieldInstances": [],
-					"__worldX": 1168,
-					"__worldY": 288
+					"__worldX": 1120,
+					"__worldY": 368
 				},
 				{
 					"__identifier": "Ground",
@@ -10881,8 +10881,8 @@
 					"defUid": 137,
 					"px": [352,384],
 					"fieldInstances": [],
-					"__worldX": 1264,
-					"__worldY": 304
+					"__worldX": 1216,
+					"__worldY": 384
 				},
 				{
 					"__identifier": "Ground",
@@ -10897,8 +10897,8 @@
 					"defUid": 137,
 					"px": [352,368],
 					"fieldInstances": [],
-					"__worldX": 1264,
-					"__worldY": 288
+					"__worldX": 1216,
+					"__worldY": 368
 				},
 				{
 					"__identifier": "Ground",
@@ -10913,8 +10913,8 @@
 					"defUid": 137,
 					"px": [400,384],
 					"fieldInstances": [],
-					"__worldX": 1312,
-					"__worldY": 304
+					"__worldX": 1264,
+					"__worldY": 384
 				},
 				{
 					"__identifier": "Ground",
@@ -10929,8 +10929,8 @@
 					"defUid": 137,
 					"px": [480,384],
 					"fieldInstances": [],
-					"__worldX": 1392,
-					"__worldY": 304
+					"__worldX": 1344,
+					"__worldY": 384
 				},
 				{
 					"__identifier": "Ground",
@@ -10945,8 +10945,8 @@
 					"defUid": 137,
 					"px": [480,368],
 					"fieldInstances": [],
-					"__worldX": 1392,
-					"__worldY": 288
+					"__worldX": 1344,
+					"__worldY": 368
 				},
 				{
 					"__identifier": "Moss_Balls",
@@ -10961,8 +10961,8 @@
 					"defUid": 139,
 					"px": [512,368],
 					"fieldInstances": [],
-					"__worldX": 1424,
-					"__worldY": 288
+					"__worldX": 1376,
+					"__worldY": 368
 				},
 				{
 					"__identifier": "Ground",
@@ -10977,8 +10977,8 @@
 					"defUid": 137,
 					"px": [576,368],
 					"fieldInstances": [],
-					"__worldX": 1488,
-					"__worldY": 288
+					"__worldX": 1440,
+					"__worldY": 368
 				},
 				{
 					"__identifier": "Ground",
@@ -10993,8 +10993,8 @@
 					"defUid": 137,
 					"px": [240,368],
 					"fieldInstances": [],
-					"__worldX": 1152,
-					"__worldY": 288
+					"__worldX": 1104,
+					"__worldY": 368
 				},
 				{
 					"__identifier": "Ground",
@@ -11009,8 +11009,8 @@
 					"defUid": 137,
 					"px": [336,368],
 					"fieldInstances": [],
-					"__worldX": 1248,
-					"__worldY": 288
+					"__worldX": 1200,
+					"__worldY": 368
 				},
 				{
 					"__identifier": "Ground",
@@ -11025,8 +11025,8 @@
 					"defUid": 137,
 					"px": [336,384],
 					"fieldInstances": [],
-					"__worldX": 1248,
-					"__worldY": 304
+					"__worldX": 1200,
+					"__worldY": 384
 				},
 				{
 					"__identifier": "Ground",
@@ -11041,8 +11041,8 @@
 					"defUid": 137,
 					"px": [496,368],
 					"fieldInstances": [],
-					"__worldX": 1408,
-					"__worldY": 288
+					"__worldX": 1360,
+					"__worldY": 368
 				},
 				{
 					"__identifier": "Ground",
@@ -11057,8 +11057,8 @@
 					"defUid": 137,
 					"px": [496,384],
 					"fieldInstances": [],
-					"__worldX": 1408,
-					"__worldY": 304
+					"__worldX": 1360,
+					"__worldY": 384
 				},
 				{
 					"__identifier": "Ground",
@@ -11073,8 +11073,8 @@
 					"defUid": 137,
 					"px": [592,368],
 					"fieldInstances": [],
-					"__worldX": 1504,
-					"__worldY": 288
+					"__worldX": 1456,
+					"__worldY": 368
 				},
 				{
 					"__identifier": "Wall_Invisible",
@@ -11089,8 +11089,8 @@
 					"defUid": 141,
 					"px": [832,80],
 					"fieldInstances": [],
-					"__worldX": 1744,
-					"__worldY": 0
+					"__worldX": 1696,
+					"__worldY": 80
 				},
 				{
 					"__identifier": "Enemy_Ground_Spawn",
@@ -11105,8 +11105,8 @@
 					"defUid": 136,
 					"px": [32,352],
 					"fieldInstances": [],
-					"__worldX": 944,
-					"__worldY": 272
+					"__worldX": 896,
+					"__worldY": 352
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -11121,8 +11121,8 @@
 					"defUid": 140,
 					"px": [32,336],
 					"fieldInstances": [],
-					"__worldX": 944,
-					"__worldY": 256
+					"__worldX": 896,
+					"__worldY": 336
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -11137,8 +11137,8 @@
 					"defUid": 140,
 					"px": [16,336],
 					"fieldInstances": [],
-					"__worldX": 928,
-					"__worldY": 256
+					"__worldX": 880,
+					"__worldY": 336
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -11153,8 +11153,8 @@
 					"defUid": 140,
 					"px": [16,352],
 					"fieldInstances": [],
-					"__worldX": 928,
-					"__worldY": 272
+					"__worldX": 880,
+					"__worldY": 352
 				},
 				{
 					"__identifier": "Enemy_Ground_Spawn",
@@ -11169,8 +11169,8 @@
 					"defUid": 136,
 					"px": [800,352],
 					"fieldInstances": [],
-					"__worldX": 1712,
-					"__worldY": 272
+					"__worldX": 1664,
+					"__worldY": 352
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -11185,8 +11185,8 @@
 					"defUid": 140,
 					"px": [800,336],
 					"fieldInstances": [],
-					"__worldX": 1712,
-					"__worldY": 256
+					"__worldX": 1664,
+					"__worldY": 336
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -11201,8 +11201,8 @@
 					"defUid": 140,
 					"px": [816,336],
 					"fieldInstances": [],
-					"__worldX": 1728,
-					"__worldY": 256
+					"__worldX": 1680,
+					"__worldY": 336
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -11217,8 +11217,8 @@
 					"defUid": 140,
 					"px": [816,352],
 					"fieldInstances": [],
-					"__worldX": 1728,
-					"__worldY": 272
+					"__worldX": 1680,
+					"__worldY": 352
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -11233,8 +11233,8 @@
 					"defUid": 140,
 					"px": [160,224],
 					"fieldInstances": [],
-					"__worldX": 1072,
-					"__worldY": 144
+					"__worldX": 1024,
+					"__worldY": 224
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -11249,8 +11249,8 @@
 					"defUid": 140,
 					"px": [144,224],
 					"fieldInstances": [],
-					"__worldX": 1056,
-					"__worldY": 144
+					"__worldX": 1008,
+					"__worldY": 224
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -11265,8 +11265,8 @@
 					"defUid": 140,
 					"px": [128,224],
 					"fieldInstances": [],
-					"__worldX": 1040,
-					"__worldY": 144
+					"__worldX": 992,
+					"__worldY": 224
 				},
 				{
 					"__identifier": "Enemy_Air_Spawn",
@@ -11281,8 +11281,8 @@
 					"defUid": 135,
 					"px": [144,240],
 					"fieldInstances": [],
-					"__worldX": 1056,
-					"__worldY": 160
+					"__worldX": 1008,
+					"__worldY": 240
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -11297,8 +11297,8 @@
 					"defUid": 140,
 					"px": [160,256],
 					"fieldInstances": [],
-					"__worldX": 1072,
-					"__worldY": 176
+					"__worldX": 1024,
+					"__worldY": 256
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -11313,8 +11313,8 @@
 					"defUid": 140,
 					"px": [144,256],
 					"fieldInstances": [],
-					"__worldX": 1056,
-					"__worldY": 176
+					"__worldX": 1008,
+					"__worldY": 256
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -11329,8 +11329,8 @@
 					"defUid": 140,
 					"px": [160,240],
 					"fieldInstances": [],
-					"__worldX": 1072,
-					"__worldY": 160
+					"__worldX": 1024,
+					"__worldY": 240
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -11345,8 +11345,8 @@
 					"defUid": 140,
 					"px": [128,240],
 					"fieldInstances": [],
-					"__worldX": 1040,
-					"__worldY": 160
+					"__worldX": 992,
+					"__worldY": 240
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -11361,8 +11361,8 @@
 					"defUid": 140,
 					"px": [128,256],
 					"fieldInstances": [],
-					"__worldX": 1040,
-					"__worldY": 176
+					"__worldX": 992,
+					"__worldY": 256
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -11377,8 +11377,8 @@
 					"defUid": 140,
 					"px": [704,224],
 					"fieldInstances": [],
-					"__worldX": 1616,
-					"__worldY": 144
+					"__worldX": 1568,
+					"__worldY": 224
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -11393,8 +11393,8 @@
 					"defUid": 140,
 					"px": [688,224],
 					"fieldInstances": [],
-					"__worldX": 1600,
-					"__worldY": 144
+					"__worldX": 1552,
+					"__worldY": 224
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -11409,8 +11409,8 @@
 					"defUid": 140,
 					"px": [672,224],
 					"fieldInstances": [],
-					"__worldX": 1584,
-					"__worldY": 144
+					"__worldX": 1536,
+					"__worldY": 224
 				},
 				{
 					"__identifier": "Enemy_Air_Spawn",
@@ -11425,8 +11425,8 @@
 					"defUid": 135,
 					"px": [688,240],
 					"fieldInstances": [],
-					"__worldX": 1600,
-					"__worldY": 160
+					"__worldX": 1552,
+					"__worldY": 240
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -11441,8 +11441,8 @@
 					"defUid": 140,
 					"px": [704,256],
 					"fieldInstances": [],
-					"__worldX": 1616,
-					"__worldY": 176
+					"__worldX": 1568,
+					"__worldY": 256
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -11457,8 +11457,8 @@
 					"defUid": 140,
 					"px": [688,256],
 					"fieldInstances": [],
-					"__worldX": 1600,
-					"__worldY": 176
+					"__worldX": 1552,
+					"__worldY": 256
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -11473,8 +11473,8 @@
 					"defUid": 140,
 					"px": [704,240],
 					"fieldInstances": [],
-					"__worldX": 1616,
-					"__worldY": 160
+					"__worldX": 1568,
+					"__worldY": 240
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -11489,8 +11489,8 @@
 					"defUid": 140,
 					"px": [672,240],
 					"fieldInstances": [],
-					"__worldX": 1584,
-					"__worldY": 160
+					"__worldX": 1536,
+					"__worldY": 240
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -11505,8 +11505,8 @@
 					"defUid": 140,
 					"px": [672,256],
 					"fieldInstances": [],
-					"__worldX": 1584,
-					"__worldY": 176
+					"__worldX": 1536,
+					"__worldY": 256
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -11521,8 +11521,8 @@
 					"defUid": 140,
 					"px": [656,176],
 					"fieldInstances": [],
-					"__worldX": 1568,
-					"__worldY": 96
+					"__worldX": 1520,
+					"__worldY": 176
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -11537,8 +11537,8 @@
 					"defUid": 140,
 					"px": [656,144],
 					"fieldInstances": [],
-					"__worldX": 1568,
-					"__worldY": 64
+					"__worldX": 1520,
+					"__worldY": 144
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -11553,8 +11553,8 @@
 					"defUid": 140,
 					"px": [656,112],
 					"fieldInstances": [],
-					"__worldX": 1568,
-					"__worldY": 32
+					"__worldX": 1520,
+					"__worldY": 112
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -11569,8 +11569,8 @@
 					"defUid": 140,
 					"px": [656,128],
 					"fieldInstances": [],
-					"__worldX": 1568,
-					"__worldY": 48
+					"__worldX": 1520,
+					"__worldY": 128
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -11585,8 +11585,8 @@
 					"defUid": 140,
 					"px": [656,160],
 					"fieldInstances": [],
-					"__worldX": 1568,
-					"__worldY": 80
+					"__worldX": 1520,
+					"__worldY": 160
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -11601,8 +11601,8 @@
 					"defUid": 140,
 					"px": [656,208],
 					"fieldInstances": [],
-					"__worldX": 1568,
-					"__worldY": 128
+					"__worldX": 1520,
+					"__worldY": 208
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -11617,8 +11617,8 @@
 					"defUid": 140,
 					"px": [656,192],
 					"fieldInstances": [],
-					"__worldX": 1568,
-					"__worldY": 112
+					"__worldX": 1520,
+					"__worldY": 192
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -11633,8 +11633,8 @@
 					"defUid": 140,
 					"px": [672,112],
 					"fieldInstances": [],
-					"__worldX": 1584,
-					"__worldY": 32
+					"__worldX": 1536,
+					"__worldY": 112
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -11649,8 +11649,8 @@
 					"defUid": 140,
 					"px": [688,112],
 					"fieldInstances": [],
-					"__worldX": 1600,
-					"__worldY": 32
+					"__worldX": 1552,
+					"__worldY": 112
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -11665,8 +11665,8 @@
 					"defUid": 140,
 					"px": [784,176],
 					"fieldInstances": [],
-					"__worldX": 1696,
-					"__worldY": 96
+					"__worldX": 1648,
+					"__worldY": 176
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -11681,8 +11681,8 @@
 					"defUid": 140,
 					"px": [752,176],
 					"fieldInstances": [],
-					"__worldX": 1664,
-					"__worldY": 96
+					"__worldX": 1616,
+					"__worldY": 176
 				},
 				{
 					"__identifier": "Ground",
@@ -11697,8 +11697,8 @@
 					"defUid": 137,
 					"px": [752,192],
 					"fieldInstances": [],
-					"__worldX": 1664,
-					"__worldY": 112
+					"__worldX": 1616,
+					"__worldY": 192
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -11713,8 +11713,8 @@
 					"defUid": 140,
 					"px": [704,208],
 					"fieldInstances": [],
-					"__worldX": 1616,
-					"__worldY": 128
+					"__worldX": 1568,
+					"__worldY": 208
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -11729,8 +11729,8 @@
 					"defUid": 140,
 					"px": [720,192],
 					"fieldInstances": [],
-					"__worldX": 1632,
-					"__worldY": 112
+					"__worldX": 1584,
+					"__worldY": 192
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -11745,8 +11745,8 @@
 					"defUid": 140,
 					"px": [720,208],
 					"fieldInstances": [],
-					"__worldX": 1632,
-					"__worldY": 128
+					"__worldX": 1584,
+					"__worldY": 208
 				},
 				{
 					"__identifier": "Enemy_Air_Spawn",
@@ -11761,8 +11761,8 @@
 					"defUid": 135,
 					"px": [704,192],
 					"fieldInstances": [],
-					"__worldX": 1616,
-					"__worldY": 112
+					"__worldX": 1568,
+					"__worldY": 192
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -11777,8 +11777,8 @@
 					"defUid": 140,
 					"px": [80,176],
 					"fieldInstances": [],
-					"__worldX": 992,
-					"__worldY": 96
+					"__worldX": 944,
+					"__worldY": 176
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -11793,8 +11793,8 @@
 					"defUid": 140,
 					"px": [64,176],
 					"fieldInstances": [],
-					"__worldX": 976,
-					"__worldY": 96
+					"__worldX": 928,
+					"__worldY": 176
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -11809,8 +11809,8 @@
 					"defUid": 140,
 					"px": [96,176],
 					"fieldInstances": [],
-					"__worldX": 1008,
-					"__worldY": 96
+					"__worldX": 960,
+					"__worldY": 176
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -11825,8 +11825,8 @@
 					"defUid": 140,
 					"px": [48,176],
 					"fieldInstances": [],
-					"__worldX": 960,
-					"__worldY": 96
+					"__worldX": 912,
+					"__worldY": 176
 				},
 				{
 					"__identifier": "Mask",
@@ -11841,8 +11841,8 @@
 					"defUid": 174,
 					"px": [0,0],
 					"fieldInstances": [],
-					"__worldX": 912,
-					"__worldY": -80
+					"__worldX": 864,
+					"__worldY": 0
 				},
 				{
 					"__identifier": "Enemy_Ground_Spawn",
@@ -11857,8 +11857,8 @@
 					"defUid": 136,
 					"px": [640,352],
 					"fieldInstances": [],
-					"__worldX": 1552,
-					"__worldY": 272
+					"__worldX": 1504,
+					"__worldY": 352
 				},
 				{
 					"__identifier": "Enemy_Ground_Spawn",
@@ -11873,8 +11873,8 @@
 					"defUid": 136,
 					"px": [608,352],
 					"fieldInstances": [],
-					"__worldX": 1520,
-					"__worldY": 272
+					"__worldX": 1472,
+					"__worldY": 352
 				},
 				{
 					"__identifier": "Enemy_Ground_Spawn",
@@ -11889,8 +11889,8 @@
 					"defUid": 136,
 					"px": [224,352],
 					"fieldInstances": [],
-					"__worldX": 1136,
-					"__worldY": 272
+					"__worldX": 1088,
+					"__worldY": 352
 				},
 				{
 					"__identifier": "Enemy_Ground_Spawn",
@@ -11905,8 +11905,8 @@
 					"defUid": 136,
 					"px": [192,352],
 					"fieldInstances": [],
-					"__worldX": 1104,
-					"__worldY": 272
+					"__worldX": 1056,
+					"__worldY": 352
 				},
 				{
 					"__identifier": "Enemy_Ground_Spawn",
@@ -11921,8 +11921,8 @@
 					"defUid": 136,
 					"px": [256,352],
 					"fieldInstances": [],
-					"__worldX": 1168,
-					"__worldY": 272
+					"__worldX": 1120,
+					"__worldY": 352
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -11937,8 +11937,8 @@
 					"defUid": 140,
 					"px": [512,336],
 					"fieldInstances": [],
-					"__worldX": 1424,
-					"__worldY": 256
+					"__worldX": 1376,
+					"__worldY": 336
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -11953,8 +11953,8 @@
 					"defUid": 140,
 					"px": [544,336],
 					"fieldInstances": [],
-					"__worldX": 1456,
-					"__worldY": 256
+					"__worldX": 1408,
+					"__worldY": 336
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -11969,8 +11969,8 @@
 					"defUid": 140,
 					"px": [320,336],
 					"fieldInstances": [],
-					"__worldX": 1232,
-					"__worldY": 256
+					"__worldX": 1184,
+					"__worldY": 336
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -11985,8 +11985,8 @@
 					"defUid": 140,
 					"px": [288,336],
 					"fieldInstances": [],
-					"__worldX": 1200,
-					"__worldY": 256
+					"__worldX": 1152,
+					"__worldY": 336
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -12001,8 +12001,8 @@
 					"defUid": 140,
 					"px": [304,352],
 					"fieldInstances": [],
-					"__worldX": 1216,
-					"__worldY": 272
+					"__worldX": 1168,
+					"__worldY": 352
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -12017,8 +12017,8 @@
 					"defUid": 140,
 					"px": [208,352],
 					"fieldInstances": [],
-					"__worldX": 1120,
-					"__worldY": 272
+					"__worldX": 1072,
+					"__worldY": 352
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -12033,8 +12033,8 @@
 					"defUid": 140,
 					"px": [560,352],
 					"fieldInstances": [],
-					"__worldX": 1472,
-					"__worldY": 272
+					"__worldX": 1424,
+					"__worldY": 352
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -12049,8 +12049,8 @@
 					"defUid": 140,
 					"px": [528,352],
 					"fieldInstances": [],
-					"__worldX": 1440,
-					"__worldY": 272
+					"__worldX": 1392,
+					"__worldY": 352
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -12065,8 +12065,8 @@
 					"defUid": 140,
 					"px": [496,352],
 					"fieldInstances": [],
-					"__worldX": 1408,
-					"__worldY": 272
+					"__worldX": 1360,
+					"__worldY": 352
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -12081,8 +12081,8 @@
 					"defUid": 140,
 					"px": [592,352],
 					"fieldInstances": [],
-					"__worldX": 1504,
-					"__worldY": 272
+					"__worldX": 1456,
+					"__worldY": 352
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -12097,8 +12097,8 @@
 					"defUid": 140,
 					"px": [624,352],
 					"fieldInstances": [],
-					"__worldX": 1536,
-					"__worldY": 272
+					"__worldX": 1488,
+					"__worldY": 352
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -12113,8 +12113,8 @@
 					"defUid": 140,
 					"px": [656,352],
 					"fieldInstances": [],
-					"__worldX": 1568,
-					"__worldY": 272
+					"__worldX": 1520,
+					"__worldY": 352
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -12129,8 +12129,8 @@
 					"defUid": 140,
 					"px": [320,352],
 					"fieldInstances": [],
-					"__worldX": 1232,
-					"__worldY": 272
+					"__worldX": 1184,
+					"__worldY": 352
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -12145,8 +12145,8 @@
 					"defUid": 140,
 					"px": [320,352],
 					"fieldInstances": [],
-					"__worldX": 1232,
-					"__worldY": 272
+					"__worldX": 1184,
+					"__worldY": 352
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -12161,8 +12161,8 @@
 					"defUid": 140,
 					"px": [288,352],
 					"fieldInstances": [],
-					"__worldX": 1200,
-					"__worldY": 272
+					"__worldX": 1152,
+					"__worldY": 352
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -12177,8 +12177,8 @@
 					"defUid": 140,
 					"px": [512,352],
 					"fieldInstances": [],
-					"__worldX": 1424,
-					"__worldY": 272
+					"__worldX": 1376,
+					"__worldY": 352
 				},
 				{
 					"__identifier": "Enemy_Spawn_Buffer",
@@ -12193,8 +12193,8 @@
 					"defUid": 140,
 					"px": [544,352],
 					"fieldInstances": [],
-					"__worldX": 1456,
-					"__worldY": 272
+					"__worldX": 1408,
+					"__worldY": 352
 				},
 				{
 					"__identifier": "GBC_Spawn",
@@ -12209,8 +12209,8 @@
 					"defUid": 175,
 					"px": [416,352],
 					"fieldInstances": [],
-					"__worldX": 1328,
-					"__worldY": 272
+					"__worldX": 1280,
+					"__worldY": 352
 				},
 				{
 					"__identifier": "GBC_Spawn",
@@ -12225,8 +12225,8 @@
 					"defUid": 175,
 					"px": [96,352],
 					"fieldInstances": [],
-					"__worldX": 1008,
-					"__worldY": 272
+					"__worldX": 960,
+					"__worldY": 352
 				},
 				{
 					"__identifier": "One_Way",
@@ -12241,8 +12241,8 @@
 					"defUid": 20,
 					"px": [400,304],
 					"fieldInstances": [],
-					"__worldX": 1312,
-					"__worldY": 224
+					"__worldX": 1264,
+					"__worldY": 304
 				},
 				{
 					"__identifier": "One_Way",
@@ -12257,8 +12257,8 @@
 					"defUid": 20,
 					"px": [416,304],
 					"fieldInstances": [],
-					"__worldX": 1328,
-					"__worldY": 224
+					"__worldX": 1280,
+					"__worldY": 304
 				},
 				{
 					"__identifier": "One_Way",
@@ -12273,8 +12273,8 @@
 					"defUid": 20,
 					"px": [432,304],
 					"fieldInstances": [],
-					"__worldX": 1344,
-					"__worldY": 224
+					"__worldX": 1296,
+					"__worldY": 304
 				},
 				{
 					"__identifier": "Player",
@@ -12289,8 +12289,8 @@
 					"defUid": 15,
 					"px": [424,296],
 					"fieldInstances": [],
-					"__worldX": 1336,
-					"__worldY": 216
+					"__worldX": 1288,
+					"__worldY": 296
 				},
 				{
 					"__identifier": "GBC_Spawn",
@@ -12305,8 +12305,8 @@
 					"defUid": 175,
 					"px": [736,352],
 					"fieldInstances": [],
-					"__worldX": 1648,
-					"__worldY": 272
+					"__worldX": 1600,
+					"__worldY": 352
 				}
 			]
 		},
@@ -12336,5 +12336,5 @@
 			"entityInstances": []
 		}
 	],
-	"__neighbours": []
+	"__neighbours": [ { "levelIid": "e9e24850-ac70-11f0-b4ed-9dea1e861157", "dir": "w" }, { "levelIid": "66bc1630-ac70-11f0-8e08-ed595c6528e8", "dir": "w" } ]
 }

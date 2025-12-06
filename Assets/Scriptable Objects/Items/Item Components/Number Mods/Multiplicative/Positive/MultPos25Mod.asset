@@ -9,8 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8ac5207835093f24293138aa4a7ba5d0, type: 3}
-  m_Name: Speed25
-  m_EditorClassIdentifier: Assembly-CSharp::StatItem
-  modifier: {fileID: 11400000, guid: 8c90a3ae739be584a95738bc2e18e38d, type: 2}
-  target: 0
+  m_Script: {fileID: 11500000, guid: 0d5e3b655bcd2db4497ecba1aad95b71, type: 3}
+  m_Name: MultPos25Mod
+  m_EditorClassIdentifier: Assembly-CSharp::StatMultiplier
+  order: 1
+  multiplier: 1.25

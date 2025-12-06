@@ -7,6 +7,7 @@ using UnityEngine;
 public class InventoryItem : ScriptableObject
 {
     public InventoryLayer layer;
+    public Rarity rarity;
     public List<Vector2Int> positions;
 
     public Sprite sprite;
