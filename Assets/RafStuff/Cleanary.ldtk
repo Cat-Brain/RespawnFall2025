@@ -1164,7 +1164,7 @@
 			"externalRelPath": "Cleanary/ArenaMid1.ldtkl",
 			"fieldInstances": [],
 			"layerInstances": null,
-			"__neighbours": [ { "levelIid": "470b2160-ac70-11f0-bd7d-8568904ad793", "dir": "w" }, { "levelIid": "18733040-ac70-11f0-bbfb-c927976a152a", "dir": "w" }, { "levelIid": "66bc1630-ac70-11f0-8e08-ed595c6528e8", "dir": "s" } ]
+			"__neighbours": [ { "levelIid": "470b2160-ac70-11f0-bd7d-8568904ad793", "dir": "w" }, { "levelIid": "18733040-ac70-11f0-bbfb-c927976a152a", "dir": "w" }, { "levelIid": "66bc1630-ac70-11f0-8e08-ed595c6528e8", "dir": "s" }, { "levelIid": "3f642f60-ac70-11f0-8e08-dbdb8971397a", "dir": "e" } ]
 		},
 		{
 			"identifier": "Shopkeep",
@@ -1371,7 +1371,13 @@
 			"externalRelPath": "Cleanary/ArenaMid2.ldtkl",
 			"fieldInstances": [],
 			"layerInstances": null,
-			"__neighbours": [ { "levelIid": "e9e24850-ac70-11f0-b4ed-9dea1e861157", "dir": "n" }, { "levelIid": "88847ff0-ac70-11f0-bbfb-1d89eda20e07", "dir": "w" }, { "levelIid": "18733040-ac70-11f0-bbfb-c927976a152a", "dir": "w" }, { "levelIid": "1d316f40-ac70-11f0-8e08-8fdbed7c29b0", "dir": "s" } ]
+			"__neighbours": [
+				{ "levelIid": "e9e24850-ac70-11f0-b4ed-9dea1e861157", "dir": "n" },
+				{ "levelIid": "88847ff0-ac70-11f0-bbfb-1d89eda20e07", "dir": "w" },
+				{ "levelIid": "18733040-ac70-11f0-bbfb-c927976a152a", "dir": "w" },
+				{ "levelIid": "3f642f60-ac70-11f0-8e08-dbdb8971397a", "dir": "e" },
+				{ "levelIid": "1d316f40-ac70-11f0-8e08-8fdbed7c29b0", "dir": "s" }
+			]
 		},
 		{
 			"identifier": "ArenaEasy6",
@@ -1423,8 +1429,8 @@
 			"identifier": "ArenaElite1",
 			"iid": "3f642f60-ac70-11f0-8e08-dbdb8971397a",
 			"uid": 169,
-			"worldX": 912,
-			"worldY": -80,
+			"worldX": 864,
+			"worldY": 0,
 			"worldDepth": 0,
 			"pxWid": 848,
 			"pxHei": 416,
@@ -1440,7 +1446,7 @@
 			"externalRelPath": "Cleanary/ArenaElite1.ldtkl",
 			"fieldInstances": [],
 			"layerInstances": null,
-			"__neighbours": []
+			"__neighbours": [ { "levelIid": "e9e24850-ac70-11f0-b4ed-9dea1e861157", "dir": "w" }, { "levelIid": "66bc1630-ac70-11f0-8e08-ed595c6528e8", "dir": "w" } ]
 		},
 		{
 			"identifier": "ArenaMid3",

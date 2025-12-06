@@ -141,7 +141,7 @@ MonoBehaviour:
   bounceMask:
     serializedVersion: 2
     m_Bits: 1024
-  bounceForce: 15
+  bounceForce: 20
   horizontalMultiplier: 0.25
   bounceCooldown: 0.5
 --- !u!61 &2096043046243004815

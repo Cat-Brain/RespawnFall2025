@@ -5,6 +5,15 @@ using TMPro;
 using UnityEngine;
 
 [Flags]
+
+public enum Rarity
+{
+    NONE = 0,
+    COMMON = 1,
+    UNCOMMON = 2,
+    RARE = 3,
+    LEGENDARY = 4,
+}
 public enum InventoryLayer
 {
     None = 0,
