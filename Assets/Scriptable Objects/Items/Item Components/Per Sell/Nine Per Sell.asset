@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Nine Per Sell
   m_EditorClassIdentifier: Assembly-CSharp::MoneyOnSellItem
   flatMoney: 0
-  moneyPerCell: 3
+  moneyPerCell: 9
