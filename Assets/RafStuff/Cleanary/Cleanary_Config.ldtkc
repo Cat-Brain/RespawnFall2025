@@ -95,13 +95,17 @@
         {
             "_key": "Large_Bath",
             "_asset": {
-                "instanceID": 0
+                "fileID": 3245500650451692808,
+                "guid": "cdfdcfc5e6be1ab4988e6116496f7819",
+                "type": 3
             }
         },
         {
             "_key": "Crow",
             "_asset": {
-                "instanceID": 0
+                "fileID": 7037532221280979557,
+                "guid": "870fcfcdf333631458b534eeffb6b79a",
+                "type": 3
             }
         },
         {
@@ -123,13 +127,17 @@
         {
             "_key": "Small_Bath",
             "_asset": {
-                "instanceID": 0
+                "fileID": 2216612161174811768,
+                "guid": "527f894090356894791d1ed22d713c58",
+                "type": 3
             }
         },
         {
             "_key": "Main_Bath",
             "_asset": {
-                "instanceID": 0
+                "fileID": 5762518388294275976,
+                "guid": "041a5425272a64f43b1fe81d078c4c44",
+                "type": 3
             }
         },
         {
