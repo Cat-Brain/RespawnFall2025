@@ -68,5 +68,6 @@ public class ProjectileInst : MonoBehaviour
     {
         direction = dir;
         rb.linearVelocity = direction * data.speed;
+        transform.rotation = CMath.LookDir(dir, Vector2.right);
     }
 }

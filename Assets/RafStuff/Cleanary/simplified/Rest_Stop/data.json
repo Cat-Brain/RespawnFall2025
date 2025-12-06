@@ -1,27 +1,15 @@
 {
 	"identifier": "Rest_Stop",
 	"uniqueIdentifer": "4a5df210-ac70-11f0-bd7d-3d193a511f7b",
-	"x": 432,
+	"x": 1808,
 	"y": 0,
 	"width": 432,
 	"height": 304,
 	"bgColor": "#8B9BB4",
 	"neighbourLevels": [
 		{
-			"levelIid": "e9e24850-ac70-11f0-b4ed-9dea1e861157",
-			"dir": "w"
-		},
-		{
 			"levelIid": "6dbee120-ac70-11f0-bd7d-339d6e568111",
 			"dir": "s"
-		},
-		{
-			"levelIid": "470b2160-ac70-11f0-bd7d-8568904ad793",
-			"dir": "nw"
-		},
-		{
-			"levelIid": "18733040-ac70-11f0-bbfb-c927976a152a",
-			"dir": "n"
 		}
 	],
 	"customFields" : {},

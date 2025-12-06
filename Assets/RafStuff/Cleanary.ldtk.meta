@@ -19,26 +19,14 @@ ScriptedImporter:
   _createLevelBoundsTrigger: 0
   _useParallax: 1
   _scaleEntities: 1
-  _intGridValues:
-  - _key: IntGrid_1
-    _asset: {instanceID: 0}
+  _intGridValues: []
   _entities:
   - _key: Player
     _asset: {fileID: 7230076448914424605, guid: a431a3a26c7d5ce4e9181a1bc3972865, type: 3}
-  - _key: Harpy
-    _asset: {instanceID: 0}
-  - _key: Styx
-    _asset: {instanceID: 0}
-  - _key: Walker
-    _asset: {instanceID: 0}
-  - _key: Flower
-    _asset: {instanceID: 0}
   - _key: Crumbling
     _asset: {fileID: 5345389114221763969, guid: 42927a14cb257aa4f9b2bf2ddcc16081, type: 3}
   - _key: One_Way
     _asset: {fileID: 2541446833654820051, guid: c412389dc3f48254fa58c9ccd129e84a, type: 3}
-  - _key: Win
-    _asset: {fileID: 6519263521840097383, guid: 663a213a24d4d054f983b8f53159b04d, type: 3}
   - _key: Enemy_Air_Spawn
     _asset: {fileID: 4021831251702732551, guid: 12c8a195f7f972f4a931e3bd313bd43a, type: 3}
   - _key: Enemy_Ground_Spawn
@@ -58,9 +46,9 @@ ScriptedImporter:
   - _key: Crow
     _asset: {instanceID: 0}
   - _key: Shop_Item
-    _asset: {instanceID: 0}
+    _asset: {fileID: 7291329168691056245, guid: e556cd3eac563b240a88f2453edb133c, type: 3}
   - _key: Chest
-    _asset: {instanceID: 0}
+    _asset: {fileID: 3653660039003818846, guid: e05c916ff6ac9364a9fb43fbbebd695c, type: 3}
   - _key: Small_Bath
     _asset: {instanceID: 0}
   - _key: Main_Bath
@@ -72,6 +60,20 @@ ScriptedImporter:
   - _key: Reward_Item
     _asset: {fileID: 3653660039003818846, guid: f70574dafd48e0c478f0cd9058eff322, type: 3}
   - _key: Restock
+    _asset: {fileID: 735447745076375117, guid: db09e123755da6042b0133942054ab4c, type: 3}
+  - _key: Spikes_Left
+    _asset: {instanceID: 0}
+  - _key: Spikes_Right
+    _asset: {instanceID: 0}
+  - _key: Spikes_Up
+    _asset: {instanceID: 0}
+  - _key: Spikes_Down
+    _asset: {instanceID: 0}
+  - _key: GBC
+    _asset: {instanceID: 0}
+  - _key: Elite_Continue
+    _asset: {instanceID: 0}
+  - _key: Elite_End
     _asset: {instanceID: 0}
   _enumGenerate: 0
   _enumPath: 

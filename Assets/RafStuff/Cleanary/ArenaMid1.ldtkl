@@ -11,7 +11,7 @@
 	"identifier": "ArenaMid1",
 	"iid": "e9e24850-ac70-11f0-b4ed-9dea1e861157",
 	"uid": 134,
-	"worldX": 0,
+	"worldX": 432,
 	"worldY": 0,
 	"worldDepth": 0,
 	"pxWid": 432,
@@ -65,7 +65,7 @@
 					"defUid": 135,
 					"px": [304,80],
 					"fieldInstances": [],
-					"__worldX": 304,
+					"__worldX": 736,
 					"__worldY": 80
 				},
 				{
@@ -81,12 +81,12 @@
 					"defUid": 135,
 					"px": [144,80],
 					"fieldInstances": [],
-					"__worldX": 144,
+					"__worldX": 576,
 					"__worldY": 80
 				},
 				{
 					"__identifier": "Player",
-					"__grid": [12,17],
+					"__grid": [12,18],
 					"__pivot": [0.5,0.5],
 					"__tags": ["Player"],
 					"__tile": null,
@@ -95,26 +95,10 @@
 					"width": 16,
 					"height": 16,
 					"defUid": 15,
-					"px": [200,280],
+					"px": [200,296],
 					"fieldInstances": [],
-					"__worldX": 200,
-					"__worldY": 280
-				},
-				{
-					"__identifier": "Enemy_Ground_Spawn",
-					"__grid": [5,11],
-					"__pivot": [0,0],
-					"__tags": ["Enemy_Spawn_Locations"],
-					"__tile": null,
-					"__smartColor": "#E4A672",
-					"iid": "74731510-ac70-11f0-b4ed-e19379ec7651",
-					"width": 16,
-					"height": 16,
-					"defUid": 136,
-					"px": [80,176],
-					"fieldInstances": [],
-					"__worldX": 80,
-					"__worldY": 176
+					"__worldX": 632,
+					"__worldY": 296
 				},
 				{
 					"__identifier": "Enemy_Ground_Spawn",
@@ -129,7 +113,7 @@
 					"defUid": 136,
 					"px": [384,96],
 					"fieldInstances": [],
-					"__worldX": 384,
+					"__worldX": 816,
 					"__worldY": 96
 				},
 				{
@@ -145,7 +129,7 @@
 					"defUid": 136,
 					"px": [112,304],
 					"fieldInstances": [],
-					"__worldX": 112,
+					"__worldX": 544,
 					"__worldY": 304
 				},
 				{
@@ -161,7 +145,7 @@
 					"defUid": 136,
 					"px": [304,288],
 					"fieldInstances": [],
-					"__worldX": 304,
+					"__worldX": 736,
 					"__worldY": 288
 				},
 				{
@@ -177,7 +161,7 @@
 					"defUid": 140,
 					"px": [48,176],
 					"fieldInstances": [],
-					"__worldX": 48,
+					"__worldX": 480,
 					"__worldY": 176
 				},
 				{
@@ -193,7 +177,7 @@
 					"defUid": 140,
 					"px": [64,176],
 					"fieldInstances": [],
-					"__worldX": 64,
+					"__worldX": 496,
 					"__worldY": 176
 				},
 				{
@@ -209,7 +193,7 @@
 					"defUid": 140,
 					"px": [112,176],
 					"fieldInstances": [],
-					"__worldX": 112,
+					"__worldX": 544,
 					"__worldY": 176
 				},
 				{
@@ -225,7 +209,7 @@
 					"defUid": 140,
 					"px": [96,176],
 					"fieldInstances": [],
-					"__worldX": 96,
+					"__worldX": 528,
 					"__worldY": 176
 				},
 				{
@@ -241,7 +225,7 @@
 					"defUid": 140,
 					"px": [112,96],
 					"fieldInstances": [],
-					"__worldX": 112,
+					"__worldX": 544,
 					"__worldY": 96
 				},
 				{
@@ -257,7 +241,7 @@
 					"defUid": 140,
 					"px": [48,96],
 					"fieldInstances": [],
-					"__worldX": 48,
+					"__worldX": 480,
 					"__worldY": 96
 				},
 				{
@@ -273,7 +257,7 @@
 					"defUid": 140,
 					"px": [64,96],
 					"fieldInstances": [],
-					"__worldX": 64,
+					"__worldX": 496,
 					"__worldY": 96
 				},
 				{
@@ -289,7 +273,7 @@
 					"defUid": 140,
 					"px": [80,96],
 					"fieldInstances": [],
-					"__worldX": 80,
+					"__worldX": 512,
 					"__worldY": 96
 				},
 				{
@@ -305,7 +289,7 @@
 					"defUid": 136,
 					"px": [96,96],
 					"fieldInstances": [],
-					"__worldX": 96,
+					"__worldX": 528,
 					"__worldY": 96
 				},
 				{
@@ -321,7 +305,7 @@
 					"defUid": 136,
 					"px": [32,96],
 					"fieldInstances": [],
-					"__worldX": 32,
+					"__worldX": 464,
 					"__worldY": 96
 				},
 				{
@@ -337,7 +321,7 @@
 					"defUid": 140,
 					"px": [128,96],
 					"fieldInstances": [],
-					"__worldX": 128,
+					"__worldX": 560,
 					"__worldY": 96
 				},
 				{
@@ -353,7 +337,7 @@
 					"defUid": 140,
 					"px": [160,96],
 					"fieldInstances": [],
-					"__worldX": 160,
+					"__worldX": 592,
 					"__worldY": 96
 				},
 				{
@@ -369,7 +353,7 @@
 					"defUid": 140,
 					"px": [144,96],
 					"fieldInstances": [],
-					"__worldX": 144,
+					"__worldX": 576,
 					"__worldY": 96
 				},
 				{
@@ -385,7 +369,7 @@
 					"defUid": 140,
 					"px": [192,96],
 					"fieldInstances": [],
-					"__worldX": 192,
+					"__worldX": 624,
 					"__worldY": 96
 				},
 				{
@@ -401,7 +385,7 @@
 					"defUid": 140,
 					"px": [176,96],
 					"fieldInstances": [],
-					"__worldX": 176,
+					"__worldX": 608,
 					"__worldY": 96
 				},
 				{
@@ -417,7 +401,7 @@
 					"defUid": 140,
 					"px": [128,80],
 					"fieldInstances": [],
-					"__worldX": 128,
+					"__worldX": 560,
 					"__worldY": 80
 				},
 				{
@@ -433,7 +417,7 @@
 					"defUid": 140,
 					"px": [128,64],
 					"fieldInstances": [],
-					"__worldX": 128,
+					"__worldX": 560,
 					"__worldY": 64
 				},
 				{
@@ -449,7 +433,7 @@
 					"defUid": 140,
 					"px": [144,64],
 					"fieldInstances": [],
-					"__worldX": 144,
+					"__worldX": 576,
 					"__worldY": 64
 				},
 				{
@@ -465,7 +449,7 @@
 					"defUid": 140,
 					"px": [160,64],
 					"fieldInstances": [],
-					"__worldX": 160,
+					"__worldX": 592,
 					"__worldY": 64
 				},
 				{
@@ -481,7 +465,7 @@
 					"defUid": 140,
 					"px": [176,64],
 					"fieldInstances": [],
-					"__worldX": 176,
+					"__worldX": 608,
 					"__worldY": 64
 				},
 				{
@@ -497,7 +481,7 @@
 					"defUid": 140,
 					"px": [192,64],
 					"fieldInstances": [],
-					"__worldX": 192,
+					"__worldX": 624,
 					"__worldY": 64
 				},
 				{
@@ -513,7 +497,7 @@
 					"defUid": 140,
 					"px": [320,96],
 					"fieldInstances": [],
-					"__worldX": 320,
+					"__worldX": 752,
 					"__worldY": 96
 				},
 				{
@@ -529,7 +513,7 @@
 					"defUid": 140,
 					"px": [304,96],
 					"fieldInstances": [],
-					"__worldX": 304,
+					"__worldX": 736,
 					"__worldY": 96
 				},
 				{
@@ -545,7 +529,7 @@
 					"defUid": 140,
 					"px": [288,96],
 					"fieldInstances": [],
-					"__worldX": 288,
+					"__worldX": 720,
 					"__worldY": 96
 				},
 				{
@@ -561,7 +545,7 @@
 					"defUid": 140,
 					"px": [288,80],
 					"fieldInstances": [],
-					"__worldX": 288,
+					"__worldX": 720,
 					"__worldY": 80
 				},
 				{
@@ -577,7 +561,7 @@
 					"defUid": 140,
 					"px": [288,64],
 					"fieldInstances": [],
-					"__worldX": 288,
+					"__worldX": 720,
 					"__worldY": 64
 				},
 				{
@@ -593,7 +577,7 @@
 					"defUid": 140,
 					"px": [304,64],
 					"fieldInstances": [],
-					"__worldX": 304,
+					"__worldX": 736,
 					"__worldY": 64
 				},
 				{
@@ -609,7 +593,7 @@
 					"defUid": 140,
 					"px": [320,64],
 					"fieldInstances": [],
-					"__worldX": 320,
+					"__worldX": 752,
 					"__worldY": 64
 				},
 				{
@@ -625,7 +609,7 @@
 					"defUid": 140,
 					"px": [320,80],
 					"fieldInstances": [],
-					"__worldX": 320,
+					"__worldX": 752,
 					"__worldY": 80
 				},
 				{
@@ -641,7 +625,7 @@
 					"defUid": 140,
 					"px": [272,96],
 					"fieldInstances": [],
-					"__worldX": 272,
+					"__worldX": 704,
 					"__worldY": 96
 				},
 				{
@@ -657,7 +641,7 @@
 					"defUid": 140,
 					"px": [256,96],
 					"fieldInstances": [],
-					"__worldX": 256,
+					"__worldX": 688,
 					"__worldY": 96
 				},
 				{
@@ -673,7 +657,7 @@
 					"defUid": 140,
 					"px": [240,96],
 					"fieldInstances": [],
-					"__worldX": 240,
+					"__worldX": 672,
 					"__worldY": 96
 				},
 				{
@@ -689,7 +673,7 @@
 					"defUid": 140,
 					"px": [240,80],
 					"fieldInstances": [],
-					"__worldX": 240,
+					"__worldX": 672,
 					"__worldY": 80
 				},
 				{
@@ -705,7 +689,7 @@
 					"defUid": 140,
 					"px": [256,64],
 					"fieldInstances": [],
-					"__worldX": 256,
+					"__worldX": 688,
 					"__worldY": 64
 				},
 				{
@@ -721,7 +705,7 @@
 					"defUid": 140,
 					"px": [272,64],
 					"fieldInstances": [],
-					"__worldX": 272,
+					"__worldX": 704,
 					"__worldY": 64
 				},
 				{
@@ -737,7 +721,7 @@
 					"defUid": 140,
 					"px": [240,64],
 					"fieldInstances": [],
-					"__worldX": 240,
+					"__worldX": 672,
 					"__worldY": 64
 				},
 				{
@@ -753,7 +737,7 @@
 					"defUid": 135,
 					"px": [256,80],
 					"fieldInstances": [],
-					"__worldX": 256,
+					"__worldX": 688,
 					"__worldY": 80
 				},
 				{
@@ -769,7 +753,7 @@
 					"defUid": 140,
 					"px": [272,80],
 					"fieldInstances": [],
-					"__worldX": 272,
+					"__worldX": 704,
 					"__worldY": 80
 				},
 				{
@@ -785,7 +769,7 @@
 					"defUid": 140,
 					"px": [208,64],
 					"fieldInstances": [],
-					"__worldX": 208,
+					"__worldX": 640,
 					"__worldY": 64
 				},
 				{
@@ -801,7 +785,7 @@
 					"defUid": 140,
 					"px": [208,80],
 					"fieldInstances": [],
-					"__worldX": 208,
+					"__worldX": 640,
 					"__worldY": 80
 				},
 				{
@@ -817,7 +801,7 @@
 					"defUid": 140,
 					"px": [208,96],
 					"fieldInstances": [],
-					"__worldX": 208,
+					"__worldX": 640,
 					"__worldY": 96
 				},
 				{
@@ -833,7 +817,7 @@
 					"defUid": 140,
 					"px": [160,80],
 					"fieldInstances": [],
-					"__worldX": 160,
+					"__worldX": 592,
 					"__worldY": 80
 				},
 				{
@@ -849,7 +833,7 @@
 					"defUid": 140,
 					"px": [176,80],
 					"fieldInstances": [],
-					"__worldX": 176,
+					"__worldX": 608,
 					"__worldY": 80
 				},
 				{
@@ -865,7 +849,7 @@
 					"defUid": 135,
 					"px": [192,80],
 					"fieldInstances": [],
-					"__worldX": 192,
+					"__worldX": 624,
 					"__worldY": 80
 				},
 				{
@@ -881,7 +865,7 @@
 					"defUid": 136,
 					"px": [336,96],
 					"fieldInstances": [],
-					"__worldX": 336,
+					"__worldX": 768,
 					"__worldY": 96
 				},
 				{
@@ -897,7 +881,7 @@
 					"defUid": 140,
 					"px": [352,96],
 					"fieldInstances": [],
-					"__worldX": 352,
+					"__worldX": 784,
 					"__worldY": 96
 				},
 				{
@@ -913,7 +897,7 @@
 					"defUid": 140,
 					"px": [368,96],
 					"fieldInstances": [],
-					"__worldX": 368,
+					"__worldX": 800,
 					"__worldY": 96
 				},
 				{
@@ -929,7 +913,7 @@
 					"defUid": 140,
 					"px": [48,288],
 					"fieldInstances": [],
-					"__worldX": 48,
+					"__worldX": 480,
 					"__worldY": 288
 				},
 				{
@@ -945,7 +929,7 @@
 					"defUid": 136,
 					"px": [32,304],
 					"fieldInstances": [],
-					"__worldX": 32,
+					"__worldX": 464,
 					"__worldY": 304
 				},
 				{
@@ -961,7 +945,7 @@
 					"defUid": 140,
 					"px": [16,288],
 					"fieldInstances": [],
-					"__worldX": 16,
+					"__worldX": 448,
 					"__worldY": 288
 				},
 				{
@@ -977,7 +961,7 @@
 					"defUid": 140,
 					"px": [128,288],
 					"fieldInstances": [],
-					"__worldX": 128,
+					"__worldX": 560,
 					"__worldY": 288
 				},
 				{
@@ -993,7 +977,7 @@
 					"defUid": 140,
 					"px": [144,288],
 					"fieldInstances": [],
-					"__worldX": 144,
+					"__worldX": 576,
 					"__worldY": 288
 				},
 				{
@@ -1009,7 +993,7 @@
 					"defUid": 140,
 					"px": [288,288],
 					"fieldInstances": [],
-					"__worldX": 288,
+					"__worldX": 720,
 					"__worldY": 288
 				},
 				{
@@ -1025,7 +1009,7 @@
 					"defUid": 140,
 					"px": [320,208],
 					"fieldInstances": [],
-					"__worldX": 320,
+					"__worldX": 752,
 					"__worldY": 208
 				},
 				{
@@ -1041,7 +1025,7 @@
 					"defUid": 140,
 					"px": [336,208],
 					"fieldInstances": [],
-					"__worldX": 336,
+					"__worldX": 768,
 					"__worldY": 208
 				},
 				{
@@ -1057,7 +1041,7 @@
 					"defUid": 140,
 					"px": [352,192],
 					"fieldInstances": [],
-					"__worldX": 352,
+					"__worldX": 784,
 					"__worldY": 192
 				},
 				{
@@ -1073,7 +1057,7 @@
 					"defUid": 140,
 					"px": [320,176],
 					"fieldInstances": [],
-					"__worldX": 320,
+					"__worldX": 752,
 					"__worldY": 176
 				},
 				{
@@ -1089,7 +1073,7 @@
 					"defUid": 140,
 					"px": [320,192],
 					"fieldInstances": [],
-					"__worldX": 320,
+					"__worldX": 752,
 					"__worldY": 192
 				},
 				{
@@ -1105,7 +1089,7 @@
 					"defUid": 140,
 					"px": [352,176],
 					"fieldInstances": [],
-					"__worldX": 352,
+					"__worldX": 784,
 					"__worldY": 176
 				},
 				{
@@ -1121,7 +1105,7 @@
 					"defUid": 140,
 					"px": [288,208],
 					"fieldInstances": [],
-					"__worldX": 288,
+					"__worldX": 720,
 					"__worldY": 208
 				},
 				{
@@ -1137,7 +1121,7 @@
 					"defUid": 140,
 					"px": [288,192],
 					"fieldInstances": [],
-					"__worldX": 288,
+					"__worldX": 720,
 					"__worldY": 192
 				},
 				{
@@ -1153,7 +1137,7 @@
 					"defUid": 140,
 					"px": [288,176],
 					"fieldInstances": [],
-					"__worldX": 288,
+					"__worldX": 720,
 					"__worldY": 176
 				},
 				{
@@ -1169,7 +1153,7 @@
 					"defUid": 140,
 					"px": [304,176],
 					"fieldInstances": [],
-					"__worldX": 304,
+					"__worldX": 736,
 					"__worldY": 176
 				},
 				{
@@ -1185,7 +1169,7 @@
 					"defUid": 140,
 					"px": [304,208],
 					"fieldInstances": [],
-					"__worldX": 304,
+					"__worldX": 736,
 					"__worldY": 208
 				},
 				{
@@ -1201,7 +1185,7 @@
 					"defUid": 135,
 					"px": [304,192],
 					"fieldInstances": [],
-					"__worldX": 304,
+					"__worldX": 736,
 					"__worldY": 192
 				},
 				{
@@ -1217,7 +1201,7 @@
 					"defUid": 140,
 					"px": [96,160],
 					"fieldInstances": [],
-					"__worldX": 96,
+					"__worldX": 528,
 					"__worldY": 160
 				},
 				{
@@ -1233,7 +1217,7 @@
 					"defUid": 140,
 					"px": [112,160],
 					"fieldInstances": [],
-					"__worldX": 112,
+					"__worldX": 544,
 					"__worldY": 160
 				},
 				{
@@ -1249,7 +1233,7 @@
 					"defUid": 140,
 					"px": [16,272],
 					"fieldInstances": [],
-					"__worldX": 16,
+					"__worldX": 448,
 					"__worldY": 272
 				},
 				{
@@ -1265,7 +1249,7 @@
 					"defUid": 140,
 					"px": [32,272],
 					"fieldInstances": [],
-					"__worldX": 32,
+					"__worldX": 464,
 					"__worldY": 272
 				},
 				{
@@ -1281,7 +1265,7 @@
 					"defUid": 140,
 					"px": [48,272],
 					"fieldInstances": [],
-					"__worldX": 48,
+					"__worldX": 480,
 					"__worldY": 272
 				},
 				{
@@ -1297,7 +1281,7 @@
 					"defUid": 140,
 					"px": [64,272],
 					"fieldInstances": [],
-					"__worldX": 64,
+					"__worldX": 496,
 					"__worldY": 272
 				},
 				{
@@ -1313,7 +1297,7 @@
 					"defUid": 140,
 					"px": [80,272],
 					"fieldInstances": [],
-					"__worldX": 80,
+					"__worldX": 512,
 					"__worldY": 272
 				},
 				{
@@ -1329,7 +1313,7 @@
 					"defUid": 140,
 					"px": [96,272],
 					"fieldInstances": [],
-					"__worldX": 96,
+					"__worldX": 528,
 					"__worldY": 272
 				},
 				{
@@ -1345,7 +1329,7 @@
 					"defUid": 140,
 					"px": [112,272],
 					"fieldInstances": [],
-					"__worldX": 112,
+					"__worldX": 544,
 					"__worldY": 272
 				},
 				{
@@ -1361,7 +1345,7 @@
 					"defUid": 140,
 					"px": [128,272],
 					"fieldInstances": [],
-					"__worldX": 128,
+					"__worldX": 560,
 					"__worldY": 272
 				},
 				{
@@ -1377,7 +1361,7 @@
 					"defUid": 140,
 					"px": [144,272],
 					"fieldInstances": [],
-					"__worldX": 144,
+					"__worldX": 576,
 					"__worldY": 272
 				},
 				{
@@ -1393,7 +1377,7 @@
 					"defUid": 140,
 					"px": [288,272],
 					"fieldInstances": [],
-					"__worldX": 288,
+					"__worldX": 720,
 					"__worldY": 272
 				},
 				{
@@ -1409,7 +1393,7 @@
 					"defUid": 140,
 					"px": [304,272],
 					"fieldInstances": [],
-					"__worldX": 304,
+					"__worldX": 736,
 					"__worldY": 272
 				},
 				{
@@ -1425,7 +1409,7 @@
 					"defUid": 140,
 					"px": [320,272],
 					"fieldInstances": [],
-					"__worldX": 320,
+					"__worldX": 752,
 					"__worldY": 272
 				},
 				{
@@ -1441,7 +1425,7 @@
 					"defUid": 140,
 					"px": [336,272],
 					"fieldInstances": [],
-					"__worldX": 336,
+					"__worldX": 768,
 					"__worldY": 272
 				},
 				{
@@ -1457,7 +1441,7 @@
 					"defUid": 140,
 					"px": [352,272],
 					"fieldInstances": [],
-					"__worldX": 352,
+					"__worldX": 784,
 					"__worldY": 272
 				},
 				{
@@ -1473,7 +1457,7 @@
 					"defUid": 140,
 					"px": [368,272],
 					"fieldInstances": [],
-					"__worldX": 368,
+					"__worldX": 800,
 					"__worldY": 272
 				},
 				{
@@ -1489,7 +1473,7 @@
 					"defUid": 140,
 					"px": [368,288],
 					"fieldInstances": [],
-					"__worldX": 368,
+					"__worldX": 800,
 					"__worldY": 288
 				},
 				{
@@ -1505,7 +1489,7 @@
 					"defUid": 140,
 					"px": [272,288],
 					"fieldInstances": [],
-					"__worldX": 272,
+					"__worldX": 704,
 					"__worldY": 288
 				},
 				{
@@ -1521,7 +1505,7 @@
 					"defUid": 140,
 					"px": [272,272],
 					"fieldInstances": [],
-					"__worldX": 272,
+					"__worldX": 704,
 					"__worldY": 272
 				},
 				{
@@ -1537,7 +1521,7 @@
 					"defUid": 140,
 					"px": [16,80],
 					"fieldInstances": [],
-					"__worldX": 16,
+					"__worldX": 448,
 					"__worldY": 80
 				},
 				{
@@ -1553,7 +1537,7 @@
 					"defUid": 140,
 					"px": [48,80],
 					"fieldInstances": [],
-					"__worldX": 48,
+					"__worldX": 480,
 					"__worldY": 80
 				},
 				{
@@ -1569,7 +1553,7 @@
 					"defUid": 140,
 					"px": [32,80],
 					"fieldInstances": [],
-					"__worldX": 32,
+					"__worldX": 464,
 					"__worldY": 80
 				},
 				{
@@ -1585,7 +1569,7 @@
 					"defUid": 140,
 					"px": [64,80],
 					"fieldInstances": [],
-					"__worldX": 64,
+					"__worldX": 496,
 					"__worldY": 80
 				},
 				{
@@ -1601,7 +1585,7 @@
 					"defUid": 140,
 					"px": [80,80],
 					"fieldInstances": [],
-					"__worldX": 80,
+					"__worldX": 512,
 					"__worldY": 80
 				},
 				{
@@ -1617,7 +1601,7 @@
 					"defUid": 140,
 					"px": [96,80],
 					"fieldInstances": [],
-					"__worldX": 96,
+					"__worldX": 528,
 					"__worldY": 80
 				},
 				{
@@ -1633,7 +1617,7 @@
 					"defUid": 140,
 					"px": [112,80],
 					"fieldInstances": [],
-					"__worldX": 112,
+					"__worldX": 544,
 					"__worldY": 80
 				},
 				{
@@ -1649,7 +1633,7 @@
 					"defUid": 140,
 					"px": [336,80],
 					"fieldInstances": [],
-					"__worldX": 336,
+					"__worldX": 768,
 					"__worldY": 80
 				},
 				{
@@ -1665,7 +1649,7 @@
 					"defUid": 140,
 					"px": [352,80],
 					"fieldInstances": [],
-					"__worldX": 352,
+					"__worldX": 784,
 					"__worldY": 80
 				},
 				{
@@ -1681,7 +1665,7 @@
 					"defUid": 140,
 					"px": [368,80],
 					"fieldInstances": [],
-					"__worldX": 368,
+					"__worldX": 800,
 					"__worldY": 80
 				},
 				{
@@ -1697,7 +1681,7 @@
 					"defUid": 140,
 					"px": [400,80],
 					"fieldInstances": [],
-					"__worldX": 400,
+					"__worldX": 832,
 					"__worldY": 80
 				},
 				{
@@ -1713,7 +1697,7 @@
 					"defUid": 141,
 					"px": [0,16],
 					"fieldInstances": [],
-					"__worldX": 0,
+					"__worldX": 432,
 					"__worldY": 16
 				},
 				{
@@ -1729,12 +1713,12 @@
 					"defUid": 150,
 					"px": [320,288],
 					"fieldInstances": [],
-					"__worldX": 320,
+					"__worldX": 752,
 					"__worldY": 288
 				},
 				{
 					"__identifier": "Reward_Item",
-					"__grid": [11,18],
+					"__grid": [12,18],
 					"__pivot": [0,0],
 					"__tags": ["Environment"],
 					"__tile": null,
@@ -1743,9 +1727,9 @@
 					"width": 16,
 					"height": 16,
 					"defUid": 151,
-					"px": [176,288],
+					"px": [192,288],
 					"fieldInstances": [],
-					"__worldX": 176,
+					"__worldX": 624,
 					"__worldY": 288
 				},
 				{
@@ -1761,7 +1745,7 @@
 					"defUid": 140,
 					"px": [96,288],
 					"fieldInstances": [],
-					"__worldX": 96,
+					"__worldX": 528,
 					"__worldY": 288
 				},
 				{
@@ -1777,7 +1761,7 @@
 					"defUid": 137,
 					"px": [16,192],
 					"fieldInstances": [],
-					"__worldX": 16,
+					"__worldX": 448,
 					"__worldY": 192
 				},
 				{
@@ -1793,7 +1777,7 @@
 					"defUid": 137,
 					"px": [48,192],
 					"fieldInstances": [],
-					"__worldX": 48,
+					"__worldX": 480,
 					"__worldY": 192
 				},
 				{
@@ -1809,7 +1793,7 @@
 					"defUid": 137,
 					"px": [32,192],
 					"fieldInstances": [],
-					"__worldX": 32,
+					"__worldX": 464,
 					"__worldY": 192
 				},
 				{
@@ -1825,7 +1809,7 @@
 					"defUid": 137,
 					"px": [16,208],
 					"fieldInstances": [],
-					"__worldX": 16,
+					"__worldX": 448,
 					"__worldY": 208
 				},
 				{
@@ -1841,7 +1825,7 @@
 					"defUid": 137,
 					"px": [32,208],
 					"fieldInstances": [],
-					"__worldX": 32,
+					"__worldX": 464,
 					"__worldY": 208
 				},
 				{
@@ -1857,7 +1841,7 @@
 					"defUid": 137,
 					"px": [64,192],
 					"fieldInstances": [],
-					"__worldX": 64,
+					"__worldX": 496,
 					"__worldY": 192
 				},
 				{
@@ -1873,7 +1857,7 @@
 					"defUid": 137,
 					"px": [80,192],
 					"fieldInstances": [],
-					"__worldX": 80,
+					"__worldX": 512,
 					"__worldY": 192
 				},
 				{
@@ -1889,7 +1873,7 @@
 					"defUid": 137,
 					"px": [96,192],
 					"fieldInstances": [],
-					"__worldX": 96,
+					"__worldX": 528,
 					"__worldY": 192
 				},
 				{
@@ -1905,7 +1889,7 @@
 					"defUid": 137,
 					"px": [16,320],
 					"fieldInstances": [],
-					"__worldX": 16,
+					"__worldX": 448,
 					"__worldY": 320
 				},
 				{
@@ -1921,7 +1905,7 @@
 					"defUid": 137,
 					"px": [32,320],
 					"fieldInstances": [],
-					"__worldX": 32,
+					"__worldX": 464,
 					"__worldY": 320
 				},
 				{
@@ -1937,7 +1921,7 @@
 					"defUid": 137,
 					"px": [48,320],
 					"fieldInstances": [],
-					"__worldX": 48,
+					"__worldX": 480,
 					"__worldY": 320
 				},
 				{
@@ -1953,7 +1937,7 @@
 					"defUid": 140,
 					"px": [64,288],
 					"fieldInstances": [],
-					"__worldX": 64,
+					"__worldX": 496,
 					"__worldY": 288
 				},
 				{
@@ -1969,7 +1953,7 @@
 					"defUid": 137,
 					"px": [64,320],
 					"fieldInstances": [],
-					"__worldX": 64,
+					"__worldX": 496,
 					"__worldY": 320
 				},
 				{
@@ -1985,7 +1969,7 @@
 					"defUid": 137,
 					"px": [80,320],
 					"fieldInstances": [],
-					"__worldX": 80,
+					"__worldX": 512,
 					"__worldY": 320
 				},
 				{
@@ -2001,7 +1985,7 @@
 					"defUid": 137,
 					"px": [96,320],
 					"fieldInstances": [],
-					"__worldX": 96,
+					"__worldX": 528,
 					"__worldY": 320
 				},
 				{
@@ -2017,7 +2001,7 @@
 					"defUid": 137,
 					"px": [144,304],
 					"fieldInstances": [],
-					"__worldX": 144,
+					"__worldX": 576,
 					"__worldY": 304
 				},
 				{
@@ -2033,7 +2017,7 @@
 					"defUid": 137,
 					"px": [304,304],
 					"fieldInstances": [],
-					"__worldX": 304,
+					"__worldX": 736,
 					"__worldY": 304
 				},
 				{
@@ -2049,7 +2033,7 @@
 					"defUid": 137,
 					"px": [272,304],
 					"fieldInstances": [],
-					"__worldX": 272,
+					"__worldX": 704,
 					"__worldY": 304
 				},
 				{
@@ -2065,7 +2049,7 @@
 					"defUid": 137,
 					"px": [288,304],
 					"fieldInstances": [],
-					"__worldX": 288,
+					"__worldX": 720,
 					"__worldY": 304
 				},
 				{
@@ -2081,7 +2065,7 @@
 					"defUid": 137,
 					"px": [240,304],
 					"fieldInstances": [],
-					"__worldX": 240,
+					"__worldX": 672,
 					"__worldY": 304
 				},
 				{
@@ -2097,7 +2081,7 @@
 					"defUid": 137,
 					"px": [208,304],
 					"fieldInstances": [],
-					"__worldX": 208,
+					"__worldX": 640,
 					"__worldY": 304
 				},
 				{
@@ -2113,7 +2097,7 @@
 					"defUid": 137,
 					"px": [176,320],
 					"fieldInstances": [],
-					"__worldX": 176,
+					"__worldX": 608,
 					"__worldY": 320
 				},
 				{
@@ -2129,7 +2113,7 @@
 					"defUid": 137,
 					"px": [128,320],
 					"fieldInstances": [],
-					"__worldX": 128,
+					"__worldX": 560,
 					"__worldY": 320
 				},
 				{
@@ -2145,7 +2129,7 @@
 					"defUid": 137,
 					"px": [160,320],
 					"fieldInstances": [],
-					"__worldX": 160,
+					"__worldX": 592,
 					"__worldY": 320
 				},
 				{
@@ -2161,7 +2145,7 @@
 					"defUid": 137,
 					"px": [144,320],
 					"fieldInstances": [],
-					"__worldX": 144,
+					"__worldX": 576,
 					"__worldY": 320
 				},
 				{
@@ -2177,7 +2161,7 @@
 					"defUid": 137,
 					"px": [112,320],
 					"fieldInstances": [],
-					"__worldX": 112,
+					"__worldX": 544,
 					"__worldY": 320
 				},
 				{
@@ -2193,7 +2177,7 @@
 					"defUid": 137,
 					"px": [176,304],
 					"fieldInstances": [],
-					"__worldX": 176,
+					"__worldX": 608,
 					"__worldY": 304
 				},
 				{
@@ -2209,7 +2193,7 @@
 					"defUid": 137,
 					"px": [192,304],
 					"fieldInstances": [],
-					"__worldX": 192,
+					"__worldX": 624,
 					"__worldY": 304
 				},
 				{
@@ -2225,7 +2209,7 @@
 					"defUid": 137,
 					"px": [192,320],
 					"fieldInstances": [],
-					"__worldX": 192,
+					"__worldX": 624,
 					"__worldY": 320
 				},
 				{
@@ -2241,7 +2225,7 @@
 					"defUid": 137,
 					"px": [208,320],
 					"fieldInstances": [],
-					"__worldX": 208,
+					"__worldX": 640,
 					"__worldY": 320
 				},
 				{
@@ -2257,7 +2241,7 @@
 					"defUid": 137,
 					"px": [224,320],
 					"fieldInstances": [],
-					"__worldX": 224,
+					"__worldX": 656,
 					"__worldY": 320
 				},
 				{
@@ -2273,7 +2257,7 @@
 					"defUid": 137,
 					"px": [224,304],
 					"fieldInstances": [],
-					"__worldX": 224,
+					"__worldX": 656,
 					"__worldY": 304
 				},
 				{
@@ -2289,7 +2273,7 @@
 					"defUid": 137,
 					"px": [240,320],
 					"fieldInstances": [],
-					"__worldX": 240,
+					"__worldX": 672,
 					"__worldY": 320
 				},
 				{
@@ -2305,7 +2289,7 @@
 					"defUid": 137,
 					"px": [256,320],
 					"fieldInstances": [],
-					"__worldX": 256,
+					"__worldX": 688,
 					"__worldY": 320
 				},
 				{
@@ -2321,7 +2305,7 @@
 					"defUid": 137,
 					"px": [256,304],
 					"fieldInstances": [],
-					"__worldX": 256,
+					"__worldX": 688,
 					"__worldY": 304
 				},
 				{
@@ -2337,7 +2321,7 @@
 					"defUid": 137,
 					"px": [272,320],
 					"fieldInstances": [],
-					"__worldX": 272,
+					"__worldX": 704,
 					"__worldY": 320
 				},
 				{
@@ -2353,7 +2337,7 @@
 					"defUid": 137,
 					"px": [288,320],
 					"fieldInstances": [],
-					"__worldX": 288,
+					"__worldX": 720,
 					"__worldY": 320
 				},
 				{
@@ -2369,7 +2353,7 @@
 					"defUid": 137,
 					"px": [304,320],
 					"fieldInstances": [],
-					"__worldX": 304,
+					"__worldX": 736,
 					"__worldY": 320
 				},
 				{
@@ -2385,7 +2369,7 @@
 					"defUid": 137,
 					"px": [320,304],
 					"fieldInstances": [],
-					"__worldX": 320,
+					"__worldX": 752,
 					"__worldY": 304
 				},
 				{
@@ -2401,7 +2385,7 @@
 					"defUid": 137,
 					"px": [320,320],
 					"fieldInstances": [],
-					"__worldX": 320,
+					"__worldX": 752,
 					"__worldY": 320
 				},
 				{
@@ -2417,7 +2401,7 @@
 					"defUid": 137,
 					"px": [336,320],
 					"fieldInstances": [],
-					"__worldX": 336,
+					"__worldX": 768,
 					"__worldY": 320
 				},
 				{
@@ -2433,7 +2417,7 @@
 					"defUid": 137,
 					"px": [336,304],
 					"fieldInstances": [],
-					"__worldX": 336,
+					"__worldX": 768,
 					"__worldY": 304
 				},
 				{
@@ -2449,7 +2433,7 @@
 					"defUid": 137,
 					"px": [368,304],
 					"fieldInstances": [],
-					"__worldX": 368,
+					"__worldX": 800,
 					"__worldY": 304
 				},
 				{
@@ -2465,7 +2449,7 @@
 					"defUid": 137,
 					"px": [352,304],
 					"fieldInstances": [],
-					"__worldX": 352,
+					"__worldX": 784,
 					"__worldY": 304
 				},
 				{
@@ -2481,7 +2465,7 @@
 					"defUid": 137,
 					"px": [352,320],
 					"fieldInstances": [],
-					"__worldX": 352,
+					"__worldX": 784,
 					"__worldY": 320
 				},
 				{
@@ -2497,7 +2481,7 @@
 					"defUid": 137,
 					"px": [368,320],
 					"fieldInstances": [],
-					"__worldX": 368,
+					"__worldX": 800,
 					"__worldY": 320
 				},
 				{
@@ -2513,7 +2497,7 @@
 					"defUid": 137,
 					"px": [400,320],
 					"fieldInstances": [],
-					"__worldX": 400,
+					"__worldX": 832,
 					"__worldY": 320
 				},
 				{
@@ -2529,7 +2513,7 @@
 					"defUid": 137,
 					"px": [400,304],
 					"fieldInstances": [],
-					"__worldX": 400,
+					"__worldX": 832,
 					"__worldY": 304
 				},
 				{
@@ -2545,7 +2529,7 @@
 					"defUid": 137,
 					"px": [400,160],
 					"fieldInstances": [],
-					"__worldX": 400,
+					"__worldX": 832,
 					"__worldY": 160
 				},
 				{
@@ -2561,7 +2545,7 @@
 					"defUid": 137,
 					"px": [400,176],
 					"fieldInstances": [],
-					"__worldX": 400,
+					"__worldX": 832,
 					"__worldY": 176
 				},
 				{
@@ -2577,7 +2561,7 @@
 					"defUid": 137,
 					"px": [400,112],
 					"fieldInstances": [],
-					"__worldX": 400,
+					"__worldX": 832,
 					"__worldY": 112
 				},
 				{
@@ -2593,7 +2577,7 @@
 					"defUid": 137,
 					"px": [304,112],
 					"fieldInstances": [],
-					"__worldX": 304,
+					"__worldX": 736,
 					"__worldY": 112
 				},
 				{
@@ -2609,7 +2593,7 @@
 					"defUid": 137,
 					"px": [288,112],
 					"fieldInstances": [],
-					"__worldX": 288,
+					"__worldX": 720,
 					"__worldY": 112
 				},
 				{
@@ -2625,7 +2609,7 @@
 					"defUid": 137,
 					"px": [128,112],
 					"fieldInstances": [],
-					"__worldX": 128,
+					"__worldX": 560,
 					"__worldY": 112
 				},
 				{
@@ -2641,7 +2625,7 @@
 					"defUid": 137,
 					"px": [112,112],
 					"fieldInstances": [],
-					"__worldX": 112,
+					"__worldX": 544,
 					"__worldY": 112
 				},
 				{
@@ -2657,7 +2641,7 @@
 					"defUid": 154,
 					"px": [80,304],
 					"fieldInstances": [],
-					"__worldX": 80,
+					"__worldX": 512,
 					"__worldY": 304
 				},
 				{
@@ -2673,7 +2657,7 @@
 					"defUid": 140,
 					"px": [16,304],
 					"fieldInstances": [],
-					"__worldX": 16,
+					"__worldX": 448,
 					"__worldY": 304
 				},
 				{
@@ -2689,7 +2673,7 @@
 					"defUid": 140,
 					"px": [32,288],
 					"fieldInstances": [],
-					"__worldX": 32,
+					"__worldX": 464,
 					"__worldY": 288
 				},
 				{
@@ -2705,7 +2689,7 @@
 					"defUid": 140,
 					"px": [48,304],
 					"fieldInstances": [],
-					"__worldX": 48,
+					"__worldX": 480,
 					"__worldY": 304
 				},
 				{
@@ -2721,7 +2705,7 @@
 					"defUid": 140,
 					"px": [64,304],
 					"fieldInstances": [],
-					"__worldX": 64,
+					"__worldX": 496,
 					"__worldY": 304
 				},
 				{
@@ -2737,7 +2721,7 @@
 					"defUid": 140,
 					"px": [80,288],
 					"fieldInstances": [],
-					"__worldX": 80,
+					"__worldX": 512,
 					"__worldY": 288
 				},
 				{
@@ -2753,7 +2737,7 @@
 					"defUid": 140,
 					"px": [96,304],
 					"fieldInstances": [],
-					"__worldX": 96,
+					"__worldX": 528,
 					"__worldY": 304
 				},
 				{
@@ -2769,7 +2753,7 @@
 					"defUid": 140,
 					"px": [112,288],
 					"fieldInstances": [],
-					"__worldX": 112,
+					"__worldX": 544,
 					"__worldY": 288
 				},
 				{
@@ -2785,7 +2769,7 @@
 					"defUid": 140,
 					"px": [128,304],
 					"fieldInstances": [],
-					"__worldX": 128,
+					"__worldX": 560,
 					"__worldY": 304
 				},
 				{
@@ -2801,7 +2785,7 @@
 					"defUid": 140,
 					"px": [336,288],
 					"fieldInstances": [],
-					"__worldX": 336,
+					"__worldX": 768,
 					"__worldY": 288
 				},
 				{
@@ -2817,7 +2801,7 @@
 					"defUid": 136,
 					"px": [352,288],
 					"fieldInstances": [],
-					"__worldX": 352,
+					"__worldX": 784,
 					"__worldY": 288
 				},
 				{
@@ -2833,7 +2817,7 @@
 					"defUid": 137,
 					"px": [400,128],
 					"fieldInstances": [],
-					"__worldX": 400,
+					"__worldX": 832,
 					"__worldY": 128
 				},
 				{
@@ -2849,7 +2833,7 @@
 					"defUid": 137,
 					"px": [400,144],
 					"fieldInstances": [],
-					"__worldX": 400,
+					"__worldX": 832,
 					"__worldY": 144
 				},
 				{
@@ -2865,7 +2849,7 @@
 					"defUid": 137,
 					"px": [272,112],
 					"fieldInstances": [],
-					"__worldX": 272,
+					"__worldX": 704,
 					"__worldY": 112
 				},
 				{
@@ -2881,7 +2865,7 @@
 					"defUid": 20,
 					"px": [176,112],
 					"fieldInstances": [],
-					"__worldX": 176,
+					"__worldX": 608,
 					"__worldY": 112
 				},
 				{
@@ -2897,7 +2881,7 @@
 					"defUid": 20,
 					"px": [192,112],
 					"fieldInstances": [],
-					"__worldX": 192,
+					"__worldX": 624,
 					"__worldY": 112
 				},
 				{
@@ -2913,7 +2897,7 @@
 					"defUid": 20,
 					"px": [256,112],
 					"fieldInstances": [],
-					"__worldX": 256,
+					"__worldX": 688,
 					"__worldY": 112
 				},
 				{
@@ -2929,7 +2913,7 @@
 					"defUid": 20,
 					"px": [240,112],
 					"fieldInstances": [],
-					"__worldX": 240,
+					"__worldX": 672,
 					"__worldY": 112
 				},
 				{
@@ -2945,7 +2929,7 @@
 					"defUid": 135,
 					"px": [272,160],
 					"fieldInstances": [],
-					"__worldX": 272,
+					"__worldX": 704,
 					"__worldY": 160
 				},
 				{
@@ -2961,7 +2945,7 @@
 					"defUid": 135,
 					"px": [240,144],
 					"fieldInstances": [],
-					"__worldX": 240,
+					"__worldX": 672,
 					"__worldY": 144
 				},
 				{
@@ -2977,7 +2961,7 @@
 					"defUid": 135,
 					"px": [336,144],
 					"fieldInstances": [],
-					"__worldX": 336,
+					"__worldX": 768,
 					"__worldY": 144
 				},
 				{
@@ -2993,7 +2977,7 @@
 					"defUid": 140,
 					"px": [272,176],
 					"fieldInstances": [],
-					"__worldX": 272,
+					"__worldX": 704,
 					"__worldY": 176
 				},
 				{
@@ -3009,7 +2993,7 @@
 					"defUid": 140,
 					"px": [256,176],
 					"fieldInstances": [],
-					"__worldX": 256,
+					"__worldX": 688,
 					"__worldY": 176
 				},
 				{
@@ -3025,7 +3009,7 @@
 					"defUid": 140,
 					"px": [256,160],
 					"fieldInstances": [],
-					"__worldX": 256,
+					"__worldX": 688,
 					"__worldY": 160
 				},
 				{
@@ -3041,7 +3025,7 @@
 					"defUid": 140,
 					"px": [240,160],
 					"fieldInstances": [],
-					"__worldX": 240,
+					"__worldX": 672,
 					"__worldY": 160
 				},
 				{
@@ -3057,7 +3041,7 @@
 					"defUid": 140,
 					"px": [224,160],
 					"fieldInstances": [],
-					"__worldX": 224,
+					"__worldX": 656,
 					"__worldY": 160
 				},
 				{
@@ -3073,7 +3057,7 @@
 					"defUid": 140,
 					"px": [224,144],
 					"fieldInstances": [],
-					"__worldX": 224,
+					"__worldX": 656,
 					"__worldY": 144
 				},
 				{
@@ -3089,7 +3073,7 @@
 					"defUid": 140,
 					"px": [224,128],
 					"fieldInstances": [],
-					"__worldX": 224,
+					"__worldX": 656,
 					"__worldY": 128
 				},
 				{
@@ -3105,7 +3089,7 @@
 					"defUid": 140,
 					"px": [240,128],
 					"fieldInstances": [],
-					"__worldX": 240,
+					"__worldX": 672,
 					"__worldY": 128
 				},
 				{
@@ -3121,7 +3105,7 @@
 					"defUid": 140,
 					"px": [256,128],
 					"fieldInstances": [],
-					"__worldX": 256,
+					"__worldX": 688,
 					"__worldY": 128
 				},
 				{
@@ -3137,7 +3121,7 @@
 					"defUid": 140,
 					"px": [256,144],
 					"fieldInstances": [],
-					"__worldX": 256,
+					"__worldX": 688,
 					"__worldY": 144
 				},
 				{
@@ -3153,7 +3137,7 @@
 					"defUid": 140,
 					"px": [272,144],
 					"fieldInstances": [],
-					"__worldX": 272,
+					"__worldX": 704,
 					"__worldY": 144
 				},
 				{
@@ -3169,7 +3153,7 @@
 					"defUid": 140,
 					"px": [272,128],
 					"fieldInstances": [],
-					"__worldX": 272,
+					"__worldX": 704,
 					"__worldY": 128
 				},
 				{
@@ -3185,7 +3169,7 @@
 					"defUid": 140,
 					"px": [288,128],
 					"fieldInstances": [],
-					"__worldX": 288,
+					"__worldX": 720,
 					"__worldY": 128
 				},
 				{
@@ -3201,7 +3185,7 @@
 					"defUid": 140,
 					"px": [288,144],
 					"fieldInstances": [],
-					"__worldX": 288,
+					"__worldX": 720,
 					"__worldY": 144
 				},
 				{
@@ -3217,7 +3201,7 @@
 					"defUid": 140,
 					"px": [288,160],
 					"fieldInstances": [],
-					"__worldX": 288,
+					"__worldX": 720,
 					"__worldY": 160
 				},
 				{
@@ -3233,7 +3217,7 @@
 					"defUid": 140,
 					"px": [304,144],
 					"fieldInstances": [],
-					"__worldX": 304,
+					"__worldX": 736,
 					"__worldY": 144
 				},
 				{
@@ -3249,7 +3233,7 @@
 					"defUid": 140,
 					"px": [320,144],
 					"fieldInstances": [],
-					"__worldX": 320,
+					"__worldX": 752,
 					"__worldY": 144
 				},
 				{
@@ -3265,7 +3249,7 @@
 					"defUid": 140,
 					"px": [336,128],
 					"fieldInstances": [],
-					"__worldX": 336,
+					"__worldX": 768,
 					"__worldY": 128
 				},
 				{
@@ -3281,7 +3265,7 @@
 					"defUid": 140,
 					"px": [352,128],
 					"fieldInstances": [],
-					"__worldX": 352,
+					"__worldX": 784,
 					"__worldY": 128
 				},
 				{
@@ -3297,7 +3281,7 @@
 					"defUid": 140,
 					"px": [352,144],
 					"fieldInstances": [],
-					"__worldX": 352,
+					"__worldX": 784,
 					"__worldY": 144
 				},
 				{
@@ -3313,7 +3297,7 @@
 					"defUid": 140,
 					"px": [352,160],
 					"fieldInstances": [],
-					"__worldX": 352,
+					"__worldX": 784,
 					"__worldY": 160
 				},
 				{
@@ -3329,7 +3313,7 @@
 					"defUid": 140,
 					"px": [320,128],
 					"fieldInstances": [],
-					"__worldX": 320,
+					"__worldX": 752,
 					"__worldY": 128
 				},
 				{
@@ -3345,7 +3329,7 @@
 					"defUid": 140,
 					"px": [320,160],
 					"fieldInstances": [],
-					"__worldX": 320,
+					"__worldX": 752,
 					"__worldY": 160
 				},
 				{
@@ -3361,7 +3345,7 @@
 					"defUid": 135,
 					"px": [304,160],
 					"fieldInstances": [],
-					"__worldX": 304,
+					"__worldX": 736,
 					"__worldY": 160
 				},
 				{
@@ -3377,12 +3361,12 @@
 					"defUid": 140,
 					"px": [304,128],
 					"fieldInstances": [],
-					"__worldX": 304,
+					"__worldX": 736,
 					"__worldY": 128
 				},
 				{
 					"__identifier": "Bounce_Pad",
-					"__grid": [15,17],
+					"__grid": [16,14],
 					"__pivot": [0,0],
 					"__tags": ["Environment"],
 					"__tile": null,
@@ -3391,14 +3375,14 @@
 					"width": 16,
 					"height": 8,
 					"defUid": 138,
-					"px": [240,272],
+					"px": [256,224],
 					"fieldInstances": [],
-					"__worldX": 240,
-					"__worldY": 272
+					"__worldX": 688,
+					"__worldY": 224
 				},
 				{
 					"__identifier": "Bounce_Pad",
-					"__grid": [16,17],
+					"__grid": [17,14],
 					"__pivot": [0,0],
 					"__tags": ["Environment"],
 					"__tile": null,
@@ -3407,14 +3391,14 @@
 					"width": 16,
 					"height": 8,
 					"defUid": 138,
-					"px": [256,272],
+					"px": [272,224],
 					"fieldInstances": [],
-					"__worldX": 256,
-					"__worldY": 272
+					"__worldX": 704,
+					"__worldY": 224
 				},
 				{
 					"__identifier": "Bounce_Pad",
-					"__grid": [14,17],
+					"__grid": [15,14],
 					"__pivot": [0,0],
 					"__tags": ["Environment"],
 					"__tile": null,
@@ -3423,10 +3407,10 @@
 					"width": 16,
 					"height": 8,
 					"defUid": 138,
-					"px": [224,272],
+					"px": [240,224],
 					"fieldInstances": [],
-					"__worldX": 224,
-					"__worldY": 272
+					"__worldX": 672,
+					"__worldY": 224
 				},
 				{
 					"__identifier": "One_Way",
@@ -3441,7 +3425,7 @@
 					"defUid": 20,
 					"px": [176,208],
 					"fieldInstances": [],
-					"__worldX": 176,
+					"__worldX": 608,
 					"__worldY": 208
 				},
 				{
@@ -3457,7 +3441,7 @@
 					"defUid": 20,
 					"px": [192,208],
 					"fieldInstances": [],
-					"__worldX": 192,
+					"__worldX": 624,
 					"__worldY": 208
 				},
 				{
@@ -3473,7 +3457,7 @@
 					"defUid": 20,
 					"px": [208,208],
 					"fieldInstances": [],
-					"__worldX": 208,
+					"__worldX": 640,
 					"__worldY": 208
 				},
 				{
@@ -3489,7 +3473,7 @@
 					"defUid": 20,
 					"px": [32,112],
 					"fieldInstances": [],
-					"__worldX": 32,
+					"__worldX": 464,
 					"__worldY": 112
 				},
 				{
@@ -3505,7 +3489,7 @@
 					"defUid": 20,
 					"px": [48,112],
 					"fieldInstances": [],
-					"__worldX": 48,
+					"__worldX": 480,
 					"__worldY": 112
 				},
 				{
@@ -3521,7 +3505,7 @@
 					"defUid": 20,
 					"px": [64,112],
 					"fieldInstances": [],
-					"__worldX": 64,
+					"__worldX": 496,
 					"__worldY": 112
 				},
 				{
@@ -3537,7 +3521,7 @@
 					"defUid": 20,
 					"px": [80,112],
 					"fieldInstances": [],
-					"__worldX": 80,
+					"__worldX": 512,
 					"__worldY": 112
 				},
 				{
@@ -3553,7 +3537,7 @@
 					"defUid": 20,
 					"px": [320,112],
 					"fieldInstances": [],
-					"__worldX": 320,
+					"__worldX": 752,
 					"__worldY": 112
 				},
 				{
@@ -3569,7 +3553,7 @@
 					"defUid": 20,
 					"px": [336,112],
 					"fieldInstances": [],
-					"__worldX": 336,
+					"__worldX": 768,
 					"__worldY": 112
 				},
 				{
@@ -3585,7 +3569,7 @@
 					"defUid": 20,
 					"px": [352,112],
 					"fieldInstances": [],
-					"__worldX": 352,
+					"__worldX": 784,
 					"__worldY": 112
 				},
 				{
@@ -3601,7 +3585,7 @@
 					"defUid": 20,
 					"px": [368,112],
 					"fieldInstances": [],
-					"__worldX": 368,
+					"__worldX": 800,
 					"__worldY": 112
 				},
 				{
@@ -3617,7 +3601,7 @@
 					"defUid": 140,
 					"px": [32,176],
 					"fieldInstances": [],
-					"__worldX": 32,
+					"__worldX": 464,
 					"__worldY": 176
 				},
 				{
@@ -3633,7 +3617,7 @@
 					"defUid": 140,
 					"px": [48,160],
 					"fieldInstances": [],
-					"__worldX": 48,
+					"__worldX": 480,
 					"__worldY": 160
 				},
 				{
@@ -3649,7 +3633,7 @@
 					"defUid": 140,
 					"px": [32,160],
 					"fieldInstances": [],
-					"__worldX": 32,
+					"__worldX": 464,
 					"__worldY": 160
 				},
 				{
@@ -3665,7 +3649,7 @@
 					"defUid": 140,
 					"px": [80,160],
 					"fieldInstances": [],
-					"__worldX": 80,
+					"__worldX": 512,
 					"__worldY": 160
 				},
 				{
@@ -3681,7 +3665,7 @@
 					"defUid": 140,
 					"px": [64,160],
 					"fieldInstances": [],
-					"__worldX": 64,
+					"__worldX": 496,
 					"__worldY": 160
 				},
 				{
@@ -3697,7 +3681,7 @@
 					"defUid": 138,
 					"px": [48,176],
 					"fieldInstances": [],
-					"__worldX": 48,
+					"__worldX": 480,
 					"__worldY": 176
 				},
 				{
@@ -3713,7 +3697,7 @@
 					"defUid": 138,
 					"px": [64,176],
 					"fieldInstances": [],
-					"__worldX": 64,
+					"__worldX": 496,
 					"__worldY": 176
 				},
 				{
@@ -3729,7 +3713,7 @@
 					"defUid": 138,
 					"px": [80,176],
 					"fieldInstances": [],
-					"__worldX": 80,
+					"__worldX": 512,
 					"__worldY": 176
 				},
 				{
@@ -3745,7 +3729,7 @@
 					"defUid": 137,
 					"px": [384,304],
 					"fieldInstances": [],
-					"__worldX": 384,
+					"__worldX": 816,
 					"__worldY": 304
 				},
 				{
@@ -3761,7 +3745,7 @@
 					"defUid": 137,
 					"px": [384,320],
 					"fieldInstances": [],
-					"__worldX": 384,
+					"__worldX": 816,
 					"__worldY": 320
 				},
 				{
@@ -3777,7 +3761,7 @@
 					"defUid": 20,
 					"px": [384,112],
 					"fieldInstances": [],
-					"__worldX": 384,
+					"__worldX": 816,
 					"__worldY": 112
 				},
 				{
@@ -3793,7 +3777,7 @@
 					"defUid": 141,
 					"px": [416,16],
 					"fieldInstances": [],
-					"__worldX": 416,
+					"__worldX": 848,
 					"__worldY": 16
 				},
 				{
@@ -3809,7 +3793,7 @@
 					"defUid": 141,
 					"px": [0,0],
 					"fieldInstances": [],
-					"__worldX": 0,
+					"__worldX": 432,
 					"__worldY": 0
 				},
 				{
@@ -3825,7 +3809,7 @@
 					"defUid": 140,
 					"px": [384,80],
 					"fieldInstances": [],
-					"__worldX": 384,
+					"__worldX": 816,
 					"__worldY": 80
 				},
 				{
@@ -3841,7 +3825,7 @@
 					"defUid": 140,
 					"px": [400,96],
 					"fieldInstances": [],
-					"__worldX": 400,
+					"__worldX": 832,
 					"__worldY": 96
 				},
 				{
@@ -3857,7 +3841,7 @@
 					"defUid": 140,
 					"px": [384,272],
 					"fieldInstances": [],
-					"__worldX": 384,
+					"__worldX": 816,
 					"__worldY": 272
 				},
 				{
@@ -3873,7 +3857,7 @@
 					"defUid": 140,
 					"px": [384,288],
 					"fieldInstances": [],
-					"__worldX": 384,
+					"__worldX": 816,
 					"__worldY": 288
 				},
 				{
@@ -3889,7 +3873,7 @@
 					"defUid": 137,
 					"px": [400,192],
 					"fieldInstances": [],
-					"__worldX": 400,
+					"__worldX": 832,
 					"__worldY": 192
 				},
 				{
@@ -3905,7 +3889,7 @@
 					"defUid": 137,
 					"px": [400,208],
 					"fieldInstances": [],
-					"__worldX": 400,
+					"__worldX": 832,
 					"__worldY": 208
 				},
 				{
@@ -3921,7 +3905,7 @@
 					"defUid": 137,
 					"px": [400,224],
 					"fieldInstances": [],
-					"__worldX": 400,
+					"__worldX": 832,
 					"__worldY": 224
 				},
 				{
@@ -3937,7 +3921,7 @@
 					"defUid": 137,
 					"px": [400,256],
 					"fieldInstances": [],
-					"__worldX": 400,
+					"__worldX": 832,
 					"__worldY": 256
 				},
 				{
@@ -3953,7 +3937,7 @@
 					"defUid": 137,
 					"px": [400,240],
 					"fieldInstances": [],
-					"__worldX": 400,
+					"__worldX": 832,
 					"__worldY": 240
 				},
 				{
@@ -3969,7 +3953,7 @@
 					"defUid": 137,
 					"px": [384,208],
 					"fieldInstances": [],
-					"__worldX": 384,
+					"__worldX": 816,
 					"__worldY": 208
 				},
 				{
@@ -3985,7 +3969,7 @@
 					"defUid": 137,
 					"px": [368,208],
 					"fieldInstances": [],
-					"__worldX": 368,
+					"__worldX": 800,
 					"__worldY": 208
 				},
 				{
@@ -4001,7 +3985,7 @@
 					"defUid": 137,
 					"px": [384,224],
 					"fieldInstances": [],
-					"__worldX": 384,
+					"__worldX": 816,
 					"__worldY": 224
 				},
 				{
@@ -4017,7 +4001,7 @@
 					"defUid": 137,
 					"px": [400,272],
 					"fieldInstances": [],
-					"__worldX": 400,
+					"__worldX": 832,
 					"__worldY": 272
 				},
 				{
@@ -4033,7 +4017,7 @@
 					"defUid": 137,
 					"px": [400,288],
 					"fieldInstances": [],
-					"__worldX": 400,
+					"__worldX": 832,
 					"__worldY": 288
 				},
 				{
@@ -4049,7 +4033,7 @@
 					"defUid": 137,
 					"px": [352,208],
 					"fieldInstances": [],
-					"__worldX": 352,
+					"__worldX": 784,
 					"__worldY": 208
 				},
 				{
@@ -4065,7 +4049,7 @@
 					"defUid": 137,
 					"px": [368,224],
 					"fieldInstances": [],
-					"__worldX": 368,
+					"__worldX": 800,
 					"__worldY": 224
 				},
 				{
@@ -4081,7 +4065,7 @@
 					"defUid": 135,
 					"px": [336,176],
 					"fieldInstances": [],
-					"__worldX": 336,
+					"__worldX": 768,
 					"__worldY": 176
 				},
 				{
@@ -4097,7 +4081,7 @@
 					"defUid": 140,
 					"px": [336,160],
 					"fieldInstances": [],
-					"__worldX": 336,
+					"__worldX": 768,
 					"__worldY": 160
 				},
 				{
@@ -4113,7 +4097,7 @@
 					"defUid": 140,
 					"px": [336,192],
 					"fieldInstances": [],
-					"__worldX": 336,
+					"__worldX": 768,
 					"__worldY": 192
 				},
 				{
@@ -4129,7 +4113,7 @@
 					"defUid": 137,
 					"px": [160,304],
 					"fieldInstances": [],
-					"__worldX": 160,
+					"__worldX": 592,
 					"__worldY": 304
 				},
 				{
@@ -4145,7 +4129,7 @@
 					"defUid": 137,
 					"px": [96,208],
 					"fieldInstances": [],
-					"__worldX": 96,
+					"__worldX": 528,
 					"__worldY": 208
 				},
 				{
@@ -4161,7 +4145,7 @@
 					"defUid": 137,
 					"px": [112,208],
 					"fieldInstances": [],
-					"__worldX": 112,
+					"__worldX": 544,
 					"__worldY": 208
 				},
 				{
@@ -4177,7 +4161,7 @@
 					"defUid": 140,
 					"px": [112,192],
 					"fieldInstances": [],
-					"__worldX": 112,
+					"__worldX": 544,
 					"__worldY": 192
 				},
 				{
@@ -4193,7 +4177,7 @@
 					"defUid": 20,
 					"px": [160,208],
 					"fieldInstances": [],
-					"__worldX": 160,
+					"__worldX": 592,
 					"__worldY": 208
 				},
 				{
@@ -4209,7 +4193,7 @@
 					"defUid": 137,
 					"px": [144,208],
 					"fieldInstances": [],
-					"__worldX": 144,
+					"__worldX": 576,
 					"__worldY": 208
 				},
 				{
@@ -4225,7 +4209,7 @@
 					"defUid": 137,
 					"px": [128,208],
 					"fieldInstances": [],
-					"__worldX": 128,
+					"__worldX": 560,
 					"__worldY": 208
 				},
 				{
@@ -4241,7 +4225,7 @@
 					"defUid": 20,
 					"px": [336,208],
 					"fieldInstances": [],
-					"__worldX": 336,
+					"__worldX": 768,
 					"__worldY": 208
 				},
 				{
@@ -4257,7 +4241,7 @@
 					"defUid": 20,
 					"px": [320,208],
 					"fieldInstances": [],
-					"__worldX": 320,
+					"__worldX": 752,
 					"__worldY": 208
 				},
 				{
@@ -4273,7 +4257,7 @@
 					"defUid": 20,
 					"px": [160,112],
 					"fieldInstances": [],
-					"__worldX": 160,
+					"__worldX": 592,
 					"__worldY": 112
 				},
 				{
@@ -4289,7 +4273,7 @@
 					"defUid": 20,
 					"px": [144,112],
 					"fieldInstances": [],
-					"__worldX": 144,
+					"__worldX": 576,
 					"__worldY": 112
 				},
 				{
@@ -4305,7 +4289,7 @@
 					"defUid": 137,
 					"px": [16,112],
 					"fieldInstances": [],
-					"__worldX": 16,
+					"__worldX": 448,
 					"__worldY": 112
 				},
 				{
@@ -4321,7 +4305,7 @@
 					"defUid": 137,
 					"px": [16,128],
 					"fieldInstances": [],
-					"__worldX": 16,
+					"__worldX": 448,
 					"__worldY": 128
 				},
 				{
@@ -4337,7 +4321,7 @@
 					"defUid": 20,
 					"px": [96,112],
 					"fieldInstances": [],
-					"__worldX": 96,
+					"__worldX": 528,
 					"__worldY": 112
 				},
 				{
@@ -4353,7 +4337,7 @@
 					"defUid": 136,
 					"px": [144,192],
 					"fieldInstances": [],
-					"__worldX": 144,
+					"__worldX": 576,
 					"__worldY": 192
 				},
 				{
@@ -4369,7 +4353,7 @@
 					"defUid": 140,
 					"px": [208,192],
 					"fieldInstances": [],
-					"__worldX": 208,
+					"__worldX": 640,
 					"__worldY": 192
 				},
 				{
@@ -4385,7 +4369,7 @@
 					"defUid": 140,
 					"px": [208,176],
 					"fieldInstances": [],
-					"__worldX": 208,
+					"__worldX": 640,
 					"__worldY": 176
 				},
 				{
@@ -4401,7 +4385,7 @@
 					"defUid": 140,
 					"px": [192,176],
 					"fieldInstances": [],
-					"__worldX": 192,
+					"__worldX": 624,
 					"__worldY": 176
 				},
 				{
@@ -4417,7 +4401,7 @@
 					"defUid": 140,
 					"px": [192,192],
 					"fieldInstances": [],
-					"__worldX": 192,
+					"__worldX": 624,
 					"__worldY": 192
 				},
 				{
@@ -4433,7 +4417,7 @@
 					"defUid": 140,
 					"px": [176,192],
 					"fieldInstances": [],
-					"__worldX": 176,
+					"__worldX": 608,
 					"__worldY": 192
 				},
 				{
@@ -4449,7 +4433,7 @@
 					"defUid": 140,
 					"px": [176,176],
 					"fieldInstances": [],
-					"__worldX": 176,
+					"__worldX": 608,
 					"__worldY": 176
 				},
 				{
@@ -4465,7 +4449,7 @@
 					"defUid": 140,
 					"px": [160,176],
 					"fieldInstances": [],
-					"__worldX": 160,
+					"__worldX": 592,
 					"__worldY": 176
 				},
 				{
@@ -4481,7 +4465,7 @@
 					"defUid": 140,
 					"px": [160,192],
 					"fieldInstances": [],
-					"__worldX": 160,
+					"__worldX": 592,
 					"__worldY": 192
 				},
 				{
@@ -4497,7 +4481,7 @@
 					"defUid": 140,
 					"px": [144,176],
 					"fieldInstances": [],
-					"__worldX": 144,
+					"__worldX": 576,
 					"__worldY": 176
 				},
 				{
@@ -4513,7 +4497,7 @@
 					"defUid": 140,
 					"px": [128,176],
 					"fieldInstances": [],
-					"__worldX": 128,
+					"__worldX": 560,
 					"__worldY": 176
 				},
 				{
@@ -4529,8 +4513,280 @@
 					"defUid": 140,
 					"px": [128,192],
 					"fieldInstances": [],
-					"__worldX": 128,
+					"__worldX": 560,
 					"__worldY": 192
+				},
+				{
+					"__identifier": "Bounce_Pad",
+					"__grid": [15,17],
+					"__pivot": [0,0],
+					"__tags": ["Environment"],
+					"__tile": null,
+					"__smartColor": "#0FCDC7",
+					"iid": "488e9a90-ac70-11f0-8e08-05ea8b7232da",
+					"width": 16,
+					"height": 8,
+					"defUid": 138,
+					"px": [240,272],
+					"fieldInstances": [],
+					"__worldX": 672,
+					"__worldY": 272
+				},
+				{
+					"__identifier": "Bounce_Pad",
+					"__grid": [16,17],
+					"__pivot": [0,0],
+					"__tags": ["Environment"],
+					"__tile": null,
+					"__smartColor": "#0FCDC7",
+					"iid": "488e9a91-ac70-11f0-8e08-ff07fe21d4ff",
+					"width": 16,
+					"height": 8,
+					"defUid": 138,
+					"px": [256,272],
+					"fieldInstances": [],
+					"__worldX": 688,
+					"__worldY": 272
+				},
+				{
+					"__identifier": "Bounce_Pad",
+					"__grid": [14,17],
+					"__pivot": [0,0],
+					"__tags": ["Environment"],
+					"__tile": null,
+					"__smartColor": "#0FCDC7",
+					"iid": "488ec1a0-ac70-11f0-8e08-11a68fadd662",
+					"width": 16,
+					"height": 8,
+					"defUid": 138,
+					"px": [224,272],
+					"fieldInstances": [],
+					"__worldX": 656,
+					"__worldY": 272
+				},
+				{
+					"__identifier": "Enemy_Ground_Spawn",
+					"__grid": [10,12],
+					"__pivot": [0,0],
+					"__tags": ["Enemy_Spawn_Locations"],
+					"__tile": null,
+					"__smartColor": "#E4A672",
+					"iid": "53433c20-ac70-11f0-8e08-89eb061e29a6",
+					"width": 16,
+					"height": 16,
+					"defUid": 136,
+					"px": [160,192],
+					"fieldInstances": [],
+					"__worldX": 592,
+					"__worldY": 192
+				},
+				{
+					"__identifier": "Enemy_Ground_Spawn",
+					"__grid": [11,12],
+					"__pivot": [0,0],
+					"__tags": ["Enemy_Spawn_Locations"],
+					"__tile": null,
+					"__smartColor": "#E4A672",
+					"iid": "53c82390-ac70-11f0-8e08-656dc2db77d5",
+					"width": 16,
+					"height": 16,
+					"defUid": 136,
+					"px": [176,192],
+					"fieldInstances": [],
+					"__worldX": 608,
+					"__worldY": 192
+				},
+				{
+					"__identifier": "Enemy_Ground_Spawn",
+					"__grid": [8,12],
+					"__pivot": [0,0],
+					"__tags": ["Enemy_Spawn_Locations"],
+					"__tile": null,
+					"__smartColor": "#E4A672",
+					"iid": "55097d30-ac70-11f0-8e08-53a403ddb594",
+					"width": 16,
+					"height": 16,
+					"defUid": 136,
+					"px": [128,192],
+					"fieldInstances": [],
+					"__worldX": 560,
+					"__worldY": 192
+				},
+				{
+					"__identifier": "Enemy_Spawn_Buffer",
+					"__grid": [5,11],
+					"__pivot": [0,0],
+					"__tags": ["Enemy_Spawn_Locations"],
+					"__tile": null,
+					"__smartColor": "#000000",
+					"iid": "59e3b500-ac70-11f0-8e08-41652103184e",
+					"width": 16,
+					"height": 16,
+					"defUid": 140,
+					"px": [80,176],
+					"fieldInstances": [],
+					"__worldX": 512,
+					"__worldY": 176
+				},
+				{
+					"__identifier": "Enemy_Ground_Spawn",
+					"__grid": [23,12],
+					"__pivot": [0,0],
+					"__tags": ["Enemy_Spawn_Locations"],
+					"__tile": null,
+					"__smartColor": "#E4A672",
+					"iid": "5f75a410-ac70-11f0-8e08-f123f6cdf4bc",
+					"width": 16,
+					"height": 16,
+					"defUid": 136,
+					"px": [368,192],
+					"fieldInstances": [],
+					"__worldX": 800,
+					"__worldY": 192
+				},
+				{
+					"__identifier": "Enemy_Ground_Spawn",
+					"__grid": [22,12],
+					"__pivot": [0,0],
+					"__tags": ["Enemy_Spawn_Locations"],
+					"__tile": null,
+					"__smartColor": "#E4A672",
+					"iid": "60251df0-ac70-11f0-8e08-1ba936b8abf0",
+					"width": 16,
+					"height": 16,
+					"defUid": 136,
+					"px": [352,192],
+					"fieldInstances": [],
+					"__worldX": 784,
+					"__worldY": 192
+				},
+				{
+					"__identifier": "Enemy_Ground_Spawn",
+					"__grid": [21,12],
+					"__pivot": [0,0],
+					"__tags": ["Enemy_Spawn_Locations"],
+					"__tile": null,
+					"__smartColor": "#E4A672",
+					"iid": "60c04c80-ac70-11f0-8e08-cbda8961990b",
+					"width": 16,
+					"height": 16,
+					"defUid": 136,
+					"px": [336,192],
+					"fieldInstances": [],
+					"__worldX": 768,
+					"__worldY": 192
+				},
+				{
+					"__identifier": "Enemy_Spawn_Buffer",
+					"__grid": [24,12],
+					"__pivot": [0,0],
+					"__tags": ["Enemy_Spawn_Locations"],
+					"__tile": null,
+					"__smartColor": "#000000",
+					"iid": "625d5ab0-ac70-11f0-8e08-158b8d2b80eb",
+					"width": 16,
+					"height": 16,
+					"defUid": 140,
+					"px": [384,192],
+					"fieldInstances": [],
+					"__worldX": 816,
+					"__worldY": 192
+				},
+				{
+					"__identifier": "Enemy_Spawn_Buffer",
+					"__grid": [24,11],
+					"__pivot": [0,0],
+					"__tags": ["Enemy_Spawn_Locations"],
+					"__tile": null,
+					"__smartColor": "#000000",
+					"iid": "62a0a540-ac70-11f0-8e08-65a2adeb89f3",
+					"width": 16,
+					"height": 16,
+					"defUid": 140,
+					"px": [384,176],
+					"fieldInstances": [],
+					"__worldX": 816,
+					"__worldY": 176
+				},
+				{
+					"__identifier": "Enemy_Spawn_Buffer",
+					"__grid": [24,10],
+					"__pivot": [0,0],
+					"__tags": ["Enemy_Spawn_Locations"],
+					"__tile": null,
+					"__smartColor": "#000000",
+					"iid": "635eec30-ac70-11f0-8e08-e74900dd5584",
+					"width": 16,
+					"height": 16,
+					"defUid": 140,
+					"px": [384,160],
+					"fieldInstances": [],
+					"__worldX": 816,
+					"__worldY": 160
+				},
+				{
+					"__identifier": "Enemy_Spawn_Buffer",
+					"__grid": [24,9],
+					"__pivot": [0,0],
+					"__tags": ["Enemy_Spawn_Locations"],
+					"__tile": null,
+					"__smartColor": "#000000",
+					"iid": "6397d680-ac70-11f0-8e08-791cf7e2c96b",
+					"width": 16,
+					"height": 16,
+					"defUid": 140,
+					"px": [384,144],
+					"fieldInstances": [],
+					"__worldX": 816,
+					"__worldY": 144
+				},
+				{
+					"__identifier": "Enemy_Spawn_Buffer",
+					"__grid": [23,9],
+					"__pivot": [0,0],
+					"__tags": ["Enemy_Spawn_Locations"],
+					"__tile": null,
+					"__smartColor": "#000000",
+					"iid": "63e35e70-ac70-11f0-8e08-bd1af06f5c64",
+					"width": 16,
+					"height": 16,
+					"defUid": 140,
+					"px": [368,144],
+					"fieldInstances": [],
+					"__worldX": 800,
+					"__worldY": 144
+				},
+				{
+					"__identifier": "Enemy_Air_Spawn",
+					"__grid": [23,10],
+					"__pivot": [0,0],
+					"__tags": ["Enemy_Spawn_Locations"],
+					"__tile": null,
+					"__smartColor": "#EAD4AA",
+					"iid": "6739b560-ac70-11f0-8e08-61ea60551748",
+					"width": 16,
+					"height": 16,
+					"defUid": 135,
+					"px": [368,160],
+					"fieldInstances": [],
+					"__worldX": 800,
+					"__worldY": 160
+				},
+				{
+					"__identifier": "Enemy_Spawn_Buffer",
+					"__grid": [23,11],
+					"__pivot": [0,0],
+					"__tags": ["Enemy_Spawn_Locations"],
+					"__tile": null,
+					"__smartColor": "#000000",
+					"iid": "68c27840-ac70-11f0-8e08-65e124d1fca9",
+					"width": 16,
+					"height": 16,
+					"defUid": 140,
+					"px": [368,176],
+					"fieldInstances": [],
+					"__worldX": 800,
+					"__worldY": 176
 				}
 			]
 		},
@@ -4560,11 +4816,5 @@
 			"entityInstances": []
 		}
 	],
-	"__neighbours": [
-		{ "levelIid": "831de8e0-ac70-11f0-bd7d-5b2493647f6c", "dir": "s" },
-		{ "levelIid": "6dbee120-ac70-11f0-bd7d-339d6e568111", "dir": "e" },
-		{ "levelIid": "4a5df210-ac70-11f0-bd7d-3d193a511f7b", "dir": "e" },
-		{ "levelIid": "470b2160-ac70-11f0-bd7d-8568904ad793", "dir": "n" },
-		{ "levelIid": "18733040-ac70-11f0-bbfb-c927976a152a", "dir": "ne" }
-	]
+	"__neighbours": [ { "levelIid": "470b2160-ac70-11f0-bd7d-8568904ad793", "dir": "w" }, { "levelIid": "18733040-ac70-11f0-bbfb-c927976a152a", "dir": "w" }, { "levelIid": "66bc1630-ac70-11f0-8e08-ed595c6528e8", "dir": "s" }, { "levelIid": "3f642f60-ac70-11f0-8e08-dbdb8971397a", "dir": "e" } ]
 }

@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: EmberDamage
   m_EditorClassIdentifier: Assembly-CSharp::StackDamageOnTickStatus
   tickIndex: 0
-  damagePerStack: 1
+  damagePerStack: 0.5

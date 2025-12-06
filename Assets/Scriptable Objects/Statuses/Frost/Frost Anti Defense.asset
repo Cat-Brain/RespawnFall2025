@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e3cac4af826864049a31930407e148e7, type: 3}
   m_Name: Frost Anti Defense
   m_EditorClassIdentifier: Assembly-CSharp::DefenseStatus
-  defense: -6
+  defense: -3
   defensePerStack: 0
