@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/RafStuff/Cleanary/backups/839cff50-8560-11f0-a001-9b152687a5d3_2025-12-06_01-40-34/Cleanary/Level_4.ldtkl.meta
+guid: e2ea15fcc40f1f349bf82e1ab2c48a46
+========
+guid: 9edd47f02e6aa1f4098c545509b054d5
+>>>>>>>> main:Assets/RafStuff/Cleanary/ArenaEasy1.ldtkl.meta
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 6338a7f25a1449ab93c975134b6e08a2, type: 3}
+  _reimportOnDependencyChange: 1

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/RafStuff/Cleanary/backups/839cff50-8560-11f0-a001-9b152687a5d3_2025-12-05_09-07-32/Cleanary/Bonus_Room.ldtkl.meta
+guid: 156b39bb397ae814b802799976900b97
+========
+guid: 3344b73e17ea1a04b95212be354b21ea
+>>>>>>>> main:Assets/RafStuff/Cleanary/backups/839cff50-8560-11f0-a001-9b152687a5d3_2025-12-06_08-50-03/Cleanary/Bonus_Room.ldtkl.meta
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 6338a7f25a1449ab93c975134b6e08a2, type: 3}
+  _reimportOnDependencyChange: 1

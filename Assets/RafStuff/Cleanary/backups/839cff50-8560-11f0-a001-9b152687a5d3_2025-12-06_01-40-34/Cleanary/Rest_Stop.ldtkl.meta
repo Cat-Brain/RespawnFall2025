@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+<<<<<<< HEAD:Assets/RafStuff/Cleanary/backups/839cff50-8560-11f0-a001-9b152687a5d3_2025-12-05_07-51-12/Cleanary/Rest_Stop.ldtkl.meta
+<<<<<<<< HEAD:Assets/RafStuff/Cleanary/backups/839cff50-8560-11f0-a001-9b152687a5d3_2025-12-06_01-40-34/Cleanary/Rest_Stop.ldtkl.meta
+guid: 64a38754b86aa1845a7249b188d62719
+========
+guid: 3288627675a7d4f4bab8b9fb9a439fcb
+>>>>>>>> main:Assets/RafStuff/Cleanary/ArenaEasy2.ldtkl.meta
+=======
+guid: f4244c9b41c33af498e8cbc3101115f1
+>>>>>>> main:Assets/RafStuff/Cleanary/backups/839cff50-8560-11f0-a001-9b152687a5d3_2025-12-06_01-40-34/Cleanary/Rest_Stop.ldtkl.meta
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 6338a7f25a1449ab93c975134b6e08a2, type: 3}
+  _reimportOnDependencyChange: 1
