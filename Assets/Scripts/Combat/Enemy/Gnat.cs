@@ -168,13 +168,14 @@ public class Gnat : Enemy
 
         if (projectileWaitTimer > 0)
         {
-            if(!chargeSoundPlayed)
-            {
-                SFXManager.Instance.Play(SFXManager.Instance.gnatCharge);
-                chargeSoundPlayed = true;
-            }
             desiredDir = Vector2.down;
             return;
+        }
+
+        if(!chargeSoundPlayed)
+        {
+            SFXManager.Instance.Play(SFXManager.Instance.gnatCharge);
+            chargeSoundPlayed = true;
         }
 
         desiredDir = playerDir;

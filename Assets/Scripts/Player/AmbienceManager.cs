@@ -32,4 +32,9 @@ public class AmbienceManager : MonoBehaviour
     {
         instance.setParameterByName("ThemeIndex", index);
     }
+
+    public void PlayLobbyMusic()
+    {
+        AmbienceManager.Instance.SetTheme(1);
+    } 
 }

@@ -31,6 +31,5 @@ public class SFXManager : MonoBehaviour
     public void PlayClick()
     {
         RuntimeManager.PlayOneShot(click);
-    } 
-
+    }
 }
