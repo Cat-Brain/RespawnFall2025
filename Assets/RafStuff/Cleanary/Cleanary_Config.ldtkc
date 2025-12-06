@@ -10,14 +10,7 @@
     "CreateLevelBoundsTrigger": false,
     "UseParallax": true,
     "ScaleEntities": true,
-    "IntGridValues": [
-        {
-            "_key": "IntGrid_1",
-            "_asset": {
-                "instanceID": 0
-            }
-        }
-    ],
+    "IntGridValues": [],
     "Entities": [
         {
             "_key": "Player",
@@ -25,30 +18,6 @@
                 "fileID": 7230076448914424605,
                 "guid": "a431a3a26c7d5ce4e9181a1bc3972865",
                 "type": 3
-            }
-        },
-        {
-            "_key": "Harpy",
-            "_asset": {
-                "instanceID": 0
-            }
-        },
-        {
-            "_key": "Styx",
-            "_asset": {
-                "instanceID": 0
-            }
-        },
-        {
-            "_key": "Walker",
-            "_asset": {
-                "instanceID": 0
-            }
-        },
-        {
-            "_key": "Flower",
-            "_asset": {
-                "instanceID": 0
             }
         },
         {
@@ -64,14 +33,6 @@
             "_asset": {
                 "fileID": 2541446833654820051,
                 "guid": "c412389dc3f48254fa58c9ccd129e84a",
-                "type": 3
-            }
-        },
-        {
-            "_key": "Win",
-            "_asset": {
-                "fileID": 6519263521840097383,
-                "guid": "663a213a24d4d054f983b8f53159b04d",
                 "type": 3
             }
         },
@@ -134,37 +95,49 @@
         {
             "_key": "Large_Bath",
             "_asset": {
-                "instanceID": 0
+                "fileID": 3245500650451692808,
+                "guid": "cdfdcfc5e6be1ab4988e6116496f7819",
+                "type": 3
             }
         },
         {
             "_key": "Crow",
             "_asset": {
-                "instanceID": 0
+                "fileID": 7037532221280979557,
+                "guid": "870fcfcdf333631458b534eeffb6b79a",
+                "type": 3
             }
         },
         {
             "_key": "Shop_Item",
             "_asset": {
-                "instanceID": 0
+                "fileID": 7291329168691056245,
+                "guid": "e556cd3eac563b240a88f2453edb133c",
+                "type": 3
             }
         },
         {
             "_key": "Chest",
             "_asset": {
-                "instanceID": 0
+                "fileID": 3653660039003818846,
+                "guid": "e05c916ff6ac9364a9fb43fbbebd695c",
+                "type": 3
             }
         },
         {
             "_key": "Small_Bath",
             "_asset": {
-                "instanceID": 0
+                "fileID": 2216612161174811768,
+                "guid": "527f894090356894791d1ed22d713c58",
+                "type": 3
             }
         },
         {
             "_key": "Main_Bath",
             "_asset": {
-                "instanceID": 0
+                "fileID": 5762518388294275976,
+                "guid": "041a5425272a64f43b1fe81d078c4c44",
+                "type": 3
             }
         },
         {
@@ -194,7 +167,69 @@
         {
             "_key": "Restock",
             "_asset": {
+                "fileID": 735447745076375117,
+                "guid": "db09e123755da6042b0133942054ab4c",
+                "type": 3
+            }
+        },
+        {
+            "_key": "Spikes_Left",
+            "_asset": {
                 "instanceID": 0
+            }
+        },
+        {
+            "_key": "Spikes_Right",
+            "_asset": {
+                "instanceID": 0
+            }
+        },
+        {
+            "_key": "Spikes_Up",
+            "_asset": {
+                "instanceID": 0
+            }
+        },
+        {
+            "_key": "Spikes_Down",
+            "_asset": {
+                "instanceID": 0
+            }
+        },
+        {
+            "_key": "GBC",
+            "_asset": {
+                "instanceID": 0
+            }
+        },
+        {
+            "_key": "Elite_Continue",
+            "_asset": {
+                "instanceID": 0
+            }
+        },
+        {
+            "_key": "Elite_End",
+            "_asset": {
+                "fileID": 4026634023225149634,
+                "guid": "49c58904b38bb6b4bb36927f3c54a89e",
+                "type": 3
+            }
+        },
+        {
+            "_key": "Mask",
+            "_asset": {
+                "fileID": 7112408124966752867,
+                "guid": "2e36691dc38b746409f011999a591a3e",
+                "type": 3
+            }
+        },
+        {
+            "_key": "GBC_Spawn",
+            "_asset": {
+                "fileID": 4021831251702732551,
+                "guid": "f3844fc81b391724983ad33bd6446062",
+                "type": 3
             }
         }
     ]

@@ -19,26 +19,14 @@ ScriptedImporter:
   _createLevelBoundsTrigger: 0
   _useParallax: 1
   _scaleEntities: 1
-  _intGridValues:
-  - _key: IntGrid_1
-    _asset: {instanceID: 0}
+  _intGridValues: []
   _entities:
   - _key: Player
     _asset: {fileID: 7230076448914424605, guid: a431a3a26c7d5ce4e9181a1bc3972865, type: 3}
-  - _key: Harpy
-    _asset: {instanceID: 0}
-  - _key: Styx
-    _asset: {instanceID: 0}
-  - _key: Walker
-    _asset: {instanceID: 0}
-  - _key: Flower
-    _asset: {instanceID: 0}
   - _key: Crumbling
     _asset: {fileID: 5345389114221763969, guid: 42927a14cb257aa4f9b2bf2ddcc16081, type: 3}
   - _key: One_Way
     _asset: {fileID: 2541446833654820051, guid: c412389dc3f48254fa58c9ccd129e84a, type: 3}
-  - _key: Win
-    _asset: {fileID: 6519263521840097383, guid: 663a213a24d4d054f983b8f53159b04d, type: 3}
   - _key: Enemy_Air_Spawn
     _asset: {fileID: 4021831251702732551, guid: 12c8a195f7f972f4a931e3bd313bd43a, type: 3}
   - _key: Enemy_Ground_Spawn
@@ -54,17 +42,17 @@ ScriptedImporter:
   - _key: Wall_Invisible
     _asset: {fileID: 2652371725896248024, guid: 3981bb1792a9ef24582233a24c7f3e9f, type: 3}
   - _key: Large_Bath
-    _asset: {instanceID: 0}
+    _asset: {fileID: 3245500650451692808, guid: cdfdcfc5e6be1ab4988e6116496f7819, type: 3}
   - _key: Crow
-    _asset: {instanceID: 0}
+    _asset: {fileID: 7037532221280979557, guid: 870fcfcdf333631458b534eeffb6b79a, type: 3}
   - _key: Shop_Item
-    _asset: {instanceID: 0}
+    _asset: {fileID: 7291329168691056245, guid: e556cd3eac563b240a88f2453edb133c, type: 3}
   - _key: Chest
-    _asset: {instanceID: 0}
+    _asset: {fileID: 3653660039003818846, guid: e05c916ff6ac9364a9fb43fbbebd695c, type: 3}
   - _key: Small_Bath
-    _asset: {instanceID: 0}
+    _asset: {fileID: 2216612161174811768, guid: 527f894090356894791d1ed22d713c58, type: 3}
   - _key: Main_Bath
-    _asset: {instanceID: 0}
+    _asset: {fileID: 5762518388294275976, guid: 041a5425272a64f43b1fe81d078c4c44, type: 3}
   - _key: End_of_Level_Right
     _asset: {fileID: 4026634023225149634, guid: 7ddb3429a7b819e4eaf602009c05769f, type: 3}
   - _key: End_of_Level_Left
@@ -72,7 +60,25 @@ ScriptedImporter:
   - _key: Reward_Item
     _asset: {fileID: 3653660039003818846, guid: f70574dafd48e0c478f0cd9058eff322, type: 3}
   - _key: Restock
+    _asset: {fileID: 735447745076375117, guid: db09e123755da6042b0133942054ab4c, type: 3}
+  - _key: Spikes_Left
     _asset: {instanceID: 0}
+  - _key: Spikes_Right
+    _asset: {instanceID: 0}
+  - _key: Spikes_Up
+    _asset: {instanceID: 0}
+  - _key: Spikes_Down
+    _asset: {instanceID: 0}
+  - _key: GBC
+    _asset: {instanceID: 0}
+  - _key: Elite_Continue
+    _asset: {instanceID: 0}
+  - _key: Elite_End
+    _asset: {fileID: 4026634023225149634, guid: 49c58904b38bb6b4bb36927f3c54a89e, type: 3}
+  - _key: Mask
+    _asset: {fileID: 7112408124966752867, guid: 2e36691dc38b746409f011999a591a3e, type: 3}
+  - _key: GBC_Spawn
+    _asset: {fileID: 4021831251702732551, guid: f3844fc81b391724983ad33bd6446062, type: 3}
   _enumGenerate: 0
   _enumPath: 
   _enumNamespace: 

@@ -77,7 +77,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: -1923271087
-  m_SortingLayer: 4
+  m_SortingLayer: 3
   m_SortingOrder: 3
   m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
   m_Color: {r: 0.050980397, g: 0.1254902, b: 0.24705884, a: 1}
@@ -168,7 +168,7 @@ LineRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: -1923271087
-  m_SortingLayer: 4
+  m_SortingLayer: 3
   m_SortingOrder: 2
   m_Positions:
   - {x: -0.5, y: 0, z: 0}
@@ -319,7 +319,7 @@ LineRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: -1923271087
-  m_SortingLayer: 4
+  m_SortingLayer: 3
   m_SortingOrder: 1
   m_Positions:
   - {x: 0, y: -0.5, z: 0}
@@ -407,6 +407,7 @@ GameObject:
   - component: {fileID: 445936508350963275}
   - component: {fileID: 2046916283267975261}
   - component: {fileID: 4131349477029609554}
+  - component: {fileID: 5542764072182208227}
   m_Layer: 10
   m_Name: Player
   m_TagString: Player
@@ -480,7 +481,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 4
+  m_Mass: 1
   m_LinearDamping: 0
   m_AngularDamping: 0.05
   m_GravityScale: 0
@@ -567,7 +568,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerMove
   accel: 16
   speed: 6.5
-  jumpHeight: 3
+  jumpHeight: 3.2
   airJumps: 0
   jumpBufferTime: 0.25
   cayoteTime: 0.2
@@ -589,8 +590,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a1514470804f4e6419609cc6c5c2f61d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerGravity
-  gravity: 15
-  tapJumpGravity: 30
+  gravity: 25
+  tapJumpGravity: 80
   inQuickFall: 0
 --- !u!114 &1397539087181620112
 MonoBehaviour:
@@ -750,6 +751,37 @@ MonoBehaviour:
   target: 8
   baseValue: 1
   value: 0
+--- !u!114 &5542764072182208227
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2619534745981113462}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: FMODUnity::FMODUnity.StudioEventEmitter
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 1543653134
+      Data2: 1291779780
+      Data3: 1141058736
+      Data4: 893112163
+    Path: event:/Music and Background
+  Event: 
+  EventPlayTrigger: 1
+  EventStopTrigger: 2
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &4569230922230076936
 GameObject:
   m_ObjectHideFlags: 0
@@ -876,7 +908,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: -1923271087
-  m_SortingLayer: 4
+  m_SortingLayer: 3
   m_SortingOrder: 2
   m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
   m_Color: {r: 0.9803922, g: 0.85098046, b: 0.21176472, a: 1}
@@ -966,7 +998,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: -1923271087
-  m_SortingLayer: 4
+  m_SortingLayer: 3
   m_SortingOrder: 2
   m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
   m_Color: {r: 0.9803922, g: 0.85098046, b: 0.21176472, a: 1}
@@ -1057,7 +1089,7 @@ LineRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: -1923271087
-  m_SortingLayer: 4
+  m_SortingLayer: 3
   m_SortingOrder: 3
   m_Positions:
   - {x: -0.5, y: 0, z: 0}

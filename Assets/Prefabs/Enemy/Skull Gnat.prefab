@@ -874,6 +874,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Gnat
   tier: 1
+  type: 0
   spawnOffset: {x: 0.5, y: 0.5}
   spawnDimensions: {x: 1, y: 1}
   playerMask:
@@ -912,7 +913,7 @@ MonoBehaviour:
   stunnedGravity: 1
   avoidanceMask:
     serializedVersion: 2
-    m_Bits: 8705
+    m_Bits: 12801
   avoidanceDist: 2
   avoidanceAccel: 10
   avoidanceSpeed: 3
@@ -949,7 +950,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::HealthInst
   tickEntity: {fileID: 0}
-  data: {fileID: 11400000, guid: 1ddff9aaedf67b54f9178d123ca9dd13, type: 2}
+  data: {fileID: 11400000, guid: 7b53c4beb5beaa7498f6c1d41151d70e, type: 2}
   health: 0
   fractionalHealthOffset: 0
   statuses: []
@@ -1115,7 +1116,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: -1142458201
-  m_SortingLayer: 3
+  m_SortingLayer: 5
   m_SortingOrder: 0
   m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
   m_Color: {r: 0.33333334, g: 0.7019608, b: 0.23137255, a: 1}

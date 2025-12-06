@@ -1,5 +1,13 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
+<<<<<<<< HEAD:Assets/RafStuff/Cleanary/simplified/Bonus_Room.meta
 guid: d27c0ae4fd122c841af1c3616e44fe26
+========
+guid: caacde34b79883d4aad26d8bbb7f8240
+>>>>>>>> main:Assets/RafStuff/Cleanary/backups/839cff50-8560-11f0-a001-9b152687a5d3_2025-12-06_08-50-03/Cleanary.meta
+=======
+guid: fd7f24c7773eb0b43923fffaa75dfad2
+>>>>>>> main
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}
