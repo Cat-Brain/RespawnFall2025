@@ -79,6 +79,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &-7611496859989212026
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/GnatCharge
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/GnatCharge
+  Guid:
+    Data1: 316716879
+    Data2: 1126614875
+    Data3: 158290566
+    Data4: 1991421335
+  Banks:
+  - {fileID: -5801947336995238161}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &-5801947336995238161
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -94,11 +121,38 @@ MonoBehaviour:
   Path: Assets/Game SFX/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 639005757786043051
+  lastModified: 639005813334645171
   FileSizes:
   - Name: Desktop
-    Value: 5463168
+    Value: 5480352
   Exists: 1
+--- !u!114 &-5053028751656555242
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/GnatSpit
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/GnatSpit
+  Guid:
+    Data1: -1150847273
+    Data2: 1212161531
+    Data3: -816227654
+    Data4: 924990919
+  Banks:
+  - {fileID: -5801947336995238161}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &-4757193944827095257
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -233,13 +287,15 @@ MonoBehaviour:
   - {fileID: 670331537943327225}
   - {fileID: 3754537284597924949}
   - {fileID: 6192089754804017618}
+  - {fileID: -7611496859989212026}
+  - {fileID: -5053028751656555242}
   EditorParameters: []
   MasterBanks:
   - {fileID: -5801947336995238161}
   StringsBanks:
   - {fileID: 1503091975454383515}
   cacheVersion: 131857
-  cacheTime: 639005757786073266
+  cacheTime: 639005813334677119
   SerializableEventsDict:
   - key: event:/Music and Background
     index: 0
@@ -261,6 +317,10 @@ MonoBehaviour:
     index: 8
   - key: event:/StatusFire
     index: 9
+  - key: event:/GnatCharge
+    index: 10
+  - key: event:/GnatSpit
+    index: 11
 --- !u!114 &670331537943327225
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -303,10 +363,10 @@ MonoBehaviour:
   Path: Assets/Game SFX/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 639005757786073266
+  lastModified: 639005813334677119
   FileSizes:
   - Name: Desktop
-    Value: 1222
+    Value: 1310
   Exists: 1
 --- !u!114 &1622052293797444496
 MonoBehaviour:

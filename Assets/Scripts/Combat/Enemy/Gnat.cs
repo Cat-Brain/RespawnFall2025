@@ -36,6 +36,8 @@ public class Gnat : Enemy
 
     public float wingRotTimer;
     public SpringUtils.tDampedSpringMotionParams chaseSpring = new(), rotateSpring = new();
+    private bool chargeSoundPlayed = false;
+ 
 
     public void RandomizeIdleMove()
     {
@@ -163,8 +165,14 @@ public class Gnat : Enemy
         rb.linearVelocity = vel;
 
         projectileWaitTimer = Mathf.Max(0, projectileWaitTimer - Time.deltaTime);
+
         if (projectileWaitTimer > 0)
         {
+            if(!chargeSoundPlayed)
+            {
+                SFXManager.Instance.Play(SFXManager.Instance.gnatCharge);
+                chargeSoundPlayed = true;
+            }
             desiredDir = Vector2.down;
             return;
         }
@@ -174,6 +182,9 @@ public class Gnat : Enemy
         shooting = true;
         projectileIndicator.DOScale(projectile.radius, projectileFireTime).OnComplete(() =>
         {
+            SFXManager.Instance.Play(SFXManager.Instance.gnatSpit);
+
+            chargeSoundPlayed = false;
             projectileIndicator.localScale = Vector3.zero;
             shooting = false;
             stunTimer = projectileStunTime;

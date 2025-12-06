@@ -190,6 +190,7 @@ public class Charger : Enemy
                             hit.damage = damageStat.value;
                             health.ApplyHit(hit);
                         }
+                        SFXManager.Instance.Play(SFXManager.Instance.bonk);
                         SetState(AIState.STUNNED);
                     }
                     if (chargerState != ChargerAIState.CHARGING)

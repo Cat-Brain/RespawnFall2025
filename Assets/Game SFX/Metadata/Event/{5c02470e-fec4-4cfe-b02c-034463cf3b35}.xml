@@ -174,7 +174,7 @@
 			<value>true</value>
 		</property>
 		<property name="volume">
-			<value>-24.5</value>
+			<value>-28</value>
 		</property>
 		<property name="looping">
 			<value>true</value>
@@ -310,7 +310,7 @@
 			<value>4</value>
 		</property>
 		<property name="volume">
-			<value>-8</value>
+			<value>-14</value>
 		</property>
 		<property name="looping">
 			<value>true</value>

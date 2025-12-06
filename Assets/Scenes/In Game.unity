@@ -1619,6 +1619,10 @@ PrefabInstance:
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 8296159027491990314, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
+      propertyPath: bonk.Path
+      value: event:/Bonk
+      objectReference: {fileID: 0}
+    - target: {fileID: 8296159027491990314, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
       propertyPath: jump.Path
       value: event:/Jump
       objectReference: {fileID: 0}
@@ -1633,6 +1637,10 @@ PrefabInstance:
     - target: {fileID: 8296159027491990314, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
       propertyPath: hitFire.Path
       value: event:/HitFire
+      objectReference: {fileID: 0}
+    - target: {fileID: 8296159027491990314, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
+      propertyPath: gnatSpit.Path
+      value: event:/GnatSpit
       objectReference: {fileID: 0}
     - target: {fileID: 8296159027491990314, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
       propertyPath: sfxEvent.Path
@@ -1651,6 +1659,26 @@ PrefabInstance:
       value: event:/StatusIce
       objectReference: {fileID: 0}
     - target: {fileID: 8296159027491990314, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
+      propertyPath: bonk.Guid.Data1
+      value: 1845943098
+      objectReference: {fileID: 0}
+    - target: {fileID: 8296159027491990314, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
+      propertyPath: bonk.Guid.Data2
+      value: 1117609589
+      objectReference: {fileID: 0}
+    - target: {fileID: 8296159027491990314, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
+      propertyPath: bonk.Guid.Data3
+      value: 468245905
+      objectReference: {fileID: 0}
+    - target: {fileID: 8296159027491990314, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
+      propertyPath: bonk.Guid.Data4
+      value: -651078921
+      objectReference: {fileID: 0}
+    - target: {fileID: 8296159027491990314, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
+      propertyPath: gnatCharge.Path
+      value: event:/GnatCharge
+      objectReference: {fileID: 0}
+    - target: {fileID: 8296159027491990314, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
       propertyPath: jump.Guid.Data1
       value: -584784681
       objectReference: {fileID: 0}
@@ -1665,6 +1693,10 @@ PrefabInstance:
     - target: {fileID: 8296159027491990314, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
       propertyPath: jump.Guid.Data4
       value: -404279402
+      objectReference: {fileID: 0}
+    - target: {fileID: 8296159027491990314, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
+      propertyPath: statusFire.Path
+      value: event:/StatusFire
       objectReference: {fileID: 0}
     - target: {fileID: 8296159027491990314, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
       propertyPath: click.Guid.Data1
@@ -1713,6 +1745,22 @@ PrefabInstance:
     - target: {fileID: 8296159027491990314, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
       propertyPath: hitFire.Guid.Data4
       value: -55329459
+      objectReference: {fileID: 0}
+    - target: {fileID: 8296159027491990314, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
+      propertyPath: gnatSpit.Guid.Data1
+      value: -1150847273
+      objectReference: {fileID: 0}
+    - target: {fileID: 8296159027491990314, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
+      propertyPath: gnatSpit.Guid.Data2
+      value: 1212161531
+      objectReference: {fileID: 0}
+    - target: {fileID: 8296159027491990314, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
+      propertyPath: gnatSpit.Guid.Data3
+      value: -816227654
+      objectReference: {fileID: 0}
+    - target: {fileID: 8296159027491990314, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
+      propertyPath: gnatSpit.Guid.Data4
+      value: 924990919
       objectReference: {fileID: 0}
     - target: {fileID: 8296159027491990314, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
       propertyPath: sfxEvent.Guid.Data1
@@ -1777,6 +1825,38 @@ PrefabInstance:
     - target: {fileID: 8296159027491990314, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
       propertyPath: statusIce.Guid.Data4
       value: 802109533
+      objectReference: {fileID: 0}
+    - target: {fileID: 8296159027491990314, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
+      propertyPath: gnatCharge.Guid.Data1
+      value: 316716879
+      objectReference: {fileID: 0}
+    - target: {fileID: 8296159027491990314, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
+      propertyPath: gnatCharge.Guid.Data2
+      value: 1126614875
+      objectReference: {fileID: 0}
+    - target: {fileID: 8296159027491990314, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
+      propertyPath: gnatCharge.Guid.Data3
+      value: 158290566
+      objectReference: {fileID: 0}
+    - target: {fileID: 8296159027491990314, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
+      propertyPath: gnatCharge.Guid.Data4
+      value: 1991421335
+      objectReference: {fileID: 0}
+    - target: {fileID: 8296159027491990314, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
+      propertyPath: statusFire.Guid.Data1
+      value: -213086626
+      objectReference: {fileID: 0}
+    - target: {fileID: 8296159027491990314, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
+      propertyPath: statusFire.Guid.Data2
+      value: 1178957442
+      objectReference: {fileID: 0}
+    - target: {fileID: 8296159027491990314, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
+      propertyPath: statusFire.Guid.Data3
+      value: -364398972
+      objectReference: {fileID: 0}
+    - target: {fileID: 8296159027491990314, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
+      propertyPath: statusFire.Guid.Data4
+      value: -1036262343
       objectReference: {fileID: 0}
     - target: {fileID: 9078645812006161957, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
