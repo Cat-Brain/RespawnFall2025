@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Frost Slow
   m_EditorClassIdentifier: Assembly-CSharp::StatMultiplier
   order: 0
-  multiplier: 0.6
+  multiplier: 0.8

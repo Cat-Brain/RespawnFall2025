@@ -12,5 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1f8820aec449d0458a27f8049788068, type: 3}
   m_Name: EmberTick
   m_EditorClassIdentifier: Assembly-CSharp::TickStatus
+  tickIndex: 0
   tickOnStart: 0
-  timePerTick: 0.25
+  timePerTick: 0.5

@@ -1,19 +1,15 @@
 {
 	"identifier": "Bonus_Room",
 	"uniqueIdentifer": "6dbee120-ac70-11f0-bd7d-339d6e568111",
-	"x": 432,
+	"x": 1808,
 	"y": 304,
 	"width": 432,
 	"height": 192,
 	"bgColor": "#8B9BB4",
 	"neighbourLevels": [
 		{
-			"levelIid": "e9e24850-ac70-11f0-b4ed-9dea1e861157",
-			"dir": "w"
-		},
-		{
 			"levelIid": "831de8e0-ac70-11f0-bd7d-5b2493647f6c",
-			"dir": "w"
+			"dir": "s"
 		},
 		{
 			"levelIid": "4a5df210-ac70-11f0-bd7d-3d193a511f7b",

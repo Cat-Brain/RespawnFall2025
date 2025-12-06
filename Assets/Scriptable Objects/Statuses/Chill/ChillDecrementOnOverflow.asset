@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: ChillDecrementOnOverflow
   m_EditorClassIdentifier: Assembly-CSharp::DecStackOnTickStatus
   tickIndex: 1
-  decrement: 20
+  decrement: 16
