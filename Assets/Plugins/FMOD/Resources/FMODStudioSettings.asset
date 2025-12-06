@@ -463,8 +463,8 @@ MonoBehaviour:
   switchSettingsMigration: 1
   HasSourceProject: 1
   HasPlatforms: 1
-  sourceProjectPath: Game SFX/Game SFX.fspro
-  sourceBankPath: Game SFX/Build
+  sourceProjectPath: Assets/Game SFX/Game SFX.fspro
+  sourceBankPath: Assets/Game SFX/Build
   sourceBankPathUnformatted: 
   BankRefreshCooldown: 5
   ShowBankRefreshWindow: 1
