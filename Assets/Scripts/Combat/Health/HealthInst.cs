@@ -145,7 +145,12 @@ public class HealthInst : MonoBehaviour
         if (!alive)
             return true;
         foreach (HitStatus hitStatus in hit.statuses)
-            ApplyHitStatus(hitStatus);
+        {
+            ApplyHitStatus(hitStatus);  
+        }
+        
+      
+            
         return !alive;
     }
 

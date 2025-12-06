@@ -94,10 +94,10 @@ MonoBehaviour:
   Path: Assets/Game SFX/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 639005658195570517
+  lastModified: 639005725492760715
   FileSizes:
   - Name: Desktop
-    Value: 5371904
+    Value: 5424832
   Exists: 1
 --- !u!114 &-4757193944827095257
 MonoBehaviour:
@@ -153,6 +153,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &-3919894466562934828
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Jump
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/Jump
+  Guid:
+    Data1: -584784681
+    Data2: 1284037282
+    Data3: -2622791
+    Data4: -404279402
+  Banks:
+  - {fileID: -5801947336995238161}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &-790105942062176247
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -199,13 +226,17 @@ MonoBehaviour:
   - {fileID: 3357741891868708613}
   - {fileID: 6679599793351013332}
   - {fileID: -790105942062176247}
+  - {fileID: 8231258872454829159}
+  - {fileID: 1622052293797444496}
+  - {fileID: 4759814792119521515}
+  - {fileID: -3919894466562934828}
   EditorParameters: []
   MasterBanks:
   - {fileID: -5801947336995238161}
   StringsBanks:
   - {fileID: 1503091975454383515}
   cacheVersion: 131857
-  cacheTime: 639005658195595739
+  cacheTime: 639005725492780567
   SerializableEventsDict:
   - key: event:/Music and Background
     index: 0
@@ -213,6 +244,14 @@ MonoBehaviour:
     index: 1
   - key: event:/ShootFire
     index: 2
+  - key: event:/ShootIce
+    index: 3
+  - key: event:/HitIce
+    index: 4
+  - key: event:/StatusIce
+    index: 5
+  - key: event:/Jump
+    index: 6
 --- !u!114 &1503091975454383515
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -228,11 +267,38 @@ MonoBehaviour:
   Path: Assets/Game SFX/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 639005658195595739
+  lastModified: 639005725492780567
   FileSizes:
   - Name: Desktop
-    Value: 924
+    Value: 1094
   Exists: 1
+--- !u!114 &1622052293797444496
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/HitIce
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/HitIce
+  Guid:
+    Data1: 1461531722
+    Data2: 1100712721
+    Data3: -660173892
+    Data4: 1971518036
+  Banks:
+  - {fileID: -5801947336995238161}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &1734510397058488393
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -380,6 +446,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &4759814792119521515
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/StatusIce
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/StatusIce
+  Guid:
+    Data1: 879914936
+    Data2: 1116887902
+    Data3: -541078362
+    Data4: 802109533
+  Banks:
+  - {fileID: -5801947336995238161}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &6679599793351013332
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -427,6 +520,33 @@ MonoBehaviour:
   - Name: Desktop
     Value: 924
   Exists: 1
+--- !u!114 &8231258872454829159
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/ShootIce
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/ShootIce
+  Guid:
+    Data1: -54523727
+    Data2: 1290846792
+    Data3: -2120052549
+    Data4: -1535128517
+  Banks:
+  - {fileID: -5801947336995238161}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &8806221925181846304
 MonoBehaviour:
   m_ObjectHideFlags: 0

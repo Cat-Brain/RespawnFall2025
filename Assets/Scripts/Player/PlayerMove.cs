@@ -36,6 +36,7 @@ public class PlayerMove : MonoBehaviour
 
     public void TryJump(InputAction.CallbackContext context)
     {
+        SFXManager.Instance.Play(SFXManager.Instance.jump);
         if (!playerManager.Stunned())
             jumpBufferTimer = jumpBufferTime;
     }

@@ -207,6 +207,9 @@
 		<property name="start">
 			<value>1</value>
 		</property>
+		<property name="volume">
+			<value>-8</value>
+		</property>
 		<property name="looping">
 			<value>true</value>
 		</property>
@@ -238,6 +241,9 @@
 		<property name="start">
 			<value>2</value>
 		</property>
+		<property name="volume">
+			<value>-8</value>
+		</property>
 		<property name="looping">
 			<value>true</value>
 		</property>
@@ -268,6 +274,9 @@
 		</property>
 		<property name="start">
 			<value>3</value>
+		</property>
+		<property name="volume">
+			<value>-6</value>
 		</property>
 		<property name="looping">
 			<value>true</value>
@@ -301,7 +310,7 @@
 			<value>4</value>
 		</property>
 		<property name="volume">
-			<value>-4</value>
+			<value>-8</value>
 		</property>
 		<property name="looping">
 			<value>true</value>
@@ -330,6 +339,9 @@
 		</property>
 		<property name="start">
 			<value>5</value>
+		</property>
+		<property name="volume">
+			<value>-8</value>
 		</property>
 		<property name="looping">
 			<value>true</value>

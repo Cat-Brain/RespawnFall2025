@@ -6,7 +6,7 @@ public class SFXManager : MonoBehaviour
     public static SFXManager Instance;
     
 
-    public EventReference click, shootFire;
+    public EventReference click, shootFire, shootIce, hitIce, statusIce, jump;
 
     private FMOD.Studio.EventInstance instance;
 

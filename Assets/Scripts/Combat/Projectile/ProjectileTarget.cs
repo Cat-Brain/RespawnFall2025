@@ -17,6 +17,7 @@ public class ProjectileTarget : ProjectileBlocker
 
     public override void OnBlock(ProjectileInst projectile)
     {
+        SFXManager.Instance.Play(SFXManager.Instance.hitIce);
         Hit hit = projectile.data.hit;
         hit.position = projectile.transform.position;
         health.ApplyHit(hit);
