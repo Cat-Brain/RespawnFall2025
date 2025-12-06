@@ -981,22 +981,6 @@
 					"__worldY": 304
 				},
 				{
-					"__identifier": "Reward_Item",
-					"__grid": [13,10],
-					"__pivot": [0,0],
-					"__tags": ["Environment"],
-					"__tile": null,
-					"__smartColor": "#E7F52C",
-					"iid": "272af710-ac70-11f0-bd7d-6925e757730f",
-					"width": 16,
-					"height": 16,
-					"defUid": 151,
-					"px": [208,160],
-					"fieldInstances": [],
-					"__worldX": 2016,
-					"__worldY": 464
-				},
-				{
 					"__identifier": "Wall_Invisible",
 					"__grid": [1,0],
 					"__pivot": [0,0],
@@ -1107,6 +1091,22 @@
 					"fieldInstances": [],
 					"__worldX": 2144,
 					"__worldY": 384
+				},
+				{
+					"__identifier": "Chest",
+					"__grid": [13,10],
+					"__pivot": [0,0],
+					"__tags": ["NPC"],
+					"__tile": null,
+					"__smartColor": "#FEAE34",
+					"iid": "6d6fbbc0-ac70-11f0-9289-b3867bbe5be2",
+					"width": 16,
+					"height": 16,
+					"defUid": 147,
+					"px": [208,160],
+					"fieldInstances": [],
+					"__worldX": 2016,
+					"__worldY": 464
 				}
 			]
 		},
