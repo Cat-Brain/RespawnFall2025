@@ -144,6 +144,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1303345825}
     - target: {fileID: 5542764072182208227, guid: 00dd54f4825b1924a9b6f4f07ad4180a, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5542764072182208227, guid: 00dd54f4825b1924a9b6f4f07ad4180a, type: 3}
       propertyPath: EventPlayTrigger
       value: 1
       objectReference: {fileID: 0}
@@ -784,7 +788,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3380364024760122889, guid: 8545a1254127b4542b77563ae7578023, type: 3}
       propertyPath: orthographic size
-      value: 4.3125
+      value: 4.8125
       objectReference: {fileID: 0}
     - target: {fileID: 3380364024760122889, guid: 8545a1254127b4542b77563ae7578023, type: 3}
       propertyPath: m_BackGroundColor.b
@@ -804,7 +808,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3380364024760122889, guid: 8545a1254127b4542b77563ae7578023, type: 3}
       propertyPath: m_NormalizedViewPortRect.y
-      value: 0
+      value: 0.003220612
       objectReference: {fileID: 0}
     - target: {fileID: 3380364024760122889, guid: 8545a1254127b4542b77563ae7578023, type: 3}
       propertyPath: m_NormalizedViewPortRect.width
@@ -812,7 +816,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3380364024760122889, guid: 8545a1254127b4542b77563ae7578023, type: 3}
       propertyPath: m_NormalizedViewPortRect.height
-      value: 1
+      value: 0.9919485
       objectReference: {fileID: 0}
     - target: {fileID: 4595435035252540356, guid: 8545a1254127b4542b77563ae7578023, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1449,6 +1453,10 @@ PrefabInstance:
     - target: {fileID: 4989346605032106179, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
       propertyPath: 'pathEnd.Array.data[1]'
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6274102324179629947, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6274102324179629947, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
       propertyPath: ambienceEvent.Path

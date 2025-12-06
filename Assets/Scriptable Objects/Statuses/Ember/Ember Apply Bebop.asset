@@ -20,6 +20,7 @@ MonoBehaviour:
     - status: {fileID: 11400000, guid: 6eb8be3ea28f54342b05cbe520d4a917, type: 2}
       components:
       - {fileID: 11400000, guid: 0d705a5f22a0cf542b856949c7949c91, type: 2}
+      - {fileID: 11400000, guid: ef1b641b99972644bbc86c5d77850a38, type: 2}
   hitRadius: 100
   hitMask:
     serializedVersion: 2
