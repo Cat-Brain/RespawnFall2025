@@ -8,8 +8,14 @@ public class Health : ScriptableObject
     public int startHealth = -1;
     public int maxHealth;
 
+    public bool multipliedByDifficulty;
+
     public virtual void Init()
     {
+        if (multipliedByDifficulty)
+            maxHealth = Mathf.RoundToInt(maxHealth *
+                inst.healthManager.gameManager.enemyHealthMultiplier);
+
         inst.health = startHealth == -1 ? maxHealth : startHealth;
     }
 

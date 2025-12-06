@@ -15,7 +15,7 @@ public class GameManager : MonoBehaviour
 {
     public GenerationManager generationManager;
     public InventoryController inventory;
-    public DisplayStringController stringController;
+    public EndScreenUI endScreenUI;
     public SceneLoadManager sceneLoadManager;
     public List<Menu> menus;
 
@@ -33,6 +33,7 @@ public class GameManager : MonoBehaviour
     public LevelType[] basePath, pathEnd;
     public string[] levelTypeStrings;
     public Color[] levelTypeColors;
+    public int minDifficulty;
     
     public GameState gameState;
   
@@ -47,6 +48,8 @@ public class GameManager : MonoBehaviour
     public bool inCombat, endScreenLanded = false, inLobby = true;
     public float startTime = 0, endTime = 0;
     public int currentLevelMoney = 0;
+    public int difficulty = 0, points = 0;
+    public float enemyHealthMultiplier;
 
     void Awake()
     {
@@ -123,7 +126,19 @@ public class GameManager : MonoBehaviour
     public void BeginGame()
     {
         startTime = Time.time;
+        points = 0;
+        enemyHealthMultiplier = GetEnemyHealthMultiplier(difficulty);
         InitPaths();
+    }
+
+    public float GetEnemyHealthMultiplier(int difficulty)
+    {
+        return difficulty * 0.25f + 1;
+    }
+
+    public void IncDifficulty(int increment)
+    {
+        difficulty = Mathf.Max(minDifficulty, difficulty + increment);
     }
 
     public void LoadNextLevel(int path)
@@ -211,6 +226,7 @@ public class GameManager : MonoBehaviour
             return;
 
         ToEndScreen();
+        endScreenUI.OnWin();
     }
 
     public void PlayerLose()
@@ -219,6 +235,7 @@ public class GameManager : MonoBehaviour
             return;
 
         ToEndScreen();
+        endScreenUI.OnDeath();
     }
 
     public void PlayerReset()
@@ -229,6 +246,7 @@ public class GameManager : MonoBehaviour
         SetTimeScale(1);
 
         ToEndScreen();
+        endScreenUI.OnRestart();
     }
 
     public void ToEndScreen()
@@ -244,6 +262,7 @@ public class GameManager : MonoBehaviour
             AmbienceManager.Instance.SetTheme(2);
         }
 
+        endTime = Time.time;
         playerManager.End();
         endScreenLanded = false;
         lobby.SetActive(true);
