@@ -146,6 +146,7 @@ public class HealthInst : MonoBehaviour
             return true;
         foreach (HitStatus hitStatus in hit.statuses)
         {
+            
             SFXManager.Instance.Play(SFXManager.Instance.hitIce);
             ApplyHitStatus(hitStatus);  
         }
