@@ -33,6 +33,7 @@ public class BurstWeaponPrimary : StandardWeaponPrimary
     public override void OnActivate()
     {
         shotsFiredThisBurst++;
+        SFXManager.Instance.Play(SFXManager.Instance.shootFire);
         if (shotsFiredThisBurst >= shotsPerBurst)
         {
             timeTillShoot += timeBetweenBursts / weapon.stats.fireRate;

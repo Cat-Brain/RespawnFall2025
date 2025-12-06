@@ -1583,8 +1583,32 @@ PrefabInstance:
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 8296159027491990314, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
-      propertyPath: sfxEvent.Path
+      propertyPath: click.Path
       value: event:/UI Click
+      objectReference: {fileID: 0}
+    - target: {fileID: 8296159027491990314, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
+      propertyPath: sfxEvent.Path
+      value: event:/Oneshot SFX
+      objectReference: {fileID: 0}
+    - target: {fileID: 8296159027491990314, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
+      propertyPath: shootFire.Path
+      value: event:/ShootFire
+      objectReference: {fileID: 0}
+    - target: {fileID: 8296159027491990314, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
+      propertyPath: click.Guid.Data1
+      value: 965405000
+      objectReference: {fileID: 0}
+    - target: {fileID: 8296159027491990314, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
+      propertyPath: click.Guid.Data2
+      value: 1171347524
+      objectReference: {fileID: 0}
+    - target: {fileID: 8296159027491990314, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
+      propertyPath: click.Guid.Data3
+      value: 1345505411
+      objectReference: {fileID: 0}
+    - target: {fileID: 8296159027491990314, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
+      propertyPath: click.Guid.Data4
+      value: -492278584
       objectReference: {fileID: 0}
     - target: {fileID: 8296159027491990314, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
       propertyPath: sfxEvent.Guid.Data1
@@ -1601,6 +1625,22 @@ PrefabInstance:
     - target: {fileID: 8296159027491990314, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
       propertyPath: sfxEvent.Guid.Data4
       value: -490938541
+      objectReference: {fileID: 0}
+    - target: {fileID: 8296159027491990314, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
+      propertyPath: shootFire.Guid.Data1
+      value: 477090528
+      objectReference: {fileID: 0}
+    - target: {fileID: 8296159027491990314, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
+      propertyPath: shootFire.Guid.Data2
+      value: 1162316269
+      objectReference: {fileID: 0}
+    - target: {fileID: 8296159027491990314, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
+      propertyPath: shootFire.Guid.Data3
+      value: 1361162119
+      objectReference: {fileID: 0}
+    - target: {fileID: 8296159027491990314, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
+      propertyPath: shootFire.Guid.Data4
+      value: 1972566306
       objectReference: {fileID: 0}
     - target: {fileID: 9078645812006161957, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
