@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DestroyOnDeath
   inst: {fileID: 0}
   startHealth: -1
-  maxHealth: 250
+  maxHealth: 5000
   multipliedByDifficulty: 1
   deathTime: 1
