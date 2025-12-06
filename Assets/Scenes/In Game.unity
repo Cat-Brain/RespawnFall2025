@@ -1420,6 +1420,26 @@ PrefabInstance:
       propertyPath: playerWeaponInstance
       value: 
       objectReference: {fileID: 435411769}
+    - target: {fileID: 6274102324179629947, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
+      propertyPath: ambienceEvent.Path
+      value: event:/Music and Background
+      objectReference: {fileID: 0}
+    - target: {fileID: 6274102324179629947, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
+      propertyPath: ambienceEvent.Guid.Data1
+      value: 1543653134
+      objectReference: {fileID: 0}
+    - target: {fileID: 6274102324179629947, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
+      propertyPath: ambienceEvent.Guid.Data2
+      value: 1291779780
+      objectReference: {fileID: 0}
+    - target: {fileID: 6274102324179629947, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
+      propertyPath: ambienceEvent.Guid.Data3
+      value: 1141058736
+      objectReference: {fileID: 0}
+    - target: {fileID: 6274102324179629947, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
+      propertyPath: ambienceEvent.Guid.Data4
+      value: 893112163
+      objectReference: {fileID: 0}
     - target: {fileID: 6637537241124148633, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
       propertyPath: m_Name
       value: Managers
