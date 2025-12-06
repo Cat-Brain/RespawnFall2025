@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Stem04L
   m_EditorClassIdentifier: Assembly-CSharp::InventoryItem
   layer: 1
-  rarity: 1
+  rarity: 4
   positions:
   - {x: 0, y: 0}
   - {x: 1, y: 0}
