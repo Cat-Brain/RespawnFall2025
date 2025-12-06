@@ -1010,6 +1010,34 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 823509064500174761, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 823509064500174761, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 823509064500174761, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1788750885}
+    - target: {fileID: 823509064500174761, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 823509064500174761, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: PlayClick
+      objectReference: {fileID: 0}
+    - target: {fileID: 823509064500174761, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: SFXManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 823509064500174761, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 1147164726099890902, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
       propertyPath: levelData.Array.data[0].waves.Array.size
       value: 2
@@ -1603,6 +1631,10 @@ PrefabInstance:
       value: event:/HitIce
       objectReference: {fileID: 0}
     - target: {fileID: 8296159027491990314, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
+      propertyPath: hitFire.Path
+      value: event:/HitFire
+      objectReference: {fileID: 0}
+    - target: {fileID: 8296159027491990314, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
       propertyPath: sfxEvent.Path
       value: event:/Oneshot SFX
       objectReference: {fileID: 0}
@@ -1665,6 +1697,22 @@ PrefabInstance:
     - target: {fileID: 8296159027491990314, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
       propertyPath: hitIce.Guid.Data4
       value: 1971518036
+      objectReference: {fileID: 0}
+    - target: {fileID: 8296159027491990314, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
+      propertyPath: hitFire.Guid.Data1
+      value: 1176625676
+      objectReference: {fileID: 0}
+    - target: {fileID: 8296159027491990314, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
+      propertyPath: hitFire.Guid.Data2
+      value: 1151081695
+      objectReference: {fileID: 0}
+    - target: {fileID: 8296159027491990314, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
+      propertyPath: hitFire.Guid.Data3
+      value: -209653854
+      objectReference: {fileID: 0}
+    - target: {fileID: 8296159027491990314, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
+      propertyPath: hitFire.Guid.Data4
+      value: -55329459
       objectReference: {fileID: 0}
     - target: {fileID: 8296159027491990314, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
       propertyPath: sfxEvent.Guid.Data1

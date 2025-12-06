@@ -5,7 +5,7 @@
 			<value>HitIce</value>
 		</property>
 		<property name="outputFormat">
-			<value>0</value>
+			<value>1</value>
 		</property>
 		<relationship name="folder">
 			<destination>{be6eb043-3642-40bc-8d6e-254707e7c297}</destination>
@@ -72,6 +72,9 @@
 		</relationship>
 	</object>
 	<object class="EventMixerMaster" id="{e1d8cd6b-ed4d-4461-b21c-cd479d0940d7}">
+		<property name="volume">
+			<value>-24</value>
+		</property>
 		<relationship name="effectChain">
 			<destination>{ac5b81f4-8eb7-4c5e-be41-16953f949b6b}</destination>
 		</relationship>
@@ -82,7 +85,11 @@
 			<destination>{dfae74f1-71bc-4825-851a-e9fd8e08120c}</destination>
 		</relationship>
 	</object>
-	<object class="MultiSound" id="{51e91d88-d57a-46e6-89fa-fabc0c85d8ff}" />
+	<object class="MultiSound" id="{51e91d88-d57a-46e6-89fa-fabc0c85d8ff}">
+		<relationship name="sounds">
+			<destination>{708efcb4-b5aa-46fb-951b-bec20ec89f5e}</destination>
+		</relationship>
+	</object>
 	<object class="MixerBusEffectChain" id="{5ce41506-e0c3-4a76-8344-60cb7a952b67}">
 		<relationship name="effects">
 			<destination>{7d5948c9-939e-4068-ad42-ff9ecddefde3}</destination>
@@ -92,9 +99,40 @@
 	<object class="MixerBusEffectChain" id="{ac5b81f4-8eb7-4c5e-be41-16953f949b6b}">
 		<relationship name="effects">
 			<destination>{3f58d4a4-48ad-4115-af3b-c98446bfe207}</destination>
+			<destination>{e3c071c2-dd1b-405b-ba3f-b4619752659f}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{e3c04460-baa8-46d1-893d-67ab84d5fa20}" />
+	<object class="MultiSound" id="{708efcb4-b5aa-46fb-951b-bec20ec89f5e}">
+		<relationship name="sounds">
+			<destination>{d5a50ff1-fa75-4e9d-b855-7ec048f0f4fe}</destination>
+			<destination>{21114736-a291-476f-a6b3-61eb2e8f835d}</destination>
+			<destination>{120b8524-daec-429d-8128-8a9494945a08}</destination>
+		</relationship>
+	</object>
 	<object class="MixerBusFader" id="{7d5948c9-939e-4068-ad42-ff9ecddefde3}" />
 	<object class="MixerBusFader" id="{3f58d4a4-48ad-4115-af3b-c98446bfe207}" />
+	<object class="ThreeEQEffect" id="{e3c071c2-dd1b-405b-ba3f-b4619752659f}">
+		<property name="midGain">
+			<value>-6</value>
+		</property>
+		<property name="highGain">
+			<value>10</value>
+		</property>
+	</object>
+	<object class="SingleSound" id="{d5a50ff1-fa75-4e9d-b855-7ec048f0f4fe}">
+		<relationship name="audioFile">
+			<destination>{cd5d4231-9b49-4dff-9686-ccc640d3b11c}</destination>
+		</relationship>
+	</object>
+	<object class="SingleSound" id="{21114736-a291-476f-a6b3-61eb2e8f835d}">
+		<relationship name="audioFile">
+			<destination>{5f074eab-636e-4dfc-85e0-57ac7e9c93be}</destination>
+		</relationship>
+	</object>
+	<object class="SingleSound" id="{120b8524-daec-429d-8128-8a9494945a08}">
+		<relationship name="audioFile">
+			<destination>{45d60722-1e9c-41ec-8d59-fd4b65ec49e6}</destination>
+		</relationship>
+	</object>
 </objects>

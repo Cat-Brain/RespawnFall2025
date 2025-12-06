@@ -94,10 +94,10 @@ MonoBehaviour:
   Path: Assets/Game SFX/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 639005725492760715
+  lastModified: 639005757786043051
   FileSizes:
   - Name: Desktop
-    Value: 5424832
+    Value: 5463168
   Exists: 1
 --- !u!114 &-4757193944827095257
 MonoBehaviour:
@@ -230,13 +230,16 @@ MonoBehaviour:
   - {fileID: 1622052293797444496}
   - {fileID: 4759814792119521515}
   - {fileID: -3919894466562934828}
+  - {fileID: 670331537943327225}
+  - {fileID: 3754537284597924949}
+  - {fileID: 6192089754804017618}
   EditorParameters: []
   MasterBanks:
   - {fileID: -5801947336995238161}
   StringsBanks:
   - {fileID: 1503091975454383515}
   cacheVersion: 131857
-  cacheTime: 639005725492780567
+  cacheTime: 639005757786073266
   SerializableEventsDict:
   - key: event:/Music and Background
     index: 0
@@ -252,6 +255,39 @@ MonoBehaviour:
     index: 5
   - key: event:/Jump
     index: 6
+  - key: event:/HitFire
+    index: 7
+  - key: event:/Bonk
+    index: 8
+  - key: event:/StatusFire
+    index: 9
+--- !u!114 &670331537943327225
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/HitFire
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/HitFire
+  Guid:
+    Data1: 1176625676
+    Data2: 1151081695
+    Data3: -209653854
+    Data4: -55329459
+  Banks:
+  - {fileID: -5801947336995238161}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &1503091975454383515
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -267,10 +303,10 @@ MonoBehaviour:
   Path: Assets/Game SFX/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 639005725492780567
+  lastModified: 639005757786073266
   FileSizes:
   - Name: Desktop
-    Value: 1094
+    Value: 1222
   Exists: 1
 --- !u!114 &1622052293797444496
 MonoBehaviour:
@@ -446,6 +482,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &3754537284597924949
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Bonk
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/Bonk
+  Guid:
+    Data1: 1845943098
+    Data2: 1117609589
+    Data3: 468245905
+    Data4: -651078921
+  Banks:
+  - {fileID: -5801947336995238161}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &4759814792119521515
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -464,6 +527,33 @@ MonoBehaviour:
     Data2: 1116887902
     Data3: -541078362
     Data4: 802109533
+  Banks:
+  - {fileID: -5801947336995238161}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &6192089754804017618
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/StatusFire
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/StatusFire
+  Guid:
+    Data1: -213086626
+    Data2: 1178957442
+    Data3: -364398972
+    Data4: -1036262343
   Banks:
   - {fileID: -5801947336995238161}
   IsStream: 0
