@@ -13,13 +13,13 @@ MonoBehaviour:
   m_Name: Relic01
   m_EditorClassIdentifier: Assembly-CSharp::InventoryItem
   layer: 1
-  rarity: 5
+  rarity: 2
   positions:
   - {x: 0, y: 1}
   - {x: 1, y: 1}
   - {x: 0, y: 0}
   - {x: 1, y: 0}
-  sprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
+  sprite: {fileID: 21300000, guid: 27dcbcc5d4b6a1f4790f3d31857f4d69, type: 3}
   description: 'Sell at shop for 2 Monies. '
   components:
   - {fileID: 11400000, guid: f9d13f85f0991e14ca84ed830d3eef4f, type: 2}
