@@ -185,7 +185,7 @@
 	</object>
 	<object class="EventMixerGroup" id="{271b2028-245e-41c9-8c82-9acb252f5eb9}">
 		<property name="volume">
-			<value>-20</value>
+			<value>-10</value>
 		</property>
 		<property name="name">
 			<value>Wind Blowing</value>
@@ -216,7 +216,7 @@
 	</object>
 	<object class="EventMixerGroup" id="{4af1d95a-56de-47ee-9c2f-89b1cae894f4}">
 		<property name="volume">
-			<value>-17.5</value>
+			<value>-7</value>
 		</property>
 		<property name="name">
 			<value>Orchestral Lobby</value>
@@ -247,7 +247,7 @@
 	</object>
 	<object class="EventMixerGroup" id="{70aff7a5-3b6b-47a6-b2e7-cbe7df32684c}">
 		<property name="volume">
-			<value>-14</value>
+			<value>-3</value>
 		</property>
 		<property name="name">
 			<value>Jazz Lobby</value>
@@ -278,7 +278,7 @@
 	</object>
 	<object class="EventMixerGroup" id="{283d0845-9b0e-4a8d-91f7-9dec5e973ad8}">
 		<property name="volume">
-			<value>-17.5</value>
+			<value>-7</value>
 		</property>
 		<property name="name">
 			<value>Reggaeton Lobby</value>
@@ -311,9 +311,6 @@
 		</relationship>
 	</object>
 	<object class="EventMixerGroup" id="{94e5ecc4-9339-4b33-89fa-138e993dea91}">
-		<property name="volume">
-			<value>-10</value>
-		</property>
 		<property name="name">
 			<value>Orchestral Action</value>
 		</property>
@@ -342,9 +339,6 @@
 		</relationship>
 	</object>
 	<object class="EventMixerGroup" id="{62fe4f7f-251e-4c0e-924a-d510fa452d28}">
-		<property name="volume">
-			<value>-10</value>
-		</property>
 		<property name="name">
 			<value>Jazz Action</value>
 		</property>
@@ -377,7 +371,7 @@
 	</object>
 	<object class="EventMixerGroup" id="{9f1fc458-7cde-4835-9387-e0a6ca483383}">
 		<property name="volume">
-			<value>-10</value>
+			<value>1.5</value>
 		</property>
 		<property name="name">
 			<value>Reggaeton Action</value>
