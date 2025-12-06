@@ -15,4 +15,5 @@ MonoBehaviour:
   inst: {fileID: 0}
   startHealth: -1
   maxHealth: 160
+  multipliedByDifficulty: 1
   deathTime: 1

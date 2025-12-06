@@ -913,7 +913,7 @@ MonoBehaviour:
   stunnedGravity: 1
   avoidanceMask:
     serializedVersion: 2
-    m_Bits: 8705
+    m_Bits: 12801
   avoidanceDist: 2
   avoidanceAccel: 10
   avoidanceSpeed: 3
