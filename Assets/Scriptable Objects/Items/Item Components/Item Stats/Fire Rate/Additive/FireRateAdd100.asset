@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: FireRateAdd100
   m_EditorClassIdentifier: Assembly-CSharp::StatItem
   modifier: {fileID: 11400000, guid: 0010f730e7fb25f4bb3ecea83cf301d3, type: 2}
-  target: 0
+  target: 5

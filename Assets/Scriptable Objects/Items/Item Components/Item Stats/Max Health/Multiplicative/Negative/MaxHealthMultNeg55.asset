@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: MaxHealthMultNeg55
   m_EditorClassIdentifier: Assembly-CSharp::StatItem
   modifier: {fileID: 11400000, guid: d2150a131c6ee484783359397af25f68, type: 2}
-  target: 0
+  target: 3

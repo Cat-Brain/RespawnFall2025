@@ -10,9 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cf3f8bddd118dfd4f90387337450adb5, type: 3}
-  m_Name: New InventoryItem
+  m_Name: Stem09C
   m_EditorClassIdentifier: Assembly-CSharp::InventoryItem
-  layer: 0
+  layer: 1
+  rarity: 1
   positions:
   - {x: 0, y: 0}
   - {x: 1, y: 0}
@@ -20,7 +21,9 @@ MonoBehaviour:
   - {x: 3, y: 0}
   - {x: 4, y: 0}
   sprite: {fileID: 0}
-  description: lmao
-  components: []
+  description: Max Health +15 Damage +5
+  components:
+  - {fileID: 11400000, guid: fff1b7bba465de64496a2b8be66574ed, type: 2}
+  - {fileID: 11400000, guid: 6d644ed59819bdb46a99497d4acd892a, type: 2}
   dimensions: {x: 5, y: 1}
   inst: {fileID: 0}
