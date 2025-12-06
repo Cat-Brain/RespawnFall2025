@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: ReloadSpeedMultNeg35
   m_EditorClassIdentifier: Assembly-CSharp::StatItem
   modifier: {fileID: 11400000, guid: 1fc283fd4a0ff2c42acbbacad44827a8, type: 2}
-  target: 0
+  target: 7

@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: DamageAdd95
   m_EditorClassIdentifier: Assembly-CSharp::StatItem
   modifier: {fileID: 11400000, guid: 80cc32267d3088742a6f694e4149add6, type: 2}
-  target: 0
+  target: 1

@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: MagSizeMultNeg25
   m_EditorClassIdentifier: Assembly-CSharp::StatItem
   modifier: {fileID: 11400000, guid: 5959efa5489819f45baa65cd5e789595, type: 2}
-  target: 0
+  target: 6

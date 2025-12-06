@@ -13,6 +13,7 @@ public enum Rarity
     UNCOMMON = 2,
     RARE = 3,
     LEGENDARY = 4,
+    SHINY = 5
 }
 public enum InventoryLayer
 {
