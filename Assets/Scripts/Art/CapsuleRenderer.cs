@@ -13,7 +13,14 @@ public class CapsuleRenderer : MonoBehaviour
         if (!lr)
             return;
 
-        lr.transform.localScale = CMath.Div3(Vector3.one, transform.localScale);
+        Vector3 denom = transform.localScale;
+        if (Mathf.Abs(transform.localScale.x) < 0.001f)
+            denom.x = 0.0001f;
+        if (Mathf.Abs(transform.localScale.y) < 0.001f)
+            denom.y = 0.0001f;
+        if (Mathf.Abs(transform.localScale.z) < 0.001f)
+            denom.z = 0.0001f;
+        lr.transform.localScale = CMath.Div3(Vector3.one, denom);
         Vector2 dim = transform.localScale;
         lr.widthMultiplier = dim.y;
         Vector3 pos = dim.y >= 2 * dim.x ? Vector3.zero : Vector3.right * (dim.x - dim.y * 0.5f);
