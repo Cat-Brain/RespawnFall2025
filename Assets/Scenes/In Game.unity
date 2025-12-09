@@ -946,6 +946,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -4056760810175446635, guid: 8545a1254127b4542b77563ae7578023, type: 3}
+      propertyPath: m_AssetsPPU
+      value: 12
+      objectReference: {fileID: 0}
     - target: {fileID: 2153410256004071049, guid: 8545a1254127b4542b77563ae7578023, type: 3}
       propertyPath: m_Name
       value: Main Camera
@@ -956,7 +960,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3380364024760122889, guid: 8545a1254127b4542b77563ae7578023, type: 3}
       propertyPath: orthographic size
-      value: 4.8125
+      value: 4.1875
       objectReference: {fileID: 0}
     - target: {fileID: 3380364024760122889, guid: 8545a1254127b4542b77563ae7578023, type: 3}
       propertyPath: m_BackGroundColor.b
@@ -976,7 +980,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3380364024760122889, guid: 8545a1254127b4542b77563ae7578023, type: 3}
       propertyPath: m_NormalizedViewPortRect.y
-      value: 0
+      value: 0.0037037036
       objectReference: {fileID: 0}
     - target: {fileID: 3380364024760122889, guid: 8545a1254127b4542b77563ae7578023, type: 3}
       propertyPath: m_NormalizedViewPortRect.width
@@ -984,15 +988,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3380364024760122889, guid: 8545a1254127b4542b77563ae7578023, type: 3}
       propertyPath: m_NormalizedViewPortRect.height
-      value: 1
+      value: 0.9925926
       objectReference: {fileID: 0}
     - target: {fileID: 4595435035252540356, guid: 8545a1254127b4542b77563ae7578023, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5
+      value: -4.74
       objectReference: {fileID: 0}
     - target: {fileID: 4595435035252540356, guid: 8545a1254127b4542b77563ae7578023, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.5
+      value: 1.68
       objectReference: {fileID: 0}
     - target: {fileID: 4595435035252540356, guid: 8545a1254127b4542b77563ae7578023, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1368,6 +1372,18 @@ PrefabInstance:
     - target: {fileID: 973363082162110042, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
       propertyPath: m_Name
       value: EventSystem
+      objectReference: {fileID: 0}
+    - target: {fileID: 2035370362801213309, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
+      propertyPath: levels.Array.data[16].height
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 2035370362801213309, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
+      propertyPath: levels.Array.data[16].prefab
+      value: 
+      objectReference: {fileID: 3938232939769881502, guid: eded1c668704b344898d51f93d1db500, type: 3}
+    - target: {fileID: 2035370362801213309, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
+      propertyPath: levels.Array.data[16].spawnOffset.x
+      value: -17.5
       objectReference: {fileID: 0}
     - target: {fileID: 3282174016193848263, guid: 38caba62ec2d329449b1ba40469c534a, type: 3}
       propertyPath: m_LocalPosition.x

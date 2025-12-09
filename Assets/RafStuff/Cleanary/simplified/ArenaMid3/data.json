@@ -2,7 +2,7 @@
 	"identifier": "ArenaMid3",
 	"uniqueIdentifer": "1d316f40-ac70-11f0-8e08-8fdbed7c29b0",
 	"x": 432,
-	"y": 624,
+	"y": 512,
 	"width": 432,
 	"height": 320,
 	"bgColor": "#8B9BB4",
@@ -18,6 +18,10 @@
 		{
 			"levelIid": "66bc1630-ac70-11f0-8e08-ed595c6528e8",
 			"dir": "n"
+		},
+		{
+			"levelIid": "10ce7c50-d380-11f0-90c6-215021ddea02",
+			"dir": "e"
 		}
 	],
 	"customFields" : {},

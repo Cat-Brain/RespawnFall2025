@@ -27,6 +27,6 @@ MonoBehaviour:
   speed: 9
   range: 7.5
   spread: 6
-  spawnTime: 0.5
-  destructTime: 0.25
+  spawnTime: 0.2
+  destructTime: 0.75
   inst: {fileID: 0}

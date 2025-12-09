@@ -723,22 +723,22 @@ MonoBehaviour:
   levelHeightOffset: 15
   levels:
   - prefab: {fileID: 7235125304421129061, guid: 9edd47f02e6aa1f4098c545509b054d5, type: 3}
-    height: 16
+    height: 14
     spawnOffset: {x: -13.5, y: 0}
     type: 0
     validSpawnLevels: 00000000010000000200000003000000
   - prefab: {fileID: 4135172174924813170, guid: 3288627675a7d4f4bab8b9fb9a439fcb, type: 3}
-    height: 16
+    height: 14
     spawnOffset: {x: -13.5, y: 0}
     type: 0
     validSpawnLevels: 00000000010000000200000003000000
   - prefab: {fileID: -5403170324174151774, guid: b80ce2e958380724da05928b5ffda3ee, type: 3}
-    height: 16
+    height: 14
     spawnOffset: {x: -13.5, y: 0}
     type: 0
     validSpawnLevels: 00000000010000000200000003000000
   - prefab: {fileID: 2411229973665308350, guid: d9ff04b6100bf2c45a65f7d9e4dbebcd, type: 3}
-    height: 16
+    height: 14
     spawnOffset: {x: -13.5, y: 0}
     type: 0
     validSpawnLevels: 00000000010000000200000003000000
@@ -748,12 +748,27 @@ MonoBehaviour:
     type: 0
     validSpawnLevels: 00000000010000000200000003000000
   - prefab: {fileID: 4880984664228677650, guid: da38ba1be0dafe74ca9ad11c4df516b1, type: 3}
-    height: 16
+    height: 14
     spawnOffset: {x: -13.5, y: 0}
     type: 0
     validSpawnLevels: 00000000010000000200000003000000
   - prefab: {fileID: -6376643982420497327, guid: 7453ff4bd6cd44b478f6def18587b550, type: 3}
-    height: 16
+    height: 14
+    spawnOffset: {x: -13.5, y: 0}
+    type: 0
+    validSpawnLevels: 00000000010000000200000003000000
+  - prefab: {fileID: 6496190233635802646, guid: db73f1134a2ee0b498d6645af50c1436, type: 3}
+    height: 14
+    spawnOffset: {x: -13.5, y: 0}
+    type: 0
+    validSpawnLevels: 00000000010000000200000003000000
+  - prefab: {fileID: 7388410007631396527, guid: 714861707e7fea94d95fd2877a81e4fc, type: 3}
+    height: 10
+    spawnOffset: {x: -13.5, y: 0}
+    type: 0
+    validSpawnLevels: 00000000010000000200000003000000
+  - prefab: {fileID: 4466325263824051755, guid: 80bd8d1588dde1f4eac7cf2dfaae91af, type: 3}
+    height: 14
     spawnOffset: {x: -13.5, y: 0}
     type: 0
     validSpawnLevels: 00000000010000000200000003000000

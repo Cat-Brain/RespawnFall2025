@@ -1136,7 +1136,7 @@ MonoBehaviour:
   tier: 3
   type: 0
   spawnOffset: {x: 0, y: 0}
-  spawnDimensions: {x: 11, y: 3}
+  spawnDimensions: {x: 7, y: 3}
   playerMask:
     serializedVersion: 2
     m_Bits: 1024

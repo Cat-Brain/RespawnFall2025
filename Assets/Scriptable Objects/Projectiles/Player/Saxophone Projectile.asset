@@ -23,10 +23,10 @@ MonoBehaviour:
   destroyedByMask:
     serializedVersion: 2
     m_Bits: 1
-  radius: 0.5
-  speed: 12
+  radius: 0.65
+  speed: 23
   range: 10
-  spread: 3
-  spawnTime: 0.5
-  destructTime: 0.25
+  spread: 0.25
+  spawnTime: 0.2
+  destructTime: 1
   inst: {fileID: 0}
