@@ -23,8 +23,8 @@ MonoBehaviour:
   destroyedByMask:
     serializedVersion: 2
     m_Bits: 1
-  radius: 0.5
-  speed: 9
+  radius: 0.85
+  speed: 10
   range: 7.5
   spread: 6
   spawnTime: 0.2
