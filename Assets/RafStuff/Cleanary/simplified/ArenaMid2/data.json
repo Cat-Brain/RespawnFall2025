@@ -2,7 +2,7 @@
 	"identifier": "ArenaMid2",
 	"uniqueIdentifer": "66bc1630-ac70-11f0-8e08-ed595c6528e8",
 	"x": 432,
-	"y": 336,
+	"y": 224,
 	"width": 432,
 	"height": 288,
 	"bgColor": "#8B9BB4",
@@ -10,6 +10,10 @@
 		{
 			"levelIid": "e9e24850-ac70-11f0-b4ed-9dea1e861157",
 			"dir": "n"
+		},
+		{
+			"levelIid": "470b2160-ac70-11f0-bd7d-8568904ad793",
+			"dir": "nw"
 		},
 		{
 			"levelIid": "88847ff0-ac70-11f0-bbfb-1d89eda20e07",
@@ -21,6 +25,10 @@
 		},
 		{
 			"levelIid": "3f642f60-ac70-11f0-8e08-dbdb8971397a",
+			"dir": "e"
+		},
+		{
+			"levelIid": "10ce7c50-d380-11f0-90c6-215021ddea02",
 			"dir": "e"
 		},
 		{

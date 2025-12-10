@@ -21,9 +21,9 @@ MonoBehaviour:
   - {x: 3, y: 0}
   - {x: 4, y: 0}
   sprite: {fileID: 0}
-  description: Max Health +15 Damage +5
+  description: Speed +5, Jump Height -15%
   components:
-  - {fileID: 11400000, guid: fff1b7bba465de64496a2b8be66574ed, type: 2}
-  - {fileID: 11400000, guid: 6d644ed59819bdb46a99497d4acd892a, type: 2}
+  - {fileID: 11400000, guid: 83b2b940017448f4a9a68b14413da77d, type: 2}
+  - {fileID: 11400000, guid: 0c172f6bcc664864aa3cab070a340ab7, type: 2}
   dimensions: {x: 5, y: 1}
   inst: {fileID: 0}

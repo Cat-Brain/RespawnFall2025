@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Add5Mod
   m_EditorClassIdentifier: Assembly-CSharp::StatAdder
   order: 0
-  addition: 0.5
+  addition: 0.05

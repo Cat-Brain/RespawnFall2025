@@ -21,9 +21,9 @@ MonoBehaviour:
   - {x: 3, y: 0}
   - {x: 4, y: 0}
   sprite: {fileID: 0}
-  description: 'Increase Reload Speed +75%, Decrease '
+  description: Increase Reload Speed +75%, Decrease Fire Rate -35%
   components:
-  - {fileID: 11400000, guid: 504fd8e390ca2b7429c70e3676c9886f, type: 2}
-  - {fileID: 11400000, guid: fff1b7bba465de64496a2b8be66574ed, type: 2}
+  - {fileID: 11400000, guid: 7535b64f19cc366428e9e4b27b4d0ffb, type: 2}
+  - {fileID: 11400000, guid: 181af755b8e80f949abc18b78895e910, type: 2}
   dimensions: {x: 5, y: 1}
   inst: {fileID: 0}

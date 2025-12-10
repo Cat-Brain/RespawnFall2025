@@ -20,7 +20,7 @@ MonoBehaviour:
   - {x: 2, y: 0}
   - {x: 3, y: 0}
   - {x: 4, y: 0}
-  sprite: {fileID: 0}
+  sprite: {fileID: 21300000, guid: 5bfa29a710abb374193254f5c977b114, type: 3}
   description: Jump Height +25%, Speed + 25%, Fire Rate -25%
   components:
   - {fileID: 11400000, guid: 9f011c1290160ff4b93c3965853a794b, type: 2}
