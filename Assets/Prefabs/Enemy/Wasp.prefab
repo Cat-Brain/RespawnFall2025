@@ -193,8 +193,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Wasp
   tier: 2
   type: 0
-  spawnOffset: {x: 0, y: 0}
-  spawnDimensions: {x: 0, y: 0}
+  spawnOffset: {x: 1, y: -1}
+  spawnDimensions: {x: 2, y: 2}
   playerMask:
     serializedVersion: 2
     m_Bits: 1024
