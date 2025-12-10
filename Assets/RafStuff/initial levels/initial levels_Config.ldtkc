@@ -82,6 +82,96 @@
                 "guid": "663a213a24d4d054f983b8f53159b04d",
                 "type": 3
             }
+        },
+        {
+            "_key": "Enemy_Air_Spawn",
+            "_asset": {
+                "instanceID": 0
+            }
+        },
+        {
+            "_key": "Enemy_Ground_Spawn",
+            "_asset": {
+                "instanceID": 0
+            }
+        },
+        {
+            "_key": "Ground",
+            "_asset": {
+                "instanceID": 0
+            }
+        },
+        {
+            "_key": "Bounce_Pad",
+            "_asset": {
+                "instanceID": 0
+            }
+        },
+        {
+            "_key": "Moss_Balls",
+            "_asset": {
+                "instanceID": 0
+            }
+        },
+        {
+            "_key": "Enemy_Spawn_Buffer",
+            "_asset": {
+                "instanceID": 0
+            }
+        },
+        {
+            "_key": "Wall_Invisible",
+            "_asset": {
+                "instanceID": 0
+            }
+        },
+        {
+            "_key": "Large_Bath",
+            "_asset": {
+                "instanceID": 0
+            }
+        },
+        {
+            "_key": "Crow",
+            "_asset": {
+                "instanceID": 0
+            }
+        },
+        {
+            "_key": "Shop_Item",
+            "_asset": {
+                "instanceID": 0
+            }
+        },
+        {
+            "_key": "Chest",
+            "_asset": {
+                "instanceID": 0
+            }
+        },
+        {
+            "_key": "Small_Bath",
+            "_asset": {
+                "instanceID": 0
+            }
+        },
+        {
+            "_key": "Main_Bath",
+            "_asset": {
+                "instanceID": 0
+            }
+        },
+        {
+            "_key": "End_of_Level",
+            "_asset": {
+                "instanceID": 0
+            }
+        },
+        {
+            "_key": "Reward_Item",
+            "_asset": {
+                "instanceID": 0
+            }
         }
     ]
 }
